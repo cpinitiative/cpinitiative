@@ -20,7 +20,7 @@ module.exports = {
     // whitelist: ['mode-dark'],
     content: [
       './src/**/*.js',
-      './src/**/*.ts',
+      './src/**/*.tsx',
     ],
   },
 };
