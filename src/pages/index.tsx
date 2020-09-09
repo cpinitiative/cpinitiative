@@ -7,8 +7,8 @@ import Card from "../components/index/Card"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="h-screen bg-gray-100">
-      <div className="margin-top-nav bg-blue-600">
+    <div className="min-h-screen bg-gray-100">
+      <div className="bg-blue-600">
         <div className="h-32"/>
         <div className="max-w-screen-xl px-4 sm:px-6 mx-auto -mb-12">
           <h2 className="text-4xl tracking-tight leading-10 sm:leading-none font-extrabold text-white sm:text-6xl lg:text-5xl xl:text-6xl">
