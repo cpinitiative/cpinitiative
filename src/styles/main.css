@@ -1,4 +1,8 @@
 /*! purgecss start ignore */
 @tailwind base;
 @tailwind components;
+
+.margin-top-nav {
+    margin-top: 4rem;
+}
 /*! purgecss end ignore */
