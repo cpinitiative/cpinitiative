@@ -22,16 +22,16 @@ const IndexPage = () => (
       </div>
       <div className="max-w-screen-xl px-4 sm:px-6 mx-auto">
         <div className="grid md:grid-cols-2 gap-8">
-          <Card title="USACO Guide" borderColor="border-blue-600">
+          <Card title="USACO Guide" borderColor="border-blue-600" url="https://usaco.guide/">
             The USACO Guide is a free collection of curated, high-quality resources to take you from Bronze to Platinum and beyond.
           </Card>
-          <Card title="Classes" borderColor="border-orange-600">
+          <Card title="Classes" borderColor="border-orange-600" url="https://cpinitiative.wixsite.com/home">
             We offer free, high-quality competitive programming classes for people of all skill levels!
           </Card>
-          <Card title="Outreach" borderColor="border-green-600">
+          <Card title="Outreach" borderColor="border-green-600" url={null}>
             We partner with clubs and teachers across the United States to promote competitive programming.
           </Card>
-          <Card title="Contests" borderColor="border-yellow-600">
+          <Card title="Contests" borderColor="border-yellow-600" url={null}>
             <i>Coming Soon!</i>
           </Card>
         </div>

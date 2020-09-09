@@ -5,4 +5,8 @@
 .margin-top-nav {
     margin-top: 4rem;
 }
+
+.anim {
+    @apply transition duration-150 ease-in-out;
+}
 /*! purgecss end ignore */
