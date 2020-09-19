@@ -1,6 +1,20 @@
 import * as React from "react";
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image";
 
 export default function Hero() {
+  const data = useStaticQuery(graphql`
+    query {
+      hero: file(relativePath: { eq: "clubs-hero.jpg" }) {
+        childImageSharp {
+          fluid(maxHeight: 700, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+  const heroImg = data.hero.childImageSharp.fluid;
   return (
     <div className="relative bg-white overflow-hidden">
       <div className="max-w-screen-xl mx-auto">
@@ -37,7 +51,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="" />
+        <Img className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" fluid={heroImg} alt="" />
       </div>
     </div>
   );
