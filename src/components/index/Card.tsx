@@ -1,8 +1,9 @@
 import * as React from "react";
+import { Link } from "gatsby"
 
 export default function Card({ title, borderColor, children, url }) {
-  return (
-    <a href={url} target="_blank" className={"block bg-white anim shadow transform hover:-translate-y-1 hover:shadow-lg border-l-4 px-6 py-5 " + borderColor}>
+  let contents = (
+    <>
       <h2 className="font-medium text-2xl mb-2">
         {title}
         {url !== null && (
@@ -12,6 +13,15 @@ export default function Card({ title, borderColor, children, url }) {
         )}
       </h2>
       <p className="text-gray-600">{children}</p>
+    </>
+  );
+  const classes = "block bg-white anim shadow transform hover:-translate-y-1 hover:shadow-lg border-l-4 px-6 py-5 " + borderColor;
+  if (url && url.startsWith("/")) {
+    return <Link to={url} className={classes}>{contents}</Link>
+  }
+  return (
+    <a href={url} target="_blank" className={classes}>
+      {contents}
     </a>
   );
 }

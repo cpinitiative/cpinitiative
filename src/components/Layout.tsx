@@ -6,12 +6,10 @@
  */
 
 import * as React from "react"
-import Header from "./Header"
 
 const Layout = ({ children }) => {
   return (
     <div className="font-sans">
-      <Header />
       <main>{children}</main>
       <footer>
         <div className="bg-white">
