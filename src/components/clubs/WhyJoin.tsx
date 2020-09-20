@@ -21,7 +21,7 @@ export default function WhyJoin() {
           </div>
           <div className="mt-10 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:col-span-2 lg:mt-0">
             <div>
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white">
                 {/* Heroicon name: scale */}
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
@@ -35,7 +35,7 @@ export default function WhyJoin() {
               </div>
             </div>
             <div className="mt-10 sm:mt-0">
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white">
                 {/* Heroicon name: lightning-bolt */}
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -49,7 +49,7 @@ export default function WhyJoin() {
               </div>
             </div>
             <div className="mt-10 sm:mt-0">
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
@@ -62,7 +62,7 @@ export default function WhyJoin() {
               </div>
             </div>
             <div className="mt-10 sm:mt-0">
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white">
                 {/* Heroicon name: globe-alt */}
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
