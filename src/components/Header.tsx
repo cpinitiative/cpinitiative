@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby"
 import { useState } from "react"
+import Logo from "./Logo"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ export default function Header() {
         <div className="flex justify-between h-16">
           <div className="flex">
             <Link to="/" className="flex-shrink-0 flex items-center text-xl font-bold">
-              CP Initiative
+              <Logo />
             </Link>
             <div className="hidden sm:ml-8 sm:flex">
               <a href="https://usaco.guide/" target="_blank" className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
