@@ -33,6 +33,7 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      defaultTitle="Competitive Programming Initiative"
       meta={[
         {
           name: `description`,

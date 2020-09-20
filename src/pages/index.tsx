@@ -7,7 +7,7 @@ import Header from "../components/Header"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title={null} />
     <div className="min-h-screen bg-gray-100">
       <Header />
       <div className="bg-purple-600 sm:-mb-8">
