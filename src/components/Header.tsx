@@ -6,6 +6,17 @@ import Logo from "./Logo"
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const internalLinks = [
+    {
+      label: "Classes",
+      url: "/classes",
+    },
+    {
+      label: "Clubs",
+      url: "/clubs",
+    },
+  ];
+
   return (
     <nav className="bg-white shadow fixed inset-x-0 top-0 z-30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,20 +25,19 @@ export default function Header() {
             <Link to="/" className="flex-shrink-0 flex items-center text-xl font-bold">
               <Logo />
             </Link>
-            <div className="hidden sm:ml-8 sm:flex">
+            <div className="hidden sm:ml-8 sm:flex space-x-8">
               <a href="https://usaco.guide/" target="_blank" className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
                 USACO Guide
               </a>
-              <Link to="/clubs" getProps={({ isCurrent }) => ({
-                className: !isCurrent
-                  ? 'ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out'
-                  : 'ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-purple-500 text-sm font-medium leading-5 text-gray-900 focus:outline-none focus:border-purple-700 transition duration-150 ease-in-out',
-              })}>
-                Clubs
-              </Link>
-              <a href="https://cpinitiative.wixsite.com/home" target="_blank" className="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
-                Classes
-              </a>
+              {internalLinks.map(link => (
+                <Link to={link.url} getProps={({ isCurrent }) => ({
+                  className: !isCurrent
+                    ? 'inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out'
+                    : 'inline-flex items-center px-1 pt-1 border-b-2 border-purple-500 text-sm font-medium leading-5 text-gray-900 focus:outline-none focus:border-purple-700 transition duration-150 ease-in-out',
+                })}>
+                  {link.label}
+                </Link>
+              ))}
             </div>
           </div>
           <div className="-mr-2 flex items-center sm:hidden">
@@ -51,14 +61,15 @@ export default function Header() {
         <div className="pt-2 pb-3 space-y-1">
           <a href="https://usaco.guide/" target="_blank" className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out">USACO Guide</a>
 
-          <Link to="/clubs" getProps={({ isCurrent }) => ({
-            className: !isCurrent
-              ? 'block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out'
-              : 'block pl-3 pr-4 py-2 border-l-4 border-purple-500 text-base font-medium text-purple-700 bg-purple-50 focus:outline-none focus:text-purple-800 focus:bg-purple-100 focus:border-purple-700 transition duration-150 ease-in-out',
-          })}>
-            Clubs
-          </Link>
-          <a href="https://cpinitiative.wixsite.com/home" target="_blank" className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out">Classes</a>
+          {internalLinks.map(link => (
+            <Link to={link.url} getProps={({ isCurrent }) => ({
+              className: !isCurrent
+                ? 'block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out'
+                : 'block pl-3 pr-4 py-2 border-l-4 border-purple-500 text-base font-medium text-purple-700 bg-purple-50 focus:outline-none focus:text-purple-800 focus:bg-purple-100 focus:border-purple-700 transition duration-150 ease-in-out',
+            })}>
+              {link.label}
+            </Link>
+          ))}
         </div>
       </div>
     </nav>
