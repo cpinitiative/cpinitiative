@@ -32,10 +32,10 @@ const IndexPage = () => (
             The USACO Guide is a free collection of curated, high-quality resources to take you from Bronze to Platinum and beyond.
           </Card>
           <Card title="Classes" borderColor="border-orange-600" url="/classes">
-            Learn USACO through high-quality classes with vetted, experienced instructors and an exclusive curriculum.
+            Learn USACO through high-quality classes with vetted, experienced instructors and a curated curriculum.
           </Card>
           <Card title="Clubs" borderColor="border-green-600" url="/clubs">
-            Running a CP/CS club? Get access to exclusive curriculum, problemsets, and contests tailored for school clubs!
+            Running a CP/CS club? Get access to curriculum, problemsets, and contests tailored for school clubs!
           </Card>
           <Card title="Contests" borderColor="border-yellow-600" url="/contests">
             Get better at Competitive Programming by participating in monthly beginner-focused contests!

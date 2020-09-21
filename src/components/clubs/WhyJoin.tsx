@@ -30,7 +30,7 @@ export default function WhyJoin() {
               <div className="mt-5">
                 <h4 className="text-lg leading-6 font-medium text-gray-900">Resources</h4>
                 <p className="mt-2 text-base leading-6 text-gray-500">
-                  We'll provide exclusive, high-quality curriculum for your competitive programming club.
+                  We'll provide high-quality curriculum and resources for your competitive programming club.
                 </p>
               </div>
             </div>
