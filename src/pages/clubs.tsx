@@ -9,7 +9,7 @@ import Header from "../components/Header"
 export default function Clubs() {
   return (
     <Layout>
-      <SEO title="Clubs" />
+      <SEO title="Clubs" description="Get access to exclusive curriculum, problemsets, and contests tailored for school clubs, created by past USACO Finalists and IOI Winners." />
 
       <Header />
       <div className="margin-top-nav"/>

@@ -31,10 +31,10 @@ const IndexPage = () => (
             The USACO Guide is a free collection of curated, high-quality resources to take you from Bronze to Platinum and beyond.
           </Card>
           <Card title="Classes" borderColor="border-orange-600" url="/classes">
-            We offer free, high-quality competitive programming classes for people of all skill levels!
+            Learn USACO through high-quality classes with vetted, experienced instructors and an exclusive curriculum.
           </Card>
           <Card title="Clubs" borderColor="border-green-600" url="/clubs">
-            Running a CP/CS club? Get access to exclusive curriculum, problemsets, and contests tailored for school clubs, created by past USACO Finalists and 2x IOI Winner Benjamin Qi!
+            Running a CP/CS club? Get access to exclusive curriculum, problemsets, and contests tailored for school clubs!
           </Card>
           <Card title="Contests" borderColor="border-yellow-600" url={null}>
             <i>Coming Soon!</i>
