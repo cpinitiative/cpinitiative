@@ -4,11 +4,12 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Card from "../components/index/Card"
 import Header from "../components/Header"
+import Newsletter from "../components/index/Newsletter"
 
 const IndexPage = () => (
   <Layout>
     <SEO title={null} />
-    <div className="min-h-screen bg-gray-100">
+    <div className="bg-gray-100">
       <Header />
       <div className="bg-purple-900 sm:-mb-8">
         <div className="h-36 sm:h-48"/>
@@ -22,7 +23,7 @@ const IndexPage = () => (
           <path className="text-gray-100" fill="currentColor" fillOpacity="1" d="M0,192L48,186.7C96,181,192,171,288,165.3C384,160,480,160,576,181.3C672,203,768,245,864,245.3C960,245,1056,203,1152,165.3C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"/>
         </svg>
       </div>
-      <div className="max-w-screen-xl px-4 sm:px-6 mx-auto pb-12">
+      <div className="max-w-screen-xl px-4 sm:px-6 mx-auto pb-12 sm:pb-16">
         <h1 className="text-2xl tracking-tight leading-10 sm:leading-none font-extrabold text-gray-900 sm:text-3xl lg:text-4xl xl:text-5xl mb-6 sm:mb-12">
           Our Initiatives
         </h1>
@@ -42,6 +43,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    <Newsletter />
   </Layout>
 )
 

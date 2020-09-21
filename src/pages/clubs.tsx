@@ -5,6 +5,7 @@ import Hero from "../components/clubs/Hero"
 import WhyJoin from "../components/clubs/WhyJoin"
 import CTA from "../components/clubs/CTA"
 import Header from "../components/Header"
+import FAQ from "../components/clubs/FAQ"
 
 export default function Clubs() {
   return (
@@ -15,6 +16,7 @@ export default function Clubs() {
       <div className="margin-top-nav"/>
       <Hero />
       <WhyJoin />
+      {/*<FAQ />*/}
       <CTA />
     </Layout>
   )

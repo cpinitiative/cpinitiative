@@ -71,7 +71,7 @@ export default function WhyJoin() {
               <div className="mt-5">
                 <h4 className="text-lg leading-6 font-medium text-gray-900">Networking</h4>
                 <p className="mt-2 text-base leading-6 text-gray-500">
-                  Meet other talented competitive programmers across the country, including USACO Finalists and even 2x IOI winners!
+                  Meet other talented competitive programmers across the country, including USACO Finalists and even IOI winners!
                 </p>
               </div>
             </div>
