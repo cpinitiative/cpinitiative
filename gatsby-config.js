@@ -21,8 +21,8 @@ module.exports = {
         name: `CP Initiative`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#7e3af2`,
-        theme_color: `#7e3af2`,
+        background_color: `#4a1d96`,
+        theme_color: `#4a1d96`,
         display: `minimal-ui`,
         icon: `src/images/logo-square.png`, // This path is relative to the root of the site.
       },
