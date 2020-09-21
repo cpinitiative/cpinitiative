@@ -33,8 +33,8 @@ const IndexPage = () => (
           <Card title="Classes" borderColor="border-orange-600" url="https://cpinitiative.wixsite.com/home">
             We offer free, high-quality competitive programming classes for people of all skill levels!
           </Card>
-          <Card title="Outreach" borderColor="border-green-600" url="/clubs">
-            We partner with clubs and teachers across the United States to promote competitive programming.
+          <Card title="Clubs" borderColor="border-green-600" url="/clubs">
+            Running a CP/CS club? Get access to exclusive curriculum, problemsets, and contests tailored for school clubs, created by past USACO Finalists and 2x IOI Winner Benjamin Qi!
           </Card>
           <Card title="Contests" borderColor="border-yellow-600" url={null}>
             <i>Coming Soon!</i>
