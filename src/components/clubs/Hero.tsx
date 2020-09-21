@@ -29,7 +29,7 @@ export default function Hero() {
                 Competitive Programming<br/><span className="text-purple-600">Clubs</span>
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Get access to exclusive curriculum, problemsets, and contests tailored for school clubs, created by past USACO Finalists and 2x IOI Winner Benjamin Qi.
+                Get access to exclusive curriculum, problemsets, and contests tailored for school clubs, created by past USACO Finalists and IOI Winners.
               </p>
               <p className="mt-2 text-base text-gray-500 sm:mt-3 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                 You do <i>not</i> need to be a Competitive Programming club to apply. Computer Science clubs are eligible too!
