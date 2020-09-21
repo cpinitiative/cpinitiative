@@ -4,7 +4,6 @@ import SEO from "../components/SEO"
 import Header from "../components/Header"
 import Hero from "../components/classes/Hero"
 import NotLowQuality from "../components/classes/NotLowQuality"
-import Divisions from "../components/classes/Divisions"
 
 export default function Classes() {
   return (
@@ -14,7 +13,6 @@ export default function Classes() {
       <Header />
       <Hero />
       <NotLowQuality />
-      {/*<Divisions />*/}
     </Layout>
   );
 };

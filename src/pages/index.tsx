@@ -37,8 +37,8 @@ const IndexPage = () => (
           <Card title="Clubs" borderColor="border-green-600" url="/clubs">
             Running a CP/CS club? Get access to exclusive curriculum, problemsets, and contests tailored for school clubs!
           </Card>
-          <Card title="Contests" borderColor="border-yellow-600" url={null}>
-            <i>Coming Soon!</i>
+          <Card title="Contests" borderColor="border-yellow-600" url="/contests">
+            Get better at Competitive Programming by participating in monthly beginner-focused contests!
           </Card>
         </div>
       </div>

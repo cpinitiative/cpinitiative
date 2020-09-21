@@ -15,6 +15,10 @@ export default function Header() {
       label: "Clubs",
       url: "/clubs",
     },
+    {
+      label: "Contests",
+      url: "/contests",
+    },
   ];
 
   return (

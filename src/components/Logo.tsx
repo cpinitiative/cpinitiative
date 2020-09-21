@@ -17,7 +17,6 @@ export default function Logo(props) {
   return <Img
     fixed={data.img.childImageSharp.fixed}
     alt="CP Initiative"
-    fadeIn={false}
     {...props}
   />;
 }

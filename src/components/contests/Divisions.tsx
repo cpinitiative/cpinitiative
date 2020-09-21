@@ -1,3 +1,5 @@
+import { Link } from "gatsby"
+
 export default function Divisions() {
   return (
     <div className="bg-gray-900">
@@ -5,13 +7,13 @@ export default function Divisions() {
         <div className="max-w-screen-xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto space-y-2 lg:max-w-none">
             <h2 className="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">
-              Pricing
+              Divisions
             </h2>
             <p className="text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none">
-              The right price for you, whoever you are
+              Pick your division.
             </p>
             <p className="text-xl leading-7 text-gray-300">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum sequi unde repudiandae natus.
+              Our contests come in two divisions: One for Bronze/Silver contestants and another for Silver/Gold contestants.
             </p>
           </div>
         </div>
@@ -25,17 +27,14 @@ export default function Divisions() {
                 <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                   <div>
                     <h3 className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600" id="tier-standard">
-                      Standard
+                      Division 2
                     </h3>
                   </div>
-                  <div className="mt-4 flex items-baseline text-6xl leading-none font-extrabold">
-                    $49
-                    <span className="ml-1 text-2xl leading-8 font-medium text-gray-500">
-                      /mo
-                    </span>
+                  <div className="mt-4 flex items-baseline text-5xl leading-none font-extrabold">
+                    Beginner
                   </div>
                   <p className="mt-5 text-lg leading-7 text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    For school clubs and bronze/silver contestants. Problems get harder throughout the year.
                   </p>
                 </div>
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
@@ -48,7 +47,7 @@ export default function Divisions() {
                         </svg>
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
-                        Pariatur quod similique
+                        Incremental difficulty
                       </p>
                     </li>
 
@@ -60,7 +59,7 @@ export default function Divisions() {
                         </svg>
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
-                        Sapiente libero doloribus modi nostrum
+                        Follows our <Link to="/clubs" className="text-purple-600 underline">Club Curriculum</Link>
                       </p>
                     </li>
 
@@ -72,7 +71,7 @@ export default function Divisions() {
                         </svg>
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
-                        Vel ipsa esse repudiandae excepturi
+                        Covers Bronze and Basic Silver
                       </p>
                     </li>
 
@@ -84,12 +83,12 @@ export default function Divisions() {
                         </svg>
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
-                        Itaque cupiditate adipisci quibusdam
+                        Open to everyone! Teams allowed :)
                       </p>
                     </li>
                   </ul>
                   <div className="rounded-md shadow">
-                    <a href="/" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out" aria-describedby="tier-standard">
+                    <a href="#signup" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out" aria-describedby="tier-standard">
                       Get started
                     </a>
                   </div>
@@ -100,17 +99,14 @@ export default function Divisions() {
                 <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                   <div>
                     <h3 className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600" id="tier-standard">
-                      Enterprise
+                      Division 1
                     </h3>
                   </div>
-                  <div className="mt-4 flex items-baseline text-6xl leading-none font-extrabold">
-                    $79
-                    <span className="ml-1 text-2xl leading-8 font-medium text-gray-500">
-                      /mo
-                    </span>
+                  <div className="mt-4 flex items-baseline text-5xl leading-none font-extrabold">
+                    Intermediate
                   </div>
                   <p className="mt-5 text-lg leading-7 text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    For school clubs and silver/gold contestants. Problems are in the hard silver / easy gold range.
                   </p>
                 </div>
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
@@ -123,7 +119,7 @@ export default function Divisions() {
                         </svg>
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
-                        Pariatur quod similique
+                        Static Difficulty
                       </p>
                     </li>
 
@@ -135,7 +131,7 @@ export default function Divisions() {
                         </svg>
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
-                        Sapiente libero doloribus modi nostrum
+                        Designed for second-year contestants
                       </p>
                     </li>
 
@@ -147,7 +143,7 @@ export default function Divisions() {
                         </svg>
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
-                        Vel ipsa esse repudiandae excepturi
+                        Covers Advanced Silver / Gold
                       </p>
                     </li>
 
@@ -159,12 +155,12 @@ export default function Divisions() {
                         </svg>
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
-                        Itaque cupiditate adipisci quibusdam
+                        Open to everyone! Teams allowed :)
                       </p>
                     </li>
                   </ul>
                   <div className="rounded-md shadow">
-                    <a href="/" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out" aria-describedby="tier-standard">
+                    <a href="#signup" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out" aria-describedby="tier-standard">
                       Get started
                     </a>
                   </div>
@@ -179,21 +175,17 @@ export default function Divisions() {
               <div className="flex-1">
                 <div>
                   <h3 className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-white text-gray-800">
-                    Discounted
+                    School Clubs
                   </h3>
                 </div>
                 <div className="mt-4 text-lg leading-7 text-gray-600">
-                  Get full access to all of standard license features for solo projects that make less than $20k gross revenue for
-                  <strong className="font-semibold text-gray-900">
-                    $29
-                  </strong>
-                  .
+                  Running a school CS/CP club? We can help! Apply to be part of CPI and get access to curriculum, problemsets, and contests!
                 </div>
               </div>
               <div className="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
-                <a href="/" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-                  Buy Discounted License
-                </a>
+                <Link to="/clubs" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                  Learn More about Clubs
+                </Link>
               </div>
             </div>
           </div>

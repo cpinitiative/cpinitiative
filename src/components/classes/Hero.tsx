@@ -23,7 +23,7 @@ export default function Hero() {
               </div>
               <h2 className="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl">
                 Free Online
-                <br className="hidden md:inline" />
+                <br />
                 <span className="text-purple-600">USACO Classes</span>
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
