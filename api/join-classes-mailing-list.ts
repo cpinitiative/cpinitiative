@@ -16,6 +16,7 @@ export default async function joinClassesMailingList(request: NowRequest, respon
       code: "missing_parameters",
       message: "Either the email or tags field was not provided."
     })
+    return;
   }
   const tags = unprocessedTags.split(",");
 
@@ -63,7 +64,8 @@ export default async function joinClassesMailingList(request: NowRequest, respon
         success: false,
         code: "already_subscribed",
         message: "The email is already part of the Classes Info list."
-      })
+      });
+      return;
     }
     const data = {
       email_address: email,
@@ -95,6 +97,7 @@ export default async function joinClassesMailingList(request: NowRequest, respon
       code: "internal_error",
       mailchimpErrorData: { ...error.response.data } // in case of circular JSON
     })
+    return;
   }
   response.status(200).json({
     success: true,
