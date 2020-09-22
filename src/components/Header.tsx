@@ -32,6 +32,14 @@ export default function Header() {
             <div className="hidden sm:ml-8 sm:flex space-x-8">
               <a href="https://usaco.guide/" target="_blank" className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
                 USACO Guide
+                {/*<svg className="w-5 h-6 inline-block text-gray-400 ml-2" fill="none" stroke="currentColor"*/}
+                {/*     style={{*/}
+                {/*       paddingBottom:"0.125rem"*/}
+                {/*     }}*/}
+                {/*     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">*/}
+                {/*  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}*/}
+                {/*        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>*/}
+                {/*</svg>*/}
               </a>
               {internalLinks.map(link => (
                 <Link to={link.url} getProps={({ isCurrent }) => ({

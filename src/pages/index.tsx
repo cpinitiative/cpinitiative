@@ -28,7 +28,7 @@ const IndexPage = () => (
           Our Initiatives
         </h1>
         <div className="grid md:grid-cols-2 gap-8">
-          <Card title="USACO Guide" borderColor="border-blue-600" url="https://usaco.guide/">
+          <Card title="USACO Guide" borderColor="border-blue-600" url="https://usaco.guide/" external>
             The USACO Guide is a free collection of curated, high-quality resources to take you from Bronze to Platinum and beyond.
           </Card>
           <Card title="Classes" borderColor="border-orange-600" url="/classes">
