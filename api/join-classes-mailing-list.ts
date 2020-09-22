@@ -5,11 +5,13 @@ const { MAILCHIMP_API_KEY } = process.env
 
 
 export default async function joinClassesMailingList(request: NowRequest, response: NowResponse) {
+  console.log("running")
   const {
     email,
     tags:unprocessedTags
   } = request.body
   if (!unprocessedTags || !email) {
+    console.log("missing", email, unprocessedTags)
     response.status(400).send(JSON.stringify({
       success: false,
       code: "missing_parameters",
@@ -21,6 +23,7 @@ export default async function joinClassesMailingList(request: NowRequest, respon
   try {
     const listID = "e122c7f3eb"
     let emailHash = createHash("md5").update(email.toLowerCase()).digest("hex")
+    console.log("sent list")
     const existingDataResponse = await axios.get(`https://us11.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}`, {
       auth: {
         username: "no-username",
@@ -30,9 +33,13 @@ export default async function joinClassesMailingList(request: NowRequest, respon
       // console.log("Unable to GET existing mailchimp fields", e)
       // the user probably doesn't exist
       // so just assume there is no previous data
+      console.log("list error")
+
       return Promise.resolve({})
     })
     if (Object.keys(existingDataResponse).length > 0 && (existingDataResponse as AxiosResponse).data.tags && (existingDataResponse as AxiosResponse).data.tags.findIndex(c => c.name === "Classes Info") > -1) {
+      console.log("already subscribed")
+
       response.status(409).send(JSON.stringify({
         success: false,
         code: "already_subscribed",
@@ -45,6 +52,8 @@ export default async function joinClassesMailingList(request: NowRequest, respon
       status_if_new: "subscribed",
       ip_signup: request.headers["client-ip"]
     }
+    console.log("sending update for data")
+
     await axios.put(`https://us11.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}`, data, {
       auth: {
         username: "no-username",
@@ -70,6 +79,7 @@ export default async function joinClassesMailingList(request: NowRequest, respon
         status: "active"
       });
     }
+    console.log("sending update for tags")
 
     await axios.post(`https://us11.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}/tags`, {
       tags:tags,
@@ -87,6 +97,7 @@ export default async function joinClassesMailingList(request: NowRequest, respon
       mailchimpErrorData: { ...error } // in case of circular JSON
     }))
   }
+  console.log("done")
   response.status(200).send(JSON.stringify({
     success: true,
     code: "subscribed"
