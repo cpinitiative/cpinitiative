@@ -14,7 +14,11 @@ const Layout = ({ children }) => {
       <footer>
         <div className="bg-white">
           <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between">
-            <div className="flex justify-center md:order-2">
+            <div className="flex justify-center md:order-2 space-x-6">
+              <a href="mailto:usacoguide@gmail.com" target="_blank" className="text-gray-400 hover:text-gray-500">
+                <span className="sr-only">Email</span>
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
+              </a>
               <a href="https://github.com/cpinitiative" className="text-gray-400 hover:text-gray-500">
                 <span className="sr-only">GitHub</span>
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
