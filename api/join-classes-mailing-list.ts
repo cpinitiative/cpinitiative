@@ -94,7 +94,7 @@ export default async function joinClassesMailingList(request: NowRequest, respon
     response.status(500).json({
       success: false,
       code: "internal_error",
-      mailchimpErrorData: { ...error } // in case of circular JSON
+      mailchimpErrorData: { ...error.response.data } // in case of circular JSON
     })
   }
   console.log("done")
