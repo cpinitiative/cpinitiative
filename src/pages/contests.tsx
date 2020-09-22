@@ -8,7 +8,7 @@ import Divisions from "../components/contests/Divisions"
 export default function Contests() {
   return (
     <Layout>
-      <SEO title="Contests" description="Get better at USACO by participating in monthly, beginner-focused Competitive Programming Contests! Targeted to both school clubs and individual contestants." />
+      <SEO title="Beginner Competitive Programming Contests" description="Get better at USACO by participating in monthly, beginner-focused Competitive Programming Contests! Targeted to both school clubs and individual contestants." />
 
       <Header />
       <div className="margin-top-nav"/>
