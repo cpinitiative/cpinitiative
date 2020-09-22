@@ -34,7 +34,30 @@ export default async function joinClassesMailingList(request: NowRequest, respon
 
       return Promise.resolve({})
     })
-    if (Object.keys(existingDataResponse).length > 0 && (existingDataResponse as AxiosResponse).data.tags && (existingDataResponse as AxiosResponse).data.tags.findIndex(c => c.name === "Classes Info") > -1) {
+
+    const transformedTags = [];
+    if (tags.indexOf("classes") > -1) {
+      transformedTags.push({
+        name: "Classes Info",
+        status: "active"
+      });
+    }
+
+    if (tags.indexOf("general") > -1) {
+      transformedTags.push({
+        name: "General",
+        status: "active"
+      });
+    }
+    if (tags.indexOf("contests") > -1) {
+      transformedTags.push({
+        name: "Contest Info",
+        status: "active"
+      });
+    }
+
+
+    if (Object.keys(existingDataResponse).length > 0 && (existingDataResponse as AxiosResponse).data.tags && transformedTags.every(tag => (existingDataResponse as AxiosResponse).data.tags.findIndex(c => c.name === tag.name) > -1)) {
 
       response.status(409).json({
         success: false,
@@ -55,25 +78,6 @@ export default async function joinClassesMailingList(request: NowRequest, respon
         password: MAILCHIMP_API_KEY
       }
     })
-    const transformedTags = [];
-    if (tags.indexOf("classes") > -1) {
-      transformedTags.push({
-        name: "Classes Info",
-        status: "active"
-      });
-    }
-    if (tags.indexOf("general") > -1) {
-      transformedTags.push({
-        name: "General",
-        status: "active"
-      });
-    }
-    if (tags.indexOf("contests") > -1) {
-      transformedTags.push({
-        name: "Contest Info",
-        status: "active"
-      });
-    }
 
     await axios.post(`https://us2.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}/tags`, {
       tags:transformedTags,
