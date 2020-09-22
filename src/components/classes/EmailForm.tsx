@@ -56,6 +56,7 @@ export default function EmailForm({ listName, tag, wide }: {
       }} className="mt-3 sm:flex">
         <input value={email}
                onChange={(e) => setEmail(e.target.value)}
+               type="email"
                aria-label="Email"
                disabled={submitting}
                className={wide ?
