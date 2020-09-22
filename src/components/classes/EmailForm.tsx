@@ -23,25 +23,27 @@ export default function EmailForm({ listName, tag, wide }: {
           setError(<>Please enter a valid email.</>)
           return
         }
+        const submittedEmail = email;
+        setAddedEmail(submittedEmail);
         setSubmitting(true)
         axios.post(
           "/api/join-classes-mailing-list",
           {
-            email,
+            submittedEmail,
             tags: tag
           }
         ).then(response => {
           setSubmitting(false);
           setSuccess(true);
-          setAddedEmail(email);
+
           setEmail("");
         }).catch(error => {
           setSubmitting(false)
-          setAddedEmail(email);
           console.log({ ...error })
+          // console.log(addedEmail, email)
           if (error.response && error.response.data.code) {
             if (error.response.data.code === "already_subscribed") {
-              setError(<>It looks like <i>{addedEmail}</i> is already on our list.<br/> If you don't think you're getting our
+              setError(<>It looks like <i>{submittedEmail}</i> is already on our list.<br/> If you don't think you're getting our
                 emails, please <a href={"mailto:usacoguide@gmail.com"}
                                   className={"text-red-600 hover:text-red-800 hover:underline"}>contact us</a>.</>)
               return
