@@ -24,7 +24,7 @@ export default async function joinClassesMailingList(request: NowRequest, respon
     const listID = "e122c7f3eb"
     let emailHash = createHash("md5").update(email.toLowerCase()).digest("hex")
     console.log("sent list")
-    const existingDataResponse = await axios.get(`https://us11.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}`, {
+    const existingDataResponse = await axios.get(`https://us2.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}`, {
       auth: {
         username: "no-username",
         password: MAILCHIMP_API_KEY
@@ -54,7 +54,7 @@ export default async function joinClassesMailingList(request: NowRequest, respon
     }
     console.log("sending update for data")
 
-    await axios.put(`https://us11.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}`, data, {
+    await axios.put(`https://us2.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}`, data, {
       auth: {
         username: "no-username",
         password: MAILCHIMP_API_KEY
@@ -81,7 +81,7 @@ export default async function joinClassesMailingList(request: NowRequest, respon
     }
     console.log("sending update for tags")
 
-    await axios.post(`https://us11.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}/tags`, {
+    await axios.post(`https://us2.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}/tags`, {
       tags:tags,
     }, {
       auth: {
