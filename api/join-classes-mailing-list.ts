@@ -32,7 +32,7 @@ export default async function joinClassesMailingList(request: NowRequest, respon
       // so just assume there is no previous data
       return Promise.resolve({})
     })
-    if (Object.keys(existingDataResponse).length > 0 && (existingDataResponse as AxiosResponse).data?.tags?.findIndex(c => c.name === "Classes Info") > -1) {
+    if (Object.keys(existingDataResponse).length > 0 && (existingDataResponse as AxiosResponse).data.tags && (existingDataResponse as AxiosResponse).data.tags.findIndex(c => c.name === "Classes Info") > -1) {
       response.status(409).send(JSON.stringify({
         success: false,
         code: "already_subscribed",
