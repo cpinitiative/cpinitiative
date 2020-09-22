@@ -15,9 +15,7 @@ export default function Newsletter() {
         <div className="mt-8 lg:mt-0 lg:ml-8">
 
           <EmailForm listName={"general"} tag={"general"} wide/>
-          <p className="mt-3 text-sm leading-5 text-gray-300">
-            No spam emails. You can unsubscribe at any time!
-          </p>
+
         </div>
       </div>
     </div>

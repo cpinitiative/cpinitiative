@@ -72,12 +72,25 @@ export default function EmailForm({ listName, tag, wide }: {
         </button>}
 
       </form>
-      {error
-      && <p className={"mt-3 w-full py-1 text-base leading-6 font-medium rounded-md text-red-400"}>{error}</p>}
-      {success
-      &&
-      <p className={"mt-3 w-full py-1 text-base leading-6 font-medium rounded-md text-green-400"}>You've been added to
-        our {listName} mailing list!</p>}
+      {wide ? <>
+        {!error && !success && <p className="mt-3 text-sm leading-5 text-gray-300">
+          No spam emails. You can unsubscribe at any time!
+        </p>}
+        {error
+        && <p className="mt-3 text-sm leading-5 text-red-300">{error}</p>}
+        {success
+        &&
+        <p className="mt-3 text-sm leading-5 text-green-300">You've been added to
+          our {listName} mailing list!</p>}
+      </> : <>
+        {error
+        && <p className={"mt-3 w-full py-1 text-base leading-6 font-medium rounded-md text-red-400"}>{error}</p>}
+        {success
+        &&
+        <p className={"mt-3 w-full py-1 text-base leading-6 font-medium rounded-md text-green-400"}>You've been added to
+          our {listName} mailing list!</p>}
+      </>}
+
     </>
   )
 }
