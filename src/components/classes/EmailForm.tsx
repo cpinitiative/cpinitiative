@@ -8,6 +8,7 @@ export default function EmailForm({ listName, tag, wide }: {
   wide?: boolean;
 }) {
   const [email, setEmail] = useState("")
+  const [addedEmail, setAddedEmail] = useState("")
   const [submitting, setSubmitting] = useState(false)
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState<React.ReactNode>()
@@ -30,14 +31,16 @@ export default function EmailForm({ listName, tag, wide }: {
             tags: tag
           }
         ).then(response => {
-          setSubmitting(false)
-          setSuccess(true)
+          setSubmitting(false);
+          setSuccess(true);
+          setAddedEmail(email);
+          setEmail("");
         }).catch(error => {
           setSubmitting(false)
           console.log({ ...error })
           if (error.response && error.response.data.code) {
             if (error.response.data.code === "already_subscribed") {
-              setError(<>It looks like this email address is already on our list.<br/> If you don't think you're getting our
+              setError(<>It looks like <i>{addedEmail}</i> is already on our list.<br/> If you don't think you're getting our
                 emails, please <a href={"mailto:usacoguide@gmail.com"}
                                   className={"text-red-600 hover:text-red-800 hover:underline"}>contact us</a>.</>)
               return
@@ -80,14 +83,14 @@ export default function EmailForm({ listName, tag, wide }: {
         && <p className="mt-3 text-sm leading-5 text-red-300">{error}</p>}
         {success
         &&
-        <p className="mt-3 text-sm leading-5 text-green-300">You've been added to
+        <p className="mt-3 text-sm leading-5 text-green-300"><i>{addedEmail}</i> has been added to
           our {listName} mailing list!</p>}
       </> : <>
         {error
         && <p className={"mt-3 w-full py-1 text-base leading-6 font-medium rounded-md text-red-400"}>{error}</p>}
         {success
         &&
-        <p className={"mt-3 w-full py-1 text-base leading-6 font-medium rounded-md text-green-400"}>You've been added to
+        <p className={"mt-3 w-full py-1 text-base leading-6 font-medium rounded-md text-green-400"}><i>{addedEmail}</i> has been added to
           our {listName} mailing list!</p>}
       </>}
 
