@@ -17,7 +17,7 @@ export default function EmailForm({listName, tag}) {
           "/api/join-classes-mailing-list",
           {
             email,
-            tag
+            tags:tag
           }
         ).then(response => {
           setSubmitting(false)
