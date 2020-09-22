@@ -79,7 +79,7 @@ export default async function joinClassesMailingList(request: NowRequest, respon
         status: "active"
       });
     }
-    console.log("sending update for tags")
+    console.log("sending update for tags", tags)
 
     await axios.post(`https://us2.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}/tags`, {
       tags:tags,

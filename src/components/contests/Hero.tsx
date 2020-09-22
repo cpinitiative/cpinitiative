@@ -28,7 +28,7 @@ export default function Hero() {
                 </p>
                   <EmailForm
                     listName={"contest"}
-                    tag={"contest"}
+                    tag={"contests"}
                   />
                 </div>
             </div>
