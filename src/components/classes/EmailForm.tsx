@@ -13,7 +13,8 @@ export default function EmailForm({listName, tag}) {
         e.preventDefault()
         if (submitting) return
         if (!email || email.indexOf("@") === -1) {
-          setError(<>Please enter a valid email.</>)
+          setError(<>Please enter a valid email.</>);
+          return;
         }
         setSubmitting(true)
         axios.post(
@@ -27,7 +28,7 @@ export default function EmailForm({listName, tag}) {
           setSuccess(true)
         }).catch(error => {
           setSubmitting(false)
-          console.log(JSON.stringify({...error.response.data}))
+          console.log(JSON.stringify({...error}))
           if (error.response && error.response.data.code) {
             if (error.response.data.code === "already_subscribed") {
               setError(<>It looks like this email address is already on our list. If you don't think you're getting our
