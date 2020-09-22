@@ -8,39 +8,39 @@ export default function EmailForm({listName, tag}) {
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState<React.ReactNode>()
 
-  return (<>
-      <form onSubmit={e => {
-        e.preventDefault()
-        if (submitting) return
-        if (!email || email.indexOf("@") === -1) {
-          setError(<>Please enter a valid email.</>);
-          return;
-        }
-        setSubmitting(true)
-        axios.post(
-          "/api/join-classes-mailing-list",
-          {
-            email,
-            tags:tag
-          }
-        ).then(response => {
-          setSubmitting(false)
-          setSuccess(true)
-        }).catch(error => {
-          setSubmitting(false)
-          console.log(JSON.stringify({...error}))
-          if (error.response && error.response.data.code) {
-            if (error.response.data.code === "already_subscribed") {
-              setError(<>It looks like this email address is already on our list. If you don't think you're getting our
-                emails, please <a href={"mailto:usacoguide@gmail.com"} className={"text-red-600 hover:text-red-800 hover:underline"}>contact us</a>.</>)
-              return;
-            }
-          }
-          setError(<>An unknown error occurred. Please try again later or <a href={"mailto:usacoguide@gmail.com"} className={"text-red-600 hover:text-red-800 hover:underline"}>contact us</a>.</>)
-        })
-      }} className="mt-3 sm:flex">
-        <input value={email}
-               onChange={(e) => setEmail(e.target.value)}
+                 return (<>
+                 <form onSubmit={e => {
+                   e.preventDefault()
+                   if (submitting) return
+                   if (!email || email.indexOf("@") === -1) {
+                     setError(<>Please enter a valid email.</>);
+                     return;
+                   }
+                   setSubmitting(true)
+                   axios.post(
+                     "/api/join-classes-mailing-list",
+                     {
+                       email,
+                       tags:tag
+                     }
+                   ).then(response => {
+                     setSubmitting(false)
+                     setSuccess(true)
+                   }).catch(error => {
+                     setSubmitting(false)
+                     console.log({...error});
+                     if (error.response && error.response.data.code) {
+                       if (error.response.data.code === "already_subscribed") {
+                         setError(<>It looks like this email address is already on our list. If you don't think you're getting our
+                           emails, please <a href={"mailto:usacoguide@gmail.com"} className={"text-red-600 hover:text-red-800 hover:underline"}>contact us</a>.</>)
+                         return;
+                       }
+                     }
+                     setError(<>An unknown error occurred. Please try again later or <a href={"mailto:usacoguide@gmail.com"} className={"text-red-600 hover:text-red-800 hover:underline"}>contact us</a>.</>)
+                   })
+                 }} className="mt-3 sm:flex">
+                 <input value={email}
+                 onChange={(e) => setEmail(e.target.value)}
                aria-label="Email"
                className="appearance-none block w-full px-3 py-3 border border-gray-300 text-base leading-6 rounded-md placeholder-gray-500 shadow-sm focus:outline-none focus:placeholder-gray-400 focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:flex-1"
                placeholder="Enter your email"/>
