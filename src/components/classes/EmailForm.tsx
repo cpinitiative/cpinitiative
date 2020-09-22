@@ -37,6 +37,7 @@ export default function EmailForm({ listName, tag, wide }: {
           setEmail("");
         }).catch(error => {
           setSubmitting(false)
+          setAddedEmail(email);
           console.log({ ...error })
           if (error.response && error.response.data.code) {
             if (error.response.data.code === "already_subscribed") {

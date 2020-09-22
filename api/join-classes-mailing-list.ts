@@ -88,7 +88,7 @@ export default async function joinClassesMailingList(request: NowRequest, respon
       }
     })
   } catch (error) {
-    console.log("INTERNAL ERROR")
+    console.log("INTERNAL ERROR", error)
     console.log(error.response.data)
     response.status(500).json({
       success: false,
