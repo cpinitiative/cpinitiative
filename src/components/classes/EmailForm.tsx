@@ -29,7 +29,7 @@ export default function EmailForm({ listName, tag, wide }: {
         axios.post(
           "/api/join-classes-mailing-list",
           {
-            submittedEmail,
+            email: submittedEmail,
             tags: tag
           }
         ).then(response => {
