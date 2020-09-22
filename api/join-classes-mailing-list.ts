@@ -79,10 +79,10 @@ export default async function joinClassesMailingList(request: NowRequest, respon
         status: "active"
       });
     }
-    console.log("sending update for tags", tags)
+    console.log("sending update for tags", tags, transformedTags)
 
     await axios.post(`https://us2.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}/tags`, {
-      tags:tags,
+      tags:transformedTags,
     }, {
       auth: {
         username: "no-username",
@@ -90,7 +90,7 @@ export default async function joinClassesMailingList(request: NowRequest, respon
       }
     })
   } catch (error) {
-    console.log("INTERNAL ERROR", error)
+    console.log("INTERNAL ERROR")
     console.log(error.response.data)
     response.status(500).json({
       success: false,
