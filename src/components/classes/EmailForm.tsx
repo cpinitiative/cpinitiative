@@ -24,7 +24,7 @@ export default function EmailForm({listName, tag}) {
           setSuccess(true)
         }).catch(error => {
           setSubmitting(false)
-          console.log(error.toJSON())
+          console.log(error.response.data.toJSON())
           if (error.response && error.response.data.code) {
             if (error.response.data.code === "already_subscribed") {
               setError(<>It looks like this email address is already on our list. If you don't think you're getting our
