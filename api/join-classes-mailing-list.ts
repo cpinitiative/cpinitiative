@@ -11,12 +11,12 @@ export default async function joinClassesMailingList(request: NowRequest, respon
     tags:unprocessedTags
   } = request.body
   if (!unprocessedTags || !email) {
-    console.log("missing", email, unprocessedTags)
-    response.status(400).send(JSON.stringify({
+    console.log("missing", email, unprocessedTags, JSON.stringify(request.body))
+    response.status(400).json({
       success: false,
       code: "missing_parameters",
       message: "Either the email or tags field was not provided."
-    }))
+    })
   }
   const tags = unprocessedTags.split(",");
 
@@ -40,11 +40,11 @@ export default async function joinClassesMailingList(request: NowRequest, respon
     if (Object.keys(existingDataResponse).length > 0 && (existingDataResponse as AxiosResponse).data.tags && (existingDataResponse as AxiosResponse).data.tags.findIndex(c => c.name === "Classes Info") > -1) {
       console.log("already subscribed")
 
-      response.status(409).send(JSON.stringify({
+      response.status(409).json({
         success: false,
         code: "already_subscribed",
         message: "The email is already part of the Classes Info list."
-      }))
+      })
     }
     const data = {
       email_address: email,
@@ -91,15 +91,15 @@ export default async function joinClassesMailingList(request: NowRequest, respon
     })
   } catch (error) {
     console.log("INTERNAL ERROR", error)
-    response.status(500).send(JSON.stringify({
+    response.status(500).json({
       success: false,
       code: "internal_error",
       mailchimpErrorData: { ...error } // in case of circular JSON
-    }))
+    })
   }
   console.log("done")
-  response.status(200).send(JSON.stringify({
+  response.status(200).json({
     success: true,
     code: "subscribed"
-  }))
+  })
 }
