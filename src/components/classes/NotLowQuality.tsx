@@ -10,7 +10,7 @@ export default function() {
             Free doesn't mean low-quality.
           </p>
           <p className="mb-4">
-            With a team of past USACO Finalists and IOI Winners, we've created classes of the highest possible caliber, ensuring that our classes are just as competitive as paid alternatives.
+            With a team of past USACO Finalists, we've created classes of the highest possible caliber, ensuring that our classes are just as competitive as paid alternatives.
           </p>
           <p>
             We ask that students donate a small, tax-deductible amount to help fund the creation of these classes. If you're unable to pay, you'll get access to these classes <b>for free</b>.

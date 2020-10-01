@@ -10,7 +10,7 @@ import FAQ from "../components/clubs/FAQ"
 export default function Clubs() {
   return (
     <Layout>
-      <SEO title="Competitive Programming Clubs" description="Get access to curriculum, problemsets, and contests tailored for school clubs, created by past USACO Finalists and IOI Winners." />
+      <SEO title="Competitive Programming Clubs" description="Get access to curriculum, problemsets, and contests tailored for school clubs, created by past USACO Finalists." />
 
       <Header />
       <div className="margin-top-nav"/>

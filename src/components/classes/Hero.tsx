@@ -28,7 +28,7 @@ export default function Hero() {
                 <span className="text-purple-600">USACO Classes</span>
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                Learn USACO through high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists and IOI Winners.
+                Learn USACO through high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists.
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
