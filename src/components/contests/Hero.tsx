@@ -21,15 +21,18 @@ export default function Hero() {
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                 Get better at USACO by participating in monthly, beginner-focused Competitive Programming Contests! Targeted to both <Link to="/clubs" className="underline text-purple-600">school clubs</Link> and individual contestants.
               </p>
+              <p className="mt-1 text-base text-gray-500 sm:mt-2 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
+                We're also looking for <a href="https://forms.gle/YfewgWkAisz9JiBC8" className="underline text-purple-600" target="_blank">problem contributions</a>!
+              </p>
               <div className="mt-5 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <span id="signup" className="relative" style={{ bottom: "80px" }}/>
                 <p className="text-base font-medium text-gray-900">
                   Sign up to get notified when contests start!
                 </p>
-                  <EmailForm
-                    listName={"contest"}
-                    tag={"contests"}
-                  />
+                <EmailForm
+                  listName={"contest"}
+                  tag={"contests"}
+                />
                 </div>
             </div>
           </main>
