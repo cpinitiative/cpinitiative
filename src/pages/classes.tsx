@@ -19,7 +19,7 @@ export default function Classes() {
         </div>
         <div className="prose prose-lg text-gray-500 mx-auto">
           <ul>
-            <li><b>Timing:</b> Classes will be held on <b>Saturdays, 6:00-8:00PM (CST)</b>, from 10/31/2020 to 12/5/2020.</li>
+            <li><b>Timing:</b> Classes will be held on <b>Saturdays, <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=CPI+Trial+Classes&iso=20201031T18&p1=104&ah=2" target="_blank">6:00-8:00PM (CST)</a></b>, from 10/31/2020 to 12/5/2020.</li>
             <li><b>RSVP:</b> Sign up <a href="https://docs.google.com/forms/d/e/1FAIpQLSceTIaBikAACDla9OYtpHys596be3WPzkIT3LpjaFJovfDfAg/viewform" target="_blank">here!</a></li>
           </ul>
           <p>
