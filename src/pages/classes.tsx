@@ -12,6 +12,30 @@ export default function Classes() {
 
       <Header />
       <Hero />
+
+      <div className="relative px-4 sm:px-6 lg:px-8 py-16">
+        <div className="text-lg max-w-prose mx-auto mb-6">
+          <h1 className="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">Trial Classes</h1>
+        </div>
+        <div className="prose prose-lg text-gray-500 mx-auto">
+          <ul>
+            <li><b>Timing:</b> Classes will be held on <b>Saturdays, 6:00-8:00PM (CST)</b>, from 10/31/2020 to 12/5/2020.</li>
+            <li><b>RSVP:</b> Sign up <a href="https://docs.google.com/forms/d/e/1FAIpQLSceTIaBikAACDla9OYtpHys596be3WPzkIT3LpjaFJovfDfAg/viewform" target="_blank">here!</a></li>
+          </ul>
+          <p>
+            There will be 6 classes in total - the first 3 are for students at the USACO Bronze level, and the last 3 are for students at the USACO Silver level. However, anyone is free to attend any class that sounds interesting, and there are no restrictions based on skill level. Because these are trial classes, each class will have a completely different format. We want your feedback! Please let us know what you thought about the class you attended, possible changes we could make, things you want to see stay the same, etc.
+          </p>
+          <ol>
+            <li>Bronze Class 1 (10/31/2020): Introduction to Sets and Maps</li>
+            <li>Bronze Class 2 (11/7/2020): Introduction to Greedy Algorithms</li>
+            <li>Bronze Class 3 (11/14/2020): Introduction to Graphs</li>
+            <li>Silver Class 1 (11/21/2020): More Operations on Ordered ets</li>
+            <li>Silver Class 2 (11/28/2020): Prefix Sums</li>
+            <li>Silver Class 3 (12/5/2020): Two Pointers</li>
+          </ol>
+        </div>
+      </div>
+
       <NotLowQuality />
 
       <div className="relative py-16 bg-white overflow-hidden">
