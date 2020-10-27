@@ -3,7 +3,7 @@ import EmailForm from "./EmailForm"
 
 export default function Hero() {
   return (
-    <div className="relative bg-white overflow-hidden margin-top-nav">
+    <div className="relative bg-white overflow-hidden">
       <div className="hidden lg:block lg:absolute lg:inset-0">
         <svg className="absolute top-0 left-1/2 transform translate-x-64 -translate-y-8" width="640" height="784" fill="none" viewBox="0 0 640 784">
           <defs>

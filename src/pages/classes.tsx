@@ -11,6 +11,24 @@ export default function Classes() {
       <SEO title="Free Online USACO Classes" description="Learn USACO through high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists." />
 
       <Header />
+
+      <div className="margin-top-nav"/>
+
+      <div className="relative bg-purple-600">
+        <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+          <div className="pr-16 sm:text-center sm:px-16">
+            <p className="font-medium text-white">
+              Trial Class 1 (Intro to Sets and Maps) starts 10/31/2020!
+              <span className="block sm:ml-2 sm:inline-block">
+              <a href="https://usaco.guide/class/8yBhLoXL5uwpPrPmzIT5/join" target="_blank" className="text-white font-bold underline">
+                Join Now &rarr;
+              </a>
+            </span>
+            </p>
+          </div>
+        </div>
+      </div>
+
       <Hero />
 
       <div className="relative px-4 sm:px-6 lg:px-8 py-16">
