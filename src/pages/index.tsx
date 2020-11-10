@@ -5,6 +5,7 @@ import SEO from "../components/SEO"
 import Card from "../components/index/Card"
 import Header from "../components/Header"
 import Newsletter from "../components/index/Newsletter"
+import Team from "../components/index/Team"
 
 const IndexPage = () => (
   <Layout>
@@ -44,6 +45,8 @@ const IndexPage = () => (
       </div>
     </div>
     <Newsletter />
+
+    <Team />
   </Layout>
 )
 
