@@ -24,9 +24,8 @@ export default function AgendaAndContent() {
             <li>How do you get started with USACO?</li>
             <li>The USACO Guide</li>
             <li>CPI Classes</li>
-            <li>Questions!</li>
+            <li>Open Q&A</li>
           </ul>
-
         </div>
       </div>
     </div>

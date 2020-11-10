@@ -20,17 +20,19 @@ export default function Hero() {
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                 CPI will be holding an Introduction to USACO Webinar on November 28th, 5-6pm PST!
                 Join us to learn more about what USACO is, why you should do it, and how to get better at USACO!
-                While we encourage you to sign up below to help us gauge attendance, registration is not required to attend. You can join the webinar even without registering at
-                {" "}<a href="https://bit.ly/usaco-webinar-zoom" className="font-bold hover:underline" target={"_blank"} rel={"noreferrer noopener"}>https://bit.ly/usaco-webinar-zoom</a>.
               </p>
-              <div className="mt-5 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                  <a
-                    target={"_blank"} rel={"noopener noreferrer"} href={"https://docs.google.com/forms/d/1BaWsRPzK4V65nkXw744g6bh8b3sN0INpmJfMnbMve9Q/viewform?edit_requested=true"}
-                          className={("bg-purple-500 hover:bg-purple-400 focus:outline-none focus:bg-purple-400") + " w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white transition duration-150 ease-in-out"}>
-Sign Up Now                  </a>
+              <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                <div className="rounded-md shadow">
+                  <a href="https://docs.google.com/forms/d/1BaWsRPzK4V65nkXw744g6bh8b3sN0INpmJfMnbMve9Q/viewform" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                    Sign Up
+                  </a>
                 </div>
+                <div className="mt-3 sm:mt-0 sm:ml-3">
+                  <a href="mailto:usacoguide@gmail.com" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-purple-700 bg-purple-100 hover:text-purple-600 hover:bg-purple-50 focus:outline-none focus:shadow-outline-purple focus:border-purple-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                    Contact Us
+                  </a>
                 </div>
+              </div>
             </div>
           </main>
         </div>
