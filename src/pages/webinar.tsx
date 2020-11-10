@@ -4,11 +4,14 @@ import SEO from "../components/SEO"
 import Hero from "../components/webinar/Hero"
 import Header from "../components/Header"
 import AgendaAndContent from "../components/webinar/AgendaAndContent"
+import { graphql } from "gatsby"
 
-export default function Contests() {
+export default function Webinar({data}) {
   return (
     <Layout >
-      <SEO title="Beginner Competitive Programming Contests" description="Get better at USACO by participating in monthly, beginner-focused Competitive Programming Contests! Targeted to both school clubs and individual contestants." />
+      <SEO image={data.ogImage.childImageSharp.fluid}
+           title="Introduction to USACO Webinar"
+           description=" CPI will be holding an Introduction to USACO Webinar on November 28th, 5-6pm PST! Join us to learn more about what USACO is, why you should do it, and how to get better at USACO!" />
 
       <Header noBanner/>
       <div className="margin-top-nav"/>
@@ -17,3 +20,16 @@ export default function Contests() {
     </Layout>
   )
 }
+export const pageQuery = graphql`
+    query {
+        ogImage: file(relativePath: { eq: "webinar.jpg" }) {
+            childImageSharp {
+                # Specify the image processing specifications right in the query.
+                # Makes it trivial to update as your page's design changes.
+                fluid(maxWidth: 1200) {
+                    ...GatsbyImageSharpFluid_noBase64
+                }
+            }
+        }
+    }
+`;

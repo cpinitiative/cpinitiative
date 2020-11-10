@@ -3,6 +3,7 @@ module.exports = {
     title: `Competitive Programming Initiative`,
     description: `We promote competitive programming among students through resources, outreach, classes, and contests.`,
     author: `@cpinitiative`,
+    siteUrl:"https://joincpi.org",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
