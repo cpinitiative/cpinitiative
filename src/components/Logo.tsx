@@ -8,7 +8,7 @@ export default function Logo(props) {
       img: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
           fixed(height: 36, quality: 100) {
-            ...GatsbyImageSharpFixed
+            ...GatsbyImageSharpFixed_noBase64
           }
         }
       }
