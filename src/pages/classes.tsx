@@ -92,7 +92,7 @@ export default function Classes() {
           </div>
           <div className="prose prose-lg text-gray-500 mx-auto">
             <p>A CPI course consists of 12 weekly classes, each of which lasts 2 hours. Each class will consist of a lecture, challenging example problems, and problemsets for homework.</p>
-            <p>All classes have three instructors, one of which will be a USACO Finalist, and a maximum of 20 students each. Instructors will be able to answer any questions students may have during class. Students requiring personal assistance can reach out to instructors for one-on-one help after class.</p>
+            <p>All classes have three instructors, one of which will be a USACO Finalist. Instructors will be able to answer any questions students may have during class. Students requiring personal assistance can reach out to instructors for one-on-one help after class.</p>
             <p>In addition, there will be a contest every few weeks to allow students to identify their weak points and practice accordingly.</p>
 
             <h3>Class Schedule</h3>
