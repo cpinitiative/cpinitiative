@@ -18,7 +18,7 @@ export default function Classes() {
         <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
           <div className="pr-16 sm:text-center sm:px-16">
             <p className="font-medium text-white">
-              Trial Class 2 (Intro to Greedy) starts 11/7/2020!
+              Trial classes are underway!
               <span className="block sm:ml-2 sm:inline-block">
               <a href="https://usaco.guide/class/8yBhLoXL5uwpPrPmzIT5/join" target="_blank" className="text-white font-bold underline">
                 Join Now &rarr;
