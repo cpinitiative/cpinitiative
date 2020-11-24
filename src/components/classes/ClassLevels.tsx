@@ -112,7 +112,7 @@ export default function ClassLevels() {
                   </h3>
                 </div>
                 <div className="mt-4 text-lg leading-7 text-gray-600">
-                  If you aren't able to pay the full amount, don't worry. We've got you covered. Financial aid applicants are <i>not</i> disadvantaged in admissions.
+                  If you aren't able to pay the full amount, don't worry. We've got you covered.
                 </div>
               </div>
               <div className="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
