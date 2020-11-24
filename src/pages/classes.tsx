@@ -5,6 +5,7 @@ import Hero from "../components/classes/Hero"
 import Header from "../components/Header"
 import NotLowQuality from "../components/classes/NotLowQuality"
 import ClassLevels from "../components/classes/ClassLevels"
+import ClassInstructors from "../components/classes/ClassInstructors"
 
 
 export default function Contests() {
@@ -110,6 +111,8 @@ export default function Contests() {
       </div>
 
       <ClassLevels />
+
+      <ClassInstructors />
     </Layout>
   )
 }
