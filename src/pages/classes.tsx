@@ -67,6 +67,7 @@ export default function Contests() {
             <h3>Pricing</h3>
             <p>These classes are <b>not for profit</b> -- instructors are unpaid and volunteer their time to help USACO contestants. We recommend a <b>$250 donation</b> ($10.41/hour) to help support the creation of these classes and the infrastructure for the resources we provide such as the USACO Guide.</p>
             <p><b>Financial aid is available</b>. If you are unable to pay the full amount, just let us know!</p>
+            <p>Want to try out the class before donating? The <b>first class is free</b> -- you can choose whether to donate after attending the first class!</p>
 
             <h3>Programming Language</h3>
             <p>Both C++ and Java are acceptable for the class. While our class will primarily use Java, instructors are fully able to assist C++ users as well.</p>

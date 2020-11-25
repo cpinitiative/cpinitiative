@@ -12,7 +12,7 @@ export default function Hero() {
           <main className="pt-10 mx-auto max-w-screen-xl px-4 sm:pt-12 sm:px-6 md:pt-16 lg:pt-18 lg:px-8 xl:pt-24">
             <div className="sm:text-center lg:text-left">
               <div className="text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
-                Fully Online!
+                First Class Free!
               </div>
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                 USACO <span className="text-purple-600">Classes</span>
