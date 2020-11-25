@@ -65,7 +65,7 @@ export default function Contests() {
             </ul>
 
             <h3>Pricing</h3>
-            <p>These classes are <b>not for profit</b> -- instructors are unpaid and volunteer their time to help USACO contestants. We ask for for a <b>$250 donation</b> ($10.41/hour) to help support the creation of these classes and the infrastructure for the resources we provide such as the USACO Guide.</p>
+            <p>These classes are <b>not for profit</b> -- instructors are unpaid and volunteer their time to help USACO contestants. We recommend a <b>$250 donation</b> ($10.41/hour) to help support the creation of these classes and the infrastructure for the resources we provide such as the USACO Guide.</p>
             <p><b>Financial aid is available</b>. If you are unable to pay the full amount, just let us know!</p>
 
             <h3>Programming Language</h3>
