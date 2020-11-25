@@ -55,7 +55,7 @@ export default function ClassLevels() {
                     ))}
                   </ul>
                   <div className="rounded-md shadow">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSebcVc-rhN5BeZl0ms-cGuzgqmznBh9kyh-bStsPaWUyN7VkQ/viewform" target="_blank" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out" aria-describedby="tier-standard">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScKCrke0SfKBwqCrk0VtfXZsgdv-QP2xehU4hQ-Slg-wLyXGA/viewform" target="_blank" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out" aria-describedby="tier-standard">
                       Register - $250
                     </a>
                   </div>
@@ -93,7 +93,7 @@ export default function ClassLevels() {
                     ))}
                   </ul>
                   <div className="rounded-md shadow">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSebcVc-rhN5BeZl0ms-cGuzgqmznBh9kyh-bStsPaWUyN7VkQ/viewform" target="_blank" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out" aria-describedby="tier-standard">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScKCrke0SfKBwqCrk0VtfXZsgdv-QP2xehU4hQ-Slg-wLyXGA/viewform" target="_blank" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out" aria-describedby="tier-standard">
                       Register - $250
                     </a>
                   </div>
@@ -116,7 +116,7 @@ export default function ClassLevels() {
                 </div>
               </div>
               <div className="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSebcVc-rhN5BeZl0ms-cGuzgqmznBh9kyh-bStsPaWUyN7VkQ/viewform" target="_blank" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScmeNhI6SK1RmVqs2BiTEXADADnkFIPwa_T7yC6C2YkrRbBZA/viewform" target="_blank" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
                   Apply Now
                 </a>
               </div>

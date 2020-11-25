@@ -22,7 +22,7 @@ export default function Hero() {
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSebcVc-rhN5BeZl0ms-cGuzgqmznBh9kyh-bStsPaWUyN7VkQ/viewform" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScKCrke0SfKBwqCrk0VtfXZsgdv-QP2xehU4hQ-Slg-wLyXGA/viewform" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
                     Register Now
                   </a>
                 </div>
