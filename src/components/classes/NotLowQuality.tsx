@@ -13,7 +13,7 @@ export default function() {
             With a team of past USACO Finalists, we've created classes of the highest possible caliber that are just as competitive as more expensive alternatives.
           </p>
           <p className="mb-4">
-            While our instructors freely volunteer their time to help teach these classes, we ask that students donate $250 to help fund the creation of these classes ($10.41/hr). Of course, if you're unable to pay, you'll get access to these classes <b>for free</b>.
+            While our instructors freely volunteer their time to help teach these classes, we ask that students donate $250 to help fund the infrastructure costs of creating these classes ($10.41/hr). Of course, if you're unable to pay, you'll get access to these classes <b>for free</b>.
           </p>
           <p>
             Want to try out the class before donating? The <b>first class is free</b> -- you can choose whether to donate after attending the first class!
