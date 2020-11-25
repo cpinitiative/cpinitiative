@@ -40,7 +40,7 @@ export default function ClassLevels() {
                 </div>
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
-                    {["Fridays, 5-7pm Pacific Time. 1/9 to 3/27.", "File / Fast I/O", "Time Complexity", "Data Structures", "Simulation", "Rectangle Geometry", "Sorting Problems", "Sets & Maps", "Complete Search", "Ad Hoc Problems", "Greedy Algorithms", "Graphs"].map(s => (
+                    {["Fridays, 5-7pm Pacific Time. 1/8 to 3/26.", "File / Fast I/O", "Time Complexity", "Data Structures", "Simulation", "Rectangle Geometry", "Sorting Problems", "Sets & Maps", "Complete Search", "Ad Hoc Problems", "Greedy Algorithms", "Graphs"].map(s => (
                       <li className="flex items-start" key={s}>
                         <div className="flex-shrink-0">
                           {/* Heroicon name: check */}
@@ -78,7 +78,7 @@ export default function ClassLevels() {
                 </div>
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
-                    {["Wednesdays, 4-6pm Pacific Time. 1/7 to 3/25.", "Binary Search on Sorted Array", "Operations on Ordered Sets", "Custom Comparators", "Unordered Sets & Maps", "Prefix Sums", "Two Pointers", "Binary Search on the Answer", "Greedy Algorithms with Sorting", "Depth First Search", "Floodfill", "Tree Algorithms"].map(s => (
+                    {["Wednesdays, 4-6pm Pacific Time. 1/6 to 3/24.", "Binary Search on Sorted Array", "Operations on Ordered Sets", "Custom Comparators", "Unordered Sets & Maps", "Prefix Sums", "Two Pointers", "Binary Search on the Answer", "Greedy Algorithms with Sorting", "Depth First Search", "Floodfill", "Tree Algorithms"].map(s => (
                       <li className="flex items-start" key={s}>
                         <div className="flex-shrink-0">
                           {/* Heroicon name: check */}
