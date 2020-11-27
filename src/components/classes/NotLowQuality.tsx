@@ -3,10 +3,10 @@ import * as React from "react"
 export default function() {
   return (
     <div className="bg-purple-900 py-16 sm:py-20 px-4 sm:px-6">
-      <div className="mx-auto max-w-prose text-lg">
-        <h1 className="text-4xl font-black text-white text-center mb-8">Premium Quality, Affordable Cost.</h1>
+      <div className="mx-auto max-w-prose sm:text-lg">
+        <h1 className="text-2xl sm:text-4xl font-black text-white text-center mb-8">Premium Quality, Affordable Cost.</h1>
         <div className="text-purple-200">
-          <p className="text-xl text-white mb-4 font-bold">
+          <p className="sm:text-xl text-white mb-4 font-bold">
             Affordable doesn't mean low-quality.
           </p>
           <p className="mb-4">
