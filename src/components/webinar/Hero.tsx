@@ -18,8 +18,11 @@ export default function Hero() {
                 <span className="text-purple-600">Intro to USACO</span> Webinar
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                CPI will be holding an Introduction to USACO Webinar on November 28th, 5-6pm PST!
+                CPI will be holding an Introduction to USACO Webinar on November 28th, 5-5:40pm PST!
                 Join us to learn more about what USACO is, why you should do it, and how to get better at USACO!
+              </p>
+              <p className="mt-1 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
+                Zoom link: <a target="_blank" href="https://bit.ly/usaco-webinar-zoom" className="underline text-blue-600">https://bit.ly/usaco-webinar-zoom</a>
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">

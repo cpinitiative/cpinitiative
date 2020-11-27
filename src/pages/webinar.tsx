@@ -12,10 +12,12 @@ export default function Webinar({data}) {
     <Layout >
       <SEO image={data.ogImage.childImageSharp.fluid}
            title="Introduction to USACO Webinar"
-           description="CPI will be holding an Introduction to USACO Webinar on November 28th, 5-6pm PST! Join us to learn more about what USACO is, why you should do it, and how to get better at USACO!" />
+           description="CPI will be holding an Introduction to USACO Webinar on November 28th, 5-5:40pm PST! Join us to learn more about what USACO is, why you should do it, and how to get better at USACO!" />
 
-      <Header noBanner/>
+      <Header noBanner />
       <div className="margin-top-nav"/>
+      {/*/!* Banner margin *!/*/}
+      {/*<div className="h-20 sm:h-12"/>*/}
       <Hero />
       <AgendaAndContent />
       <WebinarPeople />
