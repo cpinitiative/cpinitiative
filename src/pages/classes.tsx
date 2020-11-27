@@ -6,6 +6,8 @@ import Header from "../components/Header"
 import NotLowQuality from "../components/classes/NotLowQuality"
 import ClassLevels from "../components/classes/ClassLevels"
 import ClassInstructors from "../components/classes/ClassInstructors"
+import EmailForm from "../components/classes/EmailForm"
+import Newsletter from "../components/index/Newsletter"
 
 
 export default function Contests() {
@@ -72,41 +74,6 @@ export default function Contests() {
             <h3>Programming Language</h3>
             <p>Both C++ and Java are acceptable for the class. While our class will primarily use Java, instructors are fully able to assist C++ users as well.</p>
 
-            {/*<h3>Introductory Class</h3>*/}
-            {/*<p>This course is meant for students who already know the basics of a programming language and are interested in learning more about competitive programming. The course will teach the necessary techniques needed to pass USACO Bronze.</p>*/}
-            {/*<b>Syllabus (not exhaustive):</b>*/}
-            {/*<ul>*/}
-            {/*  <li>File / Fast I/O</li>*/}
-            {/*  <li>Time Complexity</li>*/}
-            {/*  <li>Data Structures</li>*/}
-            {/*  <li>Simulation</li>*/}
-            {/*  <li>Rectangle Geometry</li>*/}
-            {/*  <li>Sorting Problems</li>*/}
-            {/*  <li>Sets & Maps</li>*/}
-            {/*  <li>Complete Search</li>*/}
-            {/*  <li>Ad Hoc Problems</li>*/}
-            {/*  <li>Greedy Algorithms</li>*/}
-            {/*  <li>Graphs</li>*/}
-            {/*</ul>*/}
-
-            {/*<h3>Intermediate Class</h3>*/}
-            {/*<p>This course is meant for students who are in the USACO Silver division or have taken our Introductory Class. The course will teach the necessary techniques needed to pass the USACO Silver contest.</p>*/}
-            {/*<b>Syllabus (Not Exhaustive):</b>*/}
-            {/*<ul>*/}
-            {/*  <li>Binary Search on Sorted Array</li>*/}
-            {/*  <li>Operations on Ordered Sets</li>*/}
-            {/*  <li>Custom Comparators</li>*/}
-            {/*  <li>Unordered Sets & Maps</li>*/}
-            {/*  <li>Prefix Sums</li>*/}
-            {/*  <li>Two Pointers</li>*/}
-            {/*  <li>Binary Search on the Answer</li>*/}
-            {/*  <li>Greedy Algorithms with Sorting</li>*/}
-            {/*  <li>Depth First Search</li>*/}
-            {/*  <li>Graph Two-Coloring</li>*/}
-            {/*  <li>Floodfill</li>*/}
-            {/*  <li>Tree Algorithms</li>*/}
-            {/*  <li>Functional Graphs</li>*/}
-            {/*</ul>*/}
           </div>
         </div>
       </div>
@@ -114,6 +81,8 @@ export default function Contests() {
       <ClassLevels />
 
       <ClassInstructors />
+
+      <Newsletter />
     </Layout>
   )
 }
