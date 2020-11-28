@@ -19,6 +19,26 @@ const members: Member[] = [
     name: "Nathan Wang",
     title: "Support Staff / 2x Finalist"
   },
+  {
+    photo: "yifan_ma",
+    name: "Yifan Ma",
+    title: "Instructor"
+  },
+  {
+    photo: "david_li",
+    name: "David Li",
+    title: "Instructor"
+  },
+  {
+    photo: "alex_chen",
+    name: "Alex Chen",
+    title: "Instructor"
+  },
+  {
+    photo: "amogha_pokkulandra",
+    name: "Amogha Pokkulandra",
+    title: "Instructor"
+  },
 ];
 
 export default function ClassInstructors() {
