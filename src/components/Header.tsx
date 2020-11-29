@@ -30,28 +30,28 @@ export default function Header({noBanner}:{
         <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
         <div className="pr-16 sm:text-center sm:px-16">
           <p className="font-medium text-white">
-            {/*<span className="md:hidden">*/}
-            {/*  Class registrations open!*/}
-            {/*</span>*/}
-            {/*<span className="hidden md:inline">*/}
-            {/*  Spring 2021 class registrations are now open!*/}
-            {/*</span>*/}
-            {/*<span className="block sm:ml-2 sm:inline-block">*/}
-            {/*  <Link to="/classes" className="text-white font-bold underline">*/}
-            {/*    Learn more &rarr;*/}
-            {/*  </Link>*/}
-            {/*</span>*/}
             <span className="md:hidden">
-             CPI is hosting an Introduction to USACO Webinar!
+              Class registrations open!
             </span>
             <span className="hidden md:inline">
-              On November 28, 5-5:40pm, CPI will be hosting an Introduction to USACO Webinar!
+              Spring 2021 class registrations are now open!
             </span>
             <span className="block sm:ml-2 sm:inline-block">
-              <Link to="/webinar" className="text-white font-bold underline">
+              <Link to="/classes" className="text-white font-bold underline">
                 Learn more &rarr;
               </Link>
             </span>
+            {/*<span className="md:hidden">*/}
+            {/* CPI is hosting an Introduction to USACO Webinar!*/}
+            {/*</span>*/}
+            {/*<span className="hidden md:inline">*/}
+            {/*  On November 28, 5-5:40pm, CPI will be hosting an Introduction to USACO Webinar!*/}
+            {/*</span>*/}
+            {/*<span className="block sm:ml-2 sm:inline-block">*/}
+            {/*  <Link to="/webinar" className="text-white font-bold underline">*/}
+            {/*    Learn more &rarr;*/}
+            {/*  </Link>*/}
+            {/*</span>*/}
           </p>
         </div>
         {/*<div className="absolute inset-y-0 right-0 pt-1 pr-1 flex items-start sm:pt-1 sm:pr-2 sm:items-start">*/}
