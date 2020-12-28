@@ -15,9 +15,14 @@ const members: Member[] = [
     title: "Lead Instructor / Finalist"
   },
   {
-    photo: "nathanw",
-    name: "Nathan Wang",
-    title: "Support Staff / 2x Finalist"
+    photo: "alex_chen",
+    name: "Alex Chen",
+    title: "Instructor / Platinum"
+  },
+  {
+    photo: "yu_lim",
+    name: "Yu Lim",
+    title: "Instructor / Platinum"
   },
   {
     photo: "yifan_ma",
@@ -30,13 +35,18 @@ const members: Member[] = [
     title: "Instructor"
   },
   {
-    photo: "alex_chen",
-    name: "Alex Chen",
+    photo: "amogha_pokkulandra",
+    name: "Amogha Pokkulandra",
     title: "Instructor"
   },
   {
-    photo: "amogha_pokkulandra",
-    name: "Amogha Pokkulandra",
+    photo: "amy_chang",
+    name: "Amy Chang",
+    title: "Instructor"
+  },
+  {
+    photo: "vikas_thoutam",
+    name: "Vikas Thoutam",
     title: "Instructor"
   },
 ];
