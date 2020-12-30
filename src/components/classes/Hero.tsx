@@ -12,7 +12,7 @@ export default function Hero() {
           <main className="pt-10 mx-auto max-w-screen-xl px-4 sm:pt-12 sm:px-6 md:pt-16 lg:pt-18 lg:px-8 xl:pt-24">
             <div className="sm:text-center lg:text-left">
               <div className="text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
-                First Class Free!
+                Fully Online!
               </div>
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                 USACO <span className="text-purple-600">Classes</span>
@@ -20,10 +20,13 @@ export default function Hero() {
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                 Learn USACO through affordable, high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists.
               </p>
+              <p className="mt-3 text-base text-gray-500 sm:mt-3 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
+                Due to high demand, we are unable to accept more students for the Spring semester. Join the mailing list to be notified for future class openings!
+              </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScKCrke0SfKBwqCrk0VtfXZsgdv-QP2xehU4hQ-Slg-wLyXGA/viewform" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-                    Register Now
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                    Join Mailing List
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">

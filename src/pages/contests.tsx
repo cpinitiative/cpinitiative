@@ -13,7 +13,7 @@ export default function Contests() {
       <Header />
       <div className="margin-top-nav"/>
       {/*Banner Padding*/}
-      <div className="h-20 sm:h-12"/>
+      {/*<div className="h-20 sm:h-12"/>*/}
       <Hero />
       <Divisions />
     </Layout>
