@@ -62,8 +62,8 @@ export default function Contests() {
 
             <h3>Class Schedule</h3>
             <ul>
-              <li>Introductory Class - Fridays, 5:00-7:00pm Pacific Time. 1/9 to 3/27.</li>
-              <li>Intermediate Class - Wednesdays, 4:00-6:00pm Pacific Time. 1/7 to 3/25.</li>
+              <li>Introductory Class - Fridays, 5:00-7:00pm Pacific Time. 1/8 to 3/26.</li>
+              <li>Intermediate Class - Wednesdays, 4:00-6:00pm Pacific Time. 1/6 to 3/24.</li>
             </ul>
 
             <h3>Pricing</h3>
