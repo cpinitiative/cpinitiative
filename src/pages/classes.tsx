@@ -13,7 +13,7 @@ import Newsletter from "../components/index/Newsletter"
 export default function Contests() {
   return (
     <Layout>
-      <SEO title="Online USACO Classes" description="Learn USACO through afforable, high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists." />
+      <SEO title="Online USACO Classes" description="Learn USACO through affordable, high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists." />
 
       <Header noBanner={true} />
       <div className="margin-top-nav"/>

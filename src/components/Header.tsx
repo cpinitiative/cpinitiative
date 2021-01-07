@@ -17,10 +17,7 @@ export default function Header({noBanner}:{
       label: "Clubs",
       url: "/clubs",
     },
-    {
-      label: "Contests",
-      url: "/contests",
-    },
+
   ];
 
   return (
