@@ -60,8 +60,8 @@ export default function EmailForm({ listName, tag, wide }: {
                aria-label="Email"
                disabled={submitting}
                className={wide ?
-                 "appearance-none w-full px-5 py-3 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out sm:w-screen sm:max-w-xs"
-                 : "appearance-none block w-full px-3 py-3 border border-gray-300 text-base leading-6 rounded-md placeholder-gray-500 shadow-sm focus:outline-none focus:placeholder-gray-400 focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:flex-1"
+                 "appearance-none w-full px-5 py-3 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-transparent focus:placeholder-gray-400 transition duration-150 ease-in-out sm:w-screen sm:max-w-xs"
+                 : "appearance-none block w-full px-3 py-3 border border-gray-300 text-base leading-6 rounded-md placeholder-gray-500 shadow-sm focus:outline-none focus:ring-0 focus:border-transparent focus:placeholder-gray-400 transition duration-150 ease-in-out sm:flex-1"
                }
                placeholder="Enter your email"/>
 
