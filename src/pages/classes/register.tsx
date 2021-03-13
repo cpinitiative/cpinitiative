@@ -73,15 +73,7 @@ export default function Contests() {
   const faDataIsValid = useMemo(() => {
     return !(!faWhyInNeed || !faAmount || !faWhyTakeCourse)
   }, [faWhyInNeed, faAmount, faWhyTakeCourse])
-  console.log({
-    firstName,
-    lastName,
-    email,
-    preferredLanguage,
-    referrer,
-    referrerDetail,
-    timezone,
-  })
+
   return (
     <Layout grayFooter className="bg-gray-100">
       <SEO

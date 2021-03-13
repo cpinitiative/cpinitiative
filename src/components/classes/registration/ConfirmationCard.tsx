@@ -19,7 +19,7 @@ export default function ({ financialAid, level, email, registrationId }) {
                 email within one week.
               </p>
               <p>
-                <b>Application ID:</b> {registrationId}
+                <b>Your Application ID:</b> {registrationId}
               </p>
             </>
           ) : (
@@ -30,7 +30,7 @@ export default function ({ financialAid, level, email, registrationId }) {
               classes@joincpi.org with the subject{" "}
               <i>
                 Welcome to your CPI{" "}
-                {level == "beginner" ? "Beginner" : "Intermediate"} Class!
+                {level == "beginner" ? "Beginner" : "Intermediate"} USACO Class!
               </i>{" "}
               containing all the information necessary for this course.{" "}
               <b>
@@ -41,7 +41,7 @@ export default function ({ financialAid, level, email, registrationId }) {
                 .
               </b>
               <p>
-                <b>Registration ID:</b> {registrationId}
+                <b>Your Registration ID:</b> {registrationId}
               </p>
             </>
           )}

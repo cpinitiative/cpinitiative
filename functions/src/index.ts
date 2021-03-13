@@ -93,12 +93,11 @@ export const processClassRegistration = functions.https.onCall(
           // so just assume there is no previous data
           return Promise.resolve({})
         })
-      console.log("IP ADDRESS: " + context.rawRequest.headers["client-ip"])
       const data = {
         email_address: email,
         status: "subscribed",
         status_if_new: "subscribed",
-        ip_signup: context.rawRequest.headers["client-ip"],
+        ip_signup: context.rawRequest.ip,
         merge_fields: {
           ...(existingFields?.merge_fields || {}),
           FNAME: firstName,

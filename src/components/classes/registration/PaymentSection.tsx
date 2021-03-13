@@ -158,7 +158,8 @@ export default function PaymentSection({
                           orderData: data,
                         })
                         .then(data => {
-                          setRegistrationId(data.registrationId)
+                          console.log(data)
+                          setRegistrationId(data.data.registrationId)
                           setSuccess(true)
                           setSubmitting(false)
                         })
