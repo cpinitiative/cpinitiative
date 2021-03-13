@@ -64,8 +64,7 @@ export default function Contests() {
         description="Learn USACO through affordable, high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists."
       />
       <Header noBanner={true} />
-      <div className="margin-top-nav" />
-      <div className={"bg-gray-100"}>
+      <div className={"bg-gray-100 min-h-screen"}>
         <div className={"px-5 sm:px-12 max-w-6xl mx-auto pt-10"}>
           {success && (
             <div>
@@ -109,7 +108,35 @@ export default function Contests() {
               </div>
             </div>
           )}
-          {!success && (
+          {submitting && !success && (
+            <div>
+              <div className="md:grid md:grid-cols-3 md:gap-6">
+                <div className="md:col-span-1">
+                  <div className="px-4 sm:px-0">
+                    <h3 className="text-lg font-medium leading-6 text-gray-900">
+                      Processing Registration
+                    </h3>
+                  </div>
+                </div>
+                <div className="mt-5 md:mt-0 md:col-span-2">
+                  <div className="shadow sm:rounded-md sm:overflow-hidden">
+                    <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
+                      <p>
+                        {" "}
+                        We are currently submitting your{" "}
+                        {financialAid ? "application" : "registration"}. This
+                        typically takes about one minute.
+                      </p>{" "}
+                      <p>
+                        <b>Please do not reload or close this page.</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+          {!success && !submitting && (
             <>
               <div className="md:grid md:grid-cols-3 md:gap-6">
                 <div className="md:col-span-1">
@@ -541,9 +568,7 @@ export default function Contests() {
                                   })
                               }}
                             >
-                              {submitting
-                                ? "Submitting Application..."
-                                : "Submit Application"}
+                              Submit Application
                             </button>
                           </div>
                         </div>
@@ -655,31 +680,24 @@ export default function Contests() {
                                   }
                                 }}
                                 onSuccess={(details, data) => {
-                                  alert(
-                                    "Transaction completed by " +
-                                      details.payer.name.given_name
-                                  )
+                                  setSubmitting(true)
                                   firebase
                                     .functions()
                                     .httpsCallable("processClassRegistration")({
-                                    level,
-                                    firstName,
-                                    lastName,
-                                    email,
-                                    preferredLanguage,
-                                    referrer,
-                                    referrerDetail,
-                                    timezone,
-                                    orderData: data,
-                                  })
-                                  // OPTIONAL: Call your server to save the transaction
-                                  // return fetch("/paypal-transaction-complete", {
-                                  //   method: "post",
-                                  //   body: JSON.stringify({
-                                  //     orderID: data.orderID,
-                                  //   }),
-                                  // })
-                                  // TODO: call function
+                                      level,
+                                      firstName,
+                                      lastName,
+                                      email,
+                                      preferredLanguage,
+                                      referrer,
+                                      referrerDetail,
+                                      timezone,
+                                      orderData: data,
+                                    })
+                                    .then(() => {
+                                      setSuccess(true)
+                                      setSubmitting(false)
+                                    })
                                 }}
                                 options={{
                                   disableFunding: "credit",
