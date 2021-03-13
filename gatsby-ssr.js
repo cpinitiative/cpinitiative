@@ -7,6 +7,6 @@ import React from "react"
 
 import { FirebaseProvider } from "./src/firebase/FirebaseContext"
 
-export const wrapRootElement = ({ element }) => (
-  <FirebaseProvider>{element}</FirebaseProvider>
-)
+export function wrapRootElement({ element }) {
+  return <FirebaseProvider>{element}</FirebaseProvider>
+}

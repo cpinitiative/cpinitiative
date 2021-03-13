@@ -1,7 +1,7 @@
 {
   "name": "functions",
   "scripts": {
-    "lint": "eslint --ext .js,.ts .",
+    "lint": "",
     "build": "tsc",
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
@@ -14,7 +14,9 @@
   },
   "main": "lib/index.js",
   "dependencies": {
-    "firebase-admin": "^9.2.0",
+    "@paypal/checkout-server-sdk": "^1.0.2",
+    "axios": "^0.21.1",
+    "firebase-admin": "^9.5.0",
     "firebase-functions": "^3.11.0"
   },
   "devDependencies": {
