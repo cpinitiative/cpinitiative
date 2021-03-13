@@ -17,7 +17,9 @@ import PaymentSection from "../../components/classes/registration/PaymentSection
 
 export default function Contests() {
   const [level, setLevel] = useState<"" | "beginner" | "intermediate">(
-    ["beginner", "intermediate"].includes(window.location.hash.substring(1))
+    typeof window === "undefined"
+      ? ""
+      : ["beginner", "intermediate"].includes(window.location.hash.substring(1))
       ? window.location.hash.substring(1) == "beginner"
         ? "beginner"
         : "intermediate"
