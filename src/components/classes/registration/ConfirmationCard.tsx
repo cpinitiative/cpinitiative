@@ -36,8 +36,13 @@ export default function ({ financialAid, level, email, registrationId }) {
               <b>
                 If you don't see the email after a few minutes, please check
                 your promotions and spam tabs (and mark classes@joincpi.org as a
-                trusted sender). If it's still not there, email us at{" "}
-                <a className={"underline text-blue-700"}>classes@joincpi.org</a>
+                trusted sender). If you still don't see it, email us at{" "}
+                <a
+                  className={"underline text-blue-700"}
+                  href={"mailto:classes@joincpi.org"}
+                >
+                  classes@joincpi.org
+                </a>
                 .
               </b>
               <p>

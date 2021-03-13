@@ -33,7 +33,6 @@ export const processClassRegistration = functions.https.onCall(
       !lastName ||
       !email ||
       !preferredLanguage ||
-      !referrerDetail ||
       !referrer ||
       !timezone ||
       !orderData ||

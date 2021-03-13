@@ -181,11 +181,16 @@ export default function PaymentSection({
                                   , and include a screenshot of this page.
                                 </p>
                                 <p>
-                                  <b>Order Details: </b>{" "}
-                                  {JSON.stringify({
-                                    data,
-                                    e,
-                                  })}
+                                  <b>Order Details: </b>
+                                  <textarea
+                                    rows={4}
+                                    readOnly={true}
+                                    value={JSON.stringify({
+                                      data,
+                                      e,
+                                    })}
+                                    className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                  />
                                 </p>
                               </>
                             ),
