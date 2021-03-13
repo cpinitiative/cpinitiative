@@ -64,7 +64,7 @@ export default function Contests() {
         description="Learn USACO through affordable, high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists."
       />
       <Header noBanner={true} />
-      <div className={"bg-gray-100 min-h-screen"}>
+      <div className={"bg-gray-100 "}>
         <div className={"px-5 sm:px-12 max-w-6xl mx-auto pt-10"}>
           {success && (
             <div>
