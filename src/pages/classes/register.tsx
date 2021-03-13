@@ -58,36 +58,32 @@ export default function Contests() {
     return !(!faWhyInNeed || !faAmount || !faWhyTakeCourse)
   }, [faWhyInNeed, faAmount, faWhyTakeCourse])
   return (
-    <Layout grayFooter>
+    <Layout grayFooter className="bg-gray-100">
       <SEO
         title="Online USACO Classes"
         description="Learn USACO through affordable, high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists."
       />
       <Header noBanner={true} />
-      <div className={"bg-gray-100 "}>
+      <div className={"margin-top-nav"}>
         <div className={"px-5 sm:px-12 max-w-6xl mx-auto pt-10"}>
           {success && (
-            <div>
-              <div className="md:grid md:grid-cols-3 md:gap-6">
-                <div className="md:col-span-1">
-                  <div className="px-4 sm:px-0">
-                    <h3 className="text-lg font-medium leading-6 text-gray-900">
+                <div className="mt-5">
+                  <div className="shadow sm:rounded-md sm:overflow-hidden">
+                    <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
+                    <h3 className="text-lg font-medium leading-6 text-gray-900 mb-2">
                       Success!
                     </h3>
-                  </div>
-                </div>
-                <div className="mt-5 md:mt-0 md:col-span-2">
-                  <div className="shadow sm:rounded-md sm:overflow-hidden">
+
                     {financialAid ? (
-                      <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
-                        We've successfully received your application for the{" "}
+                      <>
+                        We have successfully received your application for the{" "}
                         {level == "beginner" ? "Beginner" : "Intermediate"}{" "}
                         USACO Class. We will review your application and send
                         you a decision via email within one week.
-                      </div>
+                      </>
                     ) : (
-                      <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
-                        We successfully processed your registration for the{" "}
+                      <>
+                        We have successfully processed your registration for the{" "}
                         {level == "beginner" ? "Beginner" : "Intermediate"}{" "}
                         USACO Class. Within one hour, {email} will receive an
                         email with the subject "Welcome to your CPI Beginner
@@ -101,27 +97,20 @@ export default function Contests() {
                             classes@joincpi.org
                           </a>
                         </b>
-                      </div>
+                      </>
                     )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
           )}
           {submitting && !success && (
-            <div>
-              <div className="md:grid md:grid-cols-3 md:gap-6">
-                <div className="md:col-span-1">
-                  <div className="px-4 sm:px-0">
-                    <h3 className="text-lg font-medium leading-6 text-gray-900">
-                      Processing Registration
-                    </h3>
-                  </div>
-                </div>
-                <div className="mt-5 md:mt-0 md:col-span-2">
+                <div className="mt-5">
                   <div className="shadow sm:rounded-md sm:overflow-hidden">
-                    <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
-                      <p>
+                    <div className="px-4 py-5 bg-white sm:p-6">
+                      <h3 className="text-lg font-medium leading-6 text-gray-900 mb-3">
+                        Loading...
+                      </h3>
+                      <p className="mb-1">
                         {" "}
                         We are currently submitting your{" "}
                         {financialAid ? "application" : "registration"}. This
@@ -133,8 +122,6 @@ export default function Contests() {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
           )}
           {!success && !submitting && (
             <>
