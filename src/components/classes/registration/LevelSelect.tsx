@@ -23,7 +23,7 @@ export default function LevelSelect({
           role="radio"
           aria-checked={level == "beginner"}
           onClick={() => setLevel("beginner")}
-          className="group relative bg-white rounded-lg shadow-sm cursor-pointer focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-indigo-500"
+          className="group relative bg-white rounded-lg shadow-sm cursor-pointer focus:outline-none"
         >
           <div className="rounded-lg border border-gray-300 bg-white px-6 py-4 hover:border-gray-400 sm:flex sm:justify-between">
             <div className="flex items-center">
@@ -39,7 +39,7 @@ export default function LevelSelect({
             <div className="mt-2 flex text-sm sm:mt-0 sm:block sm:ml-4 sm:text-right">
               <div className="font-medium text-gray-900">$100</div>
               <div className="ml-1 text-gray-500 sm:ml-0">
-                Tuesdays, 5-7pm PST
+                Tuesdays, 5-7pm PDT
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function LevelSelect({
           role="radio"
           aria-checked={level == "intermediate"}
           onClick={() => setLevel("intermediate")}
-          className="group relative bg-white rounded-lg shadow-sm cursor-pointer focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-indigo-500"
+          className="group relative bg-white rounded-lg shadow-sm cursor-pointer focus:outline-none"
         >
           <div className="rounded-lg border border-gray-300 bg-white px-6 py-4 hover:border-gray-400 sm:flex sm:justify-between">
             <div className="flex items-center">
@@ -74,7 +74,7 @@ export default function LevelSelect({
             <div className="mt-2 flex text-sm sm:mt-0 sm:block sm:ml-4 sm:text-right">
               <div className="font-medium text-gray-900">$100</div>
               <div className="ml-1 text-gray-500 sm:ml-0">
-                Fridays, 4-6pm PST
+                Fridays, 4-6pm PDT
               </div>
             </div>
           </div>
