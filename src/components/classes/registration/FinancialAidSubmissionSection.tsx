@@ -86,7 +86,7 @@ export default function FinancialAidSubmissionSection({
               <button
                 type="submit"
                 disabled={submitting}
-                className="mt-2 bg-indigo-600 border border-transparent w-full rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
+                className="my-2 bg-indigo-600 border border-transparent w-full rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
                 onClick={() => {
                   setHasAttemptedPayment(true)
                   if (!faDataIsValid || !dataIsValid || !faTermsAgree) {
