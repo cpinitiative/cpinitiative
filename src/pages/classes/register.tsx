@@ -16,17 +16,29 @@ import FinancialAidSubmissionSection from "../../components/classes/registration
 import PaymentSection from "../../components/classes/registration/PaymentSection"
 
 export default function Contests() {
-  const [level, setLevel] = useState<"" | "beginner" | "intermediate">(
-    typeof window === "undefined"
-      ? ""
-      : ["beginner", "intermediate"].includes(window.location.hash.substring(1))
-      ? window.location.hash.substring(1) == "beginner"
-        ? "beginner"
-        : "intermediate"
-      : ""
-  )
+  const [level, setLevel] = useState<"" | "beginner" | "intermediate">("")
   useEffect(() => {
-    window.location.hash = "#" + level
+    const handler = () => {
+      if (
+        ["beginner", "intermediate"].includes(window.location.hash.substring(1))
+      ) {
+        setLevel(
+          window.location.hash.substring(1) == "beginner"
+            ? "beginner"
+            : "intermediate"
+        )
+      }
+    }
+    document.addEventListener("hashchange", handler)
+    handler()
+    return () => {
+      document.removeEventListener("hashchange", handler)
+    }
+  }, [])
+  useEffect(() => {
+    if (["beginner", "intermediate"].includes(level)) {
+      window.location.hash = "#" + level
+    }
   }, [level])
   const [errorData, setErrorData] = useState<{
     title?: string

@@ -39,7 +39,7 @@ export default function LevelSelect({
             <div className="mt-2 flex text-sm sm:mt-0 sm:block sm:ml-4 sm:text-right">
               <div className="font-medium text-gray-900">$100</div>
               <div className="ml-1 text-gray-500 sm:ml-0">
-                Tuesdays, 5-7pm PDT
+                Fridays, 5-7pm PDT
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function LevelSelect({
             <div className="mt-2 flex text-sm sm:mt-0 sm:block sm:ml-4 sm:text-right">
               <div className="font-medium text-gray-900">$100</div>
               <div className="ml-1 text-gray-500 sm:ml-0">
-                Fridays, 4-6pm PDT
+                Saturdays, 4-6pm PDT
               </div>
             </div>
           </div>

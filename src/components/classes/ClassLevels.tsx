@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import * as React from "react"
+import { navigate } from '@reach/router';
 
 export default function ClassLevels() {
   return (
@@ -82,8 +83,7 @@ export default function ClassLevels() {
                   </ul>
                   <div className="rounded-md shadow">
                     <Link
-                      to="register#beginner"
-                      target="_blank"
+                      to="/classes/register/#beginner"
                       className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                       aria-describedby="tier-standard"
                     >
@@ -151,8 +151,7 @@ export default function ClassLevels() {
                   </ul>
                   <div className="rounded-md shadow">
                     <Link
-                      to="register#intermediate"
-                      target="_blank"
+                      to="/classes/register/#intermediate"
                       className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                       aria-describedby="tier-standard"
                     >
