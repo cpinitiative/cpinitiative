@@ -27,7 +27,7 @@ export default function Header({ noBanner }: { noBanner?: boolean }) {
               Class registrations open!
             </span>
             <span className="hidden md:inline">
-              Spring 2021 class registrations are now open!
+              Class registrations are now open!
             </span>
             <span className="block sm:ml-2 sm:inline-block">
               <Link to="/classes" className="text-white font-bold underline">
