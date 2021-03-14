@@ -121,6 +121,7 @@ export default function FinancialAidSubmissionSection({
                       },
                       financialAid: true,
                       paid: false,
+                      status:"PENDING",
                       financialAidApplication: {
                         amount: parseInt(faAmount, 10),
                         whyInNeed: faWhyInNeed,

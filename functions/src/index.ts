@@ -89,6 +89,9 @@ export const processClassRegistration = functions.https.onCall(
           console.log("Mailchimp Existing Fields GET Error")
           // the user probably doesn't exist
           // so just assume there is no previous data
+          if (e.status != 404) {
+            console.log(e?.toJSON())
+          }
           return Promise.resolve({})
         })
       const data = {
@@ -164,7 +167,7 @@ export const processClassRegistration = functions.https.onCall(
         timezone,
       },
       timestamp: admin.firestore.FieldValue.serverTimestamp(),
-    });
+    })
 
     return {
       registrationId: ref.id,
