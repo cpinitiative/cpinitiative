@@ -11,7 +11,7 @@ function SEO({
   title,
   pathname,
 }) {
-  const { site, image: defaultImage } = useStaticQuery(
+  const { site } = useStaticQuery(
     graphql`
       query {
         site {
