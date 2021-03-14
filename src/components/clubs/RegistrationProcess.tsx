@@ -22,7 +22,6 @@ export default function RegistrationProcess() {
               >
                 https://forms.gle/ha9pQnHFNZZc6Y3W9
               </a>
-              .
             </p>
           </div>
           <div>
@@ -55,7 +54,14 @@ export default function RegistrationProcess() {
                 Calendly
               </a>
               . If you can't find a time that works for you, send us a message
-              through Discord or at usacoguide@gmail.com.
+              through Discord or at{" "}
+              <a
+                href="mailto:usacoguide@gmail.com"
+                className="font-semibold text-black underline"
+              >
+                usacoguide@gmail.com
+              </a>
+              .
             </p>
           </div>
         </div>
