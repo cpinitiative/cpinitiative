@@ -40,6 +40,10 @@ export default function Contests() {
       window.location.hash = "#" + level
     }
   }, [level])
+  // for some reason, clicking the "Register Now" button wouldn't scroll to the top of the window.
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   const [errorData, setErrorData] = useState<{
     title?: string
     message?: React.ReactNode
