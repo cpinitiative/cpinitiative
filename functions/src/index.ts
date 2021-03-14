@@ -33,7 +33,6 @@ export const processClassRegistration = functions.https.onCall(
       !lastName ||
       !email ||
       !preferredLanguage ||
-      !referrerDetail ||
       !referrer ||
       !timezone ||
       !orderData ||
@@ -41,7 +40,7 @@ export const processClassRegistration = functions.https.onCall(
     ) {
       throw new functions.https.HttpsError(
         "invalid-argument",
-        "The function was not called with the correct data."
+        "The request to verify the payment was called with improper data."
       )
     }
 
@@ -97,11 +96,12 @@ export const processClassRegistration = functions.https.onCall(
         email_address: email,
         status: "subscribed",
         status_if_new: "subscribed",
-        ip_signup: context.rawRequest.headers["client-ip"],
+        ip_signup: context.rawRequest.ip,
         merge_fields: {
           ...(existingFields?.merge_fields || {}),
           FNAME: firstName,
           LNAME: lastName,
+          PROGLANG: preferredLanguage == "java" ? "Java" : "C++",
         },
       }
 
@@ -139,31 +139,36 @@ export const processClassRegistration = functions.https.onCall(
       console.log("INTERNAL ERROR", error)
       throw new functions.https.HttpsError(
         "internal",
-        "An internal error occurred while trying to send an email."
+        "An internal error occurred while trying to send the order confirmation email."
       )
     }
 
-    return admin
+    const ref = admin
       .firestore()
       .collection("classes-registration")
       .doc("2021march")
       .collection("registrations")
-      .add({
-        financialAid: false,
-        paid: true,
-        orderId: orderData.orderID,
-        orderDetails: orderData,
-        level,
-        personalInfo: {
-          firstName,
-          lastName,
-          email,
-          preferredLanguage,
-          referrer,
-          referrerDetail,
-          timezone,
-        },
-        timestamp: admin.firestore.FieldValue.serverTimestamp(),
-      })
+      .doc()
+    await ref.set({
+      financialAid: false,
+      paid: true,
+      orderId: orderData.orderID,
+      orderDetails: orderData,
+      level,
+      personalInfo: {
+        firstName,
+        lastName,
+        email,
+        preferredLanguage,
+        referrer,
+        referrerDetail,
+        timezone,
+      },
+      timestamp: admin.firestore.FieldValue.serverTimestamp(),
+    })
+    return {
+      registrationId: ref.id,
+      paymentId: orderID,
+    }
   }
 )
