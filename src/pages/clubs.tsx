@@ -6,6 +6,7 @@ import WhyJoin from "../components/clubs/WhyJoin"
 import CTA from "../components/clubs/CTA"
 import Header from "../components/Header"
 import FAQ from "../components/clubs/FAQ"
+import RegistrationProcess from "../components/clubs/RegistrationProcess"
 
 export default function Clubs() {
   return (
@@ -18,6 +19,7 @@ export default function Clubs() {
       {/*<div className="h-20 sm:h-12"/>*/}
       <Hero />
       <WhyJoin />
+      <RegistrationProcess />
       {/*<FAQ />*/}
       <CTA />
     </Layout>
