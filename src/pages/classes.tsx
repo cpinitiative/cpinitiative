@@ -8,8 +8,9 @@ import ClassLevels from "../components/classes/ClassLevels"
 import ClassInstructors from "../components/classes/ClassInstructors"
 import EmailForm from "../components/classes/EmailForm"
 import Newsletter from "../components/index/Newsletter"
+import { Link } from "gatsby"
 
-export default function Contests() {
+export default function Classes() {
   return (
     <Layout>
       <SEO
@@ -17,167 +18,346 @@ export default function Contests() {
         description="Learn USACO through affordable, high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists."
       />
 
-      <Header noBanner={true} />
-      <div className="margin-top-nav" />
-      <Hero />
-      <NotLowQuality />
+      <div className="bg-white">
+        <div className="relative overflow-hidden">
+          <Header noBanner={true} />
+          <div className="margin-top-nav" />
+          <div>
+            <div className="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
+              <div className="mx-auto max-w-7xl lg:px-8">
+                <div className="lg:grid lg:grid-cols-8 lg:gap-8">
+                  <div className="mx-auto lg:ml-0 max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center lg:col-span-5">
+                    <div className="lg:py-24">
+                      <h1 className="text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+                        <span className="block">Quality Online</span>
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 block">USACO Classes</span>
+                      </h1>
+                      <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                        Learn USACO through affordable, high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists.
+                      </p>
+                      <div className="mt-10 sm:mt-12 sm:space-x-4">
+                        <Link to="register" className="inline-flex text-lg py-4 px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
+                          Register Now
+                        </Link>
+                        <a href="mailto:classes@joincpi.org" target="_blank" className="inline-flex text-lg py-4 px-8 rounded-md shadow bg-gray-800 text-white font-medium hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:ring-offset-gray-900">
+                          Contact Us
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mt-12 -mb-16 sm:-mb-48 lg:mt-10 lg:-mb-16 lg:relative lg:col-span-3">
+                    <div className="mx-auto max-w-md px-4 sm:max-w-xl sm:px-6 lg:max-w-none lg:px-0">
+                      {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
+                      <img className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="/classes_illustration.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Feature section with grid */}
+            <div className="relative bg-white py-16 sm:py-24 lg:py-32">
+              <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+                <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">Why Us?</h2>
+                <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+                  Premium Quality, Affordable Cost.
+                </p>
+                <p className="mt-8 max-w-prose mx-auto text-xl text-gray-500">
+                  <span className="font-bold block mb-2 text-gray-900">Affordable doesn't mean low-quality.</span>
+                  <span>With a team of past USACO Finalists, we've created classes of the highest possible caliber that are just as competitive as more expensive alternatives.</span>
+                </p>
+                <div className="mt-16">
+                  <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="pt-6">
+                      <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                        <div className="-mt-6">
+                          <div>
+                      <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                        <svg  className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+</svg>
+                      </span>
+                          </div>
+                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">Vetted Instructors</h3>
+                          <p className="mt-5 text-base text-gray-500">
+                            Our vetted instructors are not only experts in their domains, but are also experienced instructors.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-6">
+                      <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                        <div className="-mt-6">
+                          <div>
+                      <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                        <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+                      </span>
+                          </div>
+                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">Office Hours</h3>
+                          <p className="mt-5 text-base text-gray-500">
+                            In order to ensure student success, we host weekly office hours where students can ask for help from instructors.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-6">
+                      <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                        <div className="-mt-6">
+                          <div>
+                      <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
 
-      <div className="relative py-16 bg-white overflow-hidden">
-        <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
-          <div className="relative h-full text-lg max-w-prose mx-auto">
-            <svg
-              className="absolute top-12 left-full transform translate-x-32"
-              width="404"
-              height="384"
-              fill="none"
-              viewBox="0 0 404 384"
-            >
-              <defs>
-                <pattern
-                  id="74b3fd99-0a6f-4271-bef2-e80eeafdf357"
-                  x="0"
-                  y="0"
-                  width="20"
-                  height="20"
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect
-                    x="0"
-                    y="0"
-                    width="4"
-                    height="4"
-                    className="text-gray-200"
-                    fill="currentColor"
-                  />
-                </pattern>
-              </defs>
-              <rect
-                width="404"
-                height="384"
-                fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)"
-              />
-            </svg>
-            <svg
-              className="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32"
-              width="404"
-              height="384"
-              fill="none"
-              viewBox="0 0 404 384"
-            >
-              <defs>
-                <pattern
-                  id="f210dbf6-a58d-4871-961e-36d5016a0f49"
-                  x="0"
-                  y="0"
-                  width="20"
-                  height="20"
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect
-                    x="0"
-                    y="0"
-                    width="4"
-                    height="4"
-                    className="text-gray-200"
-                    fill="currentColor"
-                  />
-                </pattern>
-              </defs>
-              <rect
-                width="404"
-                height="384"
-                fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)"
-              />
-            </svg>
-            {/*<svg className="absolute bottom-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">*/}
-            {/*  <defs>*/}
-            {/*    <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">*/}
-            {/*      <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor" />*/}
-            {/*    </pattern>*/}
-            {/*  </defs>*/}
-            {/*  <rect width="404" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />*/}
-            {/*</svg>*/}
-          </div>
-        </div>
-        <div className="relative px-4 sm:px-6 lg:px-8">
-          <div className="text-lg max-w-prose mx-auto mb-6">
-            <p className="text-base text-center leading-6 text-purple-600 font-semibold tracking-wide uppercase">
-              Course Info
-            </p>
-            <h1 className="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-              Class Format
-            </h1>
-          </div>
-          <div className="prose prose-lg text-gray-500 mx-auto">
-            <p>
-              A CPI course consists of 12 weekly classes, each of which lasts 2
-              hours. Classes will go over challenging example problems and
-              contain problemsets for homework.
-            </p>
-            <p>
-              Instructors will be able to answer any questions students may have
-              during class. Students will have access to an exclusive{" "}
-              <b>Q&A forum</b> to get help from instructors after class.
-            </p>
-            <p>
-              Classes follow a flipped learning model to maximize the amount of
-              time students have to ask instructors questions. Our curriculum is
-              modeled off the{" "}
-              <a href="https://usaco.guide/" target="_blank">
-                USACO Guide
-              </a>
-              .
-            </p>
-            <p>
-              <b>Seats are limited</b>. First come first served, so make sure to
-              sign up soon!
-            </p>
+                        <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+</svg>
+                      </span>
+                          </div>
+                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">Learning Management System</h3>
+                          <p className="mt-5 text-base text-gray-500">
+                            Our hand-crafted Learning Management System comes with a leaderboard to incentivize friendly competition!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-6">
+                      <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                        <div className="-mt-6">
+                          <div>
+                      <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                        {/* Heroicon name: outline/shield-check */}
+                        <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                      </span>
+                          </div>
+                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">Trusted Curriculum</h3>
+                          <p className="mt-5 text-base text-gray-500">
+                            Our curriculum-writing team is comprised of multiple USACO Finalists with extensive competitive experience.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-6">
+                      <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                        <div className="-mt-6">
+                          <div>
+                      <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
 
-            <h3>Class Schedule</h3>
-            <ul>
-              <li>
-                Introductory Class - Fridays, 5:00-7:00pm Pacific Time. 1/8 to
-                3/26.
-              </li>
-              <li>
-                Intermediate Class - Wednesdays, 4:00-6:00pm Pacific Time. 1/6
-                to 3/24.
-              </li>
-            </ul>
+                        <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+</svg>
+                      </span>
+                          </div>
+                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">Affordable Cost</h3>
+                          <p className="mt-5 text-base text-gray-500">
+                            As a nonprofit organization, we strive to make classes as affordable as possible. Each registration costs $100.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-6">
+                      <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                        <div className="-mt-6">
+                          <div>
+                      <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
 
-            <h3>Pricing</h3>
-            <p>
-              These classes are <b>not for profit</b> -- instructors are unpaid
-              and volunteer their time to help USACO contestants. We recommend a{" "}
-              <b>$100 donation</b> ($4.16/hour) to help support the creation of
-              these classes and the infrastructure for the resources we provide
-              such as the USACO Guide.
-            </p>
-            <p>
-              <b>Financial aid is available</b>. If you are unable to pay the
-              full amount, just let us know!
-            </p>
-            <p>
-              Want to try out the class before donating? The{" "}
-              <b>first class is free</b> -- you can choose whether to donate
-              after attending the first class!
-            </p>
+                        <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path fill="transparent" d="M12 14l9-5-9-5-9 5 9 5z" />
+  <path fill="transparent" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+</svg>
+                      </span>
+                          </div>
+                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">Financial Aid Available</h3>
+                          <p className="mt-5 text-base text-gray-500">
+                            Our goal is to make competitive programming accessible for everyone. If you can't pay, you can attend classes for free.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Testimonial section */}
+            {/*<div className="pb-16 bg-gradient-to-r from-teal-500 to-cyan-600 lg:pb-0 lg:z-10 lg:relative">*/}
+            {/*  <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">*/}
+            {/*    <div className="relative lg:-my-8">*/}
+            {/*      <div aria-hidden="true" className="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden" />*/}
+            {/*      <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">*/}
+            {/*        <div className="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">*/}
+            {/*          <img className="object-cover lg:h-full lg:w-full" src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixqx=Wq5TfXBKOq&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80" alt="" />*/}
+            {/*        </div>*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
+            {/*    <div className="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">*/}
+            {/*      <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">*/}
+            {/*        <blockquote>*/}
+            {/*          <div>*/}
+            {/*            <svg className="h-12 w-12 text-white opacity-25" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">*/}
+            {/*              <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />*/}
+            {/*            </svg>*/}
+            {/*            <p className="mt-6 text-2xl font-medium text-white">*/}
+            {/*              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.*/}
+            {/*            </p>*/}
+            {/*          </div>*/}
+            {/*          <footer className="mt-6">*/}
+            {/*            <p className="text-base font-medium text-white">Judith Black</p>*/}
+            {/*            <p className="text-base font-medium text-cyan-100">CEO at PureInsights</p>*/}
+            {/*          </footer>*/}
+            {/*        </blockquote>*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
 
-            <h3>Programming Language</h3>
-            <p>
-              Both C++ and Java are acceptable for the class. While our class
-              will primarily use Java, instructors are fully able to assist C++
-              users as well.
-            </p>
+            <div className="relative pb-16 bg-white overflow-hidden">
+              <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
+                <div className="relative h-full text-lg max-w-prose mx-auto">
+                  <svg
+                    className="absolute top-12 left-full transform translate-x-32"
+                    width="404"
+                    height="384"
+                    fill="none"
+                    viewBox="0 0 404 384"
+                  >
+                    <defs>
+                      <pattern
+                        id="74b3fd99-0a6f-4271-bef2-e80eeafdf357"
+                        x="0"
+                        y="0"
+                        width="20"
+                        height="20"
+                        patternUnits="userSpaceOnUse"
+                      >
+                        <rect
+                          x="0"
+                          y="0"
+                          width="4"
+                          height="4"
+                          className="text-gray-200"
+                          fill="currentColor"
+                        />
+                      </pattern>
+                    </defs>
+                    <rect
+                      width="404"
+                      height="384"
+                      fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)"
+                    />
+                  </svg>
+                  <svg
+                    className="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32"
+                    width="404"
+                    height="384"
+                    fill="none"
+                    viewBox="0 0 404 384"
+                  >
+                    <defs>
+                      <pattern
+                        id="f210dbf6-a58d-4871-961e-36d5016a0f49"
+                        x="0"
+                        y="0"
+                        width="20"
+                        height="20"
+                        patternUnits="userSpaceOnUse"
+                      >
+                        <rect
+                          x="0"
+                          y="0"
+                          width="4"
+                          height="4"
+                          className="text-gray-200"
+                          fill="currentColor"
+                        />
+                      </pattern>
+                    </defs>
+                    <rect
+                      width="404"
+                      height="384"
+                      fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)"
+                    />
+                  </svg>
+                  {/*<svg className="absolute bottom-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">*/}
+                  {/*  <defs>*/}
+                  {/*    <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">*/}
+                  {/*      <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor" />*/}
+                  {/*    </pattern>*/}
+                  {/*  </defs>*/}
+                  {/*  <rect width="404" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />*/}
+                  {/*</svg>*/}
+                </div>
+              </div>
+              <div className="relative px-4 sm:px-6 lg:px-8">
+                <div className="text-lg max-w-prose mx-auto mb-6">
+                  <p className="text-base text-center leading-6 text-cyan-600 font-semibold tracking-wide uppercase">
+                    Course Info
+                  </p>
+                  <h1 className="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                    Class Format
+                  </h1>
+                </div>
+                <div className="prose prose-lg text-gray-500 mx-auto">
+                  <p>
+                    A CPI course consists of 9 weekly classes, each of which lasts 2
+                    hours. Classes will go over challenging example problems and
+                    contain problemsets for homework.
+                  </p>
+                  <p>
+                    Classes follow a flipped learning model to maximize the amount of
+                    time students have to ask instructors questions. Our curriculum is
+                    modeled off the{" "}
+                    <a href="https://usaco.guide/" target="_blank">
+                      USACO Guide
+                    </a>
+                    .
+                    There will be weekly office hours for students to get help from instructors.
+                  </p>
+                  <p>
+                    <b>Seats are limited</b>. First come first served, so make sure to
+                    sign up soon!
+                  </p>
+
+                  <h3>Class Schedule</h3>
+                  <ul>
+                    <li>
+                      Introductory Class - Fridays, 5:00-7:00pm Pacific Daylight Time (UTC-7). 4/2 to 5/28.
+                    </li>
+                    <li>
+                      Intermediate Class - Saturdays, 4:00-6:00pm Pacific Daylight Time (UTC-7). 4/3 to 5/29.
+                    </li>
+                  </ul>
+
+                  <h3>Pricing</h3>
+                  <p>
+                    These classes are <b>not for profit</b> -- instructors are unpaid
+                    and volunteer their time to help USACO contestants. We ask for a <b>$100 fee</b> to help support the creation of
+                    these classes and the infrastructure for the resources we provide
+                    such as the USACO Guide.
+                  </p>
+                  <p>
+                    <b>Financial aid is available</b>. If you are unable to pay the
+                    full amount, just let us know!
+                  </p>
+
+                  <h3>Programming Language</h3>
+                  <p>
+                    Both C++ and Java are acceptable for the class. While our class
+                    will primarily use Java, instructors are fully able to assist C++
+                    users as well.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <ClassLevels />
+
+            <ClassInstructors />
+
+            <Newsletter />
           </div>
         </div>
       </div>
-
-      <ClassLevels />
-
-      <ClassInstructors />
-
-      <Newsletter />
     </Layout>
   )
 }
