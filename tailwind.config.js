@@ -28,6 +28,8 @@ module.exports = {
       },
       colors: {
         orange: colors.orange,
+        teal: colors.teal,
+        cyan: colors.cyan,
       }
     },
   },  variants: {

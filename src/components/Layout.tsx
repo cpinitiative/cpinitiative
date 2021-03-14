@@ -7,12 +7,20 @@
 
 import * as React from "react"
 
-const Layout = ({ children }) => {
+const Layout = ({
+  className,
+  children,
+  grayFooter,
+}: {
+  className?: string
+  grayFooter?: boolean
+  children: React.ReactNode
+}) => {
   return (
-    <div className="font-sans">
-      <main>{children}</main>
-      <footer>
-        <div className="bg-white">
+    <div className="font-sans min-h-screen flex flex-col">
+      <main className={`flex-1 ${className}`}>{children}</main>
+      <footer className="flex-shrink-0">
+        <div className={grayFooter ? "bg-gray-100" : "bg-white"}>
           <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between">
             <div className="flex justify-center md:order-2 space-x-6">
               <a
