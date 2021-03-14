@@ -23,7 +23,7 @@ export function client() {
  */
 function environment() {
   const clientId =
-    "AQs24h0QDn7C1l4penHhK7x3XbDTL9E5Dh-6FPz3HycxvRw22wiBdMo3UMftn2m1kOmiUcOVZUdzEWFL"
+    "AeRSduV1FG3pQYaXGSZcvkXXBD1oyV2cCbNtn7VJPS6yF_0QO9doD7dUn9inLveCGWrTgd-sR2Vllwp-"
   const clientSecret = functions.config().paypal.apisecret
 
   return new checkoutNodeJssdk.core.SandboxEnvironment(clientId, clientSecret)
