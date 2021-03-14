@@ -14,7 +14,7 @@ const IndexPage = () => (
       <Header />
       <div className="bg-purple-900 sm:-mb-8">
         {/*Banner Padding*/}
-        {/*<div className="h-12"/>*/}
+        <div className="h-12"/>
 
         <div className="h-36 sm:h-48" />
         <div className="max-w-screen-xl px-4 sm:px-6 mx-auto sm:-mb-8">
