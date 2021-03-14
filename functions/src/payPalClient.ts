@@ -26,7 +26,7 @@ function environment() {
     "AeRSduV1FG3pQYaXGSZcvkXXBD1oyV2cCbNtn7VJPS6yF_0QO9doD7dUn9inLveCGWrTgd-sR2Vllwp-"
   const clientSecret = functions.config().paypal.apisecret
 
-  return new checkoutNodeJssdk.core.SandboxEnvironment(clientId, clientSecret)
+  return new checkoutNodeJssdk.core.LiveEnvironment(clientId, clientSecret)
 }
 
 export async function prettyPrint(jsonData: any, pre = "") {

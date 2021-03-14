@@ -75,7 +75,6 @@ export const processClassRegistration = functions.https.onCall(
       const existingFields = await axios
         .get(
           `https://us2.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}`,
-
           {
             auth: {
               username: "nousername",
