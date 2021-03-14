@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import * as React from "react"
+import { navigate } from '@reach/router';
 
 export default function ClassLevels() {
   return (
@@ -29,7 +30,7 @@ export default function ClassLevels() {
                 <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                   <div>
                     <h3
-                      className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600"
+                      className="inline-flex px-4 py-1 text-white font-semibold text-sm uppercase tracking-wide bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full"
                       id="tier-standard"
                     >
                       USACO Bronze
@@ -46,24 +47,22 @@ export default function ClassLevels() {
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
                     {[
-                      "Fridays, 5-7pm Pacific Time. 1/8 to 3/26.",
+                      "Fridays, 5-7pm PDT (UTC-7). 4/2 to 5/28.",
                       "File / Fast I/O",
                       "Time Complexity",
-                      "Data Structures",
-                      "Simulation",
-                      "Rectangle Geometry",
-                      "Sorting Problems",
-                      "Sets & Maps",
-                      "Complete Search",
+                      "Data Structures and Simulation",
+                      "Basic Complete Search",
+                      "Complete Search with Recursion",
+                      "Sorting + Sets & Maps",
                       "Ad Hoc Problems",
-                      "Greedy Algorithms",
-                      "Graphs",
+                      "Introduction to Greedy Algorithms",
+                      "Introduction to Graphs",
                     ].map(s => (
                       <li className="flex items-start" key={s}>
                         <div className="flex-shrink-0">
                           {/* Heroicon name: check */}
                           <svg
-                            className="h-6 w-6 text-green-500"
+                            className="h-6 w-6 text-teal-500"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -83,14 +82,13 @@ export default function ClassLevels() {
                     ))}
                   </ul>
                   <div className="rounded-md shadow">
-                    <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
-                      target="_blank"
+                    <Link
+                      to="/classes/register/#beginner"
                       className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                       aria-describedby="tier-standard"
                     >
-                      Get Notified of Future Classes
-                    </a>
+                      Register Now
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -99,7 +97,7 @@ export default function ClassLevels() {
                 <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                   <div>
                     <h3
-                      className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600"
+                      className="inline-flex px-4 py-1 text-white font-semibold text-sm uppercase tracking-wide bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full"
                       id="tier-standard"
                     >
                       USACO Silver
@@ -117,24 +115,22 @@ export default function ClassLevels() {
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
                     {[
-                      "Wednesdays, 4-6pm Pacific Time. 1/6 to 3/24.",
-                      "Binary Search on Sorted Array",
-                      "Operations on Ordered Sets",
-                      "Custom Comparators",
-                      "Unordered Sets & Maps",
+                      "Saturdays, 4-6pm PDT (UTC-7). 4/3 to 5/29.",
                       "Prefix Sums",
+                      "Sorting with Custom Comparators",
                       "Two Pointers",
-                      "Binary Search on the Answer",
+                      "More Operations on Ordered Sets",
                       "Greedy Algorithms with Sorting",
+                      "Binary Search",
                       "Depth First Search",
                       "Floodfill",
-                      "Tree Algorithms",
+                      "Introduction to Tree Algorithms",
                     ].map(s => (
                       <li className="flex items-start" key={s}>
                         <div className="flex-shrink-0">
                           {/* Heroicon name: check */}
                           <svg
-                            className="h-6 w-6 text-green-500"
+                            className="h-6 w-6 text-teal-500"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -154,14 +150,13 @@ export default function ClassLevels() {
                     ))}
                   </ul>
                   <div className="rounded-md shadow">
-                    <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
-                      target="_blank"
+                    <Link
+                      to="/classes/register/#intermediate"
                       className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                       aria-describedby="tier-standard"
                     >
-                      Get Notified of Future Classes
-                    </a>
+                      Register Now
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -183,13 +178,13 @@ export default function ClassLevels() {
                 </div>
               </div>
               <div className="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScKCrke0SfKBwqCrk0VtfXZsgdv-QP2xehU4hQ-Slg-wLyXGA/viewform"
+                <Link
+                  to="register"
                   target="_blank"
                   className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                 >
                   Apply Now
-                </a>
+                </Link>
               </div>
             </div>
           </div>
