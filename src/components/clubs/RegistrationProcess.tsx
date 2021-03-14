@@ -2,7 +2,7 @@ import * as React from "react";
 
 export default function RegistrationProcess() {
   return(
-    <div className="relative pt-20 pb-12" id="how-to-join">
+    <div className="relative pt-20 pb-20" id="how-to-join">
       <div className="max-w-prose sm:text-lg mx-auto px-4">
         <h2 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 text-center">
           How to Join
