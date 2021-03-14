@@ -13,7 +13,8 @@ export default function Divisions() {
               Pick your division.
             </p>
             <p className="text-xl leading-7 text-gray-300">
-              Our contests come in two divisions: One for Bronze/Silver contestants and another for Silver/Gold contestants.
+              Our contests come in two divisions: One for Bronze/Silver
+              contestants and another for Silver/Gold contestants.
             </p>
           </div>
         </div>
@@ -26,7 +27,10 @@ export default function Divisions() {
               <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                 <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                   <div>
-                    <h3 className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600" id="tier-standard">
+                    <h3
+                      className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600"
+                      id="tier-standard"
+                    >
                       Division 2
                     </h3>
                   </div>
@@ -34,7 +38,8 @@ export default function Divisions() {
                     Beginner
                   </div>
                   <p className="mt-5 text-lg leading-7 text-gray-500">
-                    For school clubs and bronze/silver contestants. Problems get harder throughout the year.
+                    For school clubs and bronze/silver contestants. Problems get
+                    harder throughout the year.
                   </p>
                 </div>
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
@@ -42,8 +47,18 @@ export default function Divisions() {
                     <li className="flex items-start">
                       <div className="flex-shrink-0">
                         {/* Heroicon name: check */}
-                        <svg className="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                        <svg
+                          className="h-6 w-6 text-green-500"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M5 13l4 4L19 7"
+                          />
                         </svg>
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
@@ -54,20 +69,43 @@ export default function Divisions() {
                     <li className="flex items-start">
                       <div className="flex-shrink-0">
                         {/* Heroicon name: check */}
-                        <svg className="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                        <svg
+                          className="h-6 w-6 text-green-500"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M5 13l4 4L19 7"
+                          />
                         </svg>
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
-                        Follows our <Link to="/clubs" className="text-purple-600 underline">Club Curriculum</Link>
+                        Follows our{" "}
+                        <Link to="/clubs" className="text-purple-600 underline">
+                          Club Curriculum
+                        </Link>
                       </p>
                     </li>
 
                     <li className="flex items-start">
                       <div className="flex-shrink-0">
                         {/* Heroicon name: check */}
-                        <svg className="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                        <svg
+                          className="h-6 w-6 text-green-500"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M5 13l4 4L19 7"
+                          />
                         </svg>
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
@@ -78,8 +116,18 @@ export default function Divisions() {
                     <li className="flex items-start">
                       <div className="flex-shrink-0">
                         {/* Heroicon name: check */}
-                        <svg className="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                        <svg
+                          className="h-6 w-6 text-green-500"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M5 13l4 4L19 7"
+                          />
                         </svg>
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
@@ -88,7 +136,11 @@ export default function Divisions() {
                     </li>
                   </ul>
                   <div className="rounded-md shadow">
-                    <a href="#signup" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out" aria-describedby="tier-standard">
+                    <a
+                      href="#signup"
+                      className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                      aria-describedby="tier-standard"
+                    >
                       Get started
                     </a>
                   </div>
@@ -98,7 +150,10 @@ export default function Divisions() {
               <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                 <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                   <div>
-                    <h3 className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600" id="tier-standard">
+                    <h3
+                      className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600"
+                      id="tier-standard"
+                    >
                       Division 1
                     </h3>
                   </div>
@@ -106,7 +161,8 @@ export default function Divisions() {
                     Intermediate
                   </div>
                   <p className="mt-5 text-lg leading-7 text-gray-500">
-                    For school clubs and silver/gold contestants. Problems are in the hard silver / easy gold range.
+                    For school clubs and silver/gold contestants. Problems are
+                    in the hard silver / easy gold range.
                   </p>
                 </div>
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
@@ -114,8 +170,18 @@ export default function Divisions() {
                     <li className="flex items-start">
                       <div className="flex-shrink-0">
                         {/* Heroicon name: check */}
-                        <svg className="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                        <svg
+                          className="h-6 w-6 text-green-500"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M5 13l4 4L19 7"
+                          />
                         </svg>
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
@@ -126,8 +192,18 @@ export default function Divisions() {
                     <li className="flex items-start">
                       <div className="flex-shrink-0">
                         {/* Heroicon name: check */}
-                        <svg className="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                        <svg
+                          className="h-6 w-6 text-green-500"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M5 13l4 4L19 7"
+                          />
                         </svg>
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
@@ -138,8 +214,18 @@ export default function Divisions() {
                     <li className="flex items-start">
                       <div className="flex-shrink-0">
                         {/* Heroicon name: check */}
-                        <svg className="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                        <svg
+                          className="h-6 w-6 text-green-500"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M5 13l4 4L19 7"
+                          />
                         </svg>
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
@@ -150,8 +236,18 @@ export default function Divisions() {
                     <li className="flex items-start">
                       <div className="flex-shrink-0">
                         {/* Heroicon name: check */}
-                        <svg className="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                        <svg
+                          className="h-6 w-6 text-green-500"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M5 13l4 4L19 7"
+                          />
                         </svg>
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
@@ -160,7 +256,11 @@ export default function Divisions() {
                     </li>
                   </ul>
                   <div className="rounded-md shadow">
-                    <a href="#signup" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out" aria-describedby="tier-standard">
+                    <a
+                      href="#signup"
+                      className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                      aria-describedby="tier-standard"
+                    >
                       Get started
                     </a>
                   </div>
@@ -179,11 +279,15 @@ export default function Divisions() {
                   </h3>
                 </div>
                 <div className="mt-4 text-lg leading-7 text-gray-600">
-                  Running a school CS/CP club? We can help! Apply to be part of CPI and get access to curriculum, problemsets, and contests!
+                  Running a school CS/CP club? We can help! Apply to be part of
+                  CPI and get access to curriculum, problemsets, and contests!
                 </div>
               </div>
               <div className="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
-                <Link to="/clubs" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                <Link
+                  to="/clubs"
+                  className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                >
                   Learn More about Clubs
                 </Link>
               </div>

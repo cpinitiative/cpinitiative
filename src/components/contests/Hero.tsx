@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from "react"
 // @ts-ignore
-import HeroImg from "../../images/contests-hero.svg";
+import HeroImg from "../../images/contests-hero.svg"
 import { Link } from "gatsby"
 import EmailForm from "../classes/EmailForm"
 
@@ -15,25 +15,41 @@ export default function Hero() {
                 Coming soon
               </div>
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                Beginner<br/>
+                Beginner
+                <br />
                 <span className="text-purple-600">CP Contests</span>
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Get better at USACO by participating in monthly, beginner-focused Competitive Programming Contests! Targeted to both <Link to="/clubs" className="underline text-purple-600">school clubs</Link> and individual contestants.
+                Get better at USACO by participating in monthly,
+                beginner-focused Competitive Programming Contests! Targeted to
+                both{" "}
+                <Link to="/clubs" className="underline text-purple-600">
+                  school clubs
+                </Link>{" "}
+                and individual contestants.
               </p>
               <p className="mt-1 text-base text-gray-500 sm:mt-2 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                We're also looking for <a href="https://forms.gle/YfewgWkAisz9JiBC8" className="underline text-purple-600" target="_blank">problem contributions</a>!
+                We're also looking for{" "}
+                <a
+                  href="https://forms.gle/YfewgWkAisz9JiBC8"
+                  className="underline text-purple-600"
+                  target="_blank"
+                >
+                  problem contributions
+                </a>
+                !
               </p>
               <div className="mt-5 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                <span id="signup" className="relative" style={{ bottom: "80px" }}/>
+                <span
+                  id="signup"
+                  className="relative"
+                  style={{ bottom: "80px" }}
+                />
                 <p className="text-base font-medium text-gray-900">
                   Sign up to get notified when contests start!
                 </p>
-                <EmailForm
-                  listName={"contest"}
-                  tag={"contests"}
-                />
-                </div>
+                <EmailForm listName={"contest"} tag={"contests"} />
+              </div>
             </div>
           </main>
         </div>
@@ -43,5 +59,5 @@ export default function Hero() {
         <HeroImg className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full lg:max-w-3xl lg:mx-auto" />
       </div>
     </div>
-  );
-};
+  )
+}

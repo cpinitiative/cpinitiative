@@ -14,7 +14,8 @@ export default function ClassLevels() {
               Pick your class.
             </p>
             <p className="text-xl leading-7 text-gray-300 mt-8">
-              Our classes come in two levels: One for beginner Bronze contestants and another for USACO Silver contestants.
+              Our classes come in two levels: One for beginner Bronze
+              contestants and another for USACO Silver contestants.
             </p>
           </div>
         </div>
@@ -27,7 +28,10 @@ export default function ClassLevels() {
               <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                 <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                   <div>
-                    <h3 className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600" id="tier-standard">
+                    <h3
+                      className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600"
+                      id="tier-standard"
+                    >
                       USACO Bronze
                     </h3>
                   </div>
@@ -35,17 +39,41 @@ export default function ClassLevels() {
                     Beginner
                   </div>
                   <p className="mt-5 text-lg leading-7 text-gray-500">
-                    Teaches the necessary techniques needed to pass USACO Bronze. For students with basic programming experience.
+                    Teaches the necessary techniques needed to pass USACO
+                    Bronze. For students with basic programming experience.
                   </p>
                 </div>
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
-                    {["Fridays, 5-7pm Pacific Time. 1/8 to 3/26.", "File / Fast I/O", "Time Complexity", "Data Structures", "Simulation", "Rectangle Geometry", "Sorting Problems", "Sets & Maps", "Complete Search", "Ad Hoc Problems", "Greedy Algorithms", "Graphs"].map(s => (
+                    {[
+                      "Fridays, 5-7pm Pacific Time. 1/8 to 3/26.",
+                      "File / Fast I/O",
+                      "Time Complexity",
+                      "Data Structures",
+                      "Simulation",
+                      "Rectangle Geometry",
+                      "Sorting Problems",
+                      "Sets & Maps",
+                      "Complete Search",
+                      "Ad Hoc Problems",
+                      "Greedy Algorithms",
+                      "Graphs",
+                    ].map(s => (
                       <li className="flex items-start" key={s}>
                         <div className="flex-shrink-0">
                           {/* Heroicon name: check */}
-                          <svg className="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                          <svg
+                            className="h-6 w-6 text-green-500"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
                         <p className="ml-3 text-base leading-6 text-gray-700">
@@ -55,8 +83,13 @@ export default function ClassLevels() {
                     ))}
                   </ul>
                   <div className="rounded-md shadow">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform" target="_blank" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out" aria-describedby="tier-standard">
-                     Get Notified of Future Classes
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
+                      target="_blank"
+                      className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                      aria-describedby="tier-standard"
+                    >
+                      Get Notified of Future Classes
                     </a>
                   </div>
                 </div>
@@ -65,7 +98,10 @@ export default function ClassLevels() {
               <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                 <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                   <div>
-                    <h3 className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600" id="tier-standard">
+                    <h3
+                      className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600"
+                      id="tier-standard"
+                    >
                       USACO Silver
                     </h3>
                   </div>
@@ -73,17 +109,42 @@ export default function ClassLevels() {
                     Intermediate
                   </div>
                   <p className="mt-5 text-lg leading-7 text-gray-500">
-                    Teaches the necessary techniques needed to pass the USACO Silver contest. For students who already know Bronze-level concepts.
+                    Teaches the necessary techniques needed to pass the USACO
+                    Silver contest. For students who already know Bronze-level
+                    concepts.
                   </p>
                 </div>
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
-                    {["Wednesdays, 4-6pm Pacific Time. 1/6 to 3/24.", "Binary Search on Sorted Array", "Operations on Ordered Sets", "Custom Comparators", "Unordered Sets & Maps", "Prefix Sums", "Two Pointers", "Binary Search on the Answer", "Greedy Algorithms with Sorting", "Depth First Search", "Floodfill", "Tree Algorithms"].map(s => (
+                    {[
+                      "Wednesdays, 4-6pm Pacific Time. 1/6 to 3/24.",
+                      "Binary Search on Sorted Array",
+                      "Operations on Ordered Sets",
+                      "Custom Comparators",
+                      "Unordered Sets & Maps",
+                      "Prefix Sums",
+                      "Two Pointers",
+                      "Binary Search on the Answer",
+                      "Greedy Algorithms with Sorting",
+                      "Depth First Search",
+                      "Floodfill",
+                      "Tree Algorithms",
+                    ].map(s => (
                       <li className="flex items-start" key={s}>
                         <div className="flex-shrink-0">
                           {/* Heroicon name: check */}
-                          <svg className="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                          <svg
+                            className="h-6 w-6 text-green-500"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
                         <p className="ml-3 text-base leading-6 text-gray-700">
@@ -93,7 +154,12 @@ export default function ClassLevels() {
                     ))}
                   </ul>
                   <div className="rounded-md shadow">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform" target="_blank" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out" aria-describedby="tier-standard">
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
+                      target="_blank"
+                      className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                      aria-describedby="tier-standard"
+                    >
                       Get Notified of Future Classes
                     </a>
                   </div>
@@ -112,11 +178,16 @@ export default function ClassLevels() {
                   </h3>
                 </div>
                 <div className="mt-4 text-lg leading-7 text-gray-600">
-                  If you aren't able to pay the full amount, don't worry. We've got you covered.
+                  If you aren't able to pay the full amount, don't worry. We've
+                  got you covered.
                 </div>
               </div>
               <div className="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScKCrke0SfKBwqCrk0VtfXZsgdv-QP2xehU4hQ-Slg-wLyXGA/viewform" target="_blank" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScKCrke0SfKBwqCrk0VtfXZsgdv-QP2xehU4hQ-Slg-wLyXGA/viewform"
+                  target="_blank"
+                  className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                >
                   Apply Now
                 </a>
               </div>

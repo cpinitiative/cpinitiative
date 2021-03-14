@@ -1,6 +1,6 @@
-import * as React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import * as React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
 export default function Logo(props) {
   const data = useStaticQuery(graphql`
@@ -13,10 +13,12 @@ export default function Logo(props) {
         }
       }
     }
-  `);
-  return <Img
-    fixed={data.img.childImageSharp.fixed}
-    alt="CP Initiative"
-    {...props}
-  />;
+  `)
+  return (
+    <Img
+      fixed={data.img.childImageSharp.fixed}
+      alt="CP Initiative"
+      {...props}
+    />
+  )
 }

@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from "react"
 // @ts-ignore
-import HeroImg from "../../images/contests-hero.svg";
+import HeroImg from "../../images/contests-hero.svg"
 import { Link } from "gatsby"
 import EmailForm from "../classes/EmailForm"
 
@@ -18,20 +18,36 @@ export default function Hero() {
                 <span className="text-purple-600">Intro to USACO</span> Webinar
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                CPI will be holding an Introduction to USACO Webinar on November 28th, 5-5:40pm PST!
-                Join us to learn more about what USACO is, why you should do it, and how to get better at USACO!
+                CPI will be holding an Introduction to USACO Webinar on November
+                28th, 5-5:40pm PST! Join us to learn more about what USACO is,
+                why you should do it, and how to get better at USACO!
               </p>
               <p className="mt-1 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Zoom link: <a target="_blank" href="https://bit.ly/usaco-webinar-zoom" className="underline text-blue-600">https://bit.ly/usaco-webinar-zoom</a>
+                Zoom link:{" "}
+                <a
+                  target="_blank"
+                  href="https://bit.ly/usaco-webinar-zoom"
+                  className="underline text-blue-600"
+                >
+                  https://bit.ly/usaco-webinar-zoom
+                </a>
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <a href="https://docs.google.com/forms/d/1BaWsRPzK4V65nkXw744g6bh8b3sN0INpmJfMnbMve9Q/viewform" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                  <a
+                    href="https://docs.google.com/forms/d/1BaWsRPzK4V65nkXw744g6bh8b3sN0INpmJfMnbMve9Q/viewform"
+                    target="_blank"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                  >
                     Sign Up
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <a href="mailto:usacoguide@gmail.com" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-purple-700 bg-purple-100 hover:text-purple-600 hover:bg-purple-50 focus:outline-none focus:shadow-outline-purple focus:border-purple-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                  <a
+                    href="mailto:usacoguide@gmail.com"
+                    target="_blank"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-purple-700 bg-purple-100 hover:text-purple-600 hover:bg-purple-50 focus:outline-none focus:shadow-outline-purple focus:border-purple-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                  >
                     Contact Us
                   </a>
                 </div>
@@ -45,5 +61,5 @@ export default function Hero() {
         <HeroImg className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full lg:max-w-3xl lg:mx-auto" />
       </div>
     </div>
-  );
-};
+  )
+}
