@@ -1,29 +1,50 @@
-import * as React from "react";
+import * as React from "react"
 
 export default function WhyJoin() {
   return (
     <div className="relative pt-32 pb-32 overflow-hidden" id="benefits">
-      <div aria-hidden="true" className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100" />
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100"
+      />
       <div className="relative">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <div>
               <div>
-            <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600">
-              <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-              </svg>
-            </span>
+                <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600">
+                  <svg
+                    className="h-6 w-6 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                    />
+                  </svg>
+                </span>
               </div>
               <div className="mt-6">
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
                   Teaching Resources (Early Access)
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
-                  We provide slideshows and problemsets for USACO Bronze and Silver, based off of the USACO Guide. Each division is designed to be completed in roughly one semester.
+                  We provide slideshows and problemsets for USACO Bronze and
+                  Silver, based off of the USACO Guide. Each division is
+                  designed to be completed in roughly one semester.
                 </p>
                 <div className="mt-6">
-                  <a href="https://docs.google.com/document/d/1RWYE61nrC5gcBvHjLTaJc9h4NeiXB-d2YX3xq0tmgt8/edit" target="_blank" className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700">
+                  <a
+                    href="https://docs.google.com/document/d/1RWYE61nrC5gcBvHjLTaJc9h4NeiXB-d2YX3xq0tmgt8/edit"
+                    target="_blank"
+                    className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700"
+                  >
                     View Curriculum Syllabus
                   </a>
                 </div>
@@ -31,8 +52,16 @@ export default function WhyJoin() {
             </div>
           </div>
           <div className="mt-12 sm:mt-16 lg:mt-0">
-            <a className="block pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full" target="_blank" href="https://docs.google.com/presentation/d/1n2aXzhSfgbo8GoVpeyeygw1Zi7DATfy-C2wO-O5QElA/present#slide=id.g78b50dee42_0_129">
-              <img className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="/prefix_sum_slides.png" alt="Example Slideshow" />
+            <a
+              className="block pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full"
+              target="_blank"
+              href="https://docs.google.com/presentation/d/1n2aXzhSfgbo8GoVpeyeygw1Zi7DATfy-C2wO-O5QElA/present#slide=id.g78b50dee42_0_129"
+            >
+              <img
+                className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                src="/prefix_sum_slides.png"
+                alt="Example Slideshow"
+              />
             </a>
           </div>
         </div>
@@ -42,26 +71,37 @@ export default function WhyJoin() {
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
             <div>
               <div>
-            <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600">
-
-              <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-  <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-</svg>
-            </span>
+                <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600">
+                  <svg
+                    className="h-6 w-6 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+                  </svg>
+                </span>
               </div>
               <div className="mt-6">
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
                   Club Learning Management System (Coming Soon)
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
-                  Use a Learning Management System that's fully integrated with the USACO Guide to post announcements and assign problems to club members. Includes a live leaderboard to encourage competition!
+                  Use a Learning Management System that's fully integrated with
+                  the USACO Guide to post announcements and assign problems to
+                  club members. Includes a live leaderboard to encourage
+                  competition!
                 </p>
               </div>
             </div>
           </div>
           <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
             <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-              <img className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="/groups.png" alt="Club LMS" />
+              <img
+                className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                src="/groups.png"
+                alt="Club LMS"
+              />
             </div>
           </div>
         </div>
@@ -71,22 +111,47 @@ export default function WhyJoin() {
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <div>
               <div>
-            <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600">
-<svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
-</svg>
-            </span>
+                <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600">
+                  <svg
+                    className="h-6 w-6 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"
+                    />
+                  </svg>
+                </span>
               </div>
               <div className="mt-6">
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                  CP Contests and Prizes<br/>(Coming Soon)
+                  CP Contests and Prizes
+                  <br />
+                  (Coming Soon)
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
-                  Through our partnership with CompCS.Codes, CPI clubs have access to competitive programming contests designed specifically for school clubs and exclusive prizes available only to CPI club members.
+                  Through our partnership with CompCS.Codes, CPI clubs have
+                  access to competitive programming contests designed
+                  specifically for school clubs and exclusive prizes available
+                  only to CPI club members.
                 </p>
                 <div className="mt-6">
-                  <a href="https://www.compcs.codes/" target="_blank" className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700">
+                  <a
+                    href="https://www.compcs.codes/"
+                    target="_blank"
+                    className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700"
+                  >
                     Go to CCC
                   </a>
                 </div>
@@ -94,8 +159,16 @@ export default function WhyJoin() {
             </div>
           </div>
           <div className="mt-12 sm:mt-16 lg:mt-0">
-            <a className="block pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full" target="_blank" href="https://docs.google.com/presentation/d/1n2aXzhSfgbo8GoVpeyeygw1Zi7DATfy-C2wO-O5QElA/present#slide=id.g78b50dee42_0_129">
-              <img className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="/compcs_codes.png" alt="compcs.codes website" />
+            <a
+              className="block pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full"
+              target="_blank"
+              href="https://docs.google.com/presentation/d/1n2aXzhSfgbo8GoVpeyeygw1Zi7DATfy-C2wO-O5QElA/present#slide=id.g78b50dee42_0_129"
+            >
+              <img
+                className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                src="/compcs_codes.png"
+                alt="compcs.codes website"
+              />
             </a>
           </div>
         </div>
@@ -179,5 +252,5 @@ export default function WhyJoin() {
     //     </div>
     //   </div>
     // </div>
-  );
-};
+  )
+}

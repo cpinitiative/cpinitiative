@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from "react"
 // @ts-ignore
-import HeroImg from "../../images/contests-hero.svg";
+import HeroImg from "../../images/contests-hero.svg"
 import EmailForm from "./EmailForm"
 import { Link } from "gatsby"
 
@@ -18,19 +18,31 @@ export default function Hero() {
                 USACO <span className="text-purple-600">Classes</span>
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Learn USACO through affordable, high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists.
+                Learn USACO through affordable, high-quality classes with
+                vetted, experienced instructors and a curriculum designed and
+                developed by past USACO Finalists.
               </p>
               <p className="mt-3 text-base text-gray-500 sm:mt-3 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Due to high demand, we are unable to accept more students for the Spring semester. Join the mailing list to be notified for future class openings!
+                Due to high demand, we are unable to accept more students for
+                the Spring semester. Join the mailing list to be notified for
+                future class openings!
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
+                    target="_blank"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                  >
                     Join Mailing List
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <a href="mailto:classes@joincpi.org" target="_blank" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-purple-700 bg-purple-100 hover:text-purple-600 hover:bg-purple-50 focus:outline-none focus:shadow-outline-purple focus:border-purple-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                  <a
+                    href="mailto:classes@joincpi.org"
+                    target="_blank"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-purple-700 bg-purple-100 hover:text-purple-600 hover:bg-purple-50 focus:outline-none focus:shadow-outline-purple focus:border-purple-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                  >
                     Contact Us
                   </a>
                 </div>
@@ -114,5 +126,5 @@ export default function Hero() {
     //     </main>
     //   </div>
     // </div>
-  );
-};
+  )
+}

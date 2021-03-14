@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image";
+import Img from "gatsby-image"
 
 export default function Hero() {
   const data = useStaticQuery(graphql`
@@ -13,40 +13,57 @@ export default function Hero() {
         }
       }
     }
-  `);
-  const heroImg = data.hero.childImageSharp.fluid;
+  `)
+  const heroImg = data.hero.childImageSharp.fluid
   return (
-      <div>
-        <div className="relative shadow-xl">
-          <div className="absolute inset-0">
-            <img className="h-full w-full object-cover"
-                 src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-                 alt="People working on laptops" />
-              <div className="absolute inset-0 bg-indigo-800" style={{ mixBlendMode: "multiply" }}/>
-          </div>
-          <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-            <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-              <span className="block text-indigo-100">Supercharge Your</span>
-              <span className="block text-white">Competitive Programming Club</span>
-            </h1>
-            <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
-              Get access to <span className="font-medium text-white">curriculum, problemsets, and contests</span> tailored for competitive programming or computer science clubs, created by past USACO Finalists.
-            </p>
-            <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                <a href="#how-to-join"
-                   className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">
-                  Join Now
-                </a>
-                <a href="mailto:usacoguide@gmail.com" target="_blank"
-                   className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">
-                  Contact Us
-                </a>
-              </div>
+    <div>
+      <div className="relative shadow-xl">
+        <div className="absolute inset-0">
+          <img
+            className="h-full w-full object-cover"
+            src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+            alt="People working on laptops"
+          />
+          <div
+            className="absolute inset-0 bg-indigo-800"
+            style={{ mixBlendMode: "multiply" }}
+          />
+        </div>
+        <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+          <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+            <span className="block text-indigo-100">Supercharge Your</span>
+            <span className="block text-white">
+              Competitive Programming Club
+            </span>
+          </h1>
+          <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
+            Get access to{" "}
+            <span className="font-medium text-white">
+              curriculum, problemsets, and contests
+            </span>{" "}
+            tailored for competitive programming or computer science clubs,
+            created by past USACO Finalists.
+          </p>
+          <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+            <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
+              <a
+                href="#how-to-join"
+                className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8"
+              >
+                Join Now
+              </a>
+              <a
+                href="mailto:usacoguide@gmail.com"
+                target="_blank"
+                className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"
+              >
+                Contact Us
+              </a>
             </div>
           </div>
         </div>
       </div>
+    </div>
     // <div className="relative bg-white overflow-hidden">
     //   <div className="max-w-screen-xl mx-auto">
     //     <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -85,5 +102,5 @@ export default function Hero() {
     //     <Img className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" fluid={heroImg} alt="" />
     //   </div>
     // </div>
-  );
-};
+  )
+}

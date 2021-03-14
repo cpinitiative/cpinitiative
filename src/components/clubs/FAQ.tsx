@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from "react"
 
 export default function FAQ() {
   return (
@@ -16,7 +16,9 @@ export default function FAQ() {
                 </dt>
                 <dd className="mt-2">
                   <p className="text-base leading-6 text-gray-500">
-                    I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+                    I don't know, but the flag is a big plus. Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Quas cupiditate
+                    laboriosam fugiat.
                   </p>
                 </dd>
               </div>
@@ -26,7 +28,9 @@ export default function FAQ() {
                 </dt>
                 <dd className="mt-2">
                   <p className="text-base leading-6 text-gray-500">
-                    You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+                    You boil the hell out of it. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quas cupiditate laboriosam
+                    fugiat.
                   </p>
                 </dd>
               </div>
@@ -36,7 +40,8 @@ export default function FAQ() {
                 </dt>
                 <dd className="mt-2">
                   <p className="text-base leading-6 text-gray-500">
-                    Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+                    Nobody knows. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Quas cupiditate laboriosam fugiat.
                   </p>
                 </dd>
               </div>
@@ -48,7 +53,9 @@ export default function FAQ() {
                 </dt>
                 <dd className="mt-2">
                   <p className="text-base leading-6 text-gray-500">
-                    Because they're so good at it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+                    Because they're so good at it. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quas cupiditate laboriosam
+                    fugiat.
                   </p>
                 </dd>
               </div>
@@ -58,7 +65,9 @@ export default function FAQ() {
                 </dt>
                 <dd className="mt-2">
                   <p className="text-base leading-6 text-gray-500">
-                    Because the pee is silent. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+                    Because the pee is silent. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quas cupiditate laboriosam
+                    fugiat.
                   </p>
                 </dd>
               </div>
@@ -68,7 +77,9 @@ export default function FAQ() {
                 </dt>
                 <dd className="mt-2">
                   <p className="text-base leading-6 text-gray-500">
-                    He couldn't see himself doing it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+                    He couldn't see himself doing it. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quas cupiditate laboriosam
+                    fugiat.
                   </p>
                 </dd>
               </div>
@@ -77,5 +88,5 @@ export default function FAQ() {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

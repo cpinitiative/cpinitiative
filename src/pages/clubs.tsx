@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Hero from "../components/clubs/Hero"
@@ -11,10 +11,13 @@ import RegistrationProcess from "../components/clubs/RegistrationProcess"
 export default function Clubs() {
   return (
     <Layout>
-      <SEO title="Competitive Programming Clubs" description="Get access to curriculum, problemsets, and contests tailored for school clubs, created by past USACO Finalists." />
+      <SEO
+        title="Competitive Programming Clubs"
+        description="Get access to curriculum, problemsets, and contests tailored for school clubs, created by past USACO Finalists."
+      />
 
       <Header />
-      <div className="margin-top-nav"/>
+      <div className="margin-top-nav" />
       {/*Banner Padding*/}
       {/*<div className="h-20 sm:h-12"/>*/}
       <Hero />
