@@ -15,7 +15,7 @@ import FinancialAidApplicationSection from "../../components/classes/registratio
 import FinancialAidSubmissionSection from "../../components/classes/registration/FinancialAidSubmissionSection"
 import PaymentSection from "../../components/classes/registration/PaymentSection"
 
-export default function Contests() {
+export default function ClassRegistrationPage() {
   const [level, setLevel] = useState<"" | "beginner" | "intermediate">("")
   useEffect(() => {
     const handler = () => {
@@ -42,7 +42,7 @@ export default function Contests() {
   }, [level])
   // for some reason, clicking the "Register Now" button wouldn't scroll to the top of the window.
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0)
   }, [])
   const [errorData, setErrorData] = useState<{
     title?: string
