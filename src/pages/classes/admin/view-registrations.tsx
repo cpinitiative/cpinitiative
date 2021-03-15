@@ -22,7 +22,6 @@ export default function ViewRegistrationPage() {
   const detailModalRegistrationData = registrations.find(
     r => r.id == detailModalRegistrationId
   )?.data
-  console.log(detailModalRegistrationData)
   const numFinancialAid = useMemo(
     () => registrations.filter(r => r.data?.financialAid).length,
     [registrations]
@@ -71,6 +70,7 @@ export default function ViewRegistrationPage() {
       window.removeEventListener("hashchange", handler)
     }
   }, [])
+  const oldRegistrationCount = React.useRef<number>(0);
   useEffect(() => {
     if (!firebase) {
       return
@@ -108,13 +108,13 @@ export default function ViewRegistrationPage() {
                     /* desc */
                     b.data.timestamp.toMillis() - a.data.timestamp.toMillis()
                 )
-                console.log(registrations)
-                if (soundOn && newRegistrations.length > registrations.length) {
+                if (soundOn && newRegistrations.length > oldRegistrationCount.current) {
                   const audio = new Audio(
                     "https://github.com/thecodingwizard/super-coin-box/raw/gh-pages/assets/coin.mp3"
                   )
                   audio.play()
                 }
+    oldRegistrationCount.current = newRegistrations.length;
                 setRegistrations(newRegistrations)
               })
           )
@@ -125,7 +125,7 @@ export default function ViewRegistrationPage() {
     )
 
     return () => unsubscribeHandlers.forEach(fn => fn())
-  }, [firebase])
+  }, [firebase, soundOn])
   if (loading) {
     return (
       <Layout>
