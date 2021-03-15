@@ -66,112 +66,191 @@ export const processClassRegistration = functions.https.onCall(
         "The value of the order was not $100."
       )
     }
-    try {
-      const listID = "e122c7f3eb"
-      let emailHash = crypto
-        .createHash("md5")
-        .update(email.toLowerCase())
-        .digest("hex")
-      const existingFields = await axios
-        .get(
-          `https://us2.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}`,
-          {
-            auth: {
-              username: "nousername",
-              password: MAILCHIMP_API_KEY,
-            },
-          }
-        )
-        .then(data => {
-          return data.data
-        })
-        .catch(e => {
-          console.log("Mailchimp Existing Fields GET Error")
-          // the user probably doesn't exist
-          // so just assume there is no previous data
-          if (e.status != 404) {
-            console.log(e?.toJSON())
-          }
-          return Promise.resolve({})
-        })
-      const data = {
-        email_address: email,
-        status: "subscribed",
-        status_if_new: "subscribed",
-        ip_signup: context.rawRequest.ip,
-        merge_fields: {
-          ...(existingFields?.merge_fields || {}),
-          FNAME: firstName,
-          LNAME: lastName,
-          PROGLANG: preferredLanguage == "java" ? "Java" : "C++",
-        },
-      }
-
-      await axios.put(
-        `https://us2.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}`,
-        data,
-        {
-          auth: {
-            username: "nousername",
-            password: MAILCHIMP_API_KEY,
-          },
-        }
-      )
-
-      await axios.post(
-        `https://us2.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}/tags`,
-        {
-          tags: [
-            {
-              name: `March 2021 ${
-                level == "beginner" ? "Beginner" : "Intermediate"
-              } Class`,
-              status: "active",
-            },
-          ],
-        },
-        {
-          auth: {
-            username: "nousername",
-            password: MAILCHIMP_API_KEY,
-          },
-        }
-      )
-    } catch (error) {
-      console.log("INTERNAL ERROR", error)
-      throw new functions.https.HttpsError(
-        "internal",
-        "An internal error occurred while trying to send the order confirmation email."
-      )
-    }
-
     const ref = admin
       .firestore()
       .collection("classes-registration")
       .doc("2021march")
       .collection("registrations")
       .doc()
-    await ref.set({
-      financialAid: false,
-      paid: true,
-      orderId: orderData.orderID,
-      orderDetails: orderData,
-      level,
-      personalInfo: {
+    await Promise.all([
+      ref.set({
+        financialAid: false,
+        paid: true,
+        orderId: orderData.orderID,
+        orderDetails: orderData,
+        level,
+        personalInfo: {
+          firstName,
+          lastName,
+          email,
+          preferredLanguage,
+          referrer,
+          referrerDetail,
+          timezone,
+        },
+        timestamp: admin.firestore.FieldValue.serverTimestamp(),
+      }),
+      updateMailingList({
+        email,
         firstName,
         lastName,
-        email,
         preferredLanguage,
-        referrer,
-        referrerDetail,
-        timezone,
-      },
-      timestamp: admin.firestore.FieldValue.serverTimestamp(),
-    })
+        ip: context.rawRequest.ip,
+        level,
+        fullFinancialAid: false,
+      }),
+    ])
 
     return {
       registrationId: ref.id,
       paymentId: orderID,
     }
+  }
+)
+async function updateMailingList({
+  email,
+  firstName,
+  lastName,
+  preferredLanguage,
+  ip,
+  level,
+  fullFinancialAid,
+}: {
+  email: string
+  firstName: string
+  lastName: string
+  preferredLanguage: string
+  ip: string
+  level: string
+  fullFinancialAid: boolean
+}) {
+  try {
+    const listID = "e122c7f3eb"
+    let emailHash = crypto
+      .createHash("md5")
+      .update(email.toLowerCase())
+      .digest("hex")
+    const existingFields = await axios
+      .get(
+        `https://us2.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}`,
+        {
+          auth: {
+            username: "nousername",
+            password: MAILCHIMP_API_KEY,
+          },
+        }
+      )
+      .then(data => {
+        return data.data
+      })
+      .catch(e => {
+        console.log("Mailchimp Existing Fields GET Error")
+        // the user probably doesn't exist
+        // so just assume there is no previous data
+        if (e.status != 404) {
+          console.log(e?.toJSON())
+        }
+        return Promise.resolve({})
+      })
+    const data = {
+      email_address: email,
+      status: "subscribed",
+      status_if_new: "subscribed",
+      ip_signup: ip,
+      merge_fields: {
+        ...(existingFields?.merge_fields || {}),
+        FNAME: firstName,
+        LNAME: lastName,
+        PROGLANG: preferredLanguage == "java" ? "Java" : "C++",
+      },
+    }
+
+    await axios.put(
+      `https://us2.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}`,
+      data,
+      {
+        auth: {
+          username: "nousername",
+          password: MAILCHIMP_API_KEY,
+        },
+      }
+    )
+
+    await axios.post(
+      `https://us2.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}/tags`,
+      {
+        tags: [
+          {
+            name: `March 2021 ${
+              level == "beginner" ? "Beginner" : "Intermediate"
+            } Class`,
+            status: "active",
+          },
+          ...(fullFinancialAid
+            ? [
+                {
+                  name: `March 2021 Full Financial Aid`,
+                  status: "active",
+                },
+              ]
+            : []),
+        ],
+      },
+      {
+        auth: {
+          username: "nousername",
+          password: MAILCHIMP_API_KEY,
+        },
+      }
+    )
+  } catch (error) {
+    console.log("INTERNAL ERROR", error)
+    throw new functions.https.HttpsError(
+      "internal",
+      "An internal error occurred while trying to send the order confirmation email."
+    )
+  }
+}
+export const approveFinancialAid = functions.https.onCall(
+  async (
+    { registrationId, email, firstName, lastName, preferredLanguage, level },
+    context
+  ) => {
+    if (
+      !context.auth ||
+      ![
+        "OjLKRTTzNyQgMifAExQKUA4MtfF2",
+        "v8NK8mHCZnbPQKaPnEs5lKNc3rv2",
+        "BKFOe33Ym7Pc7aQuET57MiljpF03",
+      ].includes(context.auth.uid)
+    ) {
+      throw new functions.https.HttpsError(
+        "permission-denied",
+        "Insufficient Permissions."
+      )
+    }
+
+    await Promise.all([
+      updateMailingList({
+        email,
+        firstName,
+        lastName,
+        preferredLanguage,
+        ip: context.rawRequest.ip,
+        level,
+        fullFinancialAid: false,
+      }),
+      admin
+        .firestore()
+        .collection("classes-registration")
+        .doc("2021march")
+        .collection("registrations")
+        .doc(registrationId)
+        .update({
+          status: "ACCEPTED",
+          acceptedBy: context.auth.uid,
+          acceptedTimestamp: admin.firestore.FieldValue.serverTimestamp(),
+        }),
+    ])
   }
 )
