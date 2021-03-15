@@ -131,7 +131,7 @@ export default function ViewRegistrationPage() {
         <Header />
         <div className="margin-top-nav" />
         <div className="pt-4 sm:pt-10 text-center sm:text-left px-10 mt-28">
-          <h1 className={"text-4xl font-bold tracking-tight leading-9"}>
+          <h1 className={"text-4xl font-bold tracking-tight leading-9 text-center"}>
             Loading...
           </h1>
         </div>
@@ -174,19 +174,19 @@ export default function ViewRegistrationPage() {
       <Header noBanner />
 
       <div className="margin-top-nav" />
-      <div className="pt-4 sm:pt-10 text-center sm:text-left px-10 mt-28 bg-gray-100 pb-10">
-        <div className={"max-w-5xl mx-auto"}>
+      <div className="pt-4 sm:pt-10 text-center sm:text-left px-10 bg-gray-100 pb-10">
+        <div className={"max-w-3xl mx-auto"}>
           <h1 className={"text-4xl font-bold tracking-tight leading-9"}>
             Live Class Registration Data
           </h1>
-          <p className={"my-1"}>
+          <p className={"my-4"}>
             <a
               onClick={() => firebase.auth().signOut()}
               className={"text-blue-600 hover:underline pt-4 cursor-pointer"}
             >
               Log Out
             </a>{" "}
-            |{" "}
+            &middot;{" "}
             <a
               onClick={() => setSoundOn(o => !o)}
               className={"text-blue-600 hover:underline pt-4 cursor-pointer"}
@@ -196,20 +196,22 @@ export default function ViewRegistrationPage() {
                 : "Turn on new registration chime"}
             </a>
           </p>
-          <p className={"my-1 font-bold text-xl"}>
-            {registrations.length} Registrations
-          </p>
-          <p className={"my-1 font-semibold text-md"}>
-            {registrations.length - numFinancialAid} Paid | {numFinancialAid}{" "}
-            Financial Aid Applications
-          </p>
-          <p className={"my-1 font-semibold text-md"}>
-            {numBeginner} Beginner ({numBeginnerJava} Java,{" "}
-            {numBeginner - numBeginnerJava} C++) |{" "}
-            {registrations.length - numBeginner} Intermediate (
-            {numIntermediateJava} Java,{" "}
-            {registrations.length - numBeginner - numIntermediateJava} C++)
-          </p>
+          <div className="my-4">
+            <p className={"font-bold"}>
+              {registrations.length} Registrations
+            </p>
+            <p>
+              {registrations.length - numFinancialAid} Paid &middot; {numFinancialAid}{" "}
+              Financial Aid Applications
+            </p>
+            <p>
+              {numBeginner} Beginner ({numBeginnerJava} Java,{" "}
+              {numBeginner - numBeginnerJava} C++) &middot;{" "}
+              {registrations.length - numBeginner} Intermediate (
+              {numIntermediateJava} Java,{" "}
+              {registrations.length - numBeginner - numIntermediateJava} C++)
+            </p>
+          </div>
           <div className="bg-white shadow overflow-hidden sm:rounded-md mt-5">
             <ul className="divide-y divide-gray-200">
               {registrations.map(reg => (
@@ -217,7 +219,7 @@ export default function ViewRegistrationPage() {
                   <a href={"#" + reg.id} className="block hover:bg-gray-50">
                     <div className="px-4 py-4 sm:px-6">
                       <div className="flex items-center justify-between">
-                        <p className="text-sm font-medium text-indigo-600 truncate">
+                        <p className="text-sm font-medium text-purple-600 truncate">
                           {reg.data.personalInfo.firstName}{" "}
                           {reg.data.personalInfo.lastName}
                         </p>
@@ -315,7 +317,7 @@ export default function ViewRegistrationPage() {
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <div
-                className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full sm:p-6"
+                className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-prose sm:w-full sm:p-6"
                 role="dialog"
                 aria-modal="true"
                 aria-labelledby="modal-headline"
@@ -332,10 +334,10 @@ export default function ViewRegistrationPage() {
                         Registration Details
                       </h3>
                       <div className="mt-2">
-                        <p className="text-sm text-gray-500">
+                        <p className=" text-gray-900">
                           <b>Registration ID:</b> {detailModalRegistrationId}
                         </p>
-                        <p className="text-sm text-gray-500">
+                        <p className=" text-gray-900">
                           <b>Registration Timestamp:</b>{" "}
                           {moment(
                             new Date(
@@ -343,14 +345,14 @@ export default function ViewRegistrationPage() {
                             )
                           ).format("M/D/YY h:mm:ss A")}
                         </p>
-                        <p className="text-sm text-gray-500">
+                        <p className=" text-gray-900">
                           <b>Financial Aid:</b>{" "}
                           {detailModalRegistrationData.financialAid
                             ? "Yes"
                             : "No"}
                         </p>
                         {detailModalRegistrationData.financialAid && (
-                          <p className="text-sm text-gray-500">
+                          <p className=" text-gray-900">
                             <b>Financial Aid Amount:</b>{" "}
                             {
                               detailModalRegistrationData
@@ -359,75 +361,75 @@ export default function ViewRegistrationPage() {
                           </p>
                         )}
                         {detailModalRegistrationData.financialAid && (
-                          <p className="text-sm text-gray-500">
+                          <p className=" text-gray-900">
                             <b>Financial Aid Application Status:</b>{" "}
                             {detailModalRegistrationData.status}
                           </p>
                         )}
                         {detailModalRegistrationData.financialAid && (
-                          <>
-                            <p className="text-sm text-gray-500 my-1">
+                          <div className="my-2">
+                            <p className=" text-gray-900">
                               <b>Why are you requesting financial aid?</b>
                             </p>
-                            <p>
+                            <p className="text-gray-600">
                               {
                                 detailModalRegistrationData
                                   .financialAidApplication.whyInNeed
                               }
                             </p>
-                          </>
+                          </div>
                         )}
                         {detailModalRegistrationData.financialAid && (
-                          <>
-                            <p className="text-sm text-gray-500 mt-1">
+                          <div className="my-2">
+                            <p className="text-gray-900">
                               <b>
                                 Why are you interested in this course? How will
                                 taking this CPI course benefit you?
                               </b>
                             </p>
-                            <p>
+                            <p className="text-gray-600">
                               {
                                 detailModalRegistrationData
                                   .financialAidApplication.whyTakeCourse
                               }
                             </p>
-                          </>
+                          </div>
                         )}
-                        <p className="text-sm text-gray-500">
+                        <p className=" text-gray-900">
                           <b>Level:</b>{" "}
                           {detailModalRegistrationData.level
                             .charAt(0)
                             .toUpperCase() +
                             detailModalRegistrationData.level.substring(1)}
                         </p>
-                        <p className="text-sm text-gray-500">
+                        <p className=" text-gray-900">
                           <b>First Name:</b>{" "}
                           {detailModalRegistrationData.personalInfo.firstName}
                         </p>
-                        <p className="text-sm text-gray-500">
+                        <p className=" text-gray-900">
                           <b>Last Name:</b>{" "}
                           {detailModalRegistrationData.personalInfo.lastName}
                         </p>
-                        <p className="text-sm text-gray-500">
+                        <p className=" text-gray-900">
                           <b>Email:</b>{" "}
-                          {detailModalRegistrationData.personalInfo.lastName}
+                          {detailModalRegistrationData.personalInfo.email}
                         </p>
 
-                        <p className="text-sm text-gray-500">
+                        <p className=" text-gray-900">
                           <b>Programming Language:</b>{" "}
                           {detailModalRegistrationData.personalInfo
                             .preferredLanguage === "java"
                             ? "Java"
                             : "C++"}
                         </p>
-                        <p className="text-sm text-gray-500">
+                        <p className=" text-gray-900">
                           <b>Referrer:</b>{" "}
                           {detailModalRegistrationData.personalInfo.referrer}
                         </p>
                         {["google", "other"].includes(
                           detailModalRegistrationData.personalInfo.referrer
                         ) && (
-                          <p className="text-sm text-gray-500">
+                          <p className=" text-gray-900">
                             <b>
                               {detailModalRegistrationData.personalInfo
                                 .referrer == "google"
@@ -441,7 +443,7 @@ export default function ViewRegistrationPage() {
                             }
                           </p>
                         )}
-                        <p className="text-sm text-gray-500">
+                        <p className=" text-gray-900">
                           <b>Timezone:</b>{" "}
                           {detailModalRegistrationData.personalInfo.timezone}{" "}
                           (UTC
@@ -473,7 +475,7 @@ export default function ViewRegistrationPage() {
                             return
                           }
 
-                          if (!firebase) {
+                           if (!firebase) {
                             alert("Please try again in 10 seconds")
                             return
                           }
@@ -505,7 +507,7 @@ export default function ViewRegistrationPage() {
                         }}
                         type="button"
                         disabled={detailModalFASubmitting}
-                        className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-purple-600 text-base font-medium text-white hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+                        className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-purple-600 text-base font-medium text-white hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 sm:ml-3 sm:w-auto sm:text-sm"
                       >
                         {detailModalFASubmitting
                           ? "Granting Full Financial Aid..."
@@ -518,7 +520,7 @@ export default function ViewRegistrationPage() {
                     onClick={() => {
                       window.location.hash = "#"
                     }}
-                    className="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:w-auto sm:text-sm"
+                    className="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 sm:mt-0 sm:w-auto sm:text-sm"
                   >
                     Close
                   </button>
