@@ -53,7 +53,7 @@ export default function WhyJoin() {
           </div>
           <div className="mt-12 sm:mt-16 lg:mt-0">
             <a
-              className="block pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full"
+              className="block px-4 sm:px-6 lg:px-0 lg:m-0 lg:relative lg:h-full"
               target="_blank"
               href="https://docs.google.com/presentation/d/1n2aXzhSfgbo8GoVpeyeygw1Zi7DATfy-C2wO-O5QElA/present#slide=id.g78b50dee42_0_129"
             >
@@ -96,7 +96,7 @@ export default function WhyJoin() {
             </div>
           </div>
           <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
-            <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+            <div className="block px-4 sm:px-6 lg:px-0 lg:m-0 lg:relative lg:h-full">
               <img
                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                 src="/groups.png"
@@ -160,7 +160,7 @@ export default function WhyJoin() {
           </div>
           <div className="mt-12 sm:mt-16 lg:mt-0">
             <a
-              className="block pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full"
+              className="block px-4 sm:px-6 lg:px-0 lg:m-0 lg:relative lg:h-full"
               target="_blank"
               href="https://docs.google.com/presentation/d/1n2aXzhSfgbo8GoVpeyeygw1Zi7DATfy-C2wO-O5QElA/present#slide=id.g78b50dee42_0_129"
             >
