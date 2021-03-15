@@ -64,6 +64,7 @@ export default function ViewRegistrationPage() {
     console.log("hello")
     window.addEventListener("hashchange", handler)
     handler()
+
     return () => {
       console.log("removed")
 
@@ -110,7 +111,7 @@ export default function ViewRegistrationPage() {
                 console.log(registrations)
                 if (soundOn && newRegistrations.length > registrations.length) {
                   const audio = new Audio(
-                    "https://www.soundjay.com/misc/bell-ring-01.wav"
+                    "https://github.com/thecodingwizard/super-coin-box/raw/gh-pages/assets/coin.mp3"
                   )
                   audio.play()
                 }
