@@ -18,6 +18,7 @@ export default function ViewRegistrationPage() {
   const [soundOn, setSoundOn] = useState(false)
   const [showDetailModal, setShowDetailModal] = useState(false)
   const [detailModalRegistrationId, setDetailModalRegistrationId] = useState("")
+  const [detailModalFASubmitting, setDetailModalFASubmitting] = useState(false)
   const detailModalRegistrationData = registrations.find(
     r => r.id == detailModalRegistrationId
   )?.data
@@ -57,6 +58,7 @@ export default function ViewRegistrationPage() {
       } else {
         setDetailModalRegistrationId(id)
         setShowDetailModal(true)
+        setDetailModalFASubmitting(false)
       }
     }
     console.log("hello")
@@ -475,27 +477,39 @@ export default function ViewRegistrationPage() {
                             alert("Please try again in 10 seconds")
                             return
                           }
+                          setDetailModalFASubmitting(true)
                           firebase
                             .functions()
                             .httpsCallable("approveFinancialAid")({
-                            registrationId: detailModalRegistrationId,
-                            email:
-                              detailModalRegistrationData.personalInfo.email,
-                            firstName:
-                              detailModalRegistrationData.personalInfo
-                                .firstName,
-                            lastName:
-                              detailModalRegistrationData.personalInfo.lastName,
-                            preferredLanguage:
-                              detailModalRegistrationData.personalInfo
-                                .preferredLanguage,
-                            level: detailModalRegistrationData.level,
-                          })
+                              registrationId: detailModalRegistrationId,
+                              email:
+                                detailModalRegistrationData.personalInfo.email,
+                              firstName:
+                                detailModalRegistrationData.personalInfo
+                                  .firstName,
+                              lastName:
+                                detailModalRegistrationData.personalInfo
+                                  .lastName,
+                              preferredLanguage:
+                                detailModalRegistrationData.personalInfo
+                                  .preferredLanguage,
+                              level: detailModalRegistrationData.level,
+                            })
+                            .then(() => {
+                              setDetailModalFASubmitting(false)
+                            })
+                            .catch(e => {
+                              alert("An error occurred:" + e.message)
+                              setDetailModalFASubmitting(false)
+                            })
                         }}
                         type="button"
+                        disabled={detailModalFASubmitting}
                         className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-purple-600 text-base font-medium text-white hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
                       >
-                        Grant Full Financial Aid
+                        {detailModalFASubmitting
+                          ? "Granting Full Financial Aid..."
+                          : "Grant Full Financial Aid"}
                       </button>
                     )}
 
