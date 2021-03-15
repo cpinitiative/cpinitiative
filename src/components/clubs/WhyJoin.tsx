@@ -36,8 +36,16 @@ export default function WhyJoin() {
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
                   We provide slideshows and problemsets for USACO Bronze and
-                  Silver, based off of the USACO Guide. Each division is
-                  designed to be completed in roughly one semester.
+                  Silver, based off of the{" "}
+                  <a
+                    href="https://usaco.guide/"
+                    target="_blank"
+                    className="underline"
+                  >
+                    USACO Guide
+                  </a>
+                  . Each division is designed to be completed in roughly one
+                  semester.
                 </p>
                 <div className="mt-6">
                   <a
