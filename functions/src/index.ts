@@ -238,7 +238,7 @@ export const approveFinancialAid = functions.https.onCall(
         preferredLanguage,
         ip: context.rawRequest.ip,
         level,
-        fullFinancialAid: false,
+        fullFinancialAid: true,
       }),
       admin
         .firestore()

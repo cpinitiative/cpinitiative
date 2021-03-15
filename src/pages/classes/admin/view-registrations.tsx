@@ -359,7 +359,7 @@ export default function ViewRegistrationPage() {
                         {detailModalRegistrationData.financialAid && (
                           <p className="text-sm text-gray-500">
                             <b>Financial Aid Application Status:</b>{" "}
-                            {detailModalRegistrationData.status.toLowerCase()}
+                            {detailModalRegistrationData.status}
                           </p>
                         )}
                         {detailModalRegistrationData.financialAid && (
@@ -456,45 +456,48 @@ export default function ViewRegistrationPage() {
                   )}
                 </div>
                 <div className="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
-                  {detailModalRegistrationData?.financialAid && (
-                    <button
-                      onClick={() => {
-                        if (
-                          !confirm(
-                            detailModalRegistrationData.financialAidApplication
-                              .faAmount !== 100
-                              ? "Are you sure you want to grant full financial aid? The applicant specified that they would be willing to pay part of the fee.  This action is irreversible."
-                              : "Are you sure you would like to grant full financial aid? This action is irreversible."
-                          )
-                        ) {
-                          return
-                        }
+                  {detailModalRegistrationData?.financialAid &&
+                    detailModalRegistrationData?.status == "PENDING" && (
+                      <button
+                        onClick={() => {
+                          if (
+                            !confirm(
+                              detailModalRegistrationData
+                                .financialAidApplication.faAmount !== 100
+                                ? "Are you sure you want to grant full financial aid? The applicant specified that they would be willing to pay part of the fee.  This action is irreversible."
+                                : "Are you sure you would like to grant full financial aid? This action is irreversible."
+                            )
+                          ) {
+                            return
+                          }
 
-                        if (!firebase) {
-                          alert("Please try again in 10 seconds")
-                          return
-                        }
-                        firebase
-                          .functions()
-                          .httpsCallable("approveFinancialAid")({
-                          registrationId: detailModalRegistrationId,
-                          email: detailModalRegistrationData.personalInfo.email,
-                          firstName:
-                            detailModalRegistrationData.personalInfo.firstName,
-                          lastName:
-                            detailModalRegistrationData.personalInfo.lastName,
-                          preferredLanguage:
-                            detailModalRegistrationData.personalInfo
-                              .preferredLanguage,
-                          level: detailModalRegistrationData.level,
-                        })
-                      }}
-                      type="button"
-                      className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-purple-600 text-base font-medium text-white hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
-                    >
-                      Grant Full Financial Aid
-                    </button>
-                  )}
+                          if (!firebase) {
+                            alert("Please try again in 10 seconds")
+                            return
+                          }
+                          firebase
+                            .functions()
+                            .httpsCallable("approveFinancialAid")({
+                            registrationId: detailModalRegistrationId,
+                            email:
+                              detailModalRegistrationData.personalInfo.email,
+                            firstName:
+                              detailModalRegistrationData.personalInfo
+                                .firstName,
+                            lastName:
+                              detailModalRegistrationData.personalInfo.lastName,
+                            preferredLanguage:
+                              detailModalRegistrationData.personalInfo
+                                .preferredLanguage,
+                            level: detailModalRegistrationData.level,
+                          })
+                        }}
+                        type="button"
+                        className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-purple-600 text-base font-medium text-white hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+                      >
+                        Grant Full Financial Aid
+                      </button>
+                    )}
 
                   <button
                     type="button"
