@@ -70,7 +70,7 @@ export default function ViewRegistrationPage() {
       window.removeEventListener("hashchange", handler)
     }
   }, [])
-  const oldRegistrationCount = React.useRef<number>(0);
+  const oldRegistrationCount = React.useRef<number>(0)
   useEffect(() => {
     if (!firebase) {
       return
@@ -108,13 +108,16 @@ export default function ViewRegistrationPage() {
                     /* desc */
                     b.data.timestamp.toMillis() - a.data.timestamp.toMillis()
                 )
-                if (soundOn && newRegistrations.length > oldRegistrationCount.current) {
+                if (
+                  soundOn &&
+                  newRegistrations.length > oldRegistrationCount.current
+                ) {
                   const audio = new Audio(
                     "https://github.com/thecodingwizard/super-coin-box/raw/gh-pages/assets/coin.mp3"
                   )
                   audio.play()
                 }
-    oldRegistrationCount.current = newRegistrations.length;
+                oldRegistrationCount.current = newRegistrations.length
                 setRegistrations(newRegistrations)
               })
           )
@@ -132,7 +135,11 @@ export default function ViewRegistrationPage() {
         <Header />
         <div className="margin-top-nav" />
         <div className="pt-4 sm:pt-10 text-center sm:text-left px-10 mt-28">
-          <h1 className={"text-4xl font-bold tracking-tight leading-9 text-center"}>
+          <h1
+            className={
+              "text-4xl font-bold tracking-tight leading-9 text-center"
+            }
+          >
             Loading...
           </h1>
         </div>
@@ -198,12 +205,10 @@ export default function ViewRegistrationPage() {
             </a>
           </p>
           <div className="my-4">
-            <p className={"font-bold"}>
-              {registrations.length} Registrations
-            </p>
+            <p className={"font-bold"}>{registrations.length} Registrations</p>
             <p>
-              {registrations.length - numFinancialAid} Paid &middot; {numFinancialAid}{" "}
-              Financial Aid Applications
+              {registrations.length - numFinancialAid} Paid &middot;{" "}
+              {numFinancialAid} Financial Aid Applications
             </p>
             <p>
               {numBeginner} Beginner ({numBeginnerJava} Java,{" "}
@@ -476,7 +481,7 @@ export default function ViewRegistrationPage() {
                             return
                           }
 
-                           if (!firebase) {
+                          if (!firebase) {
                             alert("Please try again in 10 seconds")
                             return
                           }
@@ -519,8 +524,8 @@ export default function ViewRegistrationPage() {
                   <button
                     type="button"
                     onClick={() => {
-                      history.pushState(null, null, ' ');
-                      setShowDetailModal(false);
+                      history.pushState(null, null, " ")
+                      setShowDetailModal(false)
                     }}
                     className="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 sm:mt-0 sm:w-auto sm:text-sm"
                   >

@@ -30,16 +30,27 @@ export default function Classes() {
                     <div className="lg:py-24">
                       <h1 className="text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
                         <span className="block">Quality Online</span>
-                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 block">USACO Classes</span>
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 block">
+                          USACO Classes
+                        </span>
                       </h1>
                       <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                        Learn USACO through affordable, high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists.
+                        Learn USACO through affordable, high-quality classes
+                        with vetted, experienced instructors and a curriculum
+                        designed and developed by past USACO Finalists.
                       </p>
                       <div className="mt-8 sm:mt-12 space-x-4">
-                        <Link to="register" className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
+                        <Link
+                          to="register"
+                          className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
+                        >
                           Register Now
                         </Link>
-                        <a href="mailto:classes@joincpi.org" target="_blank" className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gray-800 text-white font-medium hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:ring-offset-gray-900">
+                        <a
+                          href="mailto:classes@joincpi.org"
+                          target="_blank"
+                          className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gray-800 text-white font-medium hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:ring-offset-gray-900"
+                        >
                           Contact Us
                         </a>
                       </div>
@@ -48,7 +59,11 @@ export default function Classes() {
                   <div className="mt-12 -mb-16 sm:-mb-48 lg:mt-10 lg:-mb-16 lg:relative lg:col-span-3">
                     <div className="mx-auto max-w-md px-4 sm:max-w-xl sm:px-6 lg:max-w-none lg:px-0">
                       {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
-                      <img className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="/classes_illustration.svg" alt="" />
+                      <img
+                        className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                        src="/classes_illustration.svg"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -57,13 +72,21 @@ export default function Classes() {
             {/* Feature section with grid */}
             <div className="relative bg-white py-16 sm:py-24 lg:py-32">
               <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-                <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">Why Us?</h2>
+                <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">
+                  Why Us?
+                </h2>
                 <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
                   Premium Quality, Affordable Cost.
                 </p>
                 <p className="mt-8 max-w-prose mx-auto text-xl text-gray-500">
-                  <span className="font-bold block mb-2 text-gray-900">Affordable doesn't mean low-quality.</span>
-                  <span>With a team of past USACO Finalists, we've created classes of the highest possible caliber that are just as competitive as more expensive alternatives.</span>
+                  <span className="font-bold block mb-2 text-gray-900">
+                    Affordable doesn't mean low-quality.
+                  </span>
+                  <span>
+                    With a team of past USACO Finalists, we've created classes
+                    of the highest possible caliber that are just as competitive
+                    as more expensive alternatives.
+                  </span>
                 </p>
                 <div className="mt-16">
                   <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -71,15 +94,29 @@ export default function Classes() {
                       <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
                         <div className="-mt-6">
                           <div>
-                      <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                        <svg  className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-</svg>
-                      </span>
+                            <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                              <svg
+                                className="h-6 w-6 text-white"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                                />
+                              </svg>
+                            </span>
                           </div>
-                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">Vetted Instructors</h3>
+                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                            Vetted Instructors
+                          </h3>
                           <p className="mt-5 text-base text-gray-500">
-                            Our vetted instructors are not only experts in their domains, but are also experienced instructors.
+                            Our vetted instructors are not only experts in their
+                            domains, but are also experienced instructors.
                           </p>
                         </div>
                       </div>
@@ -88,15 +125,30 @@ export default function Classes() {
                       <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
                         <div className="-mt-6">
                           <div>
-                      <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                        <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-</svg>
-                      </span>
+                            <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                              <svg
+                                className="h-6 w-6 text-white"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                />
+                              </svg>
+                            </span>
                           </div>
-                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">Office Hours</h3>
+                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                            Office Hours
+                          </h3>
                           <p className="mt-5 text-base text-gray-500">
-                            In order to ensure student success, we host weekly office hours where students can ask for help from instructors.
+                            In order to ensure student success, we host weekly
+                            office hours where students can ask for help from
+                            instructors.
                           </p>
                         </div>
                       </div>
@@ -105,16 +157,30 @@ export default function Classes() {
                       <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
                         <div className="-mt-6">
                           <div>
-                      <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-
-                        <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-</svg>
-                      </span>
+                            <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                              <svg
+                                className="h-6 w-6 text-white"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                                />
+                              </svg>
+                            </span>
                           </div>
-                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">Learning Management System</h3>
+                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                            Learning Management System
+                          </h3>
                           <p className="mt-5 text-base text-gray-500">
-                            Our hand-crafted Learning Management System comes with a leaderboard to incentivize friendly competition!
+                            Our hand-crafted Learning Management System comes
+                            with a leaderboard to incentivize friendly
+                            competition!
                           </p>
                         </div>
                       </div>
@@ -123,16 +189,32 @@ export default function Classes() {
                       <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
                         <div className="-mt-6">
                           <div>
-                      <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                        {/* Heroicon name: outline/shield-check */}
-                        <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                        </svg>
-                      </span>
+                            <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                              {/* Heroicon name: outline/shield-check */}
+                              <svg
+                                className="h-6 w-6 text-white"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                                />
+                              </svg>
+                            </span>
                           </div>
-                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">Trusted Curriculum</h3>
+                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                            Trusted Curriculum
+                          </h3>
                           <p className="mt-5 text-base text-gray-500">
-                            Our curriculum-writing team is comprised of multiple USACO Finalists with extensive competitive experience.
+                            Our curriculum-writing team is comprised of multiple
+                            USACO Finalists with extensive competitive
+                            experience.
                           </p>
                         </div>
                       </div>
@@ -141,16 +223,30 @@ export default function Classes() {
                       <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
                         <div className="-mt-6">
                           <div>
-                      <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-
-                        <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-</svg>
-                      </span>
+                            <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                              <svg
+                                className="h-6 w-6 text-white"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
+                                />
+                              </svg>
+                            </span>
                           </div>
-                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">Affordable Cost</h3>
+                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                            Affordable Cost
+                          </h3>
                           <p className="mt-5 text-base text-gray-500">
-                            As a nonprofit organization, we strive to make classes as affordable as possible. Each registration costs $100.
+                            As a nonprofit organization, we strive to make
+                            classes as affordable as possible. Each registration
+                            costs $100.
                           </p>
                         </div>
                       </div>
@@ -159,18 +255,38 @@ export default function Classes() {
                       <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
                         <div className="-mt-6">
                           <div>
-                      <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-
-                        <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path fill="transparent" d="M12 14l9-5-9-5-9 5 9 5z" />
-  <path fill="transparent" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-</svg>
-                      </span>
+                            <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                              <svg
+                                className="h-6 w-6 text-white"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  fill="transparent"
+                                  d="M12 14l9-5-9-5-9 5 9 5z"
+                                />
+                                <path
+                                  fill="transparent"
+                                  d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                                />
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                                />
+                              </svg>
+                            </span>
                           </div>
-                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">Financial Aid Available</h3>
+                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                            Financial Aid Available
+                          </h3>
                           <p className="mt-5 text-base text-gray-500">
-                            Our goal is to make competitive programming accessible for everyone. If you can't pay, you can attend classes for free.
+                            Our goal is to make competitive programming
+                            accessible for everyone. If you can't pay, you can
+                            attend classes for free.
                           </p>
                         </div>
                       </div>
@@ -299,52 +415,55 @@ export default function Classes() {
                 </div>
                 <div className="prose prose-lg text-gray-500 mx-auto">
                   <p>
-                    A CPI course consists of 9 weekly classes, each of which lasts 2
-                    hours. Classes will go over challenging example problems and
-                    contain problemsets for homework.
+                    A CPI course consists of 9 weekly classes, each of which
+                    lasts 2 hours. Classes will go over challenging example
+                    problems and contain problemsets for homework.
                   </p>
                   <p>
-                    Classes follow a flipped learning model to maximize the amount of
-                    time students have to ask instructors questions. Our curriculum is
-                    modeled off the{" "}
+                    Classes follow a flipped learning model to maximize the
+                    amount of time students have to ask instructors questions.
+                    Our curriculum is modeled off the{" "}
                     <a href="https://usaco.guide/" target="_blank">
                       USACO Guide
                     </a>
-                    .
-                    There will be weekly office hours for students to get help from instructors.
+                    . There will be weekly office hours for students to get help
+                    from instructors.
                   </p>
                   <p>
-                    <b>Seats are limited</b>. First come first served, so make sure to
-                    sign up soon!
+                    <b>Seats are limited</b>. First come first served, so make
+                    sure to sign up soon!
                   </p>
 
                   <h3>Class Schedule</h3>
                   <ul>
                     <li>
-                      Introductory Class - Fridays, 5:00-7:00pm Pacific Daylight Time (UTC-7). 4/2 to 5/28.
+                      Introductory Class - Fridays, 5:00-7:00pm Pacific Daylight
+                      Time (UTC-7). 4/2 to 5/28.
                     </li>
                     <li>
-                      Intermediate Class - Saturdays, 4:00-6:00pm Pacific Daylight Time (UTC-7). 4/3 to 5/29.
+                      Intermediate Class - Saturdays, 4:00-6:00pm Pacific
+                      Daylight Time (UTC-7). 4/3 to 5/29.
                     </li>
                   </ul>
 
                   <h3>Pricing</h3>
                   <p>
-                    These classes are <b>not for profit</b> -- instructors are unpaid
-                    and volunteer their time to help USACO contestants. We ask for a <b>$100 fee</b> to help support the creation of
-                    these classes and the infrastructure for the resources we provide
-                    such as the USACO Guide.
+                    These classes are <b>not for profit</b> -- instructors are
+                    unpaid and volunteer their time to help USACO contestants.
+                    We ask for a <b>$100 fee</b> to help support the creation of
+                    these classes and the infrastructure for the resources we
+                    provide such as the USACO Guide.
                   </p>
                   <p>
-                    <b>Financial aid is available</b>. If you are unable to pay the
-                    full amount, just let us know!
+                    <b>Financial aid is available</b>. If you are unable to pay
+                    the full amount, just let us know!
                   </p>
 
                   <h3>Programming Language</h3>
                   <p>
-                    Both C++ and Java are acceptable for the class. While our class
-                    will primarily use Java, instructors are fully able to assist C++
-                    users as well.
+                    Both C++ and Java are acceptable for the class. While our
+                    class will primarily use Java, instructors are fully able to
+                    assist C++ users as well.
                   </p>
                 </div>
               </div>

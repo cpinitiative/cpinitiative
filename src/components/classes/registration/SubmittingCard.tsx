@@ -1,7 +1,6 @@
 import * as React from "react"
 
-export default function SubmittingCard({financialAid}) {
-
+export default function SubmittingCard({ financialAid }) {
   return (
     <div className="mt-5">
       <div className="shadow sm:rounded-md sm:overflow-hidden">
@@ -12,8 +11,8 @@ export default function SubmittingCard({financialAid}) {
           <p className="mb-1">
             {" "}
             We are currently submitting your{" "}
-            {financialAid ? "application" : "registration"}. This
-            typically takes about one minute.
+            {financialAid ? "application" : "registration"}. This typically
+            takes about one minute.
           </p>{" "}
           <p>
             <b>Please do not reload or close this page.</b>
