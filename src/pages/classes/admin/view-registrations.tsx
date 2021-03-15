@@ -352,7 +352,7 @@ export default function ViewRegistrationPage() {
                             <b>Financial Aid Amount:</b>{" "}
                             {
                               detailModalRegistrationData
-                                .financialAidApplication.faAmount
+                                .financialAidApplication.amount
                             }
                           </p>
                         )}
@@ -463,7 +463,7 @@ export default function ViewRegistrationPage() {
                           if (
                             !confirm(
                               detailModalRegistrationData
-                                .financialAidApplication.faAmount !== 100
+                                .financialAidApplication.amount !== 100
                                 ? "Are you sure you want to grant full financial aid? The applicant specified that they would be willing to pay part of the fee.  This action is irreversible."
                                 : "Are you sure you would like to grant full financial aid? This action is irreversible."
                             )
