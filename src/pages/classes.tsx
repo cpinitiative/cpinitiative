@@ -69,8 +69,9 @@ export default function Classes() {
                 </div>
               </div>
             </div>
+
             {/* Feature section with grid */}
-            <div className="relative bg-white py-16 sm:py-24 lg:py-32">
+            <div className="relative bg-white py-16 sm:pt-24 lg:pt-32">
               <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
                 <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">
                   Why Us?
@@ -88,7 +89,36 @@ export default function Classes() {
                     as more expensive alternatives.
                   </span>
                 </p>
-                <div className="mt-16">
+
+                {/* Feature: Office Hours */}
+                <div className="bg-white">
+                  <div className="relative py-8">
+                    <div className="sm:mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+                      <div className="relative rounded-2xl px-8 py-8 bg-teal-700 overflow-hidden shadow-xl sm:px-12 sm:py-12 md:py-20">
+                        <div aria-hidden="true" className="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
+                          <svg className="absolute inset-0 h-full w-full" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1463 360">
+                            <path className="text-teal-600 text-opacity-40" fill="currentColor" d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z" />
+                            <path className="text-teal-800 text-opacity-40" fill="currentColor" d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z" />
+                          </svg>
+                        </div>
+                        <div className="relative">
+                          <div className="text-left sm:text-center">
+                            <h2 className="text-2xl font-extrabold text-white tracking-tight sm:text-4xl">
+                              New Addition: Office Hours.
+                            </h2>
+                            <p className="mt-2 sm:mt-6 mx-auto max-w-2xl sm:text-lg text-teal-200">
+                              In order to ensure student success, we host office hours every Wednesday at 5pm PDT where students can ask for help from instructors.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="h-4"/>
+
+                <div>
                   <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="pt-6">
                       <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
@@ -117,38 +147,6 @@ export default function Classes() {
                           <p className="mt-5 text-base text-gray-500">
                             Our vetted instructors are not only experts in their
                             domains, but are also experienced instructors.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="pt-6">
-                      <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                        <div className="-mt-6">
-                          <div>
-                            <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                              <svg
-                                className="h-6 w-6 text-white"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                                />
-                              </svg>
-                            </span>
-                          </div>
-                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                            Office Hours
-                          </h3>
-                          <p className="mt-5 text-base text-gray-500">
-                            In order to ensure student success, we host weekly
-                            office hours where students can ask for help from
-                            instructors.
                           </p>
                         </div>
                       </div>
@@ -291,10 +289,35 @@ export default function Classes() {
                         </div>
                       </div>
                     </div>
+                    <div className="pt-6">
+                      <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                        <div className="-mt-6">
+                          <div>
+                            <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                              <svg
+                                className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                              </svg>
+                            </span>
+                          </div>
+                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                            Integrated with the USACO Guide
+                          </h3>
+                          <p className="mt-5 text-base text-gray-500">
+                            Each class has a corresponding module from the{' '}
+                            <a href="https://usaco.guide/" target="_blank" className="underline">
+                              USACO Guide
+                            </a>,
+                            where you can review a concept or find additional practice.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+
             {/* Testimonial section */}
             {/*<div className="pb-16 bg-gradient-to-r from-teal-500 to-cyan-600 lg:pb-0 lg:z-10 lg:relative">*/}
             {/*  <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">*/}
