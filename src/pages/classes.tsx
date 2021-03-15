@@ -304,7 +304,7 @@ export default function Classes() {
                             Integrated with the USACO Guide
                           </h3>
                           <p className="mt-5 text-base text-gray-500">
-                            Each class has a corresponding module from the{' '}
+                            Each lesson has a corresponding module from the{' '}
                             <a href="https://usaco.guide/" target="_blank" className="underline">
                               USACO Guide
                             </a>,
