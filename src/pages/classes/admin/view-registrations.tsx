@@ -378,9 +378,11 @@ export default function ViewRegistrationPage() {
                               <b>Why are you requesting financial aid?</b>
                             </p>
                             <p className="text-gray-600">
+                              {`(${detailModalRegistrationData
+                                .financialAidApplication.whyInNeed.split(' ').length} words) `}
                               {
                                 detailModalRegistrationData
-                                  .financialAidApplication.whyInNeed
+                                .financialAidApplication.whyInNeed
                               }
                             </p>
                           </div>
@@ -394,6 +396,8 @@ export default function ViewRegistrationPage() {
                               </b>
                             </p>
                             <p className="text-gray-600">
+                              {`(${detailModalRegistrationData
+                                .financialAidApplication.whyTakeCourse.split(' ').length} words) `}
                               {
                                 detailModalRegistrationData
                                   .financialAidApplication.whyTakeCourse
