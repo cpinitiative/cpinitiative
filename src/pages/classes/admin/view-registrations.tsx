@@ -26,7 +26,28 @@ export default function ViewRegistrationPage() {
     () => registrations.filter(r => r.data?.financialAid).length,
     [registrations]
   )
-
+  const numBeginner = useMemo(
+    () => registrations.filter(r => r.data?.level == "beginner").length,
+    [registrations]
+  )
+  const numBeginnerJava = useMemo(
+    () =>
+      registrations.filter(
+        r =>
+          r.data?.level == "beginner" &&
+          r.data?.personalInfo.preferredLanguage == "java"
+      ).length,
+    [registrations]
+  )
+  const numIntermediateJava = useMemo(
+    () =>
+      registrations.filter(
+        r =>
+          r.data?.level == "intermediate" &&
+          r.data?.personalInfo.preferredLanguage == "java"
+      ).length,
+    [registrations]
+  )
   useEffect(() => {
     const handler = () => {
       const id = window.location.hash?.substring(1) || ""
@@ -173,12 +194,21 @@ export default function ViewRegistrationPage() {
                 : "Turn on new registration chime"}
             </a>
           </p>
-          <p className={"my-2 font-bold text-xl"}>
-            {registrations.length} Registrations:{" "}
-            {registrations.length - numFinancialAid} Paid & {numFinancialAid}{" "}
+          <p className={"my-1 font-bold text-xl"}>
+            {registrations.length} Registrations
+          </p>
+          <p className={"my-1 font-semibold text-md"}>
+            {registrations.length - numFinancialAid} Paid | {numFinancialAid}{" "}
             Financial Aid Applications
           </p>
-          <div className="bg-white shadow overflow-hidden sm:rounded-md">
+          <p className={"my-1 font-semibold text-md"}>
+            {numBeginner} Beginner ({numBeginnerJava} Java,{" "}
+            {numBeginner - numBeginnerJava} C++) |{" "}
+            {registrations.length - numBeginner} Intermediate (
+            {numIntermediateJava} Java,{" "}
+            {registrations.length - numBeginner - numIntermediateJava} C++)
+          </p>
+          <div className="bg-white shadow overflow-hidden sm:rounded-md mt-5">
             <ul className="divide-y divide-gray-200">
               {registrations.map(reg => (
                 <li key={reg.id}>
@@ -289,33 +319,15 @@ export default function ViewRegistrationPage() {
                 aria-labelledby="modal-headline"
               >
                 <div className="sm:flex sm:items-start">
-                  <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
-                    {/* Heroicon name: outline/exclamation */}
-                    <svg
-                      className="h-6 w-6 text-red-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
-                      />
-                    </svg>
-                  </div>
                   {!detailModalRegistrationData ? (
                     "Loading..."
                   ) : (
-                    <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+                    <div className="text-center sm:text-left w-full">
                       <h3
                         className="text-lg leading-6 font-medium text-gray-900"
                         id="modal-headline"
                       >
-                        Deactivate account
+                        Registration Details
                       </h3>
                       <div className="mt-2">
                         <p className="text-sm text-gray-500">
@@ -444,12 +456,47 @@ export default function ViewRegistrationPage() {
                   )}
                 </div>
                 <div className="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
-                  <button
-                    type="button"
-                    className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
-                  >
-                    Deactivate
-                  </button>
+                  {detailModalRegistrationData?.financialAid && (
+                    <button
+                      onClick={() => {
+                        if (
+                          detailModalRegistrationData.financialAidApplication
+                            .faAmount !== 100
+                        ) {
+                          if (
+                            !confirm(
+                              "Are you sure you want to grant full financial aid? The applicant specified that they would be willing to pay part of the fee. Partial financial aid grants are not supported on the website."
+                            )
+                          ) {
+                            return
+                          }
+                        }
+                        if (!firebase) {
+                          alert("Please try again in 10 seconds")
+                          return
+                        }
+                        firebase
+                          .functions()
+                          .httpsCallable("approveFinancialAid")({
+                          registrationId: detailModalRegistrationId,
+                          email: detailModalRegistrationData.personalInfo.email,
+                          firstName:
+                            detailModalRegistrationData.personalInfo.firstName,
+                          lastName:
+                            detailModalRegistrationData.personalInfo.lastName,
+                          preferredLanguage:
+                            detailModalRegistrationData.personalInfo
+                              .preferredLanguage,
+                          level: detailModalRegistrationData.level,
+                        })
+                      }}
+                      type="button"
+                      className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+                    >
+                      Grant Full Financial Aid
+                    </button>
+                  )}
+
                   <button
                     type="button"
                     onClick={() => {
