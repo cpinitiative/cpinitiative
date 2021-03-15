@@ -460,17 +460,16 @@ export default function ViewRegistrationPage() {
                     <button
                       onClick={() => {
                         if (
-                          detailModalRegistrationData.financialAidApplication
-                            .faAmount !== 100
+                          !confirm(
+                            detailModalRegistrationData.financialAidApplication
+                              .faAmount !== 100
+                              ? "Are you sure you want to grant full financial aid? The applicant specified that they would be willing to pay part of the fee.  This action is irreversible."
+                              : "Are you sure you would like to grant full financial aid? This action is irreversible."
+                          )
                         ) {
-                          if (
-                            !confirm(
-                              "Are you sure you want to grant full financial aid? The applicant specified that they would be willing to pay part of the fee. Partial financial aid grants are not supported on the website."
-                            )
-                          ) {
-                            return
-                          }
+                          return
                         }
+
                         if (!firebase) {
                           alert("Please try again in 10 seconds")
                           return
