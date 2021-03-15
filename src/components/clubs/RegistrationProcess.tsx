@@ -57,7 +57,7 @@ export default function RegistrationProcess() {
               through Discord or at{" "}
               <a
                 href="mailto:usacoguide@gmail.com"
-                className="font-semibold text-black underline"
+                className="underline"
               >
                 usacoguide@gmail.com
               </a>

@@ -40,7 +40,7 @@ export default function WhyJoin() {
                   <a
                     href="https://usaco.guide/"
                     target="_blank"
-                    className="font-semibold text-black underline"
+                    className="underline"
                   >
                     USACO Guide
                   </a>
