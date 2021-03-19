@@ -18,55 +18,72 @@ export default function ViewRegistrationPage() {
   const [soundOn, setSoundOn] = useState(false)
   const [showDetailModal, setShowDetailModal] = useState(false)
   const [detailModalRegistrationId, setDetailModalRegistrationId] = useState("")
-  const [detailModalFASubmitting, setDetailModalFASubmitting] = useState(false)
+  const [
+    detailModalFASubmittingApproval,
+    setDetailModalFASubmittingApproval,
+  ] = useState(false)
+  const [
+    detailModalFASubmittingRejection,
+    setDetailModalFASubmittingRejection,
+  ] = useState(false)
+
   const detailModalRegistrationData = registrations.find(
     r => r.id == detailModalRegistrationId
   )?.data
-  const numFinancialAid = useMemo(
-    () => registrations.filter(r => r.data?.financialAid).length,
+  const finalizedRegistrations = useMemo(
+    () =>
+      registrations.filter(
+        r => !r.data?.financialAid || r.data?.financialAid.status !== "ACCEPTED"
+      ),
+    [registrations]
+  )
+  const numAcceptedFinancialAid = useMemo(
+    () =>
+      finalizedRegistrations.filter(r => r.data?.status === "ACCEPTED").length,
+    [finalizedRegistrations]
+  )
+  const numPendingFinancialAid = useMemo(
+    () => registrations.filter(r => r.data?.status === "PENDING").length,
     [registrations]
   )
   const numBeginner = useMemo(
-    () => registrations.filter(r => r.data?.level == "beginner").length,
-    [registrations]
+    () =>
+      finalizedRegistrations.filter(r => r.data?.level == "beginner").length,
+    [finalizedRegistrations]
   )
   const numBeginnerJava = useMemo(
     () =>
-      registrations.filter(
+      finalizedRegistrations.filter(
         r =>
           r.data?.level == "beginner" &&
           r.data?.personalInfo.preferredLanguage == "java"
       ).length,
-    [registrations]
+    [finalizedRegistrations]
   )
   const numIntermediateJava = useMemo(
     () =>
-      registrations.filter(
+      finalizedRegistrations.filter(
         r =>
           r.data?.level == "intermediate" &&
           r.data?.personalInfo.preferredLanguage == "java"
       ).length,
-    [registrations]
+    [finalizedRegistrations]
   )
   useEffect(() => {
     const handler = () => {
       const id = window.location.hash?.substring(1) || ""
-      console.log("hashchange", id)
       if (!id) {
         setShowDetailModal(false)
       } else {
         setDetailModalRegistrationId(id)
         setShowDetailModal(true)
-        setDetailModalFASubmitting(false)
+        setDetailModalFASubmittingApproval(false)
       }
     }
-    console.log("hello")
     window.addEventListener("hashchange", handler)
     handler()
 
     return () => {
-      console.log("removed")
-
       window.removeEventListener("hashchange", handler)
     }
   }, [])
@@ -205,17 +222,23 @@ export default function ViewRegistrationPage() {
             </a>
           </p>
           <div className="my-4">
-            <p className={"font-bold"}>{registrations.length} Registrations</p>
+            <p className={"font-bold"}>
+              {finalizedRegistrations.length} Registrations &middot;{" "}
+              {numPendingFinancialAid} Pending FA Applications
+            </p>
             <p>
-              {registrations.length - numFinancialAid} Paid &middot;{" "}
-              {numFinancialAid} Financial Aid Applications
+              {finalizedRegistrations.length - numAcceptedFinancialAid} Paid
+              &middot; {numAcceptedFinancialAid} Accepted For Financial Aid
             </p>
             <p>
               {numBeginner} Beginner ({numBeginnerJava} Java,{" "}
               {numBeginner - numBeginnerJava} C++) &middot;{" "}
-              {registrations.length - numBeginner} Intermediate (
+              {finalizedRegistrations.length - numBeginner} Intermediate (
               {numIntermediateJava} Java,{" "}
-              {registrations.length - numBeginner - numIntermediateJava} C++)
+              {finalizedRegistrations.length -
+                numBeginner -
+                numIntermediateJava}{" "}
+              C++)
             </p>
           </div>
           <div className="bg-white shadow overflow-hidden sm:rounded-md mt-5">
@@ -237,13 +260,17 @@ export default function ViewRegistrationPage() {
                           )}
                           {reg.data.financialAid && (
                             <>
-                              {reg.data.status == "PENDING" ? (
-                                <p className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
-                                  FA Pending
-                                </p>
-                              ) : (
+                              {reg.data.status == "ACCEPTED" ? (
                                 <p className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                                   FA Approved
+                                </p>
+                              ) : reg.data.status == "REJECTED" ? (
+                                <p className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                                  FA Denied
+                                </p>
+                              ) : (
+                                <p className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                                  FA Pending
                                 </p>
                               )}
                             </>
@@ -378,11 +405,14 @@ export default function ViewRegistrationPage() {
                               <b>Why are you requesting financial aid?</b>
                             </p>
                             <p className="text-gray-600">
-                              {`(${detailModalRegistrationData
-                                .financialAidApplication.whyInNeed.split(' ').length} words) `}
+                              {`(${
+                                detailModalRegistrationData.financialAidApplication.whyInNeed.split(
+                                  " "
+                                ).length
+                              } words) `}
                               {
                                 detailModalRegistrationData
-                                .financialAidApplication.whyInNeed
+                                  .financialAidApplication.whyInNeed
                               }
                             </p>
                           </div>
@@ -396,8 +426,11 @@ export default function ViewRegistrationPage() {
                               </b>
                             </p>
                             <p className="text-gray-600">
-                              {`(${detailModalRegistrationData
-                                .financialAidApplication.whyTakeCourse.split(' ').length} words) `}
+                              {`(${
+                                detailModalRegistrationData.financialAidApplication.whyTakeCourse.split(
+                                  " "
+                                ).length
+                              } words) `}
                               {
                                 detailModalRegistrationData
                                   .financialAidApplication.whyTakeCourse
@@ -489,7 +522,7 @@ export default function ViewRegistrationPage() {
                             alert("Please try again in 10 seconds")
                             return
                           }
-                          setDetailModalFASubmitting(true)
+                          setDetailModalFASubmittingApproval(true)
                           firebase
                             .functions()
                             .httpsCallable("approveFinancialAid")({
@@ -508,23 +541,74 @@ export default function ViewRegistrationPage() {
                               level: detailModalRegistrationData.level,
                             })
                             .then(() => {
-                              setDetailModalFASubmitting(false)
+                              setDetailModalFASubmittingApproval(false)
                             })
                             .catch(e => {
                               alert("An error occurred:" + e.message)
-                              setDetailModalFASubmitting(false)
+                              setDetailModalFASubmittingApproval(false)
                             })
                         }}
                         type="button"
-                        disabled={detailModalFASubmitting}
+                        disabled={detailModalFASubmittingApproval}
                         className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-purple-600 text-base font-medium text-white hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 sm:ml-3 sm:w-auto sm:text-sm"
                       >
-                        {detailModalFASubmitting
+                        {detailModalFASubmittingApproval
                           ? "Granting Full Financial Aid..."
                           : "Grant Full Financial Aid"}
                       </button>
                     )}
+                  {detailModalRegistrationData?.financialAid &&
+                    detailModalRegistrationData?.status !== "ACCEPTED" && (
+                      <button
+                        onClick={() => {
+                          if (
+                            detailModalRegistrationData?.status === "PENDING" &&
+                            !confirm(
+                              "Rejection emails are not automatically sent. Do you confirm that you wish to reject this applicant and have already sent a rejection email?"
+                            )
+                          ) {
+                            return
+                          }
 
+                          if (!firebase) {
+                            alert("Please try again in 10 seconds")
+                            return
+                          }
+                          setDetailModalFASubmittingRejection(true)
+                          firebase
+                            .firestore()
+                            .collection("classes-registration")
+                            .doc("2021march")
+                            .collection("registrations")
+                            .doc(detailModalRegistrationId)
+                            .update({
+                              status:
+                                detailModalRegistrationData?.status ===
+                                "REJECTED"
+                                  ? "PENDING"
+                                  : "REJECTED",
+                            })
+                            .then(() => {
+                              setDetailModalFASubmittingRejection(false)
+                            })
+                            .catch(e => {
+                              alert("An error occurred:" + e.message)
+                              setDetailModalFASubmittingRejection(false)
+                            })
+                        }}
+                        type="button"
+                        disabled={detailModalFASubmittingRejection}
+                        className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+                      >
+                        {detailModalRegistrationData?.status === "REJECTED"
+                          ? detailModalFASubmittingRejection
+                            ? "Undoing Financial Aid Rejection..."
+                            : "Undo Financial Aid Rejection"
+                          : detailModalFASubmittingRejection
+                          ? "Rejecting Financial Aid Application..."
+                          : "Reject Financial Aid Application"}
+                      </button>
+                    )}
                   <button
                     type="button"
                     onClick={() => {
