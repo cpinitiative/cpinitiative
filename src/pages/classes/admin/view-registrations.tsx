@@ -177,18 +177,21 @@ export default function ViewRegistrationPage() {
           >
             Go Home
           </Link>
-          {!user && (
-            <button
-              onClick={() =>
+
+          <button
+            onClick={() => {
+              if (user) {
+                firebase.auth().signOut()
+              } else {
                 firebase
                   .auth()
                   .signInWithPopup(new firebase.auth.GoogleAuthProvider())
               }
-              className={"text-2xl text-blue-600 hover:underline pt-4 block"}
-            >
-              Sign In
-            </button>
-          )}
+            }}
+            className={"text-2xl text-blue-600 hover:underline pt-4 block"}
+          >
+            {user ? "Sign Out" : "Sign In"}
+          </button>
         </div>
       </Layout>
     )
