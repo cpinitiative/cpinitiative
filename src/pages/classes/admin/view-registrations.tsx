@@ -528,7 +528,7 @@ export default function ViewRegistrationPage() {
                           setDetailModalFASubmittingApproval(true)
                           firebase
                             .functions()
-                            .httpsCallable("approveFinancialAid")({
+                            .httpsCallable("cpiclasses-approveFinancialAid")({
                               registrationId: detailModalRegistrationId,
                               email:
                                 detailModalRegistrationData.personalInfo.email,
