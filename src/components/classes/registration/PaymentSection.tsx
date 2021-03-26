@@ -146,7 +146,7 @@ export default function PaymentSection({
                       setSubmitting(true)
                       firebase
                         .functions()
-                        .httpsCallable("cpiclasses-processClassRegistration")({
+                        .httpsCallable("cpiclasses-processRegistration")({
                           level,
                           firstName,
                           lastName,
