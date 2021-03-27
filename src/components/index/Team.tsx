@@ -25,6 +25,11 @@ const members: Member[] = [
     title: "Director of Classes / Finalist",
   },
   {
+    photo: "jeffrey",
+    name: "Jeffrey Meng",
+    title: "Director of Operations",
+  },
+  {
     photo: "darren",
     name: "Darren Yao",
     title: "Director of Outreach",
