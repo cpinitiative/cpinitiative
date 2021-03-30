@@ -20,7 +20,9 @@ export default function ClassRegistrationPage() {
   useEffect(() => {
     const handler = () => {
       if (
-        ["beginner", "intermediate"].includes(window.location.hash.substring(1))
+        [/*"beginner", */ "intermediate"].includes(
+          window.location.hash.substring(1)
+        )
       ) {
         setLevel(
           window.location.hash.substring(1) == "beginner"
