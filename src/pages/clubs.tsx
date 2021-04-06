@@ -7,6 +7,7 @@ import CTA from "../components/clubs/CTA"
 import Header from "../components/Header"
 import FAQ from "../components/clubs/FAQ"
 import RegistrationProcess from "../components/clubs/RegistrationProcess"
+import CurrentClubs from "../components/clubs/CurrentClubs"
 
 export default function Clubs() {
   return (
@@ -25,6 +26,8 @@ export default function Clubs() {
       <RegistrationProcess />
       {/*<FAQ />*/}
       <CTA />
+      <div className="h-8"/>
+      <CurrentClubs />
     </Layout>
   )
 }
