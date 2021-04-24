@@ -27,12 +27,22 @@ const clubs: {
   {
     name: "Monta Vista High School",
     photo: "monta_vista",
-    region: "Bay Area"
+    region: "California"
   },
   {
     name: "Branham High School",
     photo: "branham",
-    region: "Bay Area"
+    region: "California"
+  },
+  {
+    name: "Gretchen Whitney High School",
+    photo: "whitney",
+    region: "California"
+  },
+  {
+    name: "Rickards High School",
+    photo: "rickards",
+    region: "Florida"
   }
 ];
 
