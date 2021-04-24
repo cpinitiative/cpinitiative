@@ -92,7 +92,7 @@ export default function WhyJoin() {
               </div>
               <div className="mt-6">
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                  Club Learning Management System (Coming Soon)
+                  Club Learning Management System (Early Access)
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
                   Use a Learning Management System that's fully integrated with

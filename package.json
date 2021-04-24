@@ -38,7 +38,7 @@
     "react-helmet": "^6.1.0",
     "react-paypal-button-v2": "^2.6.3",
     "react-transition-group": "^4.4.1",
-    "tailwindcss": "^2.0.3"
+    "tailwindcss": "^2.1.1"
   },
   "devDependencies": {
     "prettier": "2.1.2"
