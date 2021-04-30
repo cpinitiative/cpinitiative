@@ -43,7 +43,12 @@ const clubs: {
     name: "Rickards High School",
     photo: "rickards",
     region: "Florida"
-  }
+  },
+  {
+    name: "Suncoast Community HS",
+    photo: "suncoast",
+    region: "California"
+  },
 ];
 
 
