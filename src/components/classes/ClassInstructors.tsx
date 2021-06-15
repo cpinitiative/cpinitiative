@@ -25,6 +25,11 @@ const members: Member[] = [
     title: "Administrative Staff",
   },
   {
+    photo: "Varun",
+    name: "Varun Ragunath",
+    title: "Instructor / Finalist",
+  },
+  {
     photo: "alex_chen",
     name: "Alex Chen",
     title: "Instructor / Platinum",
@@ -35,14 +40,19 @@ const members: Member[] = [
     title: "Instructor / Platinum",
   },
   {
-    photo: "yifan_ma",
-    name: "Yifan Ma",
-    title: "Instructor",
+    photo: "Jay",
+    name: "Jay Fu",
+    title: "Instructor / Platinum",
   },
   {
     photo: "david_li",
     name: "David Li",
     title: "Instructor / Platinum",
+  },
+  {
+    photo: "yifan_ma",
+    name: "Yifan Ma",
+    title: "Instructor",
   },
   {
     photo: "amogha_pokkulandra",
