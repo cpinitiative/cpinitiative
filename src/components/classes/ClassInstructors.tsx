@@ -25,14 +25,24 @@ const members: Member[] = [
     title: "Administrative Staff",
   },
   {
+    photo: "alex_chen",
+    name: "Alex Chen",
+    title: "Director of Curriculum",
+  },
+  {
+    photo: "jarvis",
+    name: "Jarvis",
+    title: "Director of Outreach",
+  },
+  {
+    photo: "mayank",
+    name: "Mayank",
+    title: "Operations Manager",
+  },
+  {
     photo: "Varun",
     name: "Varun Ragunath",
     title: "Instructor / Finalist",
-  },
-  {
-    photo: "alex_chen",
-    name: "Alex Chen",
-    title: "Instructor / Platinum",
   },
   {
     photo: "yu_lim",
