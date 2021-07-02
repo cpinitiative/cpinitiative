@@ -20,7 +20,7 @@ export default function Classes() {
 
       <div className="bg-white">
         <div className="relative overflow-hidden">
-          <Header noBanner={true} />
+          <Header noBanner={true} dark />
           <div className="margin-top-nav" />
           <div>
             <div className="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">

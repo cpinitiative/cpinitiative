@@ -61,6 +61,14 @@ const IndexPage = () => (
             Running a CP/CS club? Get access to curriculum, problemsets, and
             contests tailored for school clubs!
           </Card>
+          <Card
+            title="Contests"
+            borderColor="border-purple-600"
+            url="/contests"
+          >
+            A selection of programming contests targeted towards pre-college
+            students.
+          </Card>
         </div>
       </div>
     </div>
