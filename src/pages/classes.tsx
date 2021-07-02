@@ -55,7 +55,7 @@ export default function Classes() {
                         </a>
                       </div>
                       <p className="mt-4 sm:mt-6 text-sm text-gray-300 sm:mt-5 lg:text-base">
-                        <Link to="/classes" className="hover:underline">
+                        <Link to="/live-classes" className="hover:underline">
                           Looking for live classes? &rarr;
                         </Link>
                       </p>
