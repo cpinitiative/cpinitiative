@@ -55,7 +55,9 @@ export default function Classes() {
                         </a>
                       </div>
                       <p className="mt-4 sm:mt-6 text-sm text-gray-300 sm:mt-5 lg:text-base">
-                        <Link to="/classes" className="hover:underline">Looking for live classes? &rarr;</Link>
+                        <Link to="/classes" className="hover:underline">
+                          Looking for live classes? &rarr;
+                        </Link>
                       </p>
                     </div>
                   </div>
@@ -575,6 +577,15 @@ export default function Classes() {
                         video-based rather than text-based. If you're learning
                         fine with the USACO Guide, there is no need to take this
                         class.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        We plan to release this course for free at some point in
+                        the far future. Purchasing this course now gives you
+                        early access to the course and supports our nonprofit
+                        initiative. We'll use your feedback to improve the
+                        course.
                       </p>
                     </li>
                   </ol>
