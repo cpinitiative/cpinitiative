@@ -80,7 +80,7 @@ export default function Classes() {
                   Why This Class?
                 </h2>
                 <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-                  Learning USACO is hard. But it doesn't have to be.
+                  Learning USACO can be hard. But it doesn't have to be.
                 </p>
                 <p className="mt-8 max-w-prose mx-auto text-xl text-gray-500">
                   {/* <span className="font-bold block mb-2 text-gray-900">
