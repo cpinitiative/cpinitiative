@@ -100,6 +100,15 @@ export default function WhyJoin() {
                   club members. Includes a live leaderboard to encourage
                   competition!
                 </p>
+                <div className="mt-6">
+                  <a
+                    href="https://usaco.guide/groups/join?key=ixvVQZVoaT8oZy7GB8ea"
+                    target="_blank"
+                    className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700"
+                  >
+                    Try it out
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -114,7 +123,7 @@ export default function WhyJoin() {
           </div>
         </div>
       </div>
-      <div className="mt-24">
+      {/* <div className="mt-24">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <div>
@@ -180,7 +189,7 @@ export default function WhyJoin() {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
 
     // <div className="bg-gray-50 overflow-hidden" id="benefits">
