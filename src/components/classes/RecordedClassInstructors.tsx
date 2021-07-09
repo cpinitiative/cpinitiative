@@ -10,34 +10,29 @@ type Member = {
 
 const members: Member[] = [
   {
+    photo: "nathanw",
+    name: "Nathan Wang",
+    title: "Lead Instructor / Finalist",
+  },
+  {
     photo: "daniel",
     name: "Daniel Guan",
     title: "Lead Instructor / Finalist",
   },
   {
-    photo: "nathanw",
-    name: "Nathan Wang",
-    title: "Administrative Staff / Finalist",
-  },
-  {
     photo: "jeffrey",
     name: "Jeffrey Meng",
-    title: "Administrative Staff",
+    title: "Lead Instructor",
   },
   {
-    photo: "alex_chen",
-    name: "Alex Chen",
-    title: "Director of Curriculum",
+    photo: "maggie",
+    name: "Maggie Liu",
+    title: "Instructor",
   },
   {
-    photo: "jarvis",
-    name: "Jarvis",
-    title: "Director of Outreach",
-  },
-  {
-    photo: "mayank",
-    name: "Mayank",
-    title: "Operations Manager",
+    photo: "melody",
+    name: "Melody Yu",
+    title: "Instructor",
   },
   {
     photo: "Varun",
@@ -45,23 +40,23 @@ const members: Member[] = [
     title: "Instructor / Finalist",
   },
   {
-    photo: "yu_lim",
-    name: "Yu Lim",
-    title: "Instructor / Platinum",
-  },
-  {
     photo: "Jay",
     name: "Jay Fu",
-    title: "Instructor / Platinum",
+    title: "Instructor",
   },
   {
-    photo: "david_li",
-    name: "David Li",
-    title: "Instructor / Platinum",
+    photo: "jpaulson",
+    name: "Jonathan Paulson",
+    title: "Instructor",
   },
   {
-    photo: "yifan_ma",
-    name: "Yifan Ma",
+    photo: "vivian",
+    name: "Vivian Han",
+    title: "Instructor / USA EGOI Team",
+  },
+  {
+    photo: "neo",
+    name: "Neo Wang",
     title: "Instructor",
   },
   {
@@ -70,13 +65,33 @@ const members: Member[] = [
     title: "Instructor",
   },
   {
-    photo: "amy_chang",
-    name: "Amy Chang",
+    photo: "david_li",
+    name: "David Li",
     title: "Instructor",
   },
   {
     photo: "vikas_thoutam",
     name: "Vikas Thoutam",
+    title: "Instructor",
+  },
+  {
+    photo: "yifan_ma",
+    name: "Yifan Ma",
+    title: "Instructor",
+  },
+  {
+    photo: "Harry",
+    name: "Harry Wang",
+    title: "Instructor",
+  },
+  {
+    photo: "arpan",
+    name: "Arpan Banerjee",
+    title: "Instructor",
+  },
+  {
+    photo: "blank",
+    name: "Nikhil Chatterjee",
     title: "Instructor",
   },
 ]

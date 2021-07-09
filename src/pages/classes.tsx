@@ -114,17 +114,18 @@ export default function Classes() {
                                   strokeLinecap="round"
                                   strokeLinejoin="round"
                                   strokeWidth={2}
-                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                                  d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
                                 />
                               </svg>
                             </span>
                           </div>
                           <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                            Vetted Instructors
+                            Video Explanations
                           </h3>
                           <p className="mt-5 text-base text-gray-500">
-                            Our vetted instructors are not only experts in their
-                            domains, but are also experienced instructors.
+                            Every problem comes with a video solution where an
+                            instructor walks you through how to solve the
+                            problem.
                           </p>
                         </div>
                       </div>
@@ -296,7 +297,7 @@ export default function Classes() {
                             </span>
                           </div>
                           <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                            Improving, With Your Help
+                            Lifetime Updates
                           </h3>
                           <p className="mt-5 text-base text-gray-500">
                             We'll keep updating our course based on your
@@ -314,7 +315,7 @@ export default function Classes() {
             <div className="bg-white">
               <div className="relative pb-8">
                 <div className="sm:mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-                  <div className="relative rounded-2xl px-8 py-8 bg-teal-700 overflow-hidden shadow-xl sm:px-12 sm:py-12 md:py-20">
+                  <div className="relative rounded-2xl px-8 py-8 bg-cyan-700 overflow-hidden shadow-xl sm:px-12 sm:py-12 md:py-20">
                     <div
                       aria-hidden="true"
                       className="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0"
@@ -327,12 +328,12 @@ export default function Classes() {
                         viewBox="0 0 1463 360"
                       >
                         <path
-                          className="text-teal-600 text-opacity-40"
+                          className="text-cyan-600 text-opacity-40"
                           fill="currentColor"
                           d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z"
                         />
                         <path
-                          className="text-teal-800 text-opacity-40"
+                          className="text-cyan-800 text-opacity-40"
                           fill="currentColor"
                           d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z"
                         />
@@ -343,7 +344,7 @@ export default function Classes() {
                         <h2 className="text-2xl font-extrabold text-white tracking-tight sm:text-4xl">
                           Embracing the video format.
                         </h2>
-                        <p className="mt-2 sm:mt-6 mx-auto max-w-2xl sm:text-lg text-teal-200">
+                        <p className="mt-2 sm:mt-6 mx-auto max-w-2xl sm:text-lg text-cyan-200">
                           This course isn't just a series of recorded live
                           classes. Every video in this course is designed to be
                           used in a self-study environment, taking full
@@ -390,7 +391,7 @@ export default function Classes() {
             {/*  </div>*/}
             {/*</div>*/}
 
-            <div className="relative pb-16 bg-white overflow-hidden">
+            <div className="relative bg-white overflow-hidden">
               <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
                 <div className="relative h-full text-lg max-w-prose mx-auto">
                   <svg
@@ -501,6 +502,17 @@ export default function Classes() {
                     soon).
                   </p>
 
+                  <ol>
+                    <li>Time Complexity and Rectangle Geometry</li>
+                    <li>Data Structures and Simulation</li>
+                    <li>Basic Complete Search</li>
+                    <li>Complete Search with Recursion</li>
+                    <li>Sorting, Sets, and Maps</li>
+                    <li>Ad Hoc Problems</li>
+                    <li>Greedy Algorithms</li>
+                    <li>Introduction to Graphs</li>
+                  </ol>
+
                   <h3>Target Audience</h3>
                   <p>
                     This class is targeted to people who are familiar with the
@@ -524,9 +536,9 @@ export default function Classes() {
 
                   <h3>Programming Language</h3>
                   <p>
-                    Both C++ and Java have first-class support in this class.
-                    Python is also supported, but we're still working on adding
-                    Python videos to some sections.
+                    Both C++ and Java have first-class support. Python is also
+                    supported, but we're still working on adding Python videos
+                    to some sections.
                   </p>
 
                   <h3>Pricing</h3>
@@ -589,6 +601,50 @@ export default function Classes() {
                       </p>
                     </li>
                   </ol>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white">
+              <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+                <div className="bg-cyan-700 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
+                  <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+                    <div className="lg:self-center">
+                      <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+                        <span className="block">Convinced?</span>
+                        <span className="block">
+                          Start your USACO journey today.
+                        </span>
+                      </h2>
+                      <p className="mt-4 text-lg leading-6 text-cyan-200">
+                        After taking this class, you'll be comfortable with all
+                        the major concepts of USACO Bronze, and will be
+                        well-equipped to tackle USACO Bronze problems.
+                      </p>
+                      <a
+                        href="#"
+                        className="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-cyan-600 hover:bg-indigo-50"
+                      >
+                        Register Now
+                      </a>
+                      <p className="mt-4 text-cyan-200">
+                        <a
+                          href="https://usaco.guide/groups/join?key=NKR6vjyQtHkxXZMq68gy"
+                          target="_blank"
+                          className="hover:underline"
+                        >
+                          Or try it out for free first! &rarr;
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
+                    <img
+                      className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-8 lg:translate-y-16"
+                      src="https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg"
+                      alt="App screenshot"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
