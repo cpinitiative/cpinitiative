@@ -90,7 +90,7 @@ const members: Member[] = [
     title: "Instructor",
   },
   {
-    photo: "blank",
+    photo: "nikhil",
     name: "Nikhil Chatterjee",
     title: "Instructor",
   },
