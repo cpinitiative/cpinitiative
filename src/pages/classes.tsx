@@ -314,11 +314,11 @@ export default function Classes() {
 
             <div className="bg-white">
               <div className="relative pb-8">
-                <div className="sm:mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+                <div className="mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
                   <div className="relative rounded-2xl px-8 py-8 bg-cyan-700 overflow-hidden shadow-xl sm:px-12 sm:py-12 md:py-20">
                     <div
                       aria-hidden="true"
-                      className="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0"
+                      className="absolute inset-0 mt-20"
                     >
                       <svg
                         className="absolute inset-0 h-full w-full"

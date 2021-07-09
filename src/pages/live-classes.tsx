@@ -39,16 +39,14 @@ export default function Classes() {
                         with vetted, experienced instructors and a curriculum
                         designed and developed by past USACO Finalists.
                       </p>
-                      <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                        <Link to="/classes" className="underline">Looking for video-based self-study classes? &rarr;</Link>
-                      </p>
-                      <div className="mt-8 sm:mt-12 space-x-4">
+                      <div className="mt-8 sm:mt-12 space-y-2 sm:space-x-4">
                         <a
                           href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
                           className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
                         >
                           Get Notified of Future Classes
                         </a>
+                        <br className="sm:hidden" /> 
                         <a
                           href="mailto:classes@joincpi.org"
                           target="_blank"
@@ -57,6 +55,11 @@ export default function Classes() {
                           Contact Us
                         </a>
                       </div>
+                      <p className="mt-4 sm:mt-6 text-sm text-gray-300 sm:mt-5 lg:text-base">
+                        <Link to="/classes" className="hover:underline">
+                          Looking for self-study classes? &rarr;
+                        </Link>
+                      </p>
                     </div>
                   </div>
                   <div className="mt-12 -mb-16 sm:-mb-48 lg:mt-10 lg:-mb-16 lg:relative lg:col-span-3">
