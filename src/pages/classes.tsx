@@ -5,7 +5,7 @@ import Header from "../components/Header"
 import Newsletter from "../components/index/Newsletter"
 import RecordedClassInstructors from "../components/classes/RecordedClassInstructors"
 import { graphql, Link, useStaticQuery } from "gatsby"
-import Img from "gatsby-image";
+import Img from "gatsby-image"
 
 export default function Classes() {
   return (
@@ -41,12 +41,12 @@ export default function Classes() {
                         self-study video format.
                       </p>
                       <div className="mt-8 sm:mt-12 space-x-4">
-                        <a
-                          href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
+                        <Link
+                          to="/classes/register"
                           className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
                         >
                           Register Now
-                        </a>
+                        </Link>
                         <a
                           href="mailto:classes@joincpi.org"
                           target="_blank"
@@ -222,9 +222,9 @@ export default function Classes() {
                             Affordable Cost
                           </h3>
                           <p className="mt-5 text-base text-gray-500">
-                            We're a nonprofit organization. Purchasing the
-                            course costs $25, and all funds are reinvested to
-                            create even better courses.
+                            Purchasing the course costs $25, and all funds are
+                            reinvested to create even better courses. Financial
+                            aid available.
                           </p>
                         </div>
                       </div>
@@ -317,10 +317,7 @@ export default function Classes() {
               <div className="relative pb-8">
                 <div className="mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
                   <div className="relative rounded-2xl px-8 py-8 bg-cyan-700 overflow-hidden shadow-xl sm:px-12 sm:py-12 md:py-20">
-                    <div
-                      aria-hidden="true"
-                      className="absolute inset-0 mt-20"
-                    >
+                    <div aria-hidden="true" className="absolute inset-0 mt-20">
                       <svg
                         className="absolute inset-0 h-full w-full"
                         preserveAspectRatio="xMidYMid slice"
@@ -548,7 +545,8 @@ export default function Classes() {
                     unpaid and volunteer their time to help USACO contestants.
                     We ask for a <b>$25 fee</b> to help support the creation of
                     these classes and the infrastructure for the resources we
-                    provide such as the USACO Guide.
+                    provide such as the USACO Guide. If you're unable to pay,
+                    you can apply for financial aid.
                   </p>
 
                   <h3>How is this different from the Guide?</h3>
@@ -622,13 +620,13 @@ export default function Classes() {
                         the major concepts of USACO Bronze, and will be
                         well-equipped to tackle USACO Bronze problems.
                       </p>
-                      <a
-                        href="#"
+                      <Link
+                        to="/classes/register"
                         className="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-cyan-600 hover:bg-indigo-50"
                       >
                         Register Now
-                      </a>
-                      <p className="mt-4 text-cyan-200">
+                      </Link>
+                      {/* <p className="mt-4 text-cyan-200">
                         <a
                           href="https://usaco.guide/groups/join?key=NKR6vjyQtHkxXZMq68gy"
                           target="_blank"
@@ -636,7 +634,7 @@ export default function Classes() {
                         >
                           Or try it out for free first! &rarr;
                         </a>
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                   <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
