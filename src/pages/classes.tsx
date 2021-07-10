@@ -4,7 +4,8 @@ import SEO from "../components/SEO"
 import Header from "../components/Header"
 import Newsletter from "../components/index/Newsletter"
 import RecordedClassInstructors from "../components/classes/RecordedClassInstructors"
-import { Link } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
+import Img from "gatsby-image";
 
 export default function Classes() {
   return (
@@ -641,8 +642,8 @@ export default function Classes() {
                   <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
                     <img
                       className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-8 lg:translate-y-16"
-                      src="https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg"
-                      alt="App screenshot"
+                      src="/class.png"
+                      alt="Class LMS"
                     />
                   </div>
                 </div>
