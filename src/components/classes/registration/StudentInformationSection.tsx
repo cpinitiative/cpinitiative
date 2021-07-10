@@ -88,6 +88,7 @@ export default function StudentInformationSection({
                     </option>
                     <option value={"java"}>Java</option>
                     <option value={"cpp"}>C++</option>
+                    <option value={"python"}>Python</option>
                   </select>
                 </div>
                 <div className="col-span-6 sm:col-span-3">
