@@ -124,7 +124,7 @@ export default function Classes() {
                             />
                           </svg>
                         </div>
-                        <div className="relative">
+                        <div className="relative px-4">
                           <div className="text-left sm:text-center">
                             <h2 className="text-2xl font-extrabold text-white tracking-tight sm:text-4xl">
                               New Addition: Office Hours.
