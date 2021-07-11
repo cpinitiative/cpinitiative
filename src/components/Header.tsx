@@ -2,7 +2,6 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { useState } from "react"
 import Logo from "./Logo"
-import { LogoDark } from "./LogoDark"
 
 export default function Header({
   noBanner,
@@ -78,9 +77,12 @@ export default function Header({
           <div className="flex">
             <Link
               to="/"
-              className="flex-shrink-0 flex items-center text-xl font-bold"
+              className="flex-shrink-0 flex items-center text-xl font-bold space-x-2"
             >
-              {dark ? <LogoDark /> : <Logo />}
+              <div className="h-9 w-9">
+                <Logo />
+              </div>
+              <span className={`font-bold text-xl ${dark ? 'text-white' : ''}`}>CP Initiative</span>
             </Link>
             <div className="hidden sm:ml-8 sm:flex space-x-8">
               <a
