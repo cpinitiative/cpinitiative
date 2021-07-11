@@ -1,9 +1,7 @@
-import * as React from 'react';
-
 export default function LogoSquare(): JSX.Element {
   return (
     <svg
-      className={'inline-block'}
+      className={"inline-block"}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 100 100"
     >
@@ -29,12 +27,7 @@ export default function LogoSquare(): JSX.Element {
         x2="26.71"
         y2="67"
       />
-      <circle
-        className="fill-current text-[#961be8]"
-        cx="50"
-        cy="27"
-        r="10"
-      />
+      <circle className="fill-current text-[#961be8]" cx="50" cy="27" r="10" />
       <circle
         className="fill-current text-[#961be8]"
         cx="26.71"
@@ -48,5 +41,5 @@ export default function LogoSquare(): JSX.Element {
         r="10"
       />
     </svg>
-  );
+  )
 }
