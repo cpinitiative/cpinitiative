@@ -313,7 +313,7 @@ export default function Classes() {
               </div>
             </div>
 
-            <div className="bg-white">
+            <div className="bg-white px-4">
               <div className="relative pb-8">
                 <div className="mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
                   <div className="relative rounded-2xl px-8 py-8 bg-cyan-700 overflow-hidden shadow-xl sm:px-12 sm:py-12 md:py-20">
@@ -337,7 +337,7 @@ export default function Classes() {
                         />
                       </svg>
                     </div>
-                    <div className="relative px-4">
+                    <div className="relative">
                       <div className="text-left sm:text-center">
                         <h2 className="text-2xl font-extrabold text-white tracking-tight sm:text-4xl">
                           Embracing the video format.
