@@ -61,7 +61,7 @@ export default function Contests() {
           <ul>
             <li><a href="https://mbit.mbhs.edu/" target="_blank" rel="noreferrer">Montgomery Blair Informatics Tournament (mBIT)</a></li>
             <li><a href="https://lit.lhsmathcs.org/" target="_blank" rel="noreferrer">Lexington Informatics Tournament (LIT)</a></li>
-            {/* <li><a href="https://teamscode.org/" target="_blank" rel="noreferrer">Teamscode</a></li> */}
+            <li><a href="https://teamscode.org/" target="_blank" rel="noreferrer">Teamscode</a></li>
           </ul>
           <p>
             Are you organizing a contest targeted towards high schoolers? If you
