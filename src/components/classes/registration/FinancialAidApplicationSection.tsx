@@ -18,7 +18,7 @@ export default function FinancialAidApplicationSection({
             </h3>
             <p className="mt-1 text-sm text-gray-600">
               Financial Aid is available to all who are unable to pay the full
-              $100 amount. Applications are granted based on demonstrated need
+              $25 amount. Applications are granted based on demonstrated need
               and merit.
             </p>
           </div>
@@ -30,7 +30,7 @@ export default function FinancialAidApplicationSection({
                 <div className="col-span-6">
                   <label className="block text-sm font-medium text-gray-700">
                     How much financial aid are you requesting? Enter a number
-                    between $1 and $100.
+                    between $1 and $25.
                   </label>
                   <p className="text-gray-500 mt-1 text-sm">
                     If you are only requesting partial financial aid, you will
@@ -41,7 +41,7 @@ export default function FinancialAidApplicationSection({
                     type="number"
                     step={1}
                     min={1}
-                    max={100}
+                    max={25}
                     value={faAmount}
                     onChange={e => setFaAmount(e.target.value)}
                     className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"

@@ -22,9 +22,10 @@ export default function LevelSelect({
           tabIndex={0}
           role="radio"
           aria-checked={level == "beginner"}
+          onClick={() => setLevel("beginner")}
           className="group relative bg-white rounded-lg shadow-sm cursor-pointer focus:outline-none"
         >
-          <div className="rounded-lg border border-gray-300 bg-gray-100 px-6 py-4 hover:border-gray-400 sm:flex sm:justify-between">
+          <div className="rounded-lg border border-gray-300 bg-white px-6 py-4 hover:border-gray-400 sm:flex sm:justify-between">
             <div className="flex items-center">
               <div className="text-sm">
                 <p className="font-medium text-gray-900">Beginner Class</p>
@@ -32,72 +33,17 @@ export default function LevelSelect({
                   <p className="sm:inline">
                     For students new to USACO and students in USACO Bronze.
                   </p>
-                  <p className="text-red-700">
-                    This class is now full, but you can{" "}
-                    <a
-                      className={"text-blue-700 hover:underline"}
-                      href={
-                        "https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
-                      }
-                    >
-                      click here to join our mailing list and be notified of
-                      future classes
-                    </a>
-                    .
-                  </p>
                 </div>
               </div>
             </div>
             <div className="mt-2 flex text-sm sm:mt-0 sm:block sm:ml-4 sm:text-right">
-              <div className="font-medium text-gray-900">
-                $100 - <span className="text-red-700">FULL</span>
-              </div>
-              <div className="ml-1 text-gray-500 sm:ml-0">
-                Fridays, 5-7pm PDT
-              </div>
+              <div className="font-medium text-gray-900">$25</div>
             </div>
           </div>
           <div
             className={cx(
               "absolute inset-0 rounded-lg border-2 pointer-events-none",
               level == "beginner" ? "border-indigo-500" : "border-transparent"
-            )}
-            aria-hidden="true"
-          ></div>
-        </li>
-
-        <li
-          id="radiogroup-option-1"
-          tabIndex={-1}
-          role="radio"
-          aria-checked={level == "intermediate"}
-          onClick={() => setLevel("intermediate")}
-          className="group relative bg-white rounded-lg shadow-sm cursor-pointer focus:outline-none"
-        >
-          <div className="rounded-lg border border-gray-300 bg-white px-6 py-4 hover:border-gray-400 sm:flex sm:justify-between">
-            <div className="flex items-center">
-              <div className="text-sm">
-                <p className="font-medium text-gray-900">Intermediate Class</p>
-                <div className="text-gray-500">
-                  <p className="sm:inline">
-                    For students currently in USACO Silver.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="mt-2 flex text-sm sm:mt-0 sm:block sm:ml-4 sm:text-right">
-              <div className="font-medium text-gray-900">$100</div>
-              <div className="ml-1 text-gray-500 sm:ml-0">
-                Saturdays, 4-6pm PDT
-              </div>
-            </div>
-          </div>
-          <div
-            className={cx(
-              "absolute inset-0 rounded-lg border-2 pointer-events-none",
-              level == "intermediate"
-                ? "border-indigo-500"
-                : "border-transparent"
             )}
             aria-hidden="true"
           ></div>
