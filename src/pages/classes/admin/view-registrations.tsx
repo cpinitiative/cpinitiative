@@ -299,6 +299,9 @@ export default function ViewRegistrationPage() {
                               ? "Java"
                               : reg.data.personalInfo.preferredLanguage == "cpp"
                               ? "C++"
+                              : reg.data.personalInfo.preferredLanguage ==
+                                "python"
+                              ? "Python"
                               : "ERROR"}
                           </p>
                         </div>
@@ -466,7 +469,10 @@ export default function ViewRegistrationPage() {
                           {detailModalRegistrationData.personalInfo
                             .preferredLanguage === "java"
                             ? "Java"
-                            : "C++"}
+                            : detailModalRegistrationData.personalInfo
+                                .preferredLanguage === "cpp"
+                            ? "C++"
+                            : "Python"}
                         </p>
                         <p className=" text-gray-900">
                           <b>Referrer:</b>{" "}
