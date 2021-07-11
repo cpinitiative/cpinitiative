@@ -497,7 +497,8 @@ export default function Classes() {
                     provide a series of curated problems related to that topic
                     in incremental difficulty. Every problem will come with
                     video and code solutions in C++ and Java (Python coming
-                    soon).
+                    soon). You'll get access to all 8 weeks of curriculum at
+                    once.
                   </p>
 
                   <ol>
