@@ -47,7 +47,7 @@ const members: Member[] = [
   {
     photo: "jpaulson",
     name: "Jonathan Paulson",
-    title: "Instructor",
+    title: "Instructor / USACO Coach",
   },
   {
     photo: "vivian",
