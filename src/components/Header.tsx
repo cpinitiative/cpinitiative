@@ -36,6 +36,17 @@ export default function Header({
     dark ? "border-transparent text-gray-100 focus:border-gray-600" : "border-purple-500 text-gray-900 focus:border-purple-700"
   )
 
+  const blockLinkClasses = "block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium focus:outline-none transition duration-150 ease-in-out " + (
+    !dark 
+      ? "text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300"
+      : "text-gray-400 hover:text-gray-200 hover:bg-gray-700 hover:border-gray-500 focus:text-gray-800 focus:bg-gray-700 focus:border-gray-300"
+    )
+  const activeBlockLinkClasses = "block pl-3 pr-4 py-2 border-l-4 text-base font-medium focus:outline-none transition duration-150 ease-in-out " + (
+      !dark
+      ? "border-purple-500 text-purple-700 bg-purple-50 focus:text-purple-800 focus:bg-purple-100 focus:border-purple-700"
+      : "border-purple-500 text-purple-100 bg-purple-800 focus:text-purple-800 focus:bg-purple-100 focus:border-purple-700"
+    )
+
   return (
     <nav
       className={`${
@@ -114,7 +125,13 @@ export default function Header({
           <div className="-mr-2 flex items-center sm:hidden">
             {/* Mobile menu button */}
             <button
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+              className={
+                "inline-flex items-center justify-center p-2 rounded-md focus:outline-none transition duration-150 ease-in-out " + (
+                  !dark
+                    ? "text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:bg-gray-100 focus:text-gray-500"
+                    : "text-gray-600 hover:text-gray-400 hover:bg-gray-800 focus:bg-gray-700 focus:text-gray-500"
+                )
+              }
               aria-label="Main menu"
               aria-expanded="false"
               onClick={() => setIsOpen(!isOpen)}
@@ -160,7 +177,7 @@ export default function Header({
           <a
             href="https://usaco.guide/"
             target="_blank"
-            className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out"
+            className={blockLinkClasses}
           >
             USACO Guide
           </a>
@@ -170,9 +187,7 @@ export default function Header({
               to={link.url}
               key={link.url}
               getProps={({ isCurrent }) => ({
-                className: !isCurrent
-                  ? "block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out"
-                  : "block pl-3 pr-4 py-2 border-l-4 border-purple-500 text-base font-medium text-purple-700 bg-purple-50 focus:outline-none focus:text-purple-800 focus:bg-purple-100 focus:border-purple-700 transition duration-150 ease-in-out",
+                className: !isCurrent ? blockLinkClasses : activeBlockLinkClasses
               })}
             >
               {link.label}
