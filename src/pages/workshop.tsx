@@ -10,12 +10,6 @@ import WorkshopPeople from "../components/workshop/WorkshopPeople"
 export default function Workshop({ data }) {
   return (
     <Layout>
-      <SEO
-        image={data.ogImage.childImageSharp.fluid}
-        title="USACO for Absolute Beginners Workshop"
-        description="CPI will be holding a USACO for Absolute Beginners Workshop on August 6th, 4-5pm PDT! Join us to learn more about USACO!"
-      />
-
       <Header noBanner />
       <div className="margin-top-nav" />
       {/*/!* Banner margin *!/*/}
@@ -26,17 +20,4 @@ export default function Workshop({ data }) {
 
     </Layout>
   )
-}
-export const pageQuery = graphql`
-  query {
-    ogImage: file(relativePath: { eq: "workshop.jpg" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fluid(maxWidth: 1200) {
-          ...GatsbyImageSharpFluid_noBase64
-        }
-      }
-    }
-  }
-`
+} 
