@@ -2,7 +2,6 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { useState } from "react"
 import Logo from "./Logo"
-import { LogoDark } from "./LogoDark"
 
 export default function Header({
   noBanner,
@@ -29,12 +28,15 @@ export default function Header({
   ]
 
   const linkClasses =
-    "inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 transition duration-150 ease-in-out " + (
-      dark ? "text-gray-400 hover:text-gray-200 hover:border-transparent focus:outline-none focus:text-gray-200 focus:border-gray-600" : "text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300"
-    )
-  const activeLinkClasses = "inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out " + (
-    dark ? "border-transparent text-gray-100 focus:border-gray-600" : "border-purple-500 text-gray-900 focus:border-purple-700"
-  )
+    "inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 transition duration-150 ease-in-out " +
+    (dark
+      ? "text-gray-400 hover:text-gray-200 hover:border-transparent focus:outline-none focus:text-gray-200 focus:border-gray-600"
+      : "text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300")
+  const activeLinkClasses =
+    "inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out " +
+    (dark
+      ? "border-transparent text-gray-100 focus:border-gray-600"
+      : "border-purple-500 text-gray-900 focus:border-purple-700")
 
   const blockLinkClasses = "block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium focus:outline-none transition duration-150 ease-in-out " + (
     !dark 
@@ -89,9 +91,14 @@ export default function Header({
           <div className="flex">
             <Link
               to="/"
-              className="flex-shrink-0 flex items-center text-xl font-bold"
+              className="flex-shrink-0 flex items-center text-xl font-bold space-x-2"
             >
-              {dark ? <LogoDark /> : <Logo />}
+              <div className="h-9 w-9">
+                <Logo />
+              </div>
+              <span className={`font-bold text-xl ${dark ? "text-white" : ""}`}>
+                CP Initiative
+              </span>
             </Link>
             <div className="hidden sm:ml-8 sm:flex space-x-8">
               <a
