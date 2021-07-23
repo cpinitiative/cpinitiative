@@ -10,17 +10,16 @@ export default function AgendaAndContent() {
         </h1>
         <div className="text-lg text-purple-200">
           <p className="text-xl text-white mb-4 font-bold">
-            During the webinar, experienced USACO contestants will explain
-            everything you need to know about getting started with USACO.
+            During the webinar, we will explain everything you need to know about getting started with USACO.
           </p>
           <ul className={"list-disc ml-5"}>
             <li>What is USACO</li>
-            <li>When and How to Attend USACO</li>
-            <li>USACO Level</li>
-            <li>Programming Languages for USACO</li>
-            <li>USACO Scoring</li>
-            <li>USACO Sample Question Workthrough?</li>
-            <li>What Should I Learn for USACO</li>
+            <li>When and how to attend USACO</li>
+            <li>USACO levels</li>
+            <li>Programming languages for USACO</li>
+            <li>USACO scoring</li>
+            <li>USACO sample questions workthrough</li>
+            <li>What should I learn for USACO</li>
             <li>Open Q&A</li>
           </ul>
         </div>
