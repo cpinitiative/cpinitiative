@@ -13,7 +13,7 @@ export default function Workshop({ data }) {
       <SEO
         image={data.ogImage.childImageSharp.fluid}
         title="USACO for Absolute Beginners Workshop"
-        description="CPI will be holding a USACO for Absolute Beginners Workshop on August 6th, 4-5pm PDT! Join us to learn more about what USACO is and how to get better at USACO!"
+        description="CPI will be holding a USACO for Absolute Beginners Workshop on August 6th, 4-5pm PDT! Join us to learn more about USACO!"
       />
 
       <Header noBanner />
