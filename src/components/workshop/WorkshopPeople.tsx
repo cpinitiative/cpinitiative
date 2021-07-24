@@ -10,6 +10,11 @@ type Member = {
 
 const members: Member[] = [
   {
+    photo: "nathanw",
+    name: "Nathan Wang",
+    title: "Three-time USACO Finalist",
+  },
+  {
     photo: "melody",
     name: "Melody Yu",
     title: "Instructor",
