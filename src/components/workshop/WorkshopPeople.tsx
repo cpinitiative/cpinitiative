@@ -12,7 +12,7 @@ const members: Member[] = [
   {
     photo: "nathanw",
     name: "Nathan Wang",
-    title: "2x USACO Finalist",
+    title: "Three-time USACO Finalist",
   },
   {
     photo: "melody",
