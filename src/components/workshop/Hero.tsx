@@ -25,7 +25,7 @@ export default function Hero() {
                 Zoom link:{" "}
                 <a
                   target="_blank"
-                  href="https://bit.ly/usaco-webinar-zoom"
+                  href="https://bit.ly/36ZwIKE"
                   className="underline text-blue-600"
                 >
                   https://bit.ly/36ZwIKE
