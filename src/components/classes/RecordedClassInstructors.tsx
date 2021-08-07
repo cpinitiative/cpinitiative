@@ -94,6 +94,11 @@ const members: Member[] = [
     name: "Nikhil Chatterjee",
     title: "Instructor",
   },
+  {
+    photo: "ryan",
+    name: "Ryan Chou",
+    title: "Instructor",
+  },
 ]
 
 export default function RecordedClassInstructors() {
