@@ -15,9 +15,14 @@ const members: Member[] = [
     title: "CEO / 2x Finalist",
   },
   {
-    photo: "benq",
-    name: "Benjamin Qi",
-    title: "Director of USACO Guide / 2x IOI Winner",
+    photo: "maggie",
+    name: "Maggie Liu",
+    title: "Executive",
+  },
+  {
+    photo: "melody",
+    name: "Melody Yu",
+    title: "Executive",
   },
   {
     photo: "daniel",
@@ -40,14 +45,19 @@ const members: Member[] = [
     title: "Director of Clubs",
   },
   {
+    photo: "benq",
+    name: "Benjamin Qi",
+    title: "Former Director of USACO Guide / 2x IOI Winner",
+  },
+  {
     photo: "Andrew",
     name: "Andrew Wang",
-    title: "Secretary",
+    title: "Former Secretary",
   },
   {
     photo: "nathanc",
     name: "Nathan Chen",
-    title: "Treasurer / 2x Finalist",
+    title: "Former Treasurer / 2x Finalist",
   },
 ]
 
