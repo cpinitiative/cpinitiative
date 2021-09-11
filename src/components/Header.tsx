@@ -197,8 +197,8 @@ export default function Header({
               <a
                 className={
                   link.url === "/" + router.pathname
-                    ? activeLinkClasses
-                    : linkClasses
+                    ? activeBlockLinkClasses
+                    : blockLinkClasses
                 }
               >
                 {link.label}
