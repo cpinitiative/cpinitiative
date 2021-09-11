@@ -4,8 +4,7 @@ import SEO from "../components/SEO"
 import Header from "../components/Header"
 import Newsletter from "../components/index/Newsletter"
 import RecordedClassInstructors from "../components/classes/RecordedClassInstructors"
-import { graphql, Link, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import Link from "next/link"
 
 export default function Classes() {
   return (
@@ -41,11 +40,10 @@ export default function Classes() {
                         self-study video format.
                       </p>
                       <div className="mt-8 sm:mt-12 space-x-4">
-                        <Link
-                          to="/classes/register"
-                          className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
-                        >
-                          Register Now
+                        <Link href="/classes/register">
+                          <a className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
+                            Register Now
+                          </a>
                         </Link>
                         <a
                           href="mailto:classes@joincpi.org"
@@ -56,8 +54,10 @@ export default function Classes() {
                         </a>
                       </div>
                       <p className="mt-4 sm:mt-6 text-sm text-gray-300 sm:mt-5 lg:text-base">
-                        <Link to="/live-classes" className="hover:underline">
-                          Looking for live classes? &rarr;
+                        <Link href="/live-classes">
+                          <a className="hover:underline">
+                            Looking for live classes? &rarr;
+                          </a>
                         </Link>
                       </p>
                     </div>
@@ -621,11 +621,10 @@ export default function Classes() {
                         the major concepts of USACO Bronze, and will be
                         well-equipped to tackle USACO Bronze problems.
                       </p>
-                      <Link
-                        to="/classes/register"
-                        className="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-cyan-600 hover:bg-indigo-50"
-                      >
-                        Register Now
+                      <Link href="/classes/register">
+                        <a className="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-cyan-600 hover:bg-indigo-50">
+                          Register Now
+                        </a>
                       </Link>
                       {/* <p className="mt-4 text-cyan-200">
                         <a

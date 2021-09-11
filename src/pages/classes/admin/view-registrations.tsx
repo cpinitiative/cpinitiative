@@ -1,11 +1,11 @@
 import * as React from "react"
 import Layout from "../../../components/Layout"
 import Header from "../../../components/Header"
-import { Link } from "gatsby"
+import Link from "next/link"
 import useFirebase from "../../../firebase/useFirebase"
 import { useEffect, useMemo, useState } from "react"
 import firebaseType from "firebase"
-import * as moment from "moment-timezone"
+import moment from "moment-timezone"
 import * as Icons from "heroicons-react"
 import Transition from "../../../components/Transition"
 
@@ -171,11 +171,10 @@ export default function ViewRegistrationPage() {
           <h1 className={"text-4xl font-bold tracking-tight leading-9"}>
             Error 404: Page Not Found
           </h1>
-          <Link
-            to={"/"}
-            className={"text-2xl text-blue-600 hover:underline pt-4 block"}
-          >
-            Go Home
+          <Link href={"/"}>
+            <a className={"text-2xl text-blue-600 hover:underline pt-4 block"}>
+              Go Home
+            </a>
           </Link>
 
           <button

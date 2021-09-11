@@ -1,84 +1,78 @@
 import * as React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import Image from "next/image"
+import {
+  nathanw,
+  maggie,
+  melody,
+  daniel,
+  jeffrey,
+  darren,
+  michael,
+  benq,
+  Andrew,
+  nathanc,
+} from "../index/images"
 
 type Member = {
-  photo: string // url of photo relative to content/authors/images/, EXCLUDING EXTENSION
+  photo: StaticImageData // url of photo relative to content/authors/images/, EXCLUDING EXTENSION
   name: string
   title: string
 }
 
-const members: Member[] = [
+export const members: Member[] = [
   {
-    photo: "nathanw",
+    photo: nathanw,
     name: "Nathan Wang",
     title: "CEO / 2x Finalist",
   },
   {
-    photo: "maggie",
+    photo: maggie,
     name: "Maggie Liu",
     title: "Executive",
   },
   {
-    photo: "melody",
+    photo: melody,
     name: "Melody Yu",
     title: "Executive",
   },
   {
-    photo: "daniel",
+    photo: daniel,
     name: "Daniel Guan",
     title: "Director of Classes / Finalist",
   },
   {
-    photo: "jeffrey",
+    photo: jeffrey,
     name: "Jeffrey Meng",
     title: "Director of Operations",
   },
   {
-    photo: "darren",
+    photo: darren,
     name: "Darren Yao",
     title: "Director of Outreach",
   },
   {
-    photo: "michael",
+    photo: michael,
     name: "Michael Cao",
     title: "Director of Clubs",
   },
   {
-    photo: "benq",
+    photo: benq,
     name: "Benjamin Qi",
     title: "Former Director of USACO Guide / 2x IOI Winner",
   },
   {
-    photo: "Andrew",
+    photo: Andrew,
     name: "Andrew Wang",
     title: "Former Secretary",
   },
   {
-    photo: "nathanc",
+    photo: nathanc,
     name: "Nathan Chen",
     title: "Former Treasurer / 2x Finalist",
   },
 ]
 
 export default function Team() {
-  const data = useStaticQuery(graphql`
-    query {
-      allFile(filter: { sourceInstanceName: { eq: "team_images" } }) {
-        edges {
-          node {
-            childImageSharp {
-              fixed(width: 80, height: 80, cropFocus: CENTER, quality: 100) {
-                ...GatsbyImageSharpFixed
-              }
-            }
-            name
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <div className="bg-white">
       <div className="mx-auto py-12 px-4 max-w-screen-xl sm:px-6 lg:px-8 lg:py-24">
@@ -98,16 +92,14 @@ export default function Team() {
               {members.map(member => (
                 <li key={member.name}>
                   <div className="flex items-center space-x-4 lg:space-x-6">
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full lg:w-20 lg:h-20">
-                      <Img
-                        className="rounded-full"
-                        fixed={
-                          (data as any).allFile.edges.find(
-                            x => x.node.name === member.photo
-                          ).node.childImageSharp.fixed
-                        }
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full overflow-hidden relative lg:w-20 lg:h-20">
+                      <Image
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="center center"
+                        src={member.photo}
                         alt={member.name}
-                        style={{ width: "100%", height: "100%" }}
+                        placeholder="blur"
                       />
                     </div>
                     <div className="font-medium text-lg leading-6 space-y-1">

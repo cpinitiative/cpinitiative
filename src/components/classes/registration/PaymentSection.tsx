@@ -114,6 +114,7 @@ export default function PaymentSection({
                         ],
                       })
                     }}
+                    // @ts-ignore
                     onClick={(data, actions) => {
                       setHasAttemptedPayment(true)
                       if (!dataIsValid || !level) {

@@ -4,7 +4,6 @@ import SEO from "../components/SEO"
 import Hero from "../components/workshop/Hero"
 import Header from "../components/Header"
 import AgendaAndContent from "../components/workshop/AgendaAndContent"
-import { graphql } from "gatsby"
 import WorkshopPeople from "../components/workshop/WorkshopPeople"
 
 export default function Workshop({ data }) {
@@ -17,7 +16,6 @@ export default function Workshop({ data }) {
       <Hero />
       <AgendaAndContent />
       <WorkshopPeople />
-
     </Layout>
   )
-} 
+}

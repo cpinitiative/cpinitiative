@@ -1,8 +1,7 @@
 import * as React from "react"
 // @ts-ignore
-import HeroImg from "../../images/contests-hero.svg"
+import HeroImg from "../../images/ContestsHero"
 import EmailForm from "./EmailForm"
-import { Link } from "gatsby"
 
 export default function Hero() {
   return (
