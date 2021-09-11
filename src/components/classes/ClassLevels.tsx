@@ -1,6 +1,4 @@
-import { Link } from "gatsby"
 import * as React from "react"
-import { navigate } from "@reach/router"
 
 export default function ClassLevels() {
   return (

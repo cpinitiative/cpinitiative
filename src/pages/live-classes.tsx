@@ -8,7 +8,7 @@ import ClassLevels from "../components/classes/ClassLevels"
 import ClassInstructors from "../components/classes/ClassInstructors"
 import EmailForm from "../components/classes/EmailForm"
 import Newsletter from "../components/index/Newsletter"
-import { Link } from "gatsby"
+import Link from "next/link"
 
 export default function Classes() {
   return (
@@ -46,7 +46,7 @@ export default function Classes() {
                         >
                           Get Notified of Future Classes
                         </a>
-                        <br className="sm:hidden" /> 
+                        <br className="sm:hidden" />
                         <a
                           href="mailto:classes@joincpi.org"
                           target="_blank"
@@ -56,8 +56,10 @@ export default function Classes() {
                         </a>
                       </div>
                       <p className="mt-4 sm:mt-6 text-sm text-gray-300 sm:mt-5 lg:text-base">
-                        <Link to="/classes" className="hover:underline">
-                          Looking for self-study classes? &rarr;
+                        <Link href="/classes">
+                          <a className="hover:underline">
+                            Looking for self-study classes? &rarr;
+                          </a>
                         </Link>
                       </p>
                     </div>

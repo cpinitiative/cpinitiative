@@ -53,15 +53,31 @@ export default function Contests() {
           <p>
             Programming contests are an excellent way to improve at competitive
             programming by helping you improve your contest strategy and overall
-            programming skills. The CPI partners with various organizers to
-            help you find high quality contests to participate in. If you're
+            programming skills. The CPI partners with various organizers to help
+            you find high quality contests to participate in. If you're
             interested, sign up for our newsletter above.
           </p>
           <p>We currently partner with the following programming contests:</p>
           <ul>
-            <li><a href="https://mbit.mbhs.edu/" target="_blank" rel="noreferrer">Montgomery Blair Informatics Tournament (mBIT)</a></li>
-            <li><a href="https://lit.lhsmathcs.org/" target="_blank" rel="noreferrer">Lexington Informatics Tournament (LIT)</a></li>
-            <li><a href="https://teamscode.org/" target="_blank" rel="noreferrer">Teamscode</a></li>
+            <li>
+              <a href="https://mbit.mbhs.edu/" target="_blank" rel="noreferrer">
+                Montgomery Blair Informatics Tournament (mBIT)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://lit.lhsmathcs.org/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Lexington Informatics Tournament (LIT)
+              </a>
+            </li>
+            <li>
+              <a href="https://teamscode.org/" target="_blank" rel="noreferrer">
+                Teamscode
+              </a>
+            </li>
           </ul>
           <p>
             Are you organizing a contest targeted towards high schoolers? If you

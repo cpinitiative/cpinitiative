@@ -1,104 +1,102 @@
 import * as React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import Image from "next/image"
+import {
+  daniel,
+  nathanw,
+  jeffrey,
+  alex_chen,
+  jarvis,
+  mayank,
+  Varun,
+  yu_lim,
+  Jay,
+  david_li,
+  yifan_ma,
+  amogha_pokkulandra,
+  amy_chang,
+  vikas_thoutam,
+} from "../index/images"
 
 type Member = {
-  photo: string // url of photo relative to content/authors/images/, EXCLUDING EXTENSION
+  photo: StaticImageData // url of photo relative to content/authors/images/, EXCLUDING EXTENSION
   name: string
   title: string
 }
 
 const members: Member[] = [
   {
-    photo: "daniel",
+    photo: daniel,
     name: "Daniel Guan",
     title: "Lead Instructor / Finalist",
   },
   {
-    photo: "nathanw",
+    photo: nathanw,
     name: "Nathan Wang",
     title: "Administrative Staff / Finalist",
   },
   {
-    photo: "jeffrey",
+    photo: jeffrey,
     name: "Jeffrey Meng",
     title: "Administrative Staff",
   },
   {
-    photo: "alex_chen",
+    photo: alex_chen,
     name: "Alex Chen",
     title: "Director of Curriculum",
   },
   {
-    photo: "jarvis",
+    photo: jarvis,
     name: "Jarvis",
     title: "Director of Outreach",
   },
   {
-    photo: "mayank",
+    photo: mayank,
     name: "Mayank",
     title: "Operations Manager",
   },
   {
-    photo: "Varun",
+    photo: Varun,
     name: "Varun Ragunath",
     title: "Instructor / Finalist",
   },
   {
-    photo: "yu_lim",
+    photo: yu_lim,
     name: "Yu Lim",
     title: "Instructor / Platinum",
   },
   {
-    photo: "Jay",
+    photo: Jay,
     name: "Jay Fu",
     title: "Instructor / Platinum",
   },
   {
-    photo: "david_li",
+    photo: david_li,
     name: "David Li",
     title: "Instructor / Platinum",
   },
   {
-    photo: "yifan_ma",
+    photo: yifan_ma,
     name: "Yifan Ma",
     title: "Instructor",
   },
   {
-    photo: "amogha_pokkulandra",
+    photo: amogha_pokkulandra,
     name: "Amogha Pokkulandra",
     title: "Instructor",
   },
   {
-    photo: "amy_chang",
+    photo: amy_chang,
     name: "Amy Chang",
     title: "Instructor",
   },
   {
-    photo: "vikas_thoutam",
+    photo: vikas_thoutam,
     name: "Vikas Thoutam",
     title: "Instructor",
   },
 ]
 
 export default function ClassInstructors() {
-  const data = useStaticQuery(graphql`
-    query {
-      allFile(filter: { sourceInstanceName: { eq: "team_images" } }) {
-        edges {
-          node {
-            childImageSharp {
-              fixed(width: 80, height: 80, cropFocus: CENTER, quality: 100) {
-                ...GatsbyImageSharpFixed
-              }
-            }
-            name
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <div className="bg-white">
       <div className="mx-auto py-12 px-4 max-w-screen-xl sm:px-6 lg:px-8 lg:py-24">
@@ -117,16 +115,14 @@ export default function ClassInstructors() {
               {members.map(member => (
                 <li key={member.name}>
                   <div className="flex items-center space-x-4 lg:space-x-6">
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full lg:w-20 lg:h-20">
-                      <Img
-                        className="rounded-full"
-                        fixed={
-                          (data as any).allFile.edges.find(
-                            x => x.node.name === member.photo
-                          ).node.childImageSharp.fixed
-                        }
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full overflow-hidden relative lg:w-20 lg:h-20">
+                      <Image
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="center center"
+                        src={member.photo}
                         alt={member.name}
-                        style={{ width: "100%", height: "100%" }}
+                        placeholder="blur"
                       />
                     </div>
                     <div className="font-medium text-lg leading-6 space-y-1">
