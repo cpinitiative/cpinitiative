@@ -6,6 +6,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+          <link rel="icon" href="/logo-square.png" />
         </Head>
         <body>
           <Main />
