@@ -43,12 +43,12 @@ export default function Header({
     "block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium focus:outline-none transition duration-150 ease-in-out " +
     (!dark
       ? "text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300"
-      : "text-gray-400 hover:text-gray-200 hover:bg-gray-700 hover:border-gray-500 focus:text-gray-800 focus:bg-gray-700 focus:border-gray-300")
+      : "text-gray-400 hover:text-gray-200 hover:bg-gray-700 hover:border-gray-500 focus:text-gray-200 focus:bg-gray-700 focus:border-gray-300")
   const activeBlockLinkClasses =
     "block pl-3 pr-4 py-2 border-l-4 text-base font-medium focus:outline-none transition duration-150 ease-in-out " +
     (!dark
       ? "border-purple-500 text-purple-700 bg-purple-50 focus:text-purple-800 focus:bg-purple-100 focus:border-purple-700"
-      : "border-purple-500 text-purple-100 bg-purple-800 focus:text-purple-800 focus:bg-purple-100 focus:border-purple-700")
+      : "border-purple-500 text-purple-100 bg-purple-800 focus:text-purple-50 focus:bg-purple-500 focus:border-purple-700")
 
   return (
     <nav
@@ -122,7 +122,7 @@ export default function Header({
                 <Link href={link.url} key={link.url}>
                   <a
                     className={
-                      link.url === "/" + router.pathname
+                      link.url === router.pathname
                         ? activeLinkClasses
                         : linkClasses
                     }
@@ -196,9 +196,9 @@ export default function Header({
             <Link href={link.url} key={link.url}>
               <a
                 className={
-                  link.url === "/" + router.pathname
-                    ? activeLinkClasses
-                    : linkClasses
+                  link.url === router.pathname
+                    ? activeBlockLinkClasses
+                    : blockLinkClasses
                 }
               >
                 {link.label}
