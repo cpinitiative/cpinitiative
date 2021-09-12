@@ -2,7 +2,6 @@ import * as React from "react"
 // @ts-ignore
 import HeroImg from "../../images/ContestsHero"
 import EmailForm from "../classes/EmailForm"
-import Youtube from './markdown/Youtube';
 
 export default function Hero() {
   return (
@@ -20,10 +19,16 @@ export default function Hero() {
                 </span>
               </h2>
   
-              <div className="relative block w-full min-h-32 lg:min-h-64 xl:min-h-80 rounded-lg overflow-hidden focus:outline-none focus:shadow-outline bg-gray-300">
-            <Youtube id={'o3zKQgPpNK0'} autoplay />
+               <div className="aspect-w-16 aspect-h-9">
+                    <iframe
+                      src="https://www.youtube.com/embed/o3zKQgPpNK0"
+                      title="USACO For Absolute Beginners"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+               </div>
          
-              </div>
             </div>
           </main>
         </div>
