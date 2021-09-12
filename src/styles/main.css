@@ -8,3 +8,8 @@
 .anim {
   @apply transition duration-150 ease-in-out;
 }
+
+/* removes navbar shift from page to page */
+html {
+  overflow-y: scroll
+}
