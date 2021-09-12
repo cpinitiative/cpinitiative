@@ -7,6 +7,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
+    "@headlessui/react": "^1.4.1",
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/typography": "^0.4.0",
@@ -28,6 +29,7 @@
     "react-helmet": "^6.1.0",
     "react-paypal-button-v2": "^2.6.3",
     "react-transition-group": "^4.4.1",
+    "swr": "^1.0.0",
     "tailwindcss": "^2.1.1"
   },
   "devDependencies": {
