@@ -23,7 +23,7 @@ export const members: Member[] = [
   {
     photo: nathanw,
     name: "Nathan Wang",
-    title: "CEO / 2x Finalist",
+    title: "Board of Directors / 3x Finalist",
   },
   {
     photo: maggie,
