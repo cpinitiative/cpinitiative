@@ -4,7 +4,6 @@ import { GoogleSpreadsheet } from "google-spreadsheet"
 import { getSession } from "next-auth/client"
 import { SHEETS_API_CREDS, SHEETS_METADATA } from "../../../config"
 import { VolunteerInfo } from "../../../metadata"
-import { SortAscending } from "heroicons-react"
 
 export default async function handler(
   req: NextApiRequest,
@@ -51,7 +50,10 @@ export default async function handler(
       // console.log(volunteer)
       // @ts-ignore
       return volunteer[1]?.emails?.includes(email)
-    })[1]
+    })
+    
+    // @ts-ignore
+    volunteerInfo = volunteerInfo?.length > 1 && volunteerInfo[1]
 
     console.log(volunteerInfo)
 
