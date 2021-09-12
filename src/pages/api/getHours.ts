@@ -47,7 +47,6 @@ export default async function handler(
 
     // identify volunteer alias
     let volunteerInfo = Object.entries(VolunteerInfo).find(volunteer => {
-      // console.log(volunteer)
       // @ts-ignore
       return volunteer[1]?.emails?.includes(email)
     })
