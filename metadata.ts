@@ -4,6 +4,7 @@ export const VolunteerInfo = {
   },
   Harry: {
     aliases: ["Qi Wang"],
+    emails: ["harrynicomama@gmail.com"],
   },
   Ananth: {
     aliases: ["Ananth Kashyap"],
@@ -31,6 +32,7 @@ export const VolunteerInfo = {
   },
   Melody: {
     aliases: ["Melody Yu"],
+    emails: ["ocmelodyyu@gmail.com"],
   },
   Mrinall: {
     aliases: ["Mrinall Umasudhan"],

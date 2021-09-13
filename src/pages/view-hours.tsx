@@ -6,7 +6,6 @@ import SEO from "../components/SEO"
 import useSWR from "swr"
 import { Dialog, Transition } from "@headlessui/react"
 import { SWR_FETCHER } from "../../config"
-import { data } from "autoprefixer"
 
 export function VolunteerHourHistory({ data }) {
   console.log("data: ", data)

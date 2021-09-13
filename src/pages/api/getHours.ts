@@ -58,7 +58,7 @@ export default async function handler(
     console.log(volunteerInfo)
 
     if (!volunteerInfo)
-      res
+      return res
         .status(200)
         .json({
           error:
