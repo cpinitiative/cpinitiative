@@ -13,9 +13,6 @@ export default async function handler(
 
   const email = session?.user?.email
 
-  // console.log(username, password);
-  // console.log(information["Neo Wang"]);
-
   if (!session)
     return res.status(400).json({ error: "Please sign in through the portal" })
 
