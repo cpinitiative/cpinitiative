@@ -9,10 +9,13 @@ import { SWR_FETCHER } from "../../config"
 import { data } from "autoprefixer"
 
 export function VolunteerHourHistory({ data }) {
+  console.log("data: ", data)
   return (
     <div>
       <ul role="list" className="divide-y divide-gray-200">
+        {data?.error && <div>{data.error}</div>}
         {data &&
+          !data?.error &&
           data.data.map(item => (
             <li key={item.id} className="py-4">
               <div className="flex space-x-3">
@@ -42,14 +45,14 @@ export function VolunteerHourHistory({ data }) {
 
 export function AddVolunteerHoursForm({ data }) {
   const [response, setResponse] = React.useState(null)
-  const [name, setName] = React.useState("");
+  const [name, setName] = React.useState("")
   const [hours, setHours] = React.useState("")
   const [prsReviewed, setPrsReviewed] = React.useState("")
   const [other, setOther] = React.useState("")
-  const [error, setError] = React.useState("");
+  const [error, setError] = React.useState("")
   const submitHours = () => {
     // todo: add hours into the google sheet
-    setError("");
+    setError("")
     fetch("/api/addHours", {
       method: "POST",
       headers: {
@@ -61,13 +64,15 @@ export function AddVolunteerHoursForm({ data }) {
         prsReviewed,
         other,
       }),
-    }).then(res => res.json()).then(res => {
-      if (res.error) {
-        setError(res.error);
-      } else {
-        setResponse(res);
-      }
     })
+      .then(res => res.json())
+      .then(res => {
+        if (res.error) {
+          setError(res.error)
+        } else {
+          setResponse(res)
+        }
+      })
   }
   return (
     <div className="my-4 rounded-md">
@@ -104,9 +109,7 @@ export function AddVolunteerHoursForm({ data }) {
         />
       </div>
       <div className="relative border border-gray-300 px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
-        <label
-          className="block w-full text-sm font-medium text-gray-700"
-        >
+        <label className="block w-full text-sm font-medium text-gray-700">
           What pull requests did you review?
         </label>
         <textarea
@@ -116,9 +119,7 @@ export function AddVolunteerHoursForm({ data }) {
         />
       </div>
       <div className="relative border border-gray-300 rounded-md rounded-t-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
-        <label
-          className="block w-full text-sm font-medium text-gray-700"
-        >
+        <label className="block w-full text-sm font-medium text-gray-700">
           Is there anything else you would like to add?
         </label>
         <textarea
@@ -127,7 +128,9 @@ export function AddVolunteerHoursForm({ data }) {
           placeholder="Ex. The majority of my time was dedicated to creating visualizations."
         />
       </div>
-      <div className="w-full p-1 bg-red-200 my-2 rounded-md text-red-800">{error && JSON.stringify(error)}</div>
+      <div className="w-full p-1 bg-red-200 my-2 rounded-md text-red-800">
+        {error && JSON.stringify(error)}
+      </div>
       <div className="w-full p-1">{response && JSON.stringify(response)}</div>
       <div className="w-full p-1">
         Your last pull request was made on:{" "}
@@ -148,7 +151,7 @@ export default function ViewHours() {
   const [viewAddHoursForm, setViewAddHoursForm] = React.useState(false)
   const { data, error } = useSWR("/api/getHours", SWR_FETCHER)
 
-  console.log(data)
+  console.log(data, error)
 
   return (
     <Layout>
@@ -156,14 +159,13 @@ export default function ViewHours() {
         title="View Volunteer Hours"
         description="Volunteer hour portal for CPInitiative"
       />
-      <div className="flex flex-col w-full h-full items-center">
+      <div className="flex flex-col w-full h-full items-center px-4">
         <Header />
         {session && (
           <div className="w-full max-w-7xl pt-24">
             <div className="w-full flex flex-col md:flex-row justify-between my-6">
               <h1 className="text-4xl font-semibold">
-                Your Volunteering Hours:{" "}
-                {data?.totalHours ? data.totalHours : "Loading..."}
+                Your volunteer hours: {data ? data?.totalHours : "..."}
               </h1>
               <div>
                 <button

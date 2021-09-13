@@ -11,7 +11,7 @@ export default async function handler(
 ) {
   const session = await getSession({ req })
 
-  const email = session.user?.email
+  const email = session?.user?.email
 
   // console.log(username, password);
   // console.log(information["Neo Wang"]);
@@ -50,11 +50,23 @@ export default async function handler(
       // @ts-ignore
       return volunteer[1]?.emails?.includes(email)
     })
-    
-    // @ts-ignore
-    volunteerInfo = volunteerInfo?.length > 1 && volunteerInfo[1]
 
     console.log(volunteerInfo)
+
+    if (volunteerInfo?.length > 1 && volunteerInfo[1]) {
+      // @ts-ignore
+      volunteerInfo = volunteerInfo[1]
+    }
+
+    console.log(volunteerInfo)
+
+    if (!volunteerInfo)
+      res
+        .status(200)
+        .json({
+          error:
+            "No volunteer found, make sure you're signed in with the right email. Or, this is your first time.",
+        })
 
     for (let i = 2; i < rows.length; i++) {
       const findData = async () => {
@@ -66,7 +78,7 @@ export default async function handler(
 
         if (
           // @ts-ignore
-          volunteerInfo?.emails.some(
+          volunteerInfo?.emails?.some(
             email => em.trim().toLowerCase() === email.trim().toLowerCase()
           )
         ) {
