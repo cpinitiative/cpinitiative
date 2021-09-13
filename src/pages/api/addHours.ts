@@ -26,7 +26,7 @@ export default async function handler(
     .toISOString()
     .replace("T", " ")
     .replace("Z", "")
-    .replace("-", "/")
+    .replaceAll("-", "/")
     .split(".")[0]
 
   console.log({
