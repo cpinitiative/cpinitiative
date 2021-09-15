@@ -503,11 +503,11 @@ export default function Classes() {
                   <ul>
                     <li>
                       Introductory Class - Fridays, 5:00-7:00pm Pacific Daylight
-                      Time (UTC-7). 4/2 to 5/28.
+                      Time (UTC-7). 10/1/21 to 12/3/21 (skip 11/26).
                     </li>
                     <li>
                       Intermediate Class - Saturdays, 4:00-6:00pm Pacific
-                      Daylight Time (UTC-7). 4/3 to 5/29.
+                      Daylight Time (UTC-7). 10/2/21 to 12/4/21 (skip 11/27).
                     </li>
                   </ul>
 
