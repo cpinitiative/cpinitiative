@@ -142,7 +142,7 @@ export default function ClassRegistrationPage() {
       <div className={"margin-top-nav"}>
         <div className={"px-5 sm:px-12 max-w-6xl mx-auto pt-10"}>
           <h1 className={"text-4xl font-bold tracking-tight leading-9 mb-10"}>
-            CPI USACO Course Registration
+            USACO Self-Study Course Registration
           </h1>
           {showError && <ErrorCard errorData={errorData} />}
           {success && !showError && (

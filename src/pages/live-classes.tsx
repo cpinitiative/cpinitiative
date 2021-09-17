@@ -29,7 +29,7 @@ export default function Classes() {
                   <div className="mx-auto lg:ml-0 max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center lg:col-span-5">
                     <div className="lg:py-24">
                       <h1 className="text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-                        <span className="block">Quality Online</span>
+                        <span className="block">Live Online</span>
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 block">
                           USACO Classes
                         </span>
@@ -40,12 +40,11 @@ export default function Classes() {
                         designed and developed by past USACO Finalists.
                       </p>
                       <div className="mt-8 sm:mt-12 space-y-2 sm:space-x-4">
-                        <a
-                          href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
-                          className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
-                        >
-                          Get Notified of Future Classes
-                        </a>
+                        <Link href="/live-classes/register">
+                          <a className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
+                            Register Now
+                          </a>
+                        </Link>
                         <br className="sm:hidden" />
                         <a
                           href="mailto:classes@joincpi.org"
@@ -503,11 +502,11 @@ export default function Classes() {
                   <ul>
                     <li>
                       Introductory Class - Fridays, 5:00-7:00pm Pacific Daylight
-                      Time (UTC-7). 4/2 to 5/28.
+                      Time (UTC-7). 10/1/21 to 12/3/21 (skip 11/26).
                     </li>
                     <li>
                       Intermediate Class - Saturdays, 4:00-6:00pm Pacific
-                      Daylight Time (UTC-7). 4/3 to 5/29.
+                      Daylight Time (UTC-7). 10/2/21 to 12/4/21 (skip 11/27).
                     </li>
                   </ul>
 

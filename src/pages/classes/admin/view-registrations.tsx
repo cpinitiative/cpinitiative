@@ -42,6 +42,11 @@ export default function ViewRegistrationPage() {
       finalizedRegistrations.filter(r => r.data?.status === "ACCEPTED").length,
     [finalizedRegistrations]
   )
+  const numRejectedFinancialAid = useMemo(
+    () =>
+      finalizedRegistrations.filter(r => r.data?.status !== "ACCEPTED").length,
+    [finalizedRegistrations]
+  )
   const numPendingFinancialAid = useMemo(
     () => registrations.filter(r => r.data?.status === "PENDING").length,
     [registrations]
@@ -229,7 +234,7 @@ export default function ViewRegistrationPage() {
               {numPendingFinancialAid} Pending FA Applications
             </p>
             <p>
-              {finalizedRegistrations.length - numAcceptedFinancialAid} Paid
+              {finalizedRegistrations.length - numAcceptedFinancialAid - numRejectedFinancialAid} Paid
               &middot; {numAcceptedFinancialAid} Accepted For Financial Aid
             </p>
             <p>
