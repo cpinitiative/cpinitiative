@@ -30,14 +30,15 @@ export default async function handler(
 
     const sheet = doc.sheetsByIndex[0]
     const rows = await sheet.getRows()
+    const rowsLength = rows.length + 1
     console.log(`Sheet Title ${sheet.title}`)
-    console.log(`Sheet Length ${rows.length}`)
+    console.log(`Sheet Length ${rowsLength}`)
 
-    await sheet.loadCells(`A2:C${rows.length}`)
-    await sheet.loadCells(`C2:C${rows.length}`)
-    await sheet.loadCells(`D2:D${rows.length}`)
-    await sheet.loadCells(`E2:E${rows.length}`)
-    await sheet.loadCells(`F2:F${rows.length}`)
+    await sheet.loadCells(`A2:C${rowsLength}`)
+    await sheet.loadCells(`C2:C${rowsLength}`)
+    await sheet.loadCells(`D2:D${rowsLength}`)
+    await sheet.loadCells(`E2:E${rowsLength}`)
+    await sheet.loadCells(`F2:F${rowsLength}`)
 
     let totalHours = 0
     let data = []
@@ -65,9 +66,14 @@ export default async function handler(
             "No volunteer found, make sure you're signed in with the right email. Or, this is your first time.",
         })
 
-    for (let i = 2; i < rows.length; i++) {
+    for (let i = 2; i <= rowsLength; i++) {
       const findData = async () => {
-        const time = await sheet.getCellByA1(`A${i}`).formattedValue
+        let time = await sheet.getCellByA1(`A${i}`)
+        console.log(time.effectiveFormat);
+        time = (time.effectiveFormat.type === 'DATE_TIME') ? time.formattedValue : time.value
+        // const temp = await sheet.getCellByA1(`A${i}`)
+        // console.log(temp.numberFormat);
+        // console.log(i, time, temp.numberFormat);
         const em = await sheet.getCellByA1(`C${i}`).value
         const prs = await sheet.getCellByA1(`D${i}`).value
         const hrs = await sheet.getCellByA1(`E${i}`).value
