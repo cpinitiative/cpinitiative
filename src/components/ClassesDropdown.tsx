@@ -18,19 +18,19 @@ export default function ClassesDropdown({
             className={classNames(
               "group inline-flex items-center h-full px-1 pt-1 border-b-2 border-transparent text-sm leading-6 font-medium transition ease-in-out duration-150",
               dark
-                ? "text-gray-400 hover:text-gray-200 hover:border-transparent focus:outline-none focus:text-gray-200"
-                : "text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300",
+                ? "hover:text-gray-200 hover:border-transparent focus:outline-none focus:text-gray-200"
+                : "hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300",
               open ? (dark ? "text-gray-200" : "text-gray-700") : (dark ? "text-gray-400" : "text-gray-500"),
             )}
           >
             Classes
             <ChevronDownIcon
               className={classNames(
-                "h-5 w-5 ml-2 group-hover:text-gray-500 transition ease-in-out duration-150",
+                "h-5 w-5 ml-2 transition ease-in-out duration-150",
                 dark
-                  ? "text-gray-400 group-hover:text-gray-200 group-focus:text-gray-200"
-                  : "text-gray-500 group-hover:text-gray-700 group-focus:text-gray-700",
-                open ? (dark ? "text-gray-200" : "text-gray-700") : (dark ? "text-gray-400" : "text-gray-500"),
+                  ? "group-hover:text-gray-200 group-focus:text-gray-200"
+                  : "group-hover:text-gray-500 group-focus:text-gray-500",
+                open ? (dark ? "text-gray-200" : "text-gray-500") : 'text-gray-400',
               )}
               aria-hidden="true"
             />
@@ -55,8 +55,8 @@ export default function ClassesDropdown({
                   >
                     <a
                       className={classNames(
-                        dark ? 'hover:bg-gray-600 text-gray-200' : 'hover:bg-gray-100 hover:text-gray-900 text-gray-700',
                         'block px-4 py-2 text-sm font-medium',
+                        dark ? 'hover:bg-gray-600 text-gray-200' : 'hover:bg-gray-100 hover:text-gray-900 text-gray-700',
                       )}
                     >
                       Live Classes
@@ -69,8 +69,8 @@ export default function ClassesDropdown({
                   >
                     <a
                       className={classNames(
-                        dark ? 'hover:bg-gray-600 text-gray-200' : 'hover:bg-gray-100 hover:text-gray-900 text-gray-700',
                         'block px-4 py-2 text-sm font-medium',
+                        dark ? 'hover:bg-gray-600 text-gray-200' : 'hover:bg-gray-100 hover:text-gray-900 text-gray-700',
                       )}
                     >
                       Self-Study Classes
