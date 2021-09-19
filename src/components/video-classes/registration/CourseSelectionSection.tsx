@@ -10,8 +10,17 @@ export default function CourseSelectionSection({ level, setLevel }) {
             Course
           </h3>
           <p className="mt-1 text-sm text-gray-600">
-            Select the level that you would like to register for. Select a level
-            to see more details about it.
+            {/* Select the level that you would like to register for. Select a level
+            to see more details about it. */}
+            If you're interested in a USACO Silver class,{" "}
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
+              target="_blank"
+              rel="noreferrer"
+              className="underline"
+            >
+              join our mailing list!
+            </a>
           </p>
         </div>
       </div>
@@ -22,9 +31,10 @@ export default function CourseSelectionSection({ level, setLevel }) {
               <LevelSelect level={level} setLevel={setLevel} />
             </div>
             <p className={"text-sm text-gray-500"}>
-              We ask for a $100 fee (less than $6 per hour of class) to help
-              fund the infrastructure costs of creating these classes. If you're
-              unable to pay, you'll get access to these classes for free.
+              All proceeds go to the nonprofit organization Competitive
+              Programming Initiative, to be used to improve future classes and
+              free resources like the USACO Guide. If you're unable to pay, you
+              can apply for financial aid.
             </p>
             {level && (
               <div>
@@ -43,7 +53,8 @@ export default function CourseSelectionSection({ level, setLevel }) {
                       USACO Silver contestants.
                     </p>
                     <i className="mt-2 text-sm text-gray-500">
-                      Prerequisite: Basic Programming Experience in Java or C++
+                      Prerequisite: Basic Programming Experience in Java, C++,
+                      or Python
                     </i>
                   </>
                 ) : (
@@ -61,11 +72,11 @@ export default function CourseSelectionSection({ level, setLevel }) {
                   </>
                 )}
 
-                <p className="mt-2 text-sm text-gray-500">
+                {/* <p className="mt-2 text-sm text-gray-500">
                   {level == "beginner"
-                    ? "Every Friday from October 1 to December 3 (skip November 26), 5-7pm PDT (UTC-7). (Total 9 Sessions)"
-                    : "Every Saturday from October 2 to December 4 (skip November 27), 4-6pm PDT (UTC-7). (Total 9 Sessions)"}
-                </p>
+                    ? "Every Friday from April 2 to May 28, 5-7pm PDT (UTC-7). (Total 9 Sessions)"
+                    : "Every Saturday from April 3 to May 29, 4-6pm PDT (UTC-7). (Total 9 Sessions)"}
+                </p> */}
               </div>
             )}
           </div>

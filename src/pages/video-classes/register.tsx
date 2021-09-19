@@ -1,3 +1,41 @@
+// import Layout from "../../components/Layout"
+// import SEO from "../../components/SEO"
+// import Header from "../../components/Header"
+// import * as React from "react"
+
+// export default function ClassRegistrationClosedPage() {
+//   return (
+//     <Layout grayFooter className="bg-gray-100">
+//       <SEO
+//         title="Online USACO Classes"
+//         description="Learn USACO through affordable, high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists."
+//       />
+//       <Header noBanner={true} />
+//       <div className={"margin-top-nav"}>
+//         <div className={"px-5 sm:px-12 max-w-6xl mx-auto pt-10"}>
+//           <h1 className={"text-4xl font-bold tracking-tight leading-9 mb-10"}>
+//             CPI USACO Course Registration
+//           </h1>
+//           <p>
+//             We're sorry, but course registration is now closed. If you'd like to
+//             be notified when we open registration for our summer session, you
+//             can{" "}
+//             <a
+//               className={"text-blue-700 hover:underline"}
+//               href={
+//                 "https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
+//               }
+//             >
+//               click here to join our classes mailing list
+//             </a>
+//             .
+//           </p>
+//         </div>
+//       </div>
+//     </Layout>
+//   )
+// }
+
 import * as React from "react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
@@ -5,25 +43,27 @@ import Header from "../../components/Header"
 import { useEffect, useMemo, useState } from "react"
 import * as moment from "moment-timezone"
 import useFirebase from "../../firebase/useFirebase"
-import ErrorCard from "../../components/classes/registration/ErrorCard"
-import ConfirmationCard from "../../components/live-classes/registration/ConfirmationCard"
-import SubmittingCard from "../../components/classes/registration/SubmittingCard"
-import CourseSelectionSection from "../../components/live-classes/registration/CourseSelectionSection"
-import Divider from "../../components/classes/registration/Divider"
-import StudentInformationSection from "../../components/live-classes/registration/StudentInformationSection"
-import FinancialAidApplicationSection from "../../components/live-classes/registration/FinancialAidApplicationSection"
-import FinancialAidSubmissionSection from "../../components/live-classes/registration/FinancialAidSubmissionSection"
-import PaymentSection from "../../components/live-classes/registration/PaymentSection"
+import ErrorCard from "../../components/video-classes/registration/ErrorCard"
+import ConfirmationCard from "../../components/video-classes/registration/ConfirmationCard"
+import SubmittingCard from "../../components/video-classes/registration/SubmittingCard"
+import CourseSelectionSection from "../../components/video-classes/registration/CourseSelectionSection"
+import Divider from "../../components/video-classes/registration/Divider"
+import StudentInformationSection from "../../components/video-classes/registration/StudentInformationSection"
+import FinancialAidApplicationSection from "../../components/video-classes/registration/FinancialAidApplicationSection"
+import FinancialAidSubmissionSection from "../../components/video-classes/registration/FinancialAidSubmissionSection"
+import PaymentSection from "../../components/video-classes/registration/PaymentSection"
 
 export default function ClassRegistrationPage() {
-  const [level, setLevel] = useState<"" | "beginner" | "intermediate">("")
+  const [level, setLevel] = useState<"" | "beginner" | "intermediate">("beginner")
   useEffect(() => {
     const handler = () => {
       if (
-        ["beginner", "intermediate"].includes(window.location.hash.substring(1))
+        ["beginner"/*, "intermediate" */].includes(
+          window.location.hash.substring(1)
+        )
       ) {
         setLevel(
-          window.location.hash.substring(1) == "beginner"
+          window.location.hash.substring(1) === "beginner"
             ? "beginner"
             : "intermediate"
         )
@@ -36,7 +76,7 @@ export default function ClassRegistrationPage() {
     }
   }, [])
   useEffect(() => {
-    if (["beginner", "intermediate"].includes(level)) {
+    if (["beginner"/*, "intermediate" */].includes(level)) {
       window.location.hash = "#" + level
     }
   }, [level])
@@ -102,7 +142,7 @@ export default function ClassRegistrationPage() {
       <div className={"margin-top-nav"}>
         <div className={"px-5 sm:px-12 max-w-6xl mx-auto pt-10"}>
           <h1 className={"text-4xl font-bold tracking-tight leading-9 mb-10"}>
-            USACO Live Course Registration
+            USACO Self-Study Course Registration
           </h1>
           {showError && <ErrorCard errorData={errorData} />}
           {success && !showError && (

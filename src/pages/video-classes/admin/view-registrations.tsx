@@ -108,7 +108,6 @@ export default function ViewRegistrationPage() {
             "OjLKRTTzNyQgMifAExQKUA4MtfF2",
             "v8NK8mHCZnbPQKaPnEs5lKNc3rv2",
             "BKFOe33Ym7Pc7aQuET57MiljpF03",
-            "YF9ObmH1SUR1MKJGTrO8DfBQUG13"
           ].includes(user.uid)
         ) {
           setHasPermission(true)
@@ -116,7 +115,7 @@ export default function ViewRegistrationPage() {
             firebase
               .firestore()
               .collection("classes-registration")
-              .doc("2021october")
+              .doc("usacobronze")
               .collection("registrations")
               .onSnapshot(snapshot => {
                 const newRegistrations = []
@@ -177,9 +176,7 @@ export default function ViewRegistrationPage() {
           <h1 className={"text-4xl font-bold tracking-tight leading-9"}>
             Error 404: Page Not Found
           </h1>
-          <Link
-            href={"/"}
-          >
+          <Link href={"/"}>
             <a className={"text-2xl text-blue-600 hover:underline pt-4 block"}>
               Go Home
             </a>
@@ -306,6 +303,9 @@ export default function ViewRegistrationPage() {
                               ? "Java"
                               : reg.data.personalInfo.preferredLanguage == "cpp"
                               ? "C++"
+                              : reg.data.personalInfo.preferredLanguage ==
+                                "python"
+                              ? "Python"
                               : "ERROR"}
                           </p>
                         </div>
@@ -473,7 +473,10 @@ export default function ViewRegistrationPage() {
                           {detailModalRegistrationData.personalInfo
                             .preferredLanguage === "java"
                             ? "Java"
-                            : "C++"}
+                            : detailModalRegistrationData.personalInfo
+                                .preferredLanguage === "cpp"
+                            ? "C++"
+                            : "Python"}
                         </p>
                         <p className=" text-gray-900">
                           <b>Referrer:</b>{" "}
@@ -520,7 +523,7 @@ export default function ViewRegistrationPage() {
                           if (
                             !confirm(
                               detailModalRegistrationData
-                                .financialAidApplication.amount !== 100
+                                .financialAidApplication.amount !== 25
                                 ? "Are you sure you want to grant full financial aid? The applicant specified that they would be willing to pay part of the fee.  This action is irreversible."
                                 : "Are you sure you would like to grant full financial aid? This action is irreversible."
                             )
@@ -535,7 +538,7 @@ export default function ViewRegistrationPage() {
                           setDetailModalFASubmittingApproval(true)
                           firebase
                             .functions()
-                            .httpsCallable("cpiclasses-approveLiveFinancialAid")({
+                            .httpsCallable("cpiclasses-approveFinancialAid")({
                               registrationId: detailModalRegistrationId,
                               email:
                                 detailModalRegistrationData.personalInfo.email,
@@ -588,7 +591,7 @@ export default function ViewRegistrationPage() {
                           firebase
                             .firestore()
                             .collection("classes-registration")
-                            .doc("2021october")
+                            .doc("usacobronze")
                             .collection("registrations")
                             .doc(detailModalRegistrationId)
                             .update({

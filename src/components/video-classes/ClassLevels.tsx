@@ -81,7 +81,7 @@ export default function ClassLevels() {
                     ))}
                   </ul>
                   <div className="rounded-md shadow">
-                  <Link href="/live-classes/register/#beginner">
+                  <Link href="/classes/register/#beginner">
                     <a
                       className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                       aria-describedby="tier-standard"
@@ -151,7 +151,7 @@ export default function ClassLevels() {
                   </ul>
                   <div className="rounded-md shadow">
                     <div className="rounded-md shadow">
-                      <Link href="/live-classes/register/#intermediate">
+                      <Link href="/classes/register/#intermediate">
                         <a
                           className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                           aria-describedby="tier-standard"
@@ -181,7 +181,7 @@ export default function ClassLevels() {
                 </div>
               </div>
               <div className="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
-                <Link href="/live-classes/register">
+                <Link href="/classes/register">
                   <a
                     className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                     aria-describedby="tier-standard"
