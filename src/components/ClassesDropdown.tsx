@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
+import Link from 'next/link'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -49,32 +50,32 @@ export default function ClassesDropdown({
             )}>
               <div className="py-1">
                 <Menu.Item>
-                  {({ active }) => (
+                  <Link
+                    href="/classes"
+                  >
                     <a
-                      href="/classes"
                       className={classNames(
-                        active ? (dark ? 'bg-gray-600' : 'bg-gray-100 text-gray-900') : (!dark && 'text-gray-700'),
+                        dark ? 'hover:bg-gray-600 text-gray-200' : 'hover:bg-gray-100 hover:text-gray-900 text-gray-700',
                         'block px-4 py-2 text-sm font-medium',
-                        dark && 'text-gray-200',
                       )}
                     >
                       Live Classes
                     </a>
-                  )}
+                  </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  {({ active }) => (
+                  <Link
+                    href="/video-classes"
+                  >
                     <a
-                      href="/video-classes"
                       className={classNames(
-                        active ? (dark ? 'bg-gray-600' : 'bg-gray-100 text-gray-900') : (!dark && 'text-gray-700'),
+                        dark ? 'hover:bg-gray-600 text-gray-200' : 'hover:bg-gray-100 hover:text-gray-900 text-gray-700',
                         'block px-4 py-2 text-sm font-medium',
-                        dark && 'text-gray-200',
                       )}
                     >
                       Self-Study Classes
                     </a>
-                  )}
+                  </Link>
                 </Menu.Item>
               </div>
             </Menu.Items>
