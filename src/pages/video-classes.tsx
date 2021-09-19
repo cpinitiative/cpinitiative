@@ -40,7 +40,7 @@ export default function Classes() {
                         self-study video format.
                       </p>
                       <div className="mt-8 sm:mt-12 space-x-4">
-                        <Link href="/classes/register">
+                        <Link href="/video-classes/register">
                           <a className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
                             Register Now
                           </a>
@@ -621,7 +621,7 @@ export default function Classes() {
                         the major concepts of USACO Bronze, and will be
                         well-equipped to tackle USACO Bronze problems.
                       </p>
-                      <Link href="/classes/register">
+                      <Link href="/video-classes/register">
                         <a className="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-cyan-600 hover:bg-indigo-50">
                           Register Now
                         </a>
