@@ -24,10 +24,10 @@ export default async function handler(
 
   const time = new Date()
     .toISOString()
-    .replace("T", " ")
-    .replace("Z", "")
-    .replaceAll("-", "/")
-    .split(".")[0]
+    // .replace("T", " ")
+    // .replace("Z", "")
+    // .replaceAll("-", "/")
+    // .split(".")[0]
 
   console.log({
     time,
@@ -56,7 +56,7 @@ export default async function handler(
         `${String.fromCharCode("A".charCodeAt(0) + idx)}${rows.length + 2}`
       )
 
-    //   if (idx === 0) cell.formattedValue = val
+      //   if (idx === 0) cell.formattedValue = val
       cell.value = val
       await sheet.saveUpdatedCells()
     })
