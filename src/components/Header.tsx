@@ -194,7 +194,31 @@ export default function Header({
             className={blockLinkClasses}
           >
             USACO Guide
-          </a>   
+          </a>
+
+          <Link href='/classes'>
+            <a
+              className={
+                '/classes' === router.pathname
+                  ? activeBlockLinkClasses
+                  : blockLinkClasses
+              }
+            >
+              Live Classes
+            </a>
+          </Link>
+
+          <Link href='/video-classes'>
+            <a
+              className={
+                '/video-classes' === router.pathname
+                  ? activeBlockLinkClasses
+                  : blockLinkClasses
+              }
+            >
+              Self-Study Classes
+            </a>
+          </Link>
 
           {internalLinks.map(link => (
             <Link href={link.url} key={link.url}>
