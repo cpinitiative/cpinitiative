@@ -74,7 +74,6 @@ export default function ViewRegistrationPage() {
       ).length,
     [finalizedRegistrations]
   )
-  console.log(numRejectedFinancialAid)
   useEffect(() => {
     const handler = () => {
       const id = window.location.hash?.substring(1) || ""
