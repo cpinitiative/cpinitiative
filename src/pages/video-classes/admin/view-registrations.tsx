@@ -44,7 +44,7 @@ export default function ViewRegistrationPage() {
   )
   const numRejectedFinancialAid = useMemo(
     () =>
-      finalizedRegistrations.filter(r => r.data?.status !== "ACCEPTED").length,
+      finalizedRegistrations.filter(r => r.data?.status && r.data?.status !== "ACCEPTED").length,
     [finalizedRegistrations]
   )
   const numPendingFinancialAid = useMemo(
