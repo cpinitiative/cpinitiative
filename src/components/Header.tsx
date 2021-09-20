@@ -3,6 +3,7 @@ import Link from "next/link"
 import { useState } from "react"
 import Logo from "./Logo"
 import { useRouter } from "next/router"
+import ClassesDropdown from "../components/ClassesDropdown"
 
 export default function Header({
   noBanner,
@@ -14,10 +15,6 @@ export default function Header({
   const [isOpen, setIsOpen] = useState(false)
   const router = useRouter()
   const internalLinks = [
-    {
-      label: "Classes",
-      url: "/classes",
-    },
     {
       label: "Clubs",
       url: "/clubs",
@@ -49,6 +46,10 @@ export default function Header({
     (!dark
       ? "border-purple-500 text-purple-700 bg-purple-50 focus:text-purple-800 focus:bg-purple-100 focus:border-purple-700"
       : "border-purple-500 text-purple-100 bg-purple-800 focus:text-purple-50 focus:bg-purple-500 focus:border-purple-700")
+
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+  }
 
   return (
     <nav
@@ -118,6 +119,9 @@ export default function Header({
                 {/*        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>*/}
                 {/*</svg>*/}
               </a>
+
+              <ClassesDropdown dark={dark}/>
+
               {internalLinks.map(link => (
                 <Link href={link.url} key={link.url}>
                   <a
@@ -191,6 +195,30 @@ export default function Header({
           >
             USACO Guide
           </a>
+
+          <Link href='/classes'>
+            <a
+              className={
+                '/classes' === router.pathname
+                  ? activeBlockLinkClasses
+                  : blockLinkClasses
+              }
+            >
+              Live Classes
+            </a>
+          </Link>
+
+          <Link href='/video-classes'>
+            <a
+              className={
+                '/video-classes' === router.pathname
+                  ? activeBlockLinkClasses
+                  : blockLinkClasses
+              }
+            >
+              Self-Study Classes
+            </a>
+          </Link>
 
           {internalLinks.map(link => (
             <Link href={link.url} key={link.url}>
