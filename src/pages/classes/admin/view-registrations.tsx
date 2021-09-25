@@ -42,6 +42,11 @@ export default function ViewRegistrationPage() {
       finalizedRegistrations.filter(r => r.data?.status === "ACCEPTED").length,
     [finalizedRegistrations]
   )
+  const numRejectedFinancialAid = useMemo(
+    () =>
+      finalizedRegistrations.filter(r => r.data?.status && r.data?.status !== "ACCEPTED").length,
+    [finalizedRegistrations]
+  )
   const numPendingFinancialAid = useMemo(
     () => registrations.filter(r => r.data?.status === "PENDING").length,
     [registrations]
@@ -103,6 +108,8 @@ export default function ViewRegistrationPage() {
             "OjLKRTTzNyQgMifAExQKUA4MtfF2",
             "v8NK8mHCZnbPQKaPnEs5lKNc3rv2",
             "BKFOe33Ym7Pc7aQuET57MiljpF03",
+            "YF9ObmH1SUR1MKJGTrO8DfBQUG13",
+            "5IXfZDX1j2ZOftqfYiBcmmStmn93"
           ].includes(user.uid)
         ) {
           setHasPermission(true)
@@ -110,7 +117,7 @@ export default function ViewRegistrationPage() {
             firebase
               .firestore()
               .collection("classes-registration")
-              .doc("usacobronze")
+              .doc("2021october")
               .collection("registrations")
               .onSnapshot(snapshot => {
                 const newRegistrations = []
@@ -171,7 +178,9 @@ export default function ViewRegistrationPage() {
           <h1 className={"text-4xl font-bold tracking-tight leading-9"}>
             Error 404: Page Not Found
           </h1>
-          <Link href={"/"}>
+          <Link
+            href={"/"}
+          >
             <a className={"text-2xl text-blue-600 hover:underline pt-4 block"}>
               Go Home
             </a>
@@ -229,7 +238,7 @@ export default function ViewRegistrationPage() {
               {numPendingFinancialAid} Pending FA Applications
             </p>
             <p>
-              {finalizedRegistrations.length - numAcceptedFinancialAid} Paid
+              {finalizedRegistrations.length - numAcceptedFinancialAid - numRejectedFinancialAid} Paid
               &middot; {numAcceptedFinancialAid} Accepted For Financial Aid
             </p>
             <p>
@@ -298,9 +307,6 @@ export default function ViewRegistrationPage() {
                               ? "Java"
                               : reg.data.personalInfo.preferredLanguage == "cpp"
                               ? "C++"
-                              : reg.data.personalInfo.preferredLanguage ==
-                                "python"
-                              ? "Python"
                               : "ERROR"}
                           </p>
                         </div>
@@ -468,10 +474,7 @@ export default function ViewRegistrationPage() {
                           {detailModalRegistrationData.personalInfo
                             .preferredLanguage === "java"
                             ? "Java"
-                            : detailModalRegistrationData.personalInfo
-                                .preferredLanguage === "cpp"
-                            ? "C++"
-                            : "Python"}
+                            : "C++"}
                         </p>
                         <p className=" text-gray-900">
                           <b>Referrer:</b>{" "}
@@ -518,7 +521,7 @@ export default function ViewRegistrationPage() {
                           if (
                             !confirm(
                               detailModalRegistrationData
-                                .financialAidApplication.amount !== 25
+                                .financialAidApplication.amount !== 100
                                 ? "Are you sure you want to grant full financial aid? The applicant specified that they would be willing to pay part of the fee.  This action is irreversible."
                                 : "Are you sure you would like to grant full financial aid? This action is irreversible."
                             )
@@ -533,7 +536,7 @@ export default function ViewRegistrationPage() {
                           setDetailModalFASubmittingApproval(true)
                           firebase
                             .functions()
-                            .httpsCallable("cpiclasses-approveFinancialAid")({
+                            .httpsCallable("cpiclasses-approveLiveFinancialAid")({
                               registrationId: detailModalRegistrationId,
                               email:
                                 detailModalRegistrationData.personalInfo.email,
@@ -586,7 +589,7 @@ export default function ViewRegistrationPage() {
                           firebase
                             .firestore()
                             .collection("classes-registration")
-                            .doc("usacobronze")
+                            .doc("2021october")
                             .collection("registrations")
                             .doc(detailModalRegistrationId)
                             .update({

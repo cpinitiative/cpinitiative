@@ -1,7 +1,7 @@
 import * as React from "react"
 // @ts-ignore
 import HeroImg from "../../images/ContestsHero"
-import EmailForm from "../classes/EmailForm"
+import EmailForm from "../video-classes/EmailForm"
 
 export default function Hero() {
   return (

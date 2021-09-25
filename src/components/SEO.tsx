@@ -42,7 +42,7 @@ function SEO({ description, children, image: metaImage, title, pathname }) {
   )
 }
 SEO.defaultProps = {
-  children: [],
+  children: null,
   description: ``,
 }
 SEO.propTypes = {
