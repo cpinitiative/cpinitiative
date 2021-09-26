@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from "next"
 import { GoogleSpreadsheet } from "google-spreadsheet"
 import { getSession } from "next-auth/client"
 import { SHEETS_API_CREDS, SHEETS_METADATA } from "../../../config"
-import { VolunteerInfo } from "../../../metadata"
+import { db } from "../../../firebase"
 
 export default async function handler(
   req: NextApiRequest,
@@ -12,6 +12,15 @@ export default async function handler(
   const session = await getSession({ req })
 
   const email = session?.user?.email
+
+  const VolunteerInfo = await db
+    .collection("configuration")
+    .doc("volunteers")
+    .get()
+    .then(doc => {
+      // console.log(doc.data())
+      return doc.data()
+    })
 
   if (!session)
     return res.status(400).json({ error: "Please sign in through the portal" })

@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next"
 import { GoogleSpreadsheet } from "google-spreadsheet"
 import { getSession } from "next-auth/client"
 import { SHEETS_API_CREDS, SHEETS_METADATA } from "../../../config"
-import { VolunteerInfo } from "../../../metadata"
+import { VolunteerInfo } from "../../../firebase"
 
 export default async function handler(
   req: NextApiRequest,
