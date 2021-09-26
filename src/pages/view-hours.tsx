@@ -50,7 +50,6 @@ export function AddVolunteerHoursForm({ data }) {
   const [other, setOther] = React.useState("")
   const [error, setError] = React.useState("")
   const submitHours = () => {
-    // todo: add hours into the google sheet
     setError("")
     fetch("/api/addHours", {
       method: "POST",
@@ -161,24 +160,31 @@ export default function ViewHours() {
       <div className="flex flex-col w-full h-full items-center px-4">
         <Header />
         {session && (
-          <div className="w-full max-w-7xl pt-24">
-            <div className="w-full flex flex-col md:flex-row justify-between my-6">
-              <h1 className="text-4xl font-semibold">
-                Your volunteer hours: {data ? data?.totalHours : "..."}
-              </h1>
-              <div>
-                <button
-                  onClick={() => setViewAddHoursForm(true)}
-                  className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700"
-                >
-                  Add Volunteer Hours
-                </button>
-                <button
-                  onClick={() => signOut()}
-                  className="inline-flex px-4 ml-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700"
-                >
-                  Sign out
-                </button>
+          <div className="w-full max-w-4xl pt-24">
+            <div className="w-full shadow-lg rounded-lg p-10 mt-4 mb-10">
+              <div className="grid grid-rows-3 grid-flow-col gap-4">
+                <div className="row-span-3 border">1</div>
+                <div className="col-span-2 border">2</div>
+                <div className="row-span-2 border col-span-1">3</div>
+                <div className="row-span-2 border col-span-1">4</div>
+              </div>
+            </div>
+            <div>
+              <div className="w-full flex flex-col md:flex-row justify-between">
+                <div>
+                  <button
+                    onClick={() => setViewAddHoursForm(true)}
+                    className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700"
+                  >
+                    Add Volunteer Hours
+                  </button>
+                  <button
+                    onClick={() => signOut()}
+                    className="inline-flex px-4 ml-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700"
+                  >
+                    Sign out
+                  </button>
+                </div>
               </div>
             </div>
             <VolunteerHourHistory data={data} />
