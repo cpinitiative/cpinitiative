@@ -1,4 +1,3 @@
-import * as moment from "moment-timezone"
 import * as React from "react"
 
 export default function StudentInformationSection({
@@ -89,9 +88,23 @@ export default function StudentInformationSection({
                     </option>
                     <option value={"java"}>Java</option>
                     <option value={"cpp"}>C++</option>
+                    <option value={"python"}>Python</option>
                   </select>
                 </div>
                 <div className="col-span-6 sm:col-span-3">
+                  <label className="block text-sm font-medium text-gray-700">
+                    Are you requesting financial aid?
+                  </label>
+                  <select
+                    value={financialAid ? "yes" : "no"}
+                    onChange={e => setFinancialAid(e.target.value == "yes")}
+                    className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  >
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                  </select>
+                </div>
+                {/* <div className="col-span-6 sm:col-span-3">
                   <label className="block text-sm font-medium text-gray-700">
                     Your Time Zone
                   </label>
@@ -106,7 +119,7 @@ export default function StudentInformationSection({
                       </option>
                     ))}
                   </select>
-                </div>
+                </div> */}
                 <div className="col-span-6">
                   <label className="block text-sm font-medium text-gray-700">
                     How did you find out about us?
@@ -147,19 +160,6 @@ export default function StudentInformationSection({
                     />
                   </div>
                 )}
-                <div className="col-span-6 sm:col-span-3">
-                  <label className="block text-sm font-medium text-gray-700">
-                    Are you requesting financial aid?
-                  </label>
-                  <select
-                    value={financialAid ? "yes" : "no"}
-                    onChange={e => setFinancialAid(e.target.value == "yes")}
-                    className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                  >
-                    <option value="no">No</option>
-                    <option value="yes">Yes</option>
-                  </select>
-                </div>
               </div>
             </div>
           </div>

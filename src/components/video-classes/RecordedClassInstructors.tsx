@@ -2,15 +2,22 @@ import * as React from "react"
 import Image from "next/image"
 import {
   nathanw,
-  maggie,
-  melody,
   daniel,
   jeffrey,
-  darren,
-  michael,
-  benq,
-  Andrew,
-  nathanc,
+  maggie,
+  melody,
+  Varun,
+  Jay,
+  jpaulson,
+  vivian,
+  neo,
+  amogha_pokkulandra,
+  david_li,
+  vikas_thoutam,
+  yifan_ma,
+  Harry,
+  arpan,
+  nikhil,
 } from "../index/images"
 
 type Member = {
@@ -19,72 +26,106 @@ type Member = {
   title: string
 }
 
-export const members: Member[] = [
+const members: Member[] = [
   {
     photo: nathanw,
     name: "Nathan Wang",
-    title: "Board of Directors / 3x Finalist",
-  },
-  {
-    photo: maggie,
-    name: "Maggie Liu",
-    title: "Executive",
-  },
-  {
-    photo: melody,
-    name: "Melody Yu",
-    title: "Executive",
+    title: "Lead Instructor / Finalist",
   },
   {
     photo: daniel,
     name: "Daniel Guan",
-    title: "Director of Classes / Finalist",
+    title: "Lead Instructor / Finalist",
   },
   {
     photo: jeffrey,
     name: "Jeffrey Meng",
-    title: "Director of Operations",
+    title: "Lead Instructor",
   },
   {
-    photo: darren,
-    name: "Darren Yao",
-    title: "Director of Outreach",
+    photo: maggie,
+    name: "Maggie Liu",
+    title: "Instructor",
   },
   {
-    photo: michael,
-    name: "Michael Cao",
-    title: "Director of Clubs",
+    photo: melody,
+    name: "Melody Yu",
+    title: "Instructor",
   },
   {
-    photo: benq,
-    name: "Benjamin Qi",
-    title: "Former Director of USACO Guide / 2x IOI Winner",
+    photo: Varun,
+    name: "Varun Ragunath",
+    title: "Instructor / Finalist",
   },
   {
-    photo: Andrew,
-    name: "Andrew Wang",
-    title: "Former Secretary",
+    photo: Jay,
+    name: "Jay Fu",
+    title: "Instructor",
   },
   {
-    photo: nathanc,
-    name: "Nathan Chen",
-    title: "Former Treasurer / 2x Finalist",
+    photo: jpaulson,
+    name: "Jonathan Paulson",
+    title: "Instructor / USACO Coach",
+  },
+  {
+    photo: vivian,
+    name: "Vivian Han",
+    title: "Instructor / USA EGOI Team",
+  },
+  {
+    photo: neo,
+    name: "Neo Wang",
+    title: "Instructor",
+  },
+  {
+    photo: amogha_pokkulandra,
+    name: "Amogha Pokkulandra",
+    title: "Instructor",
+  },
+  {
+    photo: david_li,
+    name: "David Li",
+    title: "Instructor",
+  },
+  {
+    photo: vikas_thoutam,
+    name: "Vikas Thoutam",
+    title: "Instructor",
+  },
+  {
+    photo: yifan_ma,
+    name: "Yifan Ma",
+    title: "Instructor",
+  },
+  {
+    photo: Harry,
+    name: "Harry Wang",
+    title: "Instructor",
+  },
+  {
+    photo: arpan,
+    name: "Arpan Banerjee",
+    title: "Instructor",
+  },
+  {
+    photo: nikhil,
+    name: "Nikhil Chatterjee",
+    title: "Instructor",
   },
 ]
 
-export default function Team() {
+export default function RecordedClassInstructors() {
   return (
     <div className="bg-white">
       <div className="mx-auto py-12 px-4 max-w-screen-xl sm:px-6 lg:px-8 lg:py-24">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
           <div className="space-y-5 sm:space-y-4">
             <h2 className="text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl">
-              Meet our team
+              Meet our instructors
             </h2>
             <p className="text-xl leading-7 text-gray-500">
-              Comprised of USACO Finalists and top USACO competitors, our team
-              is committed to increasing participation in competitive
-              programming.
+              With a curriculum designed by past USACO Finalists and thoroughly
+              vetted instructors, students are in good hands.
             </p>
           </div>
           <div className="lg:col-span-2">
@@ -92,7 +133,7 @@ export default function Team() {
               {members.map(member => (
                 <li key={member.name}>
                   <div className="flex items-center space-x-4 lg:space-x-6">
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full overflow-hidden relative lg:w-20 lg:h-20">
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full relative overflow-hidden lg:w-20 lg:h-20">
                       <Image
                         layout="fill"
                         objectFit="cover"

@@ -4,7 +4,7 @@ import SEO from "../components/SEO"
 import Hero from "../components/contests/Hero"
 import Header from "../components/Header"
 import Divisions from "../components/contests/Divisions"
-import EmailForm from "../components/classes/EmailForm"
+import EmailForm from "../components/video-classes/EmailForm"
 
 export default function Contests() {
   return (

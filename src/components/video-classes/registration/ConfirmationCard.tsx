@@ -29,8 +29,7 @@ export default function ({ financialAid, level, email, registrationId }) {
               Within two minutes, {email} should receive an email from
               classes@joincpi.org with the subject{" "}
               <i>
-                Welcome to your CPI{" "}
-                {level == "beginner" ? "Beginner" : "Intermediate"} USACO Class!
+                Welcome to your CPI Bronze USACO Class!
               </i>{" "}
               containing all the information necessary for this course.{" "}
               <b>

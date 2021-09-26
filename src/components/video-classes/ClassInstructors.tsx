@@ -1,16 +1,20 @@
 import * as React from "react"
 import Image from "next/image"
 import {
-  nathanw,
-  maggie,
-  melody,
   daniel,
+  nathanw,
   jeffrey,
-  darren,
-  michael,
-  benq,
-  Andrew,
-  nathanc,
+  alex_chen,
+  jarvis,
+  mayank,
+  Varun,
+  yu_lim,
+  Jay,
+  david_li,
+  yifan_ma,
+  amogha_pokkulandra,
+  amy_chang,
+  vikas_thoutam,
 } from "../index/images"
 
 type Member = {
@@ -19,72 +23,91 @@ type Member = {
   title: string
 }
 
-export const members: Member[] = [
-  {
-    photo: nathanw,
-    name: "Nathan Wang",
-    title: "Board of Directors / 3x Finalist",
-  },
-  {
-    photo: maggie,
-    name: "Maggie Liu",
-    title: "Executive",
-  },
-  {
-    photo: melody,
-    name: "Melody Yu",
-    title: "Executive",
-  },
+const members: Member[] = [
   {
     photo: daniel,
     name: "Daniel Guan",
-    title: "Director of Classes / Finalist",
+    title: "Lead Instructor / Finalist",
+  },
+  {
+    photo: nathanw,
+    name: "Nathan Wang",
+    title: "Administrative Staff / Finalist",
   },
   {
     photo: jeffrey,
     name: "Jeffrey Meng",
-    title: "Director of Operations",
+    title: "Administrative Staff",
   },
   {
-    photo: darren,
-    name: "Darren Yao",
+    photo: alex_chen,
+    name: "Alex Chen",
+    title: "Director of Curriculum",
+  },
+  {
+    photo: jarvis,
+    name: "Jarvis",
     title: "Director of Outreach",
   },
   {
-    photo: michael,
-    name: "Michael Cao",
-    title: "Director of Clubs",
+    photo: mayank,
+    name: "Mayank",
+    title: "Operations Manager",
   },
   {
-    photo: benq,
-    name: "Benjamin Qi",
-    title: "Former Director of USACO Guide / 2x IOI Winner",
+    photo: Varun,
+    name: "Varun Ragunath",
+    title: "Instructor / Finalist",
   },
   {
-    photo: Andrew,
-    name: "Andrew Wang",
-    title: "Former Secretary",
+    photo: yu_lim,
+    name: "Yu Lim",
+    title: "Instructor / Platinum",
   },
   {
-    photo: nathanc,
-    name: "Nathan Chen",
-    title: "Former Treasurer / 2x Finalist",
+    photo: Jay,
+    name: "Jay Fu",
+    title: "Instructor / Platinum",
+  },
+  {
+    photo: david_li,
+    name: "David Li",
+    title: "Instructor / Platinum",
+  },
+  {
+    photo: yifan_ma,
+    name: "Yifan Ma",
+    title: "Instructor",
+  },
+  {
+    photo: amogha_pokkulandra,
+    name: "Amogha Pokkulandra",
+    title: "Instructor",
+  },
+  {
+    photo: amy_chang,
+    name: "Amy Chang",
+    title: "Instructor",
+  },
+  {
+    photo: vikas_thoutam,
+    name: "Vikas Thoutam",
+    title: "Instructor",
   },
 ]
 
-export default function Team() {
+export default function ClassInstructors() {
   return (
     <div className="bg-white">
       <div className="mx-auto py-12 px-4 max-w-screen-xl sm:px-6 lg:px-8 lg:py-24">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
           <div className="space-y-5 sm:space-y-4">
             <h2 className="text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl">
-              Meet our team
+              Meet our instructors
             </h2>
             <p className="text-xl leading-7 text-gray-500">
-              Comprised of USACO Finalists and top USACO competitors, our team
-              is committed to increasing participation in competitive
-              programming.
+              With a curriculum designed by past USACO Finalists and thoroughly
+              vetted instructors, students are in good hands.
             </p>
           </div>
           <div className="lg:col-span-2">

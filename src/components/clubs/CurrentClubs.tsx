@@ -1,11 +1,35 @@
 import * as React from "react"
 import Image from "next/image"
 import {
-  monta_vista,
+  algonquin,
+  ashbury,
+  baton,
+  bellarmine,
   branham,
-  whitney,
+  del_norte,
+  fremont,
+  horace_greeley,
+  interlake,
+  linnerton,
+  monrovia,
+  monta_vista,
+  nanjing,
+  north_andover,
+  northview,
+  oak_valley,
+  panther_creek,
+  pingry,
   rickards,
+  riverhill,
+  shanghai,
+  smic,
+  stanford_online,
   suncoast,
+  tompkins,
+  troy,
+  whitfield,
+  whitney,
+  windermere,
 } from "../clubs/images"
 
 const ClubCard = ({ name, photo, region }) => {
@@ -21,11 +45,11 @@ const ClubCard = ({ name, photo, region }) => {
           placeholder="blur"
         />
       </div>
-      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black px-4 pb-4 sm:px-6 sm:pb-6 pt-12">
-        <p className="mt-2 block text-2xl font-bold text-white truncate pointer-events-none">
+      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black px-6 pb-6 md:px-4 md:pb-4 lg:px-3 lg:pb-3 pt-12">
+        <p className="mt-2 block md:text-xl text-2xl font-bold text-white truncate pointer-events-none">
           {name}
         </p>
-        <p className="block text-lg font-medium text-gray-200 pointer-events-none">
+        <p className="block md:text-base sm:text-lg font-medium text-gray-200 pointer-events-none">
           {region}
         </p>
       </div>
@@ -39,8 +63,23 @@ const clubs: {
   region: string
 }[] = [
   {
-    name: "Monta Vista High School",
-    photo: monta_vista,
+    name: "Algonquin Regional High",
+    photo: algonquin,
+    region: "Massachusetts",
+  },
+  {
+    name: "Ashbury College",
+    photo: ashbury,
+    region: "Canada",
+  },
+  {
+    name: "Baton Rouge Magnet High School",
+    photo: baton,
+    region: "Louisiana",
+  },
+  {
+    name: "Bellarmine College Prep",
+    photo: bellarmine,
     region: "California",
   },
   {
@@ -49,20 +88,125 @@ const clubs: {
     region: "California",
   },
   {
-    name: "Gretchen Whitney High School",
-    photo: whitney,
+    name: "Del Norte High School",
+    photo: del_norte,
     region: "California",
   },
   {
-    name: "Rickards High School",
+    name: "Fremont High School",
+    photo: fremont,
+    region: "California",
+  },
+  {
+    name: "Horace Greeley High School",
+    photo: horace_greeley,
+    region: "New York",
+  },
+  {
+    name: "Interlake High School",
+    photo: interlake,
+    region: "Washington",
+  },
+  {
+    name: "Linnerton High School",
+    photo: linnerton,
+    region: "Maryland",
+  },
+  {
+    name: "Monrovia HS",
+    photo: monrovia,
+    region: "California",
+  },
+  {
+    name: "Monta Vista High School",
+    photo: monta_vista,
+    region: "California",
+  },
+  {
+    name: "Nanjing International School",
+    photo: nanjing,
+    region: "Nanjing",
+  },
+  {
+    name: "North Andover High School",
+    photo: north_andover,
+    region: "Massachusetts",
+  },
+  {
+    name: "Northview High School",
+    photo: northview,
+    region: "Georgia",
+  },
+  {
+    name: "Oak Valley MS",
+    photo: oak_valley,
+    region: "California",
+  },
+  {
+    name: "Panther Creek High School",
+    photo: panther_creek,
+    region: "North Carolina",
+  },
+  {
+    name: "Pingry School",
+    photo: pingry,
+    region: "New Jersey",
+  },
+  {
+    name: "Rickards HS",
     photo: rickards,
     region: "Florida",
+  },
+  {
+    name: "Riverhill High School",
+    photo: riverhill,
+    region: "Maryland",
+  },
+  {
+    name: "SMIC Private School",
+    photo: smic,
+    region: "Shanghai",
+  },
+  {
+    name: "Shanghai High School",
+    photo: shanghai,
+    region: "Shanghai",
+  },
+  {
+    name: "Stanford Online High School",
+    photo: stanford_online,
+    region: "California",
   },
   {
     name: "Suncoast Community HS",
     photo: suncoast,
     region: "California",
   },
+  {
+    name: "Tompkins HS",
+    photo: tompkins,
+    region: "Texas",
+  },
+  {
+    name: "Troy HS",
+    photo: troy,
+    region: "Michigan",
+  },
+  {
+    name: "Whitfield HS",
+    photo: whitfield,
+    region: "California",
+  },
+  {
+    name: "Gretchen Whitney High School",
+    photo: whitney,
+    region: "California",
+  },
+  {
+    name: "Windermere High School",
+    photo: windermere,
+    region: "Florida",
+  },  
 ]
 
 export default function CurrentClubs() {
@@ -94,7 +238,7 @@ export default function CurrentClubs() {
       <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
         <ul
           role="list"
-          className="grid md:grid-cols-2 gap-x-4 gap-y-8 md:gap-x-6 xl:gap-x-8"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-4 md:gap-x-4 lg:gap-x-3 xl:gap-x-4"
         >
           {clubs.map(club => (
             <ClubCard
