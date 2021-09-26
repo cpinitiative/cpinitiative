@@ -49,28 +49,29 @@ export default async function handler(
       return volunteer[1]?.emails?.includes(email)
     })
 
-    console.log(volunteerInfo)
+    // console.log(volunteerInfo)
 
     if (volunteerInfo?.length > 1 && volunteerInfo[1]) {
       // @ts-ignore
       volunteerInfo = volunteerInfo[1]
     }
 
-    console.log(volunteerInfo)
+    // console.log(volunteerInfo)
 
     if (!volunteerInfo)
-      return res
-        .status(200)
-        .json({
-          error:
-            "No volunteer found, make sure you're signed in with the right email. Or, this is your first time.",
-        })
+      return res.status(200).json({
+        error:
+          "No volunteer found, make sure you're signed in with the right email. Or, this is your first time.",
+      })
 
     for (let i = 2; i <= rowsLength; i++) {
       const findData = async () => {
         let time = await sheet.getCellByA1(`A${i}`)
-        console.log(time.effectiveFormat);
-        time = (time.effectiveFormat.type === 'DATE_TIME') ? time.formattedValue : time.value
+        // console.log(i, time.effectiveFormat?.numberFormat?.type);
+        time =
+          time.effectiveFormat?.numberFormat?.type === "DATE_TIME"
+            ? time.formattedValue
+            : time.value
         // const temp = await sheet.getCellByA1(`A${i}`)
         // console.log(temp.numberFormat);
         // console.log(i, time, temp.numberFormat);
@@ -85,7 +86,8 @@ export default async function handler(
             email => em.trim().toLowerCase() === email.trim().toLowerCase()
           )
         ) {
-          totalHours += parseInt(hrs)
+          console.log("found", i, parseFloat(hrs))
+          totalHours += parseFloat(hrs) || 0 // default to 0 if not a number
           data = [...data, { time, em, prs, hrs, other }]
         }
       }

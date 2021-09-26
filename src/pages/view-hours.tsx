@@ -229,7 +229,7 @@ export default function ViewHours() {
                 <div className="flex bg-white flex-col px-3 py-5 col-span-2 row-span-2 rounded-lg shadow-lg">
                   {data ? (
                     <p className="text-purple-800 font-semibold text-3xl m-auto">
-                      <b>{data?.totalHours}</b> hours volunteered
+                      <b>{Math.round(data?.totalHours)}</b> hours volunteered
                     </p>
                   ) : (
                     // spinner

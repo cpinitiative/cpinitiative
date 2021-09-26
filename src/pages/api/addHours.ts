@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next"
 import { GoogleSpreadsheet } from "google-spreadsheet"
 import { getSession } from "next-auth/client"
 import { SHEETS_API_CREDS, SHEETS_METADATA } from "../../../config"
+import { VolunteerInfo } from "../../../metadata"
 
 export default async function handler(
   req: NextApiRequest,
@@ -19,15 +20,23 @@ export default async function handler(
   if (!hours || isNaN(hours))
     return res.status(400).json({ error: "Hours is required" })
 
+  if (
+    !Object.keys(VolunteerInfo).some(key =>
+      VolunteerInfo[key].emails.includes(email)
+    )
+  )
+    return res
+      .status(403)
+      .json({ error: "You are not authorized to add hours" })
+
   if (!prsReviewed)
     return res.status(400).json({ error: "PRs reviewed is required" })
 
-  const time = new Date()
-    .toISOString()
-    // .replace("T", " ")
-    // .replace("Z", "")
-    // .replaceAll("-", "/")
-    // .split(".")[0]
+  const time = new Date().toISOString()
+  // .replace("T", " ")
+  // .replace("Z", "")
+  // .replaceAll("-", "/")
+  // .split(".")[0]
 
   console.log({
     time,
