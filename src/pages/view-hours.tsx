@@ -8,7 +8,7 @@ import { Dialog, Transition } from "@headlessui/react"
 import { SWR_FETCHER } from "../../config"
 
 export function VolunteerHourHistory({ data }) {
-  console.log("data: ", data)
+  // console.log("data: ", data)
   return (
     <div>
       <ul role="list" className="divide-y divide-gray-200">
@@ -49,8 +49,11 @@ export function AddVolunteerHoursForm({ data }) {
   const [prsReviewed, setPrsReviewed] = React.useState("")
   const [other, setOther] = React.useState("")
   const [error, setError] = React.useState("")
+  const [loading, setLoading] = React.useState(false)
   const submitHours = () => {
+    setLoading(true)
     setError("")
+    setResponse("");
     fetch("/api/addHours", {
       method: "POST",
       headers: {
@@ -65,11 +68,18 @@ export function AddVolunteerHoursForm({ data }) {
     })
       .then(res => res.json())
       .then(res => {
+        // console.log(res)
         if (res.error) {
           setError(res.error)
         } else {
           setResponse(res)
         }
+
+        setLoading(false)
+      })
+      .catch(e => {
+        setError(e)
+        setLoading(false)
       })
   }
   return (
@@ -126,19 +136,63 @@ export function AddVolunteerHoursForm({ data }) {
           placeholder="Ex. The majority of my time was dedicated to creating visualizations."
         />
       </div>
-      <div className="w-full p-1 bg-red-200 my-2 rounded-md text-red-800">
-        {error && JSON.stringify(error)}
-      </div>
-      <div className="w-full p-1">{response && JSON.stringify(response)}</div>
+      {error && (
+        <div className="w-full flex flex-row p-1 bg-red-200 my-2 rounded-md text-red-800">
+          {/* Error Icon */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 mx-2"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          {JSON.stringify(error)}
+        </div>
+      )}
+      {response?.message && (
+        <div className="w-full flex flex-row p-1 bg-green-200 my-2 rounded-md text-green-900">
+          {/* Checkmark Icon */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 mx-2"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          {response && response?.message}
+        </div>
+      )}
       <div className="w-full p-1">
         Your last pull request was made on:{" "}
         {new Date(data && data[0].time).toDateString()}
       </div>
+
       <button
         onClick={() => submitHours()}
         className="inline-flex mt-10 px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700"
       >
-        Submit Volunteer Hours
+        {loading ? (
+          // spinner
+          <div className="flex items-center justify-center ">
+            <div className="h-6 w-6 border-t-2 border-white-900 rounded-full animate-spin"></div>
+          </div>
+        ) : (
+          <p className="h-6">Submit Volunteer Hours</p>
+        )}
       </button>
     </div>
   )
@@ -147,9 +201,10 @@ export function AddVolunteerHoursForm({ data }) {
 export default function ViewHours() {
   const [session, loading] = useSession()
   const [viewAddHoursForm, setViewAddHoursForm] = React.useState(false)
-  const { data, error } = useSWR("/api/getHours", SWR_FETCHER)
+  // add conditional fetching for useSWR so that it doesn't fetch when the user isn't signed in
+  const { data, error } = useSWR(session ? "/api/getHours" : null, SWR_FETCHER)
 
-  console.log(data, error)
+  // console.log(data, error)
 
   return (
     <Layout>
@@ -161,15 +216,47 @@ export default function ViewHours() {
         <Header />
         {session && (
           <div className="w-full max-w-4xl pt-24">
-            <div className="w-full shadow-lg rounded-lg p-10 mt-4 mb-10">
-              <div className="grid grid-rows-3 grid-flow-col gap-4">
-                <div className="row-span-3 border">1</div>
-                <div className="col-span-2 border">2</div>
-                <div className="row-span-2 border col-span-1">3</div>
-                <div className="row-span-2 border col-span-1">4</div>
+            <div className="w-full mt-4 mb-10">
+              <div className="grid w-full grid-rows-6 grid-cols-none md:grid-rows-2 md:grid-cols-1 md:grid-flow-col gap-3">
+                <div className="row-span-3 bg-white p-3 flex flex-col rounded-md shadow-lg text-5xl font-extrabold">
+                  <h1 className="m-auto text-purple-900 underline">
+                    {session?.user?.name}
+                  </h1>
+                  <h3 className="mx-auto mb-6 text-purple-800 text-sm">
+                    Email: {session?.user?.email}
+                  </h3>
+                </div>
+                <div className="flex bg-white flex-col px-3 py-5 col-span-2 row-span-2 rounded-lg shadow-lg">
+                  {data ? (
+                    <p className="text-purple-800 font-semibold text-3xl m-auto">
+                      <b>{data?.totalHours}</b> hours volunteered
+                    </p>
+                  ) : (
+                    // spinner
+                    <div className="flex items-center justify-center ">
+                      <div className="w-16 h-16 border-b-2 border-gray-900 rounded-full animate-spin"></div>
+                    </div>
+                  )}
+                </div>
+                <div
+                  onClick={() => setViewAddHoursForm(true)}
+                  className="flex cursor-pointer px-3 shadow-lg rounded-lg row-span-1 col-span-1 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700"
+                >
+                  <p className="text-white text-base font-medium m-auto">
+                    Add Volunteer Hours
+                  </p>
+                </div>
+                <div
+                  onClick={() => signOut()}
+                  className="flex cursor-pointer p-3 shadow-lg rounded-lg row-span-1 col-span-1 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700"
+                >
+                  <p className="text-white text-base font-medium m-auto">
+                    Sign out
+                  </p>
+                </div>
               </div>
             </div>
-            <div>
+            {/* <div>
               <div className="w-full flex flex-col md:flex-row justify-between">
                 <div>
                   <button
@@ -186,7 +273,7 @@ export default function ViewHours() {
                   </button>
                 </div>
               </div>
-            </div>
+            </div> */}
             <VolunteerHourHistory data={data} />
             <Transition appear show={viewAddHoursForm} as={Fragment}>
               <Dialog
