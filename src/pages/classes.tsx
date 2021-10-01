@@ -4,7 +4,7 @@ import SEO from "../components/SEO"
 import Hero from "../components/video-classes/Hero"
 import Header from "../components/Header"
 import NotLowQuality from "../components/video-classes/NotLowQuality"
-import ClassLevels from "../components/video-classes/ClassLevels"
+import ClassLevels from "../components/classes/ClassLevels"
 import ClassInstructors from "../components/video-classes/ClassInstructors"
 import EmailForm from "../components/video-classes/EmailForm"
 import Newsletter from "../components/index/Newsletter"
@@ -40,11 +40,13 @@ export default function Classes() {
                         designed and developed by past USACO Finalists.
                       </p>
                       <div className="mt-8 sm:mt-12 space-y-2 sm:space-x-4">
-                        <Link href="/classes/register">
-                          <a className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
-                            Register Now
-                          </a>
-                        </Link>
+                        <a 
+                          href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
+                          target="_blank"
+                          className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
+                        >
+                          Get Notified of Future Classes
+                        </a>
                         <br className="sm:hidden" />
                         <a
                           href="mailto:classes@joincpi.org"
