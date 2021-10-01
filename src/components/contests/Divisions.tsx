@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import Link from "next/link"
 
 export default function Divisions() {
   return (
@@ -85,8 +85,10 @@ export default function Divisions() {
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
                         Follows our{" "}
-                        <Link to="/clubs" className="text-purple-600 underline">
-                          Club Curriculum
+                        <Link href="/clubs">
+                          <a className="text-purple-600 underline">
+                            Club Curriculum
+                          </a>
                         </Link>
                       </p>
                     </li>
@@ -284,11 +286,10 @@ export default function Divisions() {
                 </div>
               </div>
               <div className="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
-                <Link
-                  to="/clubs"
-                  className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                >
-                  Learn More about Clubs
+                <Link href="/clubs">
+                  <a className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                    Learn More about Clubs
+                  </a>
                 </Link>
               </div>
             </div>

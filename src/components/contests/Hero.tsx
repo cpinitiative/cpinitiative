@@ -1,8 +1,8 @@
 import * as React from "react"
 // @ts-ignore
-import HeroImg from "../../images/contests-hero.svg"
-import { Link } from "gatsby"
-import EmailForm from "../classes/EmailForm"
+import HeroImg from "../../images/ContestsHero"
+import Link from "next/link"
+import EmailForm from "../video-classes/EmailForm"
 
 export default function Hero() {
   return (
@@ -23,8 +23,8 @@ export default function Hero() {
                 Get better at USACO by participating in monthly,
                 beginner-focused Competitive Programming Contests! Targeted to
                 both{" "}
-                <Link to="/clubs" className="underline text-purple-600">
-                  school clubs
+                <Link href="/clubs">
+                  <a className="underline text-purple-600">school clubs</a>
                 </Link>{" "}
                 and individual contestants.
               </p>

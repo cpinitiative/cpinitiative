@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import Link from "next/link"
 
 export default function Card({
   title,
@@ -43,8 +43,8 @@ export default function Card({
     borderColor
   if (url && url.startsWith("/")) {
     return (
-      <Link to={url} className={classes}>
-        {contents}
+      <Link href={url}>
+        <a className={classes}>{contents}</a>
       </Link>
     )
   }

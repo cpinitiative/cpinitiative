@@ -64,7 +64,7 @@ export default function PaymentSection({
                     )}
                     registration, select a payment method below.
                   </p>
-                  {/* <p className="mt-1 text-sm text-gray-600">
+                  <p className="mt-1 text-sm text-gray-600">
                     Returns: If you are not satisfied with our classes, you may
                     cancel your class registration anytime before the{" "}
                     <b>second</b> class for a partial refund of <b>$90</b> by
@@ -76,11 +76,11 @@ export default function PaymentSection({
                       classes@joincpi.org
                     </a>
                     .
-                  </p> */}
+                  </p>
                   {/*
                        //@ts-ignore */}
                   <PayPalButton
-                    amount="25.00"
+                    amount="100.00"
                     shippingPreference="NO_SHIPPING"
                     createOrder={(data, actions) => {
                       console.log(data, actions)
@@ -88,11 +88,11 @@ export default function PaymentSection({
                         purchase_units: [
                           {
                             amount: {
-                              value: "25.00",
+                              value: "100.00",
                               currency_code: "USD",
                               breakdown: {
                                 item_total: {
-                                  value: "25.00",
+                                  value: "100.00",
                                   currency_code: "USD",
                                 },
                               },
@@ -104,7 +104,7 @@ export default function PaymentSection({
                                     ? "Beginner"
                                     : "Intermediate") + " USACO Class",
                                 unit_amount: {
-                                  value: "25.00",
+                                  value: "100.00",
                                   currency_code: "USD",
                                 },
                                 quantity: "1",
@@ -114,6 +114,7 @@ export default function PaymentSection({
                         ],
                       })
                     }}
+                    // @ts-ignore
                     onClick={(data, actions) => {
                       setHasAttemptedPayment(true)
                       if (!dataIsValid || !level) {
@@ -146,7 +147,7 @@ export default function PaymentSection({
                       setSubmitting(true)
                       firebase
                         .functions()
-                        .httpsCallable("cpiclasses-processRegistration")({
+                        .httpsCallable("cpiclasses-processLiveRegistration")({
                           level,
                           firstName,
                           lastName,
@@ -158,6 +159,7 @@ export default function PaymentSection({
                           orderData: data,
                         })
                         .then(data => {
+                          console.log(data)
                           setRegistrationId(data.data.registrationId)
                           setSuccess(true)
                           setSubmitting(false)

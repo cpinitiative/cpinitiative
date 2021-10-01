@@ -1,6 +1,4 @@
-import { Link } from "gatsby"
 import * as React from "react"
-import { navigate } from "@reach/router"
 
 export default function ClassLevels() {
   return (
@@ -47,7 +45,7 @@ export default function ClassLevels() {
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
                     {[
-                      "Fridays, 5-7pm PDT (UTC-7). 4/2 to 5/28.",
+                      "Fridays, 5-7pm PDT (UTC-7). 10/1 to 12/3 (skip 11/26).",
                       "File / Fast I/O",
                       "Time Complexity",
                       "Data Structures and Simulation",
@@ -84,6 +82,7 @@ export default function ClassLevels() {
                   <div className="rounded-md shadow">
                     <a
                       href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
+                      target="_blank"
                       className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                       aria-describedby="tier-standard"
                     >
@@ -115,7 +114,7 @@ export default function ClassLevels() {
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
                     {[
-                      "Saturdays, 4-6pm PDT (UTC-7). 4/3 to 5/29.",
+                      "Saturdays, 4-6pm PDT (UTC-7). 10/2 to 12/4 (skip 11/27).",
                       "Prefix Sums",
                       "Sorting with Custom Comparators",
                       "Two Pointers",
@@ -153,6 +152,7 @@ export default function ClassLevels() {
                     <div className="rounded-md shadow">
                       <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
+                        target="_blank"
                         className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                         aria-describedby="tier-standard"
                       >
@@ -184,6 +184,7 @@ export default function ClassLevels() {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
                   target="_blank"
                   className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                  aria-describedby="tier-standard"
                 >
                   Get Notified of Future Classes
                 </a>

@@ -1,8 +1,7 @@
 import * as React from "react"
 // @ts-ignore
-import HeroImg from "../../images/contests-hero.svg"
-import { Link } from "gatsby"
-import EmailForm from "../classes/EmailForm"
+import HeroImg from "../../images/ContestsHero"
+import EmailForm from "../video-classes/EmailForm"
 
 export default function Hero() {
   return (
@@ -15,7 +14,9 @@ export default function Hero() {
                 August 6, 2021
               </div>
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                <span className="text-purple-600">USACO for Absolute Beginners</span>
+                <span className="text-purple-600">
+                  USACO for Absolute Beginners
+                </span>
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                 CPI will be holding a workshop "USACO for absolute Beginners" on

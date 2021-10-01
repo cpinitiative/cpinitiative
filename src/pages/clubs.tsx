@@ -26,7 +26,7 @@ export default function Clubs() {
       <RegistrationProcess />
       {/*<FAQ />*/}
       <CTA />
-      <div className="h-8"/>
+      <div className="h-8" />
       <CurrentClubs />
     </Layout>
   )

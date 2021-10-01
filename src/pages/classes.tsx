@@ -1,18 +1,21 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
+import Hero from "../components/video-classes/Hero"
 import Header from "../components/Header"
+import NotLowQuality from "../components/video-classes/NotLowQuality"
+import ClassLevels from "../components/classes/ClassLevels"
+import ClassInstructors from "../components/video-classes/ClassInstructors"
+import EmailForm from "../components/video-classes/EmailForm"
 import Newsletter from "../components/index/Newsletter"
-import RecordedClassInstructors from "../components/classes/RecordedClassInstructors"
-import { graphql, Link, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import Link from "next/link"
 
 export default function Classes() {
   return (
     <Layout>
       <SEO
-        title="Self-Study USACO Classes"
-        description="Learn USACO through affordable, high-quality classes with a curriculum designed and developed by past USACO Finalists. Designed from the ground-up to embrace the self-study video format."
+        title="Online USACO Classes"
+        description="Learn USACO through affordable, high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists."
       />
 
       <div className="bg-white">
@@ -25,28 +28,26 @@ export default function Classes() {
                 <div className="lg:grid lg:grid-cols-8 lg:gap-8">
                   <div className="mx-auto lg:ml-0 max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center lg:col-span-5">
                     <div className="lg:py-24">
-                      <span className="text-base font-semibold tracking-wider text-cyan-300 uppercase sm:mt-5 lg:mt-6">
-                        Early Access
-                      </span>
-                      <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-6xl xl:text-6xl mt-2">
-                        <span className="block">Self-Study</span>
+                      <h1 className="text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+                        <span className="block">Live Online</span>
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 block">
                           USACO Classes
                         </span>
                       </h1>
                       <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                         Learn USACO through affordable, high-quality classes
-                        with a curriculum designed and developed by past USACO
-                        Finalists. Designed from the ground-up to embrace the
-                        self-study video format.
+                        with vetted, experienced instructors and a curriculum
+                        designed and developed by past USACO Finalists.
                       </p>
-                      <div className="mt-8 sm:mt-12 space-x-4">
-                        <Link
-                          to="/classes/register"
+                      <div className="mt-8 sm:mt-12 space-y-2 sm:space-x-4">
+                        <a 
+                          href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
+                          target="_blank"
                           className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
                         >
-                          Register Now
-                        </Link>
+                          Get Notified of Future Classes
+                        </a>
+                        <br className="sm:hidden" />
                         <a
                           href="mailto:classes@joincpi.org"
                           target="_blank"
@@ -56,8 +57,10 @@ export default function Classes() {
                         </a>
                       </div>
                       <p className="mt-4 sm:mt-6 text-sm text-gray-300 sm:mt-5 lg:text-base">
-                        <Link to="/live-classes" className="hover:underline">
-                          Looking for live classes? &rarr;
+                        <Link href="/video-classes">
+                          <a className="hover:underline">
+                            Looking for self-study classes? &rarr;
+                          </a>
                         </Link>
                       </p>
                     </div>
@@ -80,24 +83,70 @@ export default function Classes() {
             <div className="relative bg-white py-16 sm:pt-24 lg:pt-32">
               <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
                 <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">
-                  Why This Class?
+                  Why Us?
                 </h2>
                 <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-                  Learning USACO can be hard. But it doesn't have to be.
+                  Premium Quality, Affordable Cost.
                 </p>
                 <p className="mt-8 max-w-prose mx-auto text-xl text-gray-500">
-                  {/* <span className="font-bold block mb-2 text-gray-900">
+                  <span className="font-bold block mb-2 text-gray-900">
                     Affordable doesn't mean low-quality.
-                  </span> */}
+                  </span>
                   <span>
-                    If you're struggling to get started with USACO, you've come
-                    to the right place. Our team of past USACO Finalists have
-                    created a well-structured course that will teach you all the
-                    major topics of Bronze in a clear and organized fashion.
+                    With a team of past USACO Finalists, we've created classes
+                    of the highest possible caliber that are just as competitive
+                    as more expensive alternatives.
                   </span>
                 </p>
 
-                <div className="pt-12">
+                {/* Feature: Office Hours */}
+                <div className="bg-white px-4">
+                  <div className="relative py-8">
+                    <div className="sm:mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+                      <div className="relative rounded-2xl px-8 py-8 bg-teal-700 overflow-hidden shadow-xl sm:px-12 sm:py-12 md:py-20">
+                        <div
+                          aria-hidden="true"
+                          className="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0"
+                        >
+                          <svg
+                            className="absolute inset-0 h-full w-full"
+                            preserveAspectRatio="xMidYMid slice"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 1463 360"
+                          >
+                            <path
+                              className="text-teal-600 text-opacity-40"
+                              fill="currentColor"
+                              d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z"
+                            />
+                            <path
+                              className="text-teal-800 text-opacity-40"
+                              fill="currentColor"
+                              d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z"
+                            />
+                          </svg>
+                        </div>
+                        <div className="relative">
+                          <div className="text-left sm:text-center">
+                            <h2 className="text-2xl font-extrabold text-white tracking-tight sm:text-4xl">
+                              New Addition: Office Hours.
+                            </h2>
+                            <p className="mt-2 sm:mt-6 mx-auto max-w-2xl sm:text-lg text-teal-200">
+                              In order to ensure student success, we host office
+                              hours every Wednesday at 5pm PDT where students
+                              can ask for help from instructors.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="h-4" />
+
+                <div>
                   <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="pt-6">
                       <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
@@ -115,18 +164,17 @@ export default function Classes() {
                                   strokeLinecap="round"
                                   strokeLinejoin="round"
                                   strokeWidth={2}
-                                  d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                                 />
                               </svg>
                             </span>
                           </div>
                           <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                            Video Explanations
+                            Vetted Instructors
                           </h3>
                           <p className="mt-5 text-base text-gray-500">
-                            Every problem comes with a video solution where an
-                            instructor walks you through how to solve the
-                            problem.
+                            Our vetted instructors are not only experts in their
+                            domains, but are also experienced instructors.
                           </p>
                         </div>
                       </div>
@@ -222,9 +270,9 @@ export default function Classes() {
                             Affordable Cost
                           </h3>
                           <p className="mt-5 text-base text-gray-500">
-                            Purchasing the course costs $25, and all funds are
-                            reinvested to create even better courses. Financial
-                            aid available.
+                            As a nonprofit organization, we strive to make
+                            classes as affordable as possible. Each registration
+                            costs $100.
                           </p>
                         </div>
                       </div>
@@ -259,19 +307,12 @@ export default function Classes() {
                             </span>
                           </div>
                           <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                            Integrated with the USACO Guide
+                            Financial Aid Available
                           </h3>
                           <p className="mt-5 text-base text-gray-500">
-                            Each lesson has a corresponding module from the{" "}
-                            <a
-                              href="https://usaco.guide/"
-                              target="_blank"
-                              className="underline"
-                            >
-                              USACO Guide
-                            </a>
-                            , where you can review a concept or find additional
-                            practice.
+                            Our goal is to make competitive programming
+                            accessible for everyone. If you can't pay, you can
+                            attend classes for free.
                           </p>
                         </div>
                       </div>
@@ -298,12 +339,19 @@ export default function Classes() {
                             </span>
                           </div>
                           <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                            Lifetime Updates
+                            Integrated with the USACO Guide
                           </h3>
                           <p className="mt-5 text-base text-gray-500">
-                            We'll keep updating our course based on your
-                            feedback to make it even better! You'll get lifetime
-                            updates, for free.
+                            Each lesson has a corresponding module from the{" "}
+                            <a
+                              href="https://usaco.guide/"
+                              target="_blank"
+                              className="underline"
+                            >
+                              USACO Guide
+                            </a>
+                            , where you can review a concept or find additional
+                            practice.
                           </p>
                         </div>
                       </div>
@@ -312,50 +360,6 @@ export default function Classes() {
                 </div>
               </div>
             </div>
-
-            <div className="bg-white px-4">
-              <div className="relative pb-8">
-                <div className="mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-                  <div className="relative rounded-2xl px-8 py-8 bg-cyan-700 overflow-hidden shadow-xl sm:px-12 sm:py-12 md:py-20">
-                    <div aria-hidden="true" className="absolute inset-0 mt-20">
-                      <svg
-                        className="absolute inset-0 h-full w-full"
-                        preserveAspectRatio="xMidYMid slice"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 1463 360"
-                      >
-                        <path
-                          className="text-cyan-600 text-opacity-40"
-                          fill="currentColor"
-                          d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z"
-                        />
-                        <path
-                          className="text-cyan-800 text-opacity-40"
-                          fill="currentColor"
-                          d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z"
-                        />
-                      </svg>
-                    </div>
-                    <div className="relative">
-                      <div className="text-left sm:text-center">
-                        <h2 className="text-2xl font-extrabold text-white tracking-tight sm:text-4xl">
-                          Embracing the video format.
-                        </h2>
-                        <p className="mt-2 sm:mt-6 mx-auto max-w-2xl sm:text-lg text-cyan-200">
-                          This course isn't just a series of recorded live
-                          classes. Every video in this course is designed to be
-                          used in a self-study environment, taking full
-                          advantage of our custom online learning platform.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="h-16" />
 
             {/* Testimonial section */}
             {/*<div className="pb-16 bg-gradient-to-r from-teal-500 to-cyan-600 lg:pb-0 lg:z-10 lg:relative">*/}
@@ -389,7 +393,7 @@ export default function Classes() {
             {/*  </div>*/}
             {/*</div>*/}
 
-            <div className="relative bg-white overflow-hidden">
+            <div className="relative pb-16 bg-white overflow-hidden">
               <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
                 <div className="relative h-full text-lg max-w-prose mx-auto">
                   <svg
@@ -469,189 +473,71 @@ export default function Classes() {
               <div className="relative px-4 sm:px-6 lg:px-8">
                 <div className="text-lg max-w-prose mx-auto mb-6">
                   <p className="text-base text-center leading-6 text-cyan-600 font-semibold tracking-wide uppercase">
-                    Info
+                    Course Info
                   </p>
                   <h1 className="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-                    Class Details
+                    Class Format
                   </h1>
                 </div>
                 <div className="prose prose-lg text-gray-500 mx-auto">
                   <p>
-                    This eight-week program is designed to teach you the major
-                    concepts in the Bronze division of USACO.
-                  </p>
-
-                  <div className="aspect-w-16 aspect-h-9">
-                    <iframe
-                      src="https://www.youtube.com/embed/ZZBCCECaSxM"
-                      title="USACO Bronze Class Introduction"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
-
-                  <h3>Class Structure</h3>
-                  <p>
-                    Each week, we'll introduce one topic in Bronze, and we'll
-                    provide a series of curated problems related to that topic
-                    in incremental difficulty. Every problem will come with
-                    video and code solutions in C++ and Java (Python coming
-                    soon). You'll get access to all 8 weeks of curriculum at
-                    once.
-                  </p>
-
-                  <ol>
-                    <li>Time Complexity and Rectangle Geometry</li>
-                    <li>Data Structures and Simulation</li>
-                    <li>Basic Complete Search</li>
-                    <li>Complete Search with Recursion</li>
-                    <li>Sorting, Sets, and Maps</li>
-                    <li>Ad Hoc Problems</li>
-                    <li>Greedy Algorithms</li>
-                    <li>Introduction to Graphs</li>
-                  </ol>
-
-                  <h3>Target Audience</h3>
-                  <p>
-                    This class is targeted to people who are familiar with the
-                    basics of programming (ie. for loops, etc), but are new to
-                    USACO. This class teaches you the major concepts needed for
-                    Bronze. If you are already familiar with Bronze concepts,
-                    this class will likely be too easy for you.
+                    A CPI course consists of 9 weekly classes, each of which
+                    lasts 2 hours. Classes will go over challenging example
+                    problems and contain problemsets for homework.
                   </p>
                   <p>
-                    Additionally, this class is heavily video-based. If you
-                    learn better through text, you may want to use the{" "}
-                    <a
-                      href="https://usaco.guide/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    Classes follow a flipped learning model to maximize the
+                    amount of time students have to ask instructors questions.
+                    Our curriculum is modeled off the{" "}
+                    <a href="https://usaco.guide/" target="_blank">
                       USACO Guide
-                    </a>{" "}
-                    instead.
+                    </a>
+                    . There will be weekly office hours for students to get help
+                    from instructors.
+                  </p>
+                  <p>
+                    <b>Seats are limited</b>. First come first served, so make
+                    sure to sign up soon!
                   </p>
 
-                  <h3>Programming Language</h3>
-                  <p>
-                    Both C++ and Java have first-class support. Python is also
-                    supported, but we're still working on adding Python videos
-                    to some sections.
-                  </p>
+                  <h3>Class Schedule</h3>
+                  <ul>
+                    <li>
+                      Introductory Class - Fridays, 5:00-7:00pm Pacific Daylight
+                      Time (UTC-7). 10/1/21 to 12/3/21 (skip 11/26).
+                    </li>
+                    <li>
+                      Intermediate Class - Saturdays, 4:00-6:00pm Pacific
+                      Daylight Time (UTC-7). 10/2/21 to 12/4/21 (skip 11/27).
+                    </li>
+                  </ul>
 
                   <h3>Pricing</h3>
                   <p>
                     These classes are <b>not for profit</b> -- instructors are
                     unpaid and volunteer their time to help USACO contestants.
-                    We ask for a <b>$25 fee</b> to help support the creation of
+                    We ask for a <b>$100 fee</b> to help support the creation of
                     these classes and the infrastructure for the resources we
-                    provide such as the USACO Guide. If you're unable to pay,
-                    you can apply for financial aid.
+                    provide such as the USACO Guide.
                   </p>
-
-                  <h3>How is this different from the Guide?</h3>
                   <p>
-                    These classes follow the Guide curriculum, but are{" "}
-                    <b>video-based</b> rather than text-based. We also selected
-                    a subset of the most important Guide problems rather than
-                    using all of them.
+                    <b>Financial aid is available</b>. If you are unable to pay
+                    the full amount, just let us know!
                   </p>
 
-                  <h3>How do I promote from Bronze to Silver?</h3>
+                  <h3>Programming Language</h3>
                   <p>
-                    First, you should take this course so you know all the major
-                    Bronze concepts. Then, you'll need to <b>practice</b> with
-                    old USACO problems (or USACO Guide problems). The goal of
-                    taking this course is to make you able to attempt Bronze
-                    problems and understand editorials when you get stuck.
+                    Both C++ and Java are acceptable for the class. While our
+                    class will primarily use Java, instructors are fully able to
+                    assist C++ users as well.
                   </p>
-
-                  <h3 id="important">Important: Read before purchasing!</h3>
-                  <ol>
-                    <li>
-                      <p>
-                        If you already know all the Bronze concepts, this class
-                        may be too easy for you.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        The content of this course is extremely similar to the{" "}
-                        <a
-                          href="https://usaco.guide/"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          USACO Guide
-                        </a>
-                        , which is free. The difference is that this course is
-                        video-based rather than text-based. If you're learning
-                        fine with the USACO Guide, there is no need to take this
-                        class.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        We plan to release this course for free at some point in
-                        the far future. Purchasing this course now gives you
-                        early access to the course and supports our nonprofit
-                        initiative. We'll use your feedback to improve the
-                        course.
-                      </p>
-                    </li>
-                  </ol>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white">
-              <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-                <div className="bg-cyan-700 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
-                  <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
-                    <div className="lg:self-center">
-                      <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-                        <span className="block">Convinced?</span>
-                        <span className="block">
-                          Start your USACO journey today.
-                        </span>
-                      </h2>
-                      <p className="mt-4 text-lg leading-6 text-cyan-200">
-                        After taking this class, you'll be comfortable with all
-                        the major concepts of USACO Bronze, and will be
-                        well-equipped to tackle USACO Bronze problems.
-                      </p>
-                      <Link
-                        to="/classes/register"
-                        className="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-cyan-600 hover:bg-indigo-50"
-                      >
-                        Register Now
-                      </Link>
-                      {/* <p className="mt-4 text-cyan-200">
-                        <a
-                          href="https://usaco.guide/groups/join?key=NKR6vjyQtHkxXZMq68gy"
-                          target="_blank"
-                          className="hover:underline"
-                        >
-                          Or try it out for free first! &rarr;
-                        </a>
-                      </p> */}
-                    </div>
-                  </div>
-                  <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-                    <img
-                      className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-8 lg:translate-y-16"
-                      src="/class.png"
-                      alt="Class LMS"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ClassLevels />
 
-            {/* <ClassLevels /> */}
-
-            <RecordedClassInstructors />
+            <ClassInstructors />
 
             <Newsletter />
           </div>

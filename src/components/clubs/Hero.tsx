@@ -1,20 +1,6 @@
 import * as React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
 
 export default function Hero() {
-  const data = useStaticQuery(graphql`
-    query {
-      hero: file(relativePath: { eq: "clubs-hero.jpg" }) {
-        childImageSharp {
-          fluid(maxHeight: 700, quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-  const heroImg = data.hero.childImageSharp.fluid
   return (
     <div>
       <div className="relative shadow-xl">

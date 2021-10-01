@@ -1,7 +1,9 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import Link from "next/link"
 import { useState } from "react"
 import Logo from "./Logo"
+import { useRouter } from "next/router"
+import ClassesDropdown from "../components/ClassesDropdown"
 
 export default function Header({
   noBanner,
@@ -11,12 +13,8 @@ export default function Header({
   dark?: boolean
 }) {
   const [isOpen, setIsOpen] = useState(false)
-
+  const router = useRouter()
   const internalLinks = [
-    {
-      label: "Classes",
-      url: "/classes",
-    },
     {
       label: "Clubs",
       url: "/clubs",
@@ -38,16 +36,20 @@ export default function Header({
       ? "border-transparent text-gray-100 focus:border-gray-600"
       : "border-purple-500 text-gray-900 focus:border-purple-700")
 
-  const blockLinkClasses = "block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium focus:outline-none transition duration-150 ease-in-out " + (
-    !dark 
+  const blockLinkClasses =
+    "block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium focus:outline-none transition duration-150 ease-in-out " +
+    (!dark
       ? "text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300"
-      : "text-gray-400 hover:text-gray-200 hover:bg-gray-700 hover:border-gray-500 focus:text-gray-800 focus:bg-gray-700 focus:border-gray-300"
-    )
-  const activeBlockLinkClasses = "block pl-3 pr-4 py-2 border-l-4 text-base font-medium focus:outline-none transition duration-150 ease-in-out " + (
-      !dark
+      : "text-gray-400 hover:text-gray-200 hover:bg-gray-700 hover:border-gray-500 focus:text-gray-200 focus:bg-gray-700 focus:border-gray-300")
+  const activeBlockLinkClasses =
+    "block pl-3 pr-4 py-2 border-l-4 text-base font-medium focus:outline-none transition duration-150 ease-in-out " +
+    (!dark
       ? "border-purple-500 text-purple-700 bg-purple-50 focus:text-purple-800 focus:bg-purple-100 focus:border-purple-700"
-      : "border-purple-500 text-purple-100 bg-purple-800 focus:text-purple-800 focus:bg-purple-100 focus:border-purple-700"
-    )
+      : "border-purple-500 text-purple-100 bg-purple-800 focus:text-purple-50 focus:bg-purple-500 focus:border-purple-700")
+
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+  }
 
   return (
     <nav
@@ -89,16 +91,17 @@ export default function Header({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
-            <Link
-              to="/"
-              className="flex-shrink-0 flex items-center text-xl font-bold space-x-2"
-            >
-              <div className="h-9 w-9">
-                <Logo />
-              </div>
-              <span className={`font-bold text-xl ${dark ? "text-white" : ""}`}>
-                CP Initiative
-              </span>
+            <Link href="/">
+              <a className="flex-shrink-0 flex items-center text-xl font-bold space-x-2">
+                <div className="h-9 w-9">
+                  <Logo />
+                </div>
+                <span
+                  className={`font-bold text-xl ${dark ? "text-white" : ""}`}
+                >
+                  CP Initiative
+                </span>
+              </a>
             </Link>
             <div className="hidden sm:ml-8 sm:flex space-x-8">
               <a
@@ -116,15 +119,20 @@ export default function Header({
                 {/*        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>*/}
                 {/*</svg>*/}
               </a>
+
+              <ClassesDropdown dark={dark}/>
+
               {internalLinks.map(link => (
-                <Link
-                  to={link.url}
-                  key={link.url}
-                  getProps={({ isCurrent }) => ({
-                    className: !isCurrent ? linkClasses : activeLinkClasses,
-                  })}
-                >
-                  {link.label}
+                <Link href={link.url} key={link.url}>
+                  <a
+                    className={
+                      link.url === router.pathname
+                        ? activeLinkClasses
+                        : linkClasses
+                    }
+                  >
+                    {link.label}
+                  </a>
                 </Link>
               ))}
             </div>
@@ -133,11 +141,10 @@ export default function Header({
             {/* Mobile menu button */}
             <button
               className={
-                "inline-flex items-center justify-center p-2 rounded-md focus:outline-none transition duration-150 ease-in-out " + (
-                  !dark
-                    ? "text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:bg-gray-100 focus:text-gray-500"
-                    : "text-gray-600 hover:text-gray-400 hover:bg-gray-800 focus:bg-gray-700 focus:text-gray-500"
-                )
+                "inline-flex items-center justify-center p-2 rounded-md focus:outline-none transition duration-150 ease-in-out " +
+                (!dark
+                  ? "text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:bg-gray-100 focus:text-gray-500"
+                  : "text-gray-600 hover:text-gray-400 hover:bg-gray-800 focus:bg-gray-700 focus:text-gray-500")
               }
               aria-label="Main menu"
               aria-expanded="false"
@@ -189,15 +196,41 @@ export default function Header({
             USACO Guide
           </a>
 
-          {internalLinks.map(link => (
-            <Link
-              to={link.url}
-              key={link.url}
-              getProps={({ isCurrent }) => ({
-                className: !isCurrent ? blockLinkClasses : activeBlockLinkClasses
-              })}
+          <Link href='/classes'>
+            <a
+              className={
+                '/classes' === router.pathname
+                  ? activeBlockLinkClasses
+                  : blockLinkClasses
+              }
             >
-              {link.label}
+              Live Classes
+            </a>
+          </Link>
+
+          <Link href='/video-classes'>
+            <a
+              className={
+                '/video-classes' === router.pathname
+                  ? activeBlockLinkClasses
+                  : blockLinkClasses
+              }
+            >
+              Self-Study Classes
+            </a>
+          </Link>
+
+          {internalLinks.map(link => (
+            <Link href={link.url} key={link.url}>
+              <a
+                className={
+                  link.url === router.pathname
+                    ? activeBlockLinkClasses
+                    : blockLinkClasses
+                }
+              >
+                {link.label}
+              </a>
             </Link>
           ))}
         </div>
