@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from 'gatsby-image'
 
 type Member = {
-  photo: StaticImageData // url of photo relative to content/authors/images/, EXCLUDING EXTENSION
+  photo: string // url of photo relative to content/authors/images/, EXCLUDING EXTENSION
   name: string
   titles: [string, string]
   github: string
@@ -103,7 +103,7 @@ const socialLinks = {
 
 const core: Member[] = [
   {
-    photo: nathanw,
+    photo: "nathanw",
     name: "Nathan Wang",
     titles: ["CEO", "2x Finalist"],
     github: "https://github.com/thecodingwizard",
@@ -115,7 +115,7 @@ const core: Member[] = [
     youtube: "",
   },
   {
-    photo: maggie,
+    photo: "maggie",
     name: "Maggie Liu",
     titles: ["Executive", ""],
     github: "https://github.com/maggie-j-liu",
@@ -127,7 +127,7 @@ const core: Member[] = [
     youtube: "",
   },
   {
-    photo: melody,
+    photo: "melody",
     name: "Melody Yu",
     titles: ["Executive", ""],
     github: "https://github.com/cskitty",
@@ -139,7 +139,7 @@ const core: Member[] = [
     youtube: "https://www.youtube.com/channel/UCPkhk5gFov8vIPXj0zHyxEQ",
   },
   {
-    photo: daniel,
+    photo: "daniel",
     name: "Daniel Guan",
     titles: ["Director of Classes", "Finalist"],
     github: "",
@@ -151,7 +151,7 @@ const core: Member[] = [
     youtube: "",
   },
   {
-    photo: jeffrey,
+    photo: "jeffrey",
     name: "Jeffrey Meng",
     titles: ["Director of Operations", ""],
     github: "",
@@ -163,7 +163,7 @@ const core: Member[] = [
     youtube: "",
   },
   {
-    photo: darren,
+    photo: "darren",
     name: "Darren Yao",
     titles: ["Director of Outreach", ""],
     github: "https://github.com/darren-yao",
@@ -175,7 +175,7 @@ const core: Member[] = [
     youtube: "",
   },
   {
-    photo: michael,
+    photo: "michael",
     name: "Michael Cao",
     titles: ["Director of Clubs", ""],
     github: "https://github.com/caoash",
@@ -586,7 +586,7 @@ const alumni: Member[] = [
     youtube: "",
   },
   {
-    photo: nathanc,
+    photo: "nathanc",
     name: "Nathan Chen",
     titles: ["Former Treasurer", "2x Finalist"],
     github: "https://github.com/nchn27",
