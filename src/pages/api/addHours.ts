@@ -2,12 +2,20 @@ import type { NextApiRequest, NextApiResponse } from "next"
 import { GoogleSpreadsheet } from "google-spreadsheet"
 import { getSession } from "next-auth/client"
 import { SHEETS_API_CREDS, SHEETS_METADATA } from "../../../config"
-import { VolunteerInfo } from "../../../firebase"
+import { db } from "../../../firebase"
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  const VolunteerInfo = await db
+    .collection("configuration")
+    .doc("volunteers")
+    .get()
+    .then(doc => {
+      // console.log(doc.data())
+      return doc.data()
+    })
   const session = await getSession({ req })
   const email = session.user?.email
 
