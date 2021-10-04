@@ -1,10 +1,10 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
-import Hero from "../components/workshop/Hero"
+import Hero from "../components/workshops/workshop/Hero"
 import Header from "../components/Header"
-import AgendaAndContent from "../components/workshop/AgendaAndContent"
-import WorkshopPeople from "../components/workshop/WorkshopPeople"
+import AgendaAndContent from "../components/workshops/workshop/AgendaAndContent"
+import WorkshopPeople from "../components/workshops/workshop/WorkshopPeople"
 
 export default function Workshop({ data }) {
   return (

@@ -1,5 +1,5 @@
-import { nathanw, melody } from "../index/images"
-import Speakers, { Speaker } from "../workshops/Speakers"
+import { nathanw, melody } from "../../index/images"
+import Speakers, { Speaker } from "../Speakers"
 const speakers: Speaker[] = [
   {
     photo: nathanw,
