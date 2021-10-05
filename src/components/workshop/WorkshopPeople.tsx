@@ -10,14 +10,24 @@ type Member = {
 
 const members: Member[] = [
   {
-    photo: nathanw,
-    name: "Nathan Wang",
-    title: "Three-time USACO Finalist",
-  },
-  {
     photo: melody,
     name: "Melody Yu",
-    title: "Instructor",
+    title: "USACO Platinum",
+  },
+  {
+    photo: ,
+    name: "Rayna Arora",
+    title: "EGOI Member / USACO Platinum",
+  },
+  {
+    photo: ,
+    name: "Tarushii Goel",
+    title: "EGOI Member / USACO Platinum",
+  },
+  {
+    photo: ,
+    name: "Claire Zhang",
+    title: "EGOI Member / USACO Platinum",
   },
 ]
 
