@@ -2,7 +2,7 @@ import * as React from "react"
 import Image from "next/image"
 
 export type Speaker = {
-  photo: StaticImageData
+  photo?: StaticImageData
   name: string
   title?: string
 }
@@ -32,14 +32,16 @@ export default function Speakers({
                 <li key={speaker.name}>
                   <div className="flex items-center space-x-4 lg:space-x-6">
                     <div className="flex-shrink-0 w-16 h-16 rounded-full overflow-hidden relative lg:w-20 lg:h-20">
-                      <Image
-                        layout="fill"
-                        objectFit="cover"
-                        objectPosition="center center"
-                        src={speaker.photo}
-                        alt={speaker.name}
-                        placeholder="blur"
-                      />
+                      {speaker.photo && (
+                        <Image
+                          layout="fill"
+                          objectFit="cover"
+                          objectPosition="center center"
+                          src={speaker.photo}
+                          alt={speaker.name}
+                          placeholder="blur"
+                        />
+                      )}
                     </div>
                     <div className="font-medium text-lg leading-6 space-y-1">
                       <h3>{speaker.name}</h3>
