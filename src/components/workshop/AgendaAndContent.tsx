@@ -13,14 +13,10 @@ export default function AgendaAndContent() {
             about getting started with USACO.
           </p>
           <ul className={"list-disc ml-5"}>
-            <li>What is USACO</li>
-            <li>When and how to attend USACO</li>
-            <li>USACO levels</li>
-            <li>Programming languages for USACO</li>
-            <li>USACO scoring</li>
-            <li>USACO sample questions workthrough</li>
-            <li>What should I learn for USACO</li>
-            <li>Open Q&A</li>
+            <li>USA EGOI member introduction</li>
+            <li>Sharing experience for USACO</li>
+            <li>Interview with the members</li>
+            <li>Open panel Q&A</li>
           </ul>
         </div>
       </div>
