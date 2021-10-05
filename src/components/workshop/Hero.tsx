@@ -11,31 +11,31 @@ export default function Hero() {
           <main className="pt-10 mx-auto max-w-screen-xl px-4 sm:pt-12 sm:px-6 md:pt-16 lg:pt-18 lg:px-8 xl:pt-24">
             <div className="sm:text-center lg:text-left">
               <div className="text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
-                August 6, 2021
+                October 17, 2021
               </div>
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                 <span className="text-purple-600">
-                  USACO for Absolute Beginners
+                  Experience & Tips from the USA EGOI Team
                 </span>
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                CPI will be holding a workshop "USACO for absolute Beginners" on
-                August 6th, 4pm PDT! Join us to learn more about what USACO is!
+                The Competitive Programming Initiative is holding its second workshop on
+                October 17th, 2pm PDT! Join us to learn from the experience of the 2021 EGOI team!
               </p>
               <p className="mt-1 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                 Zoom link:{" "}
                 <a
                   target="_blank"
-                  href="https://bit.ly/36ZwIKE"
+                  href="https://forms.gle/X4GNptRtFAKjzynv6"
                   className="underline text-blue-600"
                 >
-                  https://bit.ly/36ZwIKE
+                  Zoom Link To Be Posted For Registered Members!
                 </a>
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    href="https://forms.gle/2A4wGF9if3f6uNoX7"
+                    href="https://forms.gle/X4GNptRtFAKjzynv6"
                     target="_blank"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
