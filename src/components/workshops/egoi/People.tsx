@@ -8,18 +8,18 @@ const speakers: Speaker[] = [
   },
   {
     name: "Rayna Arora",
-    title: "EGOI Member / USACO Platinum",
+    title: "EGOI Team Member / USACO Platinum",
   },
   {
     photo: tarushii,
     name: "Tarushii Goel",
-    title: "EGOI Member / USACO Platinum",
+    title: "EGOI Team Member / USACO Platinum",
   },
   {
     name: "Claire Zhang",
-    title: "EGOI Member / USACO Platinum",
+    title: "EGOI Team Member / USACO Platinum",
   },
 ]
 export default function People() {
-  return <Speakers speakers={speakers} />
+  return <Speakers speakers={speakers} titleColor="text-cyan-600" />
 }

@@ -10,9 +10,11 @@ export type Speaker = {
 export default function Speakers({
   speakers,
   description,
+  titleColor = "text-indigo-600",
 }: {
   speakers: Speaker[]
   description?: string
+  titleColor?: string
 }) {
   return (
     <div className="bg-white">
@@ -46,7 +48,7 @@ export default function Speakers({
                     <div className="font-medium text-lg leading-6 space-y-1">
                       <h3>{speaker.name}</h3>
                       {speaker.title && (
-                        <p className="text-indigo-600 text-base">
+                        <p className={`${titleColor} text-base`}>
                           {speaker.title}
                         </p>
                       )}
