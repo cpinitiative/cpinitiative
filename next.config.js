@@ -3,12 +3,12 @@ module.exports = {
     return [
       {
         source: "/workshop",
-        destination: "/usaco-beginner-workshop",
+        destination: "/workshop/beginner",
         permanent: true,
       },
       {
         source: "/webinar",
-        destination: "/intro-usaco-webinar",
+        destination: "/workshop/intro-to-usaco",
         permanent: true,
       },
     ]

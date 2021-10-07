@@ -23,7 +23,8 @@ export default function Hero() {
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                 The Competitive Programming Initiative is holding its second
                 workshop on October 17th, 2pm PDT! Join us to learn from the
-                experience of the 2021 EGOI team!
+                experience of the 2021 EGOI (European Girls' Olympiad in
+                Informatics) team!
               </p>
               <p className="mt-1 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                 Zoom link:{" "}
@@ -57,7 +58,7 @@ export default function Hero() {
               </div>
             </div>
             <div className={"w-full max-w-2xl mx-auto"}>
-              <Image src={heroImg} placeholder="blur" />
+              <Image src={heroImg} placeholder="blur" priority />
             </div>
           </main>
         </div>

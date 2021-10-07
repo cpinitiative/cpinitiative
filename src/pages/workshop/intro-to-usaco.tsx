@@ -1,10 +1,10 @@
 import * as React from "react"
-import Layout from "../components/Layout"
-import SEO from "../components/SEO"
-import Hero from "../components/workshops/webinar/Hero"
-import Header from "../components/Header"
-import AgendaAndContent from "../components/workshops/webinar/AgendaAndContent"
-import WebinarPeople from "../components/workshops/webinar/WebinarPeople"
+import Layout from "../../components/Layout"
+import SEO from "../../components/SEO"
+import Hero from "../../components/workshops/webinar/Hero"
+import Header from "../../components/Header"
+import AgendaAndContent from "../../components/workshops/webinar/AgendaAndContent"
+import WebinarPeople from "../../components/workshops/webinar/WebinarPeople"
 
 export default function Webinar() {
   return (
