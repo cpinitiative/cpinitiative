@@ -49,11 +49,7 @@ SEO.propTypes = {
   description: PropTypes.string,
   children: PropTypes.element,
   title: PropTypes.string,
-  image: PropTypes.shape({
-    src: PropTypes.string.isRequired,
-    height: PropTypes.number.isRequired,
-    width: PropTypes.number.isRequired,
-  }),
+  image: PropTypes.string,
   pathname: PropTypes.string,
 }
 export default SEO
