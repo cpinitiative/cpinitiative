@@ -9,6 +9,11 @@ import People from "../components/workshops/egoi/People"
 export default function Workshop({ data }) {
   return (
     <Layout>
+      <SEO
+        image="/egoi-workshop.png"
+        title="Experience & Tips from the USA EGOI Team"
+        description="The Competitive Programming Initiative is holding its second workshop on October 17th, 2pm PDT! Join us to learn from the experience of the 2021 EGOI team!"
+      />
       <Header noBanner />
       <div className="margin-top-nav" />
       {/*/!* Banner margin *!/*/}
