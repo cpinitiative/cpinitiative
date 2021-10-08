@@ -1,23 +1,28 @@
-import { melody, tarushii } from "../../index/images"
+import { melody, tarushii, vivian } from "../../index/images"
 import Speakers, { Speaker } from "../Speakers"
 const speakers: Speaker[] = [
   {
-    photo: melody,
     name: "Melody Yu",
     title: "USACO Platinum",
+    photo: melody,
   },
   {
     name: "Rayna Arora",
     title: "EGOI Team Member / USACO Platinum",
   },
   {
-    photo: tarushii,
     name: "Tarushii Goel",
     title: "EGOI Team Member / USACO Platinum",
+    photo: tarushii,
   },
   {
     name: "Claire Zhang",
     title: "EGOI Team Member / USACO Platinum",
+  },
+  {
+    name: "Vivian Han",
+    title: "EGOI Team Member / USACO Platinum",
+    photo: vivian,
   },
 ]
 export default function People() {
