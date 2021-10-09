@@ -23,6 +23,10 @@ export default function Header({
       label: "Contests",
       url: "/contests",
     },
+    {
+      label: "Workshops",
+      url: "/workshop/egoi",
+    },
   ]
 
   const linkClasses =
@@ -48,7 +52,7 @@ export default function Header({
       : "border-purple-500 text-purple-100 bg-purple-800 focus:text-purple-50 focus:bg-purple-500 focus:border-purple-700")
 
   function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
+    return classes.filter(Boolean).join(" ")
   }
 
   return (
@@ -103,7 +107,7 @@ export default function Header({
                 </span>
               </a>
             </Link>
-            <div className="hidden sm:ml-8 sm:flex space-x-8">
+            <div className="hidden md:ml-8 md:flex space-x-8">
               <a
                 href="https://usaco.guide/"
                 target="_blank"
@@ -120,7 +124,7 @@ export default function Header({
                 {/*</svg>*/}
               </a>
 
-              <ClassesDropdown dark={dark}/>
+              <ClassesDropdown dark={dark} />
 
               {internalLinks.map(link => (
                 <Link href={link.url} key={link.url}>
@@ -137,7 +141,7 @@ export default function Header({
               ))}
             </div>
           </div>
-          <div className="-mr-2 flex items-center sm:hidden">
+          <div className="-mr-2 flex items-center md:hidden">
             {/* Mobile menu button */}
             <button
               className={
@@ -186,7 +190,7 @@ export default function Header({
         </div>
       </div>
 
-      <div className={(isOpen ? "block" : "hidden") + " sm:hidden"}>
+      <div className={(isOpen ? "block" : "hidden") + " md:hidden"}>
         <div className="pt-2 pb-3 space-y-1">
           <a
             href="https://usaco.guide/"
@@ -196,10 +200,10 @@ export default function Header({
             USACO Guide
           </a>
 
-          <Link href='/classes'>
+          <Link href="/classes">
             <a
               className={
-                '/classes' === router.pathname
+                "/classes" === router.pathname
                   ? activeBlockLinkClasses
                   : blockLinkClasses
               }
@@ -208,10 +212,10 @@ export default function Header({
             </a>
           </Link>
 
-          <Link href='/video-classes'>
+          <Link href="/video-classes">
             <a
               className={
-                '/video-classes' === router.pathname
+                "/video-classes" === router.pathname
                   ? activeBlockLinkClasses
                   : blockLinkClasses
               }
