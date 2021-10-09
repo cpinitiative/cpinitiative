@@ -9,6 +9,7 @@ import arpan from "./arpan.png"
 import benq from "./benq.png"
 import blank from "./blank.png"
 import cow from "./cow.png"
+import clairezhang from "./clairezhang.jpeg"
 import daniel from "./daniel.png"
 import darren from "./darren.jpeg"
 import david_li from "./david_li.png"
@@ -40,6 +41,7 @@ export {
   benq,
   blank,
   cow,
+  clairezhang,
   daniel,
   darren,
   david_li,

@@ -18,6 +18,7 @@ const speakers: Speaker[] = [
   {
     name: "Claire Zhang",
     title: "EGOI Team Member / USACO Platinum",
+    photo: clairezhang,
   },
   {
     name: "Vivian Han",
