@@ -69,6 +69,14 @@ const IndexPage = () => (
             A selection of programming contests targeted towards pre-college
             students.
           </Card>
+          <Card
+            title="Workshops"
+            borderColor="border-cyan-600"
+            url="/workshop/egoi"
+          >
+            Join free online webinars with useful information from panels,
+            interviews, and events about competitive programming!
+          </Card>
         </div>
       </div>
     </div>
