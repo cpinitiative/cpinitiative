@@ -9,6 +9,7 @@ const speakers: Speaker[] = [
   {
     name: "Rayna Arora",
     title: "EGOI Team Member / USACO Platinum",
+    photo: rayna,
   },
   {
     name: "Tarushii Goel",
