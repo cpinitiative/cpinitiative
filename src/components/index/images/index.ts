@@ -24,6 +24,7 @@ import nathanc from "./nathanc.jpeg"
 import nathanw from "./nathanw.jpg"
 import neo from "./neo.jpg"
 import nikhil from "./nikhil.png"
+import rayna from "./rayna.jpeg"
 import tarushii from "./tarushii.jpeg"
 import vikas_thoutam from "./vikas_thoutam.png"
 import vivian from "./vivian.jpg"
@@ -56,6 +57,7 @@ export {
   nathanw,
   neo,
   nikhil,
+  rayna,
   tarushii,
   vikas_thoutam,
   vivian,

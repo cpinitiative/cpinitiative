@@ -1,4 +1,4 @@
-import { melody, tarushii, vivian, clairezhang } from "../../index/images"
+import { melody, tarushii, vivian, rayna, clairezhang } from "../../index/images"
 import Speakers, { Speaker } from "../Speakers"
 const speakers: Speaker[] = [
   {
@@ -9,6 +9,7 @@ const speakers: Speaker[] = [
   {
     name: "Rayna Arora",
     title: "EGOI Team Member / USACO Platinum",
+    photo: rayna,
   },
   {
     name: "Tarushii Goel",
