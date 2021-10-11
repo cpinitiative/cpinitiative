@@ -1,4 +1,4 @@
-import { melody, tarushii, vivian, clairezhang } from "../../index/images"
+import { melody, tarushii, vivian, rayna, clairezhang } from "../../index/images"
 import Speakers, { Speaker } from "../Speakers"
 const speakers: Speaker[] = [
   {
