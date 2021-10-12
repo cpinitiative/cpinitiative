@@ -354,12 +354,13 @@ export default function ViewHours() {
             <div className="w-full flex flex-row justify-between my-6">
               <h1 className="text-4xl font-semibold">
                 You're not signed in.{" "}
-                <a
+                <button
+                  type="button"
                   onClick={() => signIn("google")}
                   className="text-blue-400 cursor-pointer underline"
                 >
                   Sign in?
-                </a>
+                </button>
               </h1>
             </div>
           </div>
