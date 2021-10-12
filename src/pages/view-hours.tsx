@@ -25,9 +25,9 @@ export function VolunteerHourHistory({ data }) {
                     </h3>
                     <p className="text-sm text-gray-500">{item.hrs} hours</p>
                   </div>
-                  <p className="text-sm text-gray-500">
-                    <b>Reviewed prs:</b> {item.prs}
-                  </p>
+                  {item?.prs && (
+                    <p className="text-sm text-gray-500">{item.prs}</p>
+                  )}
                   {item.other && (
                     <p className="text-sm text-gray-500">
                       <b>Other information:</b> {item.other}
@@ -291,7 +291,7 @@ export default function ViewHours() {
             <Transition appear show={viewAddHoursForm} as={Fragment}>
               <Dialog
                 as="div"
-                className="fixed inset-0 z-10"
+                className="fixed inset-0 z-10 pt-10 overflow-auto"
                 onClose={() => setViewAddHoursForm(false)}
               >
                 <div className="min-h-screen px-4 text-center">
@@ -323,7 +323,7 @@ export default function ViewHours() {
                     leaveFrom="opacity-100 scale-100"
                     leaveTo="opacity-0 scale-95"
                   >
-                    <div className="inline-block w-full max-w-5xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+                    <div className="inline-block w-full max-w-5xl p-6 mt-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
                       <Dialog.Title
                         as="h3"
                         className="text-lg font-medium leading-6 text-gray-900"
