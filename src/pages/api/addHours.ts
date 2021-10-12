@@ -39,7 +39,7 @@ export default async function handler(
       .json({ error: "You are not authorized to add hours" })
 
   if (!prsReviewed)
-    return res.status(400).json({ error: "PRs reviewed is required" })
+    return res.status(400).json({ error: "Fill out what you did this week!" })
 
   const time = new Date().toISOString()
   // .replace("T", " ")
