@@ -53,7 +53,7 @@ export function AddVolunteerHoursForm({ data }) {
   const submitHours = () => {
     setLoading(true)
     setError("")
-    setResponse("");
+    setResponse("")
     fetch("/api/addHours", {
       method: "POST",
       headers: {
@@ -84,7 +84,7 @@ export function AddVolunteerHoursForm({ data }) {
   }
   return (
     <div className="my-4 rounded-md">
-      <div className="relative border border-gray-300 rounded-md rounded-b-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
+      {/* <div className="relative border border-gray-300 rounded-md rounded-b-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
         <label
           htmlFor="name"
           className="block font-medium text-sm text-gray-700"
@@ -99,8 +99,9 @@ export function AddVolunteerHoursForm({ data }) {
           className="block border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0"
           placeholder="Ex. N. Wang"
         />
-      </div>
-      <div className="relative border border-gray-300 px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
+      </div> */}
+
+      <div className="relative border border-gray-300 px-3 py-2 focus-within:z-10 rounded-t-md focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
         <label
           htmlFor="job-title"
           className="block w-full text-sm font-medium text-gray-700"
@@ -118,12 +119,13 @@ export function AddVolunteerHoursForm({ data }) {
       </div>
       <div className="relative border border-gray-300 px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
         <label className="block w-full text-sm font-medium text-gray-700">
-          What pull requests did you review?
+          What did you do this week (pull requests, classes taught, etc.)
         </label>
         <textarea
           onChange={e => setPrsReviewed(e.target.value)}
+          rows={8}
           className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0"
-          placeholder="Ex. I reviewed pull requests #1,2,3 and resolved issues #4,5,6"
+          placeholder="Ex. I reviewed pull requests #1,2,3 and taught the USACO Bronze class"
         />
       </div>
       <div className="relative border border-gray-300 rounded-md rounded-t-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
@@ -131,6 +133,7 @@ export function AddVolunteerHoursForm({ data }) {
           Is there anything else you would like to add?
         </label>
         <textarea
+          rows={5}
           onChange={e => setOther(e.target.value)}
           className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0"
           placeholder="Ex. The majority of my time was dedicated to creating visualizations."
@@ -177,8 +180,8 @@ export function AddVolunteerHoursForm({ data }) {
         </div>
       )}
       <div className="w-full p-1">
-        Your last pull request was made on:{" "}
-        {new Date(data && data[0].time).toDateString()}
+        Your last request was made on:{" "}
+        {new Date(data?.length >= 1 && data[0]?.time)?.toDateString()}
       </div>
 
       <button
@@ -229,7 +232,8 @@ export default function ViewHours() {
                 <div className="flex bg-white flex-col px-3 py-5 col-span-2 row-span-2 rounded-lg shadow-lg">
                   {data ? (
                     <p className="text-purple-800 font-semibold text-3xl m-auto">
-                      <b>{Math.round(data?.totalHours)}</b> hours volunteered
+                      <b>{Math.round(data?.totalHours * 100) / 100}</b> hours
+                      volunteered
                     </p>
                   ) : (
                     // spinner
@@ -275,6 +279,15 @@ export default function ViewHours() {
               </div>
             </div> */}
             <VolunteerHourHistory data={data} />
+            {viewAddHoursForm && (
+              <>
+                <div className="flex fixed items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0" />
+                <div
+                  className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+                  aria-hidden="true"
+                ></div>
+              </>
+            )}
             <Transition appear show={viewAddHoursForm} as={Fragment}>
               <Dialog
                 as="div"
@@ -310,24 +323,25 @@ export default function ViewHours() {
                     leaveFrom="opacity-100 scale-100"
                     leaveTo="opacity-0 scale-95"
                   >
-                    <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+                    <div className="inline-block w-full max-w-5xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
                       <Dialog.Title
                         as="h3"
                         className="text-lg font-medium leading-6 text-gray-900"
                       >
                         Add your hours
                       </Dialog.Title>
+
                       <AddVolunteerHoursForm data={data?.data} />
 
-                      <div className="">
+                      {/* <div className="">
                         <button
                           type="button"
                           className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                           onClick={() => setViewAddHoursForm(false)}
                         >
-                          Got it, thanks!
+                          Close
                         </button>
-                      </div>
+                      </div> */}
                     </div>
                   </Transition.Child>
                 </div>
@@ -341,7 +355,7 @@ export default function ViewHours() {
               <h1 className="text-4xl font-semibold">
                 You're not signed in.{" "}
                 <p
-                  onClick={() => signIn()}
+                  onClick={() => signIn("google")}
                   className="text-blue-400 cursor-pointer underline"
                 >
                   Sign in?

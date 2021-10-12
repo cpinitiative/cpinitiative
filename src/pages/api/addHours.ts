@@ -19,7 +19,8 @@ export default async function handler(
   const session = await getSession({ req })
   const email = session.user?.email
 
-  const { name, hours, prsReviewed, other } = req.body
+  const { hours, prsReviewed, other } = req.body
+  const name = session?.user?.name
 
   if (!name) return res.status(400).json({ error: "Name is required" })
   // checks the existence of hours and whether it is a number
@@ -75,6 +76,7 @@ export default async function handler(
 
       //   if (idx === 0) cell.formattedValue = val
       cell.value = val
+      if(idx == 4) cell.value = Number(val);
       await sheet.saveUpdatedCells()
     })
   })()
