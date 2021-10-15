@@ -27,13 +27,14 @@ export default function Hero() {
                 Informatics) team!
               </p>
               <p className="mt-1 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Zoom link:{" "}
+                Zoom:{" "}
                 <a
                   target="_blank"
-                  href="https://forms.gle/X4GNptRtFAKjzynv6"
+                  href="https://us06web.zoom.us/j/82152516280?pwd=aHh4RHN0amxoU2duZzludW4zZHVxQT09"
                   className="underline text-blue-600"
                 >
-                  Zoom Link To Be Posted For Registered Members!
+                  Meeting ID: 821 5251 6280
+                  Passcode: 12345
                 </a>
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
