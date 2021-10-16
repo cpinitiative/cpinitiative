@@ -33,7 +33,7 @@ export default function Hero() {
                   href="https://us06web.zoom.us/j/82152516280?pwd=aHh4RHN0amxoU2duZzludW4zZHVxQT09"
                   className="underline text-blue-600"
                 >
-                  { "ID": 821 5251 6280, "Password": 12345}
+                  ID: 821 5251 6280 (Password: 12345)
                 </a>
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
