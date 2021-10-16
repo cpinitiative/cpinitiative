@@ -1,20 +1,6 @@
 import * as React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from 'gatsby-image'
-
-type Member = {
-  photo: string // url of photo relative to content/authors/images/, EXCLUDING EXTENSION
-  name: string
-  titles: [string, string]
-  github: string
-  twitter: string
-  linkedin: string
-  website: string
-  codeforces: string
-  email: string
-  youtube: string
-}
-
+import Image from "next/image"
+import sections, { Member } from "./TeamData"
 const socialLinks = {
   email: {
     icon: (
@@ -97,623 +83,93 @@ const socialLinks = {
           d="M15.25 12L9.75 8.75V15.25L15.25 12Z"
         ></path>
       </svg>
-    )
+    ),
   },
 }
 
-const core: Member[] = [
-  {
-    photo: "nathanw",
-    name: "Nathan Wang",
-    titles: ["CEO", "2x Finalist"],
-    github: "https://github.com/thecodingwizard",
-    twitter: "",
-    linkedin: "",
-    website: "https://thecodingwizard.me/",
-    codeforces: "https://codeforces.com/profile/thecodingwizard",
-    email: "mailto:nathan.r.wang@gmail.com",
-    youtube: "",
-  },
-  {
-    photo: "maggie",
-    name: "Maggie Liu",
-    titles: ["Executive", ""],
-    github: "https://github.com/maggie-j-liu",
-    twitter: "",
-    linkedin: "",
-    website: "https://maggieliu.dev",
-    codeforces: "https://codeforces.com/profile/ml1234",
-    email: "mailto:maggie.j.liu@gmail.com",
-    youtube: "",
-  },
-  {
-    photo: "melody",
-    name: "Melody Yu",
-    titles: ["Executive", ""],
-    github: "https://github.com/cskitty",
-    twitter: "",
-    linkedin: "",
-    website: "https://melodyyu.com/",
-    codeforces: "",
-    email: "mailto:ocmelodyyu@gmail.com",
-    youtube: "https://www.youtube.com/channel/UCPkhk5gFov8vIPXj0zHyxEQ",
-  },
-  {
-    photo: "daniel",
-    name: "Daniel Guan",
-    titles: ["Director of Classes", "Finalist"],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "jeffrey",
-    name: "Jeffrey Meng",
-    titles: ["Director of Operations", ""],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "darren",
-    name: "Darren Yao",
-    titles: ["Director of Outreach", ""],
-    github: "https://github.com/darren-yao",
-    twitter: "",
-    linkedin: "",
-    website: "http://darrenyao.com/",
-    codeforces: "https://codeforces.com/profile/darren_yao",
-    email: "mailto:darren.yao@gmail.com",
-    youtube: "",
-  },
-  {
-    photo: "michael",
-    name: "Michael Cao",
-    titles: ["Director of Clubs", ""],
-    github: "https://github.com/caoash",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "https://codeforces.com/profile/caoash",
-    email: "mailto:caoash@gmail.com",
-    youtube: "",
-  },
-  {
-    photo: "Harry",
-    name: "Harry Wang",
-    titles: ["Project Manager", ""],
-    github: "https://github.com/harrywangatx",
-    twitter: "",
-    linkedin: "",
-    website: "https://harrycodes.com",
-    codeforces: "",
-    email: "mailto:qiwang@joincpi.org",
-    youtube: "https://www.youtube.com/channel/UCXMWyG1D_a_b2HRLlBPkGMw",
-  },
-  {
-    photo: "neo",
-    name: "Neo Wang",
-    titles: ["Project Manager", ""],
-    github: "https://github.com/nwatx",
-    twitter: "",
-    linkedin: "",
-    website: "https://nwatx.me/",
-    codeforces: "",
-    email: "mailto:neowangatx@gmail.com",
-    youtube: "",
-  },
-  {
-    photo: "Jay",
-    name: "Jay Fu",
-    titles: ["Project Manager", ""],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "mailto:jayfu03@gmail.com",
-    youtube: "",
-  },
-  {
-    photo: "Dong",
-    name: "Bing-Dong Liu",
-    titles: ["Content Manager", ""],
-    github: "https://github.com/dongliu0426",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "https://codeforces.com/profile/lunchbox",
-    email: "mailto:dongliu0426@gmail.com",
-    youtube: "https://www.youtube.com/channel/UC6je-w-ygZqxRsG76HtMceQ",
-  },
-]
-
-const webdev: Member[] = [
-  {
-    photo: "ananth",
-    name: "Ananth Kashyap",
-    titles: ["Web Developer", "Content Author"],
-    github: "https://github.com/AAkashyap1",
-    twitter: "",
-    linkedin: "https://www.linkedin.com/in/ananth-kashyap-88b996209/",
-    website: "",
-    codeforces: "",
-    email: "mailto:ananthkashyap4@gmail.com",
-    youtube: "",
-  },
-  {
-    photo: "mrinall",
-    name: "Mrinall Umasudhan",
-    titles: ["Web Developer", ""],
-    github: "https://github.com/MrinallU",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "nathang",
-    name: "Nathan Gong",
-    titles: ["Web Developer", "Content Author"],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "oscar",
-    name: "Oscar Rendón",
-    titles: ["Web Developer", "Curriculum Developer"],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-]
-
-const instructors: Member[] = [
-  {
-    photo: "albertz",
-    name: "Albert Zhu",
-    titles: ["Instructor", "Curriculum Developer"],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "nikhil",
-    name: "Nikhil Chatterjee",
-    titles: ["Instructor", "Curriculum Developer"],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "amogha_pokkulandra",
-    name: "Amogha Pokkulandra",
-    titles: ["Curriculum Developer", ""],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "ryan",
-    name: "Ryan Chou",
-    titles: ["Instructor", "Content Author"],
-    github: "https://github.com/ryanchou-dev",
-    twitter: "",
-    linkedin: "",
-    website: "https://www.ryanchou.dev/",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "vikas_thoutam",
-    name: "Vikas Thoutam",
-    titles: ["Instructor", ""],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "mailto:vikas.thoutam@gmail.com",
-    youtube: "",
-  },
-  {
-    photo: "davidz",
-    name: "David Zhang",
-    titles: ["Instructor", ""],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "Varun",
-    name: "Varun Ragunath",
-    titles: ["Instructor", ""],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "atharv",
-    name: "Atharv Jain",
-    titles: ["Instructor", ""],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "mailto:atharvjain05@gmail.com",
-    youtube: "",
-  },
-  {
-    photo: "dustin",
-    name: "Dustin Miao",
-    titles: ["Instructor", "Content Author"],
-    github: "https://github.com/dutinmeow",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "mailto:dutin20.meow@gmail.com",
-    youtube: "",
-  },
-  {
-    photo: "adham",
-    name: "Adham Ibrahim",
-    titles: ["Instructor", ""],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "mailto:adhamibrahim719@gmail.com",
-    youtube: "",
-  },
-]
-
-const curriculum: Member[] = [
-  {
-    photo: "nikhil",
-    name: "Nikhil Chatterjee",
-    titles: ["Instructor", "Curriculum Developer"],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "arpan",
-    name: "Arpan Banerjee",
-    titles: ["Curriculum Developer", ""],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "albertz",
-    name: "Albert Zhu",
-    titles: ["Instructor", "Curriculum Developer"],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "oscar",
-    name: "Oscar Rendón",
-    titles: ["Web Developer", "Curriculum Developer"],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "pranav",
-    name: "Pranav Jadhav",
-    titles: ["Curriculum Developer", ""],
-    github: "https://github.com/pranavgithub1",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "mailto:pra168109@gmail.com",
-    youtube: "",
-  },
-]
-
-const contentAuthors: Member[] = [
-  {
-    photo: "nathang",
-    name: "Nathan Gong",
-    titles: ["Web Developer", "Content Author"],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "ryan",
-    name: "Ryan Chou",
-    titles: ["Instructor", "Content Author"],
-    github: "https://github.com/ryanchou-dev",
-    twitter: "",
-    linkedin: "",
-    website: "https://www.ryanchou.dev/",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "vivian",
-    name: "Vivian Han",
-    titles: ["Content Author", ""],
-    github: "",
-    twitter: "heheh",
-    linkedin: "",
-    website: "heheh",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "ananth",
-    name: "Ananth Kashyap",
-    titles: ["Web Developer", "Content Author"],
-    github: "https://github.com/AAkashyap1",
-    twitter: "",
-    linkedin: "https://www.linkedin.com/in/ananth-kashyap-88b996209/",
-    website: "",
-    codeforces: "",
-    email: "mailto:ananthkashyap4@gmail.com",
-    youtube: "",
-  },
-  {
-    photo: "dustin",
-    name: "Dustin Miao",
-    titles: ["Instructor", "Content Author"],
-    github: "https://github.com/dutinmeow",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "mailto:dutin20.meow@gmail.com",
-    youtube: "",
-  },
-  {
-    photo: "sofia",
-    name: "Sofia Yang",
-    titles: ["Content Author", ""],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "ben",
-    name: "Ben Dodge",
-    titles: ["Content Author", ""],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-]
-
-const alumni: Member[] = [
-  {
-    photo: "Andrew",
-    name: "Andrew Wang",
-    titles: ["Former Secretary", ""],
-    github: "https://github.com/andrewwangva",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "https://codeforces.com/profile/a.wang",
-    email: "mailto:andrewwangva.biz@gmail.com",
-    youtube: "",
-  },
-  {
-    photo: "benq",
-    name: "Benjamin Qi",
-    titles: ["Former Content Director", "2x IOI Winner"],
-    github: "https://github.com/bqi343",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "https://codeforces.com/profile/Benq",
-    email: "mailto:bqi343@gmail.com",
-    youtube: "",
-  },
-  {
-    photo: "nathanc",
-    name: "Nathan Chen",
-    titles: ["Former Treasurer", "2x Finalist"],
-    github: "https://github.com/nchn27",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "https://codeforces.com/profile/nchn27",
-    email: "mailto:nchn27@gmail.com",
-    youtube: "",
-  },
-]
-
-const notPictured: Member[] = [
-  {
-    photo: "kevin",
-    name: "Kevin Sheng",
-    titles: ["Content Author", ""],
-    github: "https://github.com/sanspapyrus683",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "blank",
-    name: "Shreyas Thumathy",
-    titles: ["Instructor", "Curriculum Developer"],
-    github: "",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "",
-    email: "",
-    youtube: "",
-  },
-  {
-    photo: "sathvik",
-    name: "Sathvik Chundru",
-    titles: ["Content Author", ""],
-    github: "https://github.com/sathu-beep",
-    twitter: "",
-    linkedin: "",
-    website: "",
-    codeforces: "https://codeforces.com/profile/sus",
-    email: "",
-    youtube: "",
-  },
-]
-
 export default function Team() {
-  const data = useStaticQuery(graphql`
-    query {
-      allFile(filter: { sourceInstanceName: { eq: "team_images" } }) {
-        edges {
-          node {
-            childImageSharp {
-              fixed(width: 120, height: 120, cropFocus: CENTER, quality: 100) {
-                ...GatsbyImageSharpFixed
-              }
-            }
-            name
-          }
-        }
-      }
-    }
-  `)
-
   function GetSocialLinks(person: Member) {
     return (
       <div className="-mr-1">
         <ul className="flex">
-          {person.linkedin !== "" && 
+          {person.linkedin && (
             <div>
               <li className="mr-1">
-                <a target="_blank" href={person.linkedin} className="p-1.5 inline-block hover:text-gray-500 text-gray-700">
+                <a
+                  target="_blank"
+                  href={person.linkedin}
+                  className="p-1.5 inline-block hover:text-gray-500 text-gray-700"
+                >
                   {socialLinks.linkedin.icon}
                 </a>
               </li>
             </div>
-          }
-          {person.youtube !== "" && 
+          )}
+          {person.youtube && (
             <div>
               <li className="mr-1">
-                <a target="_blank" href={person.youtube} className="p-1.5 inline-block hover:text-gray-500 text-gray-700">
+                <a
+                  target="_blank"
+                  href={person.youtube}
+                  className="p-1.5 inline-block hover:text-gray-500 text-gray-700"
+                >
                   {socialLinks.youtube.icon}
                 </a>
               </li>
             </div>
-          }
-          {person.github !== "" && 
+          )}
+          {person.github && (
             <div>
               <li className="mr-1">
-                <a target="_blank" href={person.github} className="p-1.5 inline-block hover:text-gray-500 text-gray-700">
+                <a
+                  target="_blank"
+                  href={person.github}
+                  className="p-1.5 inline-block hover:text-gray-500 text-gray-700"
+                >
                   {socialLinks.github.icon}
                 </a>
               </li>
             </div>
-          }
-          {person.codeforces !== "" && 
+          )}
+          {person.codeforces && (
             <div>
               <li className="mr-1">
-                <a target="_blank" href={person.codeforces} className="p-1.5 inline-block hover:text-gray-500 text-gray-700">
+                <a
+                  target="_blank"
+                  href={person.codeforces}
+                  className="p-1.5 inline-block hover:text-gray-500 text-gray-700"
+                >
                   {socialLinks.codeforces.icon}
                 </a>
               </li>
             </div>
-          }
-          {person.website !== "" && 
+          )}
+          {person.website && (
             <div>
               <li className="mr-1">
-                <a target="_blank" href={person.website} className="p-1.5 inline-block hover:text-gray-500 text-gray-700">
+                <a
+                  target="_blank"
+                  href={person.website}
+                  className="p-1.5 inline-block hover:text-gray-500 text-gray-700"
+                >
                   {socialLinks.website.icon}
                 </a>
               </li>
             </div>
-          }
-          {person.email !== "" && 
+          )}
+          {person.email && (
             <div>
               <li className="mr-1">
-                <a target="_blank" href={person.email} className="p-1.5 inline-block hover:text-gray-500 text-gray-700">
+                <a
+                  target="_blank"
+                  href={person.email}
+                  className="p-1.5 inline-block hover:text-gray-500 text-gray-700"
+                >
                   {socialLinks.email.icon}
                 </a>
               </li>
             </div>
-          }
+          )}
         </ul>
       </div>
     )
@@ -723,259 +179,66 @@ export default function Team() {
     <div className="bg-white">
       <div className="py-12 px-4 max-w-screen-xl mx-auto sm:px-6 lg:px-8 lg:py-18">
         <div className="mb-8 space-y-5 sm:space-y-4">
-          <h2 className="flex justify-center font-extrabold tracking-tight text-4xl">Meet our team</h2>
+          <h2 className="flex justify-center font-extrabold tracking-tight text-4xl">
+            Meet our team
+          </h2>
           <p className="flex justify-center text-center text-xl text-gray-500">
-            Comprised of USACO Finalists and top USACO competitors, our team
-            is committed to increasing participation in competitive
-            programming.
+            Comprised of USACO Finalists and top USACO competitors, our team is
+            committed to increasing participation in competitive programming.
           </p>
         </div>
-        <div className="mb-10 space-y-5 sm:space-y-4">
-          <h2 className="flex justify-center font-bold tracking-tight text-3xl">Core Team:</h2>
-        </div>
-        <ul
-          role="list"
-          className="mb-16 mx-auto space-y-8 sm:grid md:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-2 xl:grid-cols-3"
-        >
-          {core.map((member) => (
-            <li key={member.name} className="flex rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg px-6 py-5">
-              <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
-                <div className="flex-shrink-0">
-                  <Img
-                      className="rounded-full bg-gray-900 object-cover"
-                      fixed={
-                        (data as any).allFile.edges.find(
-                          x => x.node.name === member.photo
-                        ).node.childImageSharp.fixed
-                      }
-                      alt={member.name}
-                  />
-                </div>
-                <div className="flex-1 min-w-0 space-y-2">
-                  <span className="" aria-hidden="true"></span>
-                  <p className="text-xl font-medium">{member.name}</p>
-                  <div className="-mx-0.5">
-                    {member.titles.map(title => {
-                      return title !== "" ? <span className="text-sm whitespace-nowrap mx-0.5 my-0.5 inline-flex items-center px-2.5 py-0.5 rounded-full bg-gray-200 font-medium">{title}</span> : ""
-                    })}
-                  </div>
-                  {GetSocialLinks(member)}
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
-        <div className="mb-10 space-y-5 sm:space-y-4">
-          <h2 className="flex justify-center font-bold tracking-tight text-3xl">Web Developers:</h2>
-        </div>
-        <ul
-          role="list"
-          className="mb-16 mx-auto space-y-8 sm:grid md:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-2 xl:grid-cols-3"
-        >
-          {webdev.map((member) => (
-            <li key={member.name} className="flex rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg px-6 py-5">
-              <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
-                <div className="flex-shrink-0">
-                  <Img
-                      className="rounded-full bg-gray-900 object-cover"
-                      fixed={
-                        (data as any).allFile.edges.find(
-                          x => x.node.name === member.photo
-                        ).node.childImageSharp.fixed
-                      }
-                      alt={member.name}
-                  />
-                </div>
-                <div className="flex-1 min-w-0 space-y-2">
-                  <span className="" aria-hidden="true"></span>
-                  <p className="text-xl font-medium">{member.name}</p>
-                  <div className="-mx-0.5">
-                    {member.titles.map(title => {
-                      return title !== "" ? <span className="text-sm whitespace-nowrap mx-0.5 my-0.5 inline-flex items-center px-2.5 py-0.5 rounded-full bg-gray-200 font-medium">{title}</span> : ""
-                    })}
-                  </div>
-                  {GetSocialLinks(member)}
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
-        <div className="mb-10 space-y-5 sm:space-y-4">
-          <h2 className="flex justify-center font-bold tracking-tight text-3xl">Instructors:</h2>
-        </div>
-        <ul
-          role="list"
-          className="mb-16 mx-auto space-y-8 sm:grid md:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-2 xl:grid-cols-3"
-        >
-          {instructors.map((member) => (
-            <li key={member.name} className="flex rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg px-6 py-5">
-              <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
-                <div className="flex-shrink-0">
-                  <Img
-                      className="rounded-full bg-gray-900 object-cover"
-                      fixed={
-                        (data as any).allFile.edges.find(
-                          x => x.node.name === member.photo
-                        ).node.childImageSharp.fixed
-                      }
-                      alt={member.name}
-                  />
-                </div>
-                <div className="flex-1 min-w-0 space-y-2">
-                  <span className="" aria-hidden="true"></span>
-                  <p className="text-xl font-medium">{member.name}</p>
-                  <div className="-mx-0.5">
-                    {member.titles.map(title => {
-                      return title !== "" ? <span className="text-sm whitespace-nowrap mx-0.5 my-0.5 inline-flex items-center px-2.5 py-0.5 rounded-full bg-gray-200 font-medium">{title}</span> : ""
-                    })}
-                  </div>
-                  {GetSocialLinks(member)}
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
-        <div className="mb-10 space-y-5 sm:space-y-4">
-          <h2 className="flex justify-center font-bold tracking-tight text-3xl">Content Authors:</h2>
-        </div>
-        <ul
-          role="list"
-          className="mb-16 mx-auto space-y-8 sm:grid md:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-2 xl:grid-cols-3"
-        >
-          {contentAuthors.map((member) => (
-            <li key={member.name} className="flex rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg px-6 py-5">
-              <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
-                <div className="flex-shrink-0">
-                  <Img
-                      className="rounded-full bg-gray-900 object-cover"
-                      fixed={
-                        (data as any).allFile.edges.find(
-                          x => x.node.name === member.photo
-                        ).node.childImageSharp.fixed
-                      }
-                      alt={member.name}
-                  />
-                </div>
-                <div className="flex-1 min-w-0 space-y-2">
-                  <span className="" aria-hidden="true"></span>
-                  <p className="text-xl font-medium">{member.name}</p>
-                  <div className="-mx-0.5">
-                    {member.titles.map(title => {
-                      return title !== "" ? <span className="text-sm whitespace-nowrap mx-0.5 my-0.5 inline-flex items-center px-2.5 py-0.5 rounded-full bg-gray-200 font-medium">{title}</span> : ""
-                    })}
-                  </div>
-                  {GetSocialLinks(member)}
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
-        
-        <div className="mb-10 space-y-5 sm:space-y-4">
-          <h2 className="flex justify-center font-bold tracking-tight text-3xl">Curriculum Developers:</h2>
-        </div>
-        <ul
-          role="list"
-          className="mb-16 mx-auto space-y-8 sm:grid md:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-2 xl:grid-cols-3"
-        >
-          {curriculum.map((member) => (
-            <li key={member.name} className="flex rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg px-6 py-5">
-              <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
-                <div className="flex-shrink-0">
-                  <Img
-                      className="rounded-full bg-gray-900 object-cover"
-                      fixed={
-                        (data as any).allFile.edges.find(
-                          x => x.node.name === member.photo
-                        ).node.childImageSharp.fixed
-                      }
-                      alt={member.name}
-                  />
-                </div>
-                <div className="flex-1 min-w-0 space-y-2">
-                  <span className="" aria-hidden="true"></span>
-                  <p className="text-xl font-medium">{member.name}</p>
-                  <div className="-mx-0.5">
-                    {member.titles.map(title => {
-                      return title !== "" ? <span className="text-sm whitespace-nowrap mx-0.5 my-0.5 inline-flex items-center px-2.5 py-0.5 rounded-full bg-gray-200 font-medium">{title}</span> : ""
-                    })}
-                  </div>
-                  {GetSocialLinks(member)}
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
-        <div className="mb-10 space-y-5 sm:space-y-4">
-          <h2 className="flex justify-center font-bold tracking-tight text-3xl">Alumni:</h2>
-        </div>
-        <ul
-          role="list"
-          className="mb-16 mx-auto space-y-8 sm:grid md:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-2 xl:grid-cols-3"
-        >
-          {alumni.map((member) => (
-            <li key={member.name} className="flex rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg px-6 py-5">
-              <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
-                <div className="flex-shrink-0">
-                  <Img
-                      className="rounded-full bg-gray-900 object-cover"
-                      fixed={
-                        (data as any).allFile.edges.find(
-                          x => x.node.name === member.photo
-                        ).node.childImageSharp.fixed
-                      }
-                      alt={member.name}
-                  />
-                </div>
-                <div className="flex-1 min-w-0 space-y-2">
-                  <span className="" aria-hidden="true"></span>
-                  <p className="text-xl font-medium">{member.name}</p>
-                  <div className="-mx-0.5">
-                    {member.titles.map(title => {
-                      return title !== "" ? <span className="text-sm whitespace-nowrap mx-0.5 my-0.5 inline-flex items-center px-2.5 py-0.5 rounded-full bg-gray-200 font-medium">{title}</span> : ""
-                    })}
-                  </div>
-                  {GetSocialLinks(member)}
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
-        <div className="mb-10 space-y-5 sm:space-y-4">
-          <h2 className="flex justify-center font-bold tracking-tight text-3xl">Not Pictured:</h2>
-        </div>
-        <ul
-          role="list"
-          className="mb-16 mx-auto space-y-8 sm:grid md:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-2 xl:grid-cols-3"
-        >
-          {notPictured.map((member) => (
-            <li key={member.name} className="flex rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg px-6 py-5">
-              <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
-                <div className="flex-shrink-0">
-                  <Img
-                      className="rounded-full bg-gray-900 object-cover"
-                      fixed={
-                        (data as any).allFile.edges.find(
-                          x => x.node.name === member.photo
-                        ).node.childImageSharp.fixed
-                      }
-                      alt={member.name}
-                  />
-                </div>
-                <div className="flex-1 min-w-0 space-y-2">
-                  <span className="" aria-hidden="true"></span>
-                  <p className="text-xl font-medium">{member.name}</p>
-                  <div className="-mx-0.5">
-                    {member.titles.map(title => {
-                      return title !== "" ? <span className="text-sm whitespace-nowrap mx-0.5 my-0.5 inline-flex items-center px-2.5 py-0.5 rounded-full bg-gray-200 font-medium">{title}</span> : ""
-                    })}
-                  </div>
-                  {GetSocialLinks(member)}
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
+        {sections.map(section => (
+          <React.Fragment key={section.title}>
+            <div className="mb-10 space-y-5 sm:space-y-4">
+              <h2 className="flex justify-center font-bold tracking-tight text-3xl">
+                {section.title}
+              </h2>
+              <ul
+                role="list"
+                className="mb-16 mx-auto space-y-8 sm:grid md:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-2 xl:grid-cols-3"
+              >
+                {section.members.map(member => (
+                  <li
+                    key={member.name}
+                    className="flex rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg px-6 py-5"
+                  >
+                    <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
+                      <div className="flex-shrink-0 w-24 h-24 rounded-full overflow-hidden relative lg:w-28 lg:h-28">
+                        <Image
+                          layout="fill"
+                          objectFit="cover"
+                          objectPosition="center center"
+                          src={member.photo}
+                          alt={member.name}
+                          placeholder="blur"
+                        />
+                      </div>
+                      <div className="flex-1 min-w-0 space-y-2">
+                        <span className="" aria-hidden="true"></span>
+                        <p className="text-xl font-medium">{member.name}</p>
+                        <div className="-mx-0.5">
+                          {member.titles.map(title => {
+                            return title !== "" ? (
+                              <span
+                                key={title}
+                                className="text-sm whitespace-nowrap mx-0.5 my-0.5 inline-flex items-center px-2.5 py-0.5 rounded-full bg-gray-200 font-medium"
+                              >
+                                {title}
+                              </span>
+                            ) : (
+                              ""
+                            )
+                          })}
+                        </div>
+                        {GetSocialLinks(member)}
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </React.Fragment>
+        ))}
       </div>
     </div>
   )

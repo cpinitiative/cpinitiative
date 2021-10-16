@@ -6,8 +6,8 @@ import {
   jeffrey,
   maggie,
   melody,
-  Varun,
-  Jay,
+  varun,
+  jay,
   jpaulson,
   vivian,
   neo,
@@ -15,7 +15,7 @@ import {
   david_li,
   vikas_thoutam,
   yifan_ma,
-  Harry,
+  harry,
   arpan,
   nikhil,
 } from "../index/images"
@@ -53,12 +53,12 @@ const members: Member[] = [
     title: "Instructor",
   },
   {
-    photo: Varun,
+    photo: varun,
     name: "Varun Ragunath",
     title: "Instructor / Finalist",
   },
   {
-    photo: Jay,
+    photo: jay,
     name: "Jay Fu",
     title: "Instructor",
   },
@@ -98,7 +98,7 @@ const members: Member[] = [
     title: "Instructor",
   },
   {
-    photo: Harry,
+    photo: harry,
     name: "Harry Wang",
     title: "Instructor",
   },
