@@ -9,6 +9,7 @@ import arpan from "./arpan.png"
 import benq from "./benq.png"
 import blank from "./blank.png"
 import cow from "./cow.png"
+import clairezhang from "./clairezhang.jpeg"
 import daniel from "./daniel.png"
 import darren from "./darren.jpeg"
 import david_li from "./david_li.png"
@@ -23,6 +24,8 @@ import nathanc from "./nathanc.jpeg"
 import nathanw from "./nathanw.jpg"
 import neo from "./neo.jpg"
 import nikhil from "./nikhil.png"
+import rayna from "./rayna.jpeg"
+import tarushii from "./tarushii.jpeg"
 import vikas_thoutam from "./vikas_thoutam.png"
 import vivian from "./vivian.jpg"
 import yifan_ma from "./yifan_ma.png"
@@ -39,6 +42,7 @@ export {
   benq,
   blank,
   cow,
+  clairezhang,
   daniel,
   darren,
   david_li,
@@ -53,6 +57,8 @@ export {
   nathanw,
   neo,
   nikhil,
+  rayna,
+  tarushii,
   vikas_thoutam,
   vivian,
   yifan_ma,

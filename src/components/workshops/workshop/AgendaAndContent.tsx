@@ -8,10 +8,6 @@ export default function AgendaAndContent() {
           Agenda
         </h1>
         <div className="text-lg text-purple-200">
-          <p className="text-xl text-white mb-4 font-bold">
-            During the webinar, we will explain everything you need to know
-            about getting started with USACO.
-          </p>
           <ul className={"list-disc ml-5"}>
             <li>What is USACO</li>
             <li>When and how to attend USACO</li>
