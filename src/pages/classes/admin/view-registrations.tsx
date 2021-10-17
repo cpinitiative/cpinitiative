@@ -4,14 +4,15 @@ import Header from "../../../components/Header"
 import Link from "next/link"
 import useFirebase from "../../../firebase/useFirebase"
 import { useEffect, useMemo, useState } from "react"
-import firebaseType from "firebase"
+// import firebaseType from "firebase"
 import moment from "moment-timezone"
 import * as Icons from "heroicons-react"
 import Transition from "../../../components/Transition"
+import { User } from "@firebase/auth"
 
 export default function ViewRegistrationPage() {
   const firebase = useFirebase()
-  const [user, setUser] = useState<firebaseType.User | null>(null)
+  const [user, setUser] = useState<User | null>(null)
   const [loading, setLoading] = useState(true)
   const [hasPermission, setHasPermission] = useState(false)
   const [registrations, setRegistrations] = useState([])

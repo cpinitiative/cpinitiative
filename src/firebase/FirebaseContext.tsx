@@ -25,7 +25,11 @@ export const FirebaseProvider = ({ children }) => {
 
       Promise.all([app, auth, firestore, database, functions]).then(values => {
         const firebaseInstance = values[0].default
-        firebaseInstance.initializeApp(firebaseConfig)
+
+        // removes duplicate firebase.app.App instances
+        if(!firebase?.apps?.length) {
+          firebaseInstance?.initializeApp(firebaseConfig)
+        }
         setFirebase(firebaseInstance)
       })
     }

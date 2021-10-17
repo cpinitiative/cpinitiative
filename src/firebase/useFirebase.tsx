@@ -1,11 +1,11 @@
 import * as React from "react"
 import FirebaseContext from "./FirebaseContext"
-import firebaseType from "firebase"
+// import firebaseType from "firebase"
 
 // from https://github.com/alexluong/gatsby-packages/blob/master/packages/gatsby-plugin-firebase/src/components/FirebaseContext.js
 
 export default function useFirebase(
-  fn: (firebase: typeof firebaseType) => void | (() => void | undefined) = null,
+  fn: (firebase) => void | (() => void | undefined) = null,
   dep = []
 ) {
   const firebase = React.useContext(FirebaseContext)
