@@ -156,7 +156,7 @@ const members: { [key: string]: Member } = {
   dong: {
     photo: dong,
     name: "Bing-Dong Liu",
-    titles: [roles.liveInstructor, "Content Manager"],
+    titles: ["Content Manager", roles.liveInstructor],
     github: "dongliu0426",
     codeforces: "lunchbox",
     email: "dongliu0426@gmail.com",
