@@ -265,7 +265,7 @@ const members: { [key: string]: Member } = {
   nathanw: {
     photo: nathanw,
     name: "Nathan Wang",
-    titles: ["CEO", "2x Finalist", roles.webdev, roles.videoInstructor],
+    titles: ["Board", "3x Finalist", roles.webdev, roles.videoInstructor],
     github: "thecodingwizard",
     website: "https://thecodingwizard.me/",
     codeforces: "thecodingwizard",
