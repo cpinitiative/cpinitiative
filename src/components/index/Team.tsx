@@ -240,6 +240,7 @@ export default function Team() {
                           src={member.photo}
                           alt={member.name}
                           placeholder="blur"
+                          sizes="112px"
                         />
                       </div>
                       <div className="flex-1 min-w-0 space-y-2">
