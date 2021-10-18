@@ -85,6 +85,8 @@ const members: { [key: string]: Member } = {
     photo: amogha,
     name: "Amogha Pokkulandra",
     titles: [roles.liveInstructor, roles.videoInstructor],
+    email: "amogha.pokkulandra@gmail.com",
+    github: "x3n0coder",
   },
   amy: {
     photo: amy_chang,
@@ -204,6 +206,9 @@ const members: { [key: string]: Member } = {
     photo: jesse,
     name: "Jesse Choe",
     titles: [roles.contentAuthor],
+    github: "jessechoe10",
+    email: "jessechoe10@gmail.com",
+    codeforces: "YoRepi7",
   },
   jonathan: {
     photo: jpaulson,
