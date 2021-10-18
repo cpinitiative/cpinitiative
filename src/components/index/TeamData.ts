@@ -2,7 +2,7 @@ import {
   adham,
   akshar,
   albertz,
-  amogha_pokkulandra,
+  amogha,
   andrew,
   arpan,
   atharv,
@@ -81,8 +81,8 @@ const members: { [key: string]: Member } = {
     name: "Albert Zhu",
     titles: [roles.videoInstructor, roles.clubCurriculum],
   },
-  amogha_pokkulandra: {
-    photo: amogha_pokkulandra,
+  amogha: {
+    photo: amogha,
     name: "Amogha Pokkulandra",
     titles: [roles.liveInstructor, roles.videoInstructor],
   },
@@ -358,7 +358,7 @@ const instructors: Member[] = [
   // live and video instructors
   members.jay,
   members.amy,
-  members.amogha_pokkulandra,
+  members.amogha,
   members.atharv,
   members.david_li,
   members.davidz,

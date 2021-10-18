@@ -11,7 +11,7 @@ import {
   jpaulson,
   vivian,
   neo,
-  amogha_pokkulandra,
+  amogha,
   david_li,
   vikas_thoutam,
   yifan_ma,
@@ -78,7 +78,7 @@ const members: Member[] = [
     title: "Instructor",
   },
   {
-    photo: amogha_pokkulandra,
+    photo: amogha,
     name: "Amogha Pokkulandra",
     title: "Instructor",
   },
