@@ -70,6 +70,7 @@ const members: { [key: string]: Member } = {
     name: "Adham Ibrahim",
     titles: [roles.liveInstructor],
     email: "adhamibrahim719@gmail.com",
+    github: "adham-ibrahim7",
   },
   akshar: {
     photo: akshar,
@@ -122,6 +123,7 @@ const members: { [key: string]: Member } = {
     name: "Ben Dodge",
     github: "Navigator365",
     titles: [roles.contentAuthor],
+    github: "Navigator365",
   },
   benq: {
     photo: benq,
