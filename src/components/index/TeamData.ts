@@ -168,6 +168,7 @@ const members: { [key: string]: Member } = {
     titles: [roles.liveInstructor, roles.contentAuthor],
     github: "dutinmeow",
     email: "dutin20.meow@gmail.com",
+    codeforces: "dutinmeow",
   },
   egor: {
     photo: egor,
