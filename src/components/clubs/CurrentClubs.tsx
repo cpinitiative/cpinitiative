@@ -180,7 +180,7 @@ const clubs: {
   {
     name: "Suncoast Community HS",
     photo: suncoast,
-    region: "California",
+    region: "Florida",
   },
   {
     name: "Tompkins HS",
