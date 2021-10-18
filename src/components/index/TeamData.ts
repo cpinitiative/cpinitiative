@@ -58,62 +58,108 @@ const roles = {
   clubCurriculum: "Curriculum Developer",
 }
 
-const core: Member[] = [
-  {
-    photo: nathanw,
-    name: "Nathan Wang",
-    titles: ["CEO", "2x Finalist"],
-    github: "thecodingwizard",
-    website: "https://thecodingwizard.me/",
-    codeforces: "https://codeforces.com/profile/thecodingwizard",
-    email: "nathan.r.wang@gmail.com",
+const members: { [key: string]: Member } = {
+  adham: {
+    photo: adham,
+    name: "Adham Ibrahim",
+    titles: [roles.instructor],
+    email: "adhamibrahim719@gmail.com",
   },
-  {
-    photo: maggie,
-    name: "Maggie Liu",
-    titles: ["Executive"],
-    github: "maggie-j-liu",
-    website: "https://maggieliu.dev",
-    codeforces: "https://codeforces.com/profile/ml1234",
-    email: "maggie.j.liu@gmail.com",
+  akshar: {
+    photo: akshar,
+    name: "Akshar Yeccherla",
+    titles: [roles.instructor],
   },
-  {
-    photo: melody,
-    name: "Melody Yu",
-    titles: ["Executive"],
-    github: "cskitty",
-    website: "https://melodyyu.com/",
-    email: "ocmelodyyu@gmail.com",
-    youtube: "https://www.youtube.com/channel/UCPkhk5gFov8vIPXj0zHyxEQ",
+  albertz: {
+    photo: albertz,
+    name: "Albert Zhu",
+    titles: [roles.instructor, roles.clubCurriculum],
   },
-  {
+  amogha_pokkulandra: {
+    photo: amogha_pokkulandra,
+    name: "Amogha Pokkulandra",
+    titles: [roles.clubCurriculum],
+  },
+  andrew: {
+    photo: andrew,
+    name: "Andrew Wang",
+    titles: ["Former Secretary"],
+    github: "andrewwangva",
+    codeforces: "a.wang",
+    email: "andrewwangva.biz@gmail.com",
+  },
+  arpan: {
+    photo: arpan,
+    name: "Arpan Banerjee",
+    titles: [roles.clubCurriculum, roles.contentAuthor],
+  },
+  atharv: {
+    photo: atharv,
+    name: "Atharv Jain",
+    titles: [roles.instructor],
+    email: "atharvjain05@gmail.com",
+  },
+  ben: {
+    photo: ben,
+    name: "Ben Dodge",
+    titles: [roles.contentAuthor],
+  },
+  benq: {
+    photo: benq,
+    name: "Benjamin Qi",
+    titles: ["Former Content Director", "2x IOI Winner"],
+    github: "bqi343",
+    codeforces: "Benq",
+    email: "bqi343@gmail.com",
+  },
+  dong: {
+    photo: dong,
+    name: "Bing-Dong Liu",
+    titles: [roles.instructor, "Content Manager"],
+    github: "dongliu0426",
+    codeforces: "lunchbox",
+    email: "dongliu0426@gmail.com",
+    youtube: "https://www.youtube.com/channel/UC6je-w-ygZqxRsG76HtMceQ",
+  },
+  daniel: {
     photo: daniel,
     name: "Daniel Guan",
     titles: ["Director of Classes", "Finalist"],
   },
-  {
-    photo: jeffrey,
-    name: "Jeffrey Meng",
-    titles: ["Director of Operations"],
-  },
-  {
+  darren: {
     photo: darren,
     name: "Darren Yao",
     titles: ["Director of Outreach"],
     github: "darren-yao",
     website: "http://darrenyao.com/",
-    codeforces: "https://codeforces.com/profile/darren_yao",
+    codeforces: "darren_yao",
     email: "darren.yao@gmail.com",
   },
-  {
-    photo: michael,
-    name: "Michael Cao",
-    titles: ["Director of Clubs"],
-    github: "caoash",
-    codeforces: "https://codeforces.com/profile/caoash",
-    email: "caoash@gmail.com",
+  david_li: {
+    photo: david_li,
+    name: "David Li",
+    titles: [roles.instructor],
   },
-  {
+  davidz: {
+    photo: davidz,
+    name: "David Zhang",
+    titles: [roles.instructor],
+  },
+  dustin: {
+    photo: dustin,
+    name: "Dustin Miao",
+    titles: [roles.instructor, roles.contentAuthor],
+    github: "dutinmeow",
+    email: "dutin20.meow@gmail.com",
+  },
+  egor: {
+    photo: egor,
+    name: "Egor Gagushin",
+    titles: [roles.instructor],
+    codeforces: "eggag32",
+    github: "Eggag",
+  },
+  harry: {
     photo: harry,
     name: "Harry Wang",
     titles: ["Project Manager"],
@@ -122,7 +168,73 @@ const core: Member[] = [
     email: "qiwang@joincpi.org",
     youtube: "https://www.youtube.com/channel/UCXMWyG1D_a_b2HRLlBPkGMw",
   },
-  {
+  jay: {
+    photo: jay,
+    name: "Jay Fu",
+    titles: ["Project Manager"],
+    email: "jayfu03@gmail.com",
+  },
+  jeffrey: {
+    photo: jeffrey,
+    name: "Jeffrey Meng",
+    titles: ["Director of Operations"],
+  },
+  maggie: {
+    photo: maggie,
+    name: "Maggie Liu",
+    titles: ["Executive"],
+    github: "maggie-j-liu",
+    website: "https://maggieliu.dev",
+    codeforces: "ml1234",
+    email: "maggie.j.liu@gmail.com",
+  },
+  melody: {
+    photo: melody,
+    name: "Melody Yu",
+    titles: ["Executive"],
+    github: "cskitty",
+    website: "https://melodyyu.com/",
+    email: "ocmelodyyu@gmail.com",
+    youtube: "https://www.youtube.com/channel/UCPkhk5gFov8vIPXj0zHyxEQ",
+  },
+  michael: {
+    photo: michael,
+    name: "Michael Cao",
+    titles: ["Director of Clubs"],
+    github: "caoash",
+    codeforces: "caoash",
+    email: "caoash@gmail.com",
+  },
+  mrinall: {
+    photo: mrinall,
+    name: "Mrinall Umasudhan",
+    titles: [roles.webdev],
+    github: "MrinallU",
+  },
+  nathanc: {
+    photo: nathanc,
+    name: "Nathan Chen",
+    titles: ["Former Treasurer", "2x Finalist"],
+    github: "nchn27",
+    codeforces: "nchn27",
+    email: "nchn27@gmail.com",
+  },
+  nathang: {
+    photo: nathang,
+    name: "Nathan Gong",
+    titles: [roles.webdev, roles.contentAuthor],
+    github: "nathangong",
+  },
+  nathanw: {
+    photo: nathanw,
+    name: "Nathan Wang",
+    titles: ["CEO", "2x Finalist"],
+    github: "thecodingwizard",
+    website: "https://thecodingwizard.me/",
+    codeforces: "thecodingwizard",
+    email: "nathan.r.wang@gmail.com",
+  },
+  neo: {
     photo: neo,
     name: "Neo Wang",
     titles: ["Project Manager"],
@@ -130,224 +242,107 @@ const core: Member[] = [
     website: "https://nwatx.me/",
     email: "neowangatx@gmail.com",
   },
-  {
-    photo: jay,
-    name: "Jay Fu",
-    titles: ["Project Manager"],
-    email: "jayfu03@gmail.com",
-  },
-  {
-    photo: dong,
-    name: "Bing-Dong Liu",
-    titles: ["Content Manager"],
-    github: "dongliu0426",
-    codeforces: "https://codeforces.com/profile/lunchbox",
-    email: "dongliu0426@gmail.com",
-    youtube: "https://www.youtube.com/channel/UC6je-w-ygZqxRsG76HtMceQ",
-  },
-]
-const webdev: Member[] = [
-  {
-    photo: mrinall,
-    name: "Mrinall Umasudhan",
-    titles: [roles.webdev],
-    github: "MrinallU",
-  },
-  {
-    photo: nathang,
-    name: "Nathan Gong",
-    titles: [roles.webdev, roles.contentAuthor],
-    github: "nathangong",
-  },
-  {
-    photo: oscar,
-    name: "Oscar Rendón",
-    titles: [roles.webdev, roles.clubCurriculum],
-  },
-]
-const instructors: Member[] = [
-  {
-    photo: albertz,
-    name: "Albert Zhu",
-    titles: [roles.instructor, roles.clubCurriculum],
-  },
-  {
+  nikhil: {
     photo: nikhil,
     name: "Nikhil Chatterjee",
     titles: [roles.instructor, roles.clubCurriculum],
   },
-  {
-    photo: amogha_pokkulandra,
-    name: "Amogha Pokkulandra",
-    titles: [roles.clubCurriculum],
-  },
-  {
-    photo: ryan,
-    name: "Ryan Chou",
-    titles: [roles.instructor, roles.contentAuthor],
-    github: "ryanchou-dev",
-    website: "https://www.ryanchou.dev/",
-  },
-  {
-    photo: vikas_thoutam,
-    name: "Vikas Thoutam",
-    titles: [roles.instructor],
-    email: "vikas.thoutam@gmail.com",
-  },
-  {
-    photo: davidz,
-    name: "David Zhang",
-    titles: [roles.instructor],
-  },
-  {
-    photo: varun,
-    name: "Varun Ragunath",
-    titles: [roles.instructor],
-  },
-  {
-    photo: atharv,
-    name: "Atharv Jain",
-    titles: [roles.instructor],
-    email: "atharvjain05@gmail.com",
-  },
-  {
-    photo: dong,
-    name: "Dong Liu",
-    titles: [roles.instructor, roles.contentAuthor],
-    email: "dongliu0426@gmail.com",
-    github: "dongliu0426",
-    codeforces: "lunchbox",
-  },
-  {
-    photo: dustin,
-    name: "Dustin Miao",
-    titles: [roles.instructor, roles.contentAuthor],
-    github: "dutinmeow",
-    email: "dutin20.meow@gmail.com",
-  },
-  {
-    photo: adham,
-    name: "Adham Ibrahim",
-    titles: [roles.instructor],
-    email: "adhamibrahim719@gmail.com",
-  },
-  {
-    photo: egor,
-    name: "Egor Gagushin",
-    titles: [roles.instructor],
-    codeforces: "eggag32",
-    github: "Eggag",
-  },
-  {
-    photo: ramit,
-    name: "Ramit Goyal",
-    titles: [roles.instructor],
-    email: "24ramitg@students.harker.org",
-    instagram: "ramit_goyal24",
-  },
-  {
-    photo: david_li,
-    name: "David Li",
-    titles: [roles.instructor],
-  },
-  {
-    photo: akshar,
-    name: "Akshar Yeccherla",
-    titles: [roles.instructor],
-  },
-  {
-    photo: vivian,
-    name: "Vivian Han",
-    titles: [roles.instructor],
-  },
-]
-const curriculum: Member[] = [
-  {
-    photo: nikhil,
-    name: "Nikhil Chatterjee",
-    titles: [roles.instructor, roles.clubCurriculum],
-  },
-  {
-    photo: arpan,
-    name: "Arpan Banerjee",
-    titles: [roles.clubCurriculum, roles.contentAuthor],
-  },
-  {
-    photo: albertz,
-    name: "Albert Zhu",
-    titles: [roles.instructor, roles.clubCurriculum],
-  },
-  {
+  oscar: {
     photo: oscar,
     name: "Oscar Rendón",
     titles: [roles.webdev, roles.clubCurriculum],
   },
-  {
+  pranav: {
     photo: pranav,
     name: "Pranav Jadhav",
     titles: [roles.clubCurriculum],
     github: "pranavgithub1",
     email: "pra168109@gmail.com",
   },
-]
-const contentAuthors: Member[] = [
-  {
-    photo: nathang,
-    name: "Nathan Gong",
-    titles: [roles.webdev, roles.contentAuthor],
-    github: "nathangong",
+  ramit: {
+    photo: ramit,
+    name: "Ramit Goyal",
+    titles: [roles.instructor],
+    email: "24ramitg@students.harker.org",
+    instagram: "ramit_goyal24",
   },
-  {
+  ryan: {
     photo: ryan,
     name: "Ryan Chou",
     titles: [roles.instructor, roles.contentAuthor],
     github: "ryanchou-dev",
     website: "https://www.ryanchou.dev/",
   },
-  {
-    photo: dustin,
-    name: "Dustin Miao",
-    titles: [roles.instructor, roles.contentAuthor],
-    github: "dutinmeow",
-    email: "dutin20.meow@gmail.com",
-  },
-  {
+  sofia: {
     photo: sofia,
     name: "Sofia Yang",
     titles: [roles.contentAuthor],
   },
-  {
-    photo: ben,
-    name: "Ben Dodge",
-    titles: [roles.contentAuthor],
+  varun: {
+    photo: varun,
+    name: "Varun Ragunath",
+    titles: [roles.instructor],
   },
+  vikas_thoutam: {
+    photo: vikas_thoutam,
+    name: "Vikas Thoutam",
+    titles: [roles.instructor],
+    email: "vikas.thoutam@gmail.com",
+  },
+  vivian: {
+    photo: vivian,
+    name: "Vivian Han",
+    titles: [roles.instructor],
+  },
+}
+
+const core: Member[] = [
+  members.nathanw,
+  members.maggie,
+  members.melody,
+  members.daniel,
+  members.jeffrey,
+  members.darren,
+  members.michael,
+  members.harry,
+  members.neo,
+  members.jay,
+  members.dong,
 ]
-const alumni: Member[] = [
-  {
-    photo: andrew,
-    name: "Andrew Wang",
-    titles: ["Former Secretary"],
-    github: "andrewwangva",
-    codeforces: "https://codeforces.com/profile/a.wang",
-    email: "andrewwangva.biz@gmail.com",
-  },
-  {
-    photo: benq,
-    name: "Benjamin Qi",
-    titles: ["Former Content Director", "2x IOI Winner"],
-    github: "bqi343",
-    codeforces: "https://codeforces.com/profile/Benq",
-    email: "bqi343@gmail.com",
-  },
-  {
-    photo: nathanc,
-    name: "Nathan Chen",
-    titles: ["Former Treasurer", "2x Finalist"],
-    github: "nchn27",
-    codeforces: "https://codeforces.com/profile/nchn27",
-    email: "nchn27@gmail.com",
-  },
+const webdev: Member[] = [members.mrinall, members.nathang, members.oscar]
+const instructors: Member[] = [
+  members.albertz,
+  members.nikhil,
+  members.amogha_pokkulandra,
+  members.ryan,
+  members.vikas_thoutam,
+  members.davidz,
+  members.varun,
+  members.atharv,
+  members.dong,
+  members.dustin,
+  members.adham,
+  members.egor,
+  members.ramit,
+  members.david_li,
+  members.akshar,
+  members.vivian,
 ]
+const curriculum: Member[] = [
+  members.nikhil,
+  members.arpan,
+  members.albertz,
+  members.oscar,
+  members.pranav,
+]
+const contentAuthors: Member[] = [
+  members.nathang,
+  members.ryan,
+  members.dustin,
+  members.sofia,
+  members.ben,
+]
+const alumni: Member[] = [members.andrew, members.benq, members.nathanc]
 const notPictured: Omit<Member, "photo">[] = [
   {
     name: "Kevin Sheng",
@@ -362,7 +357,7 @@ const notPictured: Omit<Member, "photo">[] = [
     name: "Sathvik Chundru",
     titles: [roles.contentAuthor],
     github: "sathu-beep",
-    codeforces: "https://codeforces.com/profile/sus",
+    codeforces: "sus",
   },
 ]
 const sections = [
