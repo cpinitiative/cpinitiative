@@ -88,7 +88,11 @@ const members: { [key: string]: Member } = {
   amy: {
     photo: amy_chang,
     name: "Amy Chang",
-    titles: [roles.liveInstructor, roles.videoInstructor],
+    titles: [
+      "Director of Classes",
+      roles.liveInstructor,
+      roles.videoInstructor,
+    ],
   },
   andrew: {
     photo: andrew,
@@ -181,13 +185,19 @@ const members: { [key: string]: Member } = {
   jay: {
     photo: jay,
     name: "Jay Fu",
-    titles: ["Project Manager", roles.liveInstructor, roles.videoInstructor],
+    titles: [
+      "Director of Classes",
+      roles.liveInstructor,
+      roles.videoInstructor,
+    ],
     email: "jayfu03@gmail.com",
   },
   jeffrey: {
     photo: jeffrey,
     name: "Jeffrey Meng",
     titles: ["Director of Operations", roles.videoInstructor],
+    github: "jeffreymeng",
+    website: "https://jeffkmeng.com",
   },
   jonathan: {
     photo: jpaulson,
@@ -324,10 +334,11 @@ const core: Member[] = [
   members.jeffrey,
   members.darren,
   members.michael,
+  members.dong,
   members.harry,
   members.neo,
   members.jay,
-  members.dong,
+  members.amy,
 ]
 const webdev: Member[] = [
   members.maggie,
