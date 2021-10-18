@@ -397,7 +397,10 @@ const curriculum: Member[] = [
   members.oscar,
   members.pranav,
 ]
-const contentAuthors: Member[] = [
+const guideTeam: Member[] = [
+  members.dong,
+  members.harry,
+  members.neo,
   members.jesse,
   members.sofia,
   members.nathang,
@@ -438,8 +441,8 @@ const sections = [
     members: instructors,
   },
   {
-    title: "Content Authors",
-    members: contentAuthors,
+    title: "USACO Guide Team",
+    members: guideTeam,
   },
   {
     title: "Curriculum Developers",
