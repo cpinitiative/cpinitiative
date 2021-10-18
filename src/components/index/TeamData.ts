@@ -38,6 +38,7 @@ import {
   amy_chang,
   jpaulson,
   yifan_ma,
+  jesse,
 } from "../index/images"
 
 export type Member = {
@@ -198,6 +199,11 @@ const members: { [key: string]: Member } = {
     titles: ["Director of Operations", roles.videoInstructor],
     github: "jeffreymeng",
     website: "https://jeffkmeng.com",
+  },
+  jesse: {
+    photo: jesse,
+    name: "Jesse Choe",
+    titles: [roles.contentAuthor],
   },
   jonathan: {
     photo: jpaulson,
@@ -392,10 +398,12 @@ const curriculum: Member[] = [
   members.pranav,
 ]
 const contentAuthors: Member[] = [
+  members.jesse,
+  members.sofia,
   members.nathang,
+  members.arpan,
   members.ryan,
   members.dustin,
-  members.sofia,
   members.ben,
 ]
 const alumni: Member[] = [members.andrew, members.benq, members.nathanc]
