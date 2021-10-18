@@ -7,12 +7,12 @@ import {
   alex_chen,
   jarvis,
   mayank,
-  Varun,
+  varun,
   yu_lim,
-  Jay,
+  jay,
   david_li,
   yifan_ma,
-  amogha_pokkulandra,
+  amogha,
   amy_chang,
   vikas_thoutam,
 } from "../index/images"
@@ -55,7 +55,7 @@ const members: Member[] = [
     title: "Operations Manager",
   },
   {
-    photo: Varun,
+    photo: varun,
     name: "Varun Ragunath",
     title: "Instructor / Finalist",
   },
@@ -65,7 +65,7 @@ const members: Member[] = [
     title: "Instructor / Platinum",
   },
   {
-    photo: Jay,
+    photo: jay,
     name: "Jay Fu",
     title: "Instructor / Platinum",
   },
@@ -80,7 +80,7 @@ const members: Member[] = [
     title: "Instructor",
   },
   {
-    photo: amogha_pokkulandra,
+    photo: amogha,
     name: "Amogha Pokkulandra",
     title: "Instructor",
   },

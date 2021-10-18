@@ -1,4 +1,4 @@
-import { nathanw, daniel, darren, michael, Andrew } from "../../index/images"
+import { nathanw, daniel, darren, michael, andrew } from "../../index/images"
 import Speakers, { Speaker } from "../Speakers"
 const speakers: Speaker[] = [
   {
@@ -21,7 +21,7 @@ const speakers: Speaker[] = [
     name: "Michael Cao",
   },
   {
-    photo: Andrew,
+    photo: andrew,
     name: "Andrew Wang",
   },
 ]
