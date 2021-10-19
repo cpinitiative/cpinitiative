@@ -135,7 +135,6 @@ const members: { [key: string]: Member } = {
     name: "Ben Dodge",
     github: "Navigator365",
     titles: [roles.contentAuthor],
-    github: "Navigator365",
   },
   benq: {
     photo: benq,
