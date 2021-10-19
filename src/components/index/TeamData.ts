@@ -3,6 +3,7 @@ import {
   akshar,
   albertz,
   amogha,
+  andi,
   andrew,
   arpan,
   atharv,
@@ -32,6 +33,7 @@ import {
   ramit,
   ryan,
   sofia,
+  siyong,
   varun,
   vikas_thoutam,
   vivian,
@@ -62,6 +64,7 @@ const roles = {
   videoInstructor: "Self-Study Classes",
   instructor: "Instructor",
   clubCurriculum: "Curriculum Developer",
+  founder: "Founding Member",
 }
 
 const members: { [key: string]: Member } = {
@@ -98,10 +101,19 @@ const members: { [key: string]: Member } = {
       roles.videoInstructor,
     ],
   },
+  andi: {
+    photo: andi,
+    name: "Andi Qu",
+    titles: [roles.founder],
+    email: "andi@andiqu.com",
+    github: "dolphingarlic",
+    codeforces: "dolphingarlic",
+    website: "https://andiqu.com/",
+  },
   andrew: {
     photo: andrew,
     name: "Andrew Wang",
-    titles: ["Former Secretary"],
+    titles: [roles.founder, "Former Secretary"],
     github: "andrewwangva",
     codeforces: "a.wang",
     email: "andrewwangva.biz@gmail.com",
@@ -128,7 +140,7 @@ const members: { [key: string]: Member } = {
   benq: {
     photo: benq,
     name: "Benjamin Qi",
-    titles: ["Former Content Director", "2x IOI Winner"],
+    titles: [roles.founder, "Content Director", "2x IOI Winner"],
     github: "bqi343",
     codeforces: "Benq",
     email: "bqi343@gmail.com",
@@ -142,7 +154,7 @@ const members: { [key: string]: Member } = {
   darren: {
     photo: darren,
     name: "Darren Yao",
-    titles: ["Director of Outreach"],
+    titles: [roles.founder, "Director of Outreach"],
     github: "darren-yao",
     website: "http://darrenyao.com/",
     codeforces: "darren_yao",
@@ -243,7 +255,7 @@ const members: { [key: string]: Member } = {
   michael: {
     photo: michael,
     name: "Michael Cao",
-    titles: ["Director of Clubs"],
+    titles: [roles.founder, "Director of Clubs"],
     github: "caoash",
     codeforces: "caoash",
     email: "caoash@gmail.com",
@@ -257,7 +269,7 @@ const members: { [key: string]: Member } = {
   nathanc: {
     photo: nathanc,
     name: "Nathan Chen",
-    titles: ["Former Treasurer", "2x Finalist"],
+    titles: [roles.founder, "Former Treasurer", "2x Finalist"],
     github: "nchn27",
     codeforces: "nchn27",
     email: "nchn27@gmail.com",
@@ -271,7 +283,13 @@ const members: { [key: string]: Member } = {
   nathanw: {
     photo: nathanw,
     name: "Nathan Wang",
-    titles: ["Board", "3x Finalist", roles.webdev, roles.videoInstructor],
+    titles: [
+      roles.founder,
+      "Board",
+      "3x Finalist",
+      roles.webdev,
+      roles.videoInstructor,
+    ],
     github: "thecodingwizard",
     website: "https://thecodingwizard.me/",
     codeforces: "thecodingwizard",
@@ -317,6 +335,13 @@ const members: { [key: string]: Member } = {
     github: "ryanchou-dev",
     website: "https://www.ryanchou.dev/",
   },
+  siyong: {
+    photo: siyong,
+    name: "Siyong Huang",
+    titles: [roles.founder],
+    github: "frodakcin",
+    codeforces: "frodakcin",
+  },
   sofia: {
     photo: sofia,
     name: "Sofia Yang",
@@ -349,6 +374,7 @@ const members: { [key: string]: Member } = {
 
 const core: Member[] = [
   members.nathanw,
+  members.benq,
   members.maggie,
   members.melody,
   members.daniel,
@@ -424,7 +450,12 @@ const guideTeam: Member[] = [
   members.dustin,
   members.ben,
 ]
-const alumni: Member[] = [members.andrew, members.benq, members.nathanc]
+const alumni: Member[] = [
+  members.andi,
+  members.andrew,
+  members.nathanc,
+  members.siyong,
+]
 const notPictured: Omit<Member, "photo">[] = [
   {
     name: "Kevin Sheng",
