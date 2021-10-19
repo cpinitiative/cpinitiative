@@ -108,6 +108,7 @@ const members: { [key: string]: Member } = {
   arpan: {
     photo: arpan,
     name: "Arpan Banerjee",
+    github: "ar492",
     titles: [roles.clubCurriculum, roles.contentAuthor, roles.videoInstructor],
   },
   atharv: {
@@ -119,6 +120,7 @@ const members: { [key: string]: Member } = {
   ben: {
     photo: ben,
     name: "Ben Dodge",
+    github: "Navigator365",
     titles: [roles.contentAuthor],
   },
   benq: {
@@ -132,6 +134,7 @@ const members: { [key: string]: Member } = {
   daniel: {
     photo: daniel,
     name: "Daniel Guan",
+    github: "DGuan64",
     titles: ["Director of Classes", "Finalist"],
   },
   darren: {
@@ -214,6 +217,7 @@ const members: { [key: string]: Member } = {
   jonathan: {
     photo: jpaulson,
     name: "Jonathan Paulson",
+    github: "jonathanpaulson",
     titles: [roles.videoInstructor],
   },
   maggie: {
@@ -287,6 +291,7 @@ const members: { [key: string]: Member } = {
   oscar: {
     photo: oscar,
     name: "Oscar Rendón",
+    github: "orendon",
     titles: [roles.webdev, roles.clubCurriculum],
   },
   pranav: {
@@ -313,6 +318,7 @@ const members: { [key: string]: Member } = {
   sofia: {
     photo: sofia,
     name: "Sofia Yang",
+    github: "TruaShamu",
     titles: [roles.contentAuthor],
   },
   varun: {
@@ -329,6 +335,7 @@ const members: { [key: string]: Member } = {
   vivian: {
     photo: vivian,
     name: "Vivian Han",
+    github: "vivianhan404",
     titles: [roles.videoInstructor],
   },
   yifan: {
@@ -425,6 +432,7 @@ const notPictured: Omit<Member, "photo">[] = [
   {
     name: "Shreyas Thumathy",
     titles: [roles.liveInstructor, roles.clubCurriculum],
+    github: "therealshreyas",
   },
   {
     name: "Sathvik Chundru",
