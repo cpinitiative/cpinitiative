@@ -374,12 +374,12 @@ const members: { [key: string]: Member } = {
 
 const core: Member[] = [
   members.nathanw,
+  members.darren,
   members.benq,
   members.maggie,
   members.melody,
   members.daniel,
   members.jeffrey,
-  members.darren,
   members.michael,
   members.dong,
   members.harry,
