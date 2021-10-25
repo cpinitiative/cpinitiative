@@ -10,7 +10,7 @@ export default function WorkshopList() {
         {sections.map(section => (
           (section.workshops.length != 0 && <React.Fragment key={section.title}>
             <div className="mb-10 space-y-5 sm:space-y-4">
-              <h2 className="flex justify-center font-extrabold tracking-tight text-4xl mb-10">
+              <h2 className="flex justify-center font-extrabold tracking-tight text-4xl mb-8">
                 {section.title}
               </h2>
               <ul
