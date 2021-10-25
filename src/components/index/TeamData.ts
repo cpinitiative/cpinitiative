@@ -371,90 +371,6 @@ const members: { [key: string]: Member } = {
   },
 }
 
-const core: Member[] = [
-  members.nathanw,
-  members.darren,
-  members.benq,
-  members.maggie,
-  members.melody,
-  members.daniel,
-  members.jeffrey,
-  members.michael,
-  members.dong,
-  members.harry,
-  members.neo,
-  members.jay,
-  members.amy,
-]
-const webdev: Member[] = [
-  members.maggie,
-  members.mrinall,
-  members.nathang,
-  members.nathanw,
-  members.neo,
-  members.oscar,
-]
-const instructors: Member[] = [
-  // live and video instructors
-  members.jay,
-  members.amy,
-  members.amogha,
-  members.atharv,
-  members.david_li,
-  members.davidz,
-  members.nikhil,
-  members.ryan,
-  members.varun,
-  members.vikas_thoutam,
-
-  // live instructors
-  members.adham,
-  members.dong,
-  members.dustin,
-
-  // video instructors
-  // members.akshar,
-  members.albertz,
-  members.arpan,
-  // members.egor,
-  members.harry,
-  members.jeffrey,
-  members.jonathan,
-  members.maggie,
-  members.melody,
-  members.nathanw,
-  members.neo,
-  // members.ramit,
-  members.vivian,
-  members.yifan,
-]
-
-const curriculum: Member[] = [
-  members.michael,
-  members.albertz,
-  members.arpan,
-  members.nikhil,
-  members.oscar,
-  members.pranav,
-]
-const guideTeam: Member[] = [
-  members.dong,
-  members.harry,
-  members.neo,
-  members.jesse,
-  members.sofia,
-  members.nathang,
-  members.arpan,
-  members.ryan,
-  members.dustin,
-  members.ben,
-]
-const alumni: Member[] = [
-  members.andi,
-  members.andrew,
-  members.nathanc,
-  members.siyong,
-]
 const notPictured: Omit<Member, "photo">[] = [
   {
     name: "Kevin Sheng",
@@ -473,30 +389,57 @@ const notPictured: Omit<Member, "photo">[] = [
     codeforces: "sus",
   },
 ]
-const sections = [
-  {
-    title: "Core Team",
-    members: core,
-  },
-  {
-    title: "Web Developers",
-    members: webdev,
-  },
-  {
-    title: "Instructors",
-    members: instructors,
-  },
-  {
-    title: "USACO Guide Team",
-    members: guideTeam,
-  },
-  {
-    title: "Curriculum Developers",
-    members: curriculum,
-  },
-  {
-    title: "Alumni",
-    members: alumni,
-  },
+const orderedFirst: Member[] = [
+  members.nathanw,
+  members.darren,
+  members.benq,
+  members.maggie,
+  members.melody,
+  members.daniel,
+  members.jeffrey,
+  members.michael,
+  members.dong,
+  members.harry,
+  members.neo,
+  members.jay,
+  members.amy,
+  members.andi,
+  members.andrew,
+  members.nathanc,
+  members.siyong,
 ]
-export default sections
+const rest: Member[] = [
+  members.mrinall,
+  members.nathang,
+  members.oscar,
+  members.amogha,
+  members.atharv,
+  members.david_li,
+  members.davidz,
+  members.nikhil,
+  members.ryan,
+  members.varun,
+  members.vikas_thoutam,
+  members.adham,
+  members.dustin,
+  // members.akshar,
+  members.albertz,
+  members.arpan,
+  // members.egor,
+  members.jonathan,
+  // members.ramit,
+  members.vivian,
+  members.yifan,
+  members.pranav,
+  members.jesse,
+  members.sofia,
+  members.ben,
+]
+const sortedPeople = rest.sort((a, b) => {
+  if (a.titles.length === b.titles.length) {
+    return a.name.localeCompare(b.name)
+  }
+  return b.titles.length - a.titles.length
+})
+const people = [...orderedFirst, ...sortedPeople]
+export default people
