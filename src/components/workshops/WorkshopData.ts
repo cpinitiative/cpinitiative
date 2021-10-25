@@ -2,7 +2,7 @@ import EGOI from '../../images/egoi-hero.png'
 import USACO from '../../images/usaco-guide-logo.png';
 
 export type Workshop = {
-  photo: StaticImageData // url of photo relative to content/authors/images/, EXCLUDING EXTENSION
+  photo: StaticImageData
   title: string,
   description: string,
   date: Date
