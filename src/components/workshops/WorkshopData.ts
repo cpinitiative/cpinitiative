@@ -1,5 +1,5 @@
 import EGOI from '../../images/egoi-hero.png'
-import USACO from '../../images/usaco-guide-logo.png';
+import USACO from '../../images/usaco-guide-logo.png'
 
 export type Workshop = {
   photo: StaticImageData

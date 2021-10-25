@@ -1,6 +1,6 @@
 import * as React from "react"
 import Image from "next/image"
-import HeroImg from "../../images/workshops-hero.jpg";
+import HeroImg from "../../images/workshops-hero.jpg"
 
 export default function Hero() {
   return (
