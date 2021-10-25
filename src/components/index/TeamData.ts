@@ -245,7 +245,7 @@ const members: { [key: string]: Member } = {
   melody: {
     photo: melody,
     name: "Melody Yu",
-    titles: ["Executive", roles.videoInstructor],
+    titles: ["Executive", "Director of Outreach", roles.videoInstructor],
     github: "cskitty",
     website: "https://melodyyu.com/",
     email: "ocmelodyyu@gmail.com",
