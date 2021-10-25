@@ -23,7 +23,7 @@ export default function WorkshopList() {
                   >
                     <li
                       key={workshop.title}
-                      className="flex rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg hover:cursor-pointer px-6 py-5"
+                      className="flex rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg hover:cursor-pointer duration-100 px-6 py-5"
                     >
                       <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
                         <div className="flex-shrink-0 w-24 h-24 rounded-full overflow-hidden relative lg:w-28 lg:h-28">
@@ -40,11 +40,7 @@ export default function WorkshopList() {
                         <div className="flex-1 min-w-0 space-y-2">
                           <span className="" aria-hidden="true"></span>
                           <p className="text-xl font-medium">{workshop.title}</p>
-                          <p className="text-gray-500 font-medium">{workshop.date.toLocaleDateString('en-US', {
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric',
-                          })}</p>
+                          <p className="text-gray-500 font-medium">{workshop.date.format("MMMM D, YYYY")}</p>
                           <p className="text-gray-500">{workshop.description}</p>
                         </div>
                       </div>
