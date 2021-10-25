@@ -153,7 +153,7 @@ const members: { [key: string]: Member } = {
   darren: {
     photo: darren,
     name: "Darren Yao",
-    titles: [roles.founder, "Director of Outreach"],
+    titles: [roles.founder, "Board"],
     github: "darren-yao",
     website: "http://darrenyao.com/",
     codeforces: "darren_yao",
