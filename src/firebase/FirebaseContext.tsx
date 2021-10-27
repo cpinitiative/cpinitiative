@@ -27,7 +27,7 @@ export const FirebaseProvider = ({ children }) => {
         const firebaseInstance = values[0].default
 
         // removes duplicate firebase.app.App instances
-        if(!firebase?.apps?.length) {
+        if (!firebase?.apps?.length) {
           firebaseInstance?.initializeApp(firebaseConfig)
         }
         setFirebase(firebaseInstance)

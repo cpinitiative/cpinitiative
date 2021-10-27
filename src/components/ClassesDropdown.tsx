@@ -1,15 +1,13 @@
-import { Fragment } from 'react'
-import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/solid'
-import Link from 'next/link'
+import { Fragment } from "react"
+import { Menu, Transition } from "@headlessui/react"
+import { ChevronDownIcon } from "@heroicons/react/solid"
+import Link from "next/link"
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ")
 }
 
-export default function ClassesDropdown({
-  dark = false
-}): JSX.Element {
+export default function ClassesDropdown({ dark = false }): JSX.Element {
   return (
     <Menu as="div" className="relative inline-block text-left">
       {({ open }) => (
@@ -20,7 +18,13 @@ export default function ClassesDropdown({
               dark
                 ? "hover:text-gray-200 hover:border-transparent focus:outline-none focus:text-gray-200"
                 : "hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300",
-              open ? (dark ? "text-gray-200" : "text-gray-700") : (dark ? "text-gray-400" : "text-gray-500"),
+              open
+                ? dark
+                  ? "text-gray-200"
+                  : "text-gray-700"
+                : dark
+                ? "text-gray-400"
+                : "text-gray-500"
             )}
           >
             Classes
@@ -30,7 +34,11 @@ export default function ClassesDropdown({
                 dark
                   ? "group-hover:text-gray-200 group-focus:text-gray-200"
                   : "group-hover:text-gray-500 group-focus:text-gray-500",
-                open ? (dark ? "text-gray-200" : "text-gray-500") : 'text-gray-400',
+                open
+                  ? dark
+                    ? "text-gray-200"
+                    : "text-gray-500"
+                  : "text-gray-400"
               )}
               aria-hidden="true"
             />
@@ -44,19 +52,21 @@ export default function ClassesDropdown({
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <Menu.Items className={classNames(
-              "origin-top-right absolute left-0 -mt-2 w-56 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none",
-              dark ? "bg-gray-800" : "bg-white"
-            )}>
+            <Menu.Items
+              className={classNames(
+                "origin-top-right absolute left-0 -mt-2 w-56 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none",
+                dark ? "bg-gray-800" : "bg-white"
+              )}
+            >
               <div className="py-1">
                 <Menu.Item>
-                  <Link
-                    href="/classes"
-                  >
+                  <Link href="/classes">
                     <a
                       className={classNames(
-                        'block px-4 py-2 text-sm font-medium',
-                        dark ? 'hover:bg-gray-600 text-gray-200' : 'hover:bg-gray-100 hover:text-gray-900 text-gray-700',
+                        "block px-4 py-2 text-sm font-medium",
+                        dark
+                          ? "hover:bg-gray-600 text-gray-200"
+                          : "hover:bg-gray-100 hover:text-gray-900 text-gray-700"
                       )}
                     >
                       Live Classes
@@ -64,13 +74,13 @@ export default function ClassesDropdown({
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link
-                    href="/video-classes"
-                  >
+                  <Link href="/video-classes">
                     <a
                       className={classNames(
-                        'block px-4 py-2 text-sm font-medium',
-                        dark ? 'hover:bg-gray-600 text-gray-200' : 'hover:bg-gray-100 hover:text-gray-900 text-gray-700',
+                        "block px-4 py-2 text-sm font-medium",
+                        dark
+                          ? "hover:bg-gray-600 text-gray-200"
+                          : "hover:bg-gray-100 hover:text-gray-900 text-gray-700"
                       )}
                     >
                       Self-Study Classes

@@ -3,7 +3,7 @@ const crypto = require("crypto")
 const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY // Must be 256 bits (32 characters)
 const IV_LENGTH = 16 // For AES, this is always 16
 
-export const encrypt = (text) => {
+export const encrypt = text => {
   let iv = crypto.randomBytes(IV_LENGTH)
   let cipher = crypto.createCipheriv(
     "aes-256-cbc",
@@ -17,7 +17,7 @@ export const encrypt = (text) => {
   return iv.toString("hex") + ":" + encrypted.toString("hex")
 }
 
-export const decrypt = (text) => {
+export const decrypt = text => {
   let textParts = text.split(":")
   let iv = Buffer.from(textParts.shift(), "hex")
   let encryptedText = Buffer.from(textParts.join(":"), "hex")

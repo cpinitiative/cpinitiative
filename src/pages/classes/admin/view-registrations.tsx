@@ -8,7 +8,7 @@ import { useEffect, useMemo, useState } from "react"
 import moment from "moment-timezone"
 import * as Icons from "heroicons-react"
 import Transition from "../../../components/Transition"
-import type firebaseType from "firebase";
+import type firebaseType from "firebase"
 
 export default function ViewRegistrationPage() {
   const firebase = useFirebase()
@@ -45,7 +45,9 @@ export default function ViewRegistrationPage() {
   )
   const numRejectedFinancialAid = useMemo(
     () =>
-      finalizedRegistrations.filter(r => r.data?.status && r.data?.status !== "ACCEPTED").length,
+      finalizedRegistrations.filter(
+        r => r.data?.status && r.data?.status !== "ACCEPTED"
+      ).length,
     [finalizedRegistrations]
   )
   const numPendingFinancialAid = useMemo(
@@ -110,7 +112,7 @@ export default function ViewRegistrationPage() {
             "v8NK8mHCZnbPQKaPnEs5lKNc3rv2",
             "BKFOe33Ym7Pc7aQuET57MiljpF03",
             "YF9ObmH1SUR1MKJGTrO8DfBQUG13",
-            "5IXfZDX1j2ZOftqfYiBcmmStmn93"
+            "5IXfZDX1j2ZOftqfYiBcmmStmn93",
           ].includes(user.uid)
         ) {
           setHasPermission(true)
@@ -179,9 +181,7 @@ export default function ViewRegistrationPage() {
           <h1 className={"text-4xl font-bold tracking-tight leading-9"}>
             Error 404: Page Not Found
           </h1>
-          <Link
-            href={"/"}
-          >
+          <Link href={"/"}>
             <a className={"text-2xl text-blue-600 hover:underline pt-4 block"}>
               Go Home
             </a>
@@ -239,8 +239,10 @@ export default function ViewRegistrationPage() {
               {numPendingFinancialAid} Pending FA Applications
             </p>
             <p>
-              {finalizedRegistrations.length - numAcceptedFinancialAid - numRejectedFinancialAid} Paid
-              &middot; {numAcceptedFinancialAid} Accepted For Financial Aid
+              {finalizedRegistrations.length -
+                numAcceptedFinancialAid -
+                numRejectedFinancialAid}{" "}
+              Paid &middot; {numAcceptedFinancialAid} Accepted For Financial Aid
             </p>
             <p>
               {numBeginner} Beginner ({numBeginnerJava} Java,{" "}
@@ -537,7 +539,9 @@ export default function ViewRegistrationPage() {
                           setDetailModalFASubmittingApproval(true)
                           firebase
                             .functions()
-                            .httpsCallable("cpiclasses-approveLiveFinancialAid")({
+                            .httpsCallable(
+                              "cpiclasses-approveLiveFinancialAid"
+                            )({
                               registrationId: detailModalRegistrationId,
                               email:
                                 detailModalRegistrationData.personalInfo.email,

@@ -59,8 +59,12 @@ export default function Contests() {
           </p>
           <p>We currently partner with the following programming contests:</p>
           <ul>
-             <li>
-              <a href="https://algirlithm.org/" target="_blank" rel="noreferrer">
+            <li>
+              <a
+                href="https://algirlithm.org/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 alGIRLithm. A programming contest for high school girls.
               </a>
             </li>

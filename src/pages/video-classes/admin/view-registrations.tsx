@@ -8,7 +8,7 @@ import { useEffect, useMemo, useState } from "react"
 import moment from "moment-timezone"
 import * as Icons from "heroicons-react"
 import Transition from "../../../components/Transition"
-import type firebaseType from "firebase";
+import type firebaseType from "firebase"
 
 export default function ViewRegistrationPage() {
   const firebase = useFirebase()
@@ -45,7 +45,9 @@ export default function ViewRegistrationPage() {
   )
   const numRejectedFinancialAid = useMemo(
     () =>
-      finalizedRegistrations.filter(r => r.data?.status && r.data?.status !== "ACCEPTED").length,
+      finalizedRegistrations.filter(
+        r => r.data?.status && r.data?.status !== "ACCEPTED"
+      ).length,
     [finalizedRegistrations]
   )
   const numPendingFinancialAid = useMemo(
@@ -109,7 +111,7 @@ export default function ViewRegistrationPage() {
             "OjLKRTTzNyQgMifAExQKUA4MtfF2",
             "v8NK8mHCZnbPQKaPnEs5lKNc3rv2",
             "BKFOe33Ym7Pc7aQuET57MiljpF03",
-            "5IXfZDX1j2ZOftqfYiBcmmStmn93"
+            "5IXfZDX1j2ZOftqfYiBcmmStmn93",
           ].includes(user.uid)
         ) {
           setHasPermission(true)
@@ -236,8 +238,10 @@ export default function ViewRegistrationPage() {
               {numPendingFinancialAid} Pending FA Applications
             </p>
             <p>
-              {finalizedRegistrations.length - numAcceptedFinancialAid - numRejectedFinancialAid} Paid
-              &middot; {numAcceptedFinancialAid} Accepted For Financial Aid
+              {finalizedRegistrations.length -
+                numAcceptedFinancialAid -
+                numRejectedFinancialAid}{" "}
+              Paid &middot; {numAcceptedFinancialAid} Accepted For Financial Aid
             </p>
             <p>
               {numBeginner} Beginner ({numBeginnerJava} Java,{" "}

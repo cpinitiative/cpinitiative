@@ -55,10 +55,7 @@ export default function RegistrationProcess() {
               </a>
               . If you can't find a time that works for you, send us a message
               through Discord or at{" "}
-              <a
-                href="mailto:usacoguide@gmail.com"
-                className="underline"
-              >
+              <a href="mailto:usacoguide@gmail.com" className="underline">
                 usacoguide@gmail.com
               </a>
               .
