@@ -206,7 +206,7 @@ const clubs: {
     name: "Windermere High School",
     photo: windermere,
     region: "Florida",
-  },  
+  },
 ]
 
 export default function CurrentClubs() {

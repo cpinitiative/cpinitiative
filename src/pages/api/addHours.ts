@@ -76,7 +76,7 @@ export default async function handler(
 
       //   if (idx === 0) cell.formattedValue = val
       cell.value = val
-      if(idx == 4) cell.value = Number(val);
+      if (idx == 4) cell.value = Number(val)
       await sheet.saveUpdatedCells()
     })
   })()

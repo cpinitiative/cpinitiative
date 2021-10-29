@@ -28,7 +28,7 @@ import whitfield from "./whitfield.jpg"
 import whitney from "./whitney.png"
 import windermere from "./windermere.png"
 
-export { 
+export {
   algonquin,
   ashbury,
   baton,

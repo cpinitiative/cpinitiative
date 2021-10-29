@@ -60,6 +60,15 @@ export default function Contests() {
           <p>We currently partner with the following programming contests:</p>
           <ul>
             <li>
+              <a
+                href="https://algirlithm.org/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                alGIRLithm. A programming contest for high school girls.
+              </a>
+            </li>
+            <li>
               <a href="https://mbit.mbhs.edu/" target="_blank" rel="noreferrer">
                 Montgomery Blair Informatics Tournament (mBIT)
               </a>
