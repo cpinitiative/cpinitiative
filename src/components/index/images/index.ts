@@ -6,7 +6,7 @@ import albertz from "./albertz.jpg"
 import alex_chen from "./alex_chen.png"
 import amogha from "./amogha.jpeg"
 import amy_chang from "./amy_chang.jpg"
-import ananth from "./ananth.png"
+import andi from "./andi.jpeg"
 import andrew from "./andrew.png"
 import arpan from "./arpan.png"
 import atharv from "./atharv.png"
@@ -46,6 +46,7 @@ import ramit from "./ramit.jpg"
 import rayna from "./rayna.jpeg"
 import ryan from "./ryan.jpg"
 import sathvik from "./sathvik.png"
+import siyong from "./siyong.jpeg"
 import sofia from "./sofia.png"
 import tarushii from "./tarushii.jpeg"
 import timothy from "./timothy.png"
@@ -64,7 +65,7 @@ export {
   alex_chen,
   amogha,
   amy_chang,
-  ananth,
+  andi,
   andrew,
   arpan,
   atharv,
@@ -104,6 +105,7 @@ export {
   rayna,
   ryan,
   sathvik,
+  siyong,
   sofia,
   tarushii,
   timothy,

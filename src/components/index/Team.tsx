@@ -1,6 +1,6 @@
 import * as React from "react"
 import Image from "next/image"
-import sections, { Member } from "./TeamData"
+import people, { Member } from "./TeamData"
 const socialLinks = {
   email: {
     icon: (
@@ -216,59 +216,53 @@ export default function Team() {
             committed to increasing participation in competitive programming.
           </p>
         </div>
-        {sections.map(section => (
-          <React.Fragment key={section.title}>
-            <div className="mb-10 space-y-5 sm:space-y-4">
-              <h2 className="flex justify-center font-bold tracking-tight text-3xl">
-                {section.title}
-              </h2>
-              <ul
-                role="list"
-                className="mb-16 mx-auto space-y-8 sm:grid md:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-2 xl:grid-cols-3"
+
+        <div className="mb-10 space-y-5 sm:space-y-4">
+          <ul
+            role="list"
+            className="mb-16 mx-auto space-y-8 sm:grid md:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-2 xl:grid-cols-3"
+          >
+            {people.map(member => (
+              <li
+                key={member.name}
+                className="flex rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg px-6 py-5"
               >
-                {section.members.map(member => (
-                  <li
-                    key={member.name}
-                    className="flex rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg px-6 py-5"
-                  >
-                    <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
-                      <div className="flex-shrink-0 w-24 h-24 rounded-full overflow-hidden relative lg:w-28 lg:h-28">
-                        <Image
-                          layout="fill"
-                          objectFit="cover"
-                          objectPosition="center center"
-                          src={member.photo}
-                          alt={member.name}
-                          placeholder="blur"
-                          sizes="112px"
-                        />
-                      </div>
-                      <div className="flex-1 min-w-0 space-y-2">
-                        <span className="" aria-hidden="true"></span>
-                        <p className="text-xl font-medium">{member.name}</p>
-                        <div className="-mx-0.5">
-                          {member.titles.map(title => {
-                            return title !== "" ? (
-                              <span
-                                key={title}
-                                className="text-sm whitespace-nowrap mx-0.5 my-0.5 inline-flex items-center px-2.5 py-0.5 rounded-full bg-gray-200 font-medium"
-                              >
-                                {title}
-                              </span>
-                            ) : (
-                              ""
-                            )
-                          })}
-                        </div>
-                        {GetSocialLinks(member)}
-                      </div>
+                <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
+                  <div className="flex-shrink-0 w-24 h-24 rounded-full overflow-hidden relative lg:w-28 lg:h-28">
+                    <Image
+                      layout="fill"
+                      objectFit="cover"
+                      objectPosition="center center"
+                      src={member.photo}
+                      alt={member.name}
+                      placeholder="blur"
+                      sizes="112px"
+                    />
+                  </div>
+                  <div className="flex-1 min-w-0 space-y-2">
+                    <span className="" aria-hidden="true"></span>
+                    <p className="text-xl font-medium">{member.name}</p>
+                    <div className="-mx-0.5">
+                      {member.titles.map(title => {
+                        return title !== "" ? (
+                          <span
+                            key={title}
+                            className="text-sm whitespace-nowrap mx-0.5 my-0.5 inline-flex items-center px-2.5 py-0.5 rounded-full bg-gray-200 font-medium"
+                          >
+                            {title}
+                          </span>
+                        ) : (
+                          ""
+                        )
+                      })}
                     </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </React.Fragment>
-        ))}
+                    {GetSocialLinks(member)}
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   )
