@@ -2,7 +2,6 @@ import * as React from 'react'
 import Image from 'next/image'
 import { sections, latestWorkshop } from './WorkshopData'
 import Link from 'next/link'
-import dayjs from 'dayjs'
 
 export default function WorkshopList() {
   return (
