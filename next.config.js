@@ -3,7 +3,7 @@ module.exports = {
     return [
       {
         source: "/workshop",
-        destination: "/workshops/beginner",
+        destination: "/workshops",
         permanent: true,
       },
       {
