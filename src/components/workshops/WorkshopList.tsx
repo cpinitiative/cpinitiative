@@ -2,6 +2,7 @@ import * as React from 'react'
 import Image from 'next/image'
 import { sections, latestWorkshop } from './WorkshopData'
 import Link from 'next/link'
+import dayjs from 'dayjs'
 
 export default function WorkshopList() {
   return (
@@ -17,7 +18,7 @@ export default function WorkshopList() {
           <p className="flex justify-center text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base mb-4">
             { latestWorkshop.date.format("MMMM D, YYYY") }
           </p>
-          <p className="flex justify-center tracking-tight mb-8">
+          <p className="flex justify-center tracking-tight mb-8 text-lg text-gray-500">
             { latestWorkshop.description }
           </p>
           <div className="flex justify-center h-60">
