@@ -1,12 +1,44 @@
 import * as React from 'react'
 import Image from 'next/image'
-import sections from './WorkshopData'
+import { sections, latestWorkshop } from './WorkshopData'
 import Link from 'next/link'
 
 export default function WorkshopList() {
   return (
     <div className="bg-white">
       <div className="py-12 px-4 max-w-screen-xl mx-auto sm:px-6 lg:px-8 lg:py-18">
+        <div className="mb-10">
+          <h2 className="flex justify-center font-extrabold tracking-tight text-4xl mb-8">
+            Latest Workshop
+          </h2>
+          <p className="flex justify-center font-bold tracking-tight text-2xl mb-1">
+            { latestWorkshop.title }
+          </p>
+          <p className="flex justify-center text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base mb-4">
+            { latestWorkshop.date.format("MMMM D, YYYY") }
+          </p>
+          <p className="flex justify-center tracking-tight mb-8">
+            { latestWorkshop.description }
+          </p>
+          <div className="flex justify-center h-60">
+            <Image
+              objectPosition="center center"
+              src={latestWorkshop.photo}
+              alt={latestWorkshop.title}
+              placeholder="blur"
+              objectFit="contain"
+            />
+          </div>
+          <div className="flex justify-center mt-8">
+            <a
+              href={"/workshops/" + latestWorkshop.url}
+              target="_blank"
+              className={`shadow items-center justify-center px-8 py-1 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-${latestWorkshop.themeColor ?? "blue"}-600 hover:bg-${latestWorkshop.themeColor ?? "blue"}-500 focus:outline-none focus:border-${latestWorkshop.themeColor ?? "blue"}-700 focus:shadow-outline-${latestWorkshop.themeColor ?? "blue"} transition duration-150 ease-in-out md:py-2 md:text-base md:px-10`}
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
         {sections.map(section => (
           (section.workshops.length != 0 && <React.Fragment key={section.title}>
             <div className="mb-10 space-y-5 sm:space-y-4">
