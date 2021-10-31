@@ -11,13 +11,13 @@ export default function WorkshopList() {
           <h2 className="flex justify-center font-extrabold tracking-tight text-4xl mb-8">
             Latest Workshop
           </h2>
-          <p className="flex justify-center font-bold tracking-tight text-2xl mb-1">
+          <p className="flex justify-center text-center font-bold tracking-tight text-2xl mb-1">
             {latestWorkshop.title}
           </p>
-          <p className="flex justify-center text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base mb-4">
+          <p className="flex justify-center text-center text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base mb-4">
             {latestWorkshop.date.format("MMMM D, YYYY")}
           </p>
-          <p className="flex justify-center tracking-tight mb-8 text-lg text-gray-500">
+          <p className="flex justify-center text-center tracking-tight mb-8 text-lg text-gray-500">
             {latestWorkshop.description}
           </p>
           <div className="flex justify-center h-60">
@@ -52,20 +52,20 @@ export default function WorkshopList() {
             section.workshops.length != 0 && (
               <React.Fragment key={section.title}>
                 <div className="mb-10 space-y-5 sm:space-y-4">
-                  <h2 className="flex justify-center font-extrabold tracking-tight text-4xl mb-8">
+                  <h2 className="flex justify-center text-center font-extrabold tracking-tight text-4xl mb-8">
                     {section.title}
                   </h2>
                   <ul
                     role="list"
-                    className="mb-16 mx-auto space-y-8 sm:grid md:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-2 xl:grid-cols-2"
+                    className="mb-16 mx-auto space-y-8 sm:grid md:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-2"
                   >
                     {section.workshops.map(workshop => (
                       <Link
                         key={workshop.title}
                         href={"/workshops/" + workshop.url}
                       >
-                        <a>
-                          <li className="flex rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg hover:cursor-pointer duration-100 px-6 py-5">
+                        <a className="flex">
+                          <li className="rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg hover:cursor-pointer duration-100 px-6 py-5">
                             <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
                               <div className="flex-shrink-0 w-24 h-24 rounded-full overflow-hidden relative lg:w-28 lg:h-28">
                                 <Image
