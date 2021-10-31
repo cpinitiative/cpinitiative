@@ -31,13 +31,13 @@ export default function WorkshopList() {
             />
           </div>
           <div className="flex justify-center mt-8">
-            <a
-              href={"/workshops/" + latestWorkshop.url}
-              target="_blank"
-              className={`shadow items-center justify-center px-8 py-1 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-${latestWorkshop.themeColor ?? "blue"}-600 hover:bg-${latestWorkshop.themeColor ?? "blue"}-500 focus:outline-none focus:border-${latestWorkshop.themeColor ?? "blue"}-700 focus:shadow-outline-${latestWorkshop.themeColor ?? "blue"} transition duration-150 ease-in-out md:py-2 md:text-base md:px-10`}
-            >
-              Learn More
-            </a>
+            <Link href={"/workshops/" + latestWorkshop.url}>
+              <a
+                className={`shadow items-center justify-center px-8 py-1 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-${latestWorkshop.themeColor ?? "blue"}-600 hover:bg-${latestWorkshop.themeColor ?? "blue"}-500 focus:outline-none focus:border-${latestWorkshop.themeColor ?? "blue"}-700 focus:shadow-outline-${latestWorkshop.themeColor ?? "blue"} transition duration-150 ease-in-out md:py-2 md:text-base md:px-10`}
+              >
+                Learn More
+              </a>
+            </Link>
           </div>
         </div>
         {sections.map(section => (
@@ -52,32 +52,34 @@ export default function WorkshopList() {
               >
                 {section.workshops.map(workshop => (
                   <Link
+                    key={workshop.title}
                     href={"/workshops/" + workshop.url}
                   >
-                    <li
-                      key={workshop.title}
-                      className="flex rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg hover:cursor-pointer duration-100 px-6 py-5"
-                    >
-                      <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
-                        <div className="flex-shrink-0 w-24 h-24 rounded-full overflow-hidden relative lg:w-28 lg:h-28">
-                          <Image
-                            layout="fill"
-                            objectFit="cover"
-                            objectPosition="center center"
-                            src={workshop.photo}
-                            alt={workshop.title}
-                            placeholder="blur"
-                            sizes="112px"
-                          />
+                    <a>
+                      <li
+                        className="flex rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg hover:cursor-pointer duration-100 px-6 py-5"
+                      >
+                        <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
+                          <div className="flex-shrink-0 w-24 h-24 rounded-full overflow-hidden relative lg:w-28 lg:h-28">
+                            <Image
+                              layout="fill"
+                              objectFit="cover"
+                              objectPosition="center center"
+                              src={workshop.photo}
+                              alt={workshop.title}
+                              placeholder="blur"
+                              sizes="112px"
+                            />
+                          </div>
+                          <div className="flex-1 min-w-0 space-y-2">
+                            <span className="" aria-hidden="true"></span>
+                            <p className="text-xl font-medium">{workshop.title}</p>
+                            <p className="text-gray-500 font-medium">{workshop.date.format("MMMM D, YYYY")}</p>
+                            <p className="text-gray-500">{workshop.description}</p>
+                          </div>
                         </div>
-                        <div className="flex-1 min-w-0 space-y-2">
-                          <span className="" aria-hidden="true"></span>
-                          <p className="text-xl font-medium">{workshop.title}</p>
-                          <p className="text-gray-500 font-medium">{workshop.date.format("MMMM D, YYYY")}</p>
-                          <p className="text-gray-500">{workshop.description}</p>
-                        </div>
-                      </div>
-                    </li>
+                      </li>
+                    </a>
                   </Link>
                 ))}
               </ul>
