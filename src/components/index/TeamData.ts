@@ -3,6 +3,7 @@ import {
   akshar,
   albertz,
   amogha,
+  andi,
   andrew,
   arpan,
   atharv,
@@ -32,6 +33,7 @@ import {
   ramit,
   ryan,
   sofia,
+  siyong,
   varun,
   vikas_thoutam,
   vivian,
@@ -62,6 +64,7 @@ const roles = {
   videoInstructor: "Self-Study Classes",
   instructor: "Instructor",
   clubCurriculum: "Curriculum Developer",
+  founder: "Founding Member",
 }
 
 const members: { [key: string]: Member } = {
@@ -70,6 +73,7 @@ const members: { [key: string]: Member } = {
     name: "Adham Ibrahim",
     titles: [roles.liveInstructor],
     email: "adhamibrahim719@gmail.com",
+    github: "adham-ibrahim7",
   },
   akshar: {
     photo: akshar,
@@ -97,10 +101,19 @@ const members: { [key: string]: Member } = {
       roles.videoInstructor,
     ],
   },
+  andi: {
+    photo: andi,
+    name: "Andi Qu",
+    titles: [roles.founder],
+    email: "andi@andiqu.com",
+    github: "dolphingarlic",
+    codeforces: "dolphingarlic",
+    website: "https://andiqu.com/",
+  },
   andrew: {
     photo: andrew,
     name: "Andrew Wang",
-    titles: ["Former Secretary"],
+    titles: [roles.founder, "Former Secretary"],
     github: "andrewwangva",
     codeforces: "a.wang",
     email: "andrewwangva.biz@gmail.com",
@@ -126,7 +139,7 @@ const members: { [key: string]: Member } = {
   benq: {
     photo: benq,
     name: "Benjamin Qi",
-    titles: ["Former Content Director", "2x IOI Winner"],
+    titles: [roles.founder, "Content Director", "2x IOI Winner"],
     github: "bqi343",
     codeforces: "Benq",
     email: "bqi343@gmail.com",
@@ -140,7 +153,7 @@ const members: { [key: string]: Member } = {
   darren: {
     photo: darren,
     name: "Darren Yao",
-    titles: ["Director of Outreach"],
+    titles: [roles.founder, "Board"],
     github: "darren-yao",
     website: "http://darrenyao.com/",
     codeforces: "darren_yao",
@@ -232,7 +245,7 @@ const members: { [key: string]: Member } = {
   melody: {
     photo: melody,
     name: "Melody Yu",
-    titles: ["Executive", roles.videoInstructor],
+    titles: ["Executive", "Director of Outreach", roles.videoInstructor],
     github: "cskitty",
     website: "https://melodyyu.com/",
     email: "ocmelodyyu@gmail.com",
@@ -241,7 +254,7 @@ const members: { [key: string]: Member } = {
   michael: {
     photo: michael,
     name: "Michael Cao",
-    titles: ["Director of Clubs"],
+    titles: [roles.founder, "Director of Clubs"],
     github: "caoash",
     codeforces: "caoash",
     email: "caoash@gmail.com",
@@ -255,7 +268,7 @@ const members: { [key: string]: Member } = {
   nathanc: {
     photo: nathanc,
     name: "Nathan Chen",
-    titles: ["Former Treasurer", "2x Finalist"],
+    titles: [roles.founder, "Former Treasurer", "2x Finalist"],
     github: "nchn27",
     codeforces: "nchn27",
     email: "nchn27@gmail.com",
@@ -269,7 +282,13 @@ const members: { [key: string]: Member } = {
   nathanw: {
     photo: nathanw,
     name: "Nathan Wang",
-    titles: ["Board", "3x Finalist", roles.webdev, roles.videoInstructor],
+    titles: [
+      roles.founder,
+      "Board",
+      "3x Finalist",
+      roles.webdev,
+      roles.videoInstructor,
+    ],
     github: "thecodingwizard",
     website: "https://thecodingwizard.me/",
     codeforces: "thecodingwizard",
@@ -315,6 +334,13 @@ const members: { [key: string]: Member } = {
     github: "ryanchou-dev",
     website: "https://www.ryanchou.dev/",
   },
+  siyong: {
+    photo: siyong,
+    name: "Siyong Huang",
+    titles: [roles.founder],
+    github: "frodakcin",
+    codeforces: "frodakcin",
+  },
   sofia: {
     photo: sofia,
     name: "Sofia Yang",
@@ -345,84 +371,6 @@ const members: { [key: string]: Member } = {
   },
 }
 
-const core: Member[] = [
-  members.nathanw,
-  members.maggie,
-  members.melody,
-  members.daniel,
-  members.jeffrey,
-  members.darren,
-  members.michael,
-  members.dong,
-  members.harry,
-  members.neo,
-  members.jay,
-  members.amy,
-]
-const webdev: Member[] = [
-  members.maggie,
-  members.mrinall,
-  members.nathang,
-  members.nathanw,
-  members.neo,
-  members.oscar,
-]
-const instructors: Member[] = [
-  // live and video instructors
-  members.jay,
-  members.amy,
-  members.amogha,
-  members.atharv,
-  members.david_li,
-  members.davidz,
-  members.nikhil,
-  members.ryan,
-  members.varun,
-  members.vikas_thoutam,
-
-  // live instructors
-  members.adham,
-  members.dong,
-  members.dustin,
-
-  // video instructors
-  // members.akshar,
-  members.albertz,
-  members.arpan,
-  // members.egor,
-  members.harry,
-  members.jeffrey,
-  members.jonathan,
-  members.maggie,
-  members.melody,
-  members.nathanw,
-  members.neo,
-  // members.ramit,
-  members.vivian,
-  members.yifan,
-]
-
-const curriculum: Member[] = [
-  members.michael,
-  members.albertz,
-  members.arpan,
-  members.nikhil,
-  members.oscar,
-  members.pranav,
-]
-const guideTeam: Member[] = [
-  members.dong,
-  members.harry,
-  members.neo,
-  members.jesse,
-  members.sofia,
-  members.nathang,
-  members.arpan,
-  members.ryan,
-  members.dustin,
-  members.ben,
-]
-const alumni: Member[] = [members.andrew, members.benq, members.nathanc]
 const notPictured: Omit<Member, "photo">[] = [
   {
     name: "Kevin Sheng",
@@ -441,30 +389,57 @@ const notPictured: Omit<Member, "photo">[] = [
     codeforces: "sus",
   },
 ]
-const sections = [
-  {
-    title: "Core Team",
-    members: core,
-  },
-  {
-    title: "Web Developers",
-    members: webdev,
-  },
-  {
-    title: "Instructors",
-    members: instructors,
-  },
-  {
-    title: "USACO Guide Team",
-    members: guideTeam,
-  },
-  {
-    title: "Curriculum Developers",
-    members: curriculum,
-  },
-  {
-    title: "Alumni",
-    members: alumni,
-  },
+const orderedFirst: Member[] = [
+  members.nathanw,
+  members.darren,
+  members.benq,
+  members.maggie,
+  members.melody,
+  members.daniel,
+  members.jeffrey,
+  members.michael,
+  members.dong,
+  members.harry,
+  members.neo,
+  members.jay,
+  members.amy,
+  members.andi,
+  members.andrew,
+  members.nathanc,
+  members.siyong,
 ]
-export default sections
+const rest: Member[] = [
+  members.mrinall,
+  members.nathang,
+  members.oscar,
+  members.amogha,
+  members.atharv,
+  members.david_li,
+  members.davidz,
+  members.nikhil,
+  members.ryan,
+  members.varun,
+  members.vikas_thoutam,
+  members.adham,
+  members.dustin,
+  // members.akshar,
+  members.albertz,
+  members.arpan,
+  // members.egor,
+  members.jonathan,
+  // members.ramit,
+  members.vivian,
+  members.yifan,
+  members.pranav,
+  members.jesse,
+  members.sofia,
+  members.ben,
+]
+const sortedPeople = rest.sort((a, b) => {
+  if (a.titles.length === b.titles.length) {
+    return a.name.localeCompare(b.name)
+  }
+  return b.titles.length - a.titles.length
+})
+const people = [...orderedFirst, ...sortedPeople]
+export default people

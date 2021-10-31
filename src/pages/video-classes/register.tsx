@@ -54,11 +54,13 @@ import FinancialAidSubmissionSection from "../../components/video-classes/regist
 import PaymentSection from "../../components/video-classes/registration/PaymentSection"
 
 export default function ClassRegistrationPage() {
-  const [level, setLevel] = useState<"" | "beginner" | "intermediate">("beginner")
+  const [level, setLevel] = useState<"" | "beginner" | "intermediate">(
+    "beginner"
+  )
   useEffect(() => {
     const handler = () => {
       if (
-        ["beginner"/*, "intermediate" */].includes(
+        ["beginner" /*, "intermediate" */].includes(
           window.location.hash.substring(1)
         )
       ) {
@@ -76,7 +78,7 @@ export default function ClassRegistrationPage() {
     }
   }, [])
   useEffect(() => {
-    if (["beginner"/*, "intermediate" */].includes(level)) {
+    if (["beginner" /*, "intermediate" */].includes(level)) {
       window.location.hash = "#" + level
     }
   }, [level])
