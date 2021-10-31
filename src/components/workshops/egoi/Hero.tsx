@@ -1,9 +1,5 @@
 import * as React from "react"
-// @ts-ignore
-import heroImg from "../../../images/egoi-hero.png"
-import EmailForm from "../../video-classes/EmailForm"
 import Youtube from "../../Youtube"
-import Image from "next/image"
 
 export default function Hero() {
   return (
@@ -21,10 +17,9 @@ export default function Hero() {
                 </span>
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                The Competitive Programming Initiative held its second
-                workshop on October 17th, 2pm PDT! Watch to learn from the
-                experience of the 2021 EGOI (European Girls' Olympiad in
-                Informatics) team!
+                The Competitive Programming Initiative held its second workshop
+                on October 17th, 2pm PDT! Watch to learn from the experience of
+                the 2021 EGOI (European Girls' Olympiad in Informatics) team!
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
