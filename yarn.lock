@@ -1958,6 +1958,11 @@ date-and-time@^2.0.0:
   resolved "https://registry.yarnpkg.com/date-and-time/-/date-and-time-2.0.0.tgz#99f5fb6b6c7bcd4d1f6dcbeb37553dc0ff797b65"
   integrity sha512-HJSzj25iPm8E01nt+rSmCIlwjsmjvKfUivG/kXBglpymcHF1FolWAqWwTEV4FvN1Lx5UjPf0J1W4H8yQsVBfFg==
 
+dayjs@^1.10.7:
+  version "1.10.7"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.10.7.tgz#2cf5f91add28116748440866a0a1d26f3a6ce468"
+  integrity sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig==
+
 debug@2:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"

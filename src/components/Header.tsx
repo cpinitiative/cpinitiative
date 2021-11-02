@@ -25,7 +25,7 @@ export default function Header({
     },
     {
       label: "Workshops",
-      url: "/workshop/egoi",
+      url: "/workshops",
     },
   ]
 
