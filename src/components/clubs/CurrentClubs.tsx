@@ -7,16 +7,21 @@ import {
   bellarmine,
   branham,
   del_norte,
+  delhi,
+  east_career,
   fremont,
   horace_greeley,
   interlake,
   linnerton,
+  marvin_ridge,
   monrovia,
   monta_vista,
+  montgomery,
   nanjing,
   north_andover,
   northview,
   oak_valley,
+  orange,
   panther_creek,
   pingry,
   rickards,
@@ -27,6 +32,8 @@ import {
   suncoast,
   tompkins,
   troy,
+  westwood,
+  white_station,
   whitfield,
   whitney,
   windermere,
@@ -93,6 +100,16 @@ const clubs: {
     region: "California",
   },
   {
+    name: "Delhi Public School",
+    photo: delhi,
+    region: "India",
+  },
+  {
+    name: "East Career & Technical Academy",
+    photo: east_career,
+    region: "Nevada"
+  },
+  {
     name: "Fremont High School",
     photo: fremont,
     region: "California",
@@ -113,6 +130,11 @@ const clubs: {
     region: "Maryland",
   },
   {
+    name: "Marvin Ridge High School",
+    photo: marvin_ridge,
+    region: "North Carolina",
+  },
+  {
     name: "Monrovia HS",
     photo: monrovia,
     region: "California",
@@ -121,6 +143,11 @@ const clubs: {
     name: "Monta Vista High School",
     photo: monta_vista,
     region: "California",
+  },
+  {
+    name: "Montgomery High School",
+    photo: montgomery,
+    region: "New Jersey",
   },
   {
     name: "Nanjing International School",
@@ -141,6 +168,11 @@ const clubs: {
     name: "Oak Valley MS",
     photo: oak_valley,
     region: "California",
+  },
+  {
+    name: "Orange High School",
+    photo: orange,
+    region: "Ohio",
   },
   {
     name: "Panther Creek High School",
@@ -191,6 +223,16 @@ const clubs: {
     name: "Troy HS",
     photo: troy,
     region: "Michigan",
+  },
+  {
+    name: "Westwood High School",
+    photo: westwood,
+    region: "Texas",
+  },
+  {
+    name: "White Station High School",
+    photo: white_station,
+    region: "Tennessee",
   },
   {
     name: "Whitfield HS",
