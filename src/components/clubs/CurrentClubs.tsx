@@ -7,17 +7,25 @@ import {
   bellarmine,
   branham,
   del_norte,
+  delhi,
+  east_career,
   fremont,
   horace_greeley,
+  independence,
   interlake,
+  ladue_horton,
   linnerton,
+  marvin_ridge,
   monrovia,
   monta_vista,
+  montgomery,
   nanjing,
   north_andover,
   northview,
   oak_valley,
+  orange,
   panther_creek,
+  potomac,
   pingry,
   rickards,
   riverhill,
@@ -25,8 +33,11 @@ import {
   smic,
   stanford_online,
   suncoast,
+  tenafly,
   tompkins,
   troy,
+  westwood,
+  white_station,
   whitfield,
   whitney,
   windermere,
@@ -93,6 +104,16 @@ const clubs: {
     region: "California",
   },
   {
+    name: "Delhi Public School",
+    photo: delhi,
+    region: "India",
+  },
+  {
+    name: "East Career & Technical Academy",
+    photo: east_career,
+    region: "Nevada"
+  },
+  {
     name: "Fremont High School",
     photo: fremont,
     region: "California",
@@ -103,14 +124,29 @@ const clubs: {
     region: "New York",
   },
   {
+    name: "Independence High School",
+    photo: independence,
+    region: "Texas",
+  },
+  {
     name: "Interlake High School",
     photo: interlake,
     region: "Washington",
   },
   {
+    name: "Ladue Horton Watkins HS",
+    photo: ladue_horton,
+    region: "Missouri",
+  },
+  {
     name: "Linnerton High School",
     photo: linnerton,
     region: "Maryland",
+  },
+  {
+    name: "Marvin Ridge High School",
+    photo: marvin_ridge,
+    region: "North Carolina",
   },
   {
     name: "Monrovia HS",
@@ -121,6 +157,11 @@ const clubs: {
     name: "Monta Vista High School",
     photo: monta_vista,
     region: "California",
+  },
+  {
+    name: "Montgomery High School",
+    photo: montgomery,
+    region: "New Jersey",
   },
   {
     name: "Nanjing International School",
@@ -143,6 +184,11 @@ const clubs: {
     region: "California",
   },
   {
+    name: "Orange High School",
+    photo: orange,
+    region: "Ohio",
+  },
+  {
     name: "Panther Creek High School",
     photo: panther_creek,
     region: "North Carolina",
@@ -151,6 +197,11 @@ const clubs: {
     name: "Pingry School",
     photo: pingry,
     region: "New Jersey",
+  },
+  {
+    name: "Potomac High School",
+    photo: potomac,
+    region: "Maryland",
   },
   {
     name: "Rickards HS",
@@ -183,6 +234,11 @@ const clubs: {
     region: "Florida",
   },
   {
+    name: "Tenafly High School",
+    photo: tenafly,
+    region: "New Jersey",
+  },
+  {
     name: "Tompkins HS",
     photo: tompkins,
     region: "Texas",
@@ -191,6 +247,16 @@ const clubs: {
     name: "Troy HS",
     photo: troy,
     region: "Michigan",
+  },
+  {
+    name: "Westwood High School",
+    photo: westwood,
+    region: "Texas",
+  },
+  {
+    name: "White Station High School",
+    photo: white_station,
+    region: "Tennessee",
   },
   {
     name: "Whitfield HS",
