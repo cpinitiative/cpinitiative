@@ -148,7 +148,7 @@ const members: { [key: string]: Member } = {
     photo: daniel,
     name: "Daniel Guan",
     github: "DGuan64",
-    titles: ["Director of Classes", "Finalist"],
+    titles: [roles.founder, "Director of Classes", "Finalist"],
   },
   darren: {
     photo: darren,
