@@ -11,7 +11,9 @@ import {
   east_career,
   fremont,
   horace_greeley,
+  independence,
   interlake,
+  ladue_horton,
   linnerton,
   marvin_ridge,
   monrovia,
@@ -23,6 +25,7 @@ import {
   oak_valley,
   orange,
   panther_creek,
+  potomac,
   pingry,
   rickards,
   riverhill,
@@ -30,6 +33,7 @@ import {
   smic,
   stanford_online,
   suncoast,
+  tenafly,
   tompkins,
   troy,
   westwood,
@@ -120,9 +124,19 @@ const clubs: {
     region: "New York",
   },
   {
+    name: "Independence High School",
+    photo: independence,
+    region: "Texas",
+  },
+  {
     name: "Interlake High School",
     photo: interlake,
     region: "Washington",
+  },
+  {
+    name: "Ladue Horton Watkins HS",
+    photo: ladue_horton,
+    region: "Missouri",
   },
   {
     name: "Linnerton High School",
@@ -185,6 +199,11 @@ const clubs: {
     region: "New Jersey",
   },
   {
+    name: "Potomac High School",
+    photo: potomac,
+    region: "Maryland",
+  },
+  {
     name: "Rickards HS",
     photo: rickards,
     region: "Florida",
@@ -213,6 +232,11 @@ const clubs: {
     name: "Suncoast Community HS",
     photo: suncoast,
     region: "Florida",
+  },
+  {
+    name: "Tenafly High School",
+    photo: tenafly,
+    region: "New Jersey",
   },
   {
     name: "Tompkins HS",

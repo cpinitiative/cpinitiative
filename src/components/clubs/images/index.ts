@@ -8,7 +8,9 @@ import delhi from "./delhi.jpg"
 import east_career from "./east_career.jpg"
 import fremont from "./fremont.jpg"
 import horace_greeley from "./horace_greeley.jpg"
+import independence from "./independence.jpg"
 import interlake from "./interlake.jpg"
+import ladue_horton from "./ladue_horton.jpg"
 import linnerton from "./linnerton.jpg"
 import marvin_ridge from "./marvin_ridge.jpg"
 import monrovia from "./monrovia_high.jpg"
@@ -21,12 +23,14 @@ import oak_valley from "./oak_valley.jpg"
 import orange from "./orange.jpg"
 import panther_creek from "./panther_creek.jpg"
 import pingry from "./pingry.jpg"
+import potomac from "./potomac.png"
 import rickards from "./rickards.png"
 import riverhill from "./riverhill.jpg"
 import shanghai from "./shanghai.jpg"
 import smic from "./smic.jpg"
 import stanford_online from "./stanford_online.jpg"
 import suncoast from "./suncoast.png"
+import tenafly from "./tenafly.jpg"
 import tompkins from "./tompkins.jpg"
 import troy from "./troy.jpg"
 import westwood from "./westwood.jpg"
@@ -46,7 +50,9 @@ export {
   east_career,
   fremont,
   horace_greeley,
+  independence,
   interlake,
+  ladue_horton,
   linnerton,
   marvin_ridge,
   monrovia,
@@ -59,12 +65,14 @@ export {
   orange,
   panther_creek,
   pingry,
+  potomac,
   rickards,
   riverhill,
   shanghai,
   smic,
   stanford_online,
   suncoast,
+  tenafly,
   tompkins,
   troy,
   westwood,
