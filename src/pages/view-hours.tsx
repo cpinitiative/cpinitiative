@@ -21,19 +21,22 @@ export function VolunteerHourHistory({ data }) {
                 <div className="flex-1 space-y-1">
                   <div className="flex items-center justify-between">
                     <h3 className="text-sm font-medium">
-                      {new Date(item.time).toDateString()}
+                      {new Date(item.time).toDateString()} {`(${item.role})`}
                     </h3>
                     <p className="text-sm text-gray-500">{item.hrs} hours</p>
                   </div>
                   {item.response && (
                     <div className="flex flex-col space-y-1">
-                      {Object.entries(item.response).map((pair) => {
+                      {Object.entries(item.response).map(pair => {
                         return (
-                            <span className="text-sm text-gray-500 whitespace-pre" key={`${item.time}_${pair[0]}`}>
-                              <b>{pair[0]}:</b>{" "}{pair[1]}
-                            </span>
-                          )
-                        })}
+                          <span
+                            className="text-sm text-gray-500 whitespace-pre"
+                            key={`${item.time}_${pair[0]}`}
+                          >
+                            <b>{pair[0]}:</b> {pair[1]}
+                          </span>
+                        )
+                      })}
                     </div>
                   )}
                 </div>
@@ -45,25 +48,32 @@ export function VolunteerHourHistory({ data }) {
   )
 }
 
-function reducer(state, action) {
-  return {...state, [action.q]: action.value}
+type State = Record<string, string>
+type Action = { q: string; value: string }
+
+function reducer(state: State, action: Action): State {
+  return { ...state, [action.q]: action.value }
 }
 
-export function AddVolunteerHoursForm({data}) {
+export function AddVolunteerHoursForm({ data }) {
   const initialState = {}
-  data?.questions.forEach(question => {
-    initialState[question] = ""
-  })
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialState)
   const [response, setResponse] = React.useState(null)
   const [hours, setHours] = React.useState("")
   const [error, setError] = React.useState("")
   const [loading, setLoading] = React.useState(false)
+  const [role, setRole] = React.useState("")
   // useEffect(()=>console.log("state", state),[state])
   const submitHours = () => {
-    setLoading(true)
     setError("")
     setResponse("")
+    setLoading(true)
+    if (role === "") {
+      setError("Please select a role before submitting.")
+      setLoading(false)
+      return
+    }
+    const keys = data?.questions[role] as string[]
     fetch("/api/addHours", {
       method: "POST",
       headers: {
@@ -71,7 +81,11 @@ export function AddVolunteerHoursForm({data}) {
       },
       body: JSON.stringify({
         hours,
-        response: state
+        response: keys.reduce(
+          (acc, key) => ({ ...acc, [key]: state[key] }),
+          {}
+        ),
+        role,
       }),
     })
       .then(res => res.json())
@@ -111,6 +125,29 @@ export function AddVolunteerHoursForm({data}) {
 
       <div className="relative border border-gray-300 px-3 py-2 focus-within:z-10 rounded-t-md focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
         <label
+          htmlFor="role"
+          className="block w-full text-sm font-medium text-gray-700"
+        >
+          Role
+        </label>
+        <select
+          onChange={e => setRole(e.target.value)}
+          value={role}
+          name="role"
+          id="role"
+          className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0"
+        >
+          <option value="">Select a role...</option>
+          {Object.keys(data?.questions).map(role => (
+            <option key={`role_${role}`} value={role}>
+              {role}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div className="relative border border-gray-300 px-3 py-2 focus-within:z-10 rounded-t-md focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
+        <label
           htmlFor="job-title"
           className="block w-full text-sm font-medium text-gray-700"
         >
@@ -125,20 +162,26 @@ export function AddVolunteerHoursForm({data}) {
           placeholder="Ex. 42"
         />
       </div>
-      {data?.questions.map((q) => (
-        <div key={`question_form_${q}`} className="relative border border-gray-300 rounded-md rounded-t-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
-          <label className="block w-full text-sm font-medium text-gray-700">
-            {q}
-          </label>
-          <textarea
-            rows={5}
-            onChange={e => dispatch({q, value: e.target.value})}
-            value={state[q]}
-            className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0"
-            placeholder="Enter your text here..."
-          />
-        </div>
-      ))}
+      {data?.questions &&
+        Object.entries<string>(data.questions[role] ?? []).map(([_, q]) => {
+          return (
+            <div
+              key={`question_form_${q}`}
+              className="relative border border-gray-300 rounded-md rounded-t-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600"
+            >
+              <label className="block w-full text-sm font-medium text-gray-700">
+                {q}
+              </label>
+              <textarea
+                rows={5}
+                onChange={e => dispatch({ q, value: e.target.value })}
+                value={state[q]}
+                className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0"
+                placeholder="Enter your text here..."
+              />
+            </div>
+          )
+        })}
       {error && (
         <div className="w-full flex flex-row p-1 bg-red-200 my-2 rounded-md text-red-800">
           {/* Error Icon */}
@@ -228,18 +271,13 @@ export default function ViewHours() {
                   <h3 className="mx-auto mb-6 text-purple-800 text-sm">
                     Email: {session?.user?.email}
                   </h3>
-                  
                 </div>
                 <div className="flex bg-white flex-col px-3 py-5 col-span-2 row-span-2 rounded-lg shadow-lg">
                   {data ? (
-                    <><p className="text-purple-800 font-semibold text-3xl m-auto">
+                    <p className="text-purple-800 font-semibold text-3xl m-auto">
                       <b>{Math.round(data?.totalHours * 100) / 100}</b> hours
                       volunteered
                     </p>
-                    <p className="text-purple-800 font-semibold text-2xl m-auto">
-                      <b>Current Role: </b>{data?.role}
-                    </p>
-                    </>
                   ) : (
                     // spinner
                     <div className="flex items-center justify-center ">

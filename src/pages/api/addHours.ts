@@ -19,7 +19,7 @@ export default async function handler(
   const session = await getSession({ req })
   const email = session.user?.email
 
-  const { hours, response } = req.body
+  const { hours, response, role } = req.body
   const name = session?.user?.name
 
   if (!name) return res.status(400).json({ error: "Name is required" })
@@ -28,6 +28,8 @@ export default async function handler(
     return res.status(400).json({ error: "Hours must be a number" })
   if (!response || !isNaN(response))
     return res.status(400).json({ error: "Response is required" })
+  if (!role || !isNaN(role))
+    return res.status(400).json({ error: "Role is required" })
 
   if (
     !Object.keys(VolunteerInfo).some(key =>
@@ -48,9 +50,9 @@ export default async function handler(
     time,
     email,
     hours,
-    response
+    response,
+    role,
   })
-
   ;(async function () {
     const doc = new GoogleSpreadsheet(SHEETS_METADATA.spreadSheetId)
 
@@ -58,7 +60,14 @@ export default async function handler(
     await doc.loadInfo()
 
     const sheet = doc.sheetsByIndex[0]
-    await sheet.addRow({"Timestamp": time, "Name": name, "Email": email, "Hours": hours, "Response": YAML.stringify(response) })
+    await sheet.addRow({
+      Timestamp: time,
+      Name: name,
+      Email: email,
+      Hours: hours,
+      Response: YAML.stringify(response),
+      Role: role,
+    })
   })()
 
   return res.status(200).json({

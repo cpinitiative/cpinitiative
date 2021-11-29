@@ -39,7 +39,7 @@ export default async function handler(
     })
 
     // console.log(volunteerInfo)
-    let volunteerInfo;
+    let volunteerInfo
     if (volunteerRecord?.length > 1 && volunteerRecord[1]) {
       // @ts-ignore
       volunteerInfo = volunteerRecord[1]
@@ -66,11 +66,13 @@ export default async function handler(
 
     const rolesSheet = doc.sheetsByIndex[1]
     const rolesSheetRows = await rolesSheet.getRows()
-    const cols = rolesSheet.headerValues
+    const roles = rolesSheet.headerValues
     const rolesSheetRowLength = rolesSheetRows.length + 1
     // load questions for each role and all responses
     await Promise.all([
-      rolesSheet.loadCells(`A2:${String.fromCharCode(65 + cols.length-1)}${rolesSheetRowLength}`),
+      rolesSheet.loadCells(
+        `A2:${String.fromCharCode(65 + roles.length - 1)}${rolesSheetRowLength}`
+      ),
       // timestamp col
       hourSheet.loadCells(`A2:A${hourSheetRowLength}`),
       // name col
@@ -81,12 +83,12 @@ export default async function handler(
       hourSheet.loadCells(`D2:D${hourSheetRowLength}`),
       // response col
       hourSheet.loadCells(`E2:E${hourSheetRowLength}`),
+      // role col
+      hourSheet.loadCells(`F2:F${hourSheetRowLength}`),
     ])
 
     let totalHours = 0
     let data = []
-    
-    const role = volunteerInfo?.role
 
     for (let i = 2; i <= hourSheetRowLength; i++) {
       const findData = async () => {
@@ -102,6 +104,7 @@ export default async function handler(
         const em = await hourSheet.getCellByA1(`C${i}`).value
         const hrs = await hourSheet.getCellByA1(`D${i}`).value
         const response = YAML.parse(await hourSheet.getCellByA1(`E${i}`).value)
+        const role = await hourSheet.getCellByA1(`F${i}`).value
 
         if (
           // @ts-ignore
@@ -111,25 +114,31 @@ export default async function handler(
         ) {
           console.log("found", i, parseFloat(hrs))
           totalHours += parseFloat(hrs) || 0 // default to 0 if not a number
-          data = [...data, { time, em, hrs, response }]
+          data = [...data, { time, em, hrs, response, role }]
         }
       }
 
       await findData()
     }
 
-    const roleCol = cols.findIndex(col => role === col)
-    let questions = []
-    for (let i = 2; i <= rolesSheetRowLength; i++) {
-      const cell = `${String.fromCharCode(65 + roleCol)}${i}`
-      questions.push(await rolesSheet.getCellByA1(cell).value)
-    }
+    let questions: Record<string, string[]> = {}
 
-    questions = questions.filter(q => q)
+    for (let role in roles) {
+      role = roles[role]
+      const roleCol = roles.findIndex(col => role === col)
+      for (let i = 2; i <= rolesSheetRowLength; i++) {
+        const cell = `${String.fromCharCode(65 + roleCol)}${i}`
+        if (!questions[role]) {
+          questions[role] = []
+        }
+        questions[role].push(await rolesSheet.getCellByA1(cell).value)
+        questions[role] = questions[role].filter(q => q)
+      }
+    }
 
     // @ts-ignore
     data = data.sort((a, b) => new Date(b.time) - new Date(a.time))
 
-    return res.status(200).json({ totalHours, questions, data, role })
+    return res.status(200).json({ totalHours, questions, data })
   })()
 }
