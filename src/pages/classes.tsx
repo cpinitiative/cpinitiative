@@ -28,7 +28,10 @@ export default function Classes() {
                 <div className="lg:grid lg:grid-cols-8 lg:gap-8">
                   <div className="mx-auto lg:ml-0 max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center lg:col-span-5">
                     <div className="lg:py-24">
-                      <h1 className="text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+                      <span className="text-base font-semibold tracking-wider text-cyan-300 uppercase sm:mt-5 lg:mt-6">
+                        Winter Session
+                      </span>
+                      <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-6xl xl:text-6xl mt-2">
                         <span className="block">Live Online</span>
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 block">
                           USACO Classes
@@ -40,13 +43,11 @@ export default function Classes() {
                         designed and developed by past USACO Finalists.
                       </p>
                       <div className="mt-8 sm:mt-12 space-y-2 sm:space-x-4">
-                        <a
-                          href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
-                          target="_blank"
-                          className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
-                        >
-                          Get Notified of Future Classes
-                        </a>
+                        <Link href="/classes/register">
+                          <a className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
+                            Register Now
+                          </a>
+                        </Link>
                         <br className="sm:hidden" />
                         <a
                           href="mailto:classes@joincpi.org"
@@ -503,18 +504,18 @@ export default function Classes() {
                   <h3>Class Schedule</h3>
                   <ul>
                     <li>
-                      Introductory Class - Fridays, 5:00-7:00pm Pacific Daylight
-                      Time (UTC-7). 10/1/21 to 12/3/21 (skip 11/26).
+                      Introductory Class - Fridays, 4:00-6:00pm Pacific Daylight
+                      Time (UTC-7). 1/7/22 to 3/4/22.
                     </li>
                     <li>
                       Intermediate Class - Saturdays, 4:00-6:00pm Pacific
-                      Daylight Time (UTC-7). 10/2/21 to 12/4/21 (skip 11/27).
+                      Daylight Time (UTC-7). 1/8/22 to 3/5/22.
                     </li>
                   </ul>
 
                   <h3>Pricing</h3>
                   <p>
-                    These classes are <b>not for profit</b> -- instructors are
+                    These classes are <b>not for profit</b> — instructors are
                     unpaid and volunteer their time to help USACO contestants.
                     We ask for a <b>$100 fee</b> to help support the creation of
                     these classes and the infrastructure for the resources we

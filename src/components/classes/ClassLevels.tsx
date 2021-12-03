@@ -1,3 +1,4 @@
+import Link from "next/link"
 import * as React from "react"
 
 export default function ClassLevels() {
@@ -35,7 +36,7 @@ export default function ClassLevels() {
                     </h3>
                   </div>
                   <div className="mt-4 flex items-baseline text-5xl leading-none font-extrabold">
-                    Beginner (Full)
+                    Beginner
                   </div>
                   <p className="mt-5 text-lg leading-7 text-gray-500">
                     Teaches the necessary techniques needed to pass USACO
@@ -45,7 +46,7 @@ export default function ClassLevels() {
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
                     {[
-                      "Fridays, 5-7pm PDT (UTC-7). 10/1 to 12/3 (skip 11/26).",
+                      "Fridays, 4-6pm PDT (UTC-7). 1/7 to 3/4.",
                       "File / Fast I/O",
                       "Time Complexity",
                       "Data Structures and Simulation",
@@ -80,14 +81,14 @@ export default function ClassLevels() {
                     ))}
                   </ul>
                   <div className="rounded-md shadow">
-                    <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
-                      target="_blank"
-                      className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                      aria-describedby="tier-standard"
-                    >
-                      Get Notified of Future Classes
-                    </a>
+                    <Link href="/classes/register/#beginner">
+                      <a
+                        className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                        aria-describedby="tier-standard"
+                      >
+                        Register Now
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -97,13 +98,13 @@ export default function ClassLevels() {
                   <div>
                     <h3
                       className="inline-flex px-4 py-1 text-white font-semibold text-sm uppercase tracking-wide bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full"
-                      id="tier-standard"
+                      id="tier-standard"  
                     >
                       USACO Silver
                     </h3>
                   </div>
                   <div className="mt-4 flex items-baseline text-5xl leading-none font-extrabold">
-                    Intermediate (Full)
+                    Intermediate
                   </div>
                   <p className="mt-5 text-lg leading-7 text-gray-500">
                     Teaches the necessary techniques needed to pass the USACO
@@ -114,7 +115,7 @@ export default function ClassLevels() {
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
                     {[
-                      "Saturdays, 4-6pm PDT (UTC-7). 10/2 to 12/4 (skip 11/27).",
+                      "Saturdays, 4-6pm PDT (UTC-7). 1/8 to 3/5.",
                       "Prefix Sums",
                       "Sorting with Custom Comparators",
                       "Two Pointers",
@@ -150,14 +151,14 @@ export default function ClassLevels() {
                   </ul>
                   <div className="rounded-md shadow">
                     <div className="rounded-md shadow">
-                      <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
-                        target="_blank"
-                        className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                        aria-describedby="tier-standard"
-                      >
-                        Get Notified of Future Classes
-                      </a>
+                      <Link href="/classes/register/#intermediate">
+                        <a
+                          className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                          aria-describedby="tier-standard"
+                        >
+                          Register Now
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -180,14 +181,14 @@ export default function ClassLevels() {
                 </div>
               </div>
               <div className="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
-                  target="_blank"
-                  className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                  aria-describedby="tier-standard"
-                >
-                  Get Notified of Future Classes
-                </a>
+                <Link href="/classes/register">
+                  <a
+                    className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                    aria-describedby="tier-standard"
+                  >
+                    Apply Now
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
