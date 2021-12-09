@@ -1,5 +1,5 @@
 import { signIn, signOut, useSession } from "next-auth/client"
-import React, { Fragment } from "react"
+import React, { Fragment, useEffect, useReducer } from "react"
 import Header from "../components/Header"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
@@ -16,22 +16,28 @@ export function VolunteerHourHistory({ data }) {
         {data &&
           !data?.error &&
           data.data.map(item => (
-            <li key={item.id} className="py-4">
+            <li key={item.time} className="py-4">
               <div className="flex space-x-3">
                 <div className="flex-1 space-y-1">
                   <div className="flex items-center justify-between">
                     <h3 className="text-sm font-medium">
-                      {new Date(item.time).toDateString()}
+                      {new Date(item.time).toDateString()} {`(${item.role})`}
                     </h3>
                     <p className="text-sm text-gray-500">{item.hrs} hours</p>
                   </div>
-                  {item?.prs && (
-                    <p className="text-sm text-gray-500">{item.prs}</p>
-                  )}
-                  {item.other && (
-                    <p className="text-sm text-gray-500">
-                      <b>Other information:</b> {item.other}
-                    </p>
+                  {item.response && (
+                    <div className="flex flex-col space-y-1">
+                      {Object.entries(item.response).map(pair => {
+                        return (
+                          <span
+                            className="text-sm text-gray-500 whitespace-pre"
+                            key={`${item.time}_${pair[0]}`}
+                          >
+                            <b>{pair[0]}:</b> {pair[1]}
+                          </span>
+                        )
+                      })}
+                    </div>
                   )}
                 </div>
               </div>
@@ -42,28 +48,44 @@ export function VolunteerHourHistory({ data }) {
   )
 }
 
+type State = Record<string, string>
+type Action = { q: string; value: string }
+
+function reducer(state: State, action: Action): State {
+  return { ...state, [action.q]: action.value }
+}
+
 export function AddVolunteerHoursForm({ data }) {
+  const initialState = {}
+  const [state, dispatch] = useReducer(reducer, initialState)
   const [response, setResponse] = React.useState(null)
-  const [name, setName] = React.useState("")
   const [hours, setHours] = React.useState("")
-  const [prsReviewed, setPrsReviewed] = React.useState("")
-  const [other, setOther] = React.useState("")
   const [error, setError] = React.useState("")
   const [loading, setLoading] = React.useState(false)
+  const [role, setRole] = React.useState("")
+  // useEffect(()=>console.log("state", state),[state])
   const submitHours = () => {
-    setLoading(true)
     setError("")
     setResponse("")
+    setLoading(true)
+    if (role === "") {
+      setError("Please select a role before submitting.")
+      setLoading(false)
+      return
+    }
+    const keys = data?.questions[role] as string[]
     fetch("/api/addHours", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        name,
-        hours: hours,
-        prsReviewed,
-        other,
+        hours,
+        response: keys.reduce(
+          (acc, key) => ({ ...acc, [key]: state[key] }),
+          {}
+        ),
+        role,
       }),
     })
       .then(res => res.json())
@@ -103,6 +125,29 @@ export function AddVolunteerHoursForm({ data }) {
 
       <div className="relative border border-gray-300 px-3 py-2 focus-within:z-10 rounded-t-md focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
         <label
+          htmlFor="role"
+          className="block w-full text-sm font-medium text-gray-700"
+        >
+          Role
+        </label>
+        <select
+          onChange={e => setRole(e.target.value)}
+          value={role}
+          name="role"
+          id="role"
+          className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0"
+        >
+          <option value="">Select a role...</option>
+          {Object.keys(data?.questions).map(role => (
+            <option key={`role_${role}`} value={role}>
+              {role}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div className="relative border border-gray-300 px-3 py-2 focus-within:z-10 rounded-t-md focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
+        <label
           htmlFor="job-title"
           className="block w-full text-sm font-medium text-gray-700"
         >
@@ -110,35 +155,33 @@ export function AddVolunteerHoursForm({ data }) {
         </label>
         <input
           onChange={e => setHours(e.target.value)}
-          type="text"
+          type="number"
           name="job-title"
           id="job-title"
           className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0"
           placeholder="Ex. 42"
         />
       </div>
-      <div className="relative border border-gray-300 px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
-        <label className="block w-full text-sm font-medium text-gray-700">
-          What did you do this week (pull requests, classes taught, etc.)
-        </label>
-        <textarea
-          onChange={e => setPrsReviewed(e.target.value)}
-          rows={8}
-          className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0"
-          placeholder="Ex. I reviewed pull requests #1,2,3 and taught the USACO Bronze class"
-        />
-      </div>
-      <div className="relative border border-gray-300 rounded-md rounded-t-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
-        <label className="block w-full text-sm font-medium text-gray-700">
-          Is there anything else you would like to add?
-        </label>
-        <textarea
-          rows={5}
-          onChange={e => setOther(e.target.value)}
-          className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0"
-          placeholder="Ex. The majority of my time was dedicated to creating visualizations."
-        />
-      </div>
+      {data?.questions &&
+        Object.entries<string>(data.questions[role] ?? []).map(([_, q]) => {
+          return (
+            <div
+              key={`question_form_${q}`}
+              className="relative border border-gray-300 rounded-md rounded-t-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600"
+            >
+              <label className="block w-full text-sm font-medium text-gray-700">
+                {q}
+              </label>
+              <textarea
+                rows={5}
+                onChange={e => dispatch({ q, value: e.target.value })}
+                value={state[q]}
+                className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0"
+                placeholder="Enter your text here..."
+              />
+            </div>
+          )
+        })}
       {error && (
         <div className="w-full flex flex-row p-1 bg-red-200 my-2 rounded-md text-red-800">
           {/* Error Icon */}
@@ -181,7 +224,7 @@ export function AddVolunteerHoursForm({ data }) {
       )}
       <div className="w-full p-1">
         Your last request was made on:{" "}
-        {new Date(data?.length >= 1 && data[0]?.time)?.toDateString()}
+        {new Date(data.data?.length >= 1 && data.data[0]?.time)?.toDateString()}
       </div>
 
       <button
@@ -222,7 +265,7 @@ export default function ViewHours() {
             <div className="w-full mt-4 mb-10">
               <div className="grid w-full grid-rows-6 grid-cols-none md:grid-rows-2 md:grid-cols-1 md:grid-flow-col gap-3">
                 <div className="row-span-3 bg-white p-3 flex flex-col rounded-md shadow-lg text-5xl font-extrabold">
-                  <h1 className="m-auto text-purple-900 underline">
+                  <h1 className="m-auto text-purple-900 underline text-center">
                     {session?.user?.name}
                   </h1>
                   <h3 className="mx-auto mb-6 text-purple-800 text-sm">
@@ -331,7 +374,7 @@ export default function ViewHours() {
                         Add your hours
                       </Dialog.Title>
 
-                      <AddVolunteerHoursForm data={data?.data} />
+                      <AddVolunteerHoursForm data={data} />
 
                       {/* <div className="">
                         <button
