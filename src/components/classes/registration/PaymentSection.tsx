@@ -67,7 +67,7 @@ export default function PaymentSection({
                   <p className="mt-1 text-sm text-gray-600">
                     Returns: If you are not satisfied with our classes, you may
                     cancel your class registration anytime before the{" "}
-                    <b>second</b> class for a partial refund of <b>$90</b> by
+                    <b>second</b> class for a <b>full refund</b> by
                     emailing{" "}
                     <a
                       href={"mailto:classes@joincpi.org"}
