@@ -5,6 +5,7 @@ import Card from "../components/index/Card"
 import Header from "../components/Header"
 import Newsletter from "../components/index/Newsletter"
 import Team from "../components/index/Team"
+import Sponsor from "../components/index/Sponsor"
 
 const IndexPage = () => (
   <Layout>
@@ -81,7 +82,7 @@ const IndexPage = () => (
       </div>
     </div>
     <Newsletter />
-
+    <Sponsor />
     <Team />
   </Layout>
 )
