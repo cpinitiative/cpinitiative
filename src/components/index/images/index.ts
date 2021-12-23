@@ -23,8 +23,10 @@ import davidz from "./davidz.jpg"
 import dong from "./dong.jpg"
 import dustin from "./dustin.jpg"
 import egor from "./egor.jpg"
+import evan from "./evan.jpg"
 import harry from "./harry.jpg"
 import jarvis from "./jarvis.png"
+import jason from "./jason.jpeg"
 import jay from "./jay.jpg"
 import jeffrey from "./jeffrey.png"
 import jesse from "./jesse.jpg"
@@ -34,6 +36,7 @@ import maggie from "./maggie.png"
 import mayank from "./mayank.png"
 import melody from "./melody.png"
 import michael from "./michael.jpg"
+import mithil from "./mithil.jpg"
 import mrinall from "./mrinall.png"
 import nathanc from "./nathanc.jpeg"
 import nathang from "./nathang.png"
@@ -46,6 +49,7 @@ import ramit from "./ramit.jpg"
 import rayna from "./rayna.jpeg"
 import ryan from "./ryan.jpg"
 import sathvik from "./sathvik.png"
+import shikhar from "./shikhar.jpg"
 import siyong from "./siyong.jpeg"
 import sofia from "./sofia.png"
 import tarushii from "./tarushii.jpeg"
@@ -82,8 +86,10 @@ export {
   dong,
   dustin,
   egor,
+  evan,
   harry,
   jarvis,
+  jason,
   jay,
   jeffrey,
   jesse,
@@ -93,6 +99,7 @@ export {
   mayank,
   melody,
   michael,
+  mithil,
   mrinall,
   nathanc,
   nathang,
@@ -105,6 +112,7 @@ export {
   rayna,
   ryan,
   sathvik,
+  shikhar,
   siyong,
   sofia,
   tarushii,
