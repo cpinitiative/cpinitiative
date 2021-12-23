@@ -41,6 +41,11 @@ import {
   jpaulson,
   yifan_ma,
   jesse,
+  evan,
+  jason,
+  mithil,
+  shikhar,
+  alex_chen,
 } from "../index/images"
 
 export type Member = {
@@ -369,6 +374,40 @@ const members: { [key: string]: Member } = {
     name: "Yifan Ma",
     titles: [roles.videoInstructor],
   },
+  shikhar: {
+    photo: shikhar,
+    name: "Shikhar Ahuja",
+    titles: [roles.liveInstructor],
+    email: "ahujashikhar314@gmail.com",
+  },
+  alex: {
+    photo: alex_chen,
+    name: "Alex Chen",
+    titles: [roles.liveInstructor],
+    github: "alexwenchen",
+    codeforces: "Alx",
+  },
+  jason: {
+    photo: jason,
+    name: "Jason Antwi-Appah",
+    titles: [roles.webdev],
+    github: "jasonappah",
+    email: "hey@jasonaa.me",
+    website: "https://jasonaa.me",
+  },
+  mithil: {
+    photo: mithil,
+    name: "Mithil Srungarapu",
+    titles: [roles.webdev],
+    linkedin: "https://www.linkedin.com/in/srungarapumithil/",
+    email: "mithilsmail@gmail.com",
+  },
+  evan: {
+    photo: evan,
+    name: "Evan Zhao",
+    titles: [roles.liveInstructor],
+    email: "evanzhao12@gmail.com",
+  },
 }
 
 const notPictured: Omit<Member, "photo">[] = [
@@ -434,6 +473,11 @@ const rest: Member[] = [
   members.jesse,
   members.sofia,
   members.ben,
+  members.shikhar,
+  members.alex,
+  members.jason,
+  members.mithil,
+  members.evan,
 ]
 const sortedPeople = rest.sort((a, b) => {
   if (a.titles.length === b.titles.length) {
