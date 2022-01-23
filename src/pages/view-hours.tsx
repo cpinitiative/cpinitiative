@@ -287,7 +287,7 @@ export default function ViewHours() {
                 </div>
                 <button
                   type="button"
-                  disabled={data}
+                  disabled={!data}
                   onClick={() => setViewAddHoursForm(true)}
                   className="flex cursor-pointer px-3 shadow-lg rounded-lg row-span-1 col-span-1 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 disabled:saturate-50"
                 >
