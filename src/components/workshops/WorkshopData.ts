@@ -13,6 +13,14 @@ export type Workshop = {
 
 const workshops: Workshop[] = [
   {
+    photo: USACO,
+    title: "USACO January Contest Solutions",
+    description: "Gain an in-depth understanding of the solutions for the January Contest through a joint workshop with X-Camp!",
+    date: dayjs("Feb 5, 2022 7:00:00 PM PST"),
+    url: "usaco-january",
+    themeColor: "yellow",
+  },
+  {
     photo: EGOI,
     title: "Experience & Tips from the USA EGOI Team",
     description:
