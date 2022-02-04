@@ -23,17 +23,22 @@ export function VolunteerHourHistory({ data }) {
                     <h3 className="text-sm font-medium">
                       {new Date(item.time).toDateString()} {`(${item.role})`}
                     </h3>
-                    <p className="text-sm text-gray-500">{item.hrs} hours</p>
+                    {(item.hrs == null) ||  (item.hrs == 0) ? <p className="text-sm text-gray-500">none</p> :
+                     item.hrs == 1? <p className="text-sm text-gray-500">1 hour</p> :
+                    <p className="text-sm text-gray-500">{item.hrs} hours</p>}
                   </div>
                   {item.response && (
                     <div className="flex flex-col space-y-1">
                       {Object.entries(item.response).map(pair => {
                         return (
                           <span
-                            className="text-sm text-gray-500 whitespace-pre"
+                            className="text-sm text-gray-500 whitespace-pre-wrap"
                             key={`${item.time}_${pair[0]}`}
                           >
-                            <b>{pair[0]}:</b> {pair[1]}
+                            <br />
+                            <b>{pair[0]}:</b>
+                            <br />
+                            {pair[1]}
                           </span>
                         )
                       })}
@@ -285,22 +290,25 @@ export default function ViewHours() {
                     </div>
                   )}
                 </div>
-                <div
+                <button
+                  type="button"
+                  disabled={!data}
                   onClick={() => setViewAddHoursForm(true)}
-                  className="flex cursor-pointer px-3 shadow-lg rounded-lg row-span-1 col-span-1 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700"
+                  className="flex cursor-pointer px-3 shadow-lg rounded-lg row-span-1 col-span-1 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 disabled:saturate-50"
                 >
                   <p className="text-white text-base font-medium m-auto">
                     Add Volunteer Hours
                   </p>
-                </div>
-                <div
+                </button>
+                <button
+                  type="button"
                   onClick={() => signOut()}
                   className="flex cursor-pointer p-3 shadow-lg rounded-lg row-span-1 col-span-1 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700"
                 >
                   <p className="text-white text-base font-medium m-auto">
                     Sign out
                   </p>
-                </div>
+                </button>
               </div>
             </div>
             {/* <div>

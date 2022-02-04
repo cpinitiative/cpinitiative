@@ -69,3 +69,4 @@ yarn-error.log
 
 .idea
 .vercel
+**/*.icloud

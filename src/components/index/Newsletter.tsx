@@ -3,7 +3,7 @@ import EmailForm from "../video-classes/EmailForm"
 export default function Newsletter() {
   return (
     <div className="bg-gray-800" id="newsletter">
-      <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center">
+      <div className="max-w-screen-xl mx-auto py-12 px-6 lg:px-8 lg:flex lg:items-center">
         <div className="lg:w-0 lg:flex-1">
           <h2
             className="text-3xl leading-9 font-extrabold tracking-tight text-white sm:text-4xl sm:leading-10"

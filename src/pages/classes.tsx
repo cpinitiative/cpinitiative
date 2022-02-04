@@ -506,12 +506,12 @@ export default function Classes() {
                   <h3>Class Schedule</h3>
                   <ul>
                     <li>
-                      Introductory Class - Fridays, 4:00-6:00pm Pacific Daylight
-                      Time (UTC-7). 1/7/22 to 3/4/22.
+                      Introductory Class - Fridays, 4:00-6:00pm Pacific Standard
+                      Time (UTC-8). 1/7/22 to 3/4/22.
                     </li>
                     <li>
                       Intermediate Class - Saturdays, 4:00-6:00pm Pacific
-                      Daylight Time (UTC-7). 1/8/22 to 3/5/22.
+                      Standard Time (UTC-8). 1/8/22 to 3/5/22.
                     </li>
                   </ul>
 
