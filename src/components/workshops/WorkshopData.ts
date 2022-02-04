@@ -8,7 +8,14 @@ export type Workshop = {
   description: string
   date: dayjs.Dayjs
   url: string // joincpi.org/workshops/{url}
-  themeColor?: string // tailwind color (e.g. blue, red, etc.), defaults to blue if undefined
+  themeColor: string
+}
+
+
+const themeColors = {
+  blue: "bg-blue-600 hover:bg-blue-500 focus:border-blue-700 focus:shadow-outline-blue",
+  yellow: "bg-yellow-600 hover:bg-yellow-500 focus:border-yellow-700 focus:shadow-outline-yellow",
+  cyan: "bg-cyan-600 hover:bg-cyan-500 focus:border-cyan-700 focus:shadow-outline-cyan",
 }
 
 const workshops: Workshop[] = [
@@ -18,7 +25,7 @@ const workshops: Workshop[] = [
     description: "Gain an in-depth understanding of the solutions for the January Contest through a joint workshop with X-Camp!",
     date: dayjs("Feb 5, 2022 7:00:00 PM PST"),
     url: "usaco-january",
-    themeColor: "yellow",
+    themeColor: themeColors.yellow,
   },
   {
     photo: EGOI,
@@ -27,7 +34,7 @@ const workshops: Workshop[] = [
       "Learn from the experience of the 2021 EGOI (European Girls' Olympiad in Informatics) team!",
     date: dayjs("Oct 17 2021 2:00:00 PM PDT"),
     url: "egoi",
-    themeColor: "cyan",
+    themeColor: themeColors.cyan,
   },
   {
     photo: USACO,
@@ -36,6 +43,7 @@ const workshops: Workshop[] = [
       "An introduction to USACO for new competitive programmers. No experience necessary!",
     date: dayjs("Aug 6 2021 4:00:00 PM PDT"),
     url: "beginner",
+    themeColor: themeColors.blue,
   },
   {
     photo: USACO,
@@ -44,6 +52,7 @@ const workshops: Workshop[] = [
       "Experienced USACO contestants explain everything you need to know about getting started with USACO.",
     date: dayjs("Nov 28 2020 5:00:00 PM PDT"),
     url: "intro-to-usaco",
+    themeColor: themeColors.blue,
   },
 ]
 
