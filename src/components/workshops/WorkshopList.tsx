@@ -20,27 +20,21 @@ export default function WorkshopList() {
           <p className="flex justify-center text-center tracking-tight mb-8 text-lg text-gray-500">
             {latestWorkshop.description}
           </p>
-          <div className="flex justify-center h-60">
+          <div className="flex justify-center h-72">
             <Image
               objectPosition="center center"
               src={latestWorkshop.photo}
               alt={latestWorkshop.title}
               placeholder="blur"
-              objectFit="contain"
+              objectFit="cover"
+              className="rounded-lg"
+              width="400px"
             />
           </div>
           <div className="flex justify-center mt-8">
             <Link href={"/workshops/" + latestWorkshop.url}>
               <a
-                className={`shadow items-center justify-center px-8 py-1 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-${
-                  latestWorkshop.themeColor ?? "blue"
-                }-600 hover:bg-${
-                  latestWorkshop.themeColor ?? "blue"
-                }-500 focus:outline-none focus:border-${
-                  latestWorkshop.themeColor ?? "blue"
-                }-700 focus:shadow-outline-${
-                  latestWorkshop.themeColor ?? "blue"
-                } transition duration-150 ease-in-out md:py-2 md:text-base md:px-10`}
+                className={`shadow items-center justify-center px-8 py-1 border border-transparent text-base leading-6 font-medium rounded-md text-white ${latestWorkshop.themeColor}`}
               >
                 Learn More
               </a>
