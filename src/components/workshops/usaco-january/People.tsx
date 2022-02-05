@@ -4,6 +4,8 @@ import {
   ryan,
   amogha,
 } from "../../index/images"
+import xieting from "../../../images/xieting.jpeg"
+
 import Speakers, { Speaker } from "../Speakers"
 const speakers: Speaker[] = [
   {
@@ -18,14 +20,19 @@ const speakers: Speaker[] = [
   },
   {
     name: "Ryan Chou",
-    title: "Teacher",
+    title: "Teacher / CPI",
     photo: ryan,
   },
   {
-    name: "Amogha",
-    title: "Teacher",
+    name: "Amogha Pokkulandra",
+    title: "Teacher / CPI",
     photo: amogha,
   },
+  {
+    name: "Xieting Chu",
+    title: "Teacher / X-Camp",
+    photo: xieting
+  }
 ]
 export default function People() {
   return <Speakers speakers={speakers} titleColor="text-yellow-600" />
