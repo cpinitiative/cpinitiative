@@ -24,7 +24,7 @@ export default function USACOJanuary({ data }) {
       <div className="relative py-8 bg-white overflow-hidden">
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto mb-6">
-            <p className="text-base text-center leading-6 text-yellow-600 font-semibold tracking-wide uppercase">
+            <p className="text-base text-center leading-6 text-purple-600 font-semibold tracking-wide uppercase">
               Partner
             </p>
             <h1 className="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">

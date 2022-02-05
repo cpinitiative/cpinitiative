@@ -35,5 +35,5 @@ const speakers: Speaker[] = [
   }
 ]
 export default function People() {
-  return <Speakers speakers={speakers} titleColor="text-yellow-600" />
+  return <Speakers speakers={speakers} titleColor="text-purple-600" />
 }

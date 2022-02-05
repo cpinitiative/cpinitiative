@@ -1,5 +1,5 @@
 import * as React from "react"
-import USACO from "../../../images/usaco-guide-logo.png"
+import Logo from "../../../images/x-camp_cpi.png"
 import Image from "next/image"
 
 export default function Hero() {
@@ -13,7 +13,7 @@ export default function Hero() {
                 February 5, 2022
               </div>
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                <span className="text-yellow-600">
+                <span className="text-purple-600">
                   USACO January Contest Solutions
                 </span>
               </h2>
@@ -37,7 +37,7 @@ export default function Hero() {
                   <a
                     href="https://forms.gle/tZEVgL17gYAauow18"
                     target="_blank"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-500 focus:outline-none focus:border-yellow-700 focus:shadow-outline-yellow transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
                     Sign Up
                   </a>
@@ -46,7 +46,7 @@ export default function Hero() {
                   <a
                     href="mailto:ocmelodyyu@gmail.com"
                     target="_blank"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-yellow-700 bg-yellow-300 hover:text-yellow-600 hover:bg-yellow-200 focus:outline-none focus:shadow-outline-yellow focus:border-yellow-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-purple-700 bg-purple-200 hover:text-purple-600 hover:bg-purple-100 focus:outline-none focus:shadow-outline-purple focus:border-purple-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
                     Contact Us
                   </a>
@@ -54,7 +54,7 @@ export default function Hero() {
               </div>
             </div>
             <div className={"w-full max-w-2xl mx-auto"}>
-              <Image src={USACO} placeholder="blur" priority />
+              <Image src={Logo} placeholder="blur" priority layout="responsive" className="rounded-lg" />
             </div>
           </main>
         </div>

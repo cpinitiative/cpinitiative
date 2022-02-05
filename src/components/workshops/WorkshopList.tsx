@@ -26,7 +26,9 @@ export default function WorkshopList() {
               src={latestWorkshop.photo}
               alt={latestWorkshop.title}
               placeholder="blur"
-              objectFit="contain"
+              objectFit="cover"
+              className="rounded-lg"
+              width="300"
             />
           </div>
           <div className="flex justify-center mt-8">
