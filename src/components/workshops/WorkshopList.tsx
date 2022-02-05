@@ -20,7 +20,7 @@ export default function WorkshopList() {
           <p className="flex justify-center text-center tracking-tight mb-8 text-lg text-gray-500">
             {latestWorkshop.description}
           </p>
-          <div className="flex justify-center h-60">
+          <div className="flex justify-center h-72">
             <Image
               objectPosition="center center"
               src={latestWorkshop.photo}
@@ -28,7 +28,7 @@ export default function WorkshopList() {
               placeholder="blur"
               objectFit="cover"
               className="rounded-lg"
-              width="300"
+              width="400px"
             />
           </div>
           <div className="flex justify-center mt-8">
