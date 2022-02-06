@@ -22,24 +22,14 @@ export default function Hero() {
                 from 6:30-8:30pm PST</b> to gain a better understanding of the solutions from the contest! The first hour will
                 cover bronze solutions and the second hour will cover silver solutions.
               </p>
-              <p className="mt-1 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Zoom:{" "}
-                <a
-                  target="_blank"
-                  href="https://us06web.zoom.us/j/84976667940"
-                  className="underline text-blue-600"
-                >
-                  ID: 849 7666 7940
-                </a>
-              </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    href="https://forms.gle/tZEVgL17gYAauow18"
+                    href="https://forms.gle/R3d3gvEGqsEbMZ8cA"
                     target="_blank"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-cyan-600 hover:bg-cyan-500 focus:outline-none focus:border-cyan-700 focus:shadow-outline-cyan transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
-                    Sign Up
+                    Join Mailing List
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
@@ -53,8 +43,8 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <div className={"w-full max-w-2xl mx-auto"}>
-              <Image src={Logo} placeholder="blur" priority layout="responsive" className="rounded-lg" />
+            <div className={"lg:col-span-3 w-full max-w-2xl mx-auto"}>
+              <Youtube id="rRpquvJ92CQ" />
             </div>
           </main>
         </div>
