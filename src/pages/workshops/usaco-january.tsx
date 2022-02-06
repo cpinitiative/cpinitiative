@@ -10,7 +10,7 @@ export default function USACOJanuary({ data }) {
   return (
     <Layout>
       <SEO
-        image="/x-camp_cpi.png"
+        image="../../images/x-camp_cpi.png"
         title="USACO January Contest Solutions"
         description="The Competitive Programming Initiative is holding its second workshop on October 17th, 2pm PDT! Join us to learn from the experience of the 2021 EGOI team!"
       />
