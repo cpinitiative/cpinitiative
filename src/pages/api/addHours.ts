@@ -53,7 +53,7 @@ export default async function handler(
     response,
     role,
   })
-  ;(async function () {
+  await (async function () {
     const doc = new GoogleSpreadsheet(SHEETS_METADATA.spreadSheetId)
 
     await doc.useServiceAccountAuth(SHEETS_API_CREDS)
