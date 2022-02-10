@@ -1,4 +1,4 @@
-import { signIn, signOut, useSession } from "next-auth/client"
+import { signIn, signOut, useSession } from "next-auth/react"
 import React, { Fragment, useEffect, useReducer } from "react"
 import Header from "../components/Header"
 import Layout from "../components/Layout"
@@ -23,9 +23,13 @@ export function VolunteerHourHistory({ data }) {
                     <h3 className="text-sm font-medium">
                       {new Date(item.time).toDateString()} {`(${item.role})`}
                     </h3>
-                    {(item.hrs == null) ||  (item.hrs == 0) ? <p className="text-sm text-gray-500">none</p> :
-                     item.hrs == 1? <p className="text-sm text-gray-500">1 hour</p> :
-                    <p className="text-sm text-gray-500">{item.hrs} hours</p>}
+                    {item.hrs == null || item.hrs == 0 ? (
+                      <p className="text-sm text-gray-500">none</p>
+                    ) : item.hrs == 1 ? (
+                      <p className="text-sm text-gray-500">1 hour</p>
+                    ) : (
+                      <p className="text-sm text-gray-500">{item.hrs} hours</p>
+                    )}
                   </div>
                   {item.response && (
                     <div className="flex flex-col space-y-1">
@@ -250,7 +254,7 @@ export function AddVolunteerHoursForm({ data }) {
 }
 
 export default function ViewHours() {
-  const [session, loading] = useSession()
+  const { data: session } = useSession()
   const [viewAddHoursForm, setViewAddHoursForm] = React.useState(false)
   // add conditional fetching for useSWR so that it doesn't fetch when the user isn't signed in
   const { data, error } = useSWR(session ? "/api/getHours" : null, SWR_FETCHER)
