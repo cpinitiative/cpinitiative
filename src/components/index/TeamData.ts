@@ -46,6 +46,7 @@ import {
   mithil,
   shikhar,
   alex_chen,
+  jeffrey_zhang,
 } from "../index/images"
 
 export type Member = {
@@ -223,6 +224,13 @@ const members: { [key: string]: Member } = {
     titles: ["Director of Operations", roles.videoInstructor],
     github: "jeffreymeng",
     website: "https://jeffkmeng.com",
+  },
+  jeffrey_zhang: {
+    photo: jeffrey_zhang,
+    name: "Jeffrey Zhang",
+    titles: [roles.contentAuthor],
+    github: "RedBlueBird",
+    email: "jiefu.zhang1226@gmail.com",
   },
   jesse: {
     photo: jesse,
@@ -478,6 +486,7 @@ const rest: Member[] = [
   members.jason,
   members.mithil,
   members.evan,
+  members.jeffrey_zhang,
 ]
 const sortedPeople = rest.sort((a, b) => {
   if (a.titles.length === b.titles.length) {
