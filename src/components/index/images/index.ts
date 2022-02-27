@@ -29,6 +29,7 @@ import jarvis from "./jarvis.png"
 import jason from "./jason.jpeg"
 import jay from "./jay.jpg"
 import jeffrey from "./jeffrey.png"
+import jeffrey_zhang from "./jeffrey_zhang.jpg"
 import jesse from "./jesse.jpg"
 import jpaulson from "./jpaulson.jpg"
 import kevin from "./kevin.jpg"
@@ -92,6 +93,7 @@ export {
   jason,
   jay,
   jeffrey,
+  jeffrey_zhang,
   jesse,
   jpaulson,
   kevin,
