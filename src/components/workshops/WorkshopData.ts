@@ -12,19 +12,32 @@ export type Workshop = {
   themeColor: string
 }
 
-
 const themeColors = {
-  blue: "bg-blue-600 hover:bg-blue-500 focus:border-blue-700 focus:shadow-outline-blue",
-  yellow: "bg-yellow-600 hover:bg-yellow-500 focus:border-yellow-700 focus:shadow-outline-yellow",
-  cyan: "bg-cyan-600 hover:bg-cyan-500 focus:border-cyan-700 focus:shadow-outline-cyan",
-  purple: "bg-purple-600 hover:bg-purple-500 focus:border-purple-700 focus:shadow-outline-purple",
+  blue:
+    "bg-blue-600 hover:bg-blue-500 focus:border-blue-700 focus:shadow-outline-blue",
+  yellow:
+    "bg-yellow-600 hover:bg-yellow-500 focus:border-yellow-700 focus:shadow-outline-yellow",
+  cyan:
+    "bg-cyan-600 hover:bg-cyan-500 focus:border-cyan-700 focus:shadow-outline-cyan",
+  purple:
+    "bg-purple-600 hover:bg-purple-500 focus:border-purple-700 focus:shadow-outline-purple",
 }
 
 const workshops: Workshop[] = [
   {
     photo: XCampCPI,
+    title: "USACO February Contest Solutions",
+    description:
+      "Gain a better understanding of the solutions for the February Contest through a joint workshop with X-Camp!",
+    date: dayjs("Mar 6, 2022 10:00:00 AM PST"),
+    url: "usaco-february",
+    themeColor: themeColors.purple,
+  },
+  {
+    photo: XCampCPI,
     title: "USACO January Contest Solutions",
-    description: "Gain an in-depth understanding of the solutions for the January Contest through a joint workshop with X-Camp!",
+    description:
+      "Gain an in-depth understanding of the solutions for the January Contest through a joint workshop with X-Camp!",
     date: dayjs("Feb 5, 2022 7:00:00 PM PST"),
     url: "usaco-january",
     themeColor: themeColors.purple,
