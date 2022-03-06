@@ -7,6 +7,8 @@ import {
   kevin,
   davidz,
 } from "../../index/images"
+import brendan from "../../../images/brendan.png"
+import yizhong from "../../../images/yizhong.png"
 
 import Speakers, { Speaker } from "../Speakers"
 const speakers: Speaker[] = [
@@ -47,11 +49,13 @@ const speakers: Speaker[] = [
   },
   {
     name: "Brendan Ruiz",
-    title: "Teacher / X-Camp",
+    title: "Teacher / X-Camp Academic Director",
+    photo: brendan,
   },
   {
-    name: "Yizhong",
-    title: "Teacher / X-Camp",
+    name: "Yizhong Ru",
+    title: "Teacher / X-Camp / NOI 2012 Gold Medalist",
+    photo: yizhong,
   },
 ]
 export default function People() {
