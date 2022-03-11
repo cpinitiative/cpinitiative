@@ -6,7 +6,15 @@ import SEO from "../components/SEO"
 import useSWR from "swr"
 import { Dialog, Transition } from "@headlessui/react"
 import { SWR_FETCHER } from "../../config"
-
+const formatDate = (date: Date) => {
+  return `${date.getFullYear()}-${(date.getMonth() + 1)
+    .toString()
+    .padStart(2, "0")}-${date.getDate().toString().padStart(2, "0")}`
+}
+const parseDate = (date: string) => {
+  const [year, month, day] = date.split("-").map(x => Number(x))
+  return new Date(year, month - 1, day, 0, 0, 0, 0)
+}
 export function VolunteerHourHistory({ data }) {
   // console.log("data: ", data)
   return (
@@ -64,7 +72,8 @@ function reducer(state: State, action: Action): State {
   return { ...state, [action.q]: action.value }
 }
 
-export function AddVolunteerHoursForm({ data }) {
+export function AddVolunteerHoursForm({ data, onClose }) {
+  console.log(data)
   const initialState = {}
   const [state, dispatch] = useReducer(reducer, initialState)
   const [response, setResponse] = React.useState(null)
@@ -72,6 +81,7 @@ export function AddVolunteerHoursForm({ data }) {
   const [error, setError] = React.useState("")
   const [loading, setLoading] = React.useState(false)
   const [role, setRole] = React.useState("")
+  const [date, setDate] = React.useState(new Date())
   // useEffect(()=>console.log("state", state),[state])
   const submitHours = () => {
     setError("")
@@ -89,6 +99,7 @@ export function AddVolunteerHoursForm({ data }) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
+        date: formatDate(date) === formatDate(new Date()) ? undefined : date,
         hours,
         response: keys.reduce(
           (acc, key) => ({ ...acc, [key]: state[key] }),
@@ -107,6 +118,11 @@ export function AddVolunteerHoursForm({ data }) {
         }
 
         setLoading(false)
+        setDate(new Date())
+        onClose()
+        setHours("")
+        setRole("")
+        setResponse("")
       })
       .catch(e => {
         setError(e)
@@ -131,7 +147,26 @@ export function AddVolunteerHoursForm({ data }) {
           placeholder="Ex. N. Wang"
         />
       </div> */}
-
+      <div className="relative border border-gray-300 px-3 py-2 focus-within:z-10 rounded-t-md focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
+        <label
+          htmlFor="date"
+          className="block w-full text-sm font-medium text-gray-700"
+        >
+          Date
+        </label>
+        <input
+          type="date"
+          id="date"
+          className="block border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0"
+          placeholder="mm/dd/yyyy"
+          value={formatDate(date)}
+          onChange={e => {
+            // console.log(parseDate(e.target.value))
+            setDate(parseDate(e.target.value))
+          }}
+          max={formatDate(new Date())}
+        />
+      </div>
       <div className="relative border border-gray-300 px-3 py-2 focus-within:z-10 rounded-t-md focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
         <label
           htmlFor="role"
@@ -386,7 +421,10 @@ export default function ViewHours() {
                         Add your hours
                       </Dialog.Title>
 
-                      <AddVolunteerHoursForm data={data} />
+                      <AddVolunteerHoursForm
+                        onClose={() => setViewAddHoursForm(false)}
+                        data={data}
+                      />
 
                       {/* <div className="">
                         <button

@@ -61,8 +61,8 @@ export default async function handler(
     const hourSheet = doc.sheetsByIndex[0]
     const hourSheetRows = await hourSheet.getRows()
     const hourSheetRowLength = hourSheetRows.length + 1
-    console.log(`Sheet Title ${hourSheet.title}`)
-    console.log(`Sheet Length ${hourSheetRowLength}`)
+    // console.log(`Sheet Title ${hourSheet.title}`)
+    // console.log(`Sheet Length ${hourSheetRowLength}`)
 
     const rolesSheet = doc.sheetsByIndex[1]
     const rolesSheetRows = await rolesSheet.getRows()
@@ -112,7 +112,7 @@ export default async function handler(
             email => em.trim().toLowerCase() === email.trim().toLowerCase()
           )
         ) {
-          console.log("found", i, parseFloat(hrs))
+          // console.log("found", i, parseFloat(hrs))
           totalHours += parseFloat(hrs) || 0 // default to 0 if not a number
           data = [...data, { time, em, hrs, response, role }]
         }
