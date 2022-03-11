@@ -19,7 +19,7 @@ export default async function handler(
   const session = await getSession({ req })
   const email = session.user?.email
 
-  const { hours, response, role } = req.body
+  const { date, hours, response, role } = req.body
   const name = session?.user?.name
 
   if (!name) return res.status(400).json({ error: "Name is required" })
@@ -40,7 +40,7 @@ export default async function handler(
       .status(403)
       .json({ error: "You are not authorized to add hours" })
 
-  const time = new Date().toISOString()
+  const time = date ? new Date(date).toISOString() : new Date().toISOString()
   // .replace("T", " ")
   // .replace("Z", "")
   // .replaceAll("-", "/")
