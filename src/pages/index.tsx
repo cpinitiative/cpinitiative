@@ -19,7 +19,7 @@ const IndexPage = () => (
         <div className="h-36 sm:h-48" />
         <div className="max-w-screen-xl px-4 sm:px-6 mx-auto sm:-mb-8">
           <h1 className="text-4xl tracking-tight leading-10 sm:leading-none font-extrabold text-white sm:text-6xl lg:text-5xl xl:text-6xl">
-            Competitive Programing Initiative
+            Competitive Programming Initiative
           </h1>
           <p className="mt-6 mb-6 text-purple-200 text-xl">
             We promote competitive programming among students through resources,
