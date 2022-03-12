@@ -699,7 +699,7 @@ export default function Classes() {
 //               <li>Number Theory</li>
 //               <li>Breadth First Search</li>
 //               <li>Shortest Paths</li>
-//               <li>Dynamic Programing</li>
+//               <li>Dynamic Programming</li>
 //               <li>Stacks</li>
 //               <li>Sliding Window</li>
 //               <li>Disjoint Set Union</li>
