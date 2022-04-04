@@ -5,7 +5,12 @@ import {
   ashbury,
   baton,
   bellarmine,
+  beverly_hills,
+  bits,
   branham,
+  california_connections,
+  creskill,
+  centennial,
   del_norte,
   delhi,
   east_career,
@@ -14,18 +19,20 @@ import {
   independence,
   interlake,
   ladue_horton,
+  le_quy_don,
+  lincoln,
   linnerton,
   marvin_ridge,
   monrovia,
   monta_vista,
   montgomery,
   nanjing,
+  new_hampshire,
   north_andover,
   northview,
   oak_valley,
   orange,
   panther_creek,
-  potomac,
   pingry,
   rickards,
   riverhill,
@@ -41,6 +48,7 @@ import {
   whitfield,
   whitney,
   windermere,
+  winston_churchill,
 } from "../clubs/images"
 
 const ClubCard = ({ name, photo, region }) => {
@@ -94,9 +102,29 @@ const clubs: {
     region: "California",
   },
   {
+    name: "Beverly Hills High School",
+    photo: beverly_hills,
+    region: "California",
+  },
+  {
+    name: "BITS School",
+    photo: bits,
+    region: "Goa",
+  },
+  {
     name: "Branham High School",
     photo: branham,
     region: "California",
+  },
+  {
+    name: "California Connections Academy",
+    photo: california_connections,
+    region: "California",
+  },
+  {
+    name: "Creskill High School",
+    photo: creskill,
+    region: "New Jersey",
   },
   {
     name: "Del Norte High School",
@@ -106,7 +134,7 @@ const clubs: {
   {
     name: "Delhi Public School",
     photo: delhi,
-    region: "India",
+    region: "New Delhi",
   },
   {
     name: "East Career & Technical Academy",
@@ -117,6 +145,11 @@ const clubs: {
     name: "Fremont High School",
     photo: fremont,
     region: "California",
+  },
+  {
+    name: "Frisco Centennial High School",
+    photo: centennial,
+    region: "Texas",
   },
   {
     name: "Horace Greeley High School",
@@ -137,6 +170,16 @@ const clubs: {
     name: "Ladue Horton Watkins HS",
     photo: ladue_horton,
     region: "Missouri",
+  },
+  {
+    name: "Le Quy Don Technical University",
+    photo: le_quy_don,
+    region: "Vietnam",
+  },
+  {
+    name: "Lincoln High School",
+    photo: lincoln,
+    region: "Oregon",
   },
   {
     name: "Linnerton High School",
@@ -179,7 +222,7 @@ const clubs: {
     region: "Georgia",
   },
   {
-    name: "Oak Valley MS",
+    name: "Oak Valley Middle School",
     photo: oak_valley,
     region: "California",
   },
@@ -197,11 +240,6 @@ const clubs: {
     name: "Pingry School",
     photo: pingry,
     region: "New Jersey",
-  },
-  {
-    name: "Potomac High School",
-    photo: potomac,
-    region: "Maryland",
   },
   {
     name: "Rickards HS",
@@ -249,6 +287,11 @@ const clubs: {
     region: "Michigan",
   },
   {
+    name: "University of New Hampshire",
+    photo: new_hampshire,
+    region: "New Hampshire",
+  },
+  {
     name: "Westwood High School",
     photo: westwood,
     region: "Texas",
@@ -272,6 +315,11 @@ const clubs: {
     name: "Windermere High School",
     photo: windermere,
     region: "Florida",
+  },
+  {
+    name: "Winston Churchill High School",
+    photo: winston_churchill,
+    region: "Maryland",
   },
 ]
 
