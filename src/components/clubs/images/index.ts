@@ -5,6 +5,8 @@ import bellarmine from "./bellarmine.jpg"
 import beverly_hills from "./beverly_hills.jpg"
 import bits from "./bits.jpg"
 import branham from "./branham.png"
+import california_connections from "./california_connections.jpg"
+import creskill from "./creskill.jpg"
 import centennial from "./centennial.jpg"
 import del_norte from "./del_norte.jpg"
 import delhi from "./delhi.jpg"
@@ -53,6 +55,8 @@ export {
   beverly_hills,
   bits,
   branham,
+  california_connections,
+  creskill,
   centennial,
   del_norte,
   delhi,

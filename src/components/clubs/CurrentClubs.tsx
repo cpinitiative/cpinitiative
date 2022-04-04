@@ -8,6 +8,8 @@ import {
   beverly_hills,
   bits,
   branham,
+  california_connections,
+  creskill,
   centennial,
   del_norte,
   delhi,
@@ -113,6 +115,16 @@ const clubs: {
     name: "Branham High School",
     photo: branham,
     region: "California",
+  },
+  {
+    name: "California Connections Academy",
+    photo: california_connections,
+    region: "California",
+  },
+  {
+    name: "Creskill High School",
+    photo: creskill,
+    region: "New Jersey",
   },
   {
     name: "Del Norte High School",
