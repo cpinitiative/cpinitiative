@@ -1,13 +1,4 @@
-import {
-  melody,
-  ryan,
-  evan,
-  jesse,
-  kevin,
-  davidz,
-  nikhil,
-} from "../../index/images"
-import brendan from "../../../images/brendan.png"
+import { melody, ryan, evan, jesse, kevin, nikhil } from "../../index/images"
 import yizhong from "../../../images/yizhong.png"
 
 import Speakers, { Speaker } from "../Speakers"
@@ -41,6 +32,11 @@ const speakers: Speaker[] = [
     name: "Kevin Sheng",
     title: "Teacher / CPI",
     photo: kevin,
+  },
+  {
+    name: "Yizhong Ru",
+    title: "Teacher / X-Camp / NOI 2012 Gold Medalist",
+    photo: yizhong,
   },
 ]
 export default function People() {
