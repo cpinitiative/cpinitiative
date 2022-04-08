@@ -26,6 +26,15 @@ const themeColors = {
 const workshops: Workshop[] = [
   {
     photo: XCampCPI,
+    title: "USACO US Open Contest Solutions",
+    description:
+      "Gain a better understanding of the solutions for the US Open Contest through a joint workshop with X-Camp!",
+    date: dayjs("Apr 10, 2022 10:00:00 AM PST"),
+    url: "usaco-open",
+    themeColor: themeColors.purple,
+  },
+  {
+    photo: XCampCPI,
     title: "USACO February Contest Solutions",
     description:
       "Gain a better understanding of the solutions for the February Contest through a joint workshop with X-Camp!",
