@@ -53,7 +53,7 @@ import {
 
 const ClubCard = ({ name, photo, region }) => {
   return (
-    <li className="relative block w-full rounded-lg overflow-hidden relative">
+    <li className="relative block w-full rounded-lg overflow-hidden">
       <div className="pointer-events-none aspect-w-10 aspect-h-6">
         <Image
           layout="fill"
