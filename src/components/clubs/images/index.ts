@@ -45,7 +45,7 @@ import white_station from "./white_station.jpg"
 import whitfield from "./whitfield.jpg"
 import whitney from "./whitney.png"
 import windermere from "./windermere.png"
-import winston_churchill from "./winston_churchill.png"
+import winston_churchill from "./winston_churchill.jpg"
 
 export {
   algonquin,
