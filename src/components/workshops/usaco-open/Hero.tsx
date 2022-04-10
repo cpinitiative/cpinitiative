@@ -26,9 +26,10 @@ export default function Hero() {
                 Season and predicted trends for the next season from{" "}
                 <b>11:30am-12:30pm PT</b>.</p>    
                   
-              <p>
-                Zoom Link: https://us06web.zoom.us/j/81581400660?pwd=cnFKNTg3eGpZYStRMHNadzMrOHA3Zz09
-  
+              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
+                Zoom Link: https://us06web.zoom.us/j/81581400660?pwd=cnFKNTg3eGpZYStRMHNadzMrOHA3Zz09 </p>
+            
+              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                 Meeting ID: 815 8140 0660  
                 Passcode: 451297  
               </p>
