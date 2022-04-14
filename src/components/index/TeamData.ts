@@ -267,7 +267,7 @@ const members: { [key: string]: Member } = {
   michael: {
     photo: michael,
     name: "Michael Cao",
-    titles: [roles.founder, "Director of Clubs"],
+    titles: [roles.founder, "Director of Clubs", "Board"],
     github: "caoash",
     codeforces: "caoash",
     email: "caoash@gmail.com",
