@@ -217,38 +217,6 @@ export default function Classes() {
                                 stroke="currentColor"
                               >
                                 <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
-                                />
-                              </svg>
-                            </span>
-                          </div>
-                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                            Affordable Cost
-                          </h3>
-                          <p className="mt-5 text-base text-gray-500">
-                            As a nonprofit organization, we strive to make
-                            classes as affordable as possible. Each registration
-                            costs $100.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="pt-6">
-                      <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                        <div className="-mt-6">
-                          <div>
-                            <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                              <svg
-                                className="h-6 w-6 text-white"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                              >
-                                <path
                                   fill="transparent"
                                   d="M12 14l9-5-9-5-9 5 9 5z"
                                 />
@@ -292,7 +260,40 @@ export default function Classes() {
                                   strokeLinecap="round"
                                   strokeLinejoin="round"
                                   strokeWidth={2}
-                                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                                  d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                            Affordable Cost
+                          </h3>
+                          <p className="mt-5 text-base text-gray-500">
+                            As a nonprofit organization, we strive to make
+                            classes as affordable as possible. Each registration
+                            costs $100.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-6">
+                      <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                        <div className="-mt-6">
+                          <div>
+                            <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                              {/* Heroicon name: outline/clock */}
+                              <svg
+                                className="h-6 w-6 text-white"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                                 />
                               </svg>
                             </span>
@@ -301,16 +302,9 @@ export default function Classes() {
                             Integrated with the USACO Guide
                           </h3>
                           <p className="mt-5 text-base text-gray-500">
-                            Each lesson has a corresponding module from the{" "}
-                            <a
-                              href="https://usaco.guide/"
-                              target="_blank"
-                              className="underline"
-                            >
-                              USACO Guide
-                            </a>
-                            , where you can review a concept or find additional
-                            practice.
+                            In order to ensure student success,
+                            we host office hours every Wednesday at 5pm PDT
+                            where students can ask for help from instructors.
                           </p>
                         </div>
                       </div>
