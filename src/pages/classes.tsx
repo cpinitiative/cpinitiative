@@ -299,7 +299,7 @@ export default function Classes() {
                             </span>
                           </div>
                           <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                            Integrated with the USACO Guide
+                            Office Hours
                           </h3>
                           <p className="mt-5 text-base text-gray-500">
                             In order to ensure student success,
