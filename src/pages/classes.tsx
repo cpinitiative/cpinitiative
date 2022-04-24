@@ -133,7 +133,7 @@ export default function Classes() {
                         <div className="relative">
                           <div className="text-left sm:text-center">
                             <h2 className="text-2xl font-extrabold text-white tracking-tight sm:text-4xl">
-                              New Addition: Office Hours.
+                              Office Hours:
                             </h2>
                             <p className="mt-2 sm:mt-6 mx-auto max-w-2xl sm:text-lg text-teal-200">
                               In order to ensure student success, we host office
@@ -261,38 +261,6 @@ export default function Classes() {
                                 stroke="currentColor"
                               >
                                 <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
-                                />
-                              </svg>
-                            </span>
-                          </div>
-                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                            Affordable Cost
-                          </h3>
-                          <p className="mt-5 text-base text-gray-500">
-                            As a nonprofit organization, we strive to make
-                            classes as affordable as possible. Each registration
-                            costs $100.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="pt-6">
-                      <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                        <div className="-mt-6">
-                          <div>
-                            <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                              <svg
-                                className="h-6 w-6 text-white"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                              >
-                                <path
                                   fill="transparent"
                                   d="M12 14l9-5-9-5-9 5 9 5z"
                                 />
@@ -316,6 +284,38 @@ export default function Classes() {
                             Our goal is to make competitive programming
                             accessible for everyone. If you can't pay, you can
                             attend classes for free.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-6">
+                      <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                        <div className="-mt-6">
+                          <div>
+                            <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                              <svg
+                                className="h-6 w-6 text-white"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                            Affordable Cost
+                          </h3>
+                          <p className="mt-5 text-base text-gray-500">
+                            As a nonprofit organization, we strive to make
+                            classes as affordable as possible. Each registration
+                            costs $100.
                           </p>
                         </div>
                       </div>
