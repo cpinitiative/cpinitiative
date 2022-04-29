@@ -48,6 +48,7 @@ import oscar from "./oscar.png"
 import pranav from "./pranav.png"
 import ramit from "./ramit.jpg"
 import rayna from "./rayna.jpeg"
+import riley from "./riley.jpg"
 import ryan from "./ryan.jpg"
 import sathvik from "./sathvik.png"
 import shikhar from "./shikhar.jpg"
@@ -112,6 +113,7 @@ export {
   pranav,
   ramit,
   rayna,
+  riley,
   ryan,
   sathvik,
   shikhar,
