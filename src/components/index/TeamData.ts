@@ -31,6 +31,7 @@ import {
   oscar,
   pranav,
   ramit,
+  riley,
   ryan,
   sofia,
   siyong,
@@ -324,7 +325,7 @@ const members: { [key: string]: Member } = {
     photo: oscar,
     name: "Oscar Rendón",
     github: "orendon",
-    titles: [roles.webdev, roles.clubCurriculum],
+    titles: [roles.clubCurriculum],
   },
   pranav: {
     photo: pranav,
@@ -339,6 +340,12 @@ const members: { [key: string]: Member } = {
     titles: [roles.videoInstructor],
     email: "24ramitg@students.harker.org",
     instagram: "ramit_goyal24",
+  },
+  riley: {
+    photo: riley,
+    name: "Riley Bonner",
+    titles: [roles.clubCurriculum],
+    linkedin: "https://www.linkedin.com/in/riley-bonner-6b8726213/",
   },
   ryan: {
     photo: ryan,
@@ -487,6 +494,7 @@ const rest: Member[] = [
   members.mithil,
   members.evan,
   members.jeffrey_zhang,
+  members.riley,
 ]
 const sortedPeople = rest.sort((a, b) => {
   if (a.titles.length === b.titles.length) {
