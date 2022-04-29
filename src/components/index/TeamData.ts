@@ -325,7 +325,7 @@ const members: { [key: string]: Member } = {
     photo: oscar,
     name: "Oscar Rendón",
     github: "orendon",
-    titles: [roles.webdev, roles.clubCurriculum],
+    titles: [roles.clubCurriculum],
   },
   pranav: {
     photo: pranav,
