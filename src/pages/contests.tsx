@@ -61,6 +61,27 @@ export default function Contests() {
           <ul>
             <li>
               <a
+                href="https://andovercomputingopen.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                The Andover Computing Open (TACO)
+              </a>{" "}
+              - May 21, 2022
+            </li>
+            <li>
+              <a
+                href="https://traverse-cs.org/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                traverse[cs]
+              </a>{" "}
+              - June 19, 2022
+            </li>
+
+            <li>
+              <a
                 href="https://algirlithm.org/"
                 target="_blank"
                 rel="noreferrer"
@@ -68,11 +89,11 @@ export default function Contests() {
                 alGIRLithm. A programming contest for high school girls.
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="https://mbit.mbhs.edu/" target="_blank" rel="noreferrer">
                 Montgomery Blair Informatics Tournament (mBIT)
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="https://lit.lhsmathcs.org/"
