@@ -19,6 +19,7 @@ import {
   harry,
   jay,
   jeffrey,
+  julie,
   maggie,
   melody,
   michael,
@@ -246,6 +247,13 @@ const members: { [key: string]: Member } = {
     name: "Jonathan Paulson",
     github: "jonathanpaulson",
     titles: [roles.videoInstructor],
+  },
+  julie: {
+    photo: julie,
+    name: "Juheon Rhee",
+    titles: [roles.contentAuthor, roles.liveInstructor],
+    website: "juheonrhee.com",
+    github: "jjliewie",
   },
   maggie: {
     photo: maggie,
