@@ -70,6 +70,12 @@ export default function Contests() {
               - May 21, 2022
             </li>
             <li>
+              <a href="https://mbit.mbhs.edu/" target="_blank" rel="noreferrer">
+                Montgomery Blair Informatics Tournament (mBIT)
+              </a>{" "}
+              - May 22, 2022
+            </li>
+            <li>
               <a
                 href="https://traverse-cs.org/"
                 target="_blank"
@@ -89,11 +95,7 @@ export default function Contests() {
                 alGIRLithm. A programming contest for high school girls.
               </a>
             </li>
-            {/* <li>
-              <a href="https://mbit.mbhs.edu/" target="_blank" rel="noreferrer">
-                Montgomery Blair Informatics Tournament (mBIT)
-              </a>
-            </li> */}
+
             <li>
               <a
                 href="https://lit.lhsmathcs.org/"
