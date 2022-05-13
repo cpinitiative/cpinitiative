@@ -61,6 +61,16 @@ export default function Contests() {
           <ul>
             <li>
               <a
+                href="https://tinyurl.com/4thTuringFunCupGuidebook"
+                target="_blank"
+                rel="noreferrer"
+              >
+                4th Turing Fun Cup
+              </a>{" "}
+              - May 14, 2022
+            </li>
+            <li>
+              <a
                 href="https://andovercomputingopen.com/"
                 target="_blank"
                 rel="noreferrer"
