@@ -32,6 +32,7 @@ import jeffrey from "./jeffrey.png"
 import jeffrey_zhang from "./jeffrey_zhang.jpg"
 import jesse from "./jesse.jpg"
 import jpaulson from "./jpaulson.jpg"
+import julie from "./julie.png"
 import kevin from "./kevin.jpg"
 import maggie from "./maggie.png"
 import mayank from "./mayank.png"
@@ -97,6 +98,7 @@ export {
   jeffrey_zhang,
   jesse,
   jpaulson,
+  julie,
   kevin,
   maggie,
   mayank,
