@@ -503,6 +503,7 @@ const rest: Member[] = [
   members.evan,
   members.jeffrey_zhang,
   members.riley,
+  members.julie,
 ]
 const sortedPeople = rest.sort((a, b) => {
   if (a.titles.length === b.titles.length) {
