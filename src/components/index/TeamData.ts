@@ -252,7 +252,7 @@ const members: { [key: string]: Member } = {
     photo: julie,
     name: "Juheon Rhee",
     titles: [roles.contentAuthor, roles.liveInstructor],
-    website: "juheonrhee.com",
+    website: "https://juheonrhee.com",
     github: "jjliewie",
   },
   maggie: {
