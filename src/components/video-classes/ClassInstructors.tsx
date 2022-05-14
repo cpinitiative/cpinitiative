@@ -1,20 +1,19 @@
 import * as React from "react"
 import Image from "next/image"
 import {
-  daniel,
+  empty,
+  evan,
+  jesse,
+  nikhil,
+  ryan,
+  davidz,
   nathanw,
   jeffrey,
   alex_chen,
+  julie,
   jarvis,
   mayank,
   varun,
-  yu_lim,
-  jay,
-  david_li,
-  yifan_ma,
-  amogha,
-  amy_chang,
-  vikas_thoutam,
 } from "../index/images"
 
 type Member = {
@@ -25,9 +24,14 @@ type Member = {
 
 const members: Member[] = [
   {
-    photo: daniel,
-    name: "Daniel Guan",
-    title: "Lead Instructor / Finalist",
+    photo: varun,
+    name: "Varun Ragunath",
+    title: "Project Manager of Classes / Silver Lead Instructor / Finalist",
+  },
+  {
+    photo: evan,
+    name: "Evan Zhao",
+    title: "Bronze Lead Instructor / Finalist",
   },
   {
     photo: nathanw,
@@ -55,43 +59,48 @@ const members: Member[] = [
     title: "Operations Manager",
   },
   {
-    photo: varun,
-    name: "Varun Ragunath",
-    title: "Instructor / Finalist",
-  },
-  {
-    photo: yu_lim,
-    name: "Yu Lim",
-    title: "Instructor / Platinum",
-  },
-  {
-    photo: jay,
-    name: "Jay Fu",
-    title: "Instructor / Platinum",
-  },
-  {
-    photo: david_li,
-    name: "David Li",
-    title: "Instructor / Platinum",
-  },
-  {
-    photo: yifan_ma,
-    name: "Yifan Ma",
+    photo: empty,
+    name: "Ian Zhang",
     title: "Instructor",
   },
   {
-    photo: amogha,
-    name: "Amogha Pokkulandra",
+    photo: empty,
+    name: "Frank Xiao",
     title: "Instructor",
   },
   {
-    photo: amy_chang,
-    name: "Amy Chang",
+    photo: empty,
+    name: "Vidth Madhu",
     title: "Instructor",
   },
   {
-    photo: vikas_thoutam,
-    name: "Vikas Thoutam",
+    photo: jesse,
+    name: "Jesse Choe",
+    title: "Instructor",
+  },
+  {
+    photo: nikhil,
+    name: "Nikhil Chatterjee",
+    title: "Instructor",
+  },
+  {
+    photo: ryan,
+    name: "Ryan Chou",
+    title: "Instructor",
+  },
+  {
+    photo: julie,
+    name: "Juheon Rhee",
+    title: "Instructor",
+  },
+  {
+    photo: empty,
+    name: "Arnan Bawa",
+    title: "Instructor",
+  },
+  {
+    photo: davidz,
+    name: "David Zhang",
     title: "Instructor",
   },
 ]

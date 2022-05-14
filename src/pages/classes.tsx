@@ -137,7 +137,7 @@ export default function Classes() {
                             </h2>
                             <p className="mt-2 sm:mt-6 mx-auto max-w-2xl sm:text-lg text-teal-200">
                               In order to ensure student success, we host office
-                              hours every Wednesday at 5pm PDT where students
+                              hours every Tuesday and Thursday at 5:00-6:00pm PST where students
                               can ask for help from instructors.
                             </p>
                           </div>
@@ -506,12 +506,10 @@ export default function Classes() {
                   <h3>Class Schedule</h3>
                   <ul>
                     <li>
-                      Introductory Class - Fridays, 4:00-6:00pm Pacific Standard
-                      Time (UTC-8). 1/7/22 to 3/4/22.
+                      Introductory Class (Bronze) - Sundays, 4:00-6:00pm PST (UTC-8). 6/26/22 to 8/21/22.
                     </li>
                     <li>
-                      Intermediate Class - Saturdays, 4:00-6:00pm Pacific
-                      Standard Time (UTC-8). 1/8/22 to 3/5/22.
+                      Intermediate Class (Silver) - Saturdays, 4:00-6:00pm PST (UTC-8). 6/25/22 to 8/20/22.
                     </li>
                   </ul>
 

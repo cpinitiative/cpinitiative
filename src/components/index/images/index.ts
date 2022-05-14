@@ -63,6 +63,7 @@ import vivian from "./vivian.jpg"
 import yifan_ma from "./yifan_ma.png"
 import yu_lim from "./yu_lim.png"
 import zhixin from "./zhixin.png"
+import empty from "./empty.png"
 export {
   aadit,
   adham,
@@ -129,4 +130,5 @@ export {
   yifan_ma,
   yu_lim,
   zhixin,
+  empty
 }
