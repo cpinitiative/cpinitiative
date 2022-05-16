@@ -27,6 +27,7 @@ import egor from "./egor.jpg"
 import evan from "./evan.jpg"
 import frank from "./frank.jpg"
 import harry from "./harry.jpg"
+import ian from "./ian.jpg"
 import jarvis from "./jarvis.png"
 import jason from "./jason.jpeg"
 import jay from "./jay.jpg"
@@ -97,6 +98,7 @@ export {
   evan,
   frank,
   harry,
+  ian,
   jarvis,
   jason,
   jay,
@@ -136,5 +138,5 @@ export {
   yifan_ma,
   yu_lim,
   zhixin,
-  empty
+  empty,
 }

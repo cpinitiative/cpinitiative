@@ -1,7 +1,7 @@
 import * as React from "react"
 import Image from "next/image"
 import {
-  empty,
+  ian,
   arnan,
   evan,
   jesse,
@@ -9,12 +9,7 @@ import {
   ryan,
   davidz,
   frank,
-  nathanw,
-  jeffrey,
-  alex_chen,
   julie,
-  jarvis,
-  mayank,
   varun,
   vidith,
 } from "../index/images"
@@ -37,7 +32,7 @@ const members: Member[] = [
     title: "Bronze Lead Instructor",
   },
   {
-    photo: empty,
+    photo: ian,
     name: "Ian Zhang",
     title: "Instructor",
   },
