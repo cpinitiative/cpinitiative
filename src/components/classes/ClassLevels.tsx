@@ -46,7 +46,7 @@ export default function ClassLevels() {
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
                     {[
-                      "Fridays, 4-6pm PST (UTC-8). 1/7 to 3/4.",
+                      "Sundays, 4-6pm PT. 6/26/22 to 8/21/22.",
                       "File / Fast I/O",
                       "Time Complexity",
                       "Data Structures and Simulation",
@@ -81,14 +81,14 @@ export default function ClassLevels() {
                     ))}
                   </ul>
                   <div className="rounded-md shadow">
-                    <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
-                      target="_blank"
-                      className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                      aria-describedby="tier-standard"
-                    >
-                      Get Notified of Future Classes
-                    </a>
+                    <Link href="/classes/register/#beginner">
+                      <a
+                        className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                        aria-describedby="tier-standard"
+                      >
+                        Register Now
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -115,7 +115,7 @@ export default function ClassLevels() {
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
                     {[
-                      "Saturdays, 4-6pm PST (UTC-8). 1/8 to 3/5.",
+                      "Saturdays, 4-6pm PT. 6/25/22 to 8/20/22.",
                       "Prefix Sums",
                       "Sorting with Custom Comparators",
                       "Two Pointers",
@@ -151,14 +151,14 @@ export default function ClassLevels() {
                   </ul>
                   <div className="rounded-md shadow">
                     <div className="rounded-md shadow">
+                      <Link href="/classes/register/#intermediate">
                       <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
-                        target="_blank"
                         className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                         aria-describedby="tier-standard"
                       >
-                        Get Notified of Future Classes
+                        Register Now
                       </a>
+                    </Link>
                     </div>
                   </div>
                 </div>
@@ -181,14 +181,14 @@ export default function ClassLevels() {
                 </div>
               </div>
               <div className="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
-                  target="_blank"
-                  className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                  aria-describedby="tier-standard"
-                >
-                  Get Notified of Future Classes
-                </a>
+                <Link href="/classes/register">
+                  <a
+                    className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                    aria-describedby="tier-standard"
+                  >
+                    Apply Now
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

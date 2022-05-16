@@ -121,7 +121,7 @@ export default function ViewRegistrationPage() {
             firebase
               .firestore()
               .collection("classes-registration")
-              .doc("2022january")
+              .doc("2022june")
               .collection("registrations")
               .onSnapshot(snapshot => {
                 const newRegistrations = []
@@ -595,7 +595,7 @@ export default function ViewRegistrationPage() {
                           firebase
                             .firestore()
                             .collection("classes-registration")
-                            .doc("2022january")
+                            .doc("2022june")
                             .collection("registrations")
                             .doc(detailModalRegistrationId)
                             .update({

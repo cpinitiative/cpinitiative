@@ -2,11 +2,13 @@ import * as React from "react"
 import Image from "next/image"
 import {
   empty,
+  arnan,
   evan,
   jesse,
   nikhil,
   ryan,
   davidz,
+  frank,
   nathanw,
   jeffrey,
   alex_chen,
@@ -14,6 +16,7 @@ import {
   jarvis,
   mayank,
   varun,
+  vidith,
 } from "../index/images"
 
 type Member = {
@@ -64,13 +67,13 @@ const members: Member[] = [
     title: "Instructor",
   },
   {
-    photo: empty,
+    photo: frank,
     name: "Frank Xiao",
     title: "Instructor",
   },
   {
-    photo: empty,
-    name: "Vidth Madhu",
+    photo: vidith,
+    name: "Vidith Madhu",
     title: "Instructor",
   },
   {
@@ -94,7 +97,7 @@ const members: Member[] = [
     title: "Instructor",
   },
   {
-    photo: empty,
+    photo: arnan,
     name: "Arnan Bawa",
     title: "Instructor",
   },

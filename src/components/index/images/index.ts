@@ -8,6 +8,7 @@ import amogha from "./amogha.jpeg"
 import amy_chang from "./amy_chang.jpg"
 import andi from "./andi.jpeg"
 import andrew from "./andrew.png"
+import arnan from "./arnan.png"
 import arpan from "./arpan.png"
 import atharv from "./atharv.png"
 import ben from "./ben.jpg"
@@ -24,6 +25,7 @@ import dong from "./dong.jpg"
 import dustin from "./dustin.jpg"
 import egor from "./egor.jpg"
 import evan from "./evan.jpg"
+import frank from "./frank.jpg"
 import harry from "./harry.jpg"
 import jarvis from "./jarvis.png"
 import jason from "./jason.jpeg"
@@ -58,6 +60,7 @@ import sofia from "./sofia.png"
 import tarushii from "./tarushii.jpeg"
 import timothy from "./timothy.png"
 import varun from "./varun.jpg"
+import vidith from "./vidith.jpg"
 import vikas_thoutam from "./vikas_thoutam.png"
 import vivian from "./vivian.jpg"
 import yifan_ma from "./yifan_ma.png"
@@ -75,6 +78,7 @@ export {
   amy_chang,
   andi,
   andrew,
+  arnan,
   arpan,
   atharv,
   ben,
@@ -91,6 +95,7 @@ export {
   dustin,
   egor,
   evan,
+  frank,
   harry,
   jarvis,
   jason,
@@ -125,6 +130,7 @@ export {
   tarushii,
   timothy,
   varun,
+  vidith,
   vikas_thoutam,
   vivian,
   yifan_ma,
