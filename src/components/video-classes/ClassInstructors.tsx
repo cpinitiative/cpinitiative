@@ -34,32 +34,7 @@ const members: Member[] = [
   {
     photo: evan,
     name: "Evan Zhao",
-    title: "Bronze Lead Instructor / Finalist",
-  },
-  {
-    photo: nathanw,
-    name: "Nathan Wang",
-    title: "Administrative Staff / Finalist",
-  },
-  {
-    photo: jeffrey,
-    name: "Jeffrey Meng",
-    title: "Administrative Staff",
-  },
-  {
-    photo: alex_chen,
-    name: "Alex Chen",
-    title: "Director of Curriculum",
-  },
-  {
-    photo: jarvis,
-    name: "Jarvis",
-    title: "Director of Outreach",
-  },
-  {
-    photo: mayank,
-    name: "Mayank",
-    title: "Operations Manager",
+    title: "Bronze Lead Instructor",
   },
   {
     photo: empty,
