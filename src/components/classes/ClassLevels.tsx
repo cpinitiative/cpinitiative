@@ -36,7 +36,7 @@ export default function ClassLevels() {
                     </h3>
                   </div>
                   <div className="mt-4 flex items-baseline text-5xl leading-none font-extrabold">
-                    Beginner (Full)
+                    Beginner
                   </div>
                   <p className="mt-5 text-lg leading-7 text-gray-500">
                     Teaches the necessary techniques needed to pass USACO
@@ -98,13 +98,13 @@ export default function ClassLevels() {
                   <div>
                     <h3
                       className="inline-flex px-4 py-1 text-white font-semibold text-sm uppercase tracking-wide bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full"
-                      id="tier-standard"  
+                      id="tier-standard"
                     >
                       USACO Silver
                     </h3>
                   </div>
                   <div className="mt-4 flex items-baseline text-5xl leading-none font-extrabold">
-                    Intermediate (Full)
+                    Intermediate
                   </div>
                   <p className="mt-5 text-lg leading-7 text-gray-500">
                     Teaches the necessary techniques needed to pass the USACO
@@ -152,13 +152,13 @@ export default function ClassLevels() {
                   <div className="rounded-md shadow">
                     <div className="rounded-md shadow">
                       <Link href="/classes/register/#intermediate">
-                      <a
-                        className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                        aria-describedby="tier-standard"
-                      >
-                        Register Now
-                      </a>
-                    </Link>
+                        <a
+                          className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                          aria-describedby="tier-standard"
+                        >
+                          Register Now
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
