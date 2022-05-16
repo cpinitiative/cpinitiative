@@ -33,7 +33,7 @@ export const FirebaseProvider = ({ children }) => {
         setFirebase(firebaseInstance)
       })
     }
-  }, [])
+  }, [firebase])
 
   return (
     <FirebaseContext.Provider value={firebase}>
