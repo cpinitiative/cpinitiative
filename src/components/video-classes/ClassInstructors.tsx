@@ -1,20 +1,17 @@
 import * as React from "react"
 import Image from "next/image"
 import {
-  daniel,
-  nathanw,
-  jeffrey,
-  alex_chen,
-  jarvis,
-  mayank,
+  ian,
+  arnan,
+  evan,
+  jesse,
+  nikhil,
+  ryan,
+  davidz,
+  frank,
+  julie,
   varun,
-  yu_lim,
-  jay,
-  david_li,
-  yifan_ma,
-  amogha,
-  amy_chang,
-  vikas_thoutam,
+  vidith,
 } from "../index/images"
 
 type Member = {
@@ -25,73 +22,58 @@ type Member = {
 
 const members: Member[] = [
   {
-    photo: daniel,
-    name: "Daniel Guan",
-    title: "Lead Instructor / Finalist",
-  },
-  {
-    photo: nathanw,
-    name: "Nathan Wang",
-    title: "Administrative Staff / Finalist",
-  },
-  {
-    photo: jeffrey,
-    name: "Jeffrey Meng",
-    title: "Administrative Staff",
-  },
-  {
-    photo: alex_chen,
-    name: "Alex Chen",
-    title: "Director of Curriculum",
-  },
-  {
-    photo: jarvis,
-    name: "Jarvis",
-    title: "Director of Outreach",
-  },
-  {
-    photo: mayank,
-    name: "Mayank",
-    title: "Operations Manager",
-  },
-  {
     photo: varun,
     name: "Varun Ragunath",
-    title: "Instructor / Finalist",
+    title: "Project Manager of Classes / Silver Lead Instructor / Finalist",
   },
   {
-    photo: yu_lim,
-    name: "Yu Lim",
-    title: "Instructor / Platinum",
+    photo: evan,
+    name: "Evan Zhao",
+    title: "Bronze Lead Instructor",
   },
   {
-    photo: jay,
-    name: "Jay Fu",
-    title: "Instructor / Platinum",
-  },
-  {
-    photo: david_li,
-    name: "David Li",
-    title: "Instructor / Platinum",
-  },
-  {
-    photo: yifan_ma,
-    name: "Yifan Ma",
+    photo: ian,
+    name: "Ian Zhang",
     title: "Instructor",
   },
   {
-    photo: amogha,
-    name: "Amogha Pokkulandra",
+    photo: frank,
+    name: "Frank Xiao",
     title: "Instructor",
   },
   {
-    photo: amy_chang,
-    name: "Amy Chang",
+    photo: vidith,
+    name: "Vidith Madhu",
     title: "Instructor",
   },
   {
-    photo: vikas_thoutam,
-    name: "Vikas Thoutam",
+    photo: jesse,
+    name: "Jesse Choe",
+    title: "Instructor",
+  },
+  {
+    photo: nikhil,
+    name: "Nikhil Chatterjee",
+    title: "Instructor",
+  },
+  {
+    photo: ryan,
+    name: "Ryan Chou",
+    title: "Instructor",
+  },
+  {
+    photo: julie,
+    name: "Juheon Rhee",
+    title: "Instructor",
+  },
+  {
+    photo: arnan,
+    name: "Arnan Bawa",
+    title: "Instructor",
+  },
+  {
+    photo: davidz,
+    name: "David Zhang",
     title: "Instructor",
   },
 ]

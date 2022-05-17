@@ -102,17 +102,17 @@ export default function ClassRegistrationPage() {
       <div className={"margin-top-nav"}>
         <div className={"px-5 sm:px-12 max-w-6xl mx-auto pt-10"}>
           <h1 className={"text-4xl font-bold tracking-tight leading-9 mb-10"}>
-            Live USACO Class Registration is Now Closed
+            USACO Live Course Registration
           </h1>
-          <a
+          {/* <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
             target="_blank"
             className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
             aria-describedby="tier-standard"
           >
             Get Notified of Future Classes
-          </a>
-          {/* {showError && <ErrorCard errorData={errorData} />}
+          </a> */}
+           {showError && <ErrorCard errorData={errorData} />}
           {success && !showError && (
             <ConfirmationCard
               level={level}
@@ -209,7 +209,7 @@ export default function ClassRegistrationPage() {
                 />
               )}
             </>
-          )} */}
+          )}
         </div>
       </div>
     </Layout>
