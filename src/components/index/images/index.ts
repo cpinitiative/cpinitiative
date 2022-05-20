@@ -24,6 +24,7 @@ import davidz from "./davidz.jpg"
 import dong from "./dong.jpg"
 import dustin from "./dustin.jpg"
 import egor from "./egor.jpg"
+import eric from "./eric.png"
 import evan from "./evan.jpg"
 import frank from "./frank.jpg"
 import harry from "./harry.jpg"
@@ -95,6 +96,7 @@ export {
   dong,
   dustin,
   egor,
+  eric,
   evan,
   frank,
   harry,
