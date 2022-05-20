@@ -227,7 +227,7 @@ const members: { [key: string]: Member } = {
   evan: {
     photo: evan,
     name: "Evan Zhao",
-    titles: [roles.liveInstructor],
+    titles: ["Lead Instructor", roles.liveInstructor],
     email: "evanzhao12@gmail.com",
   },
   frank: {
@@ -442,7 +442,11 @@ const members: { [key: string]: Member } = {
   varun: {
     photo: varun,
     name: "Varun Ragunath",
-    titles: [roles.liveInstructor, roles.videoInstructor],
+    titles: [
+      "Director of Classes",
+      roles.liveInstructor,
+      roles.videoInstructor,
+    ],
   },
   vidith: {
     photo: vidith,
@@ -498,9 +502,11 @@ const orderedFirst: Member[] = [
   members.dong,
   members.harry,
   members.neo,
-  members.jay,
+  members.varun,
   members.amy,
+  members.jay,
   members.pranav,
+  members.evan,
   members.andi,
   members.andrew,
   members.nathanc,
@@ -516,7 +522,6 @@ const rest: Member[] = [
   members.davidz,
   members.nikhil,
   members.ryan,
-  members.varun,
   members.vikas_thoutam,
   members.adham,
   members.dustin,
@@ -535,7 +540,6 @@ const rest: Member[] = [
   members.alex,
   members.jason,
   members.mithil,
-  members.evan,
   members.jeffrey_zhang,
   members.riley,
   members.julie,
