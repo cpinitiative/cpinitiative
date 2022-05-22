@@ -263,10 +263,16 @@ export default function ViewRegistrationPage() {
                   <a href={"#" + reg.id} className="block hover:bg-gray-50">
                     <div className="px-4 py-4 sm:px-6">
                       <div className="flex items-center justify-between">
-                        <p className="text-sm font-medium text-purple-600 truncate">
-                          {reg.data.personalInfo.firstName}{" "}
-                          {reg.data.personalInfo.lastName}
-                        </p>
+                        <div className="flex flex-col sm:flex-row sm:gap-2 items-start sm:items-center text-gray-500">
+                          <p className="text-sm font-medium text-purple-600 truncate">
+                            {reg.data.personalInfo.firstName}{" "}
+                            {reg.data.personalInfo.lastName}
+                          </p>
+                          <span className="hidden sm:block">&bull;</span>
+                          <span className="text-sm">
+                            {reg.data.personalInfo.email}
+                          </span>
+                        </div>
                         <div className="ml-2 flex-shrink-0 flex">
                           {!reg.data.financialAid && (
                             <p className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
