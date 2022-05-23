@@ -115,6 +115,7 @@ export default function ViewRegistrationPage() {
             "uolNeSdAeQRq7Tl1fMYsqfvYVwF3",
             "66c1KZcjpGMkGsT6IJUuLtUkkV23",
             "OnrIPCVMRXW3RX7m989nT9yJ8x93",
+            "LLyjrLbioYZQiKfN0hxQDpXg5AR2",
           ].includes(user.uid)
         ) {
           setHasPermission(true)
