@@ -1,4 +1,4 @@
-import Image from "next/dist/client/image"
+import Image from "next/image"
 
 export default function ContestCard({ name, date, photo, link, isPast, isToday }) {
   return (
