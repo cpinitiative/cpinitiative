@@ -5,6 +5,7 @@ import Hero from "../components/contests/Hero"
 import Header from "../components/Header"
 import Divisions from "../components/contests/Divisions"
 import EmailForm from "../components/video-classes/EmailForm"
+import ContestList from "../components/contests/ContestList"
 
 export default function Contests() {
   return (
@@ -16,7 +17,7 @@ export default function Contests() {
 
       <Header dark />
 
-      <div className="bg-gray-900 min-h-screen flex">
+      <div className="bg-gray-900 min-h-screen lg:min-h-[50vh] flex">
         {/* <div className="h-16 flex-shrink-0" /> */}
         {/*Banner Padding*/}
         {/*<div className="h-20 sm:h-12"/>*/}
@@ -36,6 +37,22 @@ export default function Contests() {
             <div className="max-w-md mt-12">
               <EmailForm listName={"contests"} tag={"contests"} wide />
             </div>
+              <div className="lg:hidden flex flex-col items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-8 sm:h-12 sm:w-12 text-white animate-bounce absolute bottom-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 13l-5 5m0 0l-5-5m5 5V6"
+                  />
+                </svg>
+              </div>
           </div>
         </div>
       </div>
@@ -58,82 +75,8 @@ export default function Contests() {
             interested, sign up for our newsletter above.
           </p>
           <p>We currently partner with the following programming contests:</p>
-          <ul>
-            <li>
-              <a
-                href="https://tinyurl.com/4thTuringFunCupGuidebook"
-                target="_blank"
-                rel="noreferrer"
-              >
-                4th Turing Fun Cup
-              </a>{" "}
-              - May 14, 2022
-            </li>
-            <li>
-              <a
-                href="https://andovercomputingopen.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                The Andover Computing Open (TACO)
-              </a>{" "}
-              - May 21, 2022
-            </li>
-            <li>
-              <a href="https://mbit.mbhs.edu/" target="_blank" rel="noreferrer">
-                Montgomery Blair Informatics Tournament (mBIT)
-              </a>{" "}
-              - May 22, 2022
-            </li>
-            <li>
-              <a
-                href="https://traverse-cs.org/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                traverse[cs]
-              </a>{" "}
-              - June 19, 2022
-            </li>
-
-            <li>
-              <a
-                href="https://algirlithm.org/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                alGIRLithm. A programming contest for high school girls.
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://lit.lhsmathcs.org/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Lexington Informatics Tournament (LIT)
-              </a>
-            </li>
-            <li>
-              <a href="https://teamscode.org/" target="_blank" rel="noreferrer">
-                Teamscode
-              </a>
-            </li>
-          </ul>
-          <p>
-            Are you organizing a contest targeted towards high schoolers? If you
-            want to partner with us, send us an email at{" "}
-            <a
-              href="mailto:contests@joincpi.org"
-              target="_blank"
-              rel="noreferrer"
-            >
-              contests@joincpi.org
-            </a>
-            .
-          </p>
         </div>
+        <ContestList />
       </div>
     </Layout>
   )
