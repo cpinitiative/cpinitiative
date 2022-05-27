@@ -69,6 +69,7 @@ export default function ClassRegistrationPage() {
   const firebase = useFirebase()
   const dataIsValid = useMemo(() => {
     return !(
+      !level ||
       !firstName ||
       !lastName ||
       !email ||
@@ -80,6 +81,7 @@ export default function ClassRegistrationPage() {
       (referrer == "other" && !referrerDetail)
     )
   }, [
+    level,
     firstName,
     lastName,
     email,
