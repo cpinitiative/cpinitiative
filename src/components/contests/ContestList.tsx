@@ -9,6 +9,7 @@ import {
   mbit,
   /*algirlithm,*/ lit,
   teamscode,
+  tjioi,
 } from "./images"
 dayjs.extend(customParseFormat)
 dayjs.extend(isSameOrBefore)
@@ -86,6 +87,12 @@ const contests: {
   photo: StaticImageData
   link: string
 }[] = [
+  {
+    name: "TJIOI 2022",
+    date: "June 11, 2022",
+    photo: tjioi,
+    link: "https://codeforces.com/blog/entry/103256"
+  },
   {
     name: "4th Turing Fun Cup",
     date: "May 14, 2022",
