@@ -217,7 +217,7 @@ export default function ViewRegistrationPage() {
       <div className="pt-4 sm:pt-10 text-center sm:text-left px-10 bg-gray-100 pb-10">
         <div className={"max-w-3xl mx-auto"}>
           <h1 className={"text-4xl font-bold tracking-tight leading-9"}>
-            Live Class Registration Data
+            Video Classes Registration Data
           </h1>
           <p className={"my-4"}>
             <a
