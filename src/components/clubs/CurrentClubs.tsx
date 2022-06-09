@@ -16,6 +16,7 @@ import {
   east_career,
   fremont,
   horace_greeley,
+  imsa,
   independence,
   interlake,
   ladue_horton,
@@ -28,6 +29,7 @@ import {
   montgomery,
   nanjing,
   new_hampshire,
+  newbury_park,
   north_andover,
   northview,
   oak_valley,
@@ -139,7 +141,7 @@ const clubs: {
   {
     name: "East Career & Technical Academy",
     photo: east_career,
-    region: "Nevada"
+    region: "Nevada",
   },
   {
     name: "Fremont High School",
@@ -155,6 +157,11 @@ const clubs: {
     name: "Horace Greeley High School",
     photo: horace_greeley,
     region: "New York",
+  },
+  {
+    name: "Illinois Math and Science Academy",
+    photo: imsa,
+    region: "Illinois",
   },
   {
     name: "Independence High School",
@@ -210,6 +217,11 @@ const clubs: {
     name: "Nanjing International School",
     photo: nanjing,
     region: "Nanjing",
+  },
+  {
+    name: "Newbury Park High School",
+    photo: newbury_park,
+    region: "California",
   },
   {
     name: "North Andover High School",

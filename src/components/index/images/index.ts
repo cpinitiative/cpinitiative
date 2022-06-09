@@ -9,6 +9,7 @@ import amy_chang from "./amy_chang.jpg"
 import andi from "./andi.jpeg"
 import andrew from "./andrew.png"
 import arnan from "./arnan.png"
+import arnav from "./arnav.jpg"
 import arpan from "./arpan.png"
 import atharv from "./atharv.png"
 import ben from "./ben.jpg"
@@ -59,6 +60,7 @@ import sathvik from "./sathvik.png"
 import shikhar from "./shikhar.jpg"
 import siyong from "./siyong.jpeg"
 import sofia from "./sofia.png"
+import stanley from "./stanley.png"
 import tarushii from "./tarushii.jpeg"
 import timothy from "./timothy.png"
 import varun from "./varun.jpg"
@@ -81,6 +83,7 @@ export {
   andi,
   andrew,
   arnan,
+  arnav,
   arpan,
   atharv,
   ben,
@@ -131,6 +134,7 @@ export {
   shikhar,
   siyong,
   sofia,
+  stanley,
   tarushii,
   timothy,
   varun,

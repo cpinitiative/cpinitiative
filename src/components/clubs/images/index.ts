@@ -13,6 +13,7 @@ import delhi from "./delhi.jpg"
 import east_career from "./east_career.jpg"
 import fremont from "./fremont.jpg"
 import horace_greeley from "./horace_greeley.jpg"
+import imsa from "./imsa.jpg"
 import independence from "./independence.jpg"
 import interlake from "./interlake.jpg"
 import ladue_horton from "./ladue_horton.jpg"
@@ -25,6 +26,7 @@ import monta_vista from "./monta_vista.jpg"
 import montgomery from "./montgomery.jpg"
 import nanjing from "./nanjing.jpg"
 import new_hampshire from "./new_hampshire.jpg"
+import newbury_park from "./newbury_park.jpg"
 import north_andover from "./north_andover.jpg"
 import northview from "./northview.jpg"
 import oak_valley from "./oak_valley.jpg"
@@ -63,6 +65,7 @@ export {
   east_career,
   fremont,
   horace_greeley,
+  imsa,
   independence,
   interlake,
   ladue_horton,
@@ -75,6 +78,7 @@ export {
   montgomery,
   nanjing,
   new_hampshire,
+  newbury_park,
   north_andover,
   northview,
   oak_valley,
