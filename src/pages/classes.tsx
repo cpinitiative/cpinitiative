@@ -487,6 +487,9 @@ export default function Classes() {
                     problems and contain problemsets for homework.
                   </p>
                   <p>
+                    All classes will be recorded, so don't worry if you are unable to attend every class!
+                  </p>
+                  <p>
                     Classes follow a flipped learning model to maximize the
                     amount of time students have to ask instructors questions.
                     Our curriculum is modeled off the{" "}
