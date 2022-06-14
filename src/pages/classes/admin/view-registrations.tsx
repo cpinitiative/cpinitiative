@@ -210,6 +210,48 @@ export default function ViewRegistrationPage() {
     )
   }
 
+  const handleGrantFinancialAid = () => {
+    if (!firebase) {
+      alert("Please try again in 10 seconds")
+      return
+    }
+
+    firebase
+      .auth()
+      .currentUser.getIdToken()
+      .then(idToken => {
+        return fetch(`/api/classes/approve-live-financial-aid`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            authToken: idToken,
+            registrationId: detailModalRegistrationId,
+            email: detailModalRegistrationData.personalInfo.email,
+            firstName: detailModalRegistrationData.personalInfo.firstName,
+            lastName: detailModalRegistrationData.personalInfo.lastName,
+            preferredLanguage:
+              detailModalRegistrationData.personalInfo.preferredLanguage,
+            level: detailModalRegistrationData.level,
+          }),
+        })
+      })
+      .then(resp => resp.json())
+      .then(resp => {
+        if (!resp.success) {
+          throw new Error(resp.message)
+        }
+        setDetailModalFASubmittingApproval(false)
+      })
+      .catch(error => {
+        alert("An error occurred: " + error.message)
+        setDetailModalFASubmittingApproval(false)
+        console.error(error)
+      })
+    setDetailModalFASubmittingApproval(true)
+  }
+
   return (
     <Layout>
       <Header noBanner />
@@ -542,37 +584,7 @@ export default function ViewRegistrationPage() {
                             return
                           }
 
-                          if (!firebase) {
-                            alert("Please try again in 10 seconds")
-                            return
-                          }
-                          setDetailModalFASubmittingApproval(true)
-                          firebase
-                            .functions()
-                            .httpsCallable(
-                              "cpiclasses-approveLiveFinancialAid"
-                            )({
-                              registrationId: detailModalRegistrationId,
-                              email:
-                                detailModalRegistrationData.personalInfo.email,
-                              firstName:
-                                detailModalRegistrationData.personalInfo
-                                  .firstName,
-                              lastName:
-                                detailModalRegistrationData.personalInfo
-                                  .lastName,
-                              preferredLanguage:
-                                detailModalRegistrationData.personalInfo
-                                  .preferredLanguage,
-                              level: detailModalRegistrationData.level,
-                            })
-                            .then(() => {
-                              setDetailModalFASubmittingApproval(false)
-                            })
-                            .catch(e => {
-                              alert("An error occurred:" + e.message)
-                              setDetailModalFASubmittingApproval(false)
-                            })
+                          handleGrantFinancialAid()
                         }}
                         type="button"
                         disabled={detailModalFASubmittingApproval}

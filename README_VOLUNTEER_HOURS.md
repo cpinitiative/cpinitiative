@@ -15,6 +15,7 @@
    SHEETS_PRIVATE_KEY_ID="1298301asfa98sf09ac0291023"
    FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----..."
    ENCRYPTION_KEY="asdjkflajsdflkjas;ldjfa"
+   MAILCHIMP_API_KEY="asdlfkjasf"
    ```
 
    Here's how to get the following keys:
