@@ -37,6 +37,8 @@ type BaseClassRegistration = {
     timestamp: any // firebase timestamp??
 
     joinLink: string
+
+    isDeleted?: boolean
   }
 }
 
