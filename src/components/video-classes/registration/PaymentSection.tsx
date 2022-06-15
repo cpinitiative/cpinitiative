@@ -145,9 +145,13 @@ export default function PaymentSection({
                     }}
                     onSuccess={(details, data) => {
                       setSubmitting(true)
-                      firebase
-                        .functions()
-                        .httpsCallable("cpiclasses-processRegistration")({
+
+                      fetch(`/api/classes/process-registration`, {
+                        method: "POST",
+                        headers: {
+                          "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
                           level,
                           firstName,
                           lastName,
@@ -157,8 +161,14 @@ export default function PaymentSection({
                           referrerDetail,
                           timezone,
                           orderData: data,
-                        })
+                        }),
+                      })
+                        .then(resp => resp.json())
                         .then(data => {
+                          if (!data.success) {
+                            throw new Error(data.message)
+                          }
+
                           setRegistrationId(data.data.registrationId)
                           setSuccess(true)
                           setSubmitting(false)
@@ -186,6 +196,7 @@ export default function PaymentSection({
                                     rows={4}
                                     readOnly={true}
                                     value={JSON.stringify({
+                                      payer: details.payer,
                                       data,
                                       e,
                                     })}
@@ -202,8 +213,6 @@ export default function PaymentSection({
                             ),
                           })
                           setShowError(true)
-
-                          return
                         })
                     }}
                     options={{

@@ -67,8 +67,7 @@ export default function PaymentSection({
                   <p className="mt-1 text-sm text-gray-600">
                     Returns: If you are not satisfied with our classes, you may
                     cancel your class registration anytime before the{" "}
-                    <b>second</b> class for a <b>full refund</b> by
-                    emailing{" "}
+                    <b>second</b> class for a <b>full refund</b> by emailing{" "}
                     <a
                       href={"mailto:classes@joincpi.org"}
                       className={"underline"}
@@ -145,9 +144,13 @@ export default function PaymentSection({
                     }}
                     onSuccess={(details, data) => {
                       setSubmitting(true)
-                      firebase
-                        .functions()
-                        .httpsCallable("cpiclasses-processLiveRegistration")({
+
+                      fetch(`/api/classes/process-live-registration`, {
+                        method: "POST",
+                        headers: {
+                          "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
                           level,
                           firstName,
                           lastName,
@@ -157,9 +160,14 @@ export default function PaymentSection({
                           referrerDetail,
                           timezone,
                           orderData: data,
-                        })
+                        }),
+                      })
+                        .then(resp => resp.json())
                         .then(data => {
-                          console.log(data)
+                          if (!data.success) {
+                            throw new Error(data.message)
+                          }
+
                           setRegistrationId(data.data.registrationId)
                           setSuccess(true)
                           setSubmitting(false)
@@ -187,6 +195,7 @@ export default function PaymentSection({
                                     rows={4}
                                     readOnly={true}
                                     value={JSON.stringify({
+                                      payer: details.payer,
                                       data,
                                       e,
                                     })}

@@ -23,7 +23,7 @@ export default async function approveFinancialAid(
 
     const authUser = await getAuth().verifyIdToken(authToken)
     if (!classRegistrationAdministrators.includes(authUser.uid)) {
-      return response.status(400).json({
+      return response.status(403).json({
         success: false,
         message: "Insufficient permissions.",
       })

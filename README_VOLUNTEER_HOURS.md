@@ -16,6 +16,7 @@
    FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----..."
    ENCRYPTION_KEY="asdjkflajsdflkjas;ldjfa"
    MAILCHIMP_API_KEY="asdlfkjasf"
+   PAYPAL_API_SECRET="ddd"
    ```
 
    Here's how to get the following keys:
