@@ -1,4 +1,4 @@
-export type LiveClassRegistration = {
+type BaseClassRegistration = {
   id: string
   data: {
     financialAid: boolean
@@ -35,7 +35,11 @@ export type LiveClassRegistration = {
     }
 
     timestamp: any // firebase timestamp??
+
+    joinLink: string
   }
 }
 
-export type ClassRegistration = LiveClassRegistration
+export type LiveClassRegistration = BaseClassRegistration
+
+export type ClassRegistration = BaseClassRegistration

@@ -104,6 +104,7 @@ export default async function processRegistration(
           timezone,
         },
         timestamp: FieldValue.serverTimestamp(),
+        joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
       }),
 
       updateMailingList({

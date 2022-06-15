@@ -577,6 +577,10 @@ export default function ViewRegistrationPage() {
                             .utcOffset() / 60}
                           )
                         </p>
+                        <p className=" text-gray-900">
+                          <b>Join Link:</b>{" "}
+                          {detailModalRegistrationData.joinLink || ""}
+                        </p>
                       </div>
                     </div>
                   )}

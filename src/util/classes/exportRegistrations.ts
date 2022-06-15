@@ -53,6 +53,7 @@ const getSharedRegistrationInfo = (registrations: ClassRegistration[]) => {
       "Preferred Language",
       "Financial Aid",
       "Financial Aid Status",
+      "Join Link",
       "Timestamp",
     ],
   ]
@@ -69,6 +70,7 @@ const getSharedRegistrationInfo = (registrations: ClassRegistration[]) => {
       registration.data.personalInfo.preferredLanguage,
       registration.data.financialAid ? "Yes" : "No",
       registration.data.status || "",
+      registration.data.joinLink || "",
       new Date(registration.data.timestamp.seconds * 1000).toLocaleString(),
     ])
   }

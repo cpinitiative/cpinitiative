@@ -61,6 +61,7 @@ export default async function approveFinancialAid(
           status: "ACCEPTED",
           acceptedBy: authUser.uid,
           acceptedTimestamp: FieldValue.serverTimestamp(),
+          joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
         }),
     ])
 
