@@ -9,6 +9,7 @@ import moment from "moment-timezone"
 import * as Icons from "heroicons-react"
 import Transition from "../../../components/Transition"
 import type firebaseType from "firebase"
+import { exportRegistrations } from "../../../util/classes/exportRegistrations"
 
 export default function ViewRegistrationPage() {
   const firebase = useFirebase()
@@ -276,6 +277,13 @@ export default function ViewRegistrationPage() {
               {soundOn
                 ? "Turn off new registration chime"
                 : "Turn on new registration chime"}
+            </a>{" "}
+            &middot;{" "}
+            <a
+              onClick={() => exportRegistrations(registrations)}
+              className={"text-blue-600 hover:underline pt-4 cursor-pointer"}
+            >
+              Export Registrations
             </a>
           </p>
           <div className="my-4">
