@@ -10,14 +10,22 @@ import * as Icons from "heroicons-react"
 import Transition from "../../../components/Transition"
 import type firebaseType from "firebase"
 import { exportLiveRegistrations } from "../../../util/classes/exportRegistrations"
+import {
+  ClassRegistration,
+  LiveClassRegistration,
+} from "../../../types/registration"
+import useClassRegistrations from "../../../hooks/useClassRegistrations"
+import LoadingPage from "../../../components/classes/admin/LoadingPage"
+import MissingPermissionPage from "../../../components/classes/admin/MissingPermissionPage"
+import RegistrationStats from "../../../components/classes/admin/RegistrationStats"
 
 export default function ViewRegistrationPage() {
   const firebase = useFirebase()
-  const [user, setUser] = useState<firebaseType.User | null>(null)
-  const [loading, setLoading] = useState(true)
-  const [hasPermission, setHasPermission] = useState(false)
-  const [registrations, setRegistrations] = useState([])
   const [soundOn, setSoundOn] = useState(false)
+  const {
+    hasPermission,
+    registrations: registrationsIncludingDeleted,
+  } = useClassRegistrations<LiveClassRegistration>("2022june", soundOn)
   const [showDetailModal, setShowDetailModal] = useState(false)
   const [detailModalRegistrationId, setDetailModalRegistrationId] = useState("")
   const [
@@ -29,55 +37,14 @@ export default function ViewRegistrationPage() {
     setDetailModalFASubmittingRejection,
   ] = useState(false)
 
-  const detailModalRegistrationData = registrations.find(
+  const detailModalRegistrationData = registrationsIncludingDeleted?.find(
     r => r.id == detailModalRegistrationId
   )?.data
-  const finalizedRegistrations = useMemo(
-    () =>
-      registrations.filter(
-        r => !r.data?.financialAid || r.data?.financialAid.status !== "ACCEPTED"
-      ),
-    [registrations]
+  const registrations = useMemo(
+    () => registrationsIncludingDeleted?.filter(r => !r.data?.isDeleted) ?? [],
+    [registrationsIncludingDeleted]
   )
-  const numAcceptedFinancialAid = useMemo(
-    () =>
-      finalizedRegistrations.filter(r => r.data?.status === "ACCEPTED").length,
-    [finalizedRegistrations]
-  )
-  const numRejectedFinancialAid = useMemo(
-    () =>
-      finalizedRegistrations.filter(
-        r => r.data?.status && r.data?.status !== "ACCEPTED"
-      ).length,
-    [finalizedRegistrations]
-  )
-  const numPendingFinancialAid = useMemo(
-    () => registrations.filter(r => r.data?.status === "PENDING").length,
-    [registrations]
-  )
-  const numBeginner = useMemo(
-    () =>
-      finalizedRegistrations.filter(r => r.data?.level == "beginner").length,
-    [finalizedRegistrations]
-  )
-  const numBeginnerJava = useMemo(
-    () =>
-      finalizedRegistrations.filter(
-        r =>
-          r.data?.level == "beginner" &&
-          r.data?.personalInfo.preferredLanguage == "java"
-      ).length,
-    [finalizedRegistrations]
-  )
-  const numIntermediateJava = useMemo(
-    () =>
-      finalizedRegistrations.filter(
-        r =>
-          r.data?.level == "intermediate" &&
-          r.data?.personalInfo.preferredLanguage == "java"
-      ).length,
-    [finalizedRegistrations]
-  )
+
   useEffect(() => {
     const handler = () => {
       const id = window.location.hash?.substring(1) || ""
@@ -96,119 +63,11 @@ export default function ViewRegistrationPage() {
       window.removeEventListener("hashchange", handler)
     }
   }, [])
-  const oldRegistrationCount = React.useRef<number>(0)
-  useEffect(() => {
-    if (!firebase) {
-      return
-    }
-    const unsubscribeHandlers = []
-    unsubscribeHandlers.push(
-      firebase.auth().onAuthStateChanged(user => {
-        setLoading(false)
-        setUser(user)
-        if (
-          user &&
-          [
-            "OjLKRTTzNyQgMifAExQKUA4MtfF2",
-            "7G0y8xGyv4gkowb33Vmn478znod2",
-            "BKFOe33Ym7Pc7aQuET57MiljpF03",
-            "YF9ObmH1SUR1MKJGTrO8DfBQUG13",
-            "5IXfZDX1j2ZOftqfYiBcmmStmn93",
-            "uolNeSdAeQRq7Tl1fMYsqfvYVwF3",
-            "66c1KZcjpGMkGsT6IJUuLtUkkV23",
-            "OnrIPCVMRXW3RX7m989nT9yJ8x93",
-            "LLyjrLbioYZQiKfN0hxQDpXg5AR2",
-          ].includes(user.uid)
-        ) {
-          setHasPermission(true)
-          unsubscribeHandlers.push(
-            firebase
-              .firestore()
-              .collection("classes-registration")
-              .doc("2022june")
-              .collection("registrations")
-              .onSnapshot(snapshot => {
-                const newRegistrations = []
-                snapshot.forEach(doc => {
-                  newRegistrations.push({
-                    id: doc.id,
-                    data: doc.data(),
-                  })
-                })
-                newRegistrations.sort(
-                  (a, b) =>
-                    /* desc */
-                    b.data.timestamp.toMillis() - a.data.timestamp.toMillis()
-                )
-                if (
-                  soundOn &&
-                  newRegistrations.length > oldRegistrationCount.current
-                ) {
-                  const audio = new Audio(
-                    "https://github.com/thecodingwizard/super-coin-box/raw/gh-pages/assets/coin.mp3"
-                  )
-                  audio.play()
-                }
-                oldRegistrationCount.current = newRegistrations.length
-                setRegistrations(newRegistrations)
-              })
-          )
-        } else {
-          setHasPermission(false)
-        }
-      })
-    )
 
-    return () => unsubscribeHandlers.forEach(fn => fn())
-  }, [firebase, soundOn])
-  if (loading) {
-    return (
-      <Layout>
-        <Header />
-        <div className="margin-top-nav" />
-        <div className="pt-4 sm:pt-10 text-center sm:text-left px-10 mt-28">
-          <h1
-            className={
-              "text-4xl font-bold tracking-tight leading-9 text-center"
-            }
-          >
-            Loading...
-          </h1>
-        </div>
-      </Layout>
-    )
+  if (!registrationsIncludingDeleted) {
+    return <LoadingPage />
   } else if (!hasPermission) {
-    return (
-      <Layout>
-        <Header />
-        <div className="margin-top-nav" />
-        <div className="pt-4 sm:pt-10 text-center sm:text-left px-10 mt-28">
-          <h1 className={"text-4xl font-bold tracking-tight leading-9"}>
-            Error 404: Page Not Found
-          </h1>
-          <Link href={"/"}>
-            <a className={"text-2xl text-blue-600 hover:underline pt-4 block"}>
-              Go Home
-            </a>
-          </Link>
-
-          <button
-            onClick={() => {
-              if (user) {
-                firebase.auth().signOut()
-              } else {
-                firebase
-                  .auth()
-                  .signInWithPopup(new firebase.auth.GoogleAuthProvider())
-              }
-            }}
-            className={"text-2xl text-blue-600 hover:underline pt-4 block"}
-          >
-            {user ? "Sign Out" : "Sign In"}
-          </button>
-        </div>
-      </Layout>
-    )
+    return <MissingPermissionPage />
   }
 
   const handleGrantFinancialAid = () => {
@@ -287,28 +146,7 @@ export default function ViewRegistrationPage() {
               Export Registrations
             </a>
           </p>
-          <div className="my-4">
-            <p className={"font-bold"}>
-              {finalizedRegistrations.length} Registrations &middot;{" "}
-              {numPendingFinancialAid} Pending FA Applications
-            </p>
-            <p>
-              {finalizedRegistrations.length -
-                numAcceptedFinancialAid -
-                numRejectedFinancialAid}{" "}
-              Paid &middot; {numAcceptedFinancialAid} Accepted For Financial Aid
-            </p>
-            <p>
-              {numBeginner} Beginner ({numBeginnerJava} Java,{" "}
-              {numBeginner - numBeginnerJava} C++) &middot;{" "}
-              {finalizedRegistrations.length - numBeginner} Intermediate (
-              {numIntermediateJava} Java,{" "}
-              {finalizedRegistrations.length -
-                numBeginner -
-                numIntermediateJava}{" "}
-              C++)
-            </p>
-          </div>
+          <RegistrationStats registrations={registrations} />
           <div className="bg-white shadow overflow-hidden sm:rounded-md mt-5">
             <ul className="divide-y divide-gray-200">
               {registrations.map(reg => (
@@ -659,6 +497,33 @@ export default function ViewRegistrationPage() {
                           : "Reject Financial Aid Application"}
                       </button>
                     )}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (
+                        confirm(
+                          "Delete registration? This can't be reversed (easily). Also, this does not (yet) remove them from existing classes."
+                        )
+                      ) {
+                        Promise.all([
+                          firebase
+                            .firestore()
+                            .collection("classes-registration")
+                            .doc("2022june")
+                            .collection("registrations")
+                            .doc(detailModalRegistrationId)
+                            .update({
+                              isDeleted: true,
+                            }),
+                        ]).catch(e => {
+                          alert("An error occurred:" + e.message)
+                        })
+                      }
+                    }}
+                    className="mt-3 w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                  >
+                    Delete Registration
+                  </button>
                   <button
                     type="button"
                     onClick={() => {

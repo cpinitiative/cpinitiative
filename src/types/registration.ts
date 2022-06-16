@@ -1,4 +1,4 @@
-type BaseClassRegistration = {
+export type BaseClassRegistration = {
   id: string
   data: {
     financialAid: boolean
@@ -9,7 +9,7 @@ type BaseClassRegistration = {
       whyInNeed: string
       whyTakeCourse: string
     }
-    status?: "PENDING" | "ACCEPTED"
+    status?: "PENDING" | "ACCEPTED" | "REJECTED"
 
     // only if not finaid
     orderDetails?: {
@@ -39,6 +39,7 @@ type BaseClassRegistration = {
     joinLink: string
 
     isDeleted?: boolean
+    refunded?: boolean
   }
 }
 
