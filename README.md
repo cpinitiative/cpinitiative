@@ -23,6 +23,7 @@ Thanks to [Vercel](https://vercel.com/?utm_source=cp-initiative&utm_campaign=oss
    ENCRYPTION_KEY="asdjkflajsdflkjas;ldjfa"
    MAILCHIMP_API_KEY="asdlfkjasf"
    PAYPAL_API_SECRET="ddd"
+   MAILGUN_API_KEY=""
    ```
 
    Here's how to get the following keys:

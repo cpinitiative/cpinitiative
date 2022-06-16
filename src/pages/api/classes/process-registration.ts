@@ -2,9 +2,8 @@ import { NowRequest, NowResponse } from "@vercel/node"
 import { db } from "../../../../firebase"
 import * as payPalClient from "../../../util/classes/paypalClient"
 import { FieldValue } from "firebase-admin/firestore"
-import { updateMailingList } from "../../../util/classes/updateMailingList"
-import { getClientIp } from "request-ip"
 import * as checkoutNodeJssdk from "@paypal/checkout-server-sdk"
+import { sendWelcomeEmailBronzeVideos } from "../../../util/classes/sendWelcomeEmail"
 
 export default async function processRegistration(
   request: NowRequest,
@@ -107,16 +106,12 @@ export default async function processRegistration(
         joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
       }),
 
-      updateMailingList({
+      sendWelcomeEmailBronzeVideos(
         email,
         firstName,
         lastName,
-        preferredLanguage,
-        ip: getClientIp(request),
-        level,
-        fullFinancialAid: false,
-        joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
-      }),
+        `https://usaco.guide/groups/join?key=${joinLinkRef.id}`
+      ),
     ])
     console.warn("onbeforereturn")
     return response.status(200).json({

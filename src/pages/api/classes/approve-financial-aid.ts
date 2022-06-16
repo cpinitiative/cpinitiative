@@ -5,6 +5,7 @@ import { classRegistrationAdministrators } from "../../../util/permissions"
 import { FieldValue } from "firebase-admin/firestore"
 import { updateMailingList } from "../../../util/classes/updateMailingList"
 import { getClientIp } from "request-ip"
+import { sendWelcomeEmailBronzeVideos } from "../../../util/classes/sendWelcomeEmail"
 
 export default async function approveFinancialAid(
   request: NowRequest,
@@ -42,16 +43,12 @@ export default async function approveFinancialAid(
     })
 
     await Promise.all([
-      updateMailingList({
+      sendWelcomeEmailBronzeVideos(
         email,
         firstName,
         lastName,
-        preferredLanguage,
-        ip: getClientIp(request),
-        level,
-        fullFinancialAid: true,
-        joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
-      }),
+        `https://usaco.guide/groups/join?key=${joinLinkRef.id}`
+      ),
       db
         .collection("classes-registration")
         .doc("usacobronze")
