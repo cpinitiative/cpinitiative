@@ -106,12 +106,12 @@ export default async function processRegistration(
         joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
       }),
 
-      sendWelcomeEmailBronzeVideos(
-        email,
-        firstName,
-        lastName,
-        `https://usaco.guide/groups/join?key=${joinLinkRef.id}`
-      ),
+      sendWelcomeEmailBronzeVideos({
+        recipient: email,
+        fname: firstName,
+        lname: lastName,
+        joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
+      }),
     ])
     console.warn("onbeforereturn")
     return response.status(200).json({

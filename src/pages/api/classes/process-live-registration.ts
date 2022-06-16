@@ -8,6 +8,7 @@ import {
 } from "../../../util/classes/updateMailingList"
 import { getClientIp } from "request-ip"
 import * as checkoutNodeJssdk from "@paypal/checkout-server-sdk"
+import { sendWelcomeEmail } from "../../../util/classes/sendWelcomeEmail"
 
 export default async function processLiveRegistration(
   request: NowRequest,
@@ -95,14 +96,11 @@ export default async function processLiveRegistration(
         },
         timestamp: FieldValue.serverTimestamp(),
       }),
-      updateLiveMailingList({
-        email,
-        firstName,
-        lastName,
-        preferredLanguage,
-        ip: getClientIp(request),
-        level,
-        fullFinancialAid: false,
+      sendWelcomeEmail({
+        recipient: email,
+        fname: firstName,
+        lname: lastName,
+        classLevel: level,
       }),
     ])
 

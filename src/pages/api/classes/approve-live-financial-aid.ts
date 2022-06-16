@@ -3,8 +3,7 @@ import { getAuth } from "firebase-admin/auth"
 import { db } from "../../../../firebase"
 import { classRegistrationAdministrators } from "../../../util/permissions"
 import { FieldValue } from "firebase-admin/firestore"
-import { updateLiveMailingList } from "../../../util/classes/updateMailingList"
-import { getClientIp } from "request-ip"
+import { sendWelcomeEmail } from "../../../util/classes/sendWelcomeEmail"
 
 export default async function approveFinancialAid(
   request: NowRequest,
@@ -30,14 +29,11 @@ export default async function approveFinancialAid(
     }
 
     await Promise.all([
-      updateLiveMailingList({
-        email,
-        firstName,
-        lastName,
-        preferredLanguage,
-        ip: getClientIp(request),
-        level,
-        fullFinancialAid: true,
+      sendWelcomeEmail({
+        recipient: email,
+        fname: firstName,
+        lname: lastName,
+        classLevel: level,
       }),
       db
         .collection("classes-registration")

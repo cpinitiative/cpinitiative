@@ -43,12 +43,12 @@ export default async function approveFinancialAid(
     })
 
     await Promise.all([
-      sendWelcomeEmailBronzeVideos(
-        email,
-        firstName,
-        lastName,
-        `https://usaco.guide/groups/join?key=${joinLinkRef.id}`
-      ),
+      sendWelcomeEmailBronzeVideos({
+        recipient: email,
+        fname: firstName,
+        lname: lastName,
+        joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
+      }),
       db
         .collection("classes-registration")
         .doc("usacobronze")
