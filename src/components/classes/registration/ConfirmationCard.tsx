@@ -27,7 +27,7 @@ export default function ({ financialAid, level, email, registrationId }) {
               We have successfully processed your registration for the{" "}
               {level == "beginner" ? "Beginner" : "Intermediate"} USACO Class.
               Within two minutes, {email} should receive an email from
-              classes@joincpi.org with the subject{" "}
+              team@classes.joincpi.org with the subject{" "}
               <i>
                 Welcome to your CPI{" "}
                 {level == "beginner" ? "Beginner" : "Intermediate"} USACO Class!
