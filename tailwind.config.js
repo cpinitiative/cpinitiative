@@ -2,18 +2,11 @@ const defaultTheme = require("tailwindcss/defaultTheme")
 const colors = require("tailwindcss/colors")
 
 module.exports = {
-  mode: "jit",
   theme: {
     extend: {
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
-      // colors: {
-      //   'dark-surface': '#121212',
-      //   'dark-high-emphasis': 'rgba(255,255,255,0.87)',
-      //   'dark-med-emphasis': 'rgba(255, 255, 255, 0.60)',
-      //   'dark-disabled-emphasis': 'rgba(255, 255, 255, 0.38)',
-      // },
       boxShadow: {
         xs: "0 0 0 1px rgba(0, 0, 0, 0.05)",
         solid: "0 0 0 2px currentColor",
@@ -34,23 +27,10 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {
-      backgroundColor: ["group-focus", "active"],
-      borderColor: ["group-focus"],
-      boxShadow: ["group-focus", "focus"],
-      opacity: ["group-focus"],
-      textColor: ["group-focus", "active"],
-      textDecoration: ["group-focus"],
-    },
-  },
   plugins: [
     require("@tailwindcss/forms"),
     require("@tailwindcss/typography"),
     require("@tailwindcss/aspect-ratio"),
   ],
-  purge: {
-    // whitelist: ['mode-dark'],
-    content: ["./src/**/*.js", "./src/**/*.tsx"],
-  },
+  content: ["./src/**/*.js", "./src/**/*.tsx"],
 }

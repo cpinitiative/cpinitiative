@@ -11,6 +11,7 @@ import {
   teamscode,
   tjioi,
 } from "./images"
+import { StaticImageData } from "next/image"
 dayjs.extend(customParseFormat)
 dayjs.extend(isSameOrBefore)
 dayjs.extend(isToday)
@@ -91,7 +92,7 @@ const contests: {
     name: "TJIOI 2022",
     date: "June 11, 2022",
     photo: tjioi,
-    link: "https://codeforces.com/blog/entry/103256"
+    link: "https://codeforces.com/blog/entry/103256",
   },
   {
     name: "4th Turing Fun Cup",

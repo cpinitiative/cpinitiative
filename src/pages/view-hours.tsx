@@ -47,10 +47,12 @@ export function VolunteerHourHistory({ data }) {
                             className="text-sm text-gray-500 whitespace-pre-wrap"
                             key={`${item.time}_${pair[0]}`}
                           >
-                            <br />
-                            <b>{pair[0]}:</b>
-                            <br />
-                            {pair[1]}
+                            <>
+                              <br />
+                              <b>{pair[0]}:</b>
+                              <br />
+                              {pair[1]}
+                            </>
                           </span>
                         )
                       })}
