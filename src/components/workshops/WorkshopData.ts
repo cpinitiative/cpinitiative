@@ -2,6 +2,7 @@ import dayjs from "dayjs"
 import EGOI from "../../images/egoi-hero.png"
 import USACO from "../../images/usaco-guide-logo.png"
 import XCampCPI from "../../images/x-camp_cpi.png"
+import { StaticImageData } from "next/image"
 
 export type Workshop = {
   photo: StaticImageData

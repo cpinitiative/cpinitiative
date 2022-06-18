@@ -57,6 +57,7 @@ import {
   vivian,
   yifan_ma,
 } from "../index/images"
+import { StaticImageData } from "next/image"
 
 export type Member = {
   photo: StaticImageData // url of photo relative to content/authors/images/, EXCLUDING EXTENSION
