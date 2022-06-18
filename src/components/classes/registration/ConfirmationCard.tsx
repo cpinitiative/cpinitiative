@@ -1,6 +1,12 @@
 import * as React from "react"
 
-export default function ({ financialAid, level, email, registrationId }) {
+export default function ({
+  financialAid,
+  level,
+  email,
+  registrationId,
+  joinLink,
+}) {
   return (
     <div className="mt-5">
       <div className="shadow sm:rounded-md sm:overflow-hidden">
@@ -26,7 +32,7 @@ export default function ({ financialAid, level, email, registrationId }) {
             <>
               We have successfully processed your registration for the{" "}
               {level == "beginner" ? "Beginner" : "Intermediate"} USACO Class.
-              Within two minutes, {email} should receive an email from
+              Within a minute, {email} should receive an email from
               team@classes.joincpi.org with the subject{" "}
               <i>
                 Welcome to your CPI{" "}
@@ -35,8 +41,8 @@ export default function ({ financialAid, level, email, registrationId }) {
               containing all the information necessary for this course.{" "}
               <b>
                 If you don't see the email after a few minutes, please check
-                your promotions and spam tabs (and mark classes@joincpi.org as a
-                trusted sender). If you still don't see it, email us at{" "}
+                your promotions and spam tabs (and mark team@classes.joincpi.org
+                as a trusted sender). If you still don't see it, email us at{" "}
                 <a
                   className={"underline text-blue-700"}
                   href={"mailto:classes@joincpi.org"}
@@ -45,6 +51,26 @@ export default function ({ financialAid, level, email, registrationId }) {
                 </a>
                 .
               </b>
+              <p>
+                You can use this unique, <i>one time use</i> link to join the
+                class on our online learning management system:{" "}
+                <a
+                  className="underline text-blue-700 font-bold"
+                  href={joinLink}
+                  target="_blank"
+                >
+                  {joinLink}
+                </a>
+                . After that, you can access the group by visiting this URL:{" "}
+                <a
+                  className="underline text-blue-700"
+                  href="https://usaco.guide/groups"
+                  target="_blank"
+                >
+                  https://usaco.guide/groups
+                </a>
+                .
+              </p>
               <p>
                 <b>Your Registration ID:</b> {registrationId}
               </p>

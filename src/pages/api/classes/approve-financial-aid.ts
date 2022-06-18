@@ -65,6 +65,7 @@ export default async function approveFinancialAid(
     return response.status(200).json({
       success: true,
       message: "Financial Aid successfully granted",
+      joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
     })
   } catch (error) {
     return response.status(500).json({

@@ -28,12 +28,26 @@ export default async function approveFinancialAid(
       })
     }
 
+    const joinLinkRef = db.collection("group-join-links").doc()
+    await joinLinkRef.set({
+      groupId:
+        level === "beginner" ? "afVEHA7YZ808xlT4LsWK" : "AGEuSxHOWlh2tNnBqnPY",
+      revoked: false,
+      numUses: 0,
+      maxUses: 1,
+      expirationTime: null,
+      usedBy: [],
+      author: "REGISTRATION_" + email,
+      id: joinLinkRef.id,
+    })
+
     await Promise.all([
       sendWelcomeEmail({
         recipient: email,
         fname: firstName,
         lname: lastName,
         classLevel: level,
+        joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
       }),
       db
         .collection("classes-registration")
@@ -44,12 +58,14 @@ export default async function approveFinancialAid(
           status: "ACCEPTED",
           acceptedBy: authUser.uid,
           acceptedTimestamp: FieldValue.serverTimestamp(),
+          joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
         }),
     ])
 
     return response.status(200).json({
       success: true,
       message: "Financial Aid successfully granted",
+      joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
     })
   } catch (error) {
     return response.status(500).json({
