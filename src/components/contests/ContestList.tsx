@@ -11,7 +11,7 @@ import {
   teamscode,
   tjioi,
 } from "./images"
-import { StaticImageData } from "neext/image"
+import { StaticImageData } from "next/image"
 dayjs.extend(customParseFormat)
 dayjs.extend(isSameOrBefore)
 dayjs.extend(isToday)
