@@ -1,6 +1,12 @@
 import * as React from "react"
 
-export default function ({ financialAid, level, email, registrationId }) {
+export default function ({
+  financialAid,
+  level,
+  email,
+  registrationId,
+  joinLink,
+}) {
   return (
     <div className="mt-5">
       <div className="shadow sm:rounded-md sm:overflow-hidden">
@@ -42,6 +48,26 @@ export default function ({ financialAid, level, email, registrationId }) {
                 </a>
                 .
               </b>
+              <p>
+                You can use this unique, <i>one time use</i> link to join the
+                class on our online learning management system:{" "}
+                <a
+                  className="underline text-blue-700 font-bold"
+                  href={joinLink}
+                  target="_blank"
+                >
+                  {joinLink}
+                </a>
+                . After that, you can access the group by visiting this URL:{" "}
+                <a
+                  className="underline text-blue-700"
+                  href="https://usaco.guide/groups"
+                  target="_blank"
+                >
+                  https://usaco.guide/groups
+                </a>
+                .
+              </p>
               <p>
                 <b>Your Registration ID:</b> {registrationId}
               </p>

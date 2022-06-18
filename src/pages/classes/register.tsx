@@ -65,6 +65,7 @@ export default function ClassRegistrationPage() {
   const [faTermsAgree, setFaTermsAgree] = useState(false)
   const [success, setSuccess] = useState(false)
   const [registrationId, setRegistrationId] = useState("")
+  const [joinLink, setJoinLink] = useState("")
 
   const firebase = useFirebase()
   const dataIsValid = useMemo(() => {
@@ -114,13 +115,14 @@ export default function ClassRegistrationPage() {
           >
             Get Notified of Future Classes
           </a> */}
-           {showError && <ErrorCard errorData={errorData} />}
+          {showError && <ErrorCard errorData={errorData} />}
           {success && !showError && (
             <ConfirmationCard
               level={level}
               financialAid={financialAid}
               email={email}
               registrationId={registrationId}
+              joinLink={joinLink}
             />
           )}
           {submitting && !success && !showError && (
@@ -208,6 +210,7 @@ export default function ClassRegistrationPage() {
                   setErrorData={setErrorData}
                   setShowError={setShowError}
                   setRegistrationId={setRegistrationId}
+                  setJoinLink={setJoinLink}
                 />
               )}
             </>

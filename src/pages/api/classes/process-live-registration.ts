@@ -78,6 +78,20 @@ export default async function processLiveRegistration(
     console.log(
       `========== Processing registration ${ref.id} / ${firstName} ${lastName} / ${email} ==========`
     )
+
+    const joinLinkRef = db.collection("group-join-links").doc()
+    await joinLinkRef.set({
+      groupId:
+        level === "beginner" ? "afVEHA7YZ808xlT4LsWK" : "AGEuSxHOWlh2tNnBqnPY",
+      revoked: false,
+      numUses: 0,
+      maxUses: 1,
+      expirationTime: null,
+      usedBy: [],
+      author: "REGISTRATION_" + email,
+      id: joinLinkRef.id,
+    })
+
     await Promise.all([
       ref.set({
         financialAid: false,
@@ -95,12 +109,14 @@ export default async function processLiveRegistration(
           timezone,
         },
         timestamp: FieldValue.serverTimestamp(),
+        joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
       }),
       sendWelcomeEmail({
         recipient: email,
         fname: firstName,
         lname: lastName,
         classLevel: level,
+        joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
       }),
     ])
 
@@ -109,6 +125,7 @@ export default async function processLiveRegistration(
       data: {
         registrationId: ref.id,
         paymentId: orderID,
+        joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
       },
     })
   } catch (error) {

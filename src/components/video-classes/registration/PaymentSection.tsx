@@ -21,6 +21,7 @@ export default function PaymentSection({
   setErrorData,
   setShowError,
   setRegistrationId,
+  setJoinLink,
 }) {
   return (
     <div className="mt-10 sm:mt-0">
@@ -170,6 +171,7 @@ export default function PaymentSection({
                           }
 
                           setRegistrationId(data.data.registrationId)
+                          setJoinLink(data.data.joinLink)
                           setSuccess(true)
                           setSubmitting(false)
                         })

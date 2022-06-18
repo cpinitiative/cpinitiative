@@ -119,6 +119,7 @@ export default async function processRegistration(
       data: {
         registrationId: ref.id,
         paymentId: orderID,
+        joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
       },
     })
   } catch (error) {
