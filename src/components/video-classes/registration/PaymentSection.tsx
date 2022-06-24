@@ -195,7 +195,7 @@ export default function PaymentSection({
                                 <p>
                                   <b>Order Details: </b>
                                   <textarea
-                                    rows={4}
+                                    rows={10}
                                     readOnly={true}
                                     value={JSON.stringify({
                                       payer: details.payer,
@@ -221,6 +221,7 @@ export default function PaymentSection({
                       disableFunding: "credit",
                       clientId:
                         "AeRSduV1FG3pQYaXGSZcvkXXBD1oyV2cCbNtn7VJPS6yF_0QO9doD7dUn9inLveCGWrTgd-sR2Vllwp-",
+                      // clientId: "sb",
                     }}
                   />
                 </>
