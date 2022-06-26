@@ -39,7 +39,7 @@ export default function Sponsor() {
         <div className="mt-4 text-base leading-6 text-gray-300">
           Read our
           <a
-            href="https://joincpi.org/sponsorship_prospectus.pdf"
+            href="/sponsorship_prospectus.pdf"
             target="_blank"
             rel="noreferrer"
             className="text-blue-400 transition hover:text-purple-400"
