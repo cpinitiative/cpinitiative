@@ -90,8 +90,8 @@ const contests: {
   link: string
 }[] = [
   {
-   name: "CerealCodes",
-   date: "August 13, 2022",
+    name: "CerealCodes",
+    date: "August 13, 2022",
     photo: cerealcodes,
     link: "https://www.cerealcodes.org/",
   },
