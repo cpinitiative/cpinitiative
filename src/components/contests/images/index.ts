@@ -5,6 +5,7 @@ import lit from "./lit.png"
 import teamscode from "./teamscode.png"
 //import algirlithm from "./algirlithm"
 import tjioi from "./tjioi.png"
+import cerealcodes from "./cerealcodes.png"
 
 export {
     placeholder,
@@ -13,5 +14,6 @@ export {
     /*algirlithm,*/
     lit,
     teamscode,
-    tjioi
+    tjioi,
+    cerealcodes
 }
