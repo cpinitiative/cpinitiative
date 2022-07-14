@@ -10,6 +10,7 @@ import {
   /*algirlithm,*/ lit,
   teamscode,
   tjioi,
+  cerealcodes,
 } from "./images"
 import { StaticImageData } from "next/image"
 dayjs.extend(customParseFormat)
@@ -88,6 +89,12 @@ const contests: {
   photo: StaticImageData
   link: string
 }[] = [
+  {
+   name: "CerealCodes",
+   date: "August 13, 2022",
+    photo: cerealcodes,
+    link: "https://www.cerealcodes.org/",
+  },
   {
     name: "TJIOI 2022",
     date: "June 11, 2022",
