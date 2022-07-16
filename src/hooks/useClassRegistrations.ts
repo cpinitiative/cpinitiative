@@ -9,7 +9,7 @@ export default function useClassRegistrations<RegistrationType>(
   soundOn: boolean
 ) {
   const firebase = useFirebase()
-  const user = useFirebaseUser()
+  const { user, isLoading: isUserLoading } = useFirebaseUser()
   const [loading, setLoading] = useState(true)
   const [hasPermission, setHasPermission] = useState(false)
   const [registrations, setRegistrations] = useState<RegistrationType[] | null>(
@@ -18,10 +18,14 @@ export default function useClassRegistrations<RegistrationType>(
   const oldRegistrationCount = useRef<number>(0)
 
   useEffect(() => {
-    if (!firebase || !user) {
+    setLoading(true)
+    if (!firebase || isUserLoading) return
+    if (!user) {
+      setLoading(false)
+      setHasPermission(false)
+      setRegistrations(null)
       return
     }
-    setLoading(false)
 
     let unsubscribe = null
     if (
@@ -67,9 +71,12 @@ export default function useClassRegistrations<RegistrationType>(
             }
             oldRegistrationCount.current = newRegistrations.length
             setRegistrations(newRegistrations)
+
+            setLoading(false)
           },
           error => {
             alert("Error: " + error.message)
+            setLoading(false)
           }
         )
     } else {
@@ -77,7 +84,7 @@ export default function useClassRegistrations<RegistrationType>(
     }
 
     return unsubscribe
-  }, [user, soundOn])
+  }, [user, isUserLoading, soundOn])
 
   return {
     loading,

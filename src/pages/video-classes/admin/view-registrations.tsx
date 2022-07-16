@@ -21,13 +21,12 @@ export default function ViewRegistrationPage() {
   const {
     hasPermission,
     registrations: registrationsIncludingDeleted,
+    loading: isLoading,
   } = useClassRegistrations<ClassRegistration>("usacobronze", soundOn)
   const [showDetailModal, setShowDetailModal] = useState(false)
   const [detailModalRegistrationId, setDetailModalRegistrationId] = useState("")
-  const [
-    detailModalFASubmittingApproval,
-    setDetailModalFASubmittingApproval,
-  ] = useState(false)
+  const [detailModalFASubmittingApproval, setDetailModalFASubmittingApproval] =
+    useState(false)
   const [
     detailModalFASubmittingRejection,
     setDetailModalFASubmittingRejection,
@@ -60,7 +59,7 @@ export default function ViewRegistrationPage() {
     }
   }, [])
 
-  if (!registrationsIncludingDeleted) {
+  if (isLoading) {
     return <LoadingPage />
   } else if (!hasPermission) {
     return <MissingPermissionPage />

@@ -6,7 +6,7 @@ import Layout from "../../Layout"
 
 export default function MissingPermissionPage() {
   const firebase = useFirebase()
-  const user = useFirebaseUser()
+  const { user } = useFirebaseUser()
   return (
     <Layout>
       <Header />
