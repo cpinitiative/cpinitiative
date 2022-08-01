@@ -96,6 +96,12 @@ const contests: {
     link: "https://www.cerealcodes.org/",
   },
   {
+    name: "TeamsCode Summer 2022",
+    date: "August 6, 2022",
+    photo: teamscode,
+    link: "https://www.teamscode.org/contests/summer-2022",
+  },
+  {
     name: "TJIOI 2022",
     date: "June 11, 2022",
     photo: tjioi,
@@ -136,11 +142,5 @@ const contests: {
     date: "",
     photo: lit,
     link: "https://lit.lhsmathcs.org/",
-  },
-  {
-    name: "Teamscode",
-    date: "",
-    photo: teamscode,
-    link: "https://teamscode.org/",
   },
 ]
