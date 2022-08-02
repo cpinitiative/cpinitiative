@@ -28,14 +28,14 @@ export default function ContestList() {
 
   pastContests.sort(
     (a, b) =>
-      dayjs(b.date, "MMMM DD, YYYY").valueOf() -
-      dayjs(a.date, "MMMM DD, YYYY").valueOf()
+      dayjs(b.date, "MMMM D, YYYY").valueOf() -
+      dayjs(a.date, "MMMM D, YYYY").valueOf()
   )
 
   upcomingContests.sort(
     (a, b) =>
-      dayjs(a.date, "MMMM DD, YYYY").valueOf() -
-      dayjs(b.date, "MMMM DD, YYYY").valueOf()
+      dayjs(a.date, "MMMM D, YYYY").valueOf() -
+      dayjs(b.date, "MMMM D, YYYY").valueOf()
   )
 
   const sortedContestList = upcomingContests.concat(pastContests)
@@ -96,6 +96,12 @@ const contests: {
     link: "https://www.cerealcodes.org/",
   },
   {
+    name: "TeamsCode Summer 2022",
+    date: "August 6, 2022",
+    photo: teamscode,
+    link: "https://www.teamscode.org/contests/summer-2022",
+  },
+  {
     name: "TJIOI 2022",
     date: "June 11, 2022",
     photo: tjioi,
@@ -136,11 +142,5 @@ const contests: {
     date: "",
     photo: lit,
     link: "https://lit.lhsmathcs.org/",
-  },
-  {
-    name: "Teamscode",
-    date: "",
-    photo: teamscode,
-    link: "https://teamscode.org/",
   },
 ]
