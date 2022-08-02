@@ -28,14 +28,14 @@ export default function ContestList() {
 
   pastContests.sort(
     (a, b) =>
-      dayjs(b.date, "MMMM DD, YYYY").valueOf() -
-      dayjs(a.date, "MMMM DD, YYYY").valueOf()
+      dayjs(b.date, "MMMM D, YYYY").valueOf() -
+      dayjs(a.date, "MMMM D, YYYY").valueOf()
   )
 
   upcomingContests.sort(
     (a, b) =>
-      dayjs(a.date, "MMMM DD, YYYY").valueOf() -
-      dayjs(b.date, "MMMM DD, YYYY").valueOf()
+      dayjs(a.date, "MMMM D, YYYY").valueOf() -
+      dayjs(b.date, "MMMM D, YYYY").valueOf()
   )
 
   const sortedContestList = upcomingContests.concat(pastContests)
