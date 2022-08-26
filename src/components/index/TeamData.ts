@@ -82,7 +82,7 @@ const roles = {
   founder: "Founding Member",
 }
 
-const members: { [key: string]: Member } = {
+const _members: { [key: string]: Member } = {
   adham: {
     photo: adham,
     name: "Adham Ibrahim",
@@ -233,6 +233,8 @@ const members: { [key: string]: Member } = {
     name: "Eric Xu",
     titles: [roles.webdev],
     github: "cirex-web",
+    codeforces: "cotester",
+    email: "erxu@ctemc.org",
   },
   evan: {
     photo: evan,
@@ -508,72 +510,80 @@ const notPictured: Omit<Member, "photo">[] = [
     codeforces: "sus",
   },
 ]
-const orderedFirst: Member[] = [
-  members.nathanw,
-  members.darren,
-  members.benq,
-  members.michael,
-  members.maggie,
-  members.melody,
-  members.daniel,
-  members.jeffrey,
-  members.dong,
-  members.harry,
-  members.neo,
-  members.varun,
-  members.amy,
-  members.jay,
-  members.pranav,
-  members.evan,
-  members.andi,
-  members.andrew,
-  members.nathanc,
-  members.siyong,
+const orderedFirstMembers: Member[] = [
+  _members.nathanw,
+  _members.darren,
+  _members.benq,
+  _members.michael,
+  _members.maggie,
+  _members.melody,
+  _members.daniel,
+  _members.dong,
+  _members.harry,
+  _members.varun,
+  _members.amy,
+  _members.pranav,
+  _members.evan,
+  _members.andi,
+  _members.andrew,
+  _members.nathanc,
+  _members.siyong,
 ]
-const rest: Member[] = [
-  members.mrinall,
-  members.nathang,
-  members.oscar,
-  members.amogha,
-  members.arnav,
-  members.atharv,
-  members.david_li,
-  members.davidz,
-  members.nikhil,
-  members.ryan,
-  members.vikas_thoutam,
-  members.adham,
-  members.dustin,
-  members.akshar,
-  members.albertz,
-  members.arpan,
+const restOfMembers: Member[] = [
+  _members.oscar,
+  _members.arnav,
+  _members.atharv,
+  _members.david_li,
+  _members.davidz,
+  _members.nikhil,
+  _members.ryan,
+  _members.adham,
+  _members.dustin,
+  _members.arpan,
   // members.egor,
-  members.jonathan,
+  _members.jonathan,
   // members.ramit,
-  members.vivian,
-  members.yifan,
-  members.jesse,
-  members.sofia,
-  members.stanley,
-  members.ben,
-  members.shikhar,
-  members.alex,
-  members.jason,
-  members.mithil,
-  members.jeffrey_zhang,
-  members.riley,
-  members.julie,
-  members.ian,
-  members.arnan,
-  members.vidith,
-  members.frank,
-  members.eric,
+  _members.yifan,
+  _members.jesse,
+  _members.sofia,
+  _members.stanley,
+  _members.ben,
+  _members.shikhar,
+  _members.alex,
+  _members.mithil,
+  _members.jeffrey_zhang,
+  _members.riley,
+  _members.julie,
+  _members.ian,
+  _members.arnan,
+  _members.vidith,
+  _members.frank,
+  _members.eric,
 ]
-const sortedPeople = rest.sort((a, b) => {
-  if (a.titles.length === b.titles.length) {
-    return a.name.localeCompare(b.name)
-  }
-  return b.titles.length - a.titles.length
-})
-const people = [...orderedFirst, ...sortedPeople]
-export default people
+const formerMembers: Member[] = [
+  _members.neo,
+  _members.jay,
+  _members.amogha,
+  _members.albertz,
+  _members.vikas_thoutam,
+  _members.akshar,
+  _members.nathang,
+  _members.vivian,
+  _members.mrinall,
+  _members.jeffrey,
+  _members.jason,
+]
+function sortPeople(people:Member[]){
+  return people.sort((a, b) => {
+    if (a.titles.length === b.titles.length) {
+      return a.name.localeCompare(b.name)
+    }
+    return b.titles.length - a.titles.length
+  });
+}
+
+export const members = {
+  activePeople: [...orderedFirstMembers, ...sortPeople(restOfMembers)],
+  formerMembers: sortPeople(formerMembers),
+};
+

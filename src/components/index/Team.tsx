@@ -1,6 +1,6 @@
 import * as React from "react"
 import Image from "next/image"
-import people, { Member } from "./TeamData"
+import { members, Member } from "./TeamData"
 const socialLinks = {
   email: {
     icon: (
@@ -97,172 +97,183 @@ const socialLinks = {
     ),
   },
 }
+function GetSocialLinks(person: Member) {
+  return (
+    <div className="-mr-1">
+      <ul className="flex gap-3">
+        {person.linkedin && (
+          <div>
+            <li className="mr-1">
+              <a
+                target="_blank"
+                href={person.linkedin}
+                rel="noreferrer"
+                className="inline-block hover:text-gray-500 text-gray-700"
+              >
+                {socialLinks.linkedin.icon}
+              </a>
+            </li>
+          </div>
+        )}
+        {person.youtube && (
+          <div>
+            <li className="mr-1">
+              <a
+                target="_blank"
+                href={person.youtube}
+                rel="noreferrer"
+                className="inline-block hover:text-gray-500 text-gray-700"
+              >
+                {socialLinks.youtube.icon}
+              </a>
+            </li>
+          </div>
+        )}
+        {person.github && (
+          <div>
+            <li className="mr-1">
+              <a
+                target="_blank"
+                href={`https://github.com/${person.github}`}
+                rel="noreferrer"
+                className="inline-block hover:text-gray-500 text-gray-700"
+              >
+                {socialLinks.github.icon}
+              </a>
+            </li>
+          </div>
+        )}
+        {person.codeforces && (
+          <div>
+            <li className="mr-1">
+              <a
+                target="_blank"
+                href={`https://codeforces.com/profile/${person.codeforces}`}
+                rel="noreferrer"
+                className="inline-block hover:text-gray-500 text-gray-700"
+              >
+                {socialLinks.codeforces.icon}
+              </a>
+            </li>
+          </div>
+        )}
+        {person.website && (
+          <div>
+            <li className="mr-1">
+              <a
+                target="_blank"
+                href={person.website}
+                rel="noreferrer"
+                className="inline-block hover:text-gray-500 text-gray-700"
+              >
+                {socialLinks.website.icon}
+              </a>
+            </li>
+          </div>
+        )}
+        {person.email && (
+          <div>
+            <li className="mr-1">
+              <a
+                href={`mailto:${person.email}`}
+                className="inline-block hover:text-gray-500 text-gray-700"
+              >
+                {socialLinks.email.icon}
+              </a>
+            </li>
+          </div>
+        )}
+        {person.instagram && (
+          <div>
+            <li className="mr-1">
+              <a
+                target="_blank"
+                href={`https://instagram.com/${person.instagram}`}
+                rel="noreferrer"
+                className="inline-block hover:text-gray-500 text-gray-700"
+              >
+                {socialLinks.instagram.icon}
+              </a>
+            </li>
+          </div>
+        )}
+      </ul>
+    </div>
+  )
+}
+function getSmallMemberGrid(members: Member[]) {
+  const memberCard = (member:Member)=>(
+    <li
+      key={member.name}
+      className="relative group flex rounded-t-lg border border-transparent 
+hover:bg-gray-100 hover:border-gray-200  
+pointer-events-none hover:pointer-events-auto pt-8 md:pt-4 pb-2"
+    >
+      <div className="gap-3 sm:gap-4 flex flex-col items-center w-full ">
+        <div className="w-14 h-14 rounded-full overflow-hidden relative lg:w-20 lg:h-20 pointer-events-auto">
+          <Image
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center center"
+            src={member.photo}
+            alt={member.name}
+            placeholder="blur"
+            sizes="112px"
+          />
+        </div>
+        <p className="text-xl font-medium whitespace-nowrap">{member.name}</p>
+
+        {/* Pop-out component */}
+        <div
+          className="absolute -top-[-100%] hidden group-hover:block 
+  bg-gray-100 border border-gray-200 border-t-0 box-content 
+  w-full rounded-b-lg z-20"
+        >
+          <div className="flex flex-col gap-2 px-5 pb-5">
+            <div className="m-auto">{GetSocialLinks(member)}</div>
+            <div className="flex gap-1 flex-wrap">
+              {member.titles.map(title => (
+                <span
+                  key={title}
+                  className="text-sm whitespace-nowrap inline-flex 
+                items-center px-2.5 py-0.5 rounded-full bg-gray-200 font-medium"
+                >
+                  {title}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  );
+  return (
+      <ul
+        role="list"
+        className="mx-auto grid sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5"
+      >
+        {members.map(memberCard)}
+      </ul>
+  )
+}
 
 export default function Team() {
-  function GetSocialLinks(person: Member) {
-    return (
-      <div className="-mr-1">
-        <ul className="flex">
-          {person.linkedin && (
-            <div>
-              <li className="mr-1">
-                <a
-                  target="_blank"
-                  href={person.linkedin}
-                  rel="noreferrer"
-                  className="p-1.5 inline-block hover:text-gray-500 text-gray-700"
-                >
-                  {socialLinks.linkedin.icon}
-                </a>
-              </li>
-            </div>
-          )}
-          {person.youtube && (
-            <div>
-              <li className="mr-1">
-                <a
-                  target="_blank"
-                  href={person.youtube}
-                  rel="noreferrer"
-                  className="p-1.5 inline-block hover:text-gray-500 text-gray-700"
-                >
-                  {socialLinks.youtube.icon}
-                </a>
-              </li>
-            </div>
-          )}
-          {person.github && (
-            <div>
-              <li className="mr-1">
-                <a
-                  target="_blank"
-                  href={`https://github.com/${person.github}`}
-                  rel="noreferrer"
-                  className="p-1.5 inline-block hover:text-gray-500 text-gray-700"
-                >
-                  {socialLinks.github.icon}
-                </a>
-              </li>
-            </div>
-          )}
-          {person.codeforces && (
-            <div>
-              <li className="mr-1">
-                <a
-                  target="_blank"
-                  href={`https://codeforces.com/profile/${person.codeforces}`}
-                  rel="noreferrer"
-                  className="p-1.5 inline-block hover:text-gray-500 text-gray-700"
-                >
-                  {socialLinks.codeforces.icon}
-                </a>
-              </li>
-            </div>
-          )}
-          {person.website && (
-            <div>
-              <li className="mr-1">
-                <a
-                  target="_blank"
-                  href={person.website}
-                  rel="noreferrer"
-                  className="p-1.5 inline-block hover:text-gray-500 text-gray-700"
-                >
-                  {socialLinks.website.icon}
-                </a>
-              </li>
-            </div>
-          )}
-          {person.email && (
-            <div>
-              <li className="mr-1">
-                <a
-                  href={`mailto:${person.email}`}
-                  className="p-1.5 inline-block hover:text-gray-500 text-gray-700"
-                >
-                  {socialLinks.email.icon}
-                </a>
-              </li>
-            </div>
-          )}
-          {person.instagram && (
-            <div>
-              <li className="mr-1">
-                <a
-                  target="_blank"
-                  href={`https://instagram.com/${person.instagram}`}
-                  rel="noreferrer"
-                  className="p-1.5 inline-block hover:text-gray-500 text-gray-700"
-                >
-                  {socialLinks.instagram.icon}
-                </a>
-              </li>
-            </div>
-          )}
-        </ul>
-      </div>
-    )
-  }
-
   return (
-    <div className="bg-white">
+    <div className="bg-white text-center">
       <div className="py-12 px-4 max-w-screen-xl mx-auto sm:px-6 lg:px-8 lg:py-18">
         <div className="mb-8 space-y-5 sm:space-y-4">
-          <h2 className="flex justify-center font-extrabold tracking-tight text-4xl">
+          <h2 className="font-extrabold tracking-tight text-4xl">
             Meet our team
           </h2>
-          <p className="flex justify-center text-center text-xl text-gray-500">
+          <p className="text-xl text-gray-500">
             Comprised of USACO Finalists and top USACO competitors, our team is
             committed to increasing participation in competitive programming.
           </p>
         </div>
+        {getSmallMemberGrid(members.activePeople)}
+        <h3 className="text-2xl font-bold mt-[5rem] mb-7">Former Team Members</h3>
+        {getSmallMemberGrid(members.formerMembers)}
 
-        <div className="mb-10 space-y-5 sm:space-y-4">
-          <ul
-            role="list"
-            className="mb-16 mx-auto space-y-8 sm:grid md:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-2 xl:grid-cols-3"
-          >
-            {people.map(member => (
-              <li
-                key={member.name}
-                className="flex rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg px-6 py-5"
-              >
-                <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
-                  <div className="flex-shrink-0 w-24 h-24 rounded-full overflow-hidden relative lg:w-28 lg:h-28">
-                    <Image
-                      layout="fill"
-                      objectFit="cover"
-                      objectPosition="center center"
-                      src={member.photo}
-                      alt={member.name}
-                      placeholder="blur"
-                      sizes="112px"
-                    />
-                  </div>
-                  <div className="flex-1 min-w-0 space-y-2">
-                    <span className="" aria-hidden="true"></span>
-                    <p className="text-xl font-medium">{member.name}</p>
-                    <div className="-mx-0.5">
-                      {member.titles.map(title => {
-                        return title !== "" ? (
-                          <span
-                            key={title}
-                            className="text-sm whitespace-nowrap mx-0.5 my-0.5 inline-flex items-center px-2.5 py-0.5 rounded-full bg-gray-200 font-medium"
-                          >
-                            {title}
-                          </span>
-                        ) : (
-                          ""
-                        )
-                      })}
-                    </div>
-                    {GetSocialLinks(member)}
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
       </div>
     </div>
   )
