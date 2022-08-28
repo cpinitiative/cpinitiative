@@ -201,59 +201,61 @@ function GetSocialLinks(person: Member) {
     </div>
   )
 }
-function getSmallMemberGrid(members: Member[]) {
-  const memberCard = (member:Member)=>(
-    <li
-      key={member.name}
-      className="relative group flex rounded-t-lg border border-transparent 
+const MemberCardSmall = ({ member }: { member: Member }) => (
+  <li
+    key={member.name}
+    className="relative group flex justify-center rounded-t-lg border border-transparent 
 hover:bg-gray-100 hover:border-gray-200  
-pointer-events-none hover:pointer-events-auto pt-8 md:pt-4 pb-2"
-    >
-      <div className="gap-3 sm:gap-4 flex flex-col items-center w-full ">
-        <div className="w-14 h-14 rounded-full overflow-hidden relative lg:w-20 lg:h-20 pointer-events-auto">
-          <Image
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center center"
-            src={member.photo}
-            alt={member.name}
-            placeholder="blur"
-            sizes="112px"
-          />
-        </div>
-        <p className="text-xl font-medium whitespace-nowrap">{member.name}</p>
+pointer-events-none hover:pointer-events-auto pt-8 pb-2"
+  >
+    <div className="gap-2 flex flex-col items-center">
+      <div className="w-24 h-24 rounded-full overflow-hidden relative lg:w-20 lg:h-20 pointer-events-auto">
+        <Image
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center center"
+          src={member.photo}
+          alt={member.name}
+          placeholder="blur"
+          sizes="112px"
+        />
+      </div>
+      <p className="text-l font-medium whitespace-nowrap">{member.name}</p>
 
-        {/* Pop-out component */}
-        <div
-          className="absolute -top-[-100%] hidden group-hover:block 
+      {/* Pop-out component */}
+      <div
+        className="absolute -top-[-100%] hidden group-hover:block 
   bg-gray-100 border border-gray-200 border-t-0 box-content 
   w-full rounded-b-lg z-20"
-        >
-          <div className="flex flex-col gap-2 px-5 pb-5">
-            <div className="m-auto">{GetSocialLinks(member)}</div>
-            <div className="flex gap-1 flex-wrap">
-              {member.titles.map(title => (
-                <span
-                  key={title}
-                  className="text-sm whitespace-nowrap inline-flex 
+      >
+        <div className="flex flex-col gap-2 px-5 pb-5">
+          <div className="m-auto">{GetSocialLinks(member)}</div>
+          <div className="flex gap-1 flex-wrap">
+            {member.titles.map(title => (
+              <span
+                key={title}
+                className="text-sm whitespace-nowrap inline-flex 
                 items-center px-2.5 py-0.5 rounded-full bg-gray-200 font-medium"
-                >
-                  {title}
-                </span>
-              ))}
-            </div>
+              >
+                {title}
+              </span>
+            ))}
           </div>
         </div>
       </div>
-    </li>
-  );
+    </div>
+  </li>
+)
+function MemberGrid({ members }: { members: Member[] }) {
   return (
-      <ul
-        role="list"
-        className="mx-auto grid sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5"
-      >
-        {members.map(memberCard)}
-      </ul>
+    <ul
+      role="list"
+      className="mx-auto grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))]"
+    >
+      {members.map((member, i) => (
+        <MemberCardSmall member={member} key={i} />
+      ))}
+    </ul>
   )
 }
 
@@ -270,10 +272,11 @@ export default function Team() {
             committed to increasing participation in competitive programming.
           </p>
         </div>
-        {getSmallMemberGrid(members.activePeople)}
-        <h3 className="text-2xl font-bold mt-[5rem] mb-7">Former Team Members</h3>
-        {getSmallMemberGrid(members.formerMembers)}
-
+        <MemberGrid members={members.activePeople} />
+        <h3 className="text-2xl font-bold mt-[5rem] mb-7">
+          Former Team Members
+        </h3>
+        <MemberGrid members={members.formerMembers} />
       </div>
     </div>
   )
