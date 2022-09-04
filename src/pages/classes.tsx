@@ -29,7 +29,7 @@ export default function Classes() {
                   <div className="mx-auto lg:ml-0 max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center lg:col-span-5">
                     <div className="lg:py-24">
                       <span className="text-base font-semibold tracking-wider text-cyan-300 uppercase sm:mt-5 lg:mt-6">
-                        Summer Session
+                        Fall Session
                       </span>
                       <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-6xl xl:text-6xl mt-2">
                         <span className="block">Live Online</span>
@@ -508,11 +508,11 @@ export default function Classes() {
                   <ul>
                     <li>
                       Introductory Class (Bronze) - Sundays, 4:00-6:00pm PT.
-                      6/26/22 to 8/21/22.
+                      10/9/22 to 12/11/22 (skip 11/27).
                     </li>
                     <li>
                       Intermediate Class (Silver) - Saturdays, 4:00-6:00pm PT.
-                      6/25/22 to 8/20/22.
+                      10/8/22 to 12/10/22 (skip 11/26).
                     </li>
                   </ul>
 
