@@ -350,7 +350,7 @@ const _members: { [key: string]: Member } = {
   evan: {
     photo: evan,
     name: "Evan Zhao",
-    titles: ["Lead Instructor", roles.liveInstructor],
+    titles: ["Director of Classes", roles.liveInstructor],
     email: "evanzhao12@gmail.com",
   },
   frank: {
@@ -633,8 +633,8 @@ const orderedFirstMembers: Member[] = [
   _members.harry,
   _members.varun,
   _members.amy,
-  _members.pranav,
   _members.evan,
+  _members.pranav,
   _members.andi,
   _members.andrew,
   _members.nathanc,
