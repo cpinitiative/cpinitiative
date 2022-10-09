@@ -28,7 +28,9 @@ export default function ClassRegistrationPage() {
             : "intermediate"
         )
       }
-      else {
+      else if (
+        window.location.hash.substring(1) == "fa"
+      ) {
         setFinancialAid(true);
       }
     }
