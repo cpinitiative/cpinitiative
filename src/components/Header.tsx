@@ -27,6 +27,10 @@ export default function Header({
       label: "Workshops",
       url: "/workshops",
     },
+    {
+      label: "CPG",
+      url: "/cpg",
+    }
   ]
 
   const linkClasses =
