@@ -16,7 +16,7 @@ import FinancialAidSubmissionSection from "../../components/classes/registration
 import PaymentSection from "../../components/classes/registration/PaymentSection"
 
 export default function ClassRegistrationPage() {
-  const [level, setLevel] = useState<"" | "beginner" | "intermediate">("")
+  const [level, setLevel] = useState<"" | "beginner" | "intermediate" | "fa">("")
   useEffect(() => {
     const handler = () => {
       if (
@@ -28,6 +28,10 @@ export default function ClassRegistrationPage() {
             : "intermediate"
         )
       }
+      else {
+        setLevel("fa")
+        setFinancialAid(true);
+      }
     }
     document.addEventListener("hashchange", handler)
     handler()
@@ -36,7 +40,7 @@ export default function ClassRegistrationPage() {
     }
   }, [])
   useEffect(() => {
-    if (["beginner", "intermediate"].includes(level)) {
+    if (["beginner", "intermediate", "fa"].includes(level)) {
       window.location.hash = "#" + level
     }
   }, [level])
