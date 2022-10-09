@@ -12,7 +12,7 @@ export default function Contests() {
     <Layout>
       <SEO
         title="Competitive Programming for Girls"
-        description="A selection of programming contests targeted towards pre-college students."
+        description="Provides a community for girls and non-binary coders as well as workshops to explore and learn more."
       />
 
       <Header dark />
