@@ -34,7 +34,7 @@ export default function Contests() {
             </p>
 
             <div className="max-w-md mt-12">
-              {/*<EmailForm listName={"contests"} tag={"contests"} wide />*/} {/* no need for email list for cpg I think */}
+              {<EmailForm listName={""} tag={""} wide />} {/* left list and tag empty until CPG is added to backend */}
             </div>
               <div className="lg:hidden flex flex-col items-center justify-center">
                 <svg
