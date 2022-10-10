@@ -6,6 +6,7 @@ import Header from "../components/Header"
 import Divisions from "../components/contests/Divisions"
 import EmailForm from "../components/video-classes/EmailForm"
 import ContestList from "../components/contests/ContestList"
+import Link from "next/link";
 
 export default function Contests() {
   return (
@@ -73,8 +74,16 @@ export default function Contests() {
         </div>
         <div className="prose prose-lg text-gray-500 mx-auto">
           <p>
-            Join our discord community to meet, code, and chat with other female and non-binary coders!
+            Join our discord community to meet, code, and chat with other female and non-binary coders! To get started:
           </p>
+          <ol>
+            <li>
+              Join the CPI Discord here: <Link href={"https://discord.gg/Z976aABAA6"}><a>https://discord.gg/Z976aABAA6</a></Link>
+            </li>
+            <li>
+              React in the <span className="text-pink-500 font-mono">#start-here</span> channel to get the CPG role and gain access to speak in the CPG-exclusive Discord community!
+            </li>
+          </ol>
         </div>
       </div>
     </Layout>
