@@ -60,6 +60,12 @@ export default async function joinClassesMailingList(
         status: "active",
       })
     }
+    if (tags.indexOf("cpg") > -1) {
+      transformedTags.push({
+        name: "CPG",
+        status: "active",
+      })
+    }
 
     if (
       Object.keys(existingDataResponse).length > 0 &&
