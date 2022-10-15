@@ -65,8 +65,9 @@ package, :
 <td>2021-10-23T23:18:42.653Z</td>
 <td>Someone</td>
 <td>me@gmail.com</td>
-<td>I worked on pull requests and reviewed things,</td>
-<td>4	Yes, I made some stuff</td>
+<td>I worked on pull requests and reviewed things.</td>
+<td>4</td>
+<td>Yes, I made some stuff.</td>
 </tr>
 </tbody>
 </table>
