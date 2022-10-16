@@ -86,8 +86,8 @@ export default function Contests() {
           <ol>
             <li>
               Join the CPI Discord here:{" "}
-              <Link href={"https://discord.gg/Z976aABAA6"}>
-                <a>https://discord.gg/Z976aABAA6</a>
+              <Link href={"https://discord.gg/nN6826u9BK"} target="_blank" rel="noreferrer">
+                <a>https://discord.gg/nN6826u9BK</a>
               </Link>
             </li>
             <li>
