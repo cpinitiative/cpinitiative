@@ -68,7 +68,7 @@ export default function StudentInformationSection({
                     Student Email Address
                   </label>
                   <input
-                    type="text"
+                    type="email"
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                     autoComplete="email"
