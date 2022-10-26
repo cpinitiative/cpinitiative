@@ -7,16 +7,15 @@ export default function PaymentSection({
   setHasAttemptedPayment,
   setSubmitting,
   dataIsValid,
-
   firebase,
   firstName,
   lastName,
   email,
+  emailValid,
   preferredLanguage,
   referrer,
   referrerDetail,
   timezone,
-
   setSuccess,
   setErrorData,
   setShowError,
@@ -48,7 +47,7 @@ export default function PaymentSection({
               )}
               {!dataIsValid && hasAttemptedPayment && (
                 <p className="text-md text-red-800">
-                  {email.indexOf("@") == -1 &&
+                  {!emailValid &&
                     "Your email address is improperly formatted. "}
                   You must fill out all fields in order to register.
                 </p>
