@@ -211,6 +211,7 @@ export default function ClassRegistrationPage() {
                   firstName={firstName}
                   lastName={lastName}
                   email={email}
+                  emailValid={emailValid}
                   preferredLanguage={preferredLanguage}
                   referrer={referrer}
                   referrerDetail={referrerDetail}
