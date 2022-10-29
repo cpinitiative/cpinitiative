@@ -8,7 +8,7 @@ import EmailForm from "../components/video-classes/EmailForm"
 import ContestList from "../components/contests/ContestList"
 import Link from "next/link"
 
-export default function Contests() {
+export default function CPG() {
   return (
     <Layout>
       <SEO
