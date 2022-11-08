@@ -38,7 +38,7 @@ export default function Hero() {
             </span>{" "}
             <span>November 12th, 2022 from 12pm - 4pm PST</span>
           </p>
-          <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+          {/*<div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
             <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
               <a
                 href="#how-to-join"
@@ -54,7 +54,7 @@ export default function Hero() {
                 Contact Us
               </a>
             </div>
-          </div>
+  </div>*/}
         </div>
       </div>
     </div>
