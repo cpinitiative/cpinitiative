@@ -5,6 +5,7 @@ import Header from "../components/Header"
 import Hero from "../components/competition/Hero"
 import Image from "next/image"
 import Format from "../components/competition/Format"
+import Prizes from "../components/competition/Prizes"
 
 export default function Contests() {
   return (
@@ -18,7 +19,15 @@ export default function Contests() {
 
       <Hero />
       <Format />
-
+      <Prizes />
+      <div>
+        <p className="text-center font-xs text-purple-600 font-semibold uppercase">
+          Questions?
+        </p>
+        <p className="text-center prose max-w-full">
+          Ping <strong>Pranav#7895</strong> in the CPI Discord!
+        </p>
+      </div>
     </Layout>
   )
 }
