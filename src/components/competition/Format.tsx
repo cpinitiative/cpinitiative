@@ -23,7 +23,7 @@ export default function Format() {
                       USACO
                       <br />
                       <span className="text-4xl font-extrabold bg-gradient-to-tr decoration-clone from-gray-600 to-slate-300 text-transparent bg-clip-text">
-                        LOW SILVER
+                        BRONZE - LOW SILVER
                       </span>
                       <br />
                       equivalent
@@ -46,7 +46,7 @@ export default function Format() {
                       USACO
                       <br />
                       <span className="text-4xl font-extrabold bg-gradient-to-tr decoration-clone from-yellow-600 to-amber-400 text-transparent bg-clip-text">
-                        GOLD
+                        HIGH SILVER - GOLD
                       </span>
                       <br />
                       equivalent
