@@ -81,6 +81,7 @@ export default function Classes() {
             </div>
 
             {/* Feature section with grid */}
+            
             <div className="relative bg-white py-16 sm:pt-24 lg:pt-32">
               <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
                 <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">
@@ -363,7 +364,7 @@ export default function Classes() {
             </div>
 
             {/* Testimonial section */}
-            {/*<div className="pb-16 bg-gradient-to-r from-teal-500 to-cyan-600 lg:pb-0 lg:z-10 lg:relative">*/}
+            {/* <div className="pb-16 bg-gradient-to-r from-teal-500 to-cyan-600 lg:pb-0 lg:z-10 lg:relative">*/}
             {/*  <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">*/}
             {/*    <div className="relative lg:-my-8">*/}
             {/*      <div aria-hidden="true" className="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden" />*/}
@@ -392,7 +393,7 @@ export default function Classes() {
             {/*      </div>*/}
             {/*    </div>*/}
             {/*  </div>*/}
-            {/*</div>*/}
+            {/* </div> */}
 
             <div className="relative pb-16 bg-white overflow-hidden">
               <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
@@ -487,7 +488,8 @@ export default function Classes() {
                     problems and contain problemsets for homework.
                   </p>
                   <p>
-                    All classes will be recorded, so don't worry if you are unable to attend every class!
+                    All classes will be recorded, so don't worry if you are
+                    unable to attend every class!
                   </p>
                   <p>
                     Classes follow a flipped learning model to maximize the

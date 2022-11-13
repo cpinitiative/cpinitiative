@@ -12,6 +12,8 @@ import {
   julie,
   varun,
   vidith,
+  blank,
+  empty,
 } from "../index/images"
 
 type Member = {
@@ -34,47 +36,52 @@ const members: Member[] = [
   {
     photo: ian,
     name: "Ian Zhang",
-    title: "Instructor",
+    title: "Silver Instructor",
   },
   {
     photo: frank,
     name: "Frank Xiao",
-    title: "Instructor",
+    title: "Bronze Instructor",
   },
-  {
-    photo: vidith,
-    name: "Vidith Madhu",
-    title: "Instructor",
-  },
+  // {
+  //   photo: vidith,
+  //   name: "Vidith Madhu",
+  //   title: "Instructor",
+  // },
   {
     photo: jesse,
     name: "Jesse Choe",
-    title: "Instructor",
+    title: "Silver Instructor",
   },
   {
     photo: nikhil,
     name: "Nikhil Chatterjee",
-    title: "Instructor",
+    title: "Silver + Bronze Instructor",
   },
   {
     photo: ryan,
     name: "Ryan Chou",
-    title: "Instructor",
+    title: "Bronze Instructor",
   },
   {
     photo: julie,
     name: "Juheon Rhee",
-    title: "Instructor",
+    title: "Silver Instructor",
   },
   {
     photo: arnan,
     name: "Arnan Bawa",
-    title: "Instructor",
+    title: "Silver + Bronze Instructor",
   },
+  // {
+  //   photo: davidz,
+  //   name: "David Zhang",
+  //   title: "Instructor",
+  // },
   {
-    photo: davidz,
-    name: "David Zhang",
-    title: "Instructor",
+    photo: empty,
+    name: "Trisha Sabadra",
+    title: "Bronze Instructor",
   },
 ]
 
@@ -93,7 +100,7 @@ export default function ClassInstructors() {
             </p>
           </div>
           <div className="lg:col-span-2">
-            <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:gap-x-8">
+            <ul className="sm:grid sm:grid-cols-2 sm:gap-12 lg:gap-x-8">
               {members.map(member => (
                 <li key={member.name}>
                   <div className="flex items-center space-x-4 lg:space-x-6">
