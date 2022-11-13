@@ -650,9 +650,7 @@ const restOfMembers: Member[] = [
   _members.ryan,
   _members.adham,
   _members.dustin,
-  _members.arpan,
   // members.egor,
-  _members.jonathan,
   // members.ramit,
   _members.yifan,
   _members.jesse,
@@ -683,6 +681,8 @@ const formerMembers: Member[] = [
   _members.mrinall,
   _members.jeffrey,
   _members.jason,
+  _members.arpan,
+  _members.jonathan,
 ]
 function sortPeople(people: Member[]) {
   return people.sort((a, b) => {
