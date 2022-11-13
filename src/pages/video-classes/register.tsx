@@ -147,7 +147,7 @@ export default function ClassRegistrationPage() {
           <h1 className={"text-4xl font-bold tracking-tight leading-9 mb-10"}>
             USACO Self-Study Course Registration
           </h1>
-          {showError && <ErrorCard errorData={errorData} />}
+          {showError && <ErrorCard errorData={errorData} course = {level}/>}
           {success && !showError && (
             <ConfirmationCard
               level={level}

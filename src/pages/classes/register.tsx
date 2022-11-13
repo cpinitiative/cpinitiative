@@ -51,6 +51,7 @@ export default function ClassRegistrationPage() {
   }, [])
   const [errorData, setErrorData] = useState<{
     title?: string
+    course?: string
     message?: React.ReactNode
   }>({})
   const [showError, setShowError] = useState(false)
@@ -120,7 +121,7 @@ export default function ClassRegistrationPage() {
           >
             Get Notified of Future Classes
           </a> */}
-          {showError && <ErrorCard errorData={errorData} />}
+          {showError && <ErrorCard errorData={errorData} course = {level}/>} 
           {success && !showError && (
             <ConfirmationCard
               level={level}
