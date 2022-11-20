@@ -1,6 +1,8 @@
 import {
   adham,
+  aditya,
   akshar,
+  albert_jiang,
   albertz,
   alex_chen,
   amogha,
@@ -13,6 +15,7 @@ import {
   atharv,
   ben,
   benq,
+  chuyang,
   daniel,
   darren,
   david_li,
@@ -30,6 +33,7 @@ import {
   jeffrey,
   jeffrey_zhang,
   jesse,
+  john,
   jpaulson,
   julie,
   maggie,
@@ -43,6 +47,7 @@ import {
   neo,
   nikhil,
   oscar,
+  paul,
   pranav,
   ramit,
   riley,
@@ -51,6 +56,7 @@ import {
   siyong,
   sofia,
   stanley,
+  trisha,
   varun,
   vidith,
   vikas_thoutam,
@@ -201,9 +207,21 @@ const _members: { [key: string]: Member } = {
     email: "adhamibrahim719@gmail.com",
     github: "adham-ibrahim7",
   },
+  aditya: {
+    photo: aditya,
+    name: "Aditya Gupta",
+    titles: [roles.contentAuthor],
+    website: "https://thepuzzlr.com/",
+    youtube: "https://www.youtube.com/c/ThePuzzlr",
+  },
   akshar: {
     photo: akshar,
     name: "Akshar Yeccherla",
+    titles: [roles.videoInstructor],
+  },
+  albert_jiang: {
+    photo: albert_jiang,
+    name: "Albert Jiang",
     titles: [roles.videoInstructor],
   },
   albertz: {
@@ -289,6 +307,13 @@ const _members: { [key: string]: Member } = {
     github: "bqi343",
     codeforces: "Benq",
     email: "bqi343@gmail.com",
+  },
+  chuyang: {
+    photo: chuyang,
+    name: "Chuyang Wang",
+    titles: [roles.contentAuthor],
+    email: "mail@chuyang-wang.de",
+    github: "ChuangSheep",
   },
   daniel: {
     photo: daniel,
@@ -416,6 +441,11 @@ const _members: { [key: string]: Member } = {
     email: "jessechoe10@gmail.com",
     codeforces: "YoRepi7",
   },
+  john: {
+    photo: john,
+    name: "John Tian",
+    titles: [roles.clubCurriculum],
+  },
   jonathan: {
     photo: jpaulson,
     name: "Jonathan Paulson",
@@ -516,6 +546,13 @@ const _members: { [key: string]: Member } = {
     github: "orendon",
     titles: [roles.clubCurriculum],
   },
+  paul: {
+    photo: paul,
+    name: "Paul Chen",
+    titles: [roles.contentAuthor],
+    codeforces: "876pol",
+    github: "876pol",
+  },
   pranav: {
     photo: pranav,
     name: "Pranav Jadhav",
@@ -569,6 +606,11 @@ const _members: { [key: string]: Member } = {
     titles: [roles.webdev],
     email: "stanleyhzhao@gmail.com",
     website: "https://szhao.dev/",
+  },
+  trisha: {
+    photo: trisha,
+    name: "Trisha Sabadra",
+    titles: [roles.liveInstructor],
   },
   varun: {
     photo: varun,
@@ -654,6 +696,12 @@ const restOfMembers: Member[] = [
   _members.ian,
   _members.frank,
   _members.eric,
+  _members.aditya,
+  _members.albert_jiang,
+  _members.chuyang,
+  _members.john,
+  _members.paul,
+  _members.trisha,
 ]
 const formerMembers: Member[] = [
   _members.neo,

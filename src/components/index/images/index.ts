@@ -1,6 +1,8 @@
 import aadit from "./aadit.jpg"
 import adham from "./adham.jpg"
+import aditya from "./aditya.jpg"
 import akshar from "./akshar.png"
+import albert_jiang from "./albert_jiang.png"
 import albert from "./albert.jpg"
 import albertz from "./albertz.jpg"
 import alex_chen from "./alex_chen.png"
@@ -16,6 +18,7 @@ import ben from "./ben.jpg"
 import benq from "./benq.png"
 import blank from "./blank.png"
 import brad from "./brad.jpg"
+import chuyang from "./chuyang.jpg"
 import claire_zhang from "./claire_zhang.jpeg"
 import cow from "./cow.png"
 import daniel from "./daniel.png"
@@ -36,6 +39,7 @@ import jay from "./jay.jpg"
 import jeffrey from "./jeffrey.png"
 import jeffrey_zhang from "./jeffrey_zhang.jpg"
 import jesse from "./jesse.jpg"
+import john from "./john.png"
 import jpaulson from "./jpaulson.jpg"
 import julie from "./julie.png"
 import kevin from "./kevin.jpg"
@@ -50,6 +54,7 @@ import nathang from "./nathang.png"
 import nathanw from "./nathanw.jpg"
 import neo from "./neo.jpg"
 import nikhil from "./nikhil.png"
+import paul from "./paul.jpg"
 import oscar from "./oscar.png"
 import pranav from "./pranav.png"
 import ramit from "./ramit.jpg"
@@ -63,6 +68,7 @@ import sofia from "./sofia.png"
 import stanley from "./stanley.png"
 import tarushii from "./tarushii.jpeg"
 import timothy from "./timothy.png"
+import trisha from "./trisha.png"
 import varun from "./varun.jpg"
 import vidith from "./vidith.jpg"
 import vikas_thoutam from "./vikas_thoutam.png"
@@ -74,6 +80,8 @@ import empty from "./empty.png"
 export {
   aadit,
   adham,
+  aditya,
+  albert_jiang,
   akshar,
   albert,
   albertz,
@@ -90,6 +98,7 @@ export {
   benq,
   blank,
   brad,
+  chuyang,
   claire_zhang,
   cow,
   daniel,
@@ -110,6 +119,7 @@ export {
   jeffrey,
   jeffrey_zhang,
   jesse,
+  john,
   jpaulson,
   julie,
   kevin,
@@ -124,6 +134,7 @@ export {
   nathanw,
   neo,
   nikhil,
+  paul,
   oscar,
   pranav,
   ramit,
@@ -137,6 +148,7 @@ export {
   stanley,
   tarushii,
   timothy,
+  trisha,
   varun,
   vidith,
   vikas_thoutam,
