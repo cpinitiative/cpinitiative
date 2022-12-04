@@ -13,7 +13,7 @@ import {
   varun,
   vidith,
   blank,
-  empty,
+  trisha,
 } from "../index/images"
 
 type Member = {
@@ -79,7 +79,7 @@ const members: Member[] = [
   //   title: "Instructor",
   // },
   {
-    photo: empty,
+    photo: trisha,
     name: "Trisha Sabadra",
     title: "Bronze Instructor",
   },
