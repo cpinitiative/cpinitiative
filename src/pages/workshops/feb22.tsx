@@ -1,18 +1,18 @@
 import * as React from "react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
-import Hero from "../../components/workshops/usaco-open/Hero"
+import Hero from "../../components/workshops/feb22/Hero"
 import Header from "../../components/Header"
-import AgendaAndContent from "../../components/workshops/usaco-open/AgendaAndContent"
-import People from "../../components/workshops/usaco-open/People"
+import AgendaAndContent from "../../components/workshops/feb22/AgendaAndContent"
+import People from "../../components/workshops/feb22/People"
 
 export default function USACOFebruary() {
   return (
     <Layout>
       <SEO
         image="../../images/x-camp_cpi.png"
-        title="USACO US Open Contest Solutions"
-        description="The Competitive Programming Initiative is holding a workshop to go over the problems from the USACO US Open Contest on April 10th, 10am-12:30pm PT! Join to gain a better understanding of the solutions to problems in the Bronze and Silver divisions, and the USACO Season's trends!"
+        title="USACO February Contest Solutions"
+        description="The Competitive Programming Initiative is holding a workshop to go over the problems from the USACO February Contest on March 6th, 10am-12pm PST and 4pm-5pm PST! Join to gain a better understanding of the solutions to problems in the Bronze, Silver and Gold divisions!"
       />
       <Header noBanner />
       <div className="margin-top-nav" />

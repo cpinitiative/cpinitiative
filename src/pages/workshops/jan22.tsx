@@ -1,12 +1,12 @@
 import * as React from "react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
-import Hero from "../../components/workshops/usaco-january/Hero"
+import Hero from "../../components/workshops/jan22/Hero"
 import Header from "../../components/Header"
-import AgendaAndContent from "../../components/workshops/usaco-january/AgendaAndContent"
-import People from "../../components/workshops/usaco-january/People"
+import AgendaAndContent from "../../components/workshops/jan22/AgendaAndContent"
+import People from "../../components/workshops/jan22/People"
 
-export default function USACOJanuary({ data }) {
+export default function USACOJanuary() {
   return (
     <Layout>
       <SEO
@@ -31,17 +31,24 @@ export default function USACOJanuary({ data }) {
               X-Camp Academy
             </h1>
             <p className="text-xl text-gray-500 leading-8">
-              <a href="https://x-camp.academy/" className="underline text-blue-600">X-Camp Academy</a>{" "}
-              is a Silicon Valley based institute that offers coding classes for middle and high school 
-              students to achieve success at contests like USACO and beyond. 
+              <a
+                href="https://x-camp.academy/"
+                className="underline text-blue-600"
+              >
+                X-Camp Academy
+              </a>{" "}
+              is a Silicon Valley based institute that offers coding classes for
+              middle and high school students to achieve success at contests
+              like USACO and beyond.
             </p>
             <br />
             <p className="text-xl text-gray-500 leading-8 italic">
-              "We provide the most professional coding content and structured curriculum which keeps 
-              updating within the last 20 years, and we really care about how students can grow up happily 
-              and in the right direction. Our classes include Python, Java(APCS) and C++. In the 2021 
-              USACO US Open, 10% of US Gold to Platinum students came from X-Camp, and one entered the US 
-              National Team Camp."
+              "We provide the most professional coding content and structured
+              curriculum which keeps updating within the last 20 years, and we
+              really care about how students can grow up happily and in the
+              right direction. Our classes include Python, Java(APCS) and C++.
+              In the 2021 USACO US Open, 10% of US Gold to Platinum students
+              came from X-Camp, and one entered the US National Team Camp."
             </p>
           </div>
         </div>
