@@ -70,11 +70,7 @@ const IndexPage = () => (
             A selection of programming contests targeted towards pre-college
             students.
           </Card>
-          <Card
-            title="Workshops"
-            borderColor="border-cyan-600"
-            url="/workshop/egoi"
-          >
+          <Card title="Workshops" borderColor="border-cyan-600" url="/workshop">
             Join free online webinars with useful information from panels,
             interviews, and events about competitive programming!
           </Card>

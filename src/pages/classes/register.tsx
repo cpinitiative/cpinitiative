@@ -27,11 +27,8 @@ export default function ClassRegistrationPage() {
             ? "beginner"
             : "intermediate"
         )
-      }
-      else if (
-        window.location.hash.substring(1) == "fa"
-      ) {
-        setFinancialAid(true);
+      } else if (window.location.hash.substring(1) == "fa") {
+        setFinancialAid(true)
       }
     }
     document.addEventListener("hashchange", handler)
@@ -121,7 +118,7 @@ export default function ClassRegistrationPage() {
           >
             Get Notified of Future Classes
           </a> */}
-          {showError && <ErrorCard errorData={errorData} course = {level}/>} 
+          {showError && <ErrorCard errorData={errorData} course={level} />}
           {success && !showError && (
             <ConfirmationCard
               level={level}

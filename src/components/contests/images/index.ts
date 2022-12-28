@@ -8,12 +8,12 @@ import tjioi from "./tjioi.png"
 import cerealcodes from "./cerealcodes.png"
 
 export {
-    placeholder,
-    taco,
-    mbit,
-    /*algirlithm,*/
-    lit,
-    teamscode,
-    tjioi,
-    cerealcodes
+  placeholder,
+  taco,
+  mbit,
+  /*algirlithm,*/
+  lit,
+  teamscode,
+  tjioi,
+  cerealcodes,
 }

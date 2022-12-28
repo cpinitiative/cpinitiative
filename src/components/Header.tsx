@@ -30,7 +30,7 @@ export default function Header({
     {
       label: "CPG",
       url: "/cpg",
-    }
+    },
   ]
 
   const linkClasses =

@@ -45,7 +45,7 @@ Thanks to [Vercel](https://vercel.com/?utm_source=cp-initiative&utm_campaign=oss
 5. To navigate to the volunteer hours page after running `yarn dev`, you can go
    to `localhost:3000/view-hours`. Then, it should be able to test.
 6. Make sure to add access to the sheet in mind through Google Sheets itself
-(add the service account email as an editor in the sheet)
+   (add the service account email as an editor in the sheet)
 
 Here is a sample entry in the table, for reference, which can be called with the
 [google-spreadsheet](https://www.npmjs.com/package/google-spreadsheet) node

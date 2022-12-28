@@ -73,7 +73,7 @@ function CSSTransition({
       appear={appear}
       unmountOnExit
       in={show}
-      timeout={(undefined as unknown) as any}
+      timeout={undefined as unknown as any}
       addEndListener={(node: HTMLElement, done) => {
         node.addEventListener("transitionend", done, false)
       }}

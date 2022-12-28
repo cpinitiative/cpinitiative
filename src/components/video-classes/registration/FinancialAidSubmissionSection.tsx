@@ -127,7 +127,8 @@ export default function FinancialAidSubmissionSection({
                         whyInNeed: faWhyInNeed,
                         whyTakeCourse: faWhyTakeCourse,
                       },
-                      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+                      timestamp:
+                        firebase.firestore.FieldValue.serverTimestamp(),
                     })
                     .then(() => {
                       setSuccess(true)

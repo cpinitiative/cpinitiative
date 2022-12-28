@@ -2,36 +2,52 @@ import dayjs from "dayjs"
 import EGOI from "../../images/egoi-hero.png"
 import USACO from "../../images/usaco-guide-logo.png"
 import XCampCPI from "../../images/x-camp_cpi.png"
+import Dec22Bronze from "../../images/workshops/dec22.png"
+import Dec22Thumbnail from "../../images/workshops/dec22thumbnail.png"
 import { StaticImageData } from "next/image"
 
 export type Workshop = {
   photo: StaticImageData
+  /** In case the event poster does not fit the thumbnail well for latest workshop */
+  thumbnail?: StaticImageData
   title: string
   description: string
   date: dayjs.Dayjs
+  /** For workshops pertaining to specific seasons (e.g. contest solutions) */
+  season?: string
   url: string // joincpi.org/workshops/{url}
   themeColor: string
 }
 
 const themeColors = {
-  blue:
-    "bg-blue-600 hover:bg-blue-500 focus:border-blue-700 focus:shadow-outline-blue",
+  blue: "bg-blue-700 hover:bg-blue-600 focus:border-blue-800 focus:shadow-outline-blue",
   yellow:
     "bg-yellow-600 hover:bg-yellow-500 focus:border-yellow-700 focus:shadow-outline-yellow",
-  cyan:
-    "bg-cyan-600 hover:bg-cyan-500 focus:border-cyan-700 focus:shadow-outline-cyan",
+  cyan: "bg-cyan-600 hover:bg-cyan-500 focus:border-cyan-700 focus:shadow-outline-cyan",
   purple:
     "bg-purple-600 hover:bg-purple-500 focus:border-purple-700 focus:shadow-outline-purple",
 }
 
 const workshops: Workshop[] = [
   {
+    photo: Dec22Bronze,
+    thumbnail: Dec22Thumbnail,
+    title: "USACO December Contest Solutions",
+    description:
+      "Watch a USACO Platinum and USACO Silver try to solve the 2022 December Bronze contest, live at youtube.com/@cpinitiative",
+    date: dayjs("Jan 7, 2023 4:00:00 PM PST"),
+    season: "2022-2023",
+    url: "dec22",
+    themeColor: themeColors.blue,
+  },
+  {
     photo: XCampCPI,
     title: "USACO US Open Contest Solutions",
     description:
       "Gain a better understanding of the solutions for the US Open Contest through a joint workshop with X-Camp!",
     date: dayjs("Apr 10, 2022 10:00:00 AM PST"),
-    url: "usaco-open",
+    season: "2021-2022",
+    url: "open22",
     themeColor: themeColors.purple,
   },
   {
@@ -40,7 +56,8 @@ const workshops: Workshop[] = [
     description:
       "Gain a better understanding of the solutions for the February Contest through a joint workshop with X-Camp!",
     date: dayjs("Mar 6, 2022 10:00:00 AM PST"),
-    url: "usaco-february",
+    season: "2021-2022",
+    url: "feb22",
     themeColor: themeColors.purple,
   },
   {
@@ -49,7 +66,8 @@ const workshops: Workshop[] = [
     description:
       "Gain an in-depth understanding of the solutions for the January Contest through a joint workshop with X-Camp!",
     date: dayjs("Feb 5, 2022 7:00:00 PM PST"),
-    url: "usaco-january",
+    season: "2021-2022",
+    url: "jan22",
     themeColor: themeColors.purple,
   },
   {

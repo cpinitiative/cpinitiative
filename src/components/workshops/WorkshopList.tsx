@@ -23,7 +23,7 @@ export default function WorkshopList() {
           <div className="flex justify-center h-72">
             <Image
               objectPosition="center center"
-              src={latestWorkshop.photo}
+              src={latestWorkshop.thumbnail ?? latestWorkshop.photo}
               alt={latestWorkshop.title}
               placeholder="blur"
               objectFit="cover"
@@ -79,6 +79,12 @@ export default function WorkshopList() {
                                 </p>
                                 <p className="text-gray-500 font-medium">
                                   {workshop.date.format("MMMM D, YYYY")}
+                                  <br />
+                                  <span className="text-gray-600">
+                                    {workshop.season
+                                      ? "Season: " + workshop.season
+                                      : ""}
+                                  </span>
                                 </p>
                                 <p className="text-gray-500">
                                   {workshop.description}
