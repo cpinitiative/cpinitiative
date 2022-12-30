@@ -81,12 +81,13 @@ export default function ClassLevels() {
                     ))}
                   </ul>
                   <div className="rounded-md shadow">
-                    <Link href="/classes/register/#beginner">
+                    <Link href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform">
                       <a
                         className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                         aria-describedby="tier-standard"
+                        target="_blank"
                       >
-                        Register Now
+                        Get Notified
                       </a>
                     </Link>
                   </div>
@@ -151,12 +152,13 @@ export default function ClassLevels() {
                   </ul>
                   <div className="rounded-md shadow">
                     <div className="rounded-md shadow">
-                      <Link href="/classes/register/#intermediate">
+                      <Link href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform">
                         <a
                           className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                           aria-describedby="tier-standard"
+                          target="_blank"
                         >
-                          Register Now
+                          Get Notified
                         </a>
                       </Link>
                     </div>
@@ -166,7 +168,7 @@ export default function ClassLevels() {
             </div>
           </div>
         </div>
-        <div className="mt-4 relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
+        {/*<div className="mt-4 relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
           <div className="max-w-md mx-auto lg:max-w-5xl">
             <div className="rounded-lg bg-gray-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
               <div className="flex-1">
@@ -192,7 +194,7 @@ export default function ClassLevels() {
               </div>
             </div>
           </div>
-        </div>
+                    </div>*/}
       </div>
     </div>
   )
