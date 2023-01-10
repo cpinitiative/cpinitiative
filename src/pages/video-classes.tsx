@@ -222,7 +222,7 @@ export default function Classes() {
                             Free of Charge
                           </h3>
                           <p className="mt-5 text-base text-gray-500">
-                            Anyone, regardless of economic status, is able to 
+                            Anyone is able to 
                             access the resources and curriculum within the 
                             self-study courses.
                           </p>
