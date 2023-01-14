@@ -25,6 +25,7 @@ import {
   egor,
   eric,
   evan,
+  faris,
   frank,
   harry,
   ian,
@@ -377,6 +378,11 @@ const _members: { [key: string]: Member } = {
     name: "Evan Zhao",
     titles: ["Director of Classes", roles.liveInstructor],
     email: "evanzhao12@gmail.com",
+  },
+  faris: {
+    photo: faris,
+    name: "Faris Raza",
+    titles: [roles.clubCurriculum],
   },
   frank: {
     photo: frank,
@@ -731,6 +737,7 @@ const formerMembers: Member[] = [
   _members.sofia,
   _members.vidith,
   _members.yifan,
+  _members.faris
 ]
 function sortPeople(people: Member[]) {
   return people.sort((a, b) => {
