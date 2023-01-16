@@ -30,6 +30,7 @@ import dustin from "./dustin.jpg"
 import egor from "./egor.jpg"
 import eric from "./eric.png"
 import evan from "./evan.jpg"
+import faris from "./faris.jpg"
 import frank from "./frank.jpg"
 import harry from "./harry.jpg"
 import ian from "./ian.jpg"
@@ -110,6 +111,7 @@ export {
   egor,
   eric,
   evan,
+  faris,
   frank,
   harry,
   ian,
