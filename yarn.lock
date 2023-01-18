@@ -577,6 +577,11 @@
   resolved "https://registry.npmjs.org/@heroicons/react/-/react-1.0.6.tgz"
   integrity sha512-JJCXydOFWMDpCP4q13iEplA503MQO3xLoZiKum+955ZCtHINWnx26CUxVxxFQu/uLb4LW3ge15ZpzIkXKkJ8oQ==
 
+"@juggle/resize-observer@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.4.0.tgz#08d6c5e20cf7e4cc02fd181c4b0c225cd31dbb60"
+  integrity sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==
+
 "@next/env@12.1.6":
   version "12.1.6"
   resolved "https://registry.npmjs.org/@next/env/-/env-12.1.6.tgz"
@@ -3113,6 +3118,13 @@ react-side-effect@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/react-side-effect/-/react-side-effect-2.1.0.tgz"
   integrity sha512-IgmcegOSi5SNX+2Snh1vqmF0Vg/CbkycU9XZbOHJlZ6kMzTmi3yc254oB1WCkgA7OQtIAoLmcSFuHTc/tlcqXg==
+
+react-sparkle@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-sparkle/-/react-sparkle-2.0.0.tgz#1db8cff4113ef33ac4de63a5df1ff64d454522ea"
+  integrity sha512-Gy0us35SH25HeDa4t6Gu8oM4raAH4EKBzArENOoysgVl+jB5XCjsYRJhRF8Bfi8fdsVPjkNLNh1R6VYgGsInoA==
+  dependencies:
+    "@juggle/resize-observer" "^3.4.0"
 
 react-transition-group@^4.4.2:
   version "4.4.2"
