@@ -1,5 +1,4 @@
 import Link from "next/link"
-import * as React from "react"
 
 export default function ClassLevels() {
   return (
@@ -120,11 +119,11 @@ export default function ClassLevels() {
                       "Prefix Sums",
                       "Sorting with Custom Comparators",
                       "Two Pointers",
-                      "More Operations on Ordered Sets",
+                      "More Operations on Sorted Sets",
                       "Greedy Algorithms with Sorting",
                       "Binary Search",
                       "Depth First Search",
-                      "Floodfill",
+                      "Flood Fill",
                       "Introduction to Tree Algorithms",
                     ].map(s => (
                       <li className="flex items-start" key={s}>
