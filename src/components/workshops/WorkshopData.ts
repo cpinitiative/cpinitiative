@@ -4,6 +4,8 @@ import USACO from "../../images/usaco-guide-logo.png"
 import XCampCPI from "../../images/x-camp_cpi.png"
 import Dec22Bronze from "../../images/workshops/dec22.png"
 import Dec22Thumbnail from "../../images/workshops/dec22thumbnail.png"
+import Jan23 from "../../images/workshops/jan23.png"
+import Jan23Thumbnail from "../../images/workshops/jan23thumbnail.png"
 import { StaticImageData } from "next/image"
 
 export type Workshop = {
@@ -29,6 +31,16 @@ const themeColors = {
 }
 
 const workshops: Workshop[] = [
+  {
+    photo: Jan23,
+    thumbnail: Jan23Thumbnail,
+    title: "USACO January Contest Solutions",
+    description: "Having trouble understanding the USACO January solutions? Learn the bronze and silver solutions on February 4, 5PM PST/8PM EST!",
+    date: dayjs("Feb 4, 2023 5:00:00 PM PST"),
+    season: "2022-2023",
+    url: "jan23",
+    themeColor: themeColors.blue,
+  },
   {
     photo: Dec22Bronze,
     thumbnail: Dec22Thumbnail,
