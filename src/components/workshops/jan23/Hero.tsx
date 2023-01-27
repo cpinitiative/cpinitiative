@@ -18,7 +18,7 @@ export default function Hero() {
                 </span>
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Want to learn how to solve the USACO January 2023 Bronze and Silver problems? Join this workshop on Join this workshop on{" "}
+                Want to learn how to solve the USACO January 2023 Bronze and Silver problems? Join this workshop on{" "}
                 <b>February 4 from 5:00pm PST (8:00pm EST)</b> to gain a better
                 understanding of the solutions from the contest!
               </p>
