@@ -382,7 +382,7 @@ const _members: { [key: string]: Member } = {
   faris: {
     photo: faris,
     name: "Faris Raza",
-    titles: [roles.clubCurriculum],
+    titles: [roles.clubCurriculum, roles.contentAuthor],
   },
   frank: {
     photo: frank,
@@ -708,6 +708,7 @@ const restOfMembers: Member[] = [
   _members.john,
   _members.paul,
   _members.trisha,
+  _members.faris
 ]
 const formerMembers: Member[] = [
   _members.neo,
@@ -737,7 +738,6 @@ const formerMembers: Member[] = [
   _members.sofia,
   _members.vidith,
   _members.yifan,
-  _members.faris
 ]
 function sortPeople(people: Member[]) {
   return people.sort((a, b) => {

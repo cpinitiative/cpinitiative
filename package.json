@@ -10,6 +10,7 @@
     "@google-cloud/firestore": "^4.15.1",
     "@headlessui/react": "^1.6.4",
     "@heroicons/react": "^1.0.6",
+    "@next/swc-darwin-arm64": "^13.1.5",
     "@paypal/checkout-server-sdk": "^1.0.3",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.2",

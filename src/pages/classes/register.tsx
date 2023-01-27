@@ -16,6 +16,9 @@ import FinancialAidSubmissionSection from "../../components/classes/registration
 import PaymentSection from "../../components/classes/registration/PaymentSection"
 
 export default function ClassRegistrationPage() {
+  return (<div>
+    Registration currently disabled. Please check back later.
+  </div>);
   const [level, setLevel] = useState<"" | "beginner" | "intermediate">("")
   useEffect(() => {
     const handler = () => {
