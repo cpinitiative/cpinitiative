@@ -6,6 +6,8 @@ import Header from "../components/Header"
 import Newsletter from "../components/index/Newsletter"
 import RecordedClassInstructors from "../components/video-classes/RecordedClassInstructors"
 import Link from "next/link"
+// import banner
+import banner from "../images/video-classes/banner.png"
 
 export default function Classes() {
   return (
@@ -19,6 +21,27 @@ export default function Classes() {
         <div className="relative overflow-hidden">
           <Header noBanner={true} dark />
           <div className="margin-top-nav" />
+          <div className="relative bg-blue-600">
+          <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+            <div className="pr-16 sm:text-center sm:px-16">
+              <p className="font-medium text-white">
+                <span className="md:inline">
+                USACO Bronze Classes are now free!
+                </span>
+                <span className="block sm:ml-2 sm:inline-block">
+                  <a
+                    href="https://usaco.guide/groups/join?key=GzyZvOTMidyo8e4EIMLP"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-white font-bold underline"
+                  >
+                    Learn more &rarr;
+                  </a>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
           <div>
             <div className="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
               <div className="mx-auto max-w-7xl lg:px-8">
@@ -27,25 +50,25 @@ export default function Classes() {
                     <div className="lg:py-24">
                       <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-6xl xl:text-6xl mt-2">
                         <span className="block" style = {{position: "relative" }}>
-                          <Sparkles 
-                            overflowPx={0}
-                            count={2} 
-                            fadeOutSpeed={35}
-                            color="gold"
-                          />
                           Free Self-Study
                           </span>
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 block">
                         USACO Bronze Classes
                         </span>
                       </h1>
-                      <p style = {{ position: "relative" }} className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                      <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                         Learn USACO through&nbsp; 
-                        <span style = {{ color: "gold" }}>
-                          free 
+                        <span style = {{position: "relative" }}>
+                          free,&nbsp; 
+                            <Sparkles 
+                              overflowPx={1}
+                              count={1} 
+                              fadeOutSpeed={20}
+                              color="gold"
+                            />                          
                         </span>
-                        , high-quality classes
-                        with a curriculum designed and developed by past USACO
+                        high-quality
+                        classes with a curriculum designed and developed by past USACO
                         Finalists. Designed from the ground-up to embrace the
                         self-study video format.
                       </p>
