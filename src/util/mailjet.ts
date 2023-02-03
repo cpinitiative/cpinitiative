@@ -7,4 +7,6 @@ export const mailjet = new Mailjet({
 
 export const CONTACT_LIST_IDS = {
   general: 10230889,
+  cpg: 10230892,
+  contests: 10230893,
 }

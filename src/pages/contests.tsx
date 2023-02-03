@@ -35,7 +35,11 @@ export default function Contests() {
             </p>
 
             <div className="max-w-md mt-12">
-              <EmailForm listName={"contests"} tag={"contests"} wide />
+              <EmailForm
+                listName={"contests"}
+                mailjetListName={"contests"}
+                wide
+              />
             </div>
             <div className="lg:hidden flex flex-col items-center justify-center">
               <svg

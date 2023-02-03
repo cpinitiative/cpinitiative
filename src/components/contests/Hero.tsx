@@ -48,7 +48,7 @@ export default function Hero() {
                 <p className="text-base font-medium text-gray-900">
                   Sign up to get notified when contests start!
                 </p>
-                <EmailForm listName={"contest"} tag={"contests"} />
+                <EmailForm listName={"contest"} mailjetListName={"contests"} />
               </div>
             </div>
           </main>
