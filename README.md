@@ -21,7 +21,8 @@ Thanks to [Vercel](https://vercel.com/?utm_source=cp-initiative&utm_campaign=oss
    SHEETS_PRIVATE_KEY_ID="1298301asfa98sf09ac0291023"
    FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----..."
    ENCRYPTION_KEY="asdjkflajsdflkjas;ldjfa"
-   MAILCHIMP_API_KEY="asdlfkjasf"
+   MJ_APIKEY_PUBLIC="mailjet api key public"
+   MJ_APIKEY_PRIVATE=""
    PAYPAL_API_SECRET="ddd"
    MAILGUN_API_KEY=""
    ```
@@ -33,7 +34,8 @@ Thanks to [Vercel](https://vercel.com/?utm_source=cp-initiative&utm_campaign=oss
    - **NEXT_AUTH_URL:** choose the address of deployment
    - FIREBASE_PRIVATE_KEY -- I don't think this is even needed??
    - ENCRYPTION_KEY -- ask Nathan (or modify cryptography file), used to decrypt firebase key on vercel
-   - MAILCHIMP_API_KEY -- ask Nathan, only needed for class registration system + mailing list I think
+   - MJ_APIKEY_PUBLIC/PRIVATE -- ask Nathan, only needed for newsletter
+   - MAILCHIMP_API_KEY -- ask Nathan, only needed for class registration system
    - PAYPAL_API_SECRET -- ask Nathan, only needed for class registration system
 
 3. Using the correct configuration file, go into `SHEETS_API_CREDS`
