@@ -3,7 +3,6 @@ import { getAuth } from "firebase-admin/auth"
 import { db } from "../../../../firebase"
 import { classRegistrationAdministrators } from "../../../util/permissions"
 import { FieldValue } from "firebase-admin/firestore"
-import { updateMailingList } from "../../../util/classes/updateMailingList"
 import { getClientIp } from "request-ip"
 import { sendWelcomeEmailBronzeVideos } from "../../../util/classes/sendWelcomeEmail"
 
