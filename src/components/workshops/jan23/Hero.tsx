@@ -21,6 +21,13 @@ export default function Hero() {
                             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                                 Having trouble understanding the USACO January solutions? Learn the bronze and silver solutions on <b>February 4, 5PM PST/8PM EST</b>!
                             </p>
+                            <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
+                                Zoom Link: https://us06web.zoom.us/j/88612791600?pwd=Nm1TZVdZUVRmTkhNcFNseVFzK2dFUT09
+                            </p>
+                            <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
+                                Meeting ID: 886 1279 1600
+                                Passcode: 424195
+                            </p>
                             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                                 <div className="rounded-md shadow">
                                     <a
