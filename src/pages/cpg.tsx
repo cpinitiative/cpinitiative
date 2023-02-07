@@ -39,7 +39,7 @@ export default function CPG() {
             </p>
 
             <div className="max-w-md mt-12">
-              {<EmailForm listName="CPG" tag="cpg" wide />}
+              {<EmailForm listName="CPG" mailjetListName="cpg" wide />}
             </div>
             <div className="lg:hidden flex flex-col items-center justify-center">
               <svg

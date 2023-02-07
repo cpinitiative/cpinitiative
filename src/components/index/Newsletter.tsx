@@ -17,7 +17,7 @@ export default function Newsletter() {
           </p>
         </div>
         <div className="mt-8 lg:mt-0 lg:ml-8">
-          <EmailForm listName={"general"} tag={"general"} wide />
+          <EmailForm listName={"general"} mailjetListName={"general"} wide />
         </div>
       </div>
     </div>

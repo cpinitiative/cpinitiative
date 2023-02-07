@@ -4,11 +4,11 @@ import axios from "axios"
 
 export default function EmailForm({
   listName,
-  tag,
+  mailjetListName,
   wide,
 }: {
   listName: string
-  tag: string
+  mailjetListName: string
   wide?: boolean
 }) {
   const [email, setEmail] = useState("")
@@ -33,9 +33,9 @@ export default function EmailForm({
           setAddedEmail(submittedEmail)
           setSubmitting(true)
           axios
-            .post("/api/join-classes-mailing-list", {
+            .post("/api/join-mailing-list", {
               email: submittedEmail,
-              tags: tag,
+              mailingList: mailjetListName,
             })
             .then(response => {
               setSubmitting(false)

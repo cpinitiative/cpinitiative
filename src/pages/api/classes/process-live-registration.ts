@@ -2,10 +2,6 @@ import { NowRequest, NowResponse } from "@vercel/node"
 import { db } from "../../../../firebase"
 import * as payPalClient from "../../../util/classes/paypalClient"
 import { FieldValue } from "firebase-admin/firestore"
-import {
-  updateLiveMailingList,
-  updateMailingList,
-} from "../../../util/classes/updateMailingList"
 import { getClientIp } from "request-ip"
 import * as checkoutNodeJssdk from "@paypal/checkout-server-sdk"
 import { sendWelcomeEmail } from "../../../util/classes/sendWelcomeEmail"
@@ -14,11 +10,10 @@ export default async function processLiveRegistration(
   request: NowRequest,
   response: NowResponse
 ) {
-
   return response.status(501).json({
     success: false,
     messsage: "Registration is currently disabled.",
-  });
+  })
   try {
     const {
       level,
