@@ -510,16 +510,9 @@ export default function Classes() {
                   </p>
 
                   <h3>Class Schedule</h3>
-                  <ul>
-                    <li>
-                      Introductory Class (Bronze) - Sundays, 4:00-6:00pm PT.
-                      10/9/22 to 12/11/22 (skip 11/27).
-                    </li>
-                    <li>
-                      Intermediate Class (Silver) - Saturdays, 4:00-6:00pm PT.
-                      10/8/22 to 12/10/22 (skip 11/26).
-                    </li>
-                  </ul>
+                  <p>
+                    TBA for the next semester.
+                  </p>
 
                   <h3>Pricing</h3>
                   <p>
