@@ -59,8 +59,8 @@ export function sendWelcomeEmail({
     join_link: joinLink,
     welcome_text:
       classLevel === "beginner"
-        ? `You've been registered for the Competitive Programming Initiative's Beginner USACO Class! Our class will be nine weeks long, starting on October 9, 2022, and ending on December 11, 2022 (no class on November 27). We'll meet every Sunday from 4 PM to 6 PM PT.`
-        : `You've been registered for the Competitive Programming Initiative's Intermediate USACO Class! Our class will be nine weeks long, starting on October 8, 2022, and ending on December 10, 2022 (no class on November 26). We'll meet every Saturday from 4 PM to 6 PM PT.`,
+        ? `You've been registered for the Competitive Programming Initiative's Beginner USACO Class! Our class will be nine weeks long, starting on April 2, 2023, and ending on May 28, 2023. We'll meet every Sunday from 1 PM to 3 PM PT.`
+        : `You've been registered for the Competitive Programming Initiative's Intermediate USACO Class! Our class will be nine weeks long, starting on April 1, 2023, and ending on May 27, 2023. We'll meet every Saturday from 3:30 PM to 5:30 PM PT.`,
     join_lms_text:
       classLevel === "beginner"
         ? `To join the class, you'll need to join our online LMS using this unique link: ${joinLink}. The first time you join, you'll need to log in with your Google account. After joining, you can use this link to re-access the class: https://usaco.guide/groups.`

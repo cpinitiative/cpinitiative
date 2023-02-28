@@ -10,10 +10,6 @@ export default async function processLiveRegistration(
   request: NowRequest,
   response: NowResponse
 ) {
-  return response.status(501).json({
-    success: false,
-    messsage: "Registration is currently disabled.",
-  })
   try {
     const {
       level,
