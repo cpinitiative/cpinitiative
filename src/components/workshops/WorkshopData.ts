@@ -6,6 +6,8 @@ import Dec22Bronze from "../../images/workshops/dec22.png"
 import Dec22Thumbnail from "../../images/workshops/dec22thumbnail.png"
 import Jan23 from "../../images/workshops/jan23.png"
 import Jan23Thumbnail from "../../images/workshops/jan23thumbnail.png"
+import Feb23 from "../../images/workshops/feb23.png";
+import Feb23Thumbnail from "../../images/workshops/feb23thumbnail.png";
 import { StaticImageData } from "next/image"
 
 export type Workshop = {
@@ -31,6 +33,16 @@ const themeColors = {
 }
 
 const workshops: Workshop[] = [
+  {
+    photo: Feb23,
+    thumbnail: Feb23Thumbnail,
+    title: "USACO February Contest Solutions",
+    description: "Learn how to solve the Bronze/Silver USACO February solutions, from intuition to code!",
+    date: dayjs("Mar 4, 2023 4:00:00 PM PST"),
+    season: "2022-2023",
+    url: "feb23",
+    themeColor: themeColors.blue
+  },
   {
     photo: Jan23,
     thumbnail: Jan23Thumbnail,
@@ -113,6 +125,7 @@ const workshops: Workshop[] = [
 
 workshops.sort((a, b) => -a.date.diff(b.date))
 const now = dayjs()
+console.log('date', workshops[0].date);
 // calculate latest workshop
 let latestWorkshop: Workshop
 for (const workshop of workshops.slice().reverse()) {
@@ -122,8 +135,8 @@ for (const workshop of workshops.slice().reverse()) {
     break
   }
 }
-if (latestWorkshop == null) {
-  latestWorkshop = workshops.find(workshop => workshop.date.isBefore(now))
+if (latestWorkshop! == null) {
+  latestWorkshop = workshops.find(workshop => workshop.date.isBefore(now))!
 }
 
 const sections = [
