@@ -3,6 +3,8 @@ import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import Hero from "../../components/workshops/feb23/Hero"
 import Header from "../../components/Header"
+import AgendaAndContent from "../../components/workshops/feb23/AgendaAndContent"
+import People from "../../components/workshops/feb23/People"
 
 export default function USACOFeb23() {
   return (
@@ -16,6 +18,8 @@ export default function USACOFeb23() {
       {/*/!* Banner margin *!/*/}
       {/*<div className="h-20 sm:h-12"/>*/}
       <Hero />
+      <AgendaAndContent />
+      <People />
     </Layout>
   )
 }
