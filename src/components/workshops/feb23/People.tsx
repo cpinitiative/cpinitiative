@@ -7,13 +7,8 @@ import albert_ye from "../../index/images/albert_ye.jpeg"
 import Speakers, { Speaker } from "../Speakers"
 const speakers: Speaker[] = [
   {
-    name: "Melody Yu",
-    title: "Host / USACO Platinum",
-    photo: melody,
-  },
-  {
     name: "Ryan Chou",
-    title: "Teacher / CPI",
+    title: "Host / CPI",
     photo: ryan,
   },
   {
