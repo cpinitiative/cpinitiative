@@ -55,13 +55,17 @@ import nathang from "./nathang.png"
 import nathanw from "./nathanw.jpg"
 import neo from "./neo.jpg"
 import nikhil from "./nikhil.png"
+import niranjana_sankar from "./niranjana_sankar.jpeg";
 import paul from "./paul.jpg"
 import oscar from "./oscar.png"
 import pranav from "./pranav.png"
+import rahul_verma from "./rahul_verma.png";
 import ramit from "./ramit.jpg"
 import rayna from "./rayna.jpeg"
 import riley from "./riley.jpg"
+import rohan_garg from "./rohan_garg.jpg";
 import ryan from "./ryan.jpg"
+import ryan_fu from "./ryan_fu.jpeg";
 import sathvik from "./sathvik.png"
 import shikhar from "./shikhar.jpg"
 import siyong from "./siyong.jpeg"
@@ -134,15 +138,19 @@ export {
   nathanc,
   nathang,
   nathanw,
+  niranjana_sankar,
   neo,
   nikhil,
   paul,
   oscar,
   pranav,
+  rahul_verma,
   ramit,
   rayna,
   riley,
+  rohan_garg,
   ryan,
+  ryan_fu,
   sathvik,
   shikhar,
   siyong,
