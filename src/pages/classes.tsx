@@ -40,15 +40,12 @@ export default function Classes() {
                       <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                         Learn USACO through affordable, high-quality classes
                         with vetted, experienced instructors and a curriculum
-                        designed and developed by past USACO Finalists. <span className="text-purple-200">
-                          Note: The fall session has ended. Click the button below to get notified
-                          of future sessions!
-                        </span>
+                        designed and developed by past USACO Finalists.
                       </p>
                       <div className="mt-8 sm:mt-12 space-y-2 sm:space-x-4">
-                        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform">
-                          <a target="_blank" className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
-                            Get Notified
+                        <Link href="/classes/register">
+                          <a className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
+                            Register Now
                           </a>
                         </Link>
                         <br className="sm:hidden" />
@@ -510,9 +507,16 @@ export default function Classes() {
                   </p>
 
                   <h3>Class Schedule</h3>
-                  <p>
-                    TBA for the next semester.
-                  </p>
+                  <ul>
+                    <li>
+                      Beginner: Sundays during <b>April 2 - May 28th</b> from
+                      1:00 PM - 3:00 PM PDT PDT
+                    </li>
+                    <li>
+                      Intermediate: Saturdays during <b>April 1 - May 27th</b>{" "}
+                      from 3:30 PM - 5:30 PM PDT
+                    </li>
+                  </ul>
 
                   <h3>Pricing</h3>
                   <p>
