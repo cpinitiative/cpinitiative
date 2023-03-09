@@ -14,8 +14,10 @@ import StudentInformationSection from "../../components/classes/registration/Stu
 import FinancialAidApplicationSection from "../../components/classes/registration/FinancialAidApplicationSection"
 import FinancialAidSubmissionSection from "../../components/classes/registration/FinancialAidSubmissionSection"
 import PaymentSection from "../../components/classes/registration/PaymentSection"
+import MissingPermissionPage from "../../components/classes/admin/MissingPermissionPage"
 
 export default function ClassRegistrationPage() {
+  return <MissingPermissionPage />
   const [level, setLevel] = useState<"" | "beginner" | "intermediate">("")
   useEffect(() => {
     const handler = () => {
