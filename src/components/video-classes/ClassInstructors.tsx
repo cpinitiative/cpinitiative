@@ -14,11 +14,6 @@ import {
   vidith,
   blank,
   trisha,
-  rohan_garg,
-  faris,
-  niranjana_sankar,
-  rahul_verma,
-  ryan_fu,
 } from "../index/images"
 
 type Member = {
@@ -31,12 +26,37 @@ const members: Member[] = [
   {
     photo: varun,
     name: "Varun Ragunath",
-    title: "Project Manager of Classes / Director of Silver Classes / Finalist",
+    title: "Project Manager of Classes / Silver Lead Instructor / Finalist",
   },
   {
     photo: evan,
     name: "Evan Zhao",
-    title: "Director of Bronze Classes",
+    title: "Bronze Lead Instructor",
+  },
+  {
+    photo: ian,
+    name: "Ian Zhang",
+    title: "Silver Instructor",
+  },
+  {
+    photo: frank,
+    name: "Frank Xiao",
+    title: "Bronze Instructor",
+  },
+  // {
+  //   photo: vidith,
+  //   name: "Vidith Madhu",
+  //   title: "Instructor",
+  // },
+  {
+    photo: jesse,
+    name: "Jesse Choe",
+    title: "Silver Instructor",
+  },
+  {
+    photo: nikhil,
+    name: "Nikhil Chatterjee",
+    title: "Silver + Bronze Instructor",
   },
   {
     photo: ryan,
@@ -44,39 +64,24 @@ const members: Member[] = [
     title: "Bronze Instructor",
   },
   {
-    photo: rohan_garg,
-    name: "Rohan Garg",
-    title: "Bronze & Silver Instructor",
+    photo: julie,
+    name: "Juheon Rhee",
+    title: "Silver Instructor",
   },
   {
-    photo: faris,
-    name: "Faris Raza",
-    title: "Bronze & Silver Instructor",
+    photo: arnan,
+    name: "Arnan Bawa",
+    title: "Silver + Bronze Instructor",
   },
+  // {
+  //   photo: davidz,
+  //   name: "David Zhang",
+  //   title: "Instructor",
+  // },
   {
     photo: trisha,
     name: "Trisha Sabadra",
-    title: "Silver Instructor",
-  },
-  {
-    photo: frank,
-    name: "Frank Xiao",
-    title: "Bronze & Silver Instructor",
-  },
-  {
-    photo: niranjana_sankar,
-    name: "Niranjana Sankar",
     title: "Bronze Instructor",
-  },
-  {
-    photo: rahul_verma,
-    name: "Rahul Verma",
-    title: "Bronze Instructor",
-  },
-  {
-    photo: ryan_fu,
-    name: "Ryan Fu",
-    title: "Silver Instructor",
   },
 ]
 
