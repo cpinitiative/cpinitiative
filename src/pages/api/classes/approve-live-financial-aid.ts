@@ -9,10 +9,6 @@ export default async function approveFinancialAid(
   request: NowRequest,
   response: NowResponse
 ) {
-  return response.status(501).json({
-    success: false,
-    messsage: "Registration is currently disabled.",
-  });
   try {
     const {
       authToken,
@@ -55,7 +51,7 @@ export default async function approveFinancialAid(
       }),
       db
         .collection("classes-registration")
-        .doc("2022october")
+        .doc("2023april")
         .collection("registrations")
         .doc(registrationId)
         .update({

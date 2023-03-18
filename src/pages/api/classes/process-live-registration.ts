@@ -10,10 +10,6 @@ export default async function processLiveRegistration(
   request: NowRequest,
   response: NowResponse
 ) {
-  return response.status(501).json({
-    success: false,
-    messsage: "Registration is currently disabled.",
-  })
   try {
     const {
       level,
@@ -72,7 +68,7 @@ export default async function processLiveRegistration(
     }
     const ref = db
       .collection("classes-registration")
-      .doc("2022october")
+      .doc("2023april")
       .collection("registrations")
       .doc()
     console.log(
@@ -82,7 +78,7 @@ export default async function processLiveRegistration(
     const joinLinkRef = db.collection("group-join-links").doc()
     await joinLinkRef.set({
       groupId:
-        level === "beginner" ? "PWGnuF1siTzwfmG2K9x1" : "9q6RCWdqRYXkcrGgyZfZ",
+        level === "beginner" ? "IZ6CHJ7TZfMPXPzgEkMV" : "w6QY2TUNrXD7Xp2sq8Hh",
       revoked: false,
       numUses: 0,
       maxUses: 1,
