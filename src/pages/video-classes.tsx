@@ -1,10 +1,13 @@
 import * as React from "react"
+import Sparkles from "react-sparkle"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Header from "../components/Header"
 import Newsletter from "../components/index/Newsletter"
 import RecordedClassInstructors from "../components/video-classes/RecordedClassInstructors"
 import Link from "next/link"
+// import banner
+import banner from "../images/video-classes/banner.png"
 
 export default function Classes() {
   return (
@@ -18,31 +21,61 @@ export default function Classes() {
         <div className="relative overflow-hidden">
           <Header noBanner={true} dark />
           <div className="margin-top-nav" />
+          <div className="relative bg-blue-600">
+          <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+            <div className="pr-16 sm:text-center sm:px-16">
+              <p className="font-medium text-white">
+                <span className="md:inline">
+                USACO Bronze Classes are now free!
+                </span>
+                <span className="block sm:ml-2 sm:inline-block">
+                  <a
+                    href="https://usaco.guide/groups/join?key=GzyZvOTMidyo8e4EIMLP"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-white font-bold underline"
+                  >
+                    Learn more &rarr;
+                  </a>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
           <div>
             <div className="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
               <div className="mx-auto max-w-7xl lg:px-8">
                 <div className="lg:grid lg:grid-cols-8 lg:gap-8">
                   <div className="mx-auto lg:ml-0 max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center lg:col-span-5">
                     <div className="lg:py-24">
-                      <span className="text-base font-semibold tracking-wider text-cyan-300 uppercase sm:mt-5 lg:mt-6">
-                        Early Access
-                      </span>
                       <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-6xl xl:text-6xl mt-2">
-                        <span className="block">Self-Study</span>
+                        <span className="block" style = {{position: "relative" }}>
+                          Free Self-Study
+                          </span>
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 block">
-                          USACO Classes
+                        USACO Bronze Classes
                         </span>
                       </h1>
                       <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                        Learn USACO through affordable, high-quality classes
-                        with a curriculum designed and developed by past USACO
+                        Learn USACO through&nbsp; 
+                        <span style = {{position: "relative" }}>
+                          free,&nbsp; 
+                            <Sparkles 
+                              overflowPx={1}
+                              count={1} 
+                              fadeOutSpeed={20}
+                              color="gold"
+                            />                          
+                        </span>
+                        high-quality
+                        classes with a curriculum designed and developed by past USACO
                         Finalists. Designed from the ground-up to embrace the
                         self-study video format.
                       </p>
                       <div className="mt-8 sm:mt-12 space-x-4">
-                        <Link href="/video-classes/register">
+                        <Link href="https://usaco.guide/groups/join?key=GzyZvOTMidyo8e4EIMLP">
                           <a className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
-                            Register Now
+                            View Now
                           </a>
                         </Link>
                         <a
@@ -219,12 +252,12 @@ export default function Classes() {
                             </span>
                           </div>
                           <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                            Affordable Cost
+                            Free of Charge
                           </h3>
                           <p className="mt-5 text-base text-gray-500">
-                            Purchasing the course costs $25, and all funds are
-                            reinvested to create even better courses. Financial
-                            aid available.
+                            This course is completely free! Anyone is able to 
+                            access the resources and curriculum within the 
+                            self-study courses.
                           </p>
                         </div>
                       </div>
@@ -303,7 +336,7 @@ export default function Classes() {
                           <p className="mt-5 text-base text-gray-500">
                             We'll keep updating our course based on your
                             feedback to make it even better! You'll get lifetime
-                            updates, for free.
+                            updates, free of charge.
                           </p>
                         </div>
                       </div>
@@ -544,10 +577,18 @@ export default function Classes() {
                   <p>
                     These classes are <b>not for profit</b> -- instructors are
                     unpaid and volunteer their time to help USACO contestants.
-                    We ask for a <b>$25 fee</b> to help support the creation of
-                    these classes and the infrastructure for the resources we
-                    provide such as the USACO Guide. If you're unable to pay,
-                    you can apply for financial aid.
+                    That's why we've chosen to make these classes free, and open 
+                    to everyone. If you want to support us, you can make a donation 
+                    via{" "}
+                    <a
+                      href="https://www.paypal.com/donate?hosted_button_id=FKG88TSTN82E4"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                    PayPal
+                    </a>{" "}
+                    instead.
+
                   </p>
 
                   <h3>How is this different from the Guide?</h3>
@@ -567,7 +608,7 @@ export default function Classes() {
                     problems and understand editorials when you get stuck.
                   </p>
 
-                  <h3 id="important">Important: Read before purchasing!</h3>
+                  <h3 id="important">Important Information </h3>
                   <ol>
                     <li>
                       <p>
@@ -585,19 +626,10 @@ export default function Classes() {
                         >
                           USACO Guide
                         </a>
-                        , which is free. The difference is that this course is
+                        . The difference is that this course is
                         video-based rather than text-based. If you're learning
                         fine with the USACO Guide, there is no need to take this
                         class.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        We plan to release this course for free at some point in
-                        the far future. Purchasing this course now gives you
-                        early access to the course and supports our nonprofit
-                        initiative. We'll use your feedback to improve the
-                        course.
                       </p>
                     </li>
                   </ol>
@@ -621,9 +653,9 @@ export default function Classes() {
                         the major concepts of USACO Bronze, and will be
                         well-equipped to tackle USACO Bronze problems.
                       </p>
-                      <Link href="/video-classes/register">
+                      <Link href="https://usaco.guide/groups/join?key=GzyZvOTMidyo8e4EIMLP">
                         <a className="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-cyan-600 hover:bg-indigo-50">
-                          Register Now
+                          View Now
                         </a>
                       </Link>
                       {/* <p className="mt-4 text-cyan-200">
