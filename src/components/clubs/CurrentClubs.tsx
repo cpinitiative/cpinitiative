@@ -2,48 +2,70 @@ import * as React from "react"
 import Image, { StaticImageData } from "next/image"
 import {
   algonquin,
+  alpharetta,
   ashbury,
   baton,
   bellarmine,
   beverly_hills,
+  bhfles,
   bits,
   branham,
   california_connections,
   creskill,
   centennial,
+  conestoga,
   del_norte,
   delhi,
+  dover,
+  dubai,
   east_career,
   fremont,
+  heritage,
   horace_greeley,
   imsa,
   independence,
+  inglemoor,
   interlake,
+  irvington,
+  jane_lathrop,
   ladue_horton,
   le_quy_don,
   lincoln,
   linnerton,
+  mahindra,
+  marshall,
   marvin_ridge,
+  memorial,
+  mendon,
+  mission,
   monrovia,
   monta_vista,
   montgomery,
   nanjing,
   new_hampshire,
   newbury_park,
+  newport,
   north_andover,
   northview,
   oak_valley,
   orange,
   panther_creek,
   pingry,
+  pld,
+  re_mountain,
+  regis,
   rickards,
   riverhill,
+  silver_creek,
   shanghai,
   smic,
   stanford_online,
   suncoast,
+  tams,
   tenafly,
   tompkins,
+  trabuco,
+  trinity,
   troy,
   westwood,
   white_station,
@@ -51,6 +73,7 @@ import {
   whitney,
   windermere,
   winston_churchill,
+  wissahickon,
 } from "../clubs/images"
 
 const ClubCard = ({ name, photo, region }) => {
@@ -89,6 +112,16 @@ const clubs: {
     region: "Massachusetts",
   },
   {
+    name: "Alpharetta High School",
+    photo: alpharetta,
+    region: "Georgia",
+  },
+  {
+    name: "American Heritage Schools",
+    photo: heritage,
+    region: "Florida",
+  },
+  {
     name: "Ashbury College",
     photo: ashbury,
     region: "Canada",
@@ -97,6 +130,11 @@ const clubs: {
     name: "Baton Rouge Magnet High School",
     photo: baton,
     region: "Louisiana",
+  },
+  {
+    name: "Beijing Haidian Foreign Language Experimental School",
+    photo: bhfles,
+    region: "Beijing",
   },
   {
     name: "Bellarmine College Prep",
@@ -124,6 +162,11 @@ const clubs: {
     region: "California",
   },
   {
+    name: "Conestoga High School",
+    photo: conestoga,
+    region: "Pennsylvania",
+  },
+  {
     name: "Creskill High School",
     photo: creskill,
     region: "New Jersey",
@@ -137,6 +180,11 @@ const clubs: {
     name: "Delhi Public School",
     photo: delhi,
     region: "New Delhi",
+  },
+  {
+    name: "Dubai International Academy",
+    photo: dubai,
+    region: "Dubai",
   },
   {
     name: "East Career & Technical Academy",
@@ -154,6 +202,11 @@ const clubs: {
     region: "Texas",
   },
   {
+    name: "George C. Marshall High School",
+    photo: marshall,
+    region: "Virginia",
+  },
+  {
     name: "Horace Greeley High School",
     photo: horace_greeley,
     region: "New York",
@@ -169,9 +222,24 @@ const clubs: {
     region: "Texas",
   },
   {
+    name: "Inglemoor High School",
+    photo: inglemoor,
+    region: "Washington",
+  },
+  {
     name: "Interlake High School",
     photo: interlake,
     region: "Washington",
+  },
+  {
+    name: "Irvington High School",
+    photo: irvington,
+    region: "California",
+  },
+  {
+    name: "Jane Lathrop Stanford Middle School",
+    photo: jane_lathrop,
+    region: "California",
   },
   {
     name: "Ladue Horton Watkins HS",
@@ -194,9 +262,24 @@ const clubs: {
     region: "Maryland",
   },
   {
+    name: "Mahindra University",
+    photo: mahindra,
+    region: "Hyderabad",
+  },
+  {
     name: "Marvin Ridge High School",
     photo: marvin_ridge,
     region: "North Carolina",
+  },
+  {
+    name: "Memorial High School",
+    photo: memorial,
+    region: "Texas",
+  },
+  {
+    name: "Mission San Jose High School",
+    photo: mission,
+    region: "California",
   },
   {
     name: "Monrovia HS",
@@ -224,6 +307,11 @@ const clubs: {
     region: "California",
   },
   {
+    name: "Newport High School",
+    photo: newport,
+    region: "Washington",
+  },
+  {
     name: "North Andover High School",
     photo: north_andover,
     region: "Massachusetts",
@@ -249,9 +337,29 @@ const clubs: {
     region: "North Carolina",
   },
   {
+    name: "Paul Laurence Dunbar High School",
+    photo: pld,
+    region: "Kentucky",
+  },
+  {
     name: "Pingry School",
     photo: pingry,
     region: "New Jersey",
+  },
+  {
+    name: "Pittsford Mendon High School",
+    photo: mendon,
+    region: "New York",
+  },
+  {
+    name: "R.E. Mountain Secondary School",
+    photo: re_mountain,
+    region: "Canada",
+  },
+  {
+    name: "Regis Jesuit High School",
+    photo: regis,
+    region: "Colorado",
   },
   {
     name: "Rickards HS",
@@ -262,6 +370,11 @@ const clubs: {
     name: "Riverhill High School",
     photo: riverhill,
     region: "Maryland",
+  },
+  {
+    name: "Silver Creek High School",
+    photo: silver_creek,
+    region: "California",
   },
   {
     name: "SMIC Private School",
@@ -289,8 +402,23 @@ const clubs: {
     region: "New Jersey",
   },
   {
+    name: "Texas Academy of Mathematics and Science",
+    photo: tams,
+    region: "Texas",
+  },
+  {
     name: "Tompkins HS",
     photo: tompkins,
+    region: "Texas",
+  },
+  {
+    name: "Trabuco Hills High School",
+    photo: trabuco,
+    region: "California",
+  },
+  {
+    name: "Trinity Valley School",
+    photo: trinity,
     region: "Texas",
   },
   {
@@ -302,6 +430,11 @@ const clubs: {
     name: "University of New Hampshire",
     photo: new_hampshire,
     region: "New Hampshire",
+  },
+  {
+    name: "UWCSEA Dover Campus",
+    photo: dover,
+    region: "Singapore",
   },
   {
     name: "Westwood High School",
@@ -317,6 +450,16 @@ const clubs: {
     name: "Whitfield HS",
     photo: whitfield,
     region: "California",
+  },
+  {
+    name: "Whitney M. Young High School",
+    photo: whitney,
+    region: "Illinois",
+  },
+  {
+    name: "Wissahickon High School",
+    photo: wissahickon,
+    region: "Pennsylvania",
   },
   {
     name: "Gretchen Whitney High School",
