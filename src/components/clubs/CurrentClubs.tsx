@@ -476,7 +476,7 @@ const clubs: {
     photo: winston_churchill,
     region: "Maryland",
   },
-]
+].sort((x, y) => x.name.localeCompare(y.name));
 
 export default function CurrentClubs() {
   return (
