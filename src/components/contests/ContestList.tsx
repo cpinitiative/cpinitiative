@@ -90,6 +90,12 @@ const contests: {
   link: string
 }[] = [
   {
+    name: "TeamsCode Spring 2023",
+    date: "April 2, 2023",
+    photo: teamscode,
+    link: "https://www.teamscode.org/contests/spring-2023",
+  },
+  {
     name: "CerealCodes",
     date: "August 13, 2022",
     photo: cerealcodes,
