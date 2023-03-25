@@ -28,6 +28,7 @@ import {
   faris,
   frank,
   harry,
+  harsh_akunuri,
   ian,
   jason,
   jay,
@@ -400,6 +401,11 @@ const _members: { [key: string]: Member } = {
     email: "qiwang@joincpi.org",
     youtube: "https://www.youtube.com/channel/UCXMWyG1D_a_b2HRLlBPkGMw",
   },
+  harsh_akunuri: {
+    photo: harsh_akunuri,
+    name: "Harsh Akunuri",
+    titles: [roles.clubCurriculum],
+  },
   ian: {
     photo: ian,
     name: "Ian Zhang",
@@ -708,7 +714,8 @@ const restOfMembers: Member[] = [
   _members.john,
   _members.paul,
   _members.trisha,
-  _members.faris
+  _members.faris,
+  _members.harsh_akunuri,
 ]
 const formerMembers: Member[] = [
   _members.neo,
