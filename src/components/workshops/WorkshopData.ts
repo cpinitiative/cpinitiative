@@ -8,6 +8,8 @@ import Jan23 from "../../images/workshops/jan23.png"
 import Jan23Thumbnail from "../../images/workshops/jan23thumbnail.png"
 import Feb23 from "../../images/workshops/feb23.png";
 import Feb23Thumbnail from "../../images/workshops/feb23thumbnail.png";
+import Open23 from "../../images/workshops/open23.png";
+import Open23Thumbnail from "../../images/workshops/open23thumbnail.png";
 import { StaticImageData } from "next/image"
 
 export type Workshop = {
@@ -33,6 +35,16 @@ const themeColors = {
 }
 
 const workshops: Workshop[] = [
+  {
+    photo: Open23,
+    thumbnail: Open23Thumbnail,
+    title: "USACO Open Workshop",
+    description: "Learn how to solve the Bronze/Silver USACO U.S. Open solutions, and participate in a live discussion/Q&A about tips for USACO next year!",
+    date: dayjs("Apr 2, 2023 2:00:00 PM PDT"),
+    season: "2022-2023",
+    url: "open23",
+    themeColor: themeColors.purple
+  },
   {
     photo: Feb23,
     thumbnail: Feb23Thumbnail,
