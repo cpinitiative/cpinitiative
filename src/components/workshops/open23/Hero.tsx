@@ -21,7 +21,7 @@ export default function Hero() {
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                 Having trouble understanding the USACO Open 2023 solutions?
                 Learn the bronze and silver solutions on{" "}
-                <b>April 2, 2PM PDT/5PM EDT</b>!
+                <b>April 2, 4PM PDT/7PM EDT</b>!
               </p>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                 Zoom Link:
