@@ -10,7 +10,7 @@ export default async function approveFinancialAid(
   response: NowResponse
 ) {
   try {
-    const {
+    let {
       authToken,
       registrationId,
       email,
@@ -19,6 +19,7 @@ export default async function approveFinancialAid(
       preferredLanguage,
       level,
     } = request.body
+    email = email.trim()
 
     const authUser = await getAuth().verifyIdToken(authToken)
     if (!classRegistrationAdministrators.includes(authUser.uid)) {

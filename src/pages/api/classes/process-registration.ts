@@ -10,7 +10,7 @@ export default async function processRegistration(
   response: NowResponse
 ) {
   try {
-    const {
+    let {
       level,
       firstName,
       lastName,
@@ -21,6 +21,7 @@ export default async function processRegistration(
       timezone,
       orderData,
     } = request.body
+    email = email?.trim()
 
     console.warn("start process registration")
     const orderID = orderData.orderID
@@ -123,6 +124,8 @@ export default async function processRegistration(
       },
     })
   } catch (error) {
+    console.error("INTERNAL ERROR REG REGISTRATION")
+    console.error(error)
     return response.status(500).json({
       success: false,
       message: error.message,

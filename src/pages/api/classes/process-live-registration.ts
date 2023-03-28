@@ -11,7 +11,7 @@ export default async function processLiveRegistration(
   response: NowResponse
 ) {
   try {
-    const {
+    let {
       level,
       firstName,
       lastName,
@@ -22,6 +22,7 @@ export default async function processLiveRegistration(
       timezone,
       orderData,
     } = request.body
+    email = email?.trim()
 
     console.warn("start process registration")
     const orderID = orderData.orderID
@@ -125,9 +126,13 @@ export default async function processLiveRegistration(
       },
     })
   } catch (error) {
+    console.error(
+      "AN INTERNAL ERROR OCCURRED WHILE PROCESSING LIVE REGISTRATION"
+    )
+    console.error(error)
     return response.status(500).json({
       success: false,
-      message: error.message,
+      message: "An internal error occurred: " + error.message,
     })
   }
 }
