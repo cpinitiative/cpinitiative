@@ -8,6 +8,8 @@ export default function StudentInformationSection({
   setLastName,
   email,
   setEmail,
+  emailValid,
+  setEmailValid,
   preferredLanguage,
   setPreferredLanguage,
   timezone,
@@ -68,9 +70,10 @@ export default function StudentInformationSection({
                     Student Email Address
                   </label>
                   <input
-                    type="text"
+                    type="email"
                     value={email}
-                    onChange={e => setEmail(e.target.value)}
+                    onChange={e => {setEmail(e.target.value);}}
+                    onBlur={e => {setEmailValid(e.target.reportValidity() && e.target.value);}}
                     autoComplete="email"
                     className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                   />

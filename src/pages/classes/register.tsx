@@ -55,6 +55,7 @@ export default function ClassRegistrationPage() {
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
   const [email, setEmail] = useState("")
+  const [emailValid, setEmailValid] = useState(false)
   const [preferredLanguage, setPreferredLanguage] = useState("")
   const [referrer, setReferrer] = useState("")
   const [referrerDetail, setReferrerDetail] = useState("")
@@ -77,7 +78,7 @@ export default function ClassRegistrationPage() {
       !firstName ||
       !lastName ||
       !email ||
-      email.indexOf("@") == -1 ||
+      !emailValid ||
       !preferredLanguage ||
       !referrer ||
       !timezone ||
@@ -142,6 +143,8 @@ export default function ClassRegistrationPage() {
                 setLastName={setLastName}
                 email={email}
                 setEmail={setEmail}
+                emailValid={emailValid}
+                setEmailValid={setEmailValid}
                 timezone={timezone}
                 setTimezone={setTimezone}
                 setPreferredLanguage={setPreferredLanguage}
@@ -179,6 +182,7 @@ export default function ClassRegistrationPage() {
                     firstName={firstName}
                     lastName={lastName}
                     email={email}
+                    emailValid={emailValid}
                     preferredLanguage={preferredLanguage}
                     referrer={referrer}
                     referrerDetail={referrerDetail}
@@ -205,6 +209,7 @@ export default function ClassRegistrationPage() {
                   firstName={firstName}
                   lastName={lastName}
                   email={email}
+                  emailValid={emailValid}
                   preferredLanguage={preferredLanguage}
                   referrer={referrer}
                   referrerDetail={referrerDetail}
