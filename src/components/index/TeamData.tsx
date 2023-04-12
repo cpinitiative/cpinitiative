@@ -586,7 +586,7 @@ const _members: { [key: string]: Member } = {
     titles: [roles.clubCurriculum],
     linkedin: "https://www.linkedin.com/in/riley-bonner-6b8726213/",
   },
-  rishabh: {
+  rishabh: { 
     photo: rishabh,
     name: "Rishabh Agarwal",
     titles: [roles.webdev],
