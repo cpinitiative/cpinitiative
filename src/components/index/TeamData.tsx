@@ -53,6 +53,7 @@ import {
   pranav,
   ramit,
   riley,
+  rishabh,
   ryan,
   shikhar,
   siyong,
@@ -585,6 +586,13 @@ const _members: { [key: string]: Member } = {
     titles: [roles.clubCurriculum],
     linkedin: "https://www.linkedin.com/in/riley-bonner-6b8726213/",
   },
+  rishabh: {
+    photo: rishabh,
+    name: "Rishabh Agarwal",
+    titles: [roles.webdev],
+    github: "shaubby",
+    email: "agar5333@gmail.com",
+  },
   ryan: {
     photo: ryan,
     name: "Ryan Chou",
@@ -716,6 +724,7 @@ const restOfMembers: Member[] = [
   _members.trisha,
   _members.faris,
   _members.harsh_akunuri,
+  _members.rishabh,
 ]
 const formerMembers: Member[] = [
   _members.neo,
