@@ -63,6 +63,7 @@ import rahul_verma from "./rahul_verma.png";
 import ramit from "./ramit.jpg"
 import rayna from "./rayna.jpeg"
 import riley from "./riley.jpg"
+import rishabh from "./rishabh.jpg"
 import rohan_garg from "./rohan_garg.jpg";
 import ryan from "./ryan.jpg"
 import ryan_fu from "./ryan_fu.jpeg";
@@ -150,6 +151,7 @@ export {
   ramit,
   rayna,
   riley,
+  rishabh,
   rohan_garg,
   ryan,
   ryan_fu,
