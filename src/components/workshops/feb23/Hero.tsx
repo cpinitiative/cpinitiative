@@ -23,43 +23,29 @@ export default function Hero() {
                 the bronze and silver solutions on{" "}
                 <b>March 4, 4PM PST/7PM EST</b>!
               </p>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Zoom Link:
-                https://us06web.zoom.us/j/83776884526?pwd=ZEIwR0JzS1ZzcXFsaHI4Wk00WXNIQT09
-              </p>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Meeting ID: 837 7688 4526 Passcode: 083306
-              </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    href="https://forms.gle/W4RwbhnVYPe2mW279"
+                    href="https://forms.gle/R3d3gvEGqsEbMZ8cA"
                     target="_blank"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-purple-600 hover:bg-purple-500 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
-                    Sign Up
+                    Join Mailing List
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
-                    href="mailto:ocmelodyyu@gmail.com"
+                    href="mailto:maggieliu@joincpi.org"
                     target="_blank"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 bg-blue-100 hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-purple-700 bg-purple-100 hover:text-purple-600 hover:bg-purple-50 focus:outline-none focus:shadow-outline-purple focus:border-purple-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
                     Contact Us
                   </a>
                 </div>
               </div>
             </div>
-
-            <div className={"lg:col-span-3 w-full max-w-2xl mx-auto"}>
-              <Image
-                src={Feb23}
-                placeholder="blur"
-                priority
-                layout="responsive"
-                className="rounded-lg"
-              />
+            <div className={"lg:col-span-3 w-full max-w-2xl mx-auto space-y-6"}>
+              <Youtube id="GTvGRCEwUKU" />
             </div>
           </main>
         </div>
