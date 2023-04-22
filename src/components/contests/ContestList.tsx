@@ -66,19 +66,6 @@ export default function ContestList() {
           {listOfContests}
         </ul>
       </div>
-      <p className="text-center">
-        Are you organizing a contest targeted towards high schoolers? If you
-        want to partner with us, send us an email at{" "}
-        <a
-          href="mailto:contests@joincpi.org"
-          target="_blank"
-          rel="noreferrer"
-          className="underline"
-        >
-          contests@joincpi.org
-        </a>
-        .
-      </p>
     </>
   )
 }
