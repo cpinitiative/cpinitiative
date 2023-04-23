@@ -57,6 +57,7 @@ import neo from "./neo.jpg"
 import nikhil from "./nikhil.png"
 import niranjana_sankar from "./niranjana_sankar.jpeg";
 import paul from "./paul.jpg"
+import omar_ahmed from "./omar_ahmed.jpeg"
 import oscar from "./oscar.png"
 import pranav from "./pranav.png"
 import rahul_verma from "./rahul_verma.png";
@@ -145,6 +146,7 @@ export {
   neo,
   nikhil,
   paul,
+  omar_ahmed,
   oscar,
   pranav,
   rahul_verma,

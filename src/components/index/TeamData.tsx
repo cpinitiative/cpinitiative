@@ -48,6 +48,7 @@ import {
   nathanw,
   neo,
   nikhil,
+  omar_ahmed,
   oscar,
   paul,
   pranav,
@@ -553,6 +554,11 @@ const _members: { [key: string]: Member } = {
     name: "Nikhil Chatterjee",
     titles: [roles.liveInstructor, roles.videoInstructor, roles.clubCurriculum],
   },
+  omar_ahmed: {
+    photo: omar_ahmed,
+    name: "Omar Ahmed",
+    titles: [roles.clubCurriculum],
+  },
   oscar: {
     photo: oscar,
     name: "Oscar Rendón",
@@ -586,7 +592,7 @@ const _members: { [key: string]: Member } = {
     titles: [roles.clubCurriculum],
     linkedin: "https://www.linkedin.com/in/riley-bonner-6b8726213/",
   },
-  rishabh: { 
+  rishabh: {
     photo: rishabh,
     name: "Rishabh Agarwal",
     titles: [roles.webdev],
@@ -725,6 +731,7 @@ const restOfMembers: Member[] = [
   _members.faris,
   _members.harsh_akunuri,
   _members.rishabh,
+  _members.omar_ahmed,
 ]
 const formerMembers: Member[] = [
   _members.neo,
