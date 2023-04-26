@@ -4,6 +4,7 @@ import { useState } from "react"
 import Logo from "./Logo"
 import { useRouter } from "next/router"
 import ClassesDropdown from "../components/ClassesDropdown"
+import CompetitionsDropdown from "../components/CompetitionsDropdown"
 
 export default function Header({
   noBanner,
@@ -31,10 +32,6 @@ export default function Header({
       label: "CPG",
       url: "/cpg",
     },
-    {
-      label: "Competition",
-      url: "/competition",
-    }
   ]
 
   const linkClasses =
@@ -133,6 +130,7 @@ export default function Header({
               </a>
 
               <ClassesDropdown dark={dark} />
+              <CompetitionsDropdown dark={dark} />
 
               {internalLinks.map(link => (
                 <Link href={link.url} key={link.url}>
