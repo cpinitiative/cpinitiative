@@ -6,7 +6,9 @@ import Header from "../components/Header"
 import Divisions from "../components/contests/Divisions"
 import EmailForm from "../components/video-classes/EmailForm"
 import ContestList from "../components/contests/ContestList"
+import PartneredContests from "../components/contests/PartneredContests"
 import CurrentClubs from "../components/clubs/CurrentClubs"
+import Link from "next/link"
 
 export default function Contests() {
   return (
@@ -16,49 +18,44 @@ export default function Contests() {
         description="A selection of programming contests targeted towards pre-college students."
       />
 
-      <Header noBanner={true} />
-
-      <div className="bg-gray-900 min-h-screen lg:min-h-[50vh] flex">
-        {/* <div className="h-16 flex-shrink-0" /> */}
-        {/*Banner Padding*/}
-        {/*<div className="h-20 sm:h-12"/>*/}
-        <div className="flex-1 flex flex-row items-center">
-          <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8 w-full py-24">
-            <h1 className="text-center font-black text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-white">
+<div>
+      <div className="relative shadow-xl">
+        <div className="absolute inset-0">
+          <img
+            className="h-full w-full object-cover"
+            src="https://source.unsplash.com/QBpZGqEMsKg"
+            alt="People working"
+          />
+          <div
+            className="absolute inset-0 bg-indigo-800"
+            style={{ mixBlendMode: "multiply" }}
+          />
+        </div>
+        <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+          <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+          <h1 className="text-center font-black text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-white">
               Programming Contests <br />
               <span className="text-purple-300">for High Schoolers.</span>
             </h1>
-
-            <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
+          </h1>
+          <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
               Organizing a new contest isn't easy, and neither is keeping a contest running for many years. 
               Get access to resources, manpower, and support to host your high school programming contest.
-            </p>
+          </p>
 
-            <div className="items-center text-center max-w-md mt-12 mt-10 mx-auto sm:max-w-none sm:flex sm:justify-center">
+          <div className="items-center text-center max-w-md mt-12 mt-10 mx-auto sm:max-w-none sm:flex sm:justify-center">
               <EmailForm
                 listName={"contests"}
                 mailjetListName={"contests"}
               />
             </div>
-            <div className="lg:hidden flex flex-col items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 sm:h-12 sm:w-12 text-white animate-bounce absolute bottom-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17 13l-5 5m0 0l-5-5m5 5V6"
-                />
-              </svg>
-            </div>
-          </div>
+
         </div>
       </div>
+    </div>
+
+      <Header noBanner={true} />
+
 
       <div className="relative px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <div className="text-lg max-w-prose mx-auto mb-6">
@@ -69,16 +66,75 @@ export default function Contests() {
           High-quality contests hosted with CPI.
           </h1>
         </div>
-        <div className="prose prose-lg text-gray-500 mx-auto">
+        <div className="prose prose-lg text-gray-500 mx-auto mb-6">
           <p className = "text-1xl text-center">
           Join high-quality programming contests hosted by students, for students.
           </p>
         </div>
       
-      <div className="relative pt-20 pb-20" id="how-to-join">
+
+      <div className="relative bg-purple-600">
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-purple-800 mix-blend-multiply"
+            aria-hidden="true"
+          />
+        </div>
+        <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            High-Quality Contests
+          </h1>
+          <p className="mt-6 text-xl text-purple-100 max-w-3xl">
+            Participate in our rapidly-growing community of USACO-style algorithmic contests!
+          </p>
+        </div>
+      </div>  
+        <ContestList />
+
+      <div className="relative bg-purple-600">
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-purple-800 mix-blend-multiply"
+            aria-hidden="true"
+          />
+        </div>
+        <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            Partnered Contests
+          </h1>
+          <p className="mt-6 text-xl text-purple-100 max-w-3xl">
+            These contests are directly affiliated with the CP Initiative.
+          </p>
+        </div>
+      </div>  
+        <PartneredContests />
+
+        <div className="text-lg max-w-prose mx-auto mb-6">
+          <h1 className="mt-2 mb-8 text-4xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+            Unique Contest Hosting Platform
+          </h1>
+        </div>
+        
+        <div className="prose prose-lg text-gray-500 mx-auto mb-6">
+        <img 
+            width = "950px"
+            src="https://cdn.discordapp.com/attachments/877330703853961268/1110262012161831056/Screen_Shot_2023-05-03_at_9.png"
+            placeholder="blur"
+          />
+
+          <p className = "text-1xl text-center">
+            Host your own contest on our partnered platform, ProCo. <br></br> 
+            <a href="https://proco.vercel.app/login" className="underline">
+                Join today!
+            </a>
+          </p>
+        </div>
+
+
+        <div className="relative pt-15 pb-15" id="how-to-join">
         <div className="max-w-prose sm:text-lg mx-auto px-4">
           <h2 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 text-center">
-            How to Join
+            Registering Your Contest
           </h2>
           <div className="h-10" />
           <div className="space-y-8">
@@ -127,25 +183,11 @@ export default function Contests() {
           </div>
         </div>
       </div>
-
-      <div className="relative bg-purple-600">
-        <div className="absolute inset-0">
-          <div
-            className="absolute inset-0 bg-purple-800 mix-blend-multiply"
-            aria-hidden="true"
-          />
-        </div>
-        <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Partnered Contests
-          </h1>
-          <p className="mt-6 text-xl text-purple-100 max-w-3xl">
-            Participate in our rapidly-growing community of USACO-style algorithmic contests!
-          </p>
-        </div>
-      </div>  
-        <ContestList />
+      
     </div>
+
+    
+    
     </Layout>
   )
 }

@@ -49,39 +49,9 @@ const contests: {
   link: string
 }[] = [
   {
-    name: "CerealCodes",
-    photo: cerealcodes,
-    link: "https://www.cerealcodes.org/",
-  },
-  {
-    name: "TeamsCode Summer 2022",
-    photo: teamscode,
-    link: "https://www.teamscode.org/contests/summer-2022",
-  },
-  {
-    name: "TJIOI 2022",
-    photo: tjioi,
-    link: "https://codeforces.com/blog/entry/103256",
-  },
-  {
-    name: "4th Turing Fun Cup",
-    photo: placeholder,
-    link: "https://tinyurl.com/4thTuringFunCupGuidebook",
-  },
-  {
     name: "The Andover Computing Open (TACO)",
     photo: taco,
     link: "https://andovercomputingopen.com/",
-  },
-  {
-    name: "Montgomery Blair Informatics Tournament (mBIT)",
-    photo: mbit,
-    link: "https://mbit.mbhs.edu/",
-  },
-  {
-    name: "traverse[cs]",
-    photo: placeholder,
-    link: "https://traverse-cs.org/",
   },
   {
     name: "alGIRLithm. A programming contest for high school girls.",
