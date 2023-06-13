@@ -35,7 +35,7 @@ export default function Contests() {
           <img
             className="h-full w-full object-cover"
             src="https://source.unsplash.com/QBpZGqEMsKg"
-            alt="People working"
+            alt="Programmers competing in a contest"
           />
           <div
             className="absolute inset-0 bg-indigo-800"
@@ -50,8 +50,8 @@ export default function Contests() {
             </h1>
           </h1>
           <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
-              Organizing a new contest isn't easy, and neither is keeping a contest running for many years. 
-              Get access to resources, manpower, and support to host your high school programming contest.
+            Join high-quality programming contests hosted by students, for students. 
+            These contests are partnered and part of the CPI Competition Program.
           </p>
 
           <div className="items-center text-center max-w-md mt-12 mt-10 mx-auto sm:max-w-none sm:flex sm:justify-center">
@@ -79,8 +79,8 @@ export default function Contests() {
         </div>
         <div className="prose prose-lg text-gray-500 mx-auto mb-6">
           <p className = "text-1xl text-center">
-          Join high-quality programming contests hosted by students, for students. 
-          These contests are partnered and part of the CPI Competition Program.
+          Organizing a new contest isn't easy, and neither is keeping a contest running for many years. 
+          Get access to resources, manpower, and support to host your high school programming contest.
           </p>
         </div>
         <div>
@@ -88,7 +88,7 @@ export default function Contests() {
               Partnered Tournaments
           </h2>
             <div>
-              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-purple-600 mb-2 p-2 px-7">
+              <h3 className="text-l sm:text-xl font-semibold tracking-tight text-purple-600 mt-2 p-2 px-7">
                 Lexington Informatics Tournament (LIT)
               </h3>
               {/* Write code to display Image and a paragraph to the right of the image with text. */}
@@ -96,8 +96,8 @@ export default function Contests() {
                 <div className="flex flex-col p-2 px-6">
                   <Image
                     objectPosition="center center"
-                    width={485}
-                    height={300}
+                    width={450}
+                    height={270}
                     src={lit}
                   />
                   </div>
@@ -107,27 +107,32 @@ export default function Contests() {
                       middle/high school students, hosted by members of the LexMACS club from Lexington High School, 
                       along with many guest problemsetters/testers. 
                       </p>
+                      <div className="flex flex-row items-center justify-center">
+                        <div className="flex flex-col">
+                          <a
+                            href="https://lit.lhsmathcs.org/"
+                            target="_blank"
+                            className="flex items-center justify-center px-4 py-3 m-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-500 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
+                          >
+                            Find Out More
+                          </a>
 
-                      <a
-                        href="https://lit.lhsmathcs.org/"
-                        target="_blank"
-                        className="flex items-center justify-center px-4 py-3 m-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-purple-600 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
-                      >
-                        Find Out More
-                      </a>
-                      <a
-                        href="https://discord.gg/k6yzFdZ"
-                        target="_blank"
-                        className="flex items-center justify-center px-4 py-3 m-2 border text-base font-medium rounded-md shadow-sm text-white bg-purple-600 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
-                      >
-                        Join their Discord!
-                      </a>
-
+                        </div>
+                        <div className="flex flex-col">
+                          <a
+                            href="https://discord.gg/k6yzFdZ"
+                            target="_blank"
+                            className="flex items-center justify-center px-4 py-3 m-2 border text-base font-medium rounded-md shadow-sm text-white bg-gray-500 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
+                          >
+                            Join their Discord
+                          </a>
+                        </div>
+                      </div>
                     </div>
                 </div>
             </div>
             <div>
-              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-purple-600 mb-2 p-2 px-7">
+              <h3 className="text-l sm:text-xl font-semibold tracking-tight text-purple-600 mt-2 p-2 px-7">
               The Andover Computing Open (TACO)
               </h3>
               {/* Write code to display Image and a paragraph to the right of the image with text. */}
@@ -135,8 +140,8 @@ export default function Contests() {
                 <div className="flex flex-col p-2 px-6">
                   <Image
                     objectPosition="center center"
-                    width={440}
-                    height={300}
+                    width={450}
+                    height={430}
                     src={taco}
                   />
                   </div>
@@ -146,26 +151,33 @@ export default function Contests() {
                       run and designed by Phillips Academy Andover students. Compete for prizes, attend workshops, 
                       and join a community of programmers!
                       </p>
-                      <a
-                        href="https://www.andovercomputingopen.com/"
-                        target="_blank"
-                        className="flex items-center justify-center px-4 py-3 m-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-purple-600 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
-                      >
-                        Find Out More
-                      </a>
-                      <a
-                        href="https://discord.com/invite/s5Wp2QaSCJ"
-                        target="_blank"
-                        className="flex items-center justify-center px-4 py-3 m-2 border text-base font-medium rounded-md shadow-sm text-white bg-purple-600 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
-                      >
-                        Join their Discord!
-                      </a>
+                      <div className="flex flex-row items-center justify-center">
+                        <div className="flex flex-col">
+                          <a
+                            href="https://www.andovercomputingopen.com/"
+                            target="_blank"
+                            className="flex items-center justify-center px-4 py-3 m-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-500 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
+                          >
+                            Find Out More
+                          </a>
+
+                        </div>
+                        <div className="flex flex-col">
+                          <a
+                            href="https://discord.com/invite/s5Wp2QaSCJ"
+                            target="_blank"
+                            className="flex items-center justify-center px-4 py-3 m-2 border text-base font-medium rounded-md shadow-sm text-white bg-gray-500 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
+                          >
+                            Join their Discord
+                          </a>
+                        </div>
+                      </div>
                       
                     </div>
                 </div>
             </div>
             <div>
-              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-purple-600 mb-2 p-2 px-7">
+              <h3 className="text-l sm:text-xl font-semibold tracking-tight text-purple-600 mt-2 p-2 px-7">
               alGIRLithm
               </h3>
               {/* Write code to display Image and a paragraph to the right of the image with text. */}
@@ -174,7 +186,7 @@ export default function Contests() {
                   <Image
                     objectPosition="center center"
                     width={450}
-                    height={300}
+                    height={270}
                     src={algirlithm}
                   />
                   </div>
@@ -184,21 +196,30 @@ export default function Contests() {
                       of female computer scientists by making competitive programming accessible to high school girls.
                       Girls with all levels of experience in competitive programming are encouraged to join!
                       </p>
+                      {/* Add 2 button elements side-to-side in this div. One button should be on the left side, and the other on the right side.*/}
+                      <div className="flex flex-row items-center justify-center">
+                        <div className="flex flex-col">
+                          <a
+                            href="https://algirlithm.org/"
+                            target="_blank"
+                            className="flex items-center justify-center px-4 py-3 m-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-500 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
+                          >
+                            Find Out More
+                          </a>
+
+                        </div>
+                        <div className="flex flex-col">
+                          <a
+                            href="https://discord.gg/5Q9Q4Q5"
+                            target="_blank"
+                            className="flex items-center justify-center px-4 py-3 m-2 border text-base font-medium rounded-md shadow-sm text-white bg-gray-500 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
+                          >
+                            Join their Discord
+                          </a>
+                          </div>
+                      </div>
                       
-                      <a
-                        href="https://algirlithm.org/"
-                        target="_blank"
-                        className="flex items-center justify-center px-4 py-3 m-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-purple-600 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
-                      >
-                        Find Out More
-                      </a>
-                      <a
-                        href="https://discord.gg/bqRBv3CfQr"
-                        target="_blank"
-                        className="flex items-center justify-center px-4 py-3 m-2 border text-base font-medium rounded-md shadow-sm text-white bg-purple-600 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
-                      >
-                        Join their Discord!
-                      </a>
+                      
                     </div>
                 </div>
             </div>
@@ -285,26 +306,8 @@ export default function Contests() {
           </p>
         </div>
         
-      <div className="relative bg-purple-600 my-4">
-        <div className="absolute inset-0">
-          <div
-            className="absolute inset-0 bg-purple-800 mix-blend-multiply"
-            aria-hidden="true"
-          />
-        </div>
-        <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            High-Quality Contests
-          </h1>
-          <p className="mt-6 text-xl text-purple-100 max-w-3xl">
-            Participate in our rapidly-growing community of USACO-style algorithmic contests!
-          </p>
-        </div>
-      </div>  
-        <ContestList /> 
-
-        <div className="relative pt-15 pb-15" id="how-to-join">
-        <div className="max-w-prose sm:text-lg mx-auto px-4">
+        <div className="relative pt-15 pb-15">
+        <div className="max-w-prose sm:text-lg mx-auto px-4 py-6">
           <h2 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 text-center">
             Registering Your Contest
           </h2>
