@@ -1,9 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from "next"
 import { GoogleSpreadsheet } from "google-spreadsheet"
-import { getSession } from "next-auth/react"
+import { getServerSession } from "next-auth/next"
 import { SHEETS_API_CREDS, SHEETS_METADATA } from "../../../config"
 import { db } from "../../../firebase"
 import YAML from "yaml"
+import { authOptions } from "./auth/[...nextauth]"
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
@@ -16,8 +17,8 @@ export default async function handler(
       // console.log(doc.data())
       return doc.data()
     })
-  const session = await getSession({ req })
-  const email = session.user?.email
+  const session = await getServerSession(req, res, authOptions)
+  const email = session?.user?.email
 
   const { date, hours, response, role } = req.body
   const name = session?.user?.name
