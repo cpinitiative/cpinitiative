@@ -80,13 +80,13 @@ export default function ClassLevels() {
                     ))}
                   </ul>
                   <div className="rounded-md shadow">
-                    <Link href="https://joincpi.org/classes/register#beginner">
+                    <Link href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform">
                       <a
                         className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                         aria-describedby="tier-standard"
                         target="_blank"
                       >
-                        Register Now
+                        Get Notified
                       </a>
                     </Link>
                   </div>
@@ -151,13 +151,13 @@ export default function ClassLevels() {
                   </ul>
                   <div className="rounded-md shadow">
                     <div className="rounded-md shadow">
-                      <Link href="https://joincpi.org/classes/register#intermediate">
+                      <Link href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform">
                         <a
                           className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                           aria-describedby="tier-standard"
                           target="_blank"
                         >
-                          Register Now
+                          Get Notified
                         </a>
                       </Link>
                     </div>
