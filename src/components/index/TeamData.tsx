@@ -702,7 +702,6 @@ const orderedFirstMembers: Member[] = [
   _members.varun,
   _members.amy,
   _members.evan,
-  _members.pranav,
   _members.andi,
   _members.andrew,
   _members.nathanc,
@@ -719,13 +718,11 @@ const restOfMembers: Member[] = [
   _members.jeffrey_zhang,
   _members.riley,
   _members.julie,
-  _members.ian,
   _members.frank,
   _members.eric,
   _members.aditya,
   _members.albert_jiang,
   _members.chuyang,
-  _members.john,
   _members.paul,
   _members.trisha,
   _members.faris,
@@ -761,6 +758,9 @@ const formerMembers: Member[] = [
   _members.sofia,
   _members.vidith,
   _members.yifan,
+  _members.john,
+  _members.ian,
+  _members.pranav,
 ]
 function sortPeople(people: Member[]) {
   return people.sort((a, b) => {
