@@ -5,6 +5,7 @@ import {
   albert_jiang,
   albertz,
   alex_chen,
+  alex_wang,
   amogha,
   amy_chang,
   andi,
@@ -240,6 +241,11 @@ const _members: { [key: string]: Member } = {
     github: "alexwenchen",
     codeforces: "Alx",
   },
+  alex_wang: {
+    photo: alex_wang,
+    name: "Alex Wang",
+    titles: ["Director of Classes", roles.liveInstructor],
+  },
   amogha: {
     photo: amogha,
     name: "Amogha Pokkulandra",
@@ -379,7 +385,7 @@ const _members: { [key: string]: Member } = {
   evan: {
     photo: evan,
     name: "Evan Zhao",
-    titles: ["Director of Classes", roles.liveInstructor],
+    titles: ["Executive", "Director of Classes", roles.liveInstructor],
     email: "evanzhao12@gmail.com",
   },
   faris: {
@@ -450,7 +456,12 @@ const _members: { [key: string]: Member } = {
   jesse: {
     photo: jesse,
     name: "Jesse Choe",
-    titles: [roles.contentAuthor, roles.liveInstructor],
+    titles: [
+      "Director of Classes",
+      "Content Manager",
+      roles.contentAuthor,
+      roles.liveInstructor,
+    ],
     github: "jessechoe10",
     email: "jessechoe10@gmail.com",
     codeforces: "YoRepi7",
@@ -602,7 +613,12 @@ const _members: { [key: string]: Member } = {
   ryan: {
     photo: ryan,
     name: "Ryan Chou",
-    titles: [roles.liveInstructor, roles.videoInstructor, roles.contentAuthor],
+    titles: [
+      "Content Manager",
+      roles.liveInstructor,
+      roles.videoInstructor,
+      roles.contentAuthor,
+    ],
     github: "ryanchou-dev",
     website: "https://www.ryanchou.dev/",
   },
@@ -636,7 +652,7 @@ const _members: { [key: string]: Member } = {
   trisha: {
     photo: trisha,
     name: "Trisha Sabadra",
-    titles: [roles.liveInstructor],
+    titles: ["Director of Classes", roles.liveInstructor],
   },
   varun: {
     photo: varun,
@@ -674,7 +690,7 @@ const _members: { [key: string]: Member } = {
 const notPictured: Omit<Member, "photo">[] = [
   {
     name: "Kevin Sheng",
-    titles: [roles.contentAuthor],
+    titles: ["Content Manager", roles.contentAuthor],
     github: "sanspapyrus683",
   },
   {
