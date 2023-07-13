@@ -353,7 +353,7 @@ const _members: { [key: string]: Member } = {
   dong: {
     photo: dong,
     name: "Bing-Dong Liu",
-    titles: ["Director of Content", roles.liveInstructor],
+    titles: ["Director of USACO Guide", roles.liveInstructor],
     github: "dongliu0426",
     codeforces: "lunchbox",
     email: "dongliu0426@gmail.com",
@@ -403,7 +403,7 @@ const _members: { [key: string]: Member } = {
   harry: {
     photo: harry,
     name: "Harry Wang",
-    titles: ["Director of Content", roles.videoInstructor],
+    titles: ["Director of USACO Guide", roles.videoInstructor],
     github: "harrywangatx",
     website: "https://harrycodes.com",
     email: "qiwang@joincpi.org",
@@ -458,7 +458,7 @@ const _members: { [key: string]: Member } = {
     name: "Jesse Choe",
     titles: [
       "Director of Classes",
-      "Director of Content",
+      "Director of USACO Guide",
       roles.contentAuthor,
       roles.liveInstructor,
     ],
@@ -555,7 +555,7 @@ const _members: { [key: string]: Member } = {
   neo: {
     photo: neo,
     name: "Neo Wang",
-    titles: ["Director of Content", roles.videoInstructor, roles.webdev],
+    titles: ["Director of USACO Guide", roles.videoInstructor, roles.webdev],
     github: "nwatx",
     website: "https://nwatx.me/",
     email: "neowangatx@gmail.com",
@@ -614,7 +614,7 @@ const _members: { [key: string]: Member } = {
     photo: ryan,
     name: "Ryan Chou",
     titles: [
-      "Director of Content",
+      "Director of USACO Guide",
       roles.liveInstructor,
       roles.videoInstructor,
       roles.contentAuthor,
@@ -690,7 +690,7 @@ const _members: { [key: string]: Member } = {
 const notPictured: Omit<Member, "photo">[] = [
   {
     name: "Kevin Sheng",
-    titles: ["Director of Content", roles.contentAuthor],
+    titles: ["Director of USACO Guide", roles.contentAuthor],
     github: "sanspapyrus683",
   },
   {
