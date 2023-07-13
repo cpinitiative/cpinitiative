@@ -313,7 +313,7 @@ const _members: { [key: string]: Member } = {
   benq: {
     photo: benq,
     name: "Benjamin Qi",
-    titles: [roles.founder, "Content Director", "2x IOI Winner"],
+    titles: [roles.founder, "Board", "Content Director", "2x IOI Winner"],
     github: "bqi343",
     codeforces: "Benq",
     email: "bqi343@gmail.com",
@@ -353,7 +353,7 @@ const _members: { [key: string]: Member } = {
   dong: {
     photo: dong,
     name: "Bing-Dong Liu",
-    titles: ["Content Manager", roles.liveInstructor],
+    titles: ["Director of Content", roles.liveInstructor],
     github: "dongliu0426",
     codeforces: "lunchbox",
     email: "dongliu0426@gmail.com",
@@ -403,7 +403,7 @@ const _members: { [key: string]: Member } = {
   harry: {
     photo: harry,
     name: "Harry Wang",
-    titles: ["Content Manager", roles.videoInstructor],
+    titles: ["Director of Content", roles.videoInstructor],
     github: "harrywangatx",
     website: "https://harrycodes.com",
     email: "qiwang@joincpi.org",
@@ -458,7 +458,7 @@ const _members: { [key: string]: Member } = {
     name: "Jesse Choe",
     titles: [
       "Director of Classes",
-      "Content Manager",
+      "Director of Content",
       roles.contentAuthor,
       roles.liveInstructor,
     ],
@@ -487,7 +487,7 @@ const _members: { [key: string]: Member } = {
   maggie: {
     photo: maggie,
     name: "Maggie Liu",
-    titles: ["Executive", roles.webdev, roles.videoInstructor],
+    titles: ["Board", roles.webdev, roles.videoInstructor],
     github: "maggie-j-liu",
     website: "https://maggieliu.dev",
     codeforces: "ml1234",
@@ -555,7 +555,7 @@ const _members: { [key: string]: Member } = {
   neo: {
     photo: neo,
     name: "Neo Wang",
-    titles: ["Content Manager", roles.videoInstructor, roles.webdev],
+    titles: ["Director of Content", roles.videoInstructor, roles.webdev],
     github: "nwatx",
     website: "https://nwatx.me/",
     email: "neowangatx@gmail.com",
@@ -614,7 +614,7 @@ const _members: { [key: string]: Member } = {
     photo: ryan,
     name: "Ryan Chou",
     titles: [
-      "Content Manager",
+      "Director of Content",
       roles.liveInstructor,
       roles.videoInstructor,
       roles.contentAuthor,
@@ -690,7 +690,7 @@ const _members: { [key: string]: Member } = {
 const notPictured: Omit<Member, "photo">[] = [
   {
     name: "Kevin Sheng",
-    titles: ["Content Manager", roles.contentAuthor],
+    titles: ["Director of Content", roles.contentAuthor],
     github: "sanspapyrus683",
   },
   {
@@ -712,12 +712,10 @@ const orderedFirstMembers: Member[] = [
   _members.michael,
   _members.maggie,
   _members.melody,
+  _members.evan,
   _members.daniel,
   _members.dong,
-  _members.harry,
   _members.varun,
-  _members.amy,
-  _members.evan,
   _members.andi,
   _members.andrew,
   _members.nathanc,
@@ -733,7 +731,6 @@ const restOfMembers: Member[] = [
   _members.stanley,
   _members.jeffrey_zhang,
   _members.riley,
-  _members.julie,
   _members.frank,
   _members.eric,
   _members.aditya,
@@ -777,6 +774,9 @@ const formerMembers: Member[] = [
   _members.john,
   _members.ian,
   _members.pranav,
+  _members.julie,
+  _members.amy,
+  _members.harry,
 ]
 function sortPeople(people: Member[]) {
   return people.sort((a, b) => {
@@ -787,7 +787,39 @@ function sortPeople(people: Member[]) {
   })
 }
 
+function sortByHierarchy(people: Member[]) {
+  let definedHierachy = ["Board", "Executive", "Director of", "Founding Member"]
+  return people
+    .map(a => {
+      for (let i = 0; i < definedHierachy.length; ++i) {
+        if (a.titles.some(x => x.startsWith(definedHierachy[i]))) {
+          return {
+            ...a,
+            rank: i,
+          }
+        }
+      }
+      let newPerson = {
+        ...a,
+        rank: definedHierachy.length,
+      }
+
+      console.log(a.name, newPerson.rank)
+
+      return newPerson
+    })
+    .sort((a, b) => {
+      if (a.rank === b.rank) {
+        return a.name.localeCompare(b.name)
+      }
+      return a.rank - b.rank
+    })
+}
+
 export const members = {
-  activePeople: [...orderedFirstMembers, ...sortPeople(restOfMembers)],
+  activePeople: sortByHierarchy([
+    ...orderedFirstMembers,
+    ...sortPeople(restOfMembers),
+  ]),
   formerMembers: sortPeople(formerMembers),
 }
