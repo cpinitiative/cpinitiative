@@ -6,6 +6,7 @@ import albert_jiang from "./albert_jiang.png"
 import albert from "./albert.jpg"
 import albertz from "./albertz.jpg"
 import alex_chen from "./alex_chen.png"
+import alex_wang from "./alex_wang.jpg"
 import amogha from "./amogha.jpeg"
 import amy_chang from "./amy_chang.jpg"
 import andi from "./andi.jpeg"
@@ -94,6 +95,7 @@ export {
   albert,
   albertz,
   alex_chen,
+  alex_wang,
   amogha,
   amy_chang,
   andi,
