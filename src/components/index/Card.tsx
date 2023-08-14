@@ -43,10 +43,10 @@ export default function Card({
     borderColor
   if (url && url.startsWith("/")) {
     return (
-      <Link href={url}>
-        <a className={classes}>{contents}</a>
+      <Link href={url} className={classes}>
+        {contents}
       </Link>
-    )
+    );
   }
   return (
     <a href={url} target="_blank" className={classes}>

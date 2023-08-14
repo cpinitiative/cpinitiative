@@ -99,17 +99,19 @@ export default function Header({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
-            <Link href="/">
-              <a className="flex-shrink-0 flex items-center text-xl font-bold space-x-2">
-                <div className="h-9 w-9">
-                  <Logo />
-                </div>
-                <span
-                  className={`font-bold text-xl ${dark ? "text-white" : ""}`}
-                >
-                  CP Initiative
-                </span>
-              </a>
+            <Link
+              href="/"
+              className="flex-shrink-0 flex items-center text-xl font-bold space-x-2">
+
+              <div className="h-9 w-9">
+                <Logo />
+              </div>
+              <span
+                className={`font-bold text-xl ${dark ? "text-white" : ""}`}
+              >
+                CP Initiative
+              </span>
+
             </Link>
             <div className="hidden md:ml-8 md:flex space-x-8">
               <a
@@ -131,17 +133,18 @@ export default function Header({
               <ClassesDropdown dark={dark} />
 
               {internalLinks.map(link => (
-                <Link href={link.url} key={link.url}>
-                  <a
-                    className={
-                      link.url === router.pathname
-                        ? activeLinkClasses
-                        : linkClasses
-                    }
-                  >
-                    {link.label}
-                  </a>
-                </Link>
+                (<Link
+                  href={link.url}
+                  key={link.url}
+                  className={
+                    link.url === router.pathname
+                      ? activeLinkClasses
+                      : linkClasses
+                  }>
+
+                  {link.label}
+
+                </Link>)
               ))}
             </div>
           </div>
@@ -204,45 +207,46 @@ export default function Header({
             USACO Guide
           </a>
 
-          <Link href="/classes">
-            <a
-              className={
-                "/classes" === router.pathname
-                  ? activeBlockLinkClasses
-                  : blockLinkClasses
-              }
-            >
+          <Link
+            href="/classes"
+            className={
+              "/classes" === router.pathname
+                ? activeBlockLinkClasses
+                : blockLinkClasses
+            }>
+            
               Live Classes
-            </a>
+            
           </Link>
 
-          <Link href="/video-classes">
-            <a
-              className={
-                "/video-classes" === router.pathname
-                  ? activeBlockLinkClasses
-                  : blockLinkClasses
-              }
-            >
+          <Link
+            href="/video-classes"
+            className={
+              "/video-classes" === router.pathname
+                ? activeBlockLinkClasses
+                : blockLinkClasses
+            }>
+            
               Self-Study Classes
-            </a>
+            
           </Link>
 
           {internalLinks.map(link => (
-            <Link href={link.url} key={link.url}>
-              <a
-                className={
-                  link.url === router.pathname
-                    ? activeBlockLinkClasses
-                    : blockLinkClasses
-                }
-              >
-                {link.label}
-              </a>
-            </Link>
+            (<Link
+              href={link.url}
+              key={link.url}
+              className={
+                link.url === router.pathname
+                  ? activeBlockLinkClasses
+                  : blockLinkClasses
+              }>
+
+              {link.label}
+
+            </Link>)
           ))}
         </div>
       </div>
     </nav>
-  )
+  );
 }

@@ -60,31 +60,31 @@ export default function ClassesDropdown({ dark = false }): JSX.Element {
             >
               <div className="py-1">
                 <Menu.Item>
-                  <Link href="/classes">
-                    <a
-                      className={classNames(
-                        "block px-4 py-2 text-sm font-medium",
-                        dark
-                          ? "hover:bg-gray-600 text-gray-200"
-                          : "hover:bg-gray-100 hover:text-gray-900 text-gray-700"
-                      )}
-                    >
+                  <Link
+                    href="/classes"
+                    className={classNames(
+                      "block px-4 py-2 text-sm font-medium",
+                      dark
+                        ? "hover:bg-gray-600 text-gray-200"
+                        : "hover:bg-gray-100 hover:text-gray-900 text-gray-700"
+                    )}>
+                    
                       Live Classes
-                    </a>
+                    
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="/video-classes">
-                    <a
-                      className={classNames(
-                        "block px-4 py-2 text-sm font-medium",
-                        dark
-                          ? "hover:bg-gray-600 text-gray-200"
-                          : "hover:bg-gray-100 hover:text-gray-900 text-gray-700"
-                      )}
-                    >
+                  <Link
+                    href="/video-classes"
+                    className={classNames(
+                      "block px-4 py-2 text-sm font-medium",
+                      dark
+                        ? "hover:bg-gray-600 text-gray-200"
+                        : "hover:bg-gray-100 hover:text-gray-900 text-gray-700"
+                    )}>
+                    
                       Self-Study Classes
-                    </a>
+                    
                   </Link>
                 </Menu.Item>
               </div>
@@ -93,5 +93,5 @@ export default function ClassesDropdown({ dark = false }): JSX.Element {
         </div>
       )}
     </Menu>
-  )
+  );
 }

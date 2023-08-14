@@ -23,8 +23,8 @@ export default function Hero() {
                 Get better at USACO by participating in monthly,
                 beginner-focused Competitive Programming Contests! Targeted to
                 both{" "}
-                <Link href="/clubs">
-                  <a className="underline text-purple-600">school clubs</a>
+                <Link href="/clubs" className="underline text-purple-600">
+                  school clubs
                 </Link>{" "}
                 and individual contestants.
               </p>
@@ -59,5 +59,5 @@ export default function Hero() {
         <HeroImg className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full lg:max-w-3xl lg:mx-auto" />
       </div>
     </div>
-  )
+  );
 }
