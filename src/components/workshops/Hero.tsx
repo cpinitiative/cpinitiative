@@ -1,5 +1,5 @@
 import * as React from "react"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import HeroImg from "../../images/workshops-hero.jpg"
 import EmailForm from "../video-classes/EmailForm"
 

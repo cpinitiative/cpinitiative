@@ -1,5 +1,5 @@
 import * as React from "react"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import Logo from "../../../images/x-camp_cpi.png"
 import Youtube from "../../Youtube"
 export default function Hero() {

@@ -10,7 +10,7 @@ import Feb23 from "../../images/workshops/feb23.png";
 import Feb23Thumbnail from "../../images/workshops/feb23thumbnail.png";
 import Open23 from "../../images/workshops/open23.png";
 import Open23Thumbnail from "../../images/workshops/open23thumbnail.png";
-import { StaticImageData } from "next/image"
+import { StaticImageData } from "next/legacy/image"
 
 export type Workshop = {
   photo: StaticImageData
