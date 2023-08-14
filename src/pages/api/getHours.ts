@@ -4,13 +4,13 @@ import { GoogleSpreadsheet } from "google-spreadsheet"
 import { SHEETS_API_CREDS, SHEETS_METADATA } from "../../../config"
 import { db } from "../../../firebase"
 import YAML from "yaml"
-import { unstable_getServerSession } from "next-auth/next"
+import getServerSession from "next-auth/next"
 import { authOptions } from "./auth/[...nextauth]"
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const session = await unstable_getServerSession(req, res, authOptions)
+  const session = await getServerSession(req, res, authOptions)
 
   if (!session)
     return res.status(400).json({ error: "Please sign in through the portal" })
