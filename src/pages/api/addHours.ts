@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next"
 import { GoogleSpreadsheet } from "google-spreadsheet"
-import { getServerSession } from "next-auth/next"
+import { unstable_getServerSession } from "next-auth/next"
 import { SHEETS_API_CREDS, SHEETS_METADATA } from "../../../config"
 import { db } from "../../../firebase"
 import YAML from "yaml"
@@ -17,7 +17,7 @@ export default async function handler(
       // console.log(doc.data())
       return doc.data()
     })
-  const session = await getServerSession(req, res, authOptions)
+  const session = await unstable_getServerSession(req, res, authOptions)
   const email = session?.user?.email
 
   const { date, hours, response, role } = req.body
