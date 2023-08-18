@@ -18,15 +18,9 @@ dayjs.extend(isSameOrBefore)
 dayjs.extend(isToday)
 
 export default function ContestList() {
-
- const listOfContests = contests.map(e => {
+  const listOfContests = contests.map(e => {
     return (
-      <ContestCard
-        key={e.name}
-        name={e.name}
-        photo={e.photo}
-        link={e.link}
-      />
+      <ContestCard key={e.name} name={e.name} photo={e.photo} link={e.link} />
     )
   })
   return (
@@ -62,5 +56,10 @@ const contests: {
     name: "Lexington Informatics Tournament (LIT)",
     photo: lit,
     link: "https://lit.lhsmathcs.org/",
+  },
+  {
+    name: "TeamsCode",
+    photo: teamscode,
+    link: "https://teamscode.org/",
   },
 ]

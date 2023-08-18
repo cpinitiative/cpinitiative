@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next"
 import { GoogleSpreadsheet } from "google-spreadsheet"
-import { getServerSession } from "next-auth/next"
+import getServerSession from "next-auth/next"
 import { SHEETS_API_CREDS, SHEETS_METADATA } from "../../../config"
 import { db } from "../../../firebase"
 import YAML from "yaml"
