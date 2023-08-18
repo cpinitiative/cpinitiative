@@ -16,6 +16,7 @@ import delhi from "./delhi.jpg"
 import dover from "./dover.jpeg"
 import dubai from "./dubai.jpeg"
 import east_career from "./east_career.jpg"
+import excelsior from "./excelsior.jpg"
 import fremont from "./fremont.jpg"
 import heritage from "./heritage.jpeg"
 import horace_greeley from "./horace_greeley.jpg"
@@ -25,6 +26,7 @@ import inglemoor from "./inglemoor.jpeg"
 import interlake from "./interlake.jpg"
 import irvington from "./irvington.jpeg"
 import jane_lathrop from "./jane_lathrop.jpeg"
+import jayshree from "./jayshree.jpg"
 import ladue_horton from "./ladue_horton.jpg"
 import le_quy_don from "./le_quy_don.png"
 import lincoln from "./lincoln.jpg"
@@ -43,6 +45,7 @@ import new_hampshire from "./new_hampshire.jpg"
 import newbury_park from "./newbury_park.jpg"
 import newport from "./newport.jpeg"
 import north_andover from "./north_andover.jpg"
+import northsydney from "./northsydney.jpg";
 import northview from "./northview.jpg"
 import oak_valley from "./oak_valley.jpg"
 import orange from "./orange.jpg"
@@ -57,6 +60,7 @@ import silver_creek from "./silver_creek.jpeg"
 import shanghai from "./shanghai.jpg"
 import smic from "./smic.jpg"
 import stanford_online from "./stanford_online.jpg"
+import stuyvesant from "./stuyvesant.jpg";
 import suncoast from "./suncoast.png"
 import tams from "./tams.jpeg"
 import tenafly from "./tenafly.jpg"
@@ -91,6 +95,7 @@ export {
   dover,
   dubai,
   east_career,
+  excelsior,
   fremont,
   heritage,
   horace_greeley,
@@ -100,6 +105,7 @@ export {
   interlake,
   irvington,
   jane_lathrop,
+  jayshree,
   ladue_horton,
   le_quy_don,
   lincoln,
@@ -118,6 +124,7 @@ export {
   newbury_park,
   newport,
   north_andover,
+  northsydney,
   northview,
   oak_valley,
   orange,
@@ -132,6 +139,7 @@ export {
   shanghai,
   smic,
   stanford_online,
+  stuyvesant,
   suncoast,
   tams,
   tenafly,
