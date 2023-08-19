@@ -12,7 +12,7 @@ import {
   tjioi,
   cerealcodes,
 } from "./images"
-import { StaticImageData } from "next/image"
+import { StaticImageData } from "next/legacy/image"
 dayjs.extend(customParseFormat)
 dayjs.extend(isSameOrBefore)
 dayjs.extend(isToday)

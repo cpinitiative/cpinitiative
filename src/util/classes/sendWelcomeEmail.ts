@@ -7,7 +7,7 @@ import liveWelcomeEmail from "./email_templates/welcome_to_live_class"
 const replacePlaceholders = (str: string, data: { [key: string]: string }) => {
   return str.replace(/\{\{(\w+)\}\}/g, (_, key) => {
     return data[key] || ""
-  })
+  });
 }
 
 export function sendWelcomeEmailBronzeVideos({
