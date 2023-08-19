@@ -19,6 +19,7 @@ import {
   dover,
   dubai,
   east_career,
+  excelsior,
   fremont,
   heritage,
   horace_greeley,
@@ -28,6 +29,7 @@ import {
   interlake,
   irvington,
   jane_lathrop,
+  jayshree,
   ladue_horton,
   le_quy_don,
   lincoln,
@@ -46,6 +48,7 @@ import {
   newbury_park,
   newport,
   north_andover,
+  northsydney,
   northview,
   oak_valley,
   orange,
@@ -60,6 +63,7 @@ import {
   shanghai,
   smic,
   stanford_online,
+  stuyvesant,
   suncoast,
   tams,
   tenafly,
@@ -192,6 +196,11 @@ const clubs: {
     region: "Nevada",
   },
   {
+    name: "Excelsior American School",
+    photo: excelsior,
+    region: "Gurgaon"
+  },
+  {
     name: "Fremont High School",
     photo: fremont,
     region: "California",
@@ -241,6 +250,12 @@ const clubs: {
     photo: jane_lathrop,
     region: "California",
   },
+  {
+    name: "Jayshree Periwal International School",
+    photo: jayshree,
+    region: "Mahapura"
+  },
+
   {
     name: "Ladue Horton Watkins HS",
     photo: ladue_horton,
@@ -317,6 +332,11 @@ const clubs: {
     region: "Massachusetts",
   },
   {
+    name: "North Sydney Boys High School",
+    photo: northsydney,
+    region: "Sydney"
+  },
+  {
     name: "Northview High School",
     photo: northview,
     region: "Georgia",
@@ -390,6 +410,11 @@ const clubs: {
     name: "Stanford Online High School",
     photo: stanford_online,
     region: "California",
+  },
+  {
+    name: "Stuyvesant High School",
+    photo: stuyvesant,
+    region: "New York"
   },
   {
     name: "Suncoast Community HS",
