@@ -56,6 +56,7 @@ import re_mountain from "./re_mountain.jpeg"
 import regis from "./regis.jpeg"
 import rickards from "./rickards.png"
 import riverhill from "./riverhill.jpg"
+import saigon_south from "./saigonsouth.jpeg";
 import silver_creek from "./silver_creek.jpeg"
 import shanghai from "./shanghai.jpg"
 import smic from "./smic.jpg"
@@ -135,6 +136,7 @@ export {
   regis,
   rickards,
   riverhill,
+  saigon_south,
   silver_creek,
   shanghai,
   smic,
