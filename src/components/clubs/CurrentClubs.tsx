@@ -59,6 +59,7 @@ import {
   regis,
   rickards,
   riverhill,
+  saigon_south,
   silver_creek,
   shanghai,
   smic,
@@ -390,6 +391,11 @@ const clubs: {
     name: "Riverhill High School",
     photo: riverhill,
     region: "Maryland",
+  },
+  {
+    name: "Saigon South International School",
+    photo: saigon_south,
+    region: "Ho Chi Minh City"
   },
   {
     name: "Silver Creek High School",
