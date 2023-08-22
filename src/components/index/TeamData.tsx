@@ -68,7 +68,7 @@ import {
   vivian,
   yifan_ma,
 } from "./images"
-import { StaticImageData } from "next/image"
+import { StaticImageData } from "next/legacy/image"
 type Socials =
   | "linkedin"
   | "youtube"

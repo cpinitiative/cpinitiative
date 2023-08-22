@@ -15,12 +15,14 @@ export default function NotFoundPage() {
         <h1 className={"text-4xl font-bold tracking-tight leading-9"}>
           Error 404: Page Not Found
         </h1>
-        <Link href={"/"}>
-          <a className={"text-2xl text-blue-600 hover:underline pt-4 block"}>
+        <Link
+          href={"/"}
+          className={"text-2xl text-blue-600 hover:underline pt-4 block"}>
+          
             Go Home
-          </a>
+          
         </Link>
       </div>
     </Layout>
-  )
+  );
 }

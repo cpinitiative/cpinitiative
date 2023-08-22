@@ -9,7 +9,7 @@ import ContestList from "../components/contests/ContestList"
 import PartneredContests from "../components/contests/PartneredContests"
 import CurrentClubs from "../components/clubs/CurrentClubs"
 import Link from "next/link"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import {
   taco,
   lit,

@@ -1,5 +1,5 @@
 import * as React from "react"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import { sections, latestWorkshop } from "./WorkshopData"
 import Link from "next/link"
 
@@ -32,12 +32,12 @@ export default function WorkshopList() {
             />
           </div>
           <div className="flex justify-center mt-8">
-            <Link href={"/workshops/" + latestWorkshop.url}>
-              <a
-                className={`shadow items-center justify-center px-8 py-1 border border-transparent text-base leading-6 font-medium rounded-md text-white ${latestWorkshop.themeColor}`}
-              >
+            <Link
+              href={"/workshops/" + latestWorkshop.url}
+              className={`shadow items-center justify-center px-8 py-1 border border-transparent text-base leading-6 font-medium rounded-md text-white ${latestWorkshop.themeColor}`}>
+              
                 Learn More
-              </a>
+              
             </Link>
           </div>
         </div>
@@ -54,46 +54,43 @@ export default function WorkshopList() {
                     className="mb-16 mx-auto space-y-8 sm:grid md:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-2"
                   >
                     {section.workshops.map(workshop => (
-                      <Link
-                        key={workshop.title}
-                        href={"/workshops/" + workshop.url}
-                      >
-                        <a className="flex">
-                          <li className="rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg hover:cursor-pointer duration-100 px-6 py-5">
-                            <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
-                              <div className="flex-shrink-0 w-24 h-24 rounded-full overflow-hidden relative lg:w-28 lg:h-28">
-                                <Image
-                                  layout="fill"
-                                  objectFit="cover"
-                                  objectPosition="center center"
-                                  src={workshop.photo}
-                                  alt={workshop.title}
-                                  placeholder="blur"
-                                  sizes="112px"
-                                />
-                              </div>
-                              <div className="flex-1 min-w-0 space-y-2">
-                                <span className="" aria-hidden="true"></span>
-                                <p className="text-xl font-medium">
-                                  {workshop.title}
-                                </p>
-                                <p className="text-gray-500 font-medium">
-                                  {workshop.date.format("MMMM D, YYYY")}
-                                  <br />
-                                  <span className="text-gray-600">
-                                    {workshop.season
-                                      ? "Season: " + workshop.season
-                                      : ""}
-                                  </span>
-                                </p>
-                                <p className="text-gray-500">
-                                  {workshop.description}
-                                </p>
-                              </div>
+                      (<Link key={workshop.title} href={"/workshops/" + workshop.url} className="flex">
+
+                        <li className="rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg hover:cursor-pointer duration-100 px-6 py-5">
+                          <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
+                            <div className="flex-shrink-0 w-24 h-24 rounded-full overflow-hidden relative lg:w-28 lg:h-28">
+                              <Image
+                                layout="fill"
+                                objectFit="cover"
+                                objectPosition="center center"
+                                src={workshop.photo}
+                                alt={workshop.title}
+                                placeholder="blur"
+                                sizes="112px"
+                              />
                             </div>
-                          </li>
-                        </a>
-                      </Link>
+                            <div className="flex-1 min-w-0 space-y-2">
+                              <span className="" aria-hidden="true"></span>
+                              <p className="text-xl font-medium">
+                                {workshop.title}
+                              </p>
+                              <p className="text-gray-500 font-medium">
+                                {workshop.date.format("MMMM D, YYYY")}
+                                <br />
+                                <span className="text-gray-600">
+                                  {workshop.season
+                                    ? "Season: " + workshop.season
+                                    : ""}
+                                </span>
+                              </p>
+                              <p className="text-gray-500">
+                                {workshop.description}
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+
+                      </Link>)
                     ))}
                   </ul>
                 </div>
@@ -102,5 +99,5 @@ export default function WorkshopList() {
         )}
       </div>
     </div>
-  )
+  );
 }

@@ -45,10 +45,12 @@ export default function Classes() {
                         </span>
                       </p>
                       <div className="mt-8 sm:mt-12 space-y-2 sm:space-x-4">
-                        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform">
-                          <a className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
+                        <Link
+                          href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
+                          className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
+                          
                             Get Notified
-                          </a>
+                          
                         </Link>
                         <br className="sm:hidden" />
                         <a
@@ -60,10 +62,10 @@ export default function Classes() {
                         </a>
                       </div>
                       <p className="mt-4 sm:mt-6 text-sm text-gray-300 sm:mt-5 lg:text-base">
-                        <Link href="/video-classes">
-                          <a className="hover:underline">
+                        <Link href="/video-classes" className="hover:underline">
+                          
                             Looking for self-study classes? &rarr;
-                          </a>
+                          
                         </Link>
                       </p>
                     </div>
@@ -552,7 +554,7 @@ export default function Classes() {
         </div>
       </div>
     </Layout>
-  )
+  );
 }
 
 // import * as React from "react";

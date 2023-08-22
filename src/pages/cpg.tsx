@@ -91,7 +91,7 @@ export default function CPG() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <a>https://discord.gg/nN6826u9BK</a>
+                https://discord.gg/nN6826u9BK
               </Link>
             </li>
             <li>
@@ -104,5 +104,5 @@ export default function CPG() {
         </div>
       </div>
     </Layout>
-  )
+  );
 }

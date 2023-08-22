@@ -1,5 +1,5 @@
 import * as React from "react"
-import Image, { StaticImageData } from "next/image"
+import Image, { StaticImageData } from "next/legacy/image"
 import {
   nathanw,
   daniel,
