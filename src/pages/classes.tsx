@@ -40,17 +40,13 @@ export default function Classes() {
                       <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                         Learn USACO through affordable, high-quality classes
                         with vetted, experienced instructors and a curriculum
-                        designed and developed by past USACO Finalists. <span className="text-purple-200">
-                          Note: Live classes are not currently being offered. Click the button below to get notified of future sessions!
-                        </span>
+                        designed and developed by past USACO Finalists.
                       </p>
                       <div className="mt-8 sm:mt-12 space-y-2 sm:space-x-4">
-                        <Link
-                          href="https://docs.google.com/forms/d/e/1FAIpQLSc0IgtbVoYsWv_2E2ZIcN8UE29OVpmx6FsiM0x9lfwNdGey3Q/viewform"
-                          className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
-                          
-                            Get Notified
-                          
+                        <Link href="/classes/register">
+                          <p className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
+                            Register Now
+                          </p>
                         </Link>
                         <br className="sm:hidden" />
                         <a
@@ -63,9 +59,7 @@ export default function Classes() {
                       </div>
                       <p className="mt-4 sm:mt-6 text-sm text-gray-300 sm:mt-5 lg:text-base">
                         <Link href="/video-classes" className="hover:underline">
-                          
-                            Looking for self-study classes? &rarr;
-                          
+                          Looking for self-study classes? &rarr;
                         </Link>
                       </p>
                     </div>
@@ -513,12 +507,12 @@ export default function Classes() {
                   <h3>Class Schedule</h3>
                   <ul>
                     <li>
-                      Beginner: Sundays during <b>April 2 - May 28th</b> from
-                      1:00 PM - 3:00 PM PDT PDT
+                      Bronze: Saturdays during <b>Sept 16 - Nov 11th</b> from
+                      4:00 PM - 6:00 PM PDT
                     </li>
                     <li>
-                      Intermediate: Saturdays during <b>April 1 - May 27th</b>{" "}
-                      from 3:30 PM - 5:30 PM PDT
+                      Silver: Sundays during <b>Sept 17 - Nov 12th</b> from 6:00
+                      PM - 8:00 PM PDT
                     </li>
                   </ul>
 
@@ -554,7 +548,7 @@ export default function Classes() {
         </div>
       </div>
     </Layout>
-  );
+  )
 }
 
 // import * as React from "react";

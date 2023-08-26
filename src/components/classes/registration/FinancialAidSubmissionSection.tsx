@@ -103,7 +103,7 @@ export default function FinancialAidSubmissionSection({
                   const ref = firebase
                     .firestore()
                     .collection("classes-registration")
-                    .doc("2023april")
+                    .doc("2023september")
                     .collection("registrations")
                     .doc()
                   setRegistrationId(ref.id)
