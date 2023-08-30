@@ -244,7 +244,7 @@ const _members: { [key: string]: Member } = {
   alex_wang: {
     photo: alex_wang,
     name: "Alex Wang",
-    titles: ["Director of Classes", roles.liveInstructor],
+    titles: ["Director of Clubs", roles.liveInstructor],
   },
   amogha: {
     photo: amogha,
