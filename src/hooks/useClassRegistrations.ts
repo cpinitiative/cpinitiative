@@ -39,6 +39,7 @@ export default function useClassRegistrations<RegistrationType>(
         "OnrIPCVMRXW3RX7m989nT9yJ8x93",
         "LLyjrLbioYZQiKfN0hxQDpXg5AR2",
         "7AF1MKJjqmXfBDGhimSWEhXqe8k1",
+        "M2JoLeXI1NMPU8haWLweUOMGAGr2",
       ].includes(user.uid)
     ) {
       setHasPermission(true)
