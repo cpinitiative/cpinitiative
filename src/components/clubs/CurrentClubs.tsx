@@ -13,16 +13,20 @@ import {
   california_connections,
   creskill,
   centennial,
+  chengdu,
   conestoga,
   del_norte,
   delhi,
   dover,
   dubai,
+  dunbar,
   east_career,
+  elenor_roosevelt,
   excelsior,
   fremont,
   heritage,
   horace_greeley,
+  huili,
   imsa,
   independence,
   inglemoor,
@@ -34,6 +38,7 @@ import {
   le_quy_don,
   lincoln,
   linnerton,
+  los_altos,
   mahindra,
   marshall,
   marvin_ridge,
@@ -60,12 +65,16 @@ import {
   rickards,
   riverhill,
   saigon_south,
+  san_mateo,
+  shady_side,
   silver_creek,
+  skyline,
   shanghai,
   smic,
   stanford_online,
   stuyvesant,
   suncoast,
+  sydney_grammar,
   tams,
   tenafly,
   tompkins,
@@ -167,6 +176,11 @@ const clubs: {
     region: "California",
   },
   {
+    name: "Chengdu Longquanyi District Qingmiao School",
+    photo: chengdu,
+    region: "Chengdu",
+  },
+  {
     name: "Conestoga High School",
     photo: conestoga,
     region: "Pennsylvania",
@@ -192,9 +206,19 @@ const clubs: {
     region: "Dubai",
   },
   {
+    name: "Dunbar High School",
+    photo: dunbar,
+    region: "Florida",
+  },
+  {
     name: "East Career & Technical Academy",
     photo: east_career,
     region: "Nevada",
+  },
+  {
+    name: "Eleanor Roosevelt High School",
+    photo: elenor_roosevelt,
+    region: "California",
   },
   {
     name: "Excelsior American School",
@@ -220,6 +244,11 @@ const clubs: {
     name: "Horace Greeley High School",
     photo: horace_greeley,
     region: "New York",
+  },
+  {
+    name: "Huili School Shanghai",
+    photo: huili,
+    region: "Shanghai",
   },
   {
     name: "Illinois Math and Science Academy",
@@ -276,6 +305,11 @@ const clubs: {
     name: "Linnerton High School",
     photo: linnerton,
     region: "Maryland",
+  },
+  {
+    name: "Los Altos High School",
+    photo: los_altos,
+    region: "California",
   },
   {
     name: "Mahindra University",
@@ -398,6 +432,21 @@ const clubs: {
     region: "Ho Chi Minh City"
   },
   {
+    name: "San Mateo High School",
+    photo: san_mateo,
+    region: "California"
+  },
+  {
+    name: "Shady Side Academy",
+    photo: shady_side,
+    region: "Pennsylvania"
+  },
+  {
+    name: "Skyline High School",
+    photo: skyline,
+    region: "Texas",
+  },
+  {
     name: "Silver Creek High School",
     photo: silver_creek,
     region: "California",
@@ -426,6 +475,11 @@ const clubs: {
     name: "Suncoast Community HS",
     photo: suncoast,
     region: "Florida",
+  },
+  {
+    name: "Sydney Grammar School",
+    photo: sydney_grammar,
+    region: "Australia",
   },
   {
     name: "Tenafly High School",
