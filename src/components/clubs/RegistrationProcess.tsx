@@ -39,7 +39,7 @@ export default function RegistrationProcess() {
               </a>
             </p>
           </div>
-          <div>
+{/*           <div>
             <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-purple-800 mb-2">
               3. Schedule an Interview
             </h3>
@@ -60,7 +60,7 @@ export default function RegistrationProcess() {
               </a>
               .
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
