@@ -3,6 +3,7 @@ import Image, { StaticImageData } from "next/legacy/image"
 import {
   algonquin,
   alpharetta,
+  amador_valley,
   ashbury,
   baton,
   bellarmine,
@@ -44,6 +45,7 @@ import {
   marvin_ridge,
   memorial,
   mendon,
+  milpitas,
   mission,
   monrovia,
   monta_vista,
@@ -64,6 +66,7 @@ import {
   regis,
   rickards,
   riverhill,
+  royal_grammar,
   saigon_south,
   san_mateo,
   shady_side,
@@ -81,6 +84,7 @@ import {
   trabuco,
   trinity,
   troy,
+  university,
   westwood,
   white_station,
   whitfield,
@@ -121,9 +125,14 @@ const clubs: {
   region: string
 }[] = [
   {
-    name: "Algonquin Regional High",
-    photo: algonquin,
-    region: "Massachusetts",
+    name: "Amador Valley High School",
+    photo: amador_valley,
+    region: "California",
+  },
+  {
+    name: "Alpharetta High School",
+    photo: alpharetta,
+    region: "Georgia",
   },
   {
     name: "Alpharetta High School",
@@ -327,6 +336,11 @@ const clubs: {
     region: "Texas",
   },
   {
+    name: "Milpitas High School",
+    photo: milpitas,
+    region: "California",
+  },
+  {
     name: "Mission San Jose High School",
     photo: mission,
     region: "California",
@@ -427,6 +441,11 @@ const clubs: {
     region: "Maryland",
   },
   {
+    name: "The Royal Grammar School",
+    photo: royal_grammar,
+    region: "England",
+  },
+  {
     name: "Saigon South International School",
     photo: saigon_south,
     region: "Ho Chi Minh City"
@@ -510,6 +529,11 @@ const clubs: {
     name: "Troy HS",
     photo: troy,
     region: "Michigan",
+  },
+  {
+    name: "University High School",
+    photo: university,
+    region: "California",
   },
   {
     name: "University of New Hampshire",
