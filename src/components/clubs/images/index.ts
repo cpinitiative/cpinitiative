@@ -19,12 +19,15 @@ import dover from "./dover.jpeg"
 import dubai from "./dubai.jpeg"
 import dunbar from "./dunbar.jpg"
 import east_career from "./east_career.jpg"
+import edison_academy from "./EdisonAcademy.jpg"
 import elenor_roosevelt from "./elenor_roosevelt.jpeg"
 import excelsior from "./excelsior.jpg"
 import fremont from "./fremont.jpg"
 import heritage from "./heritage.jpeg"
+import homestead from "./Homestead.jpeg"
 import horace_greeley from "./horace_greeley.jpg"
 import huili from "./huili.png"
+import iiit from "./IIIT.jpeg"
 import imsa from "./imsa.jpg"
 import independence from "./independence.jpg"
 import inglemoor from "./inglemoor.jpeg"
@@ -33,6 +36,7 @@ import irvington from "./irvington.jpeg"
 import jane_lathrop from "./jane_lathrop.jpeg"
 import jayshree from "./jayshree.jpg"
 import ladue_horton from "./ladue_horton.jpg"
+import leigh from "./leigh.jpg"
 import le_quy_don from "./le_quy_don.png"
 import lincoln from "./lincoln.jpg"
 import linnerton from "./linnerton.jpg"
@@ -48,6 +52,7 @@ import monrovia from "./monrovia_high.jpg"
 import monta_vista from "./monta_vista.jpg"
 import montgomery from "./montgomery.jpg"
 import nanjing from "./nanjing.jpg"
+import napervillecentral from "./napervillecentral.jpg"
 import new_hampshire from "./new_hampshire.jpg"
 import newbury_park from "./newbury_park.jpg"
 import newport from "./newport.jpeg"
@@ -59,6 +64,7 @@ import orange from "./orange.jpg"
 import panther_creek from "./panther_creek.jpg"
 import pingry from "./pingry.jpg"
 import pld from "./pld.jpeg"
+import radleycollege from "./RadleyCollege.jpg"
 import re_mountain from "./re_mountain.jpeg"
 import regis from "./regis.jpeg"
 import rickards from "./rickards.png"
@@ -82,6 +88,8 @@ import trabuco from "./trabuco.png"
 import trinity from "./trinity.jpeg"
 import troy from "./troy.jpg"
 import university from "./university.jpg"
+import ward_melville from "./WardMelvilleHS.jpg"
+import wellington from "./wellingtoncollegeinternationalshanghai.jpg"
 import westwood from "./westwood.jpg"
 import white_station from "./white_station.jpg"
 import whitfield from "./whitfield.jpg"
@@ -112,12 +120,15 @@ export {
   dubai,
   dunbar,
   east_career,
+  edison_academy,
   elenor_roosevelt,
   excelsior,
   fremont,
   heritage,
+  homestead,
   horace_greeley,
   huili,
+  iiit,
   imsa,
   independence,
   inglemoor,
@@ -127,6 +138,7 @@ export {
   jayshree,
   ladue_horton,
   le_quy_don,
+  leigh,
   lincoln,
   linnerton,
   los_altos,
@@ -141,6 +153,7 @@ export {
   monta_vista,
   montgomery,
   nanjing,
+  napervillecentral,
   new_hampshire,
   newbury_park,
   newport,
@@ -152,6 +165,7 @@ export {
   panther_creek,
   pingry,
   pld,
+  radleycollege,
   re_mountain,
   regis,
   rickards,
@@ -175,6 +189,8 @@ export {
   trinity,
   troy,
   university,
+  ward_melville,
+  wellington,
   westwood,
   white_station,
   whitfield,

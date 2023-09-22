@@ -22,12 +22,15 @@ import {
   dubai,
   dunbar,
   east_career,
+  edison_academy,
   elenor_roosevelt,
   excelsior,
   fremont,
   heritage,
+  homestead,
   horace_greeley,
   huili,
+  iiit,
   imsa,
   independence,
   inglemoor,
@@ -37,6 +40,7 @@ import {
   jayshree,
   ladue_horton,
   le_quy_don,
+  leigh,
   lincoln,
   linnerton,
   los_altos,
@@ -51,6 +55,7 @@ import {
   monta_vista,
   montgomery,
   nanjing,
+  napervillecentral,
   new_hampshire,
   newbury_park,
   newport,
@@ -62,6 +67,7 @@ import {
   panther_creek,
   pingry,
   pld,
+  radleycollege,
   re_mountain,
   regis,
   rickards,
@@ -85,6 +91,8 @@ import {
   trinity,
   troy,
   university,
+  ward_melville,
+  wellington,
   westwood,
   white_station,
   whitfield,
@@ -225,6 +233,11 @@ const clubs: {
     region: "Nevada",
   },
   {
+    name: "Edison Academy Magnet School",
+    photo: edison_academy,
+    region: "New Jersey"
+  },
+  {
     name: "Eleanor Roosevelt High School",
     photo: elenor_roosevelt,
     region: "California",
@@ -250,6 +263,11 @@ const clubs: {
     region: "Virginia",
   },
   {
+    name: "Homestead High School",
+    photo: homestead,
+    region: "California"
+  },
+  {
     name: "Horace Greeley High School",
     photo: horace_greeley,
     region: "New York",
@@ -258,6 +276,11 @@ const clubs: {
     name: "Huili School Shanghai",
     photo: huili,
     region: "Shanghai",
+  },
+  {
+    name: "IIIT Naya Raipur",
+    photo: iiit,
+    region: "Raipur"
   },
   {
     name: "Illinois Math and Science Academy",
@@ -304,6 +327,11 @@ const clubs: {
     name: "Le Quy Don Technical University",
     photo: le_quy_don,
     region: "Vietnam",
+  },
+  {
+    name: "Leigh High School",
+    photo: leigh,
+    region: "California"
   },
   {
     name: "Lincoln High School",
@@ -366,6 +394,11 @@ const clubs: {
     region: "Nanjing",
   },
   {
+    name: "Naperville Central High School",
+    photo: napervillecentral,
+    region: "Illinois"
+  },
+  {
     name: "Newbury Park High School",
     photo: newbury_park,
     region: "California",
@@ -419,6 +452,11 @@ const clubs: {
     name: "Pittsford Mendon High School",
     photo: mendon,
     region: "New York",
+  },
+  {
+    name: "Radley College",
+    photo: radleycollege,
+    region: "United Kingdom"
   },
   {
     name: "R.E. Mountain Secondary School",
@@ -544,6 +582,16 @@ const clubs: {
     name: "UWCSEA Dover Campus",
     photo: dover,
     region: "Singapore",
+  },
+  {
+    name: "Ward Melville High School",
+    photo: ward_melville,
+    region: "New York"
+  },
+  {
+    name: "Wellington College International Shanghai",
+    photo: wellington,
+    region: "Shanghai"
   },
   {
     name: "Westwood High School",
