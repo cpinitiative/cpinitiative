@@ -138,9 +138,9 @@ const clubs: {
     region: "California",
   },
   {
-    name: "Alpharetta High School",
-    photo: alpharetta,
-    region: "Georgia",
+    name: "Algonquin Regional High School",
+    photo: algonquin,
+    region: "Massachusetts",
   },
   {
     name: "Alpharetta High School",
