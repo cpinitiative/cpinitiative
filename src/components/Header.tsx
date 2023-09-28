@@ -65,37 +65,37 @@ export default function Header({
         dark ? "bg-gray-900" : "bg-white"
       } shadow fixed inset-x-0 top-0 z-30`}
     >
-      {/*{!noBanner && (*/}
-      {/*  <div className="relative bg-indigo-700">*/}
-      {/*    <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">*/}
-      {/*      <div className="pr-16 sm:text-center sm:px-16">*/}
-      {/*        <p className="font-medium text-white">*/}
-      {/*          <span className="md:hidden">Class registrations open!</span>*/}
-      {/*          <span className="hidden md:inline">*/}
-      {/*            Class registrations are now open!*/}
-      {/*          </span>*/}
-      {/*          <span className="block sm:ml-2 sm:inline-block">*/}
-      {/*            <Link*/}
-      {/*              to="/classes"*/}
-      {/*              className="text-white font-bold underline"*/}
-      {/*            >*/}
-      {/*              Learn more &rarr;*/}
-      {/*            </Link>*/}
-      {/*          </span>*/}
-      {/*        */}
-      {/*        </p>*/}
-      {/*      </div>*/}
-      {/*      /!*<div className="absolute inset-y-0 right-0 pt-1 pr-1 flex items-start sm:pt-1 sm:pr-2 sm:items-start">*!/*/}
-      {/*      /!*  <button type="button" className="flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:bg-indigo-500 transition ease-in-out duration-150" aria-label="Dismiss">*!/*/}
-      {/*      /!*    /!* Heroicon name: x *!/*!/*/}
-      {/*      /!*    <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">*!/*/}
-      {/*      /!*      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />*!/*/}
-      {/*      /!*    </svg>*!/*/}
-      {/*      /!*  </button>*!/*/}
-      {/*      /!*</div>*!/*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*)}*/}
+      {!noBanner && (
+       <div className="relative bg-indigo-700">
+         <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+           <div className="pr-16 sm:text-center sm:px-16">
+             <p className="font-medium text-white">
+               <span className="md:hidden">Class registrations open!</span>
+               <span className="hidden md:inline">
+                We're recruiting problem writers to write problems for our interclub competition!
+               </span>
+               <span className="block sm:ml-2 sm:inline-block">
+                 <Link
+                   href={"https://forms.gle/jFtrn57MZ7jHovRw9"}
+                   className="text-white font-bold underline"
+                 >
+                   Apply here &rarr;
+                 </Link>
+               </span>
+            
+             </p>
+           </div>
+           {/* <div className="absolute inset-y-0 right-0 pt-1 pr-1 flex items-start sm:pt-1 sm:pr-2 sm:items-start"> */}
+             {/* <button type="button" className="flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:bg-indigo-500 transition ease-in-out duration-150" aria-label="Dismiss"> */}
+                {/* ! Heroicon name: x !  */}
+               {/* <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"> */}
+                 {/* <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /> */}
+               {/* </svg> */}
+             {/* </button> */}
+           {/* </div> */}
+         </div>
+       </div>
+      )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
