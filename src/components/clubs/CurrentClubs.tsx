@@ -14,6 +14,7 @@ import {
   california_connections,
   creskill,
   centennial,
+  chapel_hill,
   chengdu,
   conestoga,
   del_norte,
@@ -41,6 +42,7 @@ import {
   ladue_horton,
   le_quy_don,
   leigh,
+  liberty,
   lincoln,
   linnerton,
   los_altos,
@@ -92,6 +94,7 @@ import {
   troy,
   university,
   ward_melville,
+  wayzata,
   wellington,
   westwood,
   white_station,
@@ -191,6 +194,11 @@ const clubs: {
     name: "California Connections Academy",
     photo: california_connections,
     region: "California",
+  },
+  {
+    name: "Chapel Hill High School",
+    photo: chapel_hill,
+    region: "Georgia",
   },
   {
     name: "Chengdu Longquanyi District Qingmiao School",
@@ -332,6 +340,11 @@ const clubs: {
     name: "Leigh High School",
     photo: leigh,
     region: "California"
+  },
+  {
+    name: "Liberty High School",
+    photo: liberty,
+    region: "Texas",
   },
   {
     name: "Lincoln High School",
@@ -587,6 +600,11 @@ const clubs: {
     name: "Ward Melville High School",
     photo: ward_melville,
     region: "New York"
+  },
+  {
+    name: "Wayzata High School",
+    photo: wayzata,
+    region: "Minnesota"
   },
   {
     name: "Wellington College International Shanghai",

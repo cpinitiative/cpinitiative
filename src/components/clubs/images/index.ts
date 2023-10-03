@@ -11,6 +11,7 @@ import branham from "./branham.png"
 import california_connections from "./california_connections.jpg"
 import creskill from "./creskill.jpg"
 import centennial from "./centennial.jpg"
+import chapel_hill from "./chapel_hill.jpg"
 import chengdu from "./chengdu.png"
 import conestoga from "./conestoga.jpeg"
 import del_norte from "./del_norte.jpg"
@@ -38,6 +39,7 @@ import jayshree from "./jayshree.jpg"
 import ladue_horton from "./ladue_horton.jpg"
 import leigh from "./leigh.jpg"
 import le_quy_don from "./le_quy_don.png"
+import liberty from "./liberty.jpg"
 import lincoln from "./lincoln.jpg"
 import linnerton from "./linnerton.jpg"
 import los_altos from "./los_altos.jpg"
@@ -89,6 +91,7 @@ import trinity from "./trinity.jpeg"
 import troy from "./troy.jpg"
 import university from "./university.jpg"
 import ward_melville from "./WardMelvilleHS.jpg"
+import wayzata from "./wayzata.jpg"
 import wellington from "./wellingtoncollegeinternationalshanghai.jpg"
 import westwood from "./westwood.jpg"
 import white_station from "./white_station.jpg"
@@ -112,6 +115,7 @@ export {
   california_connections,
   creskill,
   centennial,
+  chapel_hill,
   chengdu,
   conestoga,
   del_norte,
@@ -139,6 +143,7 @@ export {
   ladue_horton,
   le_quy_don,
   leigh,
+  liberty,
   lincoln,
   linnerton,
   los_altos,
@@ -190,6 +195,7 @@ export {
   troy,
   university,
   ward_melville,
+  wayzata,
   wellington,
   westwood,
   white_station,
