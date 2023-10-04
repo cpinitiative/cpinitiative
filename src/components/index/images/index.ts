@@ -86,6 +86,8 @@ import yu_lim from "./yu_lim.png"
 import zhixin from "./zhixin.png"
 import empty from "./empty.png"
 import harsh_akunuri from "./harsh_akunuri.jpeg"
+import lokesh_pampatti from "./lokesh_pampatti.png"
+
 export {
   aadit,
   adham,
@@ -174,5 +176,6 @@ export {
   yifan_ma,
   yu_lim,
   zhixin,
+  lokesh_pampatti,
   empty,
 }
