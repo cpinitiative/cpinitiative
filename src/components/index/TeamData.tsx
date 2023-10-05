@@ -67,6 +67,7 @@ import {
   vikas_thoutam,
   vivian,
   yifan_ma,
+  lokesh_pampatti,
 } from "./images"
 import { StaticImageData } from "next/legacy/image"
 type Socials =
@@ -685,6 +686,11 @@ const _members: { [key: string]: Member } = {
     name: "Yifan Ma",
     titles: [roles.videoInstructor],
   },
+  lokesh: {
+    photo: lokesh_pampatti,
+    name: "Lokesh Pampatti",
+    titles: [roles.clubCurriculum],
+  },
 }
 
 const notPictured: Omit<Member, "photo">[] = [
@@ -743,6 +749,7 @@ const restOfMembers: Member[] = [
   _members.rishabh,
   _members.omar_ahmed,
   _members.alex_wang,
+  _members.lokesh,
 ]
 const formerMembers: Member[] = [
   _members.neo,
