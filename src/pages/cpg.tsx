@@ -16,7 +16,7 @@ export default function CPG() {
         description="Provides a community for girls and non-binary coders as well as workshops to explore and learn more."
       />
 
-      <Header dark />
+      <Header dark noBanner />
 
       <div className="bg-gray-900 min-h-screen lg:min-h-[50vh] flex">
         {/* <div className="h-16 flex-shrink-0" /> */}
