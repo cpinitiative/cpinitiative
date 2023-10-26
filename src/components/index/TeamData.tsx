@@ -207,6 +207,11 @@ const roles = {
 }
 
 const _members: { [key: string]: Member } = {
+  aadit: {
+    photo: aadit,
+    name: "Aadit Ambadkar",
+    titles: [roles.liveInstructor]
+  },
   adham: {
     photo: adham,
     name: "Adham Ibrahim",
