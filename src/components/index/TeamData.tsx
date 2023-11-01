@@ -48,6 +48,7 @@ import {
   nathanc,
   nathang,
   nathanw,
+  nathan_zhang,
   neo,
   nikhil,
   omar_ahmed,
@@ -558,6 +559,11 @@ const _members: { [key: string]: Member } = {
     website: "https://thecodingwizard.me/",
     codeforces: "thecodingwizard",
     email: "nathan.r.wang@gmail.com",
+  },
+  nathan_zhang: {
+    photo: nathan_zhang,
+    name: "Nathan Zhang",
+    titles: [roles.clubCurriculum]
   },
   neo: {
     photo: neo,
