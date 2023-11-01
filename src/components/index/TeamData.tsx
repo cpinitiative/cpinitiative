@@ -1,4 +1,5 @@
 import {
+  aadit,
   adham,
   aditya,
   akshar,
@@ -47,6 +48,7 @@ import {
   nathanc,
   nathang,
   nathanw,
+  nathan_zhang,
   neo,
   nikhil,
   omar_ahmed,
@@ -206,6 +208,11 @@ const roles = {
 }
 
 const _members: { [key: string]: Member } = {
+  aadit: {
+    photo: aadit,
+    name: "Aadit Ambadkar",
+    titles: [roles.liveInstructor]
+  },
   adham: {
     photo: adham,
     name: "Adham Ibrahim",
@@ -553,6 +560,11 @@ const _members: { [key: string]: Member } = {
     codeforces: "thecodingwizard",
     email: "nathan.r.wang@gmail.com",
   },
+  nathan_zhang: {
+    photo: nathan_zhang,
+    name: "Nathan Zhang",
+    titles: [roles.clubCurriculum]
+  },
   neo: {
     photo: neo,
     name: "Neo Wang",
@@ -750,6 +762,8 @@ const restOfMembers: Member[] = [
   _members.omar_ahmed,
   _members.alex_wang,
   _members.lokesh,
+  _members.aadit,
+  _members.nathan_zhang,
 ]
 const formerMembers: Member[] = [
   _members.neo,

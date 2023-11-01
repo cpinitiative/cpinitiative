@@ -54,6 +54,7 @@ import mrinall from "./mrinall.png"
 import nathanc from "./nathanc.jpeg"
 import nathang from "./nathang.png"
 import nathanw from "./nathanw.jpg"
+import nathan_zhang from "./nathan_zhang.jpg";
 import neo from "./neo.jpg"
 import nikhil from "./nikhil.png"
 import niranjana_sankar from "./niranjana_sankar.jpeg";
@@ -146,6 +147,7 @@ export {
   nathanc,
   nathang,
   nathanw,
+  nathan_zhang,
   niranjana_sankar,
   neo,
   nikhil,
