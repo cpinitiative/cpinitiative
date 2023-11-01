@@ -763,6 +763,7 @@ const restOfMembers: Member[] = [
   _members.alex_wang,
   _members.lokesh,
   _members.aadit,
+  _members.nathan_zhang,
 ]
 const formerMembers: Member[] = [
   _members.neo,
