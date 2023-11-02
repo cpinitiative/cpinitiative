@@ -509,7 +509,7 @@ const _members: { [key: string]: Member } = {
   justin_huang: {
     photo: justin_huang,
     name: "Justin Huang",
-    titles: ["Director of Software", roles.webDev],
+    titles: ["Director of Software", roles.webdev],
     website: "https://jh316.me",
     github: "mjh316",
   },
