@@ -45,6 +45,7 @@ import jesse from "./jesse.jpg"
 import john from "./john.png"
 import jpaulson from "./jpaulson.jpg"
 import julie from "./julie.png"
+import justin_huang from "./justin_huang.png";
 import kevin from "./kevin.jpg"
 import maggie from "./maggie.png"
 import mayank from "./mayank.png"
@@ -139,6 +140,7 @@ export {
   john,
   jpaulson,
   julie,
+  justin_huang,
   kevin,
   maggie,
   mayank,
