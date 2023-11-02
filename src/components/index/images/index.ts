@@ -2,6 +2,7 @@ import aadit from "./aadit.jpg"
 import adham from "./adham.jpg"
 import aditya from "./aditya.jpg"
 import akshar from "./akshar.png"
+import akshat from "./akshat.png"
 import albert_jiang from "./albert_jiang.png"
 import albert from "./albert.jpg"
 import albertz from "./albertz.jpg"
@@ -54,22 +55,22 @@ import mrinall from "./mrinall.png"
 import nathanc from "./nathanc.jpeg"
 import nathang from "./nathang.png"
 import nathanw from "./nathanw.jpg"
-import nathan_zhang from "./nathan_zhang.jpg";
+import nathan_zhang from "./nathan_zhang.jpg"
 import neo from "./neo.jpg"
 import nikhil from "./nikhil.png"
-import niranjana_sankar from "./niranjana_sankar.jpeg";
+import niranjana_sankar from "./niranjana_sankar.jpeg"
 import paul from "./paul.jpg"
 import omar_ahmed from "./omar_ahmed.jpeg"
 import oscar from "./oscar.png"
 import pranav from "./pranav.png"
-import rahul_verma from "./rahul_verma.png";
+import rahul_verma from "./rahul_verma.png"
 import ramit from "./ramit.jpg"
 import rayna from "./rayna.jpeg"
 import riley from "./riley.jpg"
 import rishabh from "./rishabh.jpg"
-import rohan_garg from "./rohan_garg.jpg";
+import rohan_garg from "./rohan_garg.jpg"
 import ryan from "./ryan.jpg"
-import ryan_fu from "./ryan_fu.jpeg";
+import ryan_fu from "./ryan_fu.jpeg"
 import sathvik from "./sathvik.png"
 import shikhar from "./shikhar.jpg"
 import siyong from "./siyong.jpeg"
@@ -95,6 +96,7 @@ export {
   aditya,
   albert_jiang,
   akshar,
+  akshat,
   albert,
   albertz,
   alex_chen,

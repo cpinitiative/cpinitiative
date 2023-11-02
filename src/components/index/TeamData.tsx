@@ -70,6 +70,7 @@ import {
   vivian,
   yifan_ma,
   lokesh_pampatti,
+  akshat,
 } from "./images"
 import { StaticImageData } from "next/legacy/image"
 type Socials =
@@ -211,8 +212,9 @@ const _members: { [key: string]: Member } = {
   aadit: {
     photo: aadit,
     name: "Aadit Ambadkar",
-    titles: [roles.liveInstructor]
+    titles: [roles.liveInstructor],
   },
+
   adham: {
     photo: adham,
     name: "Adham Ibrahim",
@@ -231,6 +233,17 @@ const _members: { [key: string]: Member } = {
     photo: akshar,
     name: "Akshar Yeccherla",
     titles: [roles.videoInstructor],
+  },
+  akshat: {
+    photo: akshat,
+    name: "Akshat Singhania",
+    titles: [roles.webdev],
+    youtube: "https://www.youtube.com/@AkshatSinghania",
+    github: "akshatsinghania",
+    codeforces: "aksht",
+    email: "singhaniaakshat1@gmail.com",
+    linkedin: "https://www.linkedin.com/in/akshatsinghania",
+    instagram: "https://www.instagram.com/akshat_singhania_",
   },
   albert_jiang: {
     photo: albert_jiang,
@@ -563,7 +576,7 @@ const _members: { [key: string]: Member } = {
   nathan_zhang: {
     photo: nathan_zhang,
     name: "Nathan Zhang",
-    titles: [roles.clubCurriculum]
+    titles: [roles.clubCurriculum],
   },
   neo: {
     photo: neo,
@@ -763,6 +776,7 @@ const restOfMembers: Member[] = [
   _members.alex_wang,
   _members.lokesh,
   _members.aadit,
+  _members.akshat,
   _members.nathan_zhang,
 ]
 const formerMembers: Member[] = [
