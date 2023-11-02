@@ -40,6 +40,7 @@ import {
   john,
   jpaulson,
   julie,
+  justin_huang,
   maggie,
   melody,
   michael,
@@ -505,6 +506,13 @@ const _members: { [key: string]: Member } = {
     website: "https://juheonrhee.com",
     github: "jjliewie",
   },
+  justin_huang: {
+    photo: justin_huang,
+    name: "Justin Huang",
+    titles: ["Director of Software", roles.webDev],
+    website: "https://jh316.me",
+    github: "mjh316",
+  },
   maggie: {
     photo: maggie,
     name: "Maggie Liu",
@@ -778,6 +786,7 @@ const restOfMembers: Member[] = [
   _members.aadit,
   _members.akshat,
   _members.nathan_zhang,
+  _members.justin_huang,
 ]
 const formerMembers: Member[] = [
   _members.neo,
