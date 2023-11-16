@@ -12,6 +12,7 @@ import amogha from "./amogha.jpeg"
 import amy_chang from "./amy_chang.jpg"
 import andi from "./andi.jpeg"
 import andrew from "./andrew.png"
+import andrew_xu from "./andrew_xu.png"
 import arnan from "./arnan.png"
 import arnav from "./arnav.jpg"
 import arpan from "./arpan.png"
@@ -106,6 +107,7 @@ export {
   amy_chang,
   andi,
   andrew,
+  andrew_xu,
   arnan,
   arnav,
   arpan,

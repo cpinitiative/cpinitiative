@@ -11,6 +11,7 @@ import {
   amy_chang,
   andi,
   andrew,
+  andrew_xu,
   arnan,
   arpan,
   arnav,
@@ -300,6 +301,11 @@ const _members: { [key: string]: Member } = {
     github: "andrewwangva",
     codeforces: "a.wang",
     email: "andrewwangva.biz@gmail.com",
+  },
+  andrew_xu: {
+    photo: andrew_xu,
+    name: "Andrew Xu",
+    titles: [roles.liveInstructor],
   },
   arnan: {
     photo: arnan,
@@ -787,6 +793,7 @@ const restOfMembers: Member[] = [
   _members.akshat,
   _members.nathan_zhang,
   _members.justin_huang,
+  _members.andrew_xu,
 ]
 const formerMembers: Member[] = [
   _members.neo,
