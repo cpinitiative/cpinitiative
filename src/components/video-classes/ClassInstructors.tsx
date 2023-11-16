@@ -19,6 +19,7 @@ import {
   niranjana_sankar,
   rahul_verma,
   ryan_fu,
+  andrew_xu
 } from "../index/images"
 
 type Member = {
@@ -77,6 +78,11 @@ const members: Member[] = [
     photo: ryan_fu,
     name: "Ryan Fu",
     title: "Silver Instructor",
+  },
+  {
+    photo: andrew_xu,
+    name: "Andrew Xu",
+    title: "Bronze Instructor"
   },
 ]
 
