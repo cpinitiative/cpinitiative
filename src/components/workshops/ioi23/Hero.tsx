@@ -19,7 +19,7 @@ export default function Hero() {
                 </span>
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Want to learn from some of the best in the world? Members of the USA's IOI Team
+                Want to learn from some of the best high school competitive programmers in the US? Members of the USA's IOI Team
                 are hosting a workshop where they'll demonstrate their problem-solving process and answer questions live!
                 <br/>
                 <b>November 26, 4:30PM PDT/7:30PM EDT</b>!
