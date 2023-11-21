@@ -10,8 +10,8 @@ export default function IOI23() {
   return (
     <Layout>
       <SEO
-        title="USACO Open 2023 Contest Solutions"
-        description="Learn how to solve the Bronze/Silver USACO U.S. Open solutions, and participate in a live discussion/Q&A about tips for USACO next year!"
+        title="USA IOI 2023 Team Workshop"
+        description="Watch 3 of the top 4 HS competitive programmers in the US livesolve a contest and answer your questions!"
       />
       <Header noBanner />
       <div className="margin-top-nav" />
