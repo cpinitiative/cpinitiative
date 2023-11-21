@@ -55,7 +55,7 @@ export default function Header({
       ? "border-purple-500 text-purple-700 bg-purple-50 focus:text-purple-800 focus:bg-purple-100 focus:border-purple-700"
       : "border-purple-500 text-purple-100 bg-purple-800 focus:text-purple-50 focus:bg-purple-500 focus:border-purple-700")
 
-  function classNames(...classes) {
+  function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(" ")
   }
 
@@ -72,14 +72,14 @@ export default function Header({
              <p className="font-medium text-white">
                <span className="md:hidden">Class registrations open!</span>
                <span className="hidden md:inline">
-                We're recruiting problem writers to write problems for our interclub competition!
+                Come to our Livesolve and Q&A workshop hosted by the USA's IOI team!
                </span>
                <span className="block sm:ml-2 sm:inline-block">
                  <Link
-                   href={"https://forms.gle/jFtrn57MZ7jHovRw9"}
+                   href={"https://forms.gle/LhGc6eQyFW77cG7v7"}
                    className="text-white font-bold underline"
                  >
-                   Apply here &rarr;
+                   Register here &rarr;
                  </Link>
                </span>
             

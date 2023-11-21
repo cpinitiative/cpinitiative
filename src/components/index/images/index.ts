@@ -1,6 +1,7 @@
 import aadit from "./aadit.jpg"
 import adham from "./adham.jpg"
 import aditya from "./aditya.jpg"
+import agastya_goel from "./agastya_goel.png";
 import akshar from "./akshar.png"
 import akshat from "./akshat.png"
 import albert_jiang from "./albert_jiang.png"
@@ -17,6 +18,7 @@ import arnan from "./arnan.png"
 import arnav from "./arnav.jpg"
 import arpan from "./arpan.png"
 import atharv from "./atharv.png"
+import austin_geng from "./austin_geng.png";
 import ben from "./ben.jpg"
 import benq from "./benq.png"
 import blank from "./blank.png"
@@ -71,6 +73,7 @@ import rayna from "./rayna.jpeg"
 import riley from "./riley.jpg"
 import rishabh from "./rishabh.jpg"
 import rohan_garg from "./rohan_garg.jpg"
+import rohin_garg from "./rohin_garg.png";
 import ryan from "./ryan.jpg"
 import ryan_fu from "./ryan_fu.jpeg"
 import sathvik from "./sathvik.png"
@@ -96,6 +99,7 @@ export {
   aadit,
   adham,
   aditya,
+  agastya_goel,
   albert_jiang,
   akshar,
   akshat,
@@ -112,6 +116,7 @@ export {
   arnav,
   arpan,
   atharv,
+  austin_geng,
   ben,
   benq,
   blank,
@@ -167,6 +172,7 @@ export {
   riley,
   rishabh,
   rohan_garg,
+  rohin_garg,
   ryan,
   ryan_fu,
   sathvik,
