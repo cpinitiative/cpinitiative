@@ -55,7 +55,7 @@ export default function Header({
       ? "border-purple-500 text-purple-700 bg-purple-50 focus:text-purple-800 focus:bg-purple-100 focus:border-purple-700"
       : "border-purple-500 text-purple-100 bg-purple-800 focus:text-purple-50 focus:bg-purple-500 focus:border-purple-700")
 
-  function classNames(...classes) {
+  function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(" ")
   }
 
