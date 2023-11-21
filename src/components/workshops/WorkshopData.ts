@@ -11,6 +11,8 @@ import Feb23Thumbnail from "../../images/workshops/feb23thumbnail.png";
 import Open23 from "../../images/workshops/open23.png";
 import Open23Thumbnail from "../../images/workshops/open23thumbnail.png";
 import { StaticImageData } from "next/legacy/image"
+import IOI23 from "../../images/workshops/ioi23.png";
+import IOI23Thumbnail from "../../images/workshops/ioi23thumbnail.png";
 
 export type Workshop = {
   photo: StaticImageData
@@ -35,6 +37,16 @@ const themeColors = {
 }
 
 const workshops: Workshop[] = [
+  {
+    photo: IOI23,
+    thumbnail: IOI23Thumbnail,
+    title: "IOI Team Workshop",
+    description: "Watch 3 of the top 4 high school competitive programmers in the USA solve a contest and answer your Q&A, live!",
+    date: dayjs("Nov 26, 2023 4:30:00 PM PST"),
+    season: "2023-2024",
+    url: "ioi23"    ,
+    themeColor: themeColors.purple,
+  },
   {
     photo: Open23,
     thumbnail: Open23Thumbnail,
