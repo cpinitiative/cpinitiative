@@ -72,14 +72,14 @@ export default function Header({
              <p className="font-medium text-white">
                <span className="md:hidden">Class registrations open!</span>
                <span className="hidden md:inline">
-                We're recruiting problem writers to write problems for our interclub competition!
+                Come to our Livesolve and Q&A with the USA's IOI team!
                </span>
                <span className="block sm:ml-2 sm:inline-block">
                  <Link
-                   href={"https://forms.gle/jFtrn57MZ7jHovRw9"}
+                   href={"https://forms.gle/LhGc6eQyFW77cG7v7"}
                    className="text-white font-bold underline"
                  >
-                   Apply here &rarr;
+                   Register here &rarr;
                  </Link>
                </span>
             
