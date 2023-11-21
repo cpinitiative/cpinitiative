@@ -72,7 +72,7 @@ export default function Header({
              <p className="font-medium text-white">
                <span className="md:hidden">Class registrations open!</span>
                <span className="hidden md:inline">
-                Come to our Livesolve and Q&A with the USA's IOI team!
+                Come to our Livesolve and Q&A workshop hosted by the USA's IOI team!
                </span>
                <span className="block sm:ml-2 sm:inline-block">
                  <Link
