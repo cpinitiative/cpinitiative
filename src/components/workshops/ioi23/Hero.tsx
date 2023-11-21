@@ -25,8 +25,7 @@ export default function Hero() {
                 <b>November 26, 4:30PM PDT/7:30PM EDT</b>!
               </p>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Zoom Link:
-                https://us06web.zoom.us/j/81930070753?pwd=sEHYtbfFbfa5QYmqtugq08LdxMYL2x.1
+                Click <a className="text-blue-600 hover:text-blue-400 transition-colors duration-300" href="https://us06web.zoom.us/j/81930070753?pwd=sEHYtbfFbfa5QYmqtugq08LdxMYL2x.1">here</a> to join the zoom!
               </p>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                 Meeting ID: 819 3007 0753 Passcode: 790637
