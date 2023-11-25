@@ -70,7 +70,7 @@ export default function Header({
          <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
            <div className="pr-16 sm:text-center sm:px-16">
              <p className="font-medium text-white">
-               <span className="md:hidden">Class registrations open!</span>
+               <span className="md:hidden">Join our IOI Livesolve & Q&A workshop <Link className="text-white font-bold underline" href="https://joincpi.org/workshops/ioi23">here</Link>!</span>
                <span className="hidden md:inline">
                 Come to our Livesolve and Q&A workshop hosted by the USA's IOI team!
                </span>
