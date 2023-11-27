@@ -69,8 +69,8 @@ export default function Header({
        <div className="relative bg-indigo-700">
          <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
            <div className="pr-16 sm:text-center sm:px-16">
-             <p className="font-medium text-white">
-               <span className="md:hidden">Join our IOI Livesolve & Q&A workshop <Link className="text-white font-bold underline" href="https://joincpi.org/workshops/ioi23">here</Link>!</span>
+{/*              <p className="font-medium text-white">
+           <span className="md:hidden">Join our IOI Livesolve & Q&A workshop <Link className="text-white font-bold underline" href="https://joincpi.org/workshops/ioi23">here</Link>!</span>
                <span className="hidden md:inline">
                 Come to our Livesolve and Q&A workshop hosted by the USA's IOI team!
                </span>
@@ -83,7 +83,7 @@ export default function Header({
                  </Link>
                </span>
             
-             </p>
+             </p> */}
            </div>
            {/* <div className="absolute inset-y-0 right-0 pt-1 pr-1 flex items-start sm:pt-1 sm:pr-2 sm:items-start"> */}
              {/* <button type="button" className="flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:bg-indigo-500 transition ease-in-out duration-150" aria-label="Dismiss"> */}
