@@ -66,8 +66,8 @@ export default function Header({
       } shadow fixed inset-x-0 top-0 z-30`}
     >
       {!noBanner && (
-       <div className="relative bg-indigo-700">
-         <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+      {/*<div className="relative bg-indigo-700">*/}
+{/*          <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8"> */}
 {/*            <div className="pr-16 sm:text-center sm:px-16">
              <p className="font-medium text-white">
                <span className="md:hidden">Join our IOI Livesolve & Q&A workshop <Link className="text-white font-bold underline" href="https://joincpi.org/workshops/ioi23">here</Link>!</span>
@@ -93,8 +93,8 @@ export default function Header({
                {/* </svg> */}
              {/* </button> */}
            {/* </div> */}
-         </div>
-       </div>
+{/*          </div> */}
+             {/*</div>*/}
       )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
