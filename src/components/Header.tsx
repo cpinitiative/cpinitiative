@@ -65,8 +65,8 @@ export default function Header({
         dark ? "bg-gray-900" : "bg-white"
       } shadow fixed inset-x-0 top-0 z-30`}
     >
-      {!noBanner && (
-      {/*<div className="relative bg-indigo-700">*/}
+{/*       {!noBanner && ( */}
+{/*       <div className="relative bg-indigo-700"> */}
 {/*          <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8"> */}
 {/*            <div className="pr-16 sm:text-center sm:px-16">
              <p className="font-medium text-white">
@@ -95,7 +95,7 @@ export default function Header({
            {/* </div> */}
 {/*          </div> */}
              {/*</div>*/}
-      )}
+{/*       )} */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
