@@ -11,6 +11,7 @@ import {
   bhfles,
   bits,
   branham,
+  bourguiba_pioneer,
   california_connections,
   creskill,
   centennial,
@@ -92,6 +93,7 @@ import {
   trabuco,
   trinity,
   troy,
+  tyee,
   university,
   ward_melville,
   wayzata,
@@ -103,6 +105,10 @@ import {
   windermere,
   winston_churchill,
   wissahickon,
+  brooklyn_technical,
+  bergen_county_tech,
+  chengdu_foreign_languages,
+  plaksha,
 } from "../clubs/images"
 
 const ClubCard = ({ name, photo, region }) => {
@@ -176,6 +182,11 @@ const clubs: {
     region: "California",
   },
   {
+    name: "Bergen County Technical Schools",
+    photo: bergen_county_tech,
+    region: "New Jersey",
+  },
+  {
     name: "Beverly Hills High School",
     photo: beverly_hills,
     region: "California",
@@ -186,9 +197,19 @@ const clubs: {
     region: "Goa",
   },
   {
+    name: "Bourguiba Pinoeer High school of Tunis",
+    photo: bourguiba_pioneer,
+    region: "Tunisia",
+  },
+  {
     name: "Branham High School",
     photo: branham,
     region: "California",
+  },
+  {
+    name: "Brooklyn Technical High School",
+    photo: brooklyn_technical,
+    region: "New York",
   },
   {
     name: "California Connections Academy",
@@ -199,6 +220,11 @@ const clubs: {
     name: "Chapel Hill High School",
     photo: chapel_hill,
     region: "Georgia",
+  },
+  {
+    name: "Chengdu Foreign Languages School",
+    photo: chengdu_foreign_languages,
+    region: "Chengdu",
   },
   {
     name: "Chengdu Longquanyi District Qingmiao School",
@@ -243,7 +269,7 @@ const clubs: {
   {
     name: "Edison Academy Magnet School",
     photo: edison_academy,
-    region: "New Jersey"
+    region: "New Jersey",
   },
   {
     name: "Eleanor Roosevelt High School",
@@ -253,7 +279,7 @@ const clubs: {
   {
     name: "Excelsior American School",
     photo: excelsior,
-    region: "Gurgaon"
+    region: "Gurgaon",
   },
   {
     name: "Fremont High School",
@@ -273,7 +299,7 @@ const clubs: {
   {
     name: "Homestead High School",
     photo: homestead,
-    region: "California"
+    region: "California",
   },
   {
     name: "Horace Greeley High School",
@@ -288,7 +314,7 @@ const clubs: {
   {
     name: "IIIT Naya Raipur",
     photo: iiit,
-    region: "Raipur"
+    region: "Raipur",
   },
   {
     name: "Illinois Math and Science Academy",
@@ -323,7 +349,7 @@ const clubs: {
   {
     name: "Jayshree Periwal International School",
     photo: jayshree,
-    region: "Mahapura"
+    region: "Mahapura",
   },
 
   {
@@ -339,7 +365,7 @@ const clubs: {
   {
     name: "Leigh High School",
     photo: leigh,
-    region: "California"
+    region: "California",
   },
   {
     name: "Liberty High School",
@@ -409,7 +435,7 @@ const clubs: {
   {
     name: "Naperville Central High School",
     photo: napervillecentral,
-    region: "Illinois"
+    region: "Illinois",
   },
   {
     name: "Newbury Park High School",
@@ -429,7 +455,7 @@ const clubs: {
   {
     name: "North Sydney Boys High School",
     photo: northsydney,
-    region: "Sydney"
+    region: "Sydney",
   },
   {
     name: "Northview High School",
@@ -452,6 +478,11 @@ const clubs: {
     region: "North Carolina",
   },
   {
+    name: "Plaksha University",
+    photo: plaksha,
+    region: "India",
+  },
+  {
     name: "Paul Laurence Dunbar High School",
     photo: pld,
     region: "Kentucky",
@@ -469,7 +500,7 @@ const clubs: {
   {
     name: "Radley College",
     photo: radleycollege,
-    region: "United Kingdom"
+    region: "United Kingdom",
   },
   {
     name: "R.E. Mountain Secondary School",
@@ -499,17 +530,17 @@ const clubs: {
   {
     name: "Saigon South International School",
     photo: saigon_south,
-    region: "Ho Chi Minh City"
+    region: "Ho Chi Minh City",
   },
   {
     name: "San Mateo High School",
     photo: san_mateo,
-    region: "California"
+    region: "California",
   },
   {
     name: "Shady Side Academy",
     photo: shady_side,
-    region: "Pennsylvania"
+    region: "Pennsylvania",
   },
   {
     name: "Skyline High School",
@@ -539,7 +570,7 @@ const clubs: {
   {
     name: "Stuyvesant High School",
     photo: stuyvesant,
-    region: "New York"
+    region: "New York",
   },
   {
     name: "Suncoast Community HS",
@@ -582,6 +613,11 @@ const clubs: {
     region: "Michigan",
   },
   {
+    name: "Tyee Middle School",
+    photo: tyee,
+    region: "Washington",
+  },
+  {
     name: "University High School",
     photo: university,
     region: "California",
@@ -599,17 +635,17 @@ const clubs: {
   {
     name: "Ward Melville High School",
     photo: ward_melville,
-    region: "New York"
+    region: "New York",
   },
   {
     name: "Wayzata High School",
     photo: wayzata,
-    region: "Minnesota"
+    region: "Minnesota",
   },
   {
     name: "Wellington College International Shanghai",
     photo: wellington,
-    region: "Shanghai"
+    region: "Shanghai",
   },
   {
     name: "Westwood High School",
@@ -651,7 +687,7 @@ const clubs: {
     photo: winston_churchill,
     region: "Maryland",
   },
-].sort((x, y) => x.name.localeCompare(y.name));
+].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
   return (

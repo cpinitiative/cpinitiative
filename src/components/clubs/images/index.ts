@@ -4,15 +4,19 @@ import amador_valley from "./amador_valley.jpg"
 import ashbury from "./ashbury.jpg"
 import baton from "./baton.jpg"
 import bellarmine from "./bellarmine.jpg"
+import bergen_county_tech from "./bergen_county_tech.jpeg"
 import beverly_hills from "./beverly_hills.jpg"
 import bhfles from "./bhfles.jpeg"
 import bits from "./bits.jpg"
+import bourguiba_pioneer from "./bourguiba_pioneer.jpeg"
 import branham from "./branham.png"
+import brooklyn_technical from "./brooklyn_technical.png"
 import california_connections from "./california_connections.jpg"
 import creskill from "./creskill.jpg"
 import centennial from "./centennial.jpg"
 import chapel_hill from "./chapel_hill.jpg"
 import chengdu from "./chengdu.png"
+import chengdu_foreign_languages from "./chengdu_foreign_languages.jpeg"
 import conestoga from "./conestoga.jpeg"
 import del_norte from "./del_norte.jpg"
 import delhi from "./delhi.jpg"
@@ -65,6 +69,7 @@ import oak_valley from "./oak_valley.jpg"
 import orange from "./orange.jpg"
 import panther_creek from "./panther_creek.jpg"
 import pingry from "./pingry.jpg"
+import plaksha from "./plaksha_university.jpeg"
 import pld from "./pld.jpeg"
 import radleycollege from "./RadleyCollege.jpg"
 import re_mountain from "./re_mountain.jpeg"
@@ -89,6 +94,7 @@ import tompkins from "./tompkins.jpg"
 import trabuco from "./trabuco.png"
 import trinity from "./trinity.jpeg"
 import troy from "./troy.jpg"
+import tyee from "./tyee.jpeg"
 import university from "./university.jpg"
 import ward_melville from "./WardMelvilleHS.jpg"
 import wayzata from "./wayzata.jpg"
@@ -108,15 +114,19 @@ export {
   ashbury,
   baton,
   bellarmine,
+  bergen_county_tech,
   beverly_hills,
   bhfles,
   bits,
+  bourguiba_pioneer,
   branham,
+  brooklyn_technical,
   california_connections,
   creskill,
   centennial,
   chapel_hill,
   chengdu,
+  chengdu_foreign_languages,
   conestoga,
   del_norte,
   delhi,
@@ -169,6 +179,7 @@ export {
   orange,
   panther_creek,
   pingry,
+  plaksha,
   pld,
   radleycollege,
   re_mountain,
@@ -193,6 +204,7 @@ export {
   trabuco,
   trinity,
   troy,
+  tyee,
   university,
   ward_melville,
   wayzata,
