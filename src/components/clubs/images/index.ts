@@ -11,19 +11,23 @@ import bits from "./bits.jpg"
 import bourguiba_pioneer from "./bourguiba_pioneer.jpeg"
 import branham from "./branham.png"
 import brooklyn_technical from "./brooklyn_technical.png"
+import cairo_university from "./cairo_university.jpg"
 import california_connections from "./california_connections.jpg"
-import creskill from "./creskill.jpg"
 import centennial from "./centennial.jpg"
 import chapel_hill from "./chapel_hill.jpg"
 import chengdu from "./chengdu.png"
 import chengdu_foreign_languages from "./chengdu_foreign_languages.jpeg"
+import clear_lake from "./clear_lake.jpg"
 import conestoga from "./conestoga.jpeg"
+import creskill from "./creskill.jpg"
 import del_norte from "./del_norte.jpg"
 import delhi from "./delhi.jpg"
 import dover from "./dover.jpeg"
+import dps_agra from "./dps_agra.jpg"
 import dubai from "./dubai.jpeg"
 import dunbar from "./dunbar.jpg"
 import east_career from "./east_career.jpg"
+import east_west from "./east_west.jpg"
 import edison_academy from "./EdisonAcademy.jpg"
 import elenor_roosevelt from "./elenor_roosevelt.jpeg"
 import excelsior from "./excelsior.jpg"
@@ -33,6 +37,7 @@ import homestead from "./Homestead.jpeg"
 import horace_greeley from "./horace_greeley.jpg"
 import huili from "./huili.png"
 import iiit from "./IIIT.jpeg"
+import iiuc from "./iiuc.jpg"
 import imsa from "./imsa.jpg"
 import independence from "./independence.jpg"
 import inglemoor from "./inglemoor.jpeg"
@@ -41,8 +46,8 @@ import irvington from "./irvington.jpeg"
 import jane_lathrop from "./jane_lathrop.jpeg"
 import jayshree from "./jayshree.jpg"
 import ladue_horton from "./ladue_horton.jpg"
-import leigh from "./leigh.jpg"
 import le_quy_don from "./le_quy_don.png"
+import leigh from "./leigh.jpg"
 import liberty from "./liberty.jpg"
 import lincoln from "./lincoln.jpg"
 import linnerton from "./linnerton.jpg"
@@ -80,9 +85,9 @@ import royal_grammar from "./royal_grammar.jpg"
 import saigon_south from "./saigonsouth.jpeg";
 import san_mateo from "./san_mateo.jpg"
 import shady_side from "./shady_side.jpg"
+import shanghai from "./shanghai.jpg"
 import silver_creek from "./silver_creek.jpeg"
 import skyline from "./skyline.jpeg"
-import shanghai from "./shanghai.jpg"
 import smic from "./smic.jpg"
 import stanford_online from "./stanford_online.jpg"
 import stuyvesant from "./stuyvesant.jpg";
@@ -96,6 +101,7 @@ import trinity from "./trinity.jpeg"
 import troy from "./troy.jpg"
 import tyee from "./tyee.jpeg"
 import university from "./university.jpg"
+import vandegrift from "./vandegrift_hs.jpg"
 import ward_melville from "./WardMelvilleHS.jpg"
 import wayzata from "./wayzata.jpg"
 import wellington from "./wellingtoncollegeinternationalshanghai.jpg"
@@ -107,8 +113,7 @@ import windermere from "./windermere.png"
 import winston_churchill from "./winston_churchill.jpg"
 import wissahickon from "./wissahickon.jpeg"
 
-export {
-  algonquin,
+export {  algonquin,
   alpharetta,
   amador_valley,
   ashbury,
@@ -121,19 +126,23 @@ export {
   bourguiba_pioneer,
   branham,
   brooklyn_technical,
+  cairo_university,
   california_connections,
-  creskill,
   centennial,
   chapel_hill,
   chengdu,
   chengdu_foreign_languages,
+  clear_lake,
   conestoga,
+  creskill,
   del_norte,
   delhi,
   dover,
+  dps_agra,
   dubai,
   dunbar,
   east_career,
+  east_west,
   edison_academy,
   elenor_roosevelt,
   excelsior,
@@ -143,6 +152,7 @@ export {
   horace_greeley,
   huili,
   iiit,
+  iiuc,
   imsa,
   independence,
   inglemoor,
@@ -190,9 +200,9 @@ export {
   saigon_south,
   san_mateo,
   shady_side,
+  shanghai,
   silver_creek,
   skyline,
-  shanghai,
   smic,
   stanford_online,
   stuyvesant,
@@ -206,6 +216,7 @@ export {
   troy,
   tyee,
   university,
+  vandegrift,
   ward_melville,
   wayzata,
   wellington,

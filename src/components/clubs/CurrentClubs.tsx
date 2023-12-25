@@ -109,6 +109,11 @@ import {
   bergen_county_tech,
   chengdu_foreign_languages,
   plaksha,
+  vandegrift,
+  dps_agra,
+  clear_lake,
+  cairo_university,
+  iiuc,
 } from "../clubs/images"
 
 const ClubCard = ({ name, photo, region }) => {
@@ -141,6 +146,36 @@ const clubs: {
   photo: StaticImageData
   region: string
 }[] = [
+  {
+    name: "Vandegrift High School",
+    photo: vandegrift,
+    region: "Texas",
+  },
+  {
+    name: "Delhi Public School Agra",
+    photo: dps_agra,
+    region: "India",
+  },
+  {
+    name: "East West University",
+    photo: amador_valley,
+    region: "Bangladesh",
+  },
+  {
+    name: "Clear Lake High School",
+    photo: clear_lake,
+    region: "Texas",
+  },
+  {
+    name: "Cairo University",
+    photo: cairo_university,
+    region: "Egypt",
+  },
+  {
+    name: "International Islamic University Chittagong",
+    photo: iiuc,
+    region: "Bangladesh",
+  },
   {
     name: "Amador Valley High School",
     photo: amador_valley,
