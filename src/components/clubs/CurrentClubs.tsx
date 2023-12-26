@@ -114,6 +114,7 @@ import {
   clear_lake,
   cairo_university,
   iiuc,
+  east_west
 } from "../clubs/images"
 
 const ClubCard = ({ name, photo, region }) => {
@@ -158,7 +159,7 @@ const clubs: {
   },
   {
     name: "East West University",
-    photo: amador_valley,
+    photo: east_west,
     region: "Bangladesh",
   },
   {
