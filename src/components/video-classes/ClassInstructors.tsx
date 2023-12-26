@@ -82,7 +82,7 @@ const members: Member[] = [
   {
     photo: andrew_xu,
     name: "Andrew Xu",
-    title: "Bronze Instructor"
+    title: "Bronze & Silver Instructor"
   },
 ]
 
