@@ -37,12 +37,12 @@ const members: Member[] = [
   {
     photo: evan,
     name: "Evan Zhao",
-    title: "Director of Bronze Classes",
+    title: "Competitive Programming Initiative Executive",
   },
   {
     photo: ryan,
     name: "Ryan Chou",
-    title: "Bronze Instructor",
+    title: "Project Manager of Classes / Bronze Instructor",
   },
   {
     photo: rohan_garg,
@@ -57,7 +57,7 @@ const members: Member[] = [
   {
     photo: trisha,
     name: "Trisha Sabadra",
-    title: "Silver Instructor",
+    title: "Project Manager of Classes / Silver Instructor",
   },
   {
     photo: frank,
