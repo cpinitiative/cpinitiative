@@ -13,6 +13,8 @@ import Open23Thumbnail from "../../images/workshops/open23thumbnail.png";
 import { StaticImageData } from "next/legacy/image"
 import IOI23 from "../../images/workshops/ioi23.png";
 import IOI23Thumbnail from "../../images/workshops/ioi23thumbnail.png";
+import Dec23 from "../../images/workshops/dec23.png"
+// import Dec23Thumbnail from "../../images/workshops/dec23thumbnail.png"
 
 export type Workshop = {
   photo: StaticImageData
@@ -37,6 +39,16 @@ const themeColors = {
 }
 
 const workshops: Workshop[] = [
+  {
+    photo: Dec23,
+    // thumbnail: Dec23Thumbnail,
+    title: "USACO December Contest Solutions",
+    description: "Having trouble understanding the USACO December solutions? Learn the bronze and silver solutions on December 31, 4PM PST/7PM EST!",
+    date: dayjs("Dec 31, 2023 4:00:00 PM PST"),
+    season: "2023-2024",
+    url: "dec23",
+    themeColor: themeColors.blue,
+  },
   {
     photo: IOI23,
     thumbnail: IOI23Thumbnail,
