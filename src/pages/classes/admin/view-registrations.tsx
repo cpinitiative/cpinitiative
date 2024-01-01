@@ -465,7 +465,7 @@ export default function ViewRegistrationPage() {
                           firebase
                             .firestore()
                             .collection("classes-registration")
-                            .doc("2023september")
+                            .doc("2024february")
                             .collection("registrations")
                             .doc(detailModalRegistrationId)
                             .update({
@@ -508,7 +508,7 @@ export default function ViewRegistrationPage() {
                           firebase
                             .firestore()
                             .collection("classes-registration")
-                            .doc("2023september")
+                            .doc("2024february")
                             .collection("registrations")
                             .doc(detailModalRegistrationId)
                             .update({
