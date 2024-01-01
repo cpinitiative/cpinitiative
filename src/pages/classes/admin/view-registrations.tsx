@@ -26,7 +26,7 @@ export default function ViewRegistrationPage() {
     hasPermission,
     registrations: registrationsIncludingDeleted,
     loading: isLoading,
-  } = useClassRegistrations<LiveClassRegistration>("2023september", soundOn)
+  } = useClassRegistrations<LiveClassRegistration>("2024february", soundOn)
   const [showDetailModal, setShowDetailModal] = useState(false)
   const [detailModalRegistrationId, setDetailModalRegistrationId] = useState("")
   const [detailModalFASubmittingApproval, setDetailModalFASubmittingApproval] =

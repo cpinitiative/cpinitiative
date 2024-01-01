@@ -481,7 +481,7 @@ export default function Classes() {
                 </div>
                 <div className="prose prose-lg text-gray-500 mx-auto">
                   <p>
-                    A CPI course consists of 9 weekly classes, each of which
+                    A CPI course consists of 10 weekly classes, each of which
                     lasts 2 hours. Classes will go over challenging example
                     problems and contain problemsets for homework.
                   </p>
@@ -515,6 +515,7 @@ export default function Classes() {
                       PM - 8:00 PM PDT
                     </li>
                   </ul>
+                  <p>Classes will skip USACO weekends (Feb 17/18 and March 16/17)</p>
 
                   <h3>Pricing</h3>
                   <p>
