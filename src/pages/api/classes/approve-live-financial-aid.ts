@@ -32,7 +32,7 @@ export default async function approveFinancialAid(
     const joinLinkRef = db.collection("group-join-links").doc()
     await joinLinkRef.set({
       groupId:
-        level === "beginner" ? "lfmUHQFuMnPi6O4E4llY" : "Dkq89uLMYmSry2zBux2u",
+        level === "beginner" ? "DmQmP1qnbBPpKjanZhU9" : "DlDPkM0e7e2FCdjkyuIj",
       revoked: false,
       numUses: 0,
       maxUses: 1,
@@ -52,7 +52,7 @@ export default async function approveFinancialAid(
       }),
       db
         .collection("classes-registration")
-        .doc("2023september")
+        .doc("2024february")
         .collection("registrations")
         .doc(registrationId)
         .update({

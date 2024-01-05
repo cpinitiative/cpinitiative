@@ -29,7 +29,7 @@ export default function Classes() {
                   <div className="mx-auto lg:ml-0 max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center lg:col-span-5">
                     <div className="lg:py-24">
                       <span className="text-base font-semibold tracking-wider text-cyan-300 uppercase sm:mt-5 lg:mt-6">
-                        Fall 2023 Session
+                        Spring 2024 Session
                       </span>
                       <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-6xl xl:text-6xl mt-2">
                         <span className="block">Live Online</span>
@@ -481,7 +481,7 @@ export default function Classes() {
                 </div>
                 <div className="prose prose-lg text-gray-500 mx-auto">
                   <p>
-                    A CPI course consists of 9 weekly classes, each of which
+                    A CPI course consists of 10 weekly classes, each of which
                     lasts 2 hours. Classes will go over challenging example
                     problems and contain problemsets for homework.
                   </p>
@@ -507,14 +507,15 @@ export default function Classes() {
                   <h3>Class Schedule</h3>
                   <ul>
                     <li>
-                      Bronze: Saturdays during <b>Sept 16 - Nov 11th</b> from
+                      Bronze: Saturdays during <b>Feb 3rd - April 20th</b> from
                       4:00 PM - 6:00 PM PDT
                     </li>
                     <li>
-                      Silver: Sundays during <b>Sept 17 - Nov 12th</b> from 6:00
+                      Silver: Sundays during <b>Feb 4th - April 21st</b> from 6:00
                       PM - 8:00 PM PDT
                     </li>
                   </ul>
+                  <p>Classes will skip USACO weekends (Feb 17/18 and March 16/17)</p>
 
                   <h3>Pricing</h3>
                   <p>
