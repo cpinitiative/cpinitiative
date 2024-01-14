@@ -533,8 +533,8 @@ export default function Classes() {
                   <h3>Programming Language</h3>
                   <p>
                     Both C++ and Java are acceptable for the class. While our
-                    class will primarily use Java, instructors are fully able to
-                    assist C++ users as well.
+                    class will primarily use C++, instructors are fully able to
+                    assist Java users as well.
                   </p>
                 </div>
               </div>
