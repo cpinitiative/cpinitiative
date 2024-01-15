@@ -3,6 +3,7 @@ import alpharetta from "./alpharetta.jpeg"
 import amador_valley from "./amador_valley.jpg"
 import ashbury from "./ashbury.jpg"
 import baton from "./baton.jpg"
+import bcu from "./bolivian_catholic_university.jpg"
 import bellarmine from "./bellarmine.jpg"
 import bergen_county_tech from "./bergen_county_tech.jpeg"
 import beverly_hills from "./beverly_hills.jpg"
@@ -22,6 +23,7 @@ import conestoga from "./conestoga.jpeg"
 import creskill from "./creskill.jpg"
 import del_norte from "./del_norte.jpg"
 import delhi from "./delhi.jpg"
+import dougherty from "./Dougherty_Valley.jpg"
 import dover from "./dover.jpeg"
 import dps_agra from "./dps_agra.jpg"
 import dubai from "./dubai.jpeg"
@@ -52,11 +54,13 @@ import liberty from "./liberty.jpg"
 import lincoln from "./lincoln.jpg"
 import linnerton from "./linnerton.jpg"
 import los_altos from "./los_altos.jpg"
+import loudon from "./academies-of-loudoun.jpg"
 import mahindra from "./mahindra.png"
 import marshall from "./marshall.jpeg"
 import marvin_ridge from "./marvin_ridge.jpg"
 import memorial from "./memorial.jpeg"
 import mendon from "./mendon.jpeg"
+import milestone from "./milestone_college.jpg"
 import milpitas from "./milpitas.jpg"
 import mission from "./mission.jpeg"
 import monrovia from "./monrovia_high.jpg"
@@ -84,6 +88,7 @@ import riverhill from "./riverhill.jpg"
 import royal_grammar from "./royal_grammar.jpg"
 import saigon_south from "./saigonsouth.jpeg";
 import san_mateo from "./san_mateo.jpg"
+import sequoia from "./Sequoia-HS.jpg"
 import shady_side from "./shady_side.jpg"
 import shanghai from "./shanghai.jpg"
 import silver_creek from "./silver_creek.jpeg"
@@ -113,11 +118,13 @@ import windermere from "./windermere.png"
 import winston_churchill from "./winston_churchill.jpg"
 import wissahickon from "./wissahickon.jpeg"
 
-export {  algonquin,
+export {
+  algonquin,
   alpharetta,
   amador_valley,
   ashbury,
   baton,
+  bcu,
   bellarmine,
   bergen_county_tech,
   beverly_hills,
@@ -137,6 +144,7 @@ export {  algonquin,
   creskill,
   del_norte,
   delhi,
+  dougherty,
   dover,
   dps_agra,
   dubai,
@@ -167,11 +175,13 @@ export {  algonquin,
   lincoln,
   linnerton,
   los_altos,
+  loudon,
   mahindra,
   marshall,
   marvin_ridge,
   memorial,
   mendon,
+  milestone,
   milpitas,
   mission,
   monrovia,
@@ -199,6 +209,7 @@ export {  algonquin,
   royal_grammar,
   saigon_south,
   san_mateo,
+  sequoia,
   shady_side,
   shanghai,
   silver_creek,
