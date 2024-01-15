@@ -11,7 +11,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title={null} />
     <div className="bg-gray-100">
-      <Header />
+      <Header noBanner/>
       <div className="bg-purple-900 sm:-mb-8">
         {/*Banner Padding*/}
         {/*<div className="h-12" />*/}
