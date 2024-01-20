@@ -9,6 +9,7 @@ import {
   alex_wang,
   amogha,
   amy_chang,
+  ananth,
   andi,
   andrew,
   andrew_xu,
@@ -284,6 +285,12 @@ const _members: { [key: string]: Member } = {
       roles.liveInstructor,
       roles.videoInstructor,
     ],
+  },
+  ananth: {
+    photo: ananth,
+    name: "Ananth Kashyap",
+    titles: [roles.webdev, roles.contentAuthor],
+    github: "AAkashyap1",
   },
   andi: {
     photo: andi,
@@ -829,6 +836,7 @@ const formerMembers: Member[] = [
   _members.julie,
   _members.amy,
   _members.harry,
+  _members.ananth,
 ]
 function sortPeople(people: Member[]) {
   return people.sort((a, b) => {
