@@ -14,6 +14,7 @@ import { StaticImageData } from "next/legacy/image"
 import IOI23 from "../../images/workshops/ioi23.png";
 import IOI23Thumbnail from "../../images/workshops/ioi23thumbnail.png";
 import Dec23 from "../../images/workshops/dec23.png"
+import Jan24 from "../../images/workshops/jan24.png"
 // import Dec23Thumbnail from "../../images/workshops/dec23thumbnail.png"
 
 export type Workshop = {
@@ -39,6 +40,15 @@ const themeColors = {
 }
 
 const workshops: Workshop[] = [
+  {
+    photo: Jan24,
+    title: "USACO January 2024 Contest Solutions",
+    description: "Learn how to solve the Bronze/Silver problems by experienced instructors from the USACO Jan 2024 contest, from intuition to code!",
+    date: dayjs("Feb 3, 2024 3:00:00 PM PST"),
+    season: "2023-2024",
+    url: "jan24",
+    themeColor: themeColors.blue
+  },
   {
     photo: Dec23,
     // thumbnail: Dec23Thumbnail,

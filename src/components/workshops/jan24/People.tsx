@@ -1,4 +1,4 @@
-import { ryan, albert, kevin, rohan_garg } from "../../index/images"
+import { ryan, albert, kevin, rohan_garg, aadit, andrew_xu } from "../../index/images"
 import chongtian_ma from "../../index/images/chongtian_ma.jpg"
 
 import Speakers, { Speaker } from "../Speakers"
@@ -10,25 +10,20 @@ const speakers: Speaker[] = [
     photo: ryan,
   },
   {
-    name: "Albert Ye",
-    title: "Teacher",
-    photo: albert,
-  },
-  {
     name: "Kevin Sheng",
-    title: "Teacher",
+    title: "Teacher / USACO Platinum",
     photo: kevin,
   },
   {
-    name: "Rohan Garg",
-    title: "Teacher",
-    photo: rohan_garg,
+    name: "Aadit Ambadkar",
+    title: "Teacher / USACO Platinum",
+    photo: aadit
   },
   {
-    name: "Chongtian Ma",
-    title: "Teacher",
-    photo: chongtian_ma,
-  },
+    name: "Andrew Xu",
+    title: "Teacher / USACO Gold",
+    photo: andrew_xu
+  }
 ]
 
 export default function People() {
