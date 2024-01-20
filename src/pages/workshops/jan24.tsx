@@ -10,7 +10,7 @@ export default function USACOFebruary() {
     <Layout>
       <SEO
         image="../../images/workshops/dec23.png"
-        title="USACO December 2023 Contest Solutions"
+        title="USACO January 2024 Contest Solutions"
         description="The Competitive Programming Initiative is holding a workshop to go over the problems from the USACO December Contest on December 31st, 4pm PST (7pm EST). Join to gain a better understanding of the solutions!"
       />
       <Header noBanner />
