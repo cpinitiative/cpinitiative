@@ -11,6 +11,7 @@ import alex_chen from "./alex_chen.png"
 import alex_wang from "./alex_wang.jpg"
 import amogha from "./amogha.jpeg"
 import amy_chang from "./amy_chang.jpg"
+import ananth from "./ananth.png"
 import andi from "./andi.jpeg"
 import andrew from "./andrew.png"
 import andrew_xu from "./andrew_xu.png"
@@ -109,6 +110,7 @@ export {
   alex_wang,
   amogha,
   amy_chang,
+  ananth,
   andi,
   andrew,
   andrew_xu,
