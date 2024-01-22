@@ -39,7 +39,7 @@ export default function Card({
     </>
   )
   const classes =
-    "block bg-white anim shadow transform hover:-translate-y-1 hover:shadow-lg border-l-4 px-6 py-5 " +
+    " block bg-white anim shadow transform hover:-translate-y-1 hover:shadow-lg border-l-4 px-6 py-5 " +
     borderColor
   if (url && url.startsWith("/")) {
     return (
