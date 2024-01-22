@@ -6,9 +6,15 @@ import Header from "../components/Header"
 import Newsletter from "../components/index/Newsletter"
 import Team from "../components/index/Team"
 import Sponsor from "../components/index/Sponsor"
+import Announcements from "../components/announcements/Announcements"
+import { AnnouncementInfo } from "../components/announcements/models/announcement"
+import fs from "fs"
+import { serialize } from "next-mdx-remote/serialize"
+import { InferGetStaticPropsType } from "next"
+// console.log("hello world")
 
-const IndexPage = () => (
-  <Layout>
+function IndexPage(source: InferGetStaticPropsType<typeof getStaticProps>) {
+  return (<Layout>
     <SEO title={null} />
     <div className="bg-gray-100">
       <Header noBanner/>
@@ -44,37 +50,41 @@ const IndexPage = () => (
         <h1 className="text-2xl tracking-tight leading-10 sm:leading-none font-extrabold text-gray-900 sm:text-3xl lg:text-4xl xl:text-5xl mb-6 sm:mb-12">
           Our Initiatives
         </h1>
-        <div className="grid md:grid-cols-2 gap-8">
-          <Card
-            title="USACO Guide"
-            borderColor="border-blue-600"
-            url="https://usaco.guide/"
-            external
-          >
-            The USACO Guide is a free collection of curated, high-quality
-            resources to take you from Bronze to Platinum and beyond.
-          </Card>
-          <Card title="Classes" borderColor="border-orange-600" url="/classes">
-            Learn USACO through high-quality classes with vetted, experienced
-            instructors and a curated curriculum.
-          </Card>
-          <Card title="Clubs" borderColor="border-green-600" url="/clubs">
-            Running a CP/CS club? Get access to curriculum, problemsets, and
-            contests tailored for school clubs!
-          </Card>
-          <Card
-            title="Contests"
-            borderColor="border-purple-600"
-            url="/contests"
-          >
-            A selection of programming contests targeted towards pre-college
-            students.
-          </Card>
-          <Card title="Workshops" borderColor="border-cyan-600" url="/workshop">
-            Join free online webinars with useful information from panels,
-            interviews, and events about competitive programming!
-          </Card>
+        <div className="flex flex-row w-full items-stretch">
+          <div className="grid grid-cols-1 gap-8 h-min grow-0" id="cards">
+            <Card
+              title="USACO Guide"
+              borderColor="border-blue-600"
+              url="https://usaco.guide/"
+              external
+            >
+              The USACO Guide is a free collection of curated, high-quality
+              resources to take you from Bronze to Platinum and beyond.
+            </Card>
+            <Card title="Classes" borderColor="border-orange-600" url="/classes">
+              Learn USACO through high-quality classes with vetted, experienced
+              instructors and a curated curriculum.
+            </Card>
+            <Card title="Clubs" borderColor="border-green-600" url="/clubs">
+              Running a CP/CS club? Get access to curriculum, problemsets, and
+              contests tailored for school clubs!
+            </Card>
+            <Card
+              title="Contests"
+              borderColor="border-purple-600"
+              url="/contests"
+            >
+              A selection of programming contests targeted towards pre-college
+              students.
+            </Card>
+            <Card title="Workshops" borderColor="border-cyan-600" url="/workshop">
+              Join free online webinars with useful information from panels,
+              interviews, and events about competitive programming!
+            </Card>
+          </div>
+          <Announcements announcements={source.list.map((item:AnnouncementInfo) => {return(item) })} />
         </div>
+        
       </div>
     </div>
     <Newsletter />
@@ -82,5 +92,22 @@ const IndexPage = () => (
     <Team />
   </Layout>
 )
+}
+
+
+export async function getStaticProps(
+  ) {
+    const data = fs.readdirSync('src/components/announcements/data')
+    const list = await Promise.all(data.map(async (file)=> {
+      const mdxSource = await serialize(fs.readFileSync('src/components/announcements/data/'+file), { parseFrontmatter: true });
+      return mdxSource;
+    }))
+    return {
+      props: {
+        list: list
+      }
+    }
+  }
+  
 
 export default IndexPage

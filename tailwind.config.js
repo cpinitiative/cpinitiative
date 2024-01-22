@@ -34,3 +34,4 @@ module.exports = {
   ],
   content: ["./src/**/*.js", "./src/**/*.tsx"],
 }
+
