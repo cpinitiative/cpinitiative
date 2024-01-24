@@ -9,14 +9,14 @@ export default function Announcements({
 }: {
   announcements: AnnouncementInfo[];
 }) {
+  announcements.sort((a, b) => {return ((new Date(b.frontmatter.date)).getTime() - (new Date(a.frontmatter.date)).getTime())});
   return (
-    <div className={"flex flex-col sm:px-6 lg:px-8 py-4 flex-grow pt-0 h-[760px] w-1/2"}>
-      <h1 className="font-bold text-3xl h-min pb-4 text-right pr-8">Announcements</h1>
+    <div className="flex flex-col md:px-8 flex-grow pt-0 h-96 w-full">
       <div className="overflow-y-scroll grid grid-cols-1 gap-4 flex-grow">
         {announcements.map(announcement => {
         return (
         <div
-          className="bg-white dark:bg-gray-900 shadow transition sm:rounded-lg pb-4"
+          className="bg-white shadow transition sm:rounded-lg pb-4"
           key={announcement.frontmatter.id}
         >
           {/* hover:shadow-lg */}

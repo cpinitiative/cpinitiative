@@ -46,11 +46,11 @@ function IndexPage(source: InferGetStaticPropsType<typeof getStaticProps>) {
           />
         </svg>
       </div>
-      <div className="max-w-screen-xl px-4 sm:px-6 mx-auto pb-12 sm:pb-16">
-        <h1 className="text-2xl tracking-tight leading-10 sm:leading-none font-extrabold text-gray-900 sm:text-3xl lg:text-4xl xl:text-5xl mb-6 sm:mb-12">
-          Our Initiatives
-        </h1>
-        <div className="flex flex-row w-full items-stretch">
+      <div className="max-w-screen-xl px-4 sm:px-6 mx-auto pb-12 sm:pb-16 flex flex-col md:flex-row">
+        <div className="flex-[1_0_0px] items-stretch">
+          <h1 className="text-2xl tracking-tight leading-10 sm:leading-none font-extrabold text-gray-900 sm:text-3xl lg:text-4xl xl:text-5xl mb-6 sm:mb-12">
+            Our Initiatives
+          </h1>
           <div className="grid grid-cols-1 gap-8 h-min grow-0" id="cards">
             <Card
               title="USACO Guide"
@@ -82,9 +82,14 @@ function IndexPage(source: InferGetStaticPropsType<typeof getStaticProps>) {
               interviews, and events about competitive programming!
             </Card>
           </div>
-          <Announcements announcements={source.list.map((item:AnnouncementInfo) => {return(item) })} />
         </div>
-        
+        <div className="flex-[1_0_0px] pt-8 md:pt-0 flex flex-col">
+          <h1 className="pr-0 md:pr-8 text-2xl text-right tracking-tight leading-10 sm:leading-none font-extrabold text-gray-900 sm:text-3xl lg:text-4xl xl:text-5xl mb-6 sm:mb-12">
+            Announcements
+          </h1>
+          <Announcements announcements={source.list} />
+        </div>
+          
       </div>
     </div>
     <Newsletter />
