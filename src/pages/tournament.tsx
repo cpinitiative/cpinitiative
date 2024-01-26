@@ -14,29 +14,29 @@ const CONTEST_REGISTRATION_FORM_LINK = "https://forms.gle/4vHJeGiYGLgHRv4E6";
 const tournament_info = {
     'standard': {
         name: 'Standard',
-        description: 'Covers topics through USACO Silver and for users rated under 1600 on Codeforces.',
+        description: 'For competitors at the USACO Bronze or Silver level, and rated under 1600 on Codeforces.',
         prizes: [
-            '1st. $150 USD',
-            '2nd. $100 USD',
-            '3rd. $50 USD',
-            '4th-8th. $15 USD',
+            '1st Place: $150 USD',
+            '2nd Place: $100 USD',
+            '3rd Place: $50 USD',
+            '4th-8th Place: $15 USD',
         ]
     },
     'advanced': {
         name: 'Advanced',
-        description: 'Covers topics through USACO Platinum & above or for users rated 1600 and over on Codeforces.',
+        description: 'For competitors at the USACO Gold or Platinum level, or rated 1600 and over on Codeforces.',
         prizes: [
-            '1st. $300 USD',
-            '2nd. $200 USD',
-            '3rd. $100 USD',
-            '4th-8th. $15 USD',
+            '1st Place: $300 USD',
+            '2nd Place: $200 USD',
+            '3rd Place: $100 USD',
+            '4th-8th Place: $15 USD',
         ]
     }
 }
 
 function Card({className, division}: {className?: string, division: keyof typeof tournament_info}) {
     const cardInformation = tournament_info[division];
-    return <div className={cn("h-fit bg-white border rounded-xl container px-6 py-6 my-6", className)}>
+    return <div className={cn("h-auto bg-white border rounded-xl container px-6 py-6 my-6", className)}>
         <h2 className="text-4xl leading-none font-semibold text-white">{cardInformation.name} Division</h2>
         <p className="mt-2 text-lg leading-7 text-gray-200 py-2">
             {cardInformation.description}
@@ -44,7 +44,7 @@ function Card({className, division}: {className?: string, division: keyof typeof
         <h3 className="text-2xl leading-none text-white font-semibold pt-6 pb-2">
             Prizes
         </h3>
-        <ul className="pl-4">
+        <ul className="pl-4 text-gray-200">
             {cardInformation.prizes.map((x, index) => (
                 <li key={x}>
                     <p className={"text-lg"}>{x}</p>
@@ -72,34 +72,46 @@ export default function Tournament() {
 
         <Header dark noBanner />
         
-        <main className="bg-gray-900 min-h-screen">
-            <div className="flex-1 flex animate flex-col items-center mt-16 text-slate-300"> 
-                <h1 className="text-3xl animate-[backInDown_1s_ease-out_1] md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mx-auto pt-12 text-center">
-                    <span className="text-purple-600">USACO Guide</span> Informatics Tournament
+        <main className="min-h-screen">
+            <div className="flex-1 bg-gray-900 pb-48 flex animate flex-col items-center mt-16 text-slate-300"> 
+                <h1 className="text-3xl animate-[backInDown_1s_ease-out_1] text-white md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl tracking-tight font-extrabold mx-auto pt-12 text-center">
+                    <span className="from-purple-500 to-purple-800 bg-gradient-to-br text-transparent bg-clip-text">USACO Guide</span> Informatics Tournament
                 </h1>
-                <div className="flex-1 flex flex-col animate items-center animate-[fadeIn_1s_ease-out_1200ms_1_forwards] opacity-0">
+                <div className="flex-1 bg-gray-900 flex flex-col animate items-center animate-[fadeIn_1s_ease-out_1200ms_1_forwards] opacity-0">
                     <h2 className="text-lg md:text-xl pt-4 pb-2 py-4 lg:text-2xl xl:text-3xl 2xl:text-4xl mx-auto text-center">
                         Saturday, March 2nd from 10 am to 1 pm PST.
                     </h2>
                     <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl mx-auto text-center max-w-sm lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-4">
                         {timeLeftString(timeLeft)}
                     </h2>
+                    <Image className="hover:animate-spin" src={mascotImage} alt="Mascot!" />
                     <Link className="inline-flex sm:text-lg py-3 px-6 sm:py-4 mt-6 sm:px-8 rounded-md shadow bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium hover:from-blue-600 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 focus:ring-offset-gray-900" href={CONTEST_REGISTRATION_FORM_LINK}>
                         Register Now &rarr;
                     </Link>
-                    <Image className="hover:animate-bounce" src={mascotImage} alt="Mascot!" />
-                    <section className="flex flex-col md:flex-row justify-evenly mx-auto my-12 w-screen px-6 md:px-12 xl:px-36 lg:px-24 lg:gap-x-12 gap-x-6 md:gap-x-8">
-                        <Card key={"standard"} className="md:basis-1/2 border-blue-600 bg-blue-600" division="standard"/>
-                        <Card key={"advanced"} className="md:basis-1/2 border-purple-600 bg-purple-600" division="advanced" />
-                    </section>
-                    <section className="flex flex-col">
-                        <h2 className="text-3xl font-semibold">Rules</h2>
-                        <p>
-                            insert some rules idk
-                        </p>
-                    </section>
                 </div>
             </div>
+            <section className="flex flex-col bg-white md:flex-row justify-evenly mx-auto w-screen px-6 md:px-12 xl:px-36 lg:px-24 lg:gap-x-12 gap-x-6 md:gap-x-8">
+                    <Card key={"standard"} className="md:basis-1/2 border-0 bg-gradient-to-br from-blue-600 to-blue-400 md:-translate-y-24" division="standard"/>
+                    <Card key={"advanced"} className="md:basis-1/2 border-0 bg-gradient-to-bl from-purple-600 to-purple-400 md:-translate-y-24" division="advanced" />
+            </section>
+            <section className="flex flex-col items-center container mx-auto text-justify px-6  bg-white flex-col">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold pb-6">Rules</h2>
+                <p className="text-xl lg:text-2xl py-4">
+                    <span className="font-bold italic">Only precollege students</span> are eligible for prizes but anyone can participate. <span className="font-bold italic">This is a solo contest. No teams!</span>
+                </p>
+                <p className="text-xl lg:text-2xl py-4">
+                    There will be both a standard and advanced division; the contest will last 3 hours and each division will have 8 problems.
+                </p>
+                <p className="text-xl lg:text-2xl py-4">
+                    If you are 1600+ on Codeforces OR Gold+ in USACO we require you to participate in the advanced division. Otherwise we recommend you to participate in the beginner division.
+                </p>
+                <p className="text-xl lg:text-2xl py-4">
+                    You may use any prewritten code before the contest and online content published prior to the start of the contest. However, you may not collaborate with other people during the contest.
+                </p>
+                <p className="text-xl lg:text-2xl py-4">
+                    The contest will be hosted on <Link className="text-blue-400 hover:text-blue-600 transition-colors duration-300" href={"https://codeforces.com"}>Codeforces</Link>, so make sure you have an account!
+                </p>
+            </section>
         </main>
     </Layout>
 }
