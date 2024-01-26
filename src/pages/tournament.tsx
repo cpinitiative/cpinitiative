@@ -82,7 +82,7 @@ export default function Tournament() {
                         The USACO.Guide Informatics Tournament is a programming contest for precollege students hosted by the USACO.Guide and CP Initiative.
                     </h2>
                     <h2 className="text-lg md:text-xl pt-4 pb-2 py-4 lg:text-2xl xl:text-3xl 2xl:text-4xl mx-auto text-center">
-                        Saturday, March 2nd from 10 am to 1 pm PST.
+                        Saturday, March 2nd, 2024 from 10 am to 1 pm PST.
                     </h2>
                     <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl mx-auto text-center max-w-sm lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-4">
                         {timeLeftString(timeLeft)}
