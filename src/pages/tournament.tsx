@@ -73,7 +73,7 @@ export default function Tournament() {
         <Header dark noBanner />
         
         <main className="min-h-screen">
-            <div className="flex-1 bg-gray-900 pb-48 flex animate flex-col items-center mt-16 text-slate-300"> 
+            <div className="flex-1 bg-gray-900 pb-48 flex animate flex-col items-center mt-16 text-gray-300"> 
                 <h1 className="text-3xl animate-[backInDown_1s_ease-out_1] text-white md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl tracking-tight font-extrabold mx-auto pt-12 text-center">
                     <span className="from-purple-500 to-purple-800 bg-gradient-to-br text-transparent bg-clip-text">USACO.Guide</span> Informatics Tournament
                 </h1>
@@ -81,13 +81,19 @@ export default function Tournament() {
                     <h2 className="text-lg md:text-xl pt-4 pb-2 py-4 lg:text-2xl xl:text-3xl 2xl:text-4xl mx-auto text-center">
                         Saturday, March 2nd from 10 am to 1 pm PST.
                     </h2>
-                    <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl mx-auto text-center max-w-sm lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-4">
+                    <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl mx-auto text-center max-w-sm lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-4">
                         {timeLeftString(timeLeft)}
                     </h2>
                     <Image className="hover:animate-spin" src={mascotImage} alt="Mascot!" />
-                    <Link className="inline-flex sm:text-lg py-3 px-6 sm:py-4 mt-6 sm:px-8 rounded-md shadow bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium hover:from-blue-600 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 focus:ring-offset-gray-900" href={CONTEST_REGISTRATION_FORM_LINK}>
-                        Register Now &rarr;
-                    </Link>
+                    <section className="flex flex-col md:flex-row gap-x-4">
+                        <Link className="inline-flex sm:text-lg py-3 px-6 sm:py-4 mt-6 sm:px-8 rounded-md shadow bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium hover:from-blue-600 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 focus:ring-offset-gray-900" href={CONTEST_REGISTRATION_FORM_LINK}>
+                            Register Now &rarr;
+                        </Link>
+                        <Link className="inline-flex sm:text-lg py-3 px-6 sm:py-4 mt-6 sm:px-8 rounded-md shadow bg-gradient-to-r from-blue-700 to-blue-900 text-white font-medium hover:from-blue-800 hover:to-blue-950 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 focus:ring-offset-gray-900" href={"https://discord.gg/SutDSVX6Zt"}>
+                            Join Discord Server &rarr;
+                        </Link>
+                    </section>
+
                 </div>
             </div>
             <section className="flex flex-col bg-white md:flex-row justify-evenly mx-auto w-screen px-6 md:px-12 xl:px-36 lg:px-24 lg:gap-x-12 gap-x-6 md:gap-x-8">
@@ -112,6 +118,9 @@ export default function Tournament() {
                     The contest will be hosted on <Link className="text-blue-400 hover:text-blue-600 transition-colors duration-300" href={"https://codeforces.com"}>Codeforces</Link>, so make sure you have an account!
                 </p>
             </section>
+            <h2 className="text-xl lg:text-3xl text-5xl text-center font-extrabold py-6 tracking-tight">Questions? Join our 
+            <span className="bg-blue-300 bg-opacity-30 transition-all duration-300 hover:bg-blue-500 hover:text-white rounded-md px-2 mx-2"><Link href="https://discord.gg/SutDSVX6Zt">Discord Server</Link></span> and ask in the 
+            <span className="bg-blue-300 bg-opacity-30 transition-all duration-300 hover:bg-blue-500 hover:text-white rounded-md px-2 mx-2"><Link href="https://discord.com/channels/1198424031469261003/1198425276779077682">#questions</Link></span> channel!</h2>
         </main>
     </Layout>
 }
