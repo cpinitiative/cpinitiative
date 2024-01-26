@@ -6,7 +6,7 @@ import { cn } from "../util/tailwindMerge";
 import Link from "next/link";
 import { placeholder } from "../components/contests/images";
 import Image from "next/image";
-import mascotImage from "../images/mascot.png";
+import mascotImage from "../images/mascot.webp";
 
 const CONTEST_TIME_MILLISECONDS = 1709402400000;
 const CONTEST_REGISTRATION_FORM_LINK = "https://forms.gle/4vHJeGiYGLgHRv4E6";
@@ -84,7 +84,7 @@ export default function Tournament() {
                     <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl mx-auto text-center max-w-sm lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl py-4">
                         {timeLeftString(timeLeft)}
                     </h2>
-                    <Image className="hover:animate-spin" src={mascotImage} alt="Mascot!" />
+                    <Image width={512} height={512} className="hover:animate-spin" src={mascotImage} alt="Mascot!" />
                     <section className="flex flex-col md:flex-row gap-x-4">
                         <Link className="inline-flex sm:text-lg py-3 px-6 sm:py-4 mt-6 sm:px-8 rounded-md shadow bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium hover:from-blue-600 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 focus:ring-offset-gray-900" href={CONTEST_REGISTRATION_FORM_LINK}>
                             Register Now &rarr;
