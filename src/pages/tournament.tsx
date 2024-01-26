@@ -75,9 +75,12 @@ export default function Tournament() {
         <main className="min-h-screen">
             <div className="flex-1 bg-gray-900 pb-48 flex animate flex-col items-center mt-16 text-gray-300"> 
                 <h1 className="text-3xl animate-[backInDown_1s_ease-out_1] text-white md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl tracking-tight font-extrabold mx-auto pt-12 text-center">
-                    <span className="from-purple-500 to-purple-800 bg-gradient-to-br text-transparent bg-clip-text">USACO.Guide</span> Informatics Tournament
+                    <span className="from-purple-500 to-purple-300 bg-gradient-to-br text-transparent bg-clip-text">USACO.Guide</span> Informatics Tournament
                 </h1>
                 <div className="flex-1 bg-gray-900 flex flex-col animate items-center animate-[fadeIn_1s_ease-out_1200ms_1_forwards] opacity-0">
+                    <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl px-10 text-center pt-6 pb-6 py-4">
+                        The USACO.Guide Informatics Tournament is a programming contest for precollege students hosted by the USACO.Guide and CP Initiative.
+                    </h2>
                     <h2 className="text-lg md:text-xl pt-4 pb-2 py-4 lg:text-2xl xl:text-3xl 2xl:text-4xl mx-auto text-center">
                         Saturday, March 2nd from 10 am to 1 pm PST.
                     </h2>
@@ -97,8 +100,8 @@ export default function Tournament() {
                 </div>
             </div>
             <section className="flex flex-col bg-white md:flex-row justify-evenly mx-auto w-screen px-6 md:px-12 xl:px-36 lg:px-24 lg:gap-x-12 gap-x-6 md:gap-x-8">
-                    <Card key={"standard"} className="md:basis-1/2 border-0 bg-gradient-to-br from-blue-600 to-blue-400 shadow-blue-500 md:-translate-y-24" division="standard"/>
-                    <Card key={"advanced"} className="md:basis-1/2 border-0 bg-gradient-to-bl from-purple-600 to-purple-400 shadow-purple-500 md:-translate-y-24" division="advanced" />
+                    <Card key={"standard"} className="md:basis-1/2 border-0 bg-gradient-to-bl from-blue-700 to-blue-900 from-10% via-80% to-90% md:-translate-y-24" division="standard"/>
+                    <Card key={"advanced"} className="md:basis-1/2 border-0 bg-gradient-to-bl from-purple-600 to-purple-900 md:-translate-y-24" division="advanced" />
             </section>
             <section className="flex flex-col items-center container mx-auto text-justify px-6 bg-white flex-col">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl pb-6 tracking-tight font-extrabold">Contest Format & Rules</h2>
@@ -116,6 +119,9 @@ export default function Tournament() {
                 </p>
                 <p className="text-xl lg:text-2xl py-4">
                     The contest will be hosted on <Link className="text-blue-400 hover:text-blue-600 transition-colors duration-300" href={"https://codeforces.com"}>Codeforces</Link>, so make sure you have an account!
+                </p>
+                <p className="py-4 text-xl lg:text-2xl font-bold">
+                We reserve the right to disqualify and/or remove from prize consideration participants who intentionally participate in divisions with problem difficulties that are too low for the skill level of the participant. We do not tolerate those who attempt to undermine the fairness of the competition.
                 </p>
             </section>
             <h2 className="text-xl lg:text-3xl text-5xl text-center font-extrabold py-6 tracking-tight">Questions? Join our 
