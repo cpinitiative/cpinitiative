@@ -36,15 +36,15 @@ const tournament_info = {
 
 function Card({className, division}: {className?: string, division: keyof typeof tournament_info}) {
     const cardInformation = tournament_info[division];
-    return <div className={cn("h-auto bg-white border rounded-xl container shadow-lg px-6 py-6 my-6", className)}>
+    return <div className={cn("h-auto bg-white text-white border rounded-xl container shadow-lg px-6 py-6 my-6", className)}>
         <h2 className="text-4xl leading-none font-extrabold tracking-tight text-white">{cardInformation.name} Division</h2>
-        <p className="mt-2 text-lg leading-7 text-gray-200 py-2">
+        <p className="mt-2 text-lg leading-7 py-2">
             {cardInformation.description}
         </p>
-        <h3 className="text-2xl leading-none text-white font-semibold pt-6 pb-2">
+        <h3 className="text-2xl tracking-tight font-extrabold leading-none text-white pt-6 pb-2">
             Prizes
         </h3>
-        <ul className="pl-4 text-gray-200">
+        <ul className="pl-4">
             {cardInformation.prizes.map((x, index) => (
                 <li key={x}>
                     <p className={"text-lg"}>{x}</p>
@@ -75,7 +75,7 @@ export default function Tournament() {
         <main className="min-h-screen">
             <div className="flex-1 bg-gray-900 pb-48 flex animate flex-col items-center mt-16 text-slate-300"> 
                 <h1 className="text-3xl animate-[backInDown_1s_ease-out_1] text-white md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl tracking-tight font-extrabold mx-auto pt-12 text-center">
-                    <span className="from-purple-500 to-purple-800 bg-gradient-to-br text-transparent bg-clip-text">USACO Guide</span> Informatics Tournament
+                    <span className="from-purple-500 to-purple-800 bg-gradient-to-br text-transparent bg-clip-text">USACO.Guide</span> Informatics Tournament
                 </h1>
                 <div className="flex-1 bg-gray-900 flex flex-col animate items-center animate-[fadeIn_1s_ease-out_1200ms_1_forwards] opacity-0">
                     <h2 className="text-lg md:text-xl pt-4 pb-2 py-4 lg:text-2xl xl:text-3xl 2xl:text-4xl mx-auto text-center">
@@ -94,8 +94,8 @@ export default function Tournament() {
                     <Card key={"standard"} className="md:basis-1/2 border-0 bg-gradient-to-br from-blue-600 to-blue-400 shadow-blue-500 md:-translate-y-24" division="standard"/>
                     <Card key={"advanced"} className="md:basis-1/2 border-0 bg-gradient-to-bl from-purple-600 to-purple-400 shadow-purple-500 md:-translate-y-24" division="advanced" />
             </section>
-            <section className="flex flex-col items-center container mx-auto text-justify px-6  bg-white flex-col">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold pb-6">Contest Format & Rules</h2>
+            <section className="flex flex-col items-center container mx-auto text-justify px-6 bg-white flex-col">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl pb-6 tracking-tight font-extrabold">Contest Format & Rules</h2>
                 <p className="text-xl lg:text-2xl py-4">
                     <span className="font-bold italic">Only precollege students</span> are eligible for prizes but anyone can participate. <span className="font-bold italic">This is a solo contest. No teams!</span>
                 </p>
