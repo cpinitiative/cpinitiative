@@ -36,8 +36,8 @@ const tournament_info = {
 
 function Card({className, division}: {className?: string, division: keyof typeof tournament_info}) {
     const cardInformation = tournament_info[division];
-    return <div className={cn("h-auto bg-white border rounded-xl container px-6 py-6 my-6", className)}>
-        <h2 className="text-4xl leading-none font-semibold text-white">{cardInformation.name} Division</h2>
+    return <div className={cn("h-auto bg-white border rounded-xl container shadow-lg px-6 py-6 my-6", className)}>
+        <h2 className="text-4xl leading-none font-extrabold tracking-tight text-white">{cardInformation.name} Division</h2>
         <p className="mt-2 text-lg leading-7 text-gray-200 py-2">
             {cardInformation.description}
         </p>
@@ -91,11 +91,11 @@ export default function Tournament() {
                 </div>
             </div>
             <section className="flex flex-col bg-white md:flex-row justify-evenly mx-auto w-screen px-6 md:px-12 xl:px-36 lg:px-24 lg:gap-x-12 gap-x-6 md:gap-x-8">
-                    <Card key={"standard"} className="md:basis-1/2 border-0 bg-gradient-to-br from-blue-600 to-blue-400 md:-translate-y-24" division="standard"/>
-                    <Card key={"advanced"} className="md:basis-1/2 border-0 bg-gradient-to-bl from-purple-600 to-purple-400 md:-translate-y-24" division="advanced" />
+                    <Card key={"standard"} className="md:basis-1/2 border-0 bg-gradient-to-br from-blue-600 to-blue-400 shadow-blue-500 md:-translate-y-24" division="standard"/>
+                    <Card key={"advanced"} className="md:basis-1/2 border-0 bg-gradient-to-bl from-purple-600 to-purple-400 shadow-purple-500 md:-translate-y-24" division="advanced" />
             </section>
             <section className="flex flex-col items-center container mx-auto text-justify px-6  bg-white flex-col">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold pb-6">Rules</h2>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold pb-6">Contest Format & Rules</h2>
                 <p className="text-xl lg:text-2xl py-4">
                     <span className="font-bold italic">Only precollege students</span> are eligible for prizes but anyone can participate. <span className="font-bold italic">This is a solo contest. No teams!</span>
                 </p>
@@ -119,6 +119,7 @@ export default function Tournament() {
 function timeLeftString(milliseconds: number) {
     const seconds = Math.floor(milliseconds / 1000) % 60;
     const minutes = Math.floor(milliseconds / 60000) % 60
-    const hours = Math.floor(milliseconds / 3600000);
-    return `${hours} hour${hours === 1 ? '' : 's'}, ${minutes} minute${minutes === 1 ? '' : 's'}, and ${seconds} second${seconds === 1 ? '' : 's'} until the start of the contest.`;
+    const hours = Math.floor(milliseconds / 3600000) % 24;
+    const days = Math.floor(milliseconds / 86400000);
+    return `${days} day${days === 1 ? '' : 's'}, ${hours} hour${hours === 1 ? '' : 's'}, ${minutes} minute${minutes === 1 ? '' : 's'}, and ${seconds} second${seconds === 1 ? '' : 's'} until the start of the contest.`;
 }
