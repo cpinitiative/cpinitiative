@@ -31,6 +31,10 @@ export default function Header({
       label: "CPG",
       url: "/cpg",
     },
+    {
+      label: "Tournament",
+      url: "/tournament"
+    }
   ]
 
   const linkClasses =
