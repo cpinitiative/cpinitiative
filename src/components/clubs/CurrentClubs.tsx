@@ -39,6 +39,7 @@ import {
   fremont,
   heritage,
   homestead,
+  hopewell,
   horace_greeley,
   huili,
   iiit,
@@ -61,6 +62,7 @@ import {
   mahindra,
   marshall,
   marvin_ridge,
+  mawlana_bhashani,
   memorial,
   mendon,
   milestone,
@@ -91,6 +93,7 @@ import {
   royal_grammar,
   saigon_south,
   san_mateo,
+  scaler,
   sequoia,
   shady_side,
   shanghai,
@@ -111,6 +114,7 @@ import {
   university,
   vandegrift,
   ward_melville,
+  washington,
   wayzata,
   wellington,
   westwood,
@@ -369,6 +373,11 @@ const clubs: {
     region: "California",
   },
   {
+    name: "Hopewell Valley Central High School",
+    photo: hopewell,
+    region: "New Jersey",
+  },
+  {
     name: "Horace Greeley High School",
     photo: horace_greeley,
     region: "New York",
@@ -458,6 +467,11 @@ const clubs: {
     name: "Mahindra University",
     photo: mahindra,
     region: "Hyderabad",
+  },
+  {
+    name: "Mawlana Bhashani Science and Technology University",
+    photo: mawlana_bhashani,
+    region: "Bangladesh",
   },
   {
     name: "Marvin Ridge High School",
@@ -605,6 +619,11 @@ const clubs: {
     region: "California",
   },
   {
+    name: "Scaler School Of Technology",
+    photo: scaler,
+    region: "Bengaluru, India",
+  },
+  {
     name: "Shady Side Academy",
     photo: shady_side,
     region: "Pennsylvania",
@@ -702,6 +721,11 @@ const clubs: {
   {
     name: "Ward Melville High School",
     photo: ward_melville,
+    region: "New Jersey",
+  },
+  {
+    name: "Washington School",
+    photo: washington,
     region: "New York",
   },
   {

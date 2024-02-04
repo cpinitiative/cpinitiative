@@ -36,6 +36,7 @@ import excelsior from "./excelsior.jpg"
 import fremont from "./fremont.jpg"
 import heritage from "./heritage.jpeg"
 import homestead from "./Homestead.jpeg"
+import hopewell from "./hopewell.jpeg"
 import horace_greeley from "./horace_greeley.jpg"
 import huili from "./huili.png"
 import iiit from "./IIIT.jpeg"
@@ -58,6 +59,7 @@ import loudon from "./academies-of-loudoun.jpg"
 import mahindra from "./mahindra.png"
 import marshall from "./marshall.jpeg"
 import marvin_ridge from "./marvin_ridge.jpg"
+import mawlana_bhashani from "./mawlana_bhashani.jpg"
 import memorial from "./memorial.jpeg"
 import mendon from "./mendon.jpeg"
 import milestone from "./milestone_college.jpg"
@@ -82,12 +84,13 @@ import plaksha from "./plaksha_university.jpeg"
 import pld from "./pld.jpeg"
 import radleycollege from "./RadleyCollege.jpg"
 import re_mountain from "./re_mountain.jpeg"
-import regis from "./regis.jpeg"
+import regis from "./regis.png"
 import rickards from "./rickards.png"
 import riverhill from "./riverhill.jpg"
 import royal_grammar from "./royal_grammar.jpg"
 import saigon_south from "./saigonsouth.jpeg";
 import san_mateo from "./san_mateo.jpg"
+import scaler from "./scaler.jpg"
 import sequoia from "./Sequoia-HS.jpg"
 import shady_side from "./shady_side.jpg"
 import shanghai from "./shanghai.jpg"
@@ -108,6 +111,7 @@ import tyee from "./tyee.jpeg"
 import university from "./university.jpg"
 import vandegrift from "./vandegrift_hs.jpg"
 import ward_melville from "./WardMelvilleHS.jpg"
+import washington from "./washington.jpeg"
 import wayzata from "./wayzata.jpg"
 import wellington from "./wellingtoncollegeinternationalshanghai.jpg"
 import westwood from "./westwood.jpg"
@@ -157,6 +161,7 @@ export {
   fremont,
   heritage,
   homestead,
+  hopewell,
   horace_greeley,
   huili,
   iiit,
@@ -179,6 +184,7 @@ export {
   mahindra,
   marshall,
   marvin_ridge,
+  mawlana_bhashani,
   memorial,
   mendon,
   milestone,
@@ -209,6 +215,7 @@ export {
   royal_grammar,
   saigon_south,
   san_mateo,
+  scaler,
   sequoia,
   shady_side,
   shanghai,
@@ -229,6 +236,7 @@ export {
   university,
   vandegrift,
   ward_melville,
+  washington,
   wayzata,
   wellington,
   westwood,
