@@ -1,5 +1,4 @@
 import { MDXRemote } from "next-mdx-remote";
-import "./a.module.css"
 
 export default function Announcement({announcement}){
     return (
