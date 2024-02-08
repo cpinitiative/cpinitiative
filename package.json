@@ -40,6 +40,7 @@
     "next-auth": "^4.22.1",
     "next-mdx-remote": "^4.4.1",
     "node-mailjet": "^6.0.2",
+    "postcss": "^8.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-device-detect": "^2.2.2",
@@ -61,7 +62,9 @@
     "prettier": "2.7.1",
     "typescript": "^4.7.4"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "postcss": "^8.0.0"
+  },
   "keywords": [
     "gatsby"
   ],
