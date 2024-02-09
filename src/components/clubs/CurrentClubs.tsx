@@ -36,7 +36,9 @@ import {
   edison_academy,
   elenor_roosevelt,
   excelsior,
+  franklin,
   fremont,
+  green_level,
   heritage,
   homestead,
   hopewell,
@@ -353,9 +355,19 @@ const clubs: {
     region: "Gurgaon",
   },
   {
+    name: "Franklin High School",
+    photo: franklin,
+    region: "Texas"
+  },
+  {
     name: "Fremont High School",
     photo: fremont,
     region: "California",
+  },
+  {
+    name: "Green Level High School",
+    photo: green_level,
+    region: "North Carolina"
   },
   {
     name: "Frisco Centennial High School",

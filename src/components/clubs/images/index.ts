@@ -33,7 +33,9 @@ import east_west from "./east_west.jpg"
 import edison_academy from "./EdisonAcademy.jpg"
 import elenor_roosevelt from "./elenor_roosevelt.jpeg"
 import excelsior from "./excelsior.jpg"
+import franklin from "./franklin.jpg"
 import fremont from "./fremont.jpg"
+import green_level from "./green_level.jpg"
 import heritage from "./heritage.jpeg"
 import homestead from "./Homestead.jpeg"
 import hopewell from "./hopewell.jpeg"
@@ -158,7 +160,9 @@ export {
   edison_academy,
   elenor_roosevelt,
   excelsior,
+  franklin,
   fremont,
+  green_level,
   heritage,
   homestead,
   hopewell,
