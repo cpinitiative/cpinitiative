@@ -9,7 +9,7 @@ import cerealcodes from "./cerealcodes.png"
 import algirlithm from "./algirlithm.png"
 import proco1 from "./proco1.png"
 import proco2 from "./proco2.png"
-
+import bapc from "./bapc.png"
 
 
 
@@ -23,5 +23,6 @@ export {
   tjioi,
   cerealcodes,
   proco1,
-  proco2
+  proco2,
+  bapc
 }
