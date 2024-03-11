@@ -17,6 +17,7 @@ import {
   proco1,
   proco2,
   teamscode,
+  bapc
 } from "../components/contests/images"
 import classNames from "classnames"
 
@@ -161,6 +162,47 @@ export default function Contests() {
                   <div className="flex flex-col">
                     <a
                       href="https://discord.com/invite/s5Wp2QaSCJ"
+                      target="_blank"
+                      className="flex items-center justify-center px-4 py-3 m-2 border text-base font-medium rounded-md shadow-sm text-white bg-gray-500 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
+                    >
+                      Join their Discord
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 className="text-l sm:text-xl font-semibold tracking-tight text-purple-600 mt-2 p-2 px-7">
+            Bay Area Programming Contest (BAPC)
+            </h3>
+            {/* Write code to display Image and a paragraph to the right of the image with text. */}
+            <div className="flex flex-row">
+              <div className="flex flex-col p-2 px-6">
+                <Image
+                  objectPosition="center center"
+                  width={450}
+                  height={300}
+                  src={bapc}
+                />
+              </div>
+              <div className="flex flex-col prose prose-lg text-gray-500 mx-auto m-2 px-4">
+                <p className="text-1xl text-center">
+                  Bay Area Programming Contest is an in-person contest in ICPC format, with an online mirror also available. This contest is hosted by the Gunn Competitive Programming Club.
+                </p>
+                <div className="flex flex-row items-center justify-center">
+                  <div className="flex flex-col">
+                    <a
+                      href="https://bapc.gunncpc.com/"
+                      target="_blank"
+                      className="flex items-center justify-center px-4 py-3 m-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-500 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
+                    >
+                      Find Out More
+                    </a>
+                  </div>
+                  <div className="flex flex-col">
+                    <a
+                      href="https://discord.gg/KeCwPgwE82"
                       target="_blank"
                       className="flex items-center justify-center px-4 py-3 m-2 border text-base font-medium rounded-md shadow-sm text-white bg-gray-500 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
                     >
