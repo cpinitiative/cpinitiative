@@ -1,6 +1,10 @@
 import * as React from "react"
 import Image, { StaticImageData } from "next/legacy/image"
 import {
+  BVRIT,
+  Gadjah_Mada,
+  John_Foster_Dulles,
+  KMIT,
   algonquin,
   alpharetta,
   amador_valley,
@@ -158,6 +162,26 @@ const clubs: {
   photo: StaticImageData
   region: string
 }[] = [
+  {
+    name: "Keshav Memorial Institute of Technology", 
+    photo: KMIT,
+    region: "India"
+  },
+  {
+    name: "John Foster Dulles High School",
+    photo: John_Foster_Dulles,
+    region: "Texas"
+  },
+  {
+    name: "B.V. Raju Institute of Technology",
+    photo: BVRIT,
+    region: "India"
+  },
+  {
+    name: "Universitas Gadjah Mada",
+    photo: Gadjah_Mada,
+    region: "Indonesia"
+  },
   {
     name: "Academies of Loudoun",
     photo: loudon,
