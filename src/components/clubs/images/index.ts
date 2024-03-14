@@ -12,6 +12,7 @@ import bits from "./bits.jpg"
 import bourguiba_pioneer from "./bourguiba_pioneer.jpeg"
 import branham from "./branham.png"
 import brooklyn_technical from "./brooklyn_technical.png"
+import BVRIT from "./BVRIT.jpg"
 import cairo_university from "./cairo_university.jpg"
 import california_connections from "./california_connections.jpg"
 import centennial from "./centennial.jpg"
@@ -35,6 +36,7 @@ import elenor_roosevelt from "./elenor_roosevelt.jpeg"
 import excelsior from "./excelsior.jpg"
 import franklin from "./franklin.jpg"
 import fremont from "./fremont.jpg"
+import Gadjah_Mada from "./Gadjah_Mada.jpg"
 import green_level from "./green_level.jpg"
 import heritage from "./heritage.jpeg"
 import homestead from "./Homestead.jpeg"
@@ -50,6 +52,8 @@ import interlake from "./interlake.jpg"
 import irvington from "./irvington.jpeg"
 import jane_lathrop from "./jane_lathrop.jpeg"
 import jayshree from "./jayshree.jpg"
+import John_Foster_Dulles from "./John-Foster-Dulles-High-School.jpg"
+import KMIT from "./KMIT.png"
 import ladue_horton from "./ladue_horton.jpg"
 import le_quy_don from "./le_quy_don.png"
 import leigh from "./leigh.jpg"
@@ -139,6 +143,7 @@ export {
   bourguiba_pioneer,
   branham,
   brooklyn_technical,
+  BVRIT,
   cairo_university,
   california_connections,
   centennial,
@@ -162,6 +167,7 @@ export {
   excelsior,
   franklin,
   fremont,
+  Gadjah_Mada,
   green_level,
   heritage,
   homestead,
@@ -177,6 +183,8 @@ export {
   irvington,
   jane_lathrop,
   jayshree,
+  John_Foster_Dulles, 
+  KMIT, 
   ladue_horton,
   le_quy_don,
   leigh,
