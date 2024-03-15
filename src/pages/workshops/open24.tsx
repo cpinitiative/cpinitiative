@@ -1,9 +1,9 @@
 import * as React from "react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
-import Hero from "../../components/workshops/feb24/Hero"
+import Hero from "../../components/workshops/open24/Hero"
 import Header from "../../components/Header"
-import People from "../../components/workshops/feb24/People"
+import People from "../../components/workshops/open24/People"
 
 export default function USACOFebruary() {
   return (
