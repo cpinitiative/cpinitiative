@@ -16,6 +16,7 @@ import IOI23Thumbnail from "../../images/workshops/ioi23thumbnail.png";
 import Dec23 from "../../images/workshops/dec23.png"
 import Jan24 from "../../images/workshops/jan24.png"
 import Feb24 from "../../images/workshops/feb24.jpg"
+import Open24 from "../../images/workshops/open24.jpg"
 // import Dec23Thumbnail from "../../images/workshops/dec23thumbnail.png"
 
 export type Workshop = {
@@ -41,6 +42,15 @@ const themeColors = {
 }
 
 const workshops: Workshop[] = [
+  {
+    photo: Open24,
+    title: "USACO Open 2024 Contest Solutions",
+    description: "This Thursday, learn how to solve USACO Bronze/Silver/Gold problems with our partner X-Camp Academy!",
+    date: dayjs("Mar 21, 2024 5:00:00 PM PST"),
+    season: "2023-2024",
+    url: "open24",
+    themeColor: themeColors.blue
+  },
   {
     photo: Feb24,
     title: "USACO February 2024 Contest Solutions",
