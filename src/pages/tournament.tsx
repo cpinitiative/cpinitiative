@@ -1,20 +1,15 @@
-import { useEffect, useState } from "react"
 import Header from "../components/Header"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import { cn } from "../util/tailwindMerge"
 import Link from "next/link"
-import { placeholder } from "../components/contests/images"
 import Image from "next/image"
-import mascotImage from "../images/tournament/mascot.webp"
 import clipMascot from "../images/tournament/clipped_mascot.png"
 import cpithink from "../images/tournament/cpithink.png"
 import prizes from "../images/tournament/prizes.png"
 
 import waveSVG from "../images/wave.svg"
 
-const CONTEST_TIME_MILLISECONDS = 1709402400000
-const CONTEST_REGISTRATION_FORM_LINK = "https://forms.gle/4vHJeGiYGLgHRv4E6"
 
 const tournament_info = {
   standard: {
@@ -102,14 +97,6 @@ function Card({
 }
 
 export default function Tournament() {
-  const [timeLeft, setTimeLeft] = useState(0)
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(CONTEST_TIME_MILLISECONDS - Date.now())
-    }, 1000)
-    return () => clearInterval(timer)
-  }, [])
 
   return (
     <Layout>
@@ -135,9 +122,9 @@ export default function Tournament() {
             <div className="flex justify-around gap-x-4 w-fit mx-auto">
               <Link
                 className="mx-auto text-white rounded-xl focus:translate-y-1 hover:shadow-inner hover:shadow-gray-800 transition-all duration-150 mt-4 bg-[#8976FF] lg:text-xl px-8 py-3"
-                href={CONTEST_REGISTRATION_FORM_LINK}
+                href="/tournament/2024-results"
               >
-                Register &rarr;
+                Results &rarr;
               </Link>
               <Link
                 className="mx-auto text-white rounded-xl focus:translate-y-1 hover:underline transition-all duration-150 mt-4 lg:text-xl px-8 py-3"
@@ -206,8 +193,19 @@ export default function Tournament() {
             </Link>
             .
           </div>
-
-          <div className="md:basis-1/2 lg:mt-0 mt-8 text-center">
+          <div className="lg:basis-1/3   font-medium mx-auto text-xl md:text-2xl text-center">
+            The contest is over now, <br/> check out the results {" "}
+            <a
+              href="https://usaco.guide"
+              target="_blank"
+              rel="noreferrer"
+              className="font-bold text-blue-700"
+            >
+            here
+            </a>
+            .
+          </div>
+          {/* <div className="md:basis-1/2 lg:mt-0 mt-8 text-right">
             <div className="flex justify-end items-right mx-auto my-6   gap-x-4 w-fit">
               {timeLeftString(timeLeft).map((x, index) => {
                 const extension = x === 1 ? "" : "s"
@@ -227,7 +225,7 @@ export default function Tournament() {
             <div className="text-[#8976FF] text-xl font-bold">
               until contest start!
             </div>
-          </div>
+          </div> */}
         </section>
         <div className="w-full h-0.5 bg-gray-400/20 mb-12" />
         <h1 className="text-center text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight bg-gradient-to-br from-purple-400 to-blue-600 bg-clip-text text-transparent">
