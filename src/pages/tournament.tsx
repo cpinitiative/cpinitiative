@@ -1,12 +1,9 @@
-import { useEffect, useState } from "react"
 import Header from "../components/Header"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import { cn } from "../util/tailwindMerge"
 import Link from "next/link"
-import { placeholder } from "../components/contests/images"
 import Image from "next/image"
-import mascotImage from "../images/tournament/mascot.webp"
 import clipMascot from "../images/tournament/clipped_mascot.png"
 import cpithink from "../images/tournament/cpithink.png"
 import prizes from "../images/tournament/prizes.png"
@@ -203,50 +200,59 @@ export default function Tournament() {
             />
           </div>
 
-          <section className="flex  flex-col lg:flex-row my-12 mx-12 sm:mx-24">
-            <div className="lg:hidden flex xl:flex items-center justify-center">
-              <Image src={cpithink} alt="CPI!" className="md:-ml-0 -ml-4" />
-            </div>
-            <br></br>
-            <div className="lg:basis-1/3   font-medium mx-auto text-xl md:text-2xl ">
-              The USACO.Guide Informatics Tournament is a programming contest
-              for precollege students hosted by the{" "}
-              <a
-                href="https://usaco.guide"
-                target="_blank"
-                rel="noreferrer"
-                className="font-bold text-blue-700"
-              >
-                USACO.Guide
-              </a>{" "}
-              and{" "}
-              <Link href="/" className="font-bold text-[#8976FF]">
-                CP Initiative
-              </Link>
-              .
-            </div>
-
-            <div className="md:basis-1/2 lg:mt-0 mt-8 text-center">
-              {/* Countdown until contest start */}
-              {/* <div className="flex justify-end items-right mx-auto my-6   gap-x-4 w-fit">
-                {timeLeftString(timeLeft).map((x, index) => {
-                  const extension = x === 1 ? "" : "s"
-                  const units = ["day", "hour", "minute", "second"]
-                  return (
-                    <div className="flex flex-col w-fit ">
-                      <div className="bg-[#EBE7FF] p-4 text-center items-center justify-center flex h-20 rounded-lg text-[#8976FF] font-semibold aspect-square text-lg md:text-xl lg:text-2xl">
-                        {x}
-                      </div>
-                      <span className="text-center font-medium mt-2">
-                        {units[index] + extension}
-                      </span>
+        <section className="flex  flex-col lg:flex-row my-12 mx-12 sm:mx-24">
+          <div className="lg:hidden flex xl:flex items-center justify-center">
+            <Image src={cpithink} alt="CPI!" className="md:-ml-0 -ml-4" />
+          </div>
+          <br></br>
+          <div className="lg:basis-1/3   font-medium mx-auto text-xl md:text-2xl ">
+            The USACO.Guide Informatics Tournament is a programming contest for
+            precollege students hosted by the{" "}
+            <a
+              href="https://usaco.guide"
+              target="_blank"
+              rel="noreferrer"
+              className="font-bold text-blue-700"
+            >
+              USACO.Guide
+            </a>{" "}
+            and{" "}
+            <Link href="/" className="font-bold text-[#8976FF]">
+              CP Initiative
+            </Link>
+            .
+          </div>
+          <div className="lg:basis-1/3   font-medium mx-auto text-xl md:text-2xl text-center">
+            The contest is over now, <br/> check out the results {" "}
+            <a
+              href="https://usaco.guide"
+              target="_blank"
+              rel="noreferrer"
+              className="font-bold text-blue-700"
+            >
+            here
+            </a>
+            .
+          </div>
+          {/* <div className="md:basis-1/2 lg:mt-0 mt-8 text-right">
+            <div className="flex justify-end items-right mx-auto my-6   gap-x-4 w-fit">
+              {timeLeftString(timeLeft).map((x, index) => {
+                const extension = x === 1 ? "" : "s"
+                const units = ["day", "hour", "minute", "second"]
+                return (
+                  <div className="flex flex-col w-fit ">
+                    <div className="bg-[#EBE7FF] p-4 text-center items-center justify-center flex h-20 rounded-lg text-[#8976FF] font-semibold aspect-square text-lg md:text-xl lg:text-2xl">
+                      {x}
                     </div>
-                  )
-                })}
-              </div>
-              <div className="text-[#8976FF] text-xl font-bold">
-                until contest start!
-              </div> */}
+                    <span className="text-center font-medium mt-2">
+                      {units[index] + extension}
+                    </span>
+                  </div>
+                )
+              })}
+            </div>
+            <div className="text-[#8976FF] text-xl font-bold">
+              until contest start!
             </div>
           </section>
           <div className="w-full h-0.5 bg-gray-400/20 mb-12" />
@@ -289,6 +295,12 @@ export default function Tournament() {
           <h1 className="text-center text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight bg-gradient-to-br from-purple-400 to-blue-600 bg-clip-text text-transparent">
             Prizes
           </h1>
+          </div> */}
+        </section>
+        <div className="w-full h-0.5 bg-gray-400/20 mb-12" />
+        <h1 className="text-center text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight bg-gradient-to-br from-purple-400 to-blue-600 bg-clip-text text-transparent">
+          Prizes
+        </h1>
 
           <section className="flex  flex-col bg-white 2xl:flex-row justify-evenly mx-auto items-center px-6 md:px-12 xl:px-36 lg:px-24 lg:gap-x-12 gap-x-6 md:gap-x-8">
             <div>
