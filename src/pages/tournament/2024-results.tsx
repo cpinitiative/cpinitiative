@@ -80,7 +80,7 @@ export default function Results() {
       <Header dark noBanner />
 
       <main className="min-h-screen">
-        <div className="flex-1  bg-gray-900 relative pb-6 md:pb-10 lg:pb-12 xl:pb-20 2xl:pb-24 flex flex-col lg:flex-row items-center justify-evenly animate mt-16 text-gray-300">
+        <div className="flex-1  bg-gray-900 relative pb-4 md:pb-6 lg:pb-8 xl:pb-10 2xl:pb-12 flex flex-col lg:flex-row items-center justify-evenly animate mt-16 text-gray-300">
           <div className="flex flex-col lg:mb-16 mt-6 lg:mt-12">
             <h1 className="text-4xl text-white md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl tracking-tight font-bold mx-auto pt-12 text-center">
               <span className=" from-purple-700 to-blue-300 bg-gradient-to-b text-transparent bg-clip-text">
@@ -107,10 +107,21 @@ export default function Results() {
             </div>
           </div>
         </div>
-
+        <section className="flex flex-col bg-white 2xl:flex-row justify-evenly mx-auto items-center px-6 md:px-12 xl:px-36 lg:px-24 lg:gap-x-12 gap-x-6 md:gap-x-8">
+          <div className="font-bold text-xl lg:text-xl 2xl:text-3xl text-center h-auto bg-white text-white rounded-xl container shadow-lg px-4 py-4 xl:px-6 xl:py-6 my-4 xl:my-6 border-0 bg-gradient-to-b to-[#8189C1] from-[#8065C8] from-10% via-80% to-90%">
+            $1000+ <br/> in Prizes
+          </div>
+          <div className="font-bold text-xl lg:text-xl 2xl:text-3xl text-center h-auto bg-white text-white rounded-xl container shadow-lg px-4 py-4 xl:px-6 xl:py-6 my-4 xl:my-6 border-0 bg-gradient-to-b to-[#8189C1] from-[#8065C8] from-10% via-80% to-90%">
+            420+ <br/> Participants
+          </div>
+          <div className="font-bold text-xl lg:text-xl 2xl:text-3xl text-center h-auto bg-white text-white rounded-xl container shadow-lg px-4 py-4 xl:px-6 xl:py-6 my-4 xl:my-6 border-0 bg-gradient-to-b to-[#8189C1] from-[#8065C8] from-10% via-80% to-90%">
+            30+ <br/> Countries
+          </div>
+        </section>
+        <div className="w-full h-0.5 bg-gray-400/20 mb-12" />
         <section className="flex  flex-col lg:flex-row my-12 mx-12 sm:mx-24">
 		  <div className="font-medium flex flex-col items-center mx-auto text-2xl md:text-2xl ">
-            Standard Division Winners
+            Advanced Division Winners
 			<Image
 			  height={200}
 			  width={200}
@@ -118,7 +129,6 @@ export default function Results() {
 			  alt=""
 			/>
           </div>
-
           <div className="md:basis-1/2 lg:mt-0 mt-8 text-center">
 			<div className="text-2xl pb-2">1st place: Gimran Abdullin (bashkort)</div>
 			<div className="flex flex-row justify-center pb-2 text-xl">
@@ -137,7 +147,7 @@ export default function Results() {
         <div className="w-full h-0.5 bg-gray-400/20 mb-12" />
 		<section className="flex flex-col my-12 mx-12 sm:mx-24 reverse lg:flex-row-reverse">
 		  <div className="font-medium flex flex-col items-center mx-auto text-2xl md:text-2xl ">
-            Advanced Division Winners
+            Standard Division Winners
 			<Image
 			  height={200}
 			  width={200}
