@@ -102,15 +102,15 @@ function Card({
 }
 
 export default function Tournament() {
-  const [timeLeft, setTimeLeft] = useState(0)
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(CONTEST_TIME_MILLISECONDS - Date.now())
-    }, 1000)
-    return () => clearInterval(timer)
-  }, [])
+  // const [timeLeft, setTimeLeft] = useState(0)
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setTimeLeft(CONTEST_TIME_MILLISECONDS - Date.now())
+  //   }, 1000)
+  //   return () => clearInterval(timer)
+  // }, [])
 
-  const [isDialogOpen, setIsDialogOpen] = useState(false)
+  // const [isDialogOpen, setIsDialogOpen] = useState(false)
 
   return (
     <>
@@ -234,68 +234,6 @@ export default function Tournament() {
             </a>
             .
           </div>
-          {/* <div className="md:basis-1/2 lg:mt-0 mt-8 text-right">
-            <div className="flex justify-end items-right mx-auto my-6   gap-x-4 w-fit">
-              {timeLeftString(timeLeft).map((x, index) => {
-                const extension = x === 1 ? "" : "s"
-                const units = ["day", "hour", "minute", "second"]
-                return (
-                  <div className="flex flex-col w-fit ">
-                    <div className="bg-[#EBE7FF] p-4 text-center items-center justify-center flex h-20 rounded-lg text-[#8976FF] font-semibold aspect-square text-lg md:text-xl lg:text-2xl">
-                      {x}
-                    </div>
-                    <span className="text-center font-medium mt-2">
-                      {units[index] + extension}
-                    </span>
-                  </div>
-                )
-              })}
-            </div>
-            <div className="text-[#8976FF] text-xl font-bold">
-              until contest start!
-            </div>
-          </section>
-          <div className="w-full h-0.5 bg-gray-400/20 mb-12" />
-          {/* Create results cards */}
-          <h1 className="text-center text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight bg-gradient-to-br from-purple-400 to-blue-600 bg-clip-text text-transparent">
-            Results
-          </h1>
-          <div className="flex  flex-col bg-white lg:flex-row justify-center mx-auto items-center px-6 md:px-12 xl:px-36 lg:px-24 lg:gap-x-12 gap-x-6 md:gap-x-8">
-            <section className="h-auto bg-white text-white  rounded-xl w-fit shadow-lg px-10 py-6 my-6 border-0 bg-gradient-to-tr to-[#83a0f9] from-[#113399] from-10% via-80% to-90%">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center pt-6 pb-6 py-4">
-                Standard Division
-              </h2>
-              <ul className="list-decimal">
-                <li>Tie - Dwij Mehta & Robert Smith</li>
-                <li>Kyle Liang</li>
-                <li>Husanboy Mansuraliyev</li>
-                <li>Ivan Li</li>
-                <li>Brendon Wang</li>
-                <li>Enmanuel Perez Martin</li>
-                <li>Miłosz Koczorowski</li>
-                <li>Dohun Kim</li>
-              </ul>
-            </section>
-            <section className=" h-auto bg-white text-white rounded-xl w-fit shadow-lg px-10 py-6 my-6 border-0 bg-gradient-to-tr from-[#6a5cbf] to-[#8570FA]/50">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center pt-6 pb-6 py-4">
-                Advanced Division
-              </h2>
-              <ul className="list-decimal">
-                <li>Gimran Abdullin</li>
-                <li>Julian Wu</li>
-                <li>Thomas Liu</li>
-                <li>Eric Hsu</li>
-                <li>Rohin Garg</li>
-                <li>Hoàng Xuân Bách</li>
-                <li>Alex Liang</li>
-                <li>Samuel Mo</li>
-              </ul>
-            </section>
-          </div>
-          <h1 className="text-center text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight bg-gradient-to-br from-purple-400 to-blue-600 bg-clip-text text-transparent">
-            Prizes
-          </h1>
-          </div> */}
         </section>
         <div className="w-full h-0.5 bg-gray-400/20 mb-12" />
         <h1 className="text-center text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight bg-gradient-to-br from-purple-400 to-blue-600 bg-clip-text text-transparent">
