@@ -7,6 +7,10 @@ import Image from "next/image"
 import clipMascot from "../images/tournament/clipped_mascot.png"
 import cpithink from "../images/tournament/cpithink.png"
 import prizes from "../images/tournament/prizes.png"
+const CONTEST_TIME_MILLISECONDS = 1709402400000
+const CONTEST_REGISTRATION_FORM_LINK = "https://forms.gle/4vHJeGiYGLgHRv4E6"
+const CONTEST_EDITORIAL_FILE = "tournament_2024_editorial.pdf"
+const CONTEST_SOLUTIONS_FILE = "tournament_2024_solutions.zip"
 
 import waveSVG from "../images/wave.svg"
 
