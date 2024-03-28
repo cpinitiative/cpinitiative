@@ -158,7 +158,7 @@ export default function Results() {
 			<div className="text-2xl pb-2">1st place (tie): <br/> Dwij Mehta (joesephdiver) & Robert Smith (myst-6_fan)</div>
 			<div className="flex flex-col justify-center pb-1 text-xl">
 			  <div className="pr-4">2nd place: Kyle Liang (BearytheGreenBear) <br/></div>
-			  <div>3rd place: Thomas Liu (oursaco)</div>
+			  <div>3rd place: Husanboy Mansuraliyev (unimpossibler)</div>
 			</div>
 			<div className="text-lg">
 			  4th place: Ivan Li (Ivan_Li),
