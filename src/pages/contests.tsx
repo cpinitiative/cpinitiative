@@ -17,7 +17,8 @@ import {
   proco1,
   proco2,
   teamscode,
-  bapc
+  bapc,
+  calico
 } from "../components/contests/images"
 import classNames from "classnames"
 
@@ -84,6 +85,49 @@ export default function Contests() {
           <h2 className="pt-1 mt-4 mb-8 text-4xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
             Partnered Tournaments
           </h2>
+          <div>
+            <h3 className="text-l sm:text-xl font-semibold tracking-tight text-purple-600 mt-2 p-2 px-7">
+              The CALICO Informatics Competition
+            </h3>
+            {/* Write code to display Image and a paragraph to the right of the image with text. */}
+            <div className="flex flex-row">
+              <div className="flex flex-col p-2 px-6">
+                <Image
+                  objectPosition="center center"
+                  width={450}
+                  height={102}
+                  src={calico}
+                />
+              </div>
+              <div className="flex flex-col prose prose-lg text-gray-500 mx-auto m-2 px-4">
+                <p className="text-1xl text-center">
+                  The CALICO Informatics Competition is a high-school programming competition
+                  hosted by students at UC Berkeley. We create contest problems to promote 
+                  the understanding of useful algorithms and encourage students to grow their problem-solving skills!
+                </p>
+                <div className="flex flex-row items-center justify-center">
+                  <div className="flex flex-col">
+                    <a
+                      href="https://calico.cs.berkeley.edu/"
+                      target="_blank"
+                      className="flex items-center justify-center px-4 py-3 m-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-500 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
+                    >
+                      Find Out More
+                    </a>
+                  </div>
+                  <div className="flex flex-col">
+                    <a
+                      href="https://discord.com/invite/6bvzygFbKK"
+                      target="_blank"
+                      className="flex items-center justify-center px-4 py-3 m-2 border text-base font-medium rounded-md shadow-sm text-white bg-gray-500 bg-opacity-90 hover:bg-opacity-70 sm:px-8"
+                    >
+                      Join their Discord
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div>
             <h3 className="text-l sm:text-xl font-semibold tracking-tight text-purple-600 mt-2 p-2 px-7">
               Lexington Informatics Tournament (LIT)

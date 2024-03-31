@@ -10,6 +10,7 @@ import algirlithm from "./algirlithm.png"
 import proco1 from "./proco1.png"
 import proco2 from "./proco2.png"
 import bapc from "./bapc.png"
+import calico from "./calico.png"
 
 
 
@@ -24,5 +25,6 @@ export {
   cerealcodes,
   proco1,
   proco2,
-  bapc
+  bapc,
+  calico
 }
