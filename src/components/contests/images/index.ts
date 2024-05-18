@@ -11,6 +11,7 @@ import proco1 from "./proco1.png"
 import proco2 from "./proco2.png"
 import bapc from "./bapc.png"
 import calico from "./calico.png"
+import wwpit from "./WWPIT.svg"
 
 
 
@@ -26,5 +27,6 @@ export {
   proco1,
   proco2,
   bapc,
-  calico
+  calico,
+  wwpit
 }
