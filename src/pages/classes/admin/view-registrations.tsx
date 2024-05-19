@@ -7,7 +7,7 @@ import { useEffect, useMemo, useState } from "react"
 // import firebaseType from "firebase"
 import moment from "moment-timezone"
 import * as Icons from "heroicons-react"
-import Transition from "../../../components/Transition"
+import { Transition } from "@headlessui/react"
 import type firebaseType from "firebase"
 import { exportLiveRegistrations } from "../../../util/classes/exportRegistrations"
 import {
