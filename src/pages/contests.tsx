@@ -22,7 +22,6 @@ import {
   tjioi,
   wwpit
 } from "../components/contests/images"
-import classNames from "classnames"
 
 export default function Contests() {
   return (
@@ -46,11 +45,9 @@ export default function Contests() {
             />
           </div>
           <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-            <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-              <h1 className="text-center font-black text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-white">
-                Programming Contests <br />
-                <span className="text-purple-300">for High Schoolers.</span>
-              </h1>
+            <h1 className="text-center text-4xl text-white font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+              Programming Contests <br />
+              <span className="text-purple-300">for High Schoolers.</span>
             </h1>
             <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
               Join high-quality programming contests hosted by students, for
