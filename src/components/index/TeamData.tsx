@@ -57,6 +57,7 @@ import {
   omar_ahmed,
   oscar,
   paul,
+  tian,
   pranav,
   ramit,
   riley,
@@ -630,6 +631,12 @@ const _members: { [key: string]: Member } = {
     codeforces: "876pol",
     github: "876pol",
   },
+  tian: {
+    photo: tian,
+    name: "Tianqin Meng",
+    titles: [roles.contentAuthor, roles.webdev], 
+    github: "tqmsh",
+  },
   pranav: {
     photo: pranav,
     name: "Pranav Jadhav",
@@ -789,6 +796,7 @@ const restOfMembers: Member[] = [
   _members.albert_jiang,
   _members.chuyang,
   _members.paul,
+  _members.tian,
   _members.trisha,
   _members.faris,
   _members.harsh_akunuri,
