@@ -130,6 +130,11 @@ import {
   windermere,
   winston_churchill,
   wissahickon,
+  john_champe,
+  nit_agartala,
+  singapore_american_school,
+  bits_pilani_goa,
+  solon_high,
 } from "../clubs/images"
 
 const ClubCard = ({ name, photo, region }) => {
@@ -813,6 +818,31 @@ const clubs: {
     name: "Winston Churchill High School",
     photo: winston_churchill,
     region: "Maryland",
+  },
+  {
+    name: "John Champe High School", 
+    photo: john_champe,
+    region: "Virginia"
+  },
+  {
+    name: "National Institute of Technology, Agartala", 
+    photo: nit_agartala,
+    region: "India"
+  },
+  {
+    name: "Singapore American School", 
+    photo: singapore_american_school,
+    region: "Singapore"
+  },
+  {
+    name: "BITS Pilani, K K Birla Goa Campus", 
+    photo: bits_pilani_goa,
+    region: "India"
+  },
+  {
+    name: "Solon High School",  
+    photo: solon_high,
+    region: "Ohio"
   },
 ].sort((x, y) => x.name.localeCompare(y.name))
 

@@ -128,6 +128,16 @@ import windermere from "./windermere.png"
 import winston_churchill from "./winston_churchill.jpg"
 import wissahickon from "./wissahickon.jpeg"
 
+import john_champe from "./john_champe.jpeg"
+
+import nit_agartala from "./nit_agartala.jpeg"
+
+import singapore_american_school from "./singapore_american_school.jpeg"
+
+import bits_pilani_goa from "./bits_pilani_goa.jpeg"
+
+import solon_high from "./solon_high.jpeg"
+
 export {
   algonquin,
   alpharetta,
@@ -258,4 +268,9 @@ export {
   windermere,
   winston_churchill,
   wissahickon,
+  john_champe,
+  nit_agartala,
+  singapore_american_school,
+  bits_pilani_goa,
+  solon_high,
 }
