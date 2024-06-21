@@ -11,6 +11,7 @@ import bhfles from "./bhfles.jpeg"
 import bits from "./bits.jpg"
 import bourguiba_pioneer from "./bourguiba_pioneer.jpeg"
 import branham from "./branham.png"
+import brigham_young from "./brigham_young.jpeg"
 import brooklyn_technical from "./brooklyn_technical.png"
 import BVRIT from "./BVRIT.jpg"
 import cairo_university from "./cairo_university.jpg"
@@ -21,6 +22,7 @@ import chengdu from "./chengdu.png"
 import chengdu_foreign_languages from "./chengdu_foreign_languages.jpeg"
 import clear_lake from "./clear_lake.jpg"
 import conestoga from "./conestoga.jpeg"
+import cornerstone_elementary from "./cornerstone_elementary.jpg"
 import creskill from "./creskill.jpg"
 import del_norte from "./del_norte.jpg"
 import delhi from "./delhi.jpg"
@@ -82,9 +84,11 @@ import newport from "./newport.jpeg"
 import north_andover from "./north_andover.jpg"
 import northsydney from "./northsydney.jpg";
 import northview from "./northview.jpg"
+import novi from "./novi.jpg"
 import oak_valley from "./oak_valley.jpg"
 import orange from "./orange.jpg"
 import panther_creek from "./panther_creek.jpg"
+import pes_college_of_engineering from "./pes_college_of_engineering.jpg"
 import pingry from "./pingry.jpg"
 import plaksha from "./plaksha_university.jpeg"
 import pld from "./pld.jpeg"
@@ -114,7 +118,9 @@ import trabuco from "./trabuco.png"
 import trinity from "./trinity.jpeg"
 import troy from "./troy.jpg"
 import tyee from "./tyee.jpeg"
+import university_of_tripoli from "./university_of_tripoli.webp"
 import university from "./university.jpg"
+import utsa from "./utsa.jpg"
 import vandegrift from "./vandegrift_hs.jpg"
 import ward_melville from "./WardMelvilleHS.jpg"
 import washington from "./washington.jpeg"
@@ -127,6 +133,7 @@ import whitney from "./whitney.png"
 import windermere from "./windermere.png"
 import winston_churchill from "./winston_churchill.jpg"
 import wissahickon from "./wissahickon.jpeg"
+import world_citi_colleges from"./world_citi_colleges.jpg"
 
 import john_champe from "./john_champe.jpeg"
 
@@ -152,6 +159,7 @@ export {
   bits,
   bourguiba_pioneer,
   branham,
+  brigham_young,
   brooklyn_technical,
   BVRIT,
   cairo_university,
@@ -162,6 +170,7 @@ export {
   chengdu_foreign_languages,
   clear_lake,
   conestoga,
+  cornerstone_elementary,
   creskill,
   del_norte,
   delhi,
@@ -223,9 +232,11 @@ export {
   north_andover,
   northsydney,
   northview,
+  novi,
   oak_valley,
   orange,
   panther_creek,
+  pes_college_of_engineering,
   pingry,
   plaksha,
   pld,
@@ -255,7 +266,9 @@ export {
   trinity,
   troy,
   tyee,
+  university_of_tripoli,
   university,
+  utsa,
   vandegrift,
   ward_melville,
   washington,
@@ -268,6 +281,7 @@ export {
   windermere,
   winston_churchill,
   wissahickon,
+  world_citi_colleges,
   john_champe,
   nit_agartala,
   singapore_american_school,
