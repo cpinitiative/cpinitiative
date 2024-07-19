@@ -18,6 +18,7 @@ import {
   bits,
   bourguiba_pioneer,
   branham,
+  brigham_young,
   brooklyn_technical,
   cairo_university,
   california_connections,
@@ -27,6 +28,7 @@ import {
   chengdu_foreign_languages,
   clear_lake,
   conestoga,
+  cornerstone_elementary,
   creskill,
   del_norte,
   delhi,
@@ -85,9 +87,11 @@ import {
   north_andover,
   northsydney,
   northview,
+  novi,
   oak_valley,
   orange,
   panther_creek,
+  pes_college_of_engineering,
   pingry,
   plaksha,
   pld,
@@ -117,7 +121,9 @@ import {
   trinity,
   troy,
   tyee,
+  university_of_tripoli,
   university,
+  utsa,
   vandegrift,
   ward_melville,
   washington,
@@ -130,6 +136,7 @@ import {
   windermere,
   winston_churchill,
   wissahickon,
+  world_citi_colleges,
   john_champe,
   nit_agartala,
   singapore_american_school,
@@ -309,6 +316,11 @@ const clubs: {
     region: "California",
   },
   {
+    name: "Brigham Young University",
+    photo: brigham_young,
+    region: "Utah",
+  },
+  {
     name: "Brooklyn Technical High School",
     photo: brooklyn_technical,
     region: "New York",
@@ -337,6 +349,11 @@ const clubs: {
     name: "Conestoga High School",
     photo: conestoga,
     region: "Pennsylvania",
+  },
+  {
+    name: "Cornerstone Elementary",
+    photo: cornerstone_elementary,
+    region: "Texas",
   },
   {
     name: "Creskill High School",
@@ -585,6 +602,11 @@ const clubs: {
     region: "Georgia",
   },
   {
+    name: "Novi High School",
+    photo: novi,
+    region: "Michigan",
+  },
+  {
     name: "Oak Valley Middle School",
     photo: oak_valley,
     region: "California",
@@ -598,6 +620,11 @@ const clubs: {
     name: "Panther Creek High School",
     photo: panther_creek,
     region: "North Carolina",
+  },
+  {
+    name: "PES College of Enginnering",
+    photo: pes_college_of_engineering,
+    region: "India",
   },
   {
     name: "Plaksha University",
@@ -745,9 +772,19 @@ const clubs: {
     region: "Washington",
   },
   {
+    name: "University of Tripoli",
+    photo: university_of_tripoli,
+    region: "Libya",
+  },
+  {
     name: "University High School",
     photo: university,
     region: "California",
+  },
+  {
+    name: "University of Texas at San Antonio",
+    photo: utsa,
+    region: "Texas",
   },
   {
     name: "University of New Hampshire",
@@ -803,6 +840,11 @@ const clubs: {
     name: "Wissahickon High School",
     photo: wissahickon,
     region: "Pennsylvania",
+  },
+  {
+    name: "World Citi Colleges",
+    photo: world_citi_colleges,
+    region: "Philippines",
   },
   {
     name: "Gretchen Whitney High School",
