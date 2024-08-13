@@ -71,6 +71,7 @@ import {
   varun,
   vidith,
   vikas_thoutam,
+  vincent,
   vivian,
   yifan_ma,
   lokesh_pampatti,
@@ -527,6 +528,13 @@ const _members: { [key: string]: Member } = {
     website: "https://jh316.me",
     github: "mjh316",
   },
+  vincent: {
+    photo: vincent,
+    name: "Vincent You",
+    titles: ["Director of Software", roles.webdev, roles.clubCurriculum],
+    github: "vinceyou1",
+    linkedin: "https://www.linkedin.com/in/vincent-you-3211a327a/"
+  },
   maggie: {
     photo: maggie,
     name: "Maggie Liu",
@@ -807,10 +815,11 @@ const restOfMembers: Member[] = [
   _members.aadit,
   _members.akshat,
   _members.nathan_zhang,
-  _members.justin_huang,
   _members.andrew_xu,
+  _members.vincent,
 ]
 const formerMembers: Member[] = [
+  _members.justin_huang,
   _members.neo,
   _members.jay,
   _members.amogha,

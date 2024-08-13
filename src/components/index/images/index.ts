@@ -89,6 +89,7 @@ import trisha from "./trisha.jpeg"
 import varun from "./varun.jpg"
 import vidith from "./vidith.jpg"
 import vikas_thoutam from "./vikas_thoutam.png"
+import vincent from "./vincent.jpg"
 import vivian from "./vivian.jpg"
 import yifan_ma from "./yifan_ma.png"
 import yu_lim from "./yu_lim.png"
@@ -190,6 +191,7 @@ export {
   varun,
   vidith,
   vikas_thoutam,
+  vincent,
   vivian,
   yifan_ma,
   yu_lim,
