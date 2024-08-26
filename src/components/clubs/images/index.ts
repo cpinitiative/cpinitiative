@@ -8,6 +8,7 @@ import bellarmine from "./bellarmine.jpg"
 import bergen_county_tech from "./bergen_county_tech.jpeg"
 import beverly_hills from "./beverly_hills.jpg"
 import bhfles from "./bhfles.jpeg"
+import blue_ridge_boost from "./blue_ridge_boost.jpg"
 import bits from "./bits.jpg"
 import bourguiba_pioneer from "./bourguiba_pioneer.jpeg"
 import branham from "./branham.png"
@@ -92,6 +93,7 @@ import pes_college_of_engineering from "./pes_college_of_engineering.jpg"
 import pingry from "./pingry.jpg"
 import plaksha from "./plaksha_university.jpeg"
 import pld from "./pld.jpeg"
+import plknplc from "./plknplc.jpeg"
 import radleycollege from "./RadleyCollege.jpg"
 import re_mountain from "./re_mountain.jpeg"
 import regis from "./regis.png"
@@ -112,7 +114,10 @@ import stuyvesant from "./stuyvesant.jpg";
 import suncoast from "./suncoast.png"
 import sydney_grammar from "./sydney_grammar.jpg"
 import tams from "./tams.jpeg"
+import tchs from "./tchs.jpg"
 import tenafly from "./tenafly.jpg"
+import the_bishops_school from "./the_bishops_school.jpeg"
+import tjhsst from "./tjhsst.jpeg"
 import tompkins from "./tompkins.jpg"
 import trabuco from "./trabuco.png"
 import trinity from "./trinity.jpeg"
@@ -156,6 +161,7 @@ export {
   bergen_county_tech,
   beverly_hills,
   bhfles,
+  blue_ridge_boost,
   bits,
   bourguiba_pioneer,
   branham,
@@ -240,6 +246,7 @@ export {
   pingry,
   plaksha,
   pld,
+  plknplc,
   radleycollege,
   re_mountain,
   regis,
@@ -260,6 +267,9 @@ export {
   suncoast,
   sydney_grammar,
   tams,
+  tjhsst,
+  tchs,
+  the_bishops_school,
   tenafly,
   tompkins,
   trabuco,
