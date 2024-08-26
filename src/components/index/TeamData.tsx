@@ -798,26 +798,35 @@ const orderedFirstMembers: Member[] = [
   _members.siyong,
 ]
 const restOfMembers: Member[] = [
+  // usaco guide
   _members.ryan,
-  _members.frank,
-  _members.eric,
-  _members.aditya,
-  _members.albert_jiang,
   _members.tian,
   _members.peng_bai,
+
+  // classes
   _members.trisha,
-  _members.faris,
-  _members.harsh_akunuri,
-  _members.rishabh,
-  _members.omar_ahmed,
-  _members.alex_wang,
-  _members.lokesh,
-  _members.akshat,
-  _members.nathan_zhang,
+  _members.frank,
   _members.andrew_xu,
+
+  // video instructors
+  _members.albert_jiang,
+  
+  // webdev
   _members.vincent,
+  _members.eric,
+  _members.rishabh,
+  _members.akshat,
+
+  // clubs n stuff
+  _members.alex_wang,
+  _members.nathan_zhang,
+  _members.faris,
+  _members.omar_ahmed,
+  _members.lokesh,
+  _members.harsh_akunuri,
 ]
 const formerMembers: Member[] = [
+  _members.aditya,
   _members.nikhil,
   _members.dustin,
   _members.jesse,
