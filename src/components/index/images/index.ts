@@ -97,6 +97,7 @@ import zhixin from "./zhixin.png"
 import empty from "./empty.png"
 import harsh_akunuri from "./harsh_akunuri.jpeg"
 import lokesh_pampatti from "./lokesh_pampatti.png"
+import peng_bai from "./peng_bai.jpeg"
 
 export {
   aadit,
@@ -167,6 +168,7 @@ export {
   neo,
   nikhil,
   paul,
+  peng_bai,
   tian,
   omar_ahmed,
   oscar,
