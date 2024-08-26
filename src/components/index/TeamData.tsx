@@ -57,6 +57,7 @@ import {
   omar_ahmed,
   oscar,
   paul,
+  peng_bai,
   tian,
   pranav,
   ramit,
@@ -428,7 +429,7 @@ const _members: { [key: string]: Member } = {
   faris: {
     photo: faris,
     name: "Faris Raza",
-    titles: [roles.clubCurriculum, roles.contentAuthor],
+    titles: [roles.clubCurriculum],
   },
   frank: {
     photo: frank,
@@ -639,6 +640,13 @@ const _members: { [key: string]: Member } = {
     codeforces: "876pol",
     github: "876pol",
   },
+  peng: {
+    photo: peng_bai,
+    name: "Peng Bai",
+    titles: [roles.contentAuthor],
+    codeforces: "HaccerKat",
+    github: "HaccerKat",
+  },
   tian: {
     photo: tian,
     name: "Tianqin Meng",
@@ -772,6 +780,7 @@ const notPictured: Omit<Member, "photo">[] = [
     codeforces: "sus",
   },
 ]
+
 const orderedFirstMembers: Member[] = [
   _members.nathanw,
   _members.darren,
@@ -789,22 +798,13 @@ const orderedFirstMembers: Member[] = [
   _members.siyong,
 ]
 const restOfMembers: Member[] = [
-  _members.nikhil,
   _members.ryan,
-  _members.dustin,
-  // members.egor,
-  // members.ramit,
-  _members.jesse,
-  _members.stanley,
-  _members.jeffrey_zhang,
-  _members.riley,
   _members.frank,
   _members.eric,
   _members.aditya,
   _members.albert_jiang,
-  _members.chuyang,
-  _members.paul,
   _members.tian,
+  _members.peng_bai,
   _members.trisha,
   _members.faris,
   _members.harsh_akunuri,
@@ -812,13 +812,21 @@ const restOfMembers: Member[] = [
   _members.omar_ahmed,
   _members.alex_wang,
   _members.lokesh,
-  _members.aadit,
   _members.akshat,
   _members.nathan_zhang,
   _members.andrew_xu,
   _members.vincent,
 ]
 const formerMembers: Member[] = [
+  _members.nikhil,
+  _members.dustin,
+  _members.jesse,
+  _members.stanley,
+  _members.jeffrey_zhang,
+  _members.riley,
+  _members.chuyang,
+  _members.paul,
+  _members.aadit,
   _members.justin_huang,
   _members.neo,
   _members.jay,
@@ -855,6 +863,7 @@ const formerMembers: Member[] = [
   _members.harry,
   _members.ananth,
 ]
+
 function sortPeople(people: Member[]) {
   return people.sort((a, b) => {
     if (a.titles.length === b.titles.length) {
@@ -865,7 +874,7 @@ function sortPeople(people: Member[]) {
 }
 
 function sortByHierarchy(people: Member[]) {
-  let definedHierachy = ["Board", "Executive", "Director of", "Founding Member"]
+  const definedHierachy = ["Board", "Executive", "Director of", "Founding Member"]
   return people
     .map(a => {
       for (let i = 0; i < definedHierachy.length; ++i) {
@@ -876,7 +885,7 @@ function sortByHierarchy(people: Member[]) {
           }
         }
       }
-      let newPerson = {
+      const newPerson = {
         ...a,
         rank: definedHierachy.length,
       }
