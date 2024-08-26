@@ -801,7 +801,7 @@ const restOfMembers: Member[] = [
   // usaco guide
   _members.ryan,
   _members.tian,
-  _members.peng_bai,
+  _members.peng,
 
   // classes
   _members.trisha,
