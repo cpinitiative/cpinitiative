@@ -15,6 +15,7 @@ import {
   bergen_county_tech,
   beverly_hills,
   bhfles,
+  blue_ridge_boost,
   bits,
   bourguiba_pioneer,
   branham,
@@ -24,7 +25,6 @@ import {
   california_connections,
   centennial,
   chapel_hill,
-  chengdu,
   chengdu_foreign_languages,
   clear_lake,
   conestoga,
@@ -95,6 +95,7 @@ import {
   pingry,
   plaksha,
   pld,
+  plknplc,
   radleycollege,
   re_mountain,
   regis,
@@ -116,6 +117,9 @@ import {
   sydney_grammar,
   tams,
   tenafly,
+  the_bishops_school,
+  tchs,
+  tjhsst,
   tompkins,
   trabuco,
   trinity,
@@ -301,6 +305,11 @@ const clubs: {
     region: "California",
   },
   {
+    name: "Blue Ridge Boost",
+    photo: blue_ridge_boost,
+    region: "Virginia"
+  },
+  {
     name: "BITS School",
     photo: bits,
     region: "Goa",
@@ -338,11 +347,6 @@ const clubs: {
   {
     name: "Chengdu Foreign Languages School",
     photo: chengdu_foreign_languages,
-    region: "Chengdu",
-  },
-  {
-    name: "Chengdu Longquanyi District Qingmiao School",
-    photo: chengdu,
     region: "Chengdu",
   },
   {
@@ -622,6 +626,11 @@ const clubs: {
     region: "North Carolina",
   },
   {
+    name: "Paul Laurence Dunbar High School",
+    photo: pld,
+    region: "Kentucky",
+  },
+  {
     name: "PES College of Enginnering",
     photo: pes_college_of_engineering,
     region: "India",
@@ -632,11 +641,6 @@ const clubs: {
     region: "India",
   },
   {
-    name: "Paul Laurence Dunbar High School",
-    photo: pld,
-    region: "Kentucky",
-  },
-  {
     name: "Pingry School",
     photo: pingry,
     region: "New Jersey",
@@ -645,6 +649,11 @@ const clubs: {
     name: "Pittsford Mendon High School",
     photo: mendon,
     region: "New York",
+  },
+  {
+    name: "Po Leung Kuk Ngan Po Ling College",
+    photo: plknplc,
+    region: "Hong Kong"
   },
   {
     name: "Radley College",
@@ -745,6 +754,21 @@ const clubs: {
     name: "Texas Academy of Mathematics and Science",
     photo: tams,
     region: "Texas",
+  },
+  {
+    name: "The Bishop's School",
+    photo: the_bishops_school,
+    region: "California",
+  },
+  {
+    name: "Thomas Jefferson High School for Science and Technology",
+    photo: tjhsst,
+    region: "Virginia",
+  },
+  {
+    name: "Timber Creek Regional High School",
+    photo: tchs,
+    region: "Florida",
   },
   {
     name: "Tompkins HS",
