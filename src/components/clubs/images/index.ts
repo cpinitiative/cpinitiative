@@ -19,7 +19,6 @@ import cairo_university from "./cairo_university.jpg"
 import california_connections from "./california_connections.jpg"
 import centennial from "./centennial.jpg"
 import chapel_hill from "./chapel_hill.jpg"
-import chengdu from "./chengdu.png"
 import chengdu_foreign_languages from "./chengdu_foreign_languages.jpeg"
 import clear_lake from "./clear_lake.jpg"
 import conestoga from "./conestoga.jpeg"
@@ -172,7 +171,6 @@ export {
   california_connections,
   centennial,
   chapel_hill,
-  chengdu,
   chengdu_foreign_languages,
   clear_lake,
   conestoga,

@@ -25,7 +25,6 @@ import {
   california_connections,
   centennial,
   chapel_hill,
-  chengdu,
   chengdu_foreign_languages,
   clear_lake,
   conestoga,
@@ -348,11 +347,6 @@ const clubs: {
   {
     name: "Chengdu Foreign Languages School",
     photo: chengdu_foreign_languages,
-    region: "Chengdu",
-  },
-  {
-    name: "Chengdu Longquanyi District Qingmiao School",
-    photo: chengdu,
     region: "Chengdu",
   },
   {
