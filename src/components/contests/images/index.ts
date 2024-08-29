@@ -12,8 +12,7 @@ import proco2 from "./proco2.png"
 import bapc from "./bapc.png"
 import calico from "./calico.png"
 import wwpit from "./wwpit.png"
-
-
+import indigo from "./indigo.png"
 
 export {
   placeholder,
@@ -28,5 +27,6 @@ export {
   proco2,
   bapc,
   calico,
-  wwpit
+  wwpit,
+  indigo
 }
