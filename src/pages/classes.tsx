@@ -43,6 +43,10 @@ export default function Classes() {
                         designed and developed by past USACO Finalists.
                       </p>
                       <div className="mt-8 sm:mt-12 space-y-2 sm:space-x-4">
+                        <p className="font-bold text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                          Summer Session has ended, join our Newsletter below to be notified for Fall Session!
+                        </p>
+                      {/* Registration buttons
                         <Link href="/classes/register">
                           <p className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
                             Register Now
@@ -56,6 +60,7 @@ export default function Classes() {
                         >
                           Contact Us
                         </a>
+                      */}
                       </div>
                       <p className="mt-4 sm:mt-6 text-sm text-gray-300 sm:mt-5 lg:text-base">
                         <Link href="/video-classes" className="hover:underline">

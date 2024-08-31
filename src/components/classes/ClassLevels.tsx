@@ -79,6 +79,7 @@ export default function ClassLevels() {
                       </li>
                     ))}
                   </ul>
+                  {/* Register Button
                   <div className="rounded-md shadow">
                     <Link
                       href="https://joincpi.org/classes/register#beginner"
@@ -92,6 +93,7 @@ export default function ClassLevels() {
                       </p>
                     </Link>
                   </div>
+                  */}
                 </div>
               </div>
 
@@ -151,21 +153,21 @@ export default function ClassLevels() {
                       </li>
                     ))}
                   </ul>
+                  {/* Register Button
                   <div className="rounded-md shadow">
-                    <div className="rounded-md shadow">
-                      <Link
-                        href="https://joincpi.org/classes/register#intermediate"
-                        target="_blank"
+                    <Link
+                      href="https://joincpi.org/classes/register#intermediate"
+                      target="_blank"
+                    >
+                      <p
+                        className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                        aria-describedby="tier-standard"
                       >
-                        <p
-                          className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                          aria-describedby="tier-standard"
-                        >
-                          Register Now
-                        </p>
-                      </Link>
-                    </div>
+                        Register Now
+                      </p>
+                    </Link>
                   </div>
+                  */}
                 </div>
               </div>
             </div>
