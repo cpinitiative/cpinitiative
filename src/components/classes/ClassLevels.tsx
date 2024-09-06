@@ -45,7 +45,7 @@ export default function ClassLevels() {
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
                     {[
-                      "Sundays, 5-7pm PDT during 6/9/24 to 8/11/24.",
+                      "Sundays, 5-7pm PDT during 10/6/24 to 12/8/24.",
                       "File / Fast I/O",
                       "Time Complexity",
                       "Data Structures and Simulation",
@@ -79,7 +79,6 @@ export default function ClassLevels() {
                       </li>
                     ))}
                   </ul>
-                  {/* Register Button
                   <div className="rounded-md shadow">
                     <Link
                       href="https://joincpi.org/classes/register#beginner"
@@ -93,7 +92,6 @@ export default function ClassLevels() {
                       </p>
                     </Link>
                   </div>
-                  */}
                 </div>
               </div>
 
@@ -119,7 +117,7 @@ export default function ClassLevels() {
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
                     {[
-                      "Saturdays, 4-6pm PDT during 6/8/24 to 8/10/24.",
+                      "Saturdays, 4-6pm PDT during 10/5/24 to 12/7/24.",
                       "Prefix Sums",
                       "Sorting with Custom Comparators",
                       "Two Pointers",
@@ -153,7 +151,6 @@ export default function ClassLevels() {
                       </li>
                     ))}
                   </ul>
-                  {/* Register Button
                   <div className="rounded-md shadow">
                     <Link
                       href="https://joincpi.org/classes/register#intermediate"
@@ -167,7 +164,6 @@ export default function ClassLevels() {
                       </p>
                     </Link>
                   </div>
-                  */}
                 </div>
               </div>
             </div>
