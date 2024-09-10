@@ -12,6 +12,7 @@ import {
   calico,
   tjioi,
   wwpit,
+  indigo,
 }  from "./images"
 import Image, { StaticImageData } from "next/legacy/image"
 dayjs.extend(customParseFormat)
@@ -93,5 +94,11 @@ const contests: {
     photo: lit,
     link: "https://lit.lhsmathcs.org/",
     desc: "LIT (Lexington Informatics Tournament) is a competitive programming tournament for middle/high school students, hosted by members of the LexMACS club from Lexington High School, along with many guest problemsetters/testers.",
+  },
+  {
+    name: "Indigo Informatics Competition",
+    photo: indigo,
+    link: "https://indigocode.org/",
+    desc: "The Indigo Informatics Competition is a programming contest for pre-college students, run by a group of students from Carmel High School in Indiana. We aim to share our passion for computer science with students all over the world. The contest is entirely virtual, and programmers of all skill levels are welcome!",
   },
 ]

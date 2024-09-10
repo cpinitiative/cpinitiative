@@ -45,7 +45,7 @@ export default function ClassLevels() {
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
                     {[
-                      "Sundays, 5-7pm PDT during 6/9/24 to 8/11/24.",
+                      "Sundays, 5-7pm PDT during 10/6/24 to 12/8/24.",
                       "File / Fast I/O",
                       "Time Complexity",
                       "Data Structures and Simulation",
@@ -117,7 +117,7 @@ export default function ClassLevels() {
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
                     {[
-                      "Saturdays, 4-6pm PDT during 6/8/24 to 8/10/24.",
+                      "Saturdays, 4-6pm PDT during 10/5/24 to 12/7/24.",
                       "Prefix Sums",
                       "Sorting with Custom Comparators",
                       "Two Pointers",
@@ -152,19 +152,17 @@ export default function ClassLevels() {
                     ))}
                   </ul>
                   <div className="rounded-md shadow">
-                    <div className="rounded-md shadow">
-                      <Link
-                        href="https://joincpi.org/classes/register#intermediate"
-                        target="_blank"
+                    <Link
+                      href="https://joincpi.org/classes/register#intermediate"
+                      target="_blank"
+                    >
+                      <p
+                        className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                        aria-describedby="tier-standard"
                       >
-                        <p
-                          className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                          aria-describedby="tier-standard"
-                        >
-                          Register Now
-                        </p>
-                      </Link>
-                    </div>
+                        Register Now
+                      </p>
+                    </Link>
                   </div>
                 </div>
               </div>
