@@ -25,7 +25,6 @@ import {
   california_connections,
   centennial,
   chapel_hill,
-  chengdu_foreign_languages,
   clear_lake,
   conestoga,
   cornerstone_elementary,
@@ -343,11 +342,6 @@ const clubs: {
     name: "Chapel Hill High School",
     photo: chapel_hill,
     region: "Georgia",
-  },
-  {
-    name: "Chengdu Foreign Languages School",
-    photo: chengdu_foreign_languages,
-    region: "Chengdu",
   },
   {
     name: "Conestoga High School",
