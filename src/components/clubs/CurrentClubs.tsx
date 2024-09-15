@@ -307,7 +307,7 @@ const clubs: {
     region: "Shanghai",
   },
   {
-    name: "iiit Naya Raipur",
+    name: "IIIT Naya Raipur",
     photo: img.iiit,
     region: "Raipur",
   },
