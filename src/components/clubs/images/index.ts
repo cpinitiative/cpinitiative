@@ -81,7 +81,7 @@ import new_hampshire from "./new_hampshire.jpg"
 import newbury_park from "./newbury_park.jpg"
 import newport from "./newport.jpeg"
 import north_andover from "./north_andover.jpg"
-import northsydney from "./northsydney.jpg";
+import northsydney from "./northsydney.jpg"
 import northview from "./northview.jpg"
 import novi from "./novi.jpg"
 import oak_valley from "./oak_valley.jpg"
@@ -98,7 +98,7 @@ import regis from "./regis.png"
 import rickards from "./rickards.png"
 import riverhill from "./riverhill.jpg"
 import royal_grammar from "./royal_grammar.jpg"
-import saigon_south from "./saigonsouth.jpeg";
+import saigon_south from "./saigonsouth.jpeg"
 import san_mateo from "./san_mateo.jpg"
 import scaler from "./scaler.jpg"
 import sequoia from "./sequoia_hs.jpg"
@@ -108,7 +108,7 @@ import silver_creek from "./silver_creek.jpeg"
 import skyline from "./skyline.jpeg"
 import smic from "./smic.jpg"
 import stanford_online from "./stanford_online.jpg"
-import stuyvesant from "./stuyvesant.jpg";
+import stuyvesant from "./stuyvesant.jpg"
 import suncoast from "./suncoast.png"
 import sydney_grammar from "./sydney_grammar.jpg"
 import tams from "./tams.jpeg"
@@ -136,12 +136,20 @@ import whitney from "./whitney.png"
 import windermere from "./windermere.png"
 import winston_churchill from "./winston_churchill.jpg"
 import wissahickon from "./wissahickon.jpeg"
-import world_citi_colleges from"./world_citi_colleges.jpg"
+import world_citi_colleges from "./world_citi_colleges.jpg"
 import john_champe from "./john_champe.jpeg"
 import nit_agartala from "./nit_agartala.jpeg"
 import singapore_american_school from "./singapore_american_school.jpeg"
 import bits_pilani_goa from "./bits_pilani_goa.jpeg"
 import solon_high from "./solon_high.jpeg"
+import carmel_hs from "./carmel_hs.jpg"
+import iit_bombay from "./iit_bombay.jpeg"
+import iit_madras from "./iit_madras.jpeg"
+import motilal_nehru_nit from "./motilal_nehru_nit.jpeg"
+import aasquare from "./aasquare.png"
+import north_hollywood_hs from "./north_hollywood_hs.jpg"
+import walt_whitman_hs from "./walt_whitman_hs.jpg"
+import stem_oct from "./stem_oct.jpg"
 
 export {
   algonquin,
@@ -199,8 +207,8 @@ export {
   irvington,
   jane_lathrop,
   jayshree,
-  jfd_hs, 
-  kmit, 
+  jfd_hs,
+  kmit,
   ladue_horton,
   le_quy_don,
   leigh,
@@ -288,6 +296,12 @@ export {
   singapore_american_school,
   bits_pilani_goa,
   solon_high,
+  carmel_hs,
+  iit_bombay,
+  iit_madras,
+  motilal_nehru_nit,
+  aasquare,
+  north_hollywood_hs,
+  walt_whitman_hs,
+  stem_oct,
 }
-
-

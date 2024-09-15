@@ -2,7 +2,15 @@ import * as React from "react"
 import Image, { StaticImageData } from "next/legacy/image"
 import * as img from "../clubs/images"
 
-const ClubCard = ({ name, photo, region }: { name: string, photo: StaticImageData, region: string }) => {
+const ClubCard = ({
+  name,
+  photo,
+  region,
+}: {
+  name: string
+  photo: StaticImageData
+  region: string
+}) => {
   return (
     <li className="relative block w-full rounded-lg overflow-hidden">
       <div className="pointer-events-none aspect-w-10 aspect-h-6">
@@ -33,24 +41,24 @@ const clubs: {
   region: string
 }[] = [
   {
-    name: "Keshav Memorial Institute of Technology", 
+    name: "Keshav Memorial Institute of Technology",
     photo: img.kmit,
-    region: "India"
+    region: "India",
   },
   {
     name: "John Foster Dulles High School",
     photo: img.jfd_hs,
-    region: "Texas"
+    region: "Texas",
   },
   {
     name: "B.V. Raju Institute of Technology",
     photo: img.bvrit,
-    region: "India"
+    region: "India",
   },
   {
     name: "Universitas Gadjah Mada",
     photo: img.gadjah_mada,
-    region: "Indonesia"
+    region: "Indonesia",
   },
   {
     name: "Academies of Loudoun",
@@ -67,7 +75,7 @@ const clubs: {
     photo: img.dougherty,
     region: "California",
   },
-  
+
   {
     name: "Milestone College",
     photo: img.milestone,
@@ -161,7 +169,7 @@ const clubs: {
   {
     name: "Blue Ridge Boost",
     photo: img.blue_ridge_boost,
-    region: "Virginia"
+    region: "Virginia",
   },
   {
     name: "BITS School",
@@ -256,7 +264,7 @@ const clubs: {
   {
     name: "Franklin High School",
     photo: img.franklin,
-    region: "Texas"
+    region: "Texas",
   },
   {
     name: "Fremont High School",
@@ -266,7 +274,7 @@ const clubs: {
   {
     name: "Green Level High School",
     photo: img.green_level,
-    region: "North Carolina"
+    region: "North Carolina",
   },
   {
     name: "Frisco Centennial High School",
@@ -502,7 +510,7 @@ const clubs: {
   {
     name: "Po Leung Kuk Ngan Po Ling College",
     photo: img.plknplc,
-    region: "Hong Kong"
+    region: "Hong Kong",
   },
   {
     name: "Radley College",
@@ -735,30 +743,50 @@ const clubs: {
     region: "Maryland",
   },
   {
-    name: "John Champe High School", 
+    name: "John Champe High School",
     photo: img.john_champe,
-    region: "Virginia"
+    region: "Virginia",
   },
   {
-    name: "National Institute of Technology, Agartala", 
+    name: "National Institute of Technology, Agartala",
     photo: img.nit_agartala,
-    region: "India"
+    region: "India",
   },
   {
-    name: "Singapore American School", 
+    name: "Singapore American School",
     photo: img.singapore_american_school,
-    region: "Singapore"
+    region: "Singapore",
   },
   {
-    name: "BITS Pilani, K K Birla Goa Campus", 
+    name: "BITS Pilani, K K Birla Goa Campus",
     photo: img.bits_pilani_goa,
-    region: "India"
+    region: "India",
   },
   {
-    name: "Solon High School",  
+    name: "Solon High School",
     photo: img.solon_high,
-    region: "Ohio"
+    region: "Ohio",
   },
+  { name: "Carmel High School", photo: img.carmel_hs, region: "Indiana" },
+  { name: "IIT Bombay", photo: img.iit_bombay, region: "Mumbai, India" },
+  { name: "IIT Madras", photo: img.iit_madras, region: "India" },
+  {
+    name: "Motilal Nehru National Institute of Technology",
+    photo: img.motilal_nehru_nit,
+    region: "India",
+  },
+  { name: "Aasquare Academy", photo: img.aasquare, region: "California" },
+  {
+    name: "North Hollywood High School",
+    photo: img.north_hollywood_hs,
+    region: "California",
+  },
+  {
+    name: "Walt Whitman High School",
+    photo: img.walt_whitman_hs,
+    region: "Maryland",
+  },
+  { name: "STEM 6th of October", photo: img.stem_oct, region: "Egypt" },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
@@ -805,5 +833,3 @@ export default function CurrentClubs() {
     </div>
   )
 }
-
-
