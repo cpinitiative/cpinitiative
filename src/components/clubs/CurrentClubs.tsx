@@ -795,12 +795,12 @@ const clubs: {
   { name: "Oak Park High School", photo: img.oak_park, region: "California" },
   {
     name: "Allameh Helli High School",
-    photo: img.independence_va,
+    photo: img.allameh_helli,
     region: "Iran",
   },
   {
     name: "Independence High School",
-    photo: img.allameh_helli,
+    photo: img.independence_va,
     region: "Virginia",
   },
   {
