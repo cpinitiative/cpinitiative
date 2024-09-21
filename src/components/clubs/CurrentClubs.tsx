@@ -787,6 +787,35 @@ const clubs: {
     region: "Maryland",
   },
   { name: "STEM 6th of October", photo: img.stem_oct, region: "Egypt" },
+  {
+    name: "James B. Conant High School",
+    photo: img.james_b_conant,
+    region: "Illinois",
+  },
+  { name: "Oak Park High School", photo: img.oak_park, region: "California" },
+  {
+    name: "Allameh Helli High School",
+    photo: img.independence_va,
+    region: "Iran",
+  },
+  {
+    name: "Independence High School",
+    photo: img.allameh_helli,
+    region: "Virginia",
+  },
+  {
+    name: "University of Central Asia",
+    photo: img.u_central_asia,
+    region: "Kyrgyzstan",
+  },
+  { name: "California High School", photo: img.cali_hs, region: "California" },
+  { name: "McNeil High School", photo: img.mcneil, region: "Texas" },
+  { name: "Iowa West City High School", photo: img.iowa_west, region: "Iowa" },
+  {
+    name: "Bangladesh Army International University of Science and Technology",
+    photo: img.bangl_army,
+    region: "Bangladesh",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {

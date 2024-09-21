@@ -150,6 +150,15 @@ import aasquare from "./aasquare.png"
 import north_hollywood_hs from "./north_hollywood_hs.jpg"
 import walt_whitman_hs from "./walt_whitman_hs.jpg"
 import stem_oct from "./stem_oct.jpg"
+import james_b_conant from "./james_b_conant.jpg"
+import oak_park from "./oak_park.jpg"
+import independence_va from "./independence_va.png"
+import allameh_helli from "./allameh_helli.jpg"
+import u_central_asia from "./u_central_asia.jpg"
+import cali_hs from "./cali_hs.jpg"
+import mcneil from "./mcneil.jpg"
+import iowa_west from "./iowa_west.jpg"
+import bangl_army from "./bangl_army.jpg"
 
 export {
   algonquin,
@@ -304,4 +313,13 @@ export {
   north_hollywood_hs,
   walt_whitman_hs,
   stem_oct,
+  james_b_conant,
+  oak_park,
+  independence_va,
+  allameh_helli,
+  u_central_asia,
+  cali_hs,
+  mcneil,
+  iowa_west,
+  bangl_army,
 }
