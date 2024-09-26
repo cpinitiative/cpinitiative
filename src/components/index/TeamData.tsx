@@ -424,7 +424,7 @@ const _members: { [key: string]: Member } = {
     photo: evan,
     name: "Evan Zhao",
     titles: ["Executive", "Director of Classes", roles.liveInstructor],
-    email: "evanzhao12@gmail.com",
+    email: "evanzhao@joincpi.org",
   },
   faris: {
     photo: faris,
