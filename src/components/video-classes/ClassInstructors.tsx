@@ -19,7 +19,8 @@ import {
   niranjana_sankar,
   rahul_verma,
   ryan_fu,
-  andrew_xu
+  andrew_xu,
+  peng_bai
 } from "../index/images"
 
 type Member = {
@@ -30,19 +31,24 @@ type Member = {
 
 const members: Member[] = [
   {
+    photo: trisha,
+    name: "Trisha Sabadra",
+    title: "Project Manager of Classes / Director of Bronze Classes / Silver Instructor",
+  },
+  {
     photo: varun,
     name: "Varun Ragunath",
     title: "Project Manager of Classes / Finalist",
   },
   {
-    photo: evan,
-    name: "Evan Zhao",
-    title: "Competitive Programming Initiative Executive",
+    photo: frank,
+    name: "Frank Xiao",
+    title: "Bronze & Silver Instructor",
   },
   {
-    photo: ryan,
-    name: "Ryan Chou",
-    title: "Bronze Instructor",
+    photo: andrew_xu,
+    name: "Andrew Xu",
+    title: "Bronze & Silver Instructor"
   },
   {
     photo: rohan_garg,
@@ -50,23 +56,18 @@ const members: Member[] = [
     title: "Bronze & Silver Instructor",
   },
   {
+    photo: peng_bai,
+    name: "Peng Bai",
+    title: "Silver Instructor"
+  },
+  {
+    photo: ryan_fu,
+    name: "Ryan Fu",
+    title: "Silver Instructor",
+  },
+  {
     photo: faris,
     name: "Faris Raza",
-    title: "Bronze & Silver Instructor",
-  },
-  {
-    photo: trisha,
-    name: "Trisha Sabadra",
-    title: "Project Manager of Classes / Director of Bronze Classes / Silver Instructor",
-  },
-  {
-    photo: jesse,
-    name: "Jesse Choe",
-    title: "Director of Silver Classes"
-  },
-  {
-    photo: frank,
-    name: "Frank Xiao",
     title: "Bronze & Silver Instructor",
   },
   {
@@ -80,14 +81,9 @@ const members: Member[] = [
     title: "Bronze Instructor",
   },
   {
-    photo: ryan_fu,
-    name: "Ryan Fu",
-    title: "Silver Instructor",
-  },
-  {
-    photo: andrew_xu,
-    name: "Andrew Xu",
-    title: "Bronze & Silver Instructor"
+    photo: ryan,
+    name: "Ryan Chou",
+    title: "Bronze Instructor",
   },
 ]
 
