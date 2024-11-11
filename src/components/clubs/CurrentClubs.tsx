@@ -852,8 +852,8 @@ const clubs: {
     region: "Mississippi",
   },
   {
-    name: "National Institute of Technology Calicut",
-    photo: img.nit_agartala,
+    name: "National Institute of Technology, Calicut",
+    photo: img.nit_calicut,
     region: "India",
   },
 ].sort((x, y) => x.name.localeCompare(y.name))
