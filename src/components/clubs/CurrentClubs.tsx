@@ -816,6 +816,46 @@ const clubs: {
     photo: img.bangl_army,
     region: "Bangladesh",
   },
+  {
+    name: "Glenbrook South High School",
+    photo: img.glenbrook_south,
+    region: "Illinois",
+  },
+  {
+    name: "Williamsville East High School",
+    photo: img.williamsville_east,
+    region: "New York",
+  },
+  {
+    name: "Woodinville High School",
+    photo: img.woodinville,
+    region: "Washington",
+  },
+  {
+    name: "Nguyen Thien Thanh High School for Gifted Student",
+    photo: img.nguyen_thien_thanh,
+    region: "Vietnam",
+  },
+  {
+    name: "Mount Hebron High School",
+    photo: img.mount_hebron,
+    region: "Maryland",
+  },
+  {
+    name: "DuPont Manual High School",
+    photo: img.dupont_manual,
+    region: "Kentucky",
+  },
+  {
+    name: "Oxford High School",
+    photo: img.oxford_mississippi,
+    region: "Mississippi",
+  },
+  {
+    name: "National Institute of Technology Calicut",
+    photo: img.nit_agartala,
+    region: "India",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {

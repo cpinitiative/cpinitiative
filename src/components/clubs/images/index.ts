@@ -159,6 +159,14 @@ import cali_hs from "./cali_hs.jpg"
 import mcneil from "./mcneil.jpg"
 import iowa_west from "./iowa_west.jpg"
 import bangl_army from "./bangl_army.jpg"
+import glenbrook_south from "./glenbrook_south.jpg"
+import nit_calicut from "./nit_calicut.jpg"
+import williamsville_east from "./williamsville_east.png"
+import woodinville from "./woodinville.jpg"
+import nguyen_thien_thanh from "./Nguyen_Thien_Thanh.png"
+import mount_hebron from "./mount_hebron.jpg"
+import dupont_manual from "./dupont_manual.jpeg"
+import oxford_mississippi from "./oxford_mississippi.jpeg"
 
 export {
   algonquin,
@@ -322,4 +330,12 @@ export {
   mcneil,
   iowa_west,
   bangl_army,
+  glenbrook_south,
+  williamsville_east,
+  woodinville,
+  nguyen_thien_thanh,
+  mount_hebron,
+  dupont_manual,
+  oxford_mississippi,
+  nit_calicut
 }
