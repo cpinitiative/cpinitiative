@@ -167,6 +167,12 @@ import nguyen_thien_thanh from "./Nguyen_Thien_Thanh.png"
 import mount_hebron from "./mount_hebron.jpg"
 import dupont_manual from "./dupont_manual.jpeg"
 import oxford_mississippi from "./oxford_mississippi.jpeg"
+import centreville from "./centreville.jpg"
+import newton_north from "./newton_north.jpg"
+import nova_high from "./nova_high.jpg"
+import delhi_tech from "./delhi_tech.jpg"
+import stephen_lewis_secondary from "./stephen_lewis_secondary.jpg"
+import ballantyne from "./ballantyne.jpg"
 
 export {
   algonquin,
@@ -338,4 +344,10 @@ export {
   dupont_manual,
   oxford_mississippi,
   nit_calicut
+  centreville,
+  newton_north,
+  nova_high,
+  delhi_tech,
+  stephen_lewis_secondary,
+  ballantyne
 }

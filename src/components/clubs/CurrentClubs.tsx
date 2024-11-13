@@ -856,6 +856,12 @@ const clubs: {
     photo: img.nit_calicut,
     region: "India",
   },
+  { name: "Centreville High School", photo: img.centreville, region: "Virginia" },
+  { name: "Newton North High School", photo: img.newton_north, region: "Massachusetts" },
+  { name: "Nova High", photo: img.nova_high, region: "Florida" },
+  { name: "Delhi Technological University", photo: img.delhi_tech, region: "New Delhi" },
+  { name: "Stephen Lewis Secondary School", photo: img.stephen_lewis_secondary, region: "Canada" },
+  { name: "Ballantyne Ridge High School", photo: img.ballantyne, region: "North Carolina" },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
