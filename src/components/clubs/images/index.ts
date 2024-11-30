@@ -343,7 +343,7 @@ export {
   mount_hebron,
   dupont_manual,
   oxford_mississippi,
-  nit_calicut
+  nit_calicut,
   centreville,
   newton_north,
   nova_high,
