@@ -245,7 +245,7 @@ const _members: { [key: string]: Member } = {
     photo: aakash,
     name: "Aakash Gokhale",
     titles: ["Director of Contests"],
-    codeforces: "skeyes"
+    codeforces: "skeyes",
   },
   aarav: {
     photo: aarav,
@@ -287,7 +287,7 @@ const _members: { [key: string]: Member } = {
     email: "singhaniaakshat1@gmail.com",
     linkedin: "https://www.linkedin.com/in/akshatsinghania",
     instagram: "https://www.instagram.com/akshat_singhania_",
-    website: "https://akshatsinghaniaweb.web.app/"
+    website: "https://akshatsinghaniaweb.web.app/",
   },
   albert_jiang: {
     photo: albert_jiang,
@@ -590,7 +590,7 @@ const _members: { [key: string]: Member } = {
     photo: justin_ji,
     name: "Justin Ji",
     titles: [roles.contentAuthor],
-    codeforces: "eysbutno"
+    codeforces: "eysbutno",
   },
   justin_huang: {
     photo: justin_huang,
@@ -623,7 +623,12 @@ const _members: { [key: string]: Member } = {
   melody: {
     photo: melody,
     name: "Melody Yu",
-    titles: ["President", "Director of Outreach", roles.videoInstructor, roles.workshops],
+    titles: [
+      "President",
+      "Director of Outreach",
+      roles.videoInstructor,
+      roles.workshops,
+    ],
     github: "cskitty",
     website: "https://melodyyu.com/",
     email: "ocmelodyyu@gmail.com",
@@ -697,10 +702,10 @@ const _members: { [key: string]: Member } = {
     name: "Nikhil Chatterjee",
     titles: [roles.liveInstructor, roles.videoInstructor, roles.clubCurriculum],
   },
-  omar:{
+  omar: {
     photo: omar,
     name: "Omar Elbayoumi",
-    titles: [roles.clubCurriculum]
+    titles: [roles.clubCurriculum],
   },
   omar_ahmed: {
     photo: omar_ahmed,
@@ -730,7 +735,7 @@ const _members: { [key: string]: Member } = {
   tian: {
     photo: tian,
     name: "Tianqin Meng",
-    titles: [roles.contentAuthor, roles.webdev], 
+    titles: [roles.contentAuthor, roles.webdev],
     github: "tqmsh",
   },
   pranav: {
@@ -743,7 +748,7 @@ const _members: { [key: string]: Member } = {
   rahul: {
     photo: rahul_verma,
     name: "Rahul Verma",
-    titles: [roles.liveInstructor, "Lead Bronze Instructor"]
+    titles: [roles.liveInstructor, "Lead Bronze Instructor"],
   },
   ramit: {
     photo: ramit,
@@ -773,7 +778,7 @@ const _members: { [key: string]: Member } = {
       roles.liveInstructor,
       roles.videoInstructor,
       roles.contentAuthor,
-      roles.workshops
+      roles.workshops,
     ],
     github: "ryanchou-dev",
     website: "https://www.ryanchou.dev/",
@@ -781,7 +786,7 @@ const _members: { [key: string]: Member } = {
   ryan_fu: {
     photo: ryan_fu,
     name: "Ryan Fu",
-    titles: ["Director of Silver Classes", roles.liveInstructor]
+    titles: ["Director of Silver Classes", roles.liveInstructor],
   },
   sathvik: {
     name: "Sathvik Chundru",
@@ -817,7 +822,11 @@ const _members: { [key: string]: Member } = {
   srijith: {
     photo: srijith,
     name: "Srijith Chinthalapudi",
-    titles: [roles.liveInstructor, roles.videoInstructor, "Director of Self-Study Classes"]
+    titles: [
+      roles.liveInstructor,
+      roles.videoInstructor,
+      "Director of Self-Study Classes",
+    ],
   },
   stanley: {
     photo: stanley,
@@ -835,7 +844,11 @@ const _members: { [key: string]: Member } = {
   trisha: {
     photo: trisha,
     name: "Trisha Sabadra",
-    titles: ["Director of Classes", "Director of Bronze Classes", roles.liveInstructor],
+    titles: [
+      "Director of Classes",
+      "Director of Bronze Classes",
+      roles.liveInstructor,
+    ],
   },
   varun: {
     photo: varun,
@@ -862,7 +875,7 @@ const _members: { [key: string]: Member } = {
     name: "Vincent You",
     titles: ["Director of Software", roles.webdev, roles.clubCurriculum],
     github: "vinceyou1",
-    linkedin: "https://www.linkedin.com/in/vincent-you-3211a327a/"
+    linkedin: "https://www.linkedin.com/in/vincent-you-3211a327a/",
   },
   vivian: {
     photo: vivian,
@@ -878,7 +891,7 @@ const _members: { [key: string]: Member } = {
   zein: {
     photo: zein,
     name: "Zein Alabdeen Zammar",
-    titles: [roles.liveInstructor]
+    titles: [roles.liveInstructor],
   },
   lokesh: {
     photo: lokesh_pampatti,
@@ -895,7 +908,7 @@ const notPictured: Omit<Member, "photo">[] = [
   },
   {
     name: "Dylan Karpf",
-    titles: [roles.videoInstructor]
+    titles: [roles.videoInstructor],
   },
   {
     name: "Kevin Sheng",
@@ -954,7 +967,7 @@ const currentMembers: Member[] = [
 
   // video instructors
   _members.albert_jiang,
-  
+
   // webdev
   _members.vincent,
   _members.eric,
@@ -1036,7 +1049,12 @@ function sortPeople(people: Member[]) {
 }
 
 function sortByHierarchy(people: Member[]) {
-  const definedHierachy = ["Board", "President", "Director of", "Founding Member"]
+  const definedHierachy = [
+    "Board",
+    "President",
+    "Director of",
+    "Founding Member",
+  ]
   return people
     .map(a => {
       for (let i = 0; i < definedHierachy.length; ++i) {
