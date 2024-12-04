@@ -542,7 +542,7 @@ export default function Classes() {
 
             <ClassLevels />
 
-            <ClassInstructors />
+            {/* <ClassInstructors /> */}
 
             <Newsletter />
           </div>
