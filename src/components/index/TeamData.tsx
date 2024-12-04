@@ -1,5 +1,6 @@
 import {
   aadit,
+  aarav,
   adham,
   aditya,
   akshar,
@@ -7,6 +8,7 @@ import {
   albertz,
   alex_chen,
   alex_wang,
+  alice,
   amogha,
   amy_chang,
   ananth,
@@ -44,6 +46,7 @@ import {
   julie,
   justin_huang,
   maggie,
+  max,
   melody,
   michael,
   mithil,
@@ -77,6 +80,22 @@ import {
   yifan_ma,
   lokesh_pampatti,
   akshat,
+  justin_ji,
+  hassan,
+  sathvik,
+  satvika,
+  avyan,
+  ryan_fu,
+  rahul_verma,
+  fnu,
+  aakash,
+  tatha,
+  omar,
+  srijith,
+  aarush,
+  kinan,
+  zein,
+  audrey,
 } from "./images"
 import { StaticImageData } from "next/legacy/image"
 type Socials =
@@ -212,6 +231,8 @@ const roles = {
   videoInstructor: "Self-Study Classes",
   clubCurriculum: "Curriculum Developer",
   founder: "Founding Member",
+  workshops: "Workshops",
+  outreach: "Outreach",
 }
 
 const _members: { [key: string]: Member } = {
@@ -220,7 +241,23 @@ const _members: { [key: string]: Member } = {
     name: "Aadit Ambadkar",
     titles: [roles.liveInstructor],
   },
-
+  aakash: {
+    photo: aakash,
+    name: "Aakash Gokhale",
+    titles: ["Director of Contests"],
+    codeforces: "skeyes"
+  },
+  aarav: {
+    photo: aarav,
+    name: "Aarav Sethi",
+    titles: [roles.webdev],
+    github: "asynchronousai",
+  },
+  aarush: {
+    photo: aarush,
+    name: "Aarush Kute",
+    titles: [roles.webdev],
+  },
   adham: {
     photo: adham,
     name: "Adham Ibrahim",
@@ -250,6 +287,7 @@ const _members: { [key: string]: Member } = {
     email: "singhaniaakshat1@gmail.com",
     linkedin: "https://www.linkedin.com/in/akshatsinghania",
     instagram: "https://www.instagram.com/akshat_singhania_",
+    website: "https://akshatsinghaniaweb.web.app/"
   },
   albert_jiang: {
     photo: albert_jiang,
@@ -272,6 +310,11 @@ const _members: { [key: string]: Member } = {
     photo: alex_wang,
     name: "Alex Wang",
     titles: ["Director of Clubs", roles.liveInstructor],
+  },
+  alice: {
+    photo: alice,
+    name: "Alice Li",
+    titles: [roles.clubCurriculum],
   },
   amogha: {
     photo: amogha,
@@ -341,6 +384,17 @@ const _members: { [key: string]: Member } = {
     name: "Atharv Jain",
     titles: [roles.liveInstructor, roles.videoInstructor],
     email: "atharvjain05@gmail.com",
+  },
+  audrey: {
+    photo: audrey,
+    name: "Audrey Wang",
+    titles: [roles.outreach, roles.liveInstructor],
+    email: "audreywang2027@gmail.com",
+  },
+  avyan: {
+    photo: avyan,
+    name: "Avyan Gupta",
+    titles: [roles.liveInstructor],
   },
   ben: {
     photo: ben,
@@ -423,13 +477,18 @@ const _members: { [key: string]: Member } = {
   evan: {
     photo: evan,
     name: "Evan Zhao",
-    titles: ["Executive", "Director of Classes", roles.liveInstructor],
+    titles: ["President", "Director of Classes", roles.liveInstructor],
     email: "evanzhao@joincpi.org",
   },
   faris: {
     photo: faris,
     name: "Faris Raza",
     titles: [roles.clubCurriculum],
+  },
+  fnu: {
+    photo: fnu,
+    name: "Fnu Prince",
+    titles: ["Director of Classes", roles.liveInstructor],
   },
   frank: {
     photo: frank,
@@ -451,6 +510,11 @@ const _members: { [key: string]: Member } = {
     photo: harsh_akunuri,
     name: "Harsh Akunuri",
     titles: [roles.clubCurriculum],
+  },
+  hassan: {
+    photo: hassan,
+    name: "Hassan	Ramadan",
+    titles: [roles.webdev],
   },
   ian: {
     photo: ian,
@@ -522,6 +586,12 @@ const _members: { [key: string]: Member } = {
     website: "https://juheonrhee.com",
     github: "jjliewie",
   },
+  justin_ji: {
+    photo: justin_ji,
+    name: "Justin Ji",
+    titles: [roles.contentAuthor],
+    codeforces: "eysbutno"
+  },
   justin_huang: {
     photo: justin_huang,
     name: "Justin Huang",
@@ -529,12 +599,12 @@ const _members: { [key: string]: Member } = {
     website: "https://jh316.me",
     github: "mjh316",
   },
-  vincent: {
-    photo: vincent,
-    name: "Vincent You",
-    titles: ["Director of Software", roles.webdev, roles.clubCurriculum],
-    github: "vinceyou1",
-    linkedin: "https://www.linkedin.com/in/vincent-you-3211a327a/"
+  kinan: {
+    photo: kinan,
+    name: "Kinan Saad",
+    titles: [roles.liveInstructor],
+    website: "https://icpc.global/ICPCID/W7BTHQ4RQ1AW",
+    codeforces: "USACOW",
   },
   maggie: {
     photo: maggie,
@@ -545,10 +615,15 @@ const _members: { [key: string]: Member } = {
     codeforces: "ml1234",
     email: "maggie.j.liu@gmail.com",
   },
+  max: {
+    photo: max,
+    name: "Max Yang",
+    titles: [roles.workshops, roles.liveInstructor],
+  },
   melody: {
     photo: melody,
     name: "Melody Yu",
-    titles: ["Executive", "Director of Outreach", roles.videoInstructor],
+    titles: ["President", "Director of Outreach", roles.videoInstructor, roles.workshops],
     github: "cskitty",
     website: "https://melodyyu.com/",
     email: "ocmelodyyu@gmail.com",
@@ -622,6 +697,11 @@ const _members: { [key: string]: Member } = {
     name: "Nikhil Chatterjee",
     titles: [roles.liveInstructor, roles.videoInstructor, roles.clubCurriculum],
   },
+  omar:{
+    photo: omar,
+    name: "Omar Elbayoumi",
+    titles: [roles.clubCurriculum]
+  },
   omar_ahmed: {
     photo: omar_ahmed,
     name: "Omar Ahmed",
@@ -643,7 +723,7 @@ const _members: { [key: string]: Member } = {
   peng: {
     photo: peng_bai,
     name: "Peng Bai",
-    titles: [roles.contentAuthor],
+    titles: [roles.contentAuthor, roles.liveInstructor],
     codeforces: "HaccerKat",
     github: "HaccerKat",
   },
@@ -659,6 +739,11 @@ const _members: { [key: string]: Member } = {
     titles: ["Director of Clubs", roles.clubCurriculum],
     github: "pranavgithub1",
     email: "pra168109@gmail.com",
+  },
+  rahul: {
+    photo: rahul_verma,
+    name: "Rahul Verma",
+    titles: [roles.liveInstructor, "Lead Bronze Instructor"]
   },
   ramit: {
     photo: ramit,
@@ -688,9 +773,27 @@ const _members: { [key: string]: Member } = {
       roles.liveInstructor,
       roles.videoInstructor,
       roles.contentAuthor,
+      roles.workshops
     ],
     github: "ryanchou-dev",
     website: "https://www.ryanchou.dev/",
+  },
+  ryan_fu: {
+    photo: ryan_fu,
+    name: "Ryan Fu",
+    titles: ["Director of Silver Classes", roles.liveInstructor]
+  },
+  sathvik: {
+    name: "Sathvik Chundru",
+    photo: sathvik,
+    titles: [roles.contentAuthor],
+    github: "sathu-beep",
+    codeforces: "sus",
+  },
+  satvika: {
+    name: "Satvika Sridhar",
+    photo: satvika,
+    titles: [roles.liveInstructor],
   },
   shikhar: {
     photo: shikhar,
@@ -711,6 +814,11 @@ const _members: { [key: string]: Member } = {
     github: "TruaShamu",
     titles: [roles.contentAuthor],
   },
+  srijith: {
+    photo: srijith,
+    name: "Srijith Chinthalapudi",
+    titles: [roles.liveInstructor, roles.videoInstructor, "Director of Self-Study Classes"]
+  },
   stanley: {
     photo: stanley,
     name: "Stanley Zhao",
@@ -719,10 +827,15 @@ const _members: { [key: string]: Member } = {
     email: "stanleyhzhao@gmail.com",
     website: "https://szhao.dev/",
   },
+  tatha: {
+    photo: tatha,
+    name: "Tatha Pandey",
+    titles: [roles.liveInstructor],
+  },
   trisha: {
     photo: trisha,
     name: "Trisha Sabadra",
-    titles: ["Director of Classes", roles.liveInstructor],
+    titles: ["Director of Classes", "Director of Bronze Classes", roles.liveInstructor],
   },
   varun: {
     photo: varun,
@@ -744,6 +857,13 @@ const _members: { [key: string]: Member } = {
     titles: [roles.liveInstructor, roles.videoInstructor],
     email: "vikas.thoutam@gmail.com",
   },
+  vincent: {
+    photo: vincent,
+    name: "Vincent You",
+    titles: ["Director of Software", roles.webdev, roles.clubCurriculum],
+    github: "vinceyou1",
+    linkedin: "https://www.linkedin.com/in/vincent-you-3211a327a/"
+  },
   vivian: {
     photo: vivian,
     name: "Vivian Han",
@@ -755,6 +875,11 @@ const _members: { [key: string]: Member } = {
     name: "Yifan Ma",
     titles: [roles.videoInstructor],
   },
+  zein: {
+    photo: zein,
+    name: "Zein Alabdeen Zammar",
+    titles: [roles.liveInstructor]
+  },
   lokesh: {
     photo: lokesh_pampatti,
     name: "Lokesh Pampatti",
@@ -762,7 +887,16 @@ const _members: { [key: string]: Member } = {
   },
 }
 
+// TODO: do something with this section
 const notPictured: Omit<Member, "photo">[] = [
+  {
+    name: "Chongtian Ma",
+    titles: [roles.contentAuthor, roles.workshops],
+  },
+  {
+    name: "Dylan Karpf",
+    titles: [roles.videoInstructor]
+  },
   {
     name: "Kevin Sheng",
     titles: ["Director of USACO Guide", roles.contentAuthor],
@@ -773,40 +907,50 @@ const notPictured: Omit<Member, "photo">[] = [
     titles: [roles.liveInstructor, roles.clubCurriculum],
     github: "therealshreyas",
   },
-  {
-    name: "Sathvik Chundru",
-    titles: [roles.contentAuthor],
-    github: "sathu-beep",
-    codeforces: "sus",
-  },
 ]
 
-const orderedFirstMembers: Member[] = [
+const board: Member[] = [
+  _members.benq,
   _members.nathanw,
   _members.darren,
-  _members.benq,
   _members.michael,
-  _members.maggie,
-  _members.melody,
-  _members.evan,
   _members.daniel,
-  _members.dong,
-  _members.varun,
   _members.andi,
   _members.andrew,
   _members.nathanc,
   _members.siyong,
+  _members.evan,
+  _members.maggie,
 ]
-const restOfMembers: Member[] = [
+
+const currentMembers: Member[] = [
+  // board
+  _members.nathanw,
+  _members.benq,
+
+  _members.melody,
+
   // usaco guide
+  _members.dong,
   _members.ryan,
   _members.tian,
   _members.peng,
+  _members.justin_ji,
 
   // classes
   _members.trisha,
+  _members.fnu,
+  _members.ryan_fu,
   _members.frank,
   _members.andrew_xu,
+  _members.max,
+  _members.avyan,
+  _members.satvika,
+  _members.rahul,
+  _members.tatha,
+  _members.srijith,
+  _members.kinan,
+  _members.zein,
 
   // video instructors
   _members.albert_jiang,
@@ -816,6 +960,10 @@ const restOfMembers: Member[] = [
   _members.eric,
   _members.rishabh,
   _members.akshat,
+  _members.aarav,
+  _members.hassan,
+  _members.aarush,
+  _members.audrey,
 
   // clubs n stuff
   _members.alex_wang,
@@ -824,6 +972,10 @@ const restOfMembers: Member[] = [
   _members.omar_ahmed,
   _members.lokesh,
   _members.harsh_akunuri,
+  _members.omar,
+  _members.alice,
+
+  _members.aakash,
 ]
 const formerMembers: Member[] = [
   _members.aditya,
@@ -871,6 +1023,7 @@ const formerMembers: Member[] = [
   _members.amy,
   _members.harry,
   _members.ananth,
+  _members.varun,
 ]
 
 function sortPeople(people: Member[]) {
@@ -883,7 +1036,7 @@ function sortPeople(people: Member[]) {
 }
 
 function sortByHierarchy(people: Member[]) {
-  const definedHierachy = ["Board", "Executive", "Director of", "Founding Member"]
+  const definedHierachy = ["Board", "President", "Director of", "Founding Member"]
   return people
     .map(a => {
       for (let i = 0; i < definedHierachy.length; ++i) {
@@ -912,9 +1065,7 @@ function sortByHierarchy(people: Member[]) {
 }
 
 export const members = {
-  activePeople: sortByHierarchy([
-    ...orderedFirstMembers,
-    ...sortPeople(restOfMembers),
-  ]),
+  board: sortByHierarchy(board),
+  activePeople: sortByHierarchy(currentMembers),
   formerMembers: sortPeople(formerMembers),
 }
