@@ -18,10 +18,10 @@ export default function Hero() {
                 </span>
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Want to learn how to solve the USACO December 2024 Bronze, Silver, and Gold
+                Want to learn how to solve the USACO December 2024 Bronze and Silver
                 Problems? Join this workshop on <b>December 21st</b> to gain a
-                better understanding of the solutions from the contest! The
-                problems will be solved live by USACO competitors from CPI
+                a better understanding of the solutions from the contest! The
+                problem solutions and intuition will be covered by USACO competitors from CPI
                 at <b>1pm PST (4pm EST)</b>!
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
