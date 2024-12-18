@@ -46,7 +46,7 @@ const workshops: Workshop[] = [
   {
     photo: Dec24,
     title: "USACO December 2024 Contest Solutions",
-    description: "This Saturday, learn how to solve USACO Bronze/Silver/Gold problems!",
+    description: "This Saturday, learn how to solve USACO Bronze/Silver problems!",
     date: dayjs("Dec 21, 2024 1:00:00 PM PST"),
     season: "2024-2025",
     url: "dec24",
