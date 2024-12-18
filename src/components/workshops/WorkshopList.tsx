@@ -28,7 +28,7 @@ export default function WorkshopList() {
               placeholder="blur"
               objectFit="cover"
               className="rounded-lg"
-              width="400px"
+              width="300px"
             />
           </div>
           <div className="flex justify-center mt-8">
