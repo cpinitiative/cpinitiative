@@ -24,6 +24,9 @@ export default function Hero() {
                 problem solutions and intuition will be covered by USACO competitors from CPI
                 at <b>1pm PST (4pm EST)</b>!
               </p>
+              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
+                Click <a className="text-blue-600 hover:text-blue-400 transition-colors duration-300" href="https://us06web.zoom.us/j/83247198450">here</a> to join the Zoom!
+              </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
