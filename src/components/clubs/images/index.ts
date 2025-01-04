@@ -173,6 +173,20 @@ import nova_high from "./nova_high.jpg"
 import delhi_tech from "./delhi_tech.jpg"
 import stephen_lewis_secondary from "./stephen_lewis_secondary.jpg"
 import ballantyne from "./ballantyne.jpg"
+import steveston_london from "./steveston_london.jpg"
+import centennial_maryland from "./centennial_maryland.jpg"
+import cmu_qatar from "./cmu_qatar.jpg"
+import srit from "./srit.jpeg"
+import new_beginning from "./new_beginning.jpg"
+import iit_kanpur from "./IIT_Kanpur.jpg"
+import gujrat from "./gujrat.jpg"
+import ramdeobaba from "./ramdeobaba.jpeg"
+import newmarket from "./newmarket.jpeg"
+import smart_village from "./smart_village.png"
+import addis_ababa from "./addis_ababa.jpg"
+import delhi_skill from "./delhi_skill.jpg"
+import portage_central from "./portage_central.jpg"
+import wakeland from "./wakeland.jpg"
 
 export {
   algonquin,
@@ -349,5 +363,19 @@ export {
   nova_high,
   delhi_tech,
   stephen_lewis_secondary,
-  ballantyne
+  ballantyne,
+  steveston_london,  
+  centennial_maryland,  
+  cmu_qatar,  
+  srit,  
+  new_beginning,  
+  iit_kanpur,  
+  gujrat,  
+  ramdeobaba,  
+  newmarket,  
+  smart_village,  
+  addis_ababa,  
+  delhi_skill,  
+  portage_central,  
+  wakeland,
 }
