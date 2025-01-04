@@ -862,6 +862,77 @@ const clubs: {
   { name: "Delhi Technological University", photo: img.delhi_tech, region: "New Delhi" },
   { name: "Stephen Lewis Secondary School", photo: img.stephen_lewis_secondary, region: "Canada" },
   { name: "Ballantyne Ridge High School", photo: img.ballantyne, region: "North Carolina" },
+  {
+    name: "Steveston-London Secondary School",
+    photo: img.steveston_london,
+    region: "Canada",
+  },
+  {
+    name: "Centennial High School",
+    photo: img.centennial_maryland,
+    region: "Maryland",
+  },
+  {
+    name: "Carnegie Mellon University in Qatar",
+    photo: img.cmu_qatar,
+    region: "Qatar",
+  },
+  {
+    name: "Sri Ramakrishna Institute of Technology",
+    photo: img.srit,
+    region: "India",
+  },
+  {
+    name: "New Beginning International Laboratory School",
+    photo: img.new_beginning,
+    region: "Mongolia",
+  },
+  {
+    name: "IIT Kanpur",
+    photo: img.iit_kanpur,
+    region: "India",
+  },
+  {
+    name: "University of Gujrat",
+    photo: img.gujrat,
+    region: "Pakistan",
+  },
+  {
+    name: "Ramdeobaba University (RBU)",
+    photo: img.ramdeobaba,
+    region: "India",
+  },
+  {
+    name: "Newmarket High School",
+    photo: img.newmarket,
+    region: "Canada",
+  },
+  {
+    name: "Arab Academy for Science, Technology & Maritime Transport, Smart Village Campus",
+    photo: img.smart_village,
+    region: "Egypt",
+  },
+  {
+    name: "Addis Ababa Science and Technology University",
+    photo: img.addis_ababa,
+    region: "Ethiopia",
+  },
+  {
+    name: "Delhi Skill and Entrepreneurship University",
+    photo: img.delhi_skill,
+    region: "India",
+  },
+  {
+    name: "Portage Central High School",
+    photo: img.portage_central,
+    region: "Michigan",
+  },
+  {
+    name: "Wakeland High School",
+    photo: img.wakeland,
+    region: "Texas",
+  },
+
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
