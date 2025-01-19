@@ -13,6 +13,7 @@ import {
   tjioi,
   wwpit,
   indigo,
+  aclit,
 }  from "./images"
 import Image, { StaticImageData } from "next/legacy/image"
 dayjs.extend(customParseFormat)
@@ -47,6 +48,12 @@ const contests: {
   link: string,
   desc: string,
 }[] = [
+  {
+    name: "Academies of Loudoun Informatics Tournament (ACLit)",
+    photo: aclit,
+    link: "https://www.aclit.org/",
+    desc: "The Academies of Loudoun Informatics Tournament (ACLit) is an annual programming contest that challenges middle and high school students to develop their analytical and critical thinking skills through the exciting medium of computer science."
+  },
   {
     name: "TJ Invitational Open In Informatics (TJIOI)",
     photo: tjioi,
