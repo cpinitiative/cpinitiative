@@ -13,6 +13,7 @@ import bapc from "./bapc.png"
 import calico from "./calico.png"
 import wwpit from "./wwpit.png"
 import indigo from "./indigo.png"
+import aclit from "./aclit.png"
 
 export {
   placeholder,
@@ -28,5 +29,6 @@ export {
   bapc,
   calico,
   wwpit,
-  indigo
+  indigo,
+  aclit,
 }
