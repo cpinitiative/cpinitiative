@@ -774,6 +774,7 @@ const _members: { [key: string]: Member } = {
     photo: ryan,
     name: "Ryan Chou",
     titles: [
+      "President",
       "Director of USACO Guide",
       roles.liveInstructor,
       roles.videoInstructor,
