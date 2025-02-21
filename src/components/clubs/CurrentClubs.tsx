@@ -92,6 +92,11 @@ const clubs: {
     region: "Texas",
   },
   {
+    name: "Boston Latin School",
+    photo: img.boston_latin,
+    region: "Massachusetts",
+  },
+  {
     name: "Delhi Public School Agra",
     photo: img.dps_agra,
     region: "India",
