@@ -14,16 +14,15 @@ const CONTEST_SOLUTIONS_FILE = "tournament_2024_solutions.zip"
 
 import waveSVG from "../images/wave.svg"
 
-
 const tournament_info = {
   standard: {
     name: "Standard",
     description:
       "For competitors at the USACO Bronze or Silver level, and rated under 1600 on Codeforces.",
     prizes: [
-      "1st Place: $150 USD",
-      "2nd Place: $100 USD",
-      "3rd Place: $50 USD",
+      "1st Place: $75 USD",
+      "2nd Place: $50 USD",
+      "3rd Place: $25 USD",
       "4th-8th Place: $15 USD",
     ],
   },
@@ -101,7 +100,6 @@ function Card({
 }
 
 export default function Tournament() {
-
   return (
     <Layout>
       <SEO
@@ -111,58 +109,36 @@ export default function Tournament() {
 
       <Header dark noBanner />
 
-        <main className="min-h-screen">
-          <div className="flex-1  bg-gray-900 relative pb-24 md:pb-40 lg:pb-48 xl:pb-72 2xl:pb-96 flex flex-col lg:flex-row items-center justify-evenly animate mt-16 text-gray-300">
-            <div className="flex flex-col lg:mb-16 mt-6 lg:mt-12">
-              <h1 className="text-4xl text-white md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl tracking-tight font-bold mx-auto pt-12 text-center">
-                <span className=" from-purple-700 to-blue-300 bg-gradient-to-b text-transparent bg-clip-text">
-                  USACO.Guide
-                </span>
-                <br /> Informatics Tournament
-              </h1>
-              <h2 className="text-lg text-gray-500 font-semibold md:text-xl lg:text-2xl pt-4 pb-2 py-4 mx-auto text-center">
-                Saturday, March 2nd, 2024 <br /> 10 AM - 1 PM PST
-              </h2>
-              <div className="flex flex-col items-stretch  ml-auto mr-auto">
-                <div className="flex w-full justify-around gap-x-2 mx-auto">
-                  <Link
-                    className="text-center flex-grow mx-auto text-white bg-[#8976ff]/100 rounded-lg focus:translate-y-1 hover:underline transition-all duration-150 mt-4 2xl:text-xl lg:text-lg text-base px-8 py-2"
-                    href="/tournament/2024-results"
-                  >
-                    Results &rarr;
-                  </Link>
-                  <Link
-                    className="text-center mx-auto text-white bg-[#8976ff]/40 rounded-lg focus:translate-y-1 hover:underline transition-all duration-150 mt-4 2xl:text-xl lg:text-lg text-base px-8 py-2"
-                    href={"https://codeforces.com/contests/105009"}
-                  >
-                    View problems &rarr;
-                  </Link>
-                </div>
-                <div className=" flex justify-around gap-x-2 w-fit mx-auto my-2">
-                  <Link
-                    href={"/" + CONTEST_EDITORIAL_FILE}
-                    className="text-center mx-auto text-white bg-[#8976ff]/60 rounded-lg focus:translate-y-1 hover:underline transition-all duration-150 2xl:text-xl lg:text-lg text-base px-8 py-2"
-                  >
-                    View Editorial &rarr;
-                  </Link>
-                  <Link
-                    href={"/" + CONTEST_SOLUTIONS_FILE}
-                    className="text-center mx-auto text-white bg-[#8976ff]/80 rounded-lg focus:translate-y-1 hover:underline transition-all duration-150 2xl:text-xl lg:text-lg text-base px-8 py-2"
-                  >
-                    Download Solutions &rarr;
-                  </Link>
-                </div>
-              </div>
-              
+      <main className="min-h-screen">
+        <div className="flex-1  bg-gray-900 relative pb-24 md:pb-40 lg:pb-48 xl:pb-72 2xl:pb-96 flex flex-col lg:flex-row items-center justify-evenly animate mt-16 text-gray-300">
+          <div className="flex flex-col lg:mb-16 mt-6 lg:mt-12">
+            <h1 className="text-4xl text-white md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl tracking-tight font-bold mx-auto pt-12 text-center">
+              <span className=" from-purple-700 to-blue-300 bg-gradient-to-b text-transparent bg-clip-text">
+                USACO.Guide
+              </span>
+              <br /> Informatics Tournament
+            </h1>
+            <h2 className="text-lg text-gray-500 font-semibold md:text-xl lg:text-2xl pt-4 pb-2 py-4 mx-auto text-center">
+              Saturday, March 2nd, 2025 <br /> 10:30 AM - 1:30 PM PDT
+            </h2>
+            <div className="flex flex-col items-stretch  ml-auto mr-auto">
               <Link
-                className="font-medium underline underline-offset-4 hover:opacity-60 mx-auto pt-2 transition-opacity duration-150"
-                href={"https://discord.gg/SutDSVX6Zt"}
+                className="text-center flex-grow mx-auto text-white bg-[#8976ff]/100 rounded-lg focus:translate-y-1 hover:underline transition-all duration-150 mt-4 2xl:text-xl lg:text-lg text-base px-12 py-2"
+                href="http://contest.joincpi.org:8080"
               >
-                Join our Discord Server &rarr;
+                Register now!
               </Link>
             </div>
-            <div className="flex-1 bg-gray-900 flex flex-col max-w-fit">
-              {/* <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl px-10 text-center pt-6 pb-6 py-4">
+
+            <Link
+              className="font-medium underline underline-offset-4 hover:opacity-60 mx-auto pt-2 transition-opacity duration-150"
+              href={"https://discord.gg/SutDSVX6Zt"}
+            >
+              Join our Discord Server &rarr;
+            </Link>
+          </div>
+          <div className="flex-1 bg-gray-900 flex flex-col max-w-fit">
+            {/* <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl px-10 text-center pt-6 pb-6 py-4">
                         The USACO.Guide Informatics Tournament is a programming contest for precollege students hosted by the USACO.Guide and CP Initiative.
                     </h2> */}
             {/*
@@ -215,14 +191,14 @@ export default function Tournament() {
             .
           </div>
           <div className="lg:basis-1/3   font-medium mx-auto text-xl md:text-2xl text-center">
-            The contest is over now, <br/> check out the results {" "}
+            The contest is over now, <br /> check out the results{" "}
             <a
               href="/tournament/2024-results"
               target="_blank"
               rel="noreferrer"
               className="font-bold text-blue-700"
             >
-            here
+              here
             </a>
             .
           </div>
@@ -403,6 +379,29 @@ export default function Tournament() {
           </div>
         </section>
         <h1 className="text-center mt-16 text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight bg-gradient-to-br from-purple-400 to-blue-600 bg-clip-text text-transparent">
+          Past Contests
+        </h1>
+        <div className=" mt-6 flex justify-center items-center">
+          <div className="mx-8  ">
+            <Link
+              href="/tournament/2024-results"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="font-bold border-4 border-[#8976ff] hover:grow hover:scale-105 duration-200  bg-white text-black max-w-2xl  px-8 text-center md:text-xl text-lg py-6  rounded-lg">
+                <div className="w-full px-8">
+                  2024{" "}
+                  <span className=" from-purple-700 to-blue-500 bg-gradient-to-b text-transparent bg-clip-text">
+                    USACO.Guide
+                  </span>{" "}
+                  Informatics Tournament
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+
+        <h1 className="text-center mt-16 text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight bg-gradient-to-br from-purple-400 to-blue-600 bg-clip-text text-transparent">
           Questions?
         </h1>
         <h2 className="text-xl lg:text-3xl text-center font-medium py-6 tracking-tight">
@@ -431,4 +430,4 @@ function timeLeftString(milliseconds: number) {
   return [days, hours, minutes, seconds]
   // return `${days} day${days === 1 ? '' : 's'}, ${hours} hour${hours === 1 ? '' : 's'}, ${minutes} minute${minutes === 1 ? '' : 's'}, and ${seconds} second${seconds === 1 ? '' : 's'} until the start of the contest.`;
 }
-// 
+//
