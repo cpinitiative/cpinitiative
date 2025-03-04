@@ -187,6 +187,7 @@ import addis_ababa from "./addis_ababa.jpg"
 import delhi_skill from "./delhi_skill.jpg"
 import portage_central from "./portage_central.jpg"
 import wakeland from "./wakeland.jpg"
+import boston_latin from "./boston_latin.jpg"
 
 export {
   algonquin,
@@ -201,6 +202,7 @@ export {
   bhfles,
   blue_ridge_boost,
   bits,
+  boston_latin,
   bourguiba_pioneer,
   branham,
   brigham_young,
