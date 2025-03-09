@@ -63,6 +63,7 @@ import {
   peng_bai,
   tian,
   pranav,
+  rameez_parwez,
   ramit,
   riley,
   rishabh,
@@ -750,6 +751,13 @@ const _members: { [key: string]: Member } = {
     name: "Rahul Verma",
     titles: [roles.liveInstructor, "Lead Bronze Instructor"],
   },
+  rameez_parwez: {
+    photo: rameez_parwez,
+    name: "Rameez Parwez",
+    titles: [roles.contentAuthor],
+    github: "_sosuke23",
+    codeforces: "sosuke23",
+  },
   ramit: {
     photo: ramit,
     name: "Ramit Goyal",
@@ -950,6 +958,7 @@ const currentMembers: Member[] = [
   _members.tian,
   _members.peng,
   _members.justin_ji,
+  _members.rameez_parwez,
 
   // classes
   _members.trisha,
