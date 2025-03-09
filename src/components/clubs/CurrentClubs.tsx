@@ -937,6 +937,91 @@ const clubs: {
     photo: img.wakeland,
     region: "Texas",
   },
+  {
+    name: "Bangalore Institute of Technology",
+    photo: img.bangalore_institute_tech,
+    region: "India",
+  },
+  {
+    name: "Leander High School",
+    photo: img.leander_hs,
+    region: "Texas",
+  },
+  {
+    name: "Stratford Preparatory",
+    photo: img.stratford_prep,
+    region: "California",
+  },
+  {
+    name: "Brookline High School",
+    photo: img.brookline_hs,
+    region: "Massachusetts",
+  },
+  {
+    name: "St. Stephen's Episcopal School",
+    photo: img.st_stephens_episcopal,
+    region: "Texas",
+  },
+  {
+    name: "Los Gatos High School",
+    photo: img.los_gatos_hs,
+    region: "California",
+  },
+  {
+    name: "Redding School of the Arts",
+    photo: img.redding_school_arts,
+    region: "California",
+  },
+  {
+    name: "American School Foundation of Monterrey",
+    photo: img.amer_school_monterrey,
+    region: "Mexico",
+  },
+  {
+    name: "Rajkiya Engineering College Sonbhadra",
+    photo: img.rajkiya_eng_college,
+    region: "India",
+  },
+  {
+    name: "Leading University",
+    photo: img.leading_uni,
+    region: "Bangladesh",
+  },
+  {
+    name: "School of Electrical Engineering and Computer Sciences",
+    photo: img.electrical_eng_comp_sci,
+    region: "Pakistan",
+  },
+  {
+    name: "Rouse High School",
+    photo: img.rouse_hs,
+    region: "Texas",
+  },
+  {
+    name: "S. V. National Institute of Technology",
+    photo: img.sv_national_inst_tech,
+    region: "India",
+  },
+  {
+    name: "Watchung Hills Regional High School",
+    photo: img.watchung_hills_hs,
+    region: "New Jersey",
+  },
+  {
+    name: "FCS Innovation Academy",
+    photo: img.fcs_innovation_acad,
+    region: "Georgia",
+  },
+  {
+    name: "1337 Rabat",
+    photo: img._1337_rabat,
+    region: "Morocco",
+  },
+  {
+    name: "Adama Science and Technology University",
+    photo: img.adama_sci_tech_uni,
+    region: "Ethiopia",
+  },
 
 ].sort((x, y) => x.name.localeCompare(y.name))
 
