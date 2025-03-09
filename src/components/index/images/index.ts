@@ -82,6 +82,7 @@ import omar_ahmed from "./omar_ahmed.jpeg"
 import oscar from "./oscar.png"
 import pranav from "./pranav.png"
 import rahul_verma from "./rahul_verma.png"
+import rameez_parwez from "./rameez_parwez.jpg"
 import ramit from "./ramit.jpg"
 import rayna from "./rayna.jpeg"
 import riley from "./riley.jpg"
@@ -202,6 +203,7 @@ export {
   oscar,
   pranav,
   rahul_verma,
+  rameez_parwez,
   ramit,
   rayna,
   riley,
