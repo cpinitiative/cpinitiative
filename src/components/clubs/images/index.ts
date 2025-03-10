@@ -188,6 +188,23 @@ import delhi_skill from "./delhi_skill.jpg"
 import portage_central from "./portage_central.jpg"
 import wakeland from "./wakeland.jpg"
 import boston_latin from "./boston_latin.jpg"
+import bangalore_institute_tech from "./bangalore_institute_tech.jpg";
+import leander_hs from "./leander_hs.jpg";
+import stratford_prep from "./stratford_prep.jpg";
+import brookline_hs from "./brookline_hs.jpeg";
+import st_stephens_episcopal from "./st_stephens_episcopal.jpg";
+import los_gatos_hs from "./los_gatos_hs.jpg";
+import redding_school_arts from "./redding_school_arts.jpg";
+import amer_school_monterrey from "./amer_school_monterrey.jpg";
+import rajkiya_eng_college from "./rajkiya_eng_college.jpg";
+import leading_uni from "./leading_uni.jpg";
+import electrical_eng_comp_sci from "./electrical_eng_comp_sci.jpg";
+import rouse_hs from "./rouse_hs.jpg";
+import sv_national_inst_tech from "./sv_national_inst_tech.jpeg";
+import watchung_hills_hs from "./watchung_hills_hs.jpeg";
+import fcs_innovation_acad from "./fcs_innovation_acad.jpg";
+import _1337_rabat from "./_1337_rabat.jpg";
+import adama_sci_tech_uni from "./adama_sci_tech_uni.jpeg";
 
 export {
   algonquin,
@@ -380,4 +397,21 @@ export {
   delhi_skill,  
   portage_central,  
   wakeland,
+  bangalore_institute_tech,
+  leander_hs,
+  stratford_prep,
+  brookline_hs,
+  st_stephens_episcopal,
+  los_gatos_hs,
+  redding_school_arts,
+  amer_school_monterrey,
+  rajkiya_eng_college,
+  leading_uni,
+  electrical_eng_comp_sci,
+  rouse_hs,
+  sv_national_inst_tech,
+  watchung_hills_hs,
+  fcs_innovation_acad,
+  _1337_rabat,
+  adama_sci_tech_uni,
 }
