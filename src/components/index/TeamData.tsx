@@ -755,7 +755,7 @@ const _members: { [key: string]: Member } = {
     photo: rameez_parwez,
     name: "Rameez Parwez",
     titles: [roles.contentAuthor],
-    github: "_sosuke23",
+    github: "Sosuke23",
     codeforces: "sosuke23",
   },
   ramit: {
