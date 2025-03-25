@@ -18,6 +18,7 @@ import Jan24 from "../../images/workshops/jan24.png"
 import Feb24 from "../../images/workshops/feb24.jpg"
 import Open24 from "../../images/workshops/open24.jpg"
 import Dec24 from "../../images/workshops/dec24.png"
+import Setting25 from "../../images/workshops/setting25.png"
 // import Dec23Thumbnail from "../../images/workshops/dec23thumbnail.png"
 
 export type Workshop = {
@@ -43,6 +44,15 @@ const themeColors = {
 }
 
 const workshops: Workshop[] = [
+  {
+    photo: Setting25,
+    title: "Problemsetting Panel Discussion",
+    description: "Watch USACO Problemsetters discuss contest creation and answer your Q&A—live!",
+    date: dayjs("Apr 12, 2025 1:00:00 PM PST"),
+    season: "2024-2025",
+    url: "setting25",
+    themeColor: themeColors.blue
+  },
   {
     photo: Dec24,
     title: "USACO December 2024 Contest Solutions",
