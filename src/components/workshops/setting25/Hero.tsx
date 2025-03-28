@@ -10,7 +10,7 @@ export default function Hero() {
           <main className="pt-10 mx-auto max-w-screen-xl px-4 sm:pt-12 sm:px-6 md:pt-16 lg:pt-18 lg:px-8 xl:pt-24 grid grid-cols-1 lg:grid-cols-5 items-start gap-8">
             <div className="sm:text-center lg:text-left lg:col-span-2">
               <div className="text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
-                April 12th
+                April 13th
               </div>
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                 <span className="text-blue-700">
@@ -19,7 +19,7 @@ export default function Hero() {
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                 Want to see how USACO contests are made? Watch Problemsetters discuss their process and answer your questions—live!<br></br>
-                <b>April 12th 1pm PST (4pm EST)</b>!
+                <b>April 13th 1pm PST (4pm EST)</b>!
               </p>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                 Click <a className="text-blue-600 hover:text-blue-400 transition-colors duration-300" href="https://us06web.zoom.us/j/82701059751">here</a> to join the Zoom!

@@ -48,7 +48,7 @@ const workshops: Workshop[] = [
     photo: Setting25,
     title: "Problemsetting Panel Discussion",
     description: "Watch USACO problemsetters discuss contest creation and answer your Q&A—live!",
-    date: dayjs("Apr 12, 2025 1:00:00 PM PST"),
+    date: dayjs("Apr 13, 2025 1:00:00 PM PST"),
     season: "2024-2025",
     url: "setting25",
     themeColor: themeColors.blue
