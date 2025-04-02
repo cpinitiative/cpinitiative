@@ -11,7 +11,7 @@ export default function USACOFebruary() {
       <SEO
         image="../../images/workshops/setting25.png"
         title="Problemsetting Panel Discussion"
-        description="Watch USACO Problemsetters discuss problem creation and answer your Q&A—live!"
+        description="Watch USACO Problemsetters discuss contest creation and answer your Q&A—live!"
       />
       <Header noBanner />
       <div className="margin-top-nav" />
