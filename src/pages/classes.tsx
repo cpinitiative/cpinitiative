@@ -507,12 +507,12 @@ export default function Classes() {
                   <h3>Class Schedule</h3>
                   <ul>
                     <li>
-                      Bronze: Sundays during <b>February 9th - April 27th</b> from
+                      Bronze: Sundays during <b>June 15th - Aug 17th</b> from
                       5:00 PM - 7:00 PM PDT
                     </li>
                     <li>
-                      Silver: Saturdays during <b>February 8th - April 26th</b> from 4:00
-                      PM - 6:00 PM PDT
+                      Silver: Saturdays during <b>June 14th - Aug 16th</b> from
+                      4:00 PM - 6:00 PM PDT
                     </li>
                   </ul>
                   {/* <p>Classes will skip USACO weekends (Feb 17/18 and March 16/17)</p> */}
