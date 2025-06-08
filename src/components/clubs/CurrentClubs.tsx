@@ -768,6 +768,36 @@ const clubs: {
     region: "India",
   },
   {
+    name: "BITS Pilani, Pilani Campus",
+    photo: img.bits_pilani_pilani,
+    region: "India",
+  },
+  {
+    name: "Hunter College High School",
+    photo: img.hunter_college_hs,
+    region: "New York",
+  },
+  {
+    name: "Nicolet High School",
+    photo: img.nicolet_hs,
+    region: "Wisconsin",
+  },
+  {
+    name: "The Village School",
+    photo: img.village_school,
+    region: "Texas",
+  },
+  {
+    name: "Vestavia Hills High School",
+    photo: img.vestavia_hills_hs,
+    region: "Alabama",
+  },
+  {
+    name: "Walchand College of Engineering, Sangli",
+    photo: img.walchand_college,
+    region: "India",
+  },
+  {
     name: "Solon High School",
     photo: img.solon_high,
     region: "Ohio",
