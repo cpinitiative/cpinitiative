@@ -179,7 +179,7 @@ const clubs: {
   {
     name: "BITS School",
     photo: img.bits,
-    region: "Goa",
+    region: "India",
   },
   {
     name: "Bourguiba Pinoeer High school of Tunis",
