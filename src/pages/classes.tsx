@@ -507,11 +507,11 @@ export default function Classes() {
                   <h3>Class Schedule</h3>
                   <ul>
                     <li>
-                      Bronze: Sundays during <b>June 15th - Aug 17th</b> from
+                      Bronze: Sundays during <b>June 22th - Aug 24th</b> from
                       5:00 PM - 7:00 PM PDT
                     </li>
                     <li>
-                      Silver: Saturdays during <b>June 14th - Aug 16th</b> from
+                      Silver: Saturdays during <b>June 21st - Aug 23rd</b> from
                       4:00 PM - 6:00 PM PDT
                     </li>
                   </ul>
