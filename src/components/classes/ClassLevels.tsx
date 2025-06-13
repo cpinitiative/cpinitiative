@@ -45,7 +45,7 @@ export default function ClassLevels() {
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
                     {[
-                      "Sundays, 5-7pm PDT during 2/9/25 to 4/27/25.",
+                      "Sundays, 5-7pm PDT during 6/22/25 to 8/24/25.",
                       "File / Fast I/O",
                       "Time Complexity",
                       "Data Structures and Simulation",
@@ -117,7 +117,7 @@ export default function ClassLevels() {
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
                     {[
-                      "Saturdays, 4-6pm PDT during 2/8/25 to 4/26/25.",
+                      "Saturdays, 4-6pm PDT during 6/21/25 to 8/23/25.",
                       "Prefix Sums",
                       "Sorting with Custom Comparators",
                       "Two Pointers",
