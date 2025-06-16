@@ -52,7 +52,7 @@ export default async function approveFinancialAid(
       }),
       db
         .collection("classes-registration")
-        .doc("2025june")
+        .doc("2025feb")
         .collection("registrations")
         .doc(registrationId)
         .update({
