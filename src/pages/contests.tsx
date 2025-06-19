@@ -196,8 +196,8 @@ export default function Contests() {
                 </h3>
                 <p className="text-gray-600">
                   Email{" "}
-                  <a href="mailto:aakashgokhale@joincpi.org" className="underline">
-                    aakashgokhale@joincpi.org
+                  <a href="mailto:rohangarg@joincpi.org" className="underline">
+                    rohangarg@joincpi.org
                   </a>{" "}
                   with information about your contest to apply.
                 </p>
