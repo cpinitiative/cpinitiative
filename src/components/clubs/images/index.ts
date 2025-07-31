@@ -211,6 +211,12 @@ import watchung_hills_hs from "./watchung_hills_hs.jpeg";
 import fcs_innovation_acad from "./fcs_innovation_acad.jpg";
 import _1337_rabat from "./_1337_rabat.jpg";
 import adama_sci_tech_uni from "./adama_sci_tech_uni.jpeg";
+import nat_uni_colombia from "./nat_uni_colombia.jpg";
+import cypress_hs from "./cypress_hs.jpg";
+import thu from "./thu.png";
+import nit_manipur from "./nit_manipur.jpg";
+import sreenidhi_institute from "./sreenidhi_institute.png";
+import berkner_hs from "./berkner_hs.jpg";
 
 export {
   algonquin,
@@ -426,4 +432,10 @@ export {
   fcs_innovation_acad,
   _1337_rabat,
   adama_sci_tech_uni,
+  nat_uni_colombia,
+  cypress_hs,
+  thu,
+  nit_manipur,
+  sreenidhi_institute,
+  berkner_hs,
 }
