@@ -211,6 +211,16 @@ import watchung_hills_hs from "./watchung_hills_hs.jpeg";
 import fcs_innovation_acad from "./fcs_innovation_acad.jpg";
 import _1337_rabat from "./_1337_rabat.jpg";
 import adama_sci_tech_uni from "./adama_sci_tech_uni.jpeg";
+import hanford_high from "./hanford_high.jpg"
+import instituto_superior_politecnico from "./instituto_superior_politecnico.jpg"
+import dr_dy_patil_institute from "./dr_dy_patil_institute.png"
+import cfi_robotics_nfp from "./cfi_robotics_nfp.png"
+import west_lafayette_jr_sr from "./west_lafayette_jr_sr.jpeg"
+import university_of_georgia from "./university_of_georgia.png"
+import dhaka_international_university from "./dhaka_international_university.jpeg"
+import basis_independent_mclean from "./basis_independent_mclean.png"
+import stratford_hs_tx from "./stratford_hs_tx.png"
+import carroll_middle_school from "./carroll_middle_school.png"
 import nat_uni_colombia from "./nat_uni_colombia.jpg";
 import cypress_hs from "./cypress_hs.jpg";
 import thu from "./thu.png";
@@ -432,6 +442,16 @@ export {
   fcs_innovation_acad,
   _1337_rabat,
   adama_sci_tech_uni,
+  hanford_high,
+  instituto_superior_politecnico,
+  dr_dy_patil_institute,
+  cfi_robotics_nfp,
+  west_lafayette_jr_sr,
+  university_of_georgia,
+  dhaka_international_university,
+  basis_independent_mclean,
+  stratford_hs_tx,
+  carroll_middle_school,
   nat_uni_colombia,
   cypress_hs,
   thu,

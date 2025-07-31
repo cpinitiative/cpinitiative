@@ -1077,6 +1077,56 @@ const clubs: {
     photo: img.adama_sci_tech_uni,
     region: "Ethiopia",
   },
+  {
+    name: "Hanford High School",
+    photo: img.hanford_high,
+    region: "California",
+  },
+  {
+    name: "Instituto Superior Politécnico",
+    photo: img.instituto_superior_politecnico,
+    region: "Angola",
+  },
+  {
+    name: "Dr. D.Y. Patil Institute",
+    photo: img.dr_dy_patil_institute,
+    region: "India",
+  },
+  {
+    name: "CFI Robotics NFP",
+    photo: img.cfi_robotics_nfp,
+    region: "Illinois",
+  },
+  {
+    name: "West Lafayette Junior/Senior High School",
+    photo: img.west_lafayette_jr_sr,
+    region: "Indiana",
+  },
+  {
+    name: "University of Georgia",
+    photo: img.university_of_georgia,
+    region: "Georgia",
+  },
+  {
+    name: "Dhaka International University",
+    photo: img.dhaka_international_university,
+    region: "Bangladesh",
+  },
+  {
+    name: "BASIS Independent McLean",
+    photo: img.basis_independent_mclean,
+    region: "Virginia",
+  },
+  {
+    name: "Stratford High School Texas",
+    photo: img.stratford_hs_tx,
+    region: "Texas",
+  },
+  {
+    name: "Carroll Middle School",
+    photo: img.carroll_middle_school,
+    region: "Texas",
+  },
 
 ].sort((x, y) => x.name.localeCompare(y.name))
 
