@@ -10,6 +10,12 @@ import beverly_hills from "./beverly_hills.jpg"
 import bhfles from "./bhfles.jpeg"
 import blue_ridge_boost from "./blue_ridge_boost.jpg"
 import bits from "./bits.jpg"
+import bits_pilani_pilani from "./bits_pilani.jpeg"
+import hunter_college_hs from "./hunter_college.jpeg"
+import nicolet_hs from "./nicolet_hs.png"
+import village_school from "./village_school.jpg"
+import vestavia_hills_hs from "./vestavia_hills.jpg"
+import walchand_college from "./walchand.png"
 import bourguiba_pioneer from "./bourguiba_pioneer.jpeg"
 import branham from "./branham.png"
 import brigham_young from "./brigham_young.jpeg"
@@ -219,6 +225,12 @@ export {
   bhfles,
   blue_ridge_boost,
   bits,
+  bits_pilani_pilani,
+  hunter_college_hs,
+  nicolet_hs,
+  village_school,
+  vestavia_hills_hs,
+  walchand_college,
   boston_latin,
   bourguiba_pioneer,
   branham,
