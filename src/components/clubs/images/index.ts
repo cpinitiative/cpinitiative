@@ -10,6 +10,12 @@ import beverly_hills from "./beverly_hills.jpg"
 import bhfles from "./bhfles.jpeg"
 import blue_ridge_boost from "./blue_ridge_boost.jpg"
 import bits from "./bits.jpg"
+import bits_pilani_pilani from "./bits_pilani.jpeg"
+import hunter_college_hs from "./hunter_college.jpeg"
+import nicolet_hs from "./nicolet_hs.png"
+import village_school from "./village_school.jpg"
+import vestavia_hills_hs from "./vestavia_hills.jpg"
+import walchand_college from "./walchand.png"
 import bourguiba_pioneer from "./bourguiba_pioneer.jpeg"
 import branham from "./branham.png"
 import brigham_young from "./brigham_young.jpeg"
@@ -215,7 +221,12 @@ import dhaka_international_university from "./dhaka_international_university.jpe
 import basis_independent_mclean from "./basis_independent_mclean.png"
 import stratford_hs_tx from "./stratford_hs_tx.png"
 import carroll_middle_school from "./carroll_middle_school.png"
-
+import nat_uni_colombia from "./nat_uni_colombia.jpg";
+import cypress_hs from "./cypress_hs.jpg";
+import thu from "./thu.png";
+import nit_manipur from "./nit_manipur.jpg";
+import sreenidhi_institute from "./sreenidhi_institute.png";
+import berkner_hs from "./berkner_hs.jpg";
 
 export {
   algonquin,
@@ -230,6 +241,12 @@ export {
   bhfles,
   blue_ridge_boost,
   bits,
+  bits_pilani_pilani,
+  hunter_college_hs,
+  nicolet_hs,
+  village_school,
+  vestavia_hills_hs,
+  walchand_college,
   boston_latin,
   bourguiba_pioneer,
   branham,
@@ -435,4 +452,10 @@ export {
   basis_independent_mclean,
   stratford_hs_tx,
   carroll_middle_school,
+  nat_uni_colombia,
+  cypress_hs,
+  thu,
+  nit_manipur,
+  sreenidhi_institute,
+  berkner_hs,
 }

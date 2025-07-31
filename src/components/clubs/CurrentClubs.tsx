@@ -41,6 +41,36 @@ const clubs: {
   region: string
 }[] = [
   {
+    name: "National University of Colombia",
+    photo: img.nat_uni_colombia,
+    region: "Colombia",
+  },
+  {
+    name: "Cypress Bay High School",
+    photo: img.cypress_hs,
+    region: "Florida",
+  },
+  {
+    name: "Tsinghua University",
+    photo: img.thu,
+    region: "China",
+  },
+  {
+    name: "National Institute of Technology Manipur",
+    photo: img.nit_manipur,
+    region: "India",
+  },
+  {
+    name: "Sreenidhi Institute of Science and Technology",
+    photo: img.sreenidhi_institute,
+    region: "India",
+  },
+  {
+    name: "Berkner High School",
+    photo: img.berkner_hs,
+    region: "Texas",
+  },
+  {
     name: "Keshav Memorial Institute of Technology",
     photo: img.kmit,
     region: "India",
@@ -292,7 +322,7 @@ const clubs: {
     region: "Virginia",
   },
   {
-    name: "homestead High School",
+    name: "Homestead High School",
     photo: img.homestead,
     region: "California",
   },
@@ -320,11 +350,6 @@ const clubs: {
     name: "Illinois Math and Science Academy",
     photo: img.imsa,
     region: "Illinois",
-  },
-  {
-    name: "Independence High School",
-    photo: img.independence,
-    region: "Texas",
   },
   {
     name: "Inglemoor High School",
@@ -418,7 +443,7 @@ const clubs: {
     region: "California",
   },
   {
-    name: "Monrovia HS",
+    name: "Monrovia High School",
     photo: img.monrovia,
     region: "California",
   },
@@ -633,7 +658,7 @@ const clubs: {
     region: "Florida",
   },
   {
-    name: "Tompkins HS",
+    name: "Tompkins High School",
     photo: img.tompkins,
     region: "Texas",
   },
@@ -648,7 +673,7 @@ const clubs: {
     region: "Texas",
   },
   {
-    name: "Troy HS",
+    name: "Troy High School",
     photo: img.troy,
     region: "Michigan",
   },
@@ -768,12 +793,42 @@ const clubs: {
     region: "India",
   },
   {
+    name: "BITS Pilani, Pilani Campus",
+    photo: img.bits_pilani_pilani,
+    region: "India",
+  },
+  {
+    name: "Hunter College High School",
+    photo: img.hunter_college_hs,
+    region: "New York",
+  },
+  {
+    name: "Nicolet High School",
+    photo: img.nicolet_hs,
+    region: "Wisconsin",
+  },
+  {
+    name: "The Village School",
+    photo: img.village_school,
+    region: "Texas",
+  },
+  {
+    name: "Vestavia Hills High School",
+    photo: img.vestavia_hills_hs,
+    region: "Alabama",
+  },
+  {
+    name: "Walchand College of Engineering, Sangli",
+    photo: img.walchand_college,
+    region: "India",
+  },
+  {
     name: "Solon High School",
     photo: img.solon_high,
     region: "Ohio",
   },
   { name: "Carmel High School", photo: img.carmel_hs, region: "Indiana" },
-  { name: "IIT Bombay", photo: img.iit_bombay, region: "Mumbai, India" },
+  { name: "IIT Bombay", photo: img.iit_bombay, region: "India" },
   { name: "IIT Madras", photo: img.iit_madras, region: "India" },
   {
     name: "Motilal Nehru National Institute of Technology",
@@ -1013,7 +1068,7 @@ const clubs: {
     region: "Georgia",
   },
   {
-    name: "1337 Rabat",
+    name: "1337 Coding School",
     photo: img._1337_rabat,
     region: "Morocco",
   },
