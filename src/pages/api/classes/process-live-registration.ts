@@ -69,7 +69,7 @@ export default async function processLiveRegistration(
     }
     const ref = db
       .collection("classes-registration")
-      .doc("2025feb")
+      .doc("2025oct")
       .collection("registrations")
       .doc()
     console.log(
@@ -79,7 +79,7 @@ export default async function processLiveRegistration(
     const joinLinkRef = db.collection("group-join-links").doc()
     await joinLinkRef.set({
       groupId:
-        level === "beginner" ? "ikVi2W7h0Wu1pLY7UV3g" : "8H2mTXE3dDn9qRuRx2cg",
+        level === "beginner" ? "9EPv4ex9P8F65LoG93Ym" : "mQcCxGc2mZgkOrcpdFt3",
       revoked: false,
       numUses: 0,
       maxUses: 1,
