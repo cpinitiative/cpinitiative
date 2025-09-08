@@ -248,6 +248,13 @@ export default function ViewRegistrationPage() {
         className="fixed inset-0 z-50 flex items-center justify-center p-4"
         transition
       >
+        <DialogBackdrop
+          className={`
+            fixed inset-0 bg-gray-500 opacity-75 transition
+            data-[closed]:opacity-0
+            data-[enter]:duration-300 data-[leave]:duration-200
+          `}
+        />
         <DialogPanel
           className={`
             relative bg-white rounded-lg px-4 pt-5 pb-4 text-left shadow-xl max-w-prose w-full sm:p-6 transform transition
@@ -514,13 +521,6 @@ export default function ViewRegistrationPage() {
             </button>
           </div>
         </DialogPanel>
-        <DialogBackdrop
-          className={`
-            fixed inset-0 bg-gray-500 opacity-75 transition
-            data-[closed]:opacity-0
-            data-[enter]:duration-300 data-[leave]:duration-200
-          `}
-        />
       </Dialog>
     </Layout>
   )

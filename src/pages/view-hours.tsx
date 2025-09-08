@@ -382,6 +382,13 @@ export default function ViewHours() {
               className="fixed inset-0 z-50 flex items-center justify-center p-4"
               transition
             >
+              <DialogBackdrop
+                className={`
+                  fixed inset-0 bg-gray-500 opacity-75 transition
+                  data-[closed]:opacity-0
+                  data-[enter]:duration-300 data-[leave]:duration-200
+                `}
+              />
               <DialogPanel
                 className={`
                   relative bg-white rounded-2xl shadow-xl max-w-5xl w-full p-6 transform transition
@@ -398,13 +405,6 @@ export default function ViewHours() {
                   data={data}
                 />
               </DialogPanel>
-              <DialogBackdrop
-                className={`
-                  fixed inset-0 bg-gray-500 opacity-75 transition
-                  data-[closed]:opacity-0
-                  data-[enter]:duration-300 data-[leave]:duration-200
-                `}
-              />
             </Dialog>
           </div>
         )}
