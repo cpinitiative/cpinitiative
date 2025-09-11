@@ -1,10 +1,15 @@
 import { signIn, signOut, useSession } from "next-auth/react"
-import React, { Fragment, useEffect, useReducer } from "react"
+import React, { useEffect, useReducer } from "react"
 import Header from "../components/Header"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import useSWR from "swr"
-import { Dialog, Transition } from "@headlessui/react"
+import {
+  Dialog,
+  DialogBackdrop,
+  DialogPanel,
+  DialogTitle,
+} from "@headlessui/react"
 import { SWR_FETCHER } from "../../config"
 const formatDate = (date: Date) => {
   return `${date.getFullYear()}-${(date.getMonth() + 1)
@@ -371,77 +376,36 @@ export default function ViewHours() {
               </div>
             </div> */}
             <VolunteerHourHistory data={data} />
-            {viewAddHoursForm && (
-              <>
-                <div className="flex fixed items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0" />
-                <div
-                  className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
-                  aria-hidden="true"
-                ></div>
-              </>
-            )}
-            <Transition appear show={viewAddHoursForm} as={Fragment}>
-              <Dialog
+            <Dialog
+              open={viewAddHoursForm}
+              onClose={() => setViewAddHoursForm(false)}
+              className="fixed inset-0 z-50 flex items-center justify-center p-4"
+              transition
+            >
+              <DialogBackdrop
+                className={`
+                  fixed inset-0 bg-gray-500 opacity-75 transition
+                  data-[closed]:opacity-0
+                  data-[enter]:duration-300 data-[leave]:duration-200
+                `}
+              />
+              <DialogPanel
+                className={`
+                  relative bg-white rounded-2xl shadow-xl max-w-5xl w-full p-6 transform transition
+                  data-[closed]:opacity-0 data-[closed]:scale-95
+                  data-[enter]:duration-300 data-[leave]:duration-200
+                `}
                 as="div"
-                className="fixed inset-0 z-10 pt-10 overflow-auto"
-                onClose={() => setViewAddHoursForm(false)}
               >
-                <div className="min-h-screen px-4 text-center">
-                  <Transition.Child
-                    as={Fragment}
-                    enter="ease-out duration-300"
-                    enterFrom="opacity-0"
-                    enterTo="opacity-100"
-                    leave="ease-in duration-200"
-                    leaveFrom="opacity-100"
-                    leaveTo="opacity-0"
-                  >
-                    <Dialog.Overlay className="fixed inset-0" />
-                  </Transition.Child>
-
-                  {/* This element is to trick the browser into centering the modal contents. */}
-                  <span
-                    className="inline-block h-screen align-middle"
-                    aria-hidden="true"
-                  >
-                    &#8203;
-                  </span>
-                  <Transition.Child
-                    as={Fragment}
-                    enter="ease-out duration-300"
-                    enterFrom="opacity-0 scale-95"
-                    enterTo="opacity-100 scale-100"
-                    leave="ease-in duration-200"
-                    leaveFrom="opacity-100 scale-100"
-                    leaveTo="opacity-0 scale-95"
-                  >
-                    <div className="inline-block w-full max-w-5xl p-6 mt-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
-                      <Dialog.Title
-                        as="h3"
-                        className="text-lg font-medium leading-6 text-gray-900"
-                      >
-                        Add your hours
-                      </Dialog.Title>
-
-                      <AddVolunteerHoursForm
-                        onClose={() => setViewAddHoursForm(false)}
-                        data={data}
-                      />
-
-                      {/* <div className="">
-                        <button
-                          type="button"
-                          className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
-                          onClick={() => setViewAddHoursForm(false)}
-                        >
-                          Close
-                        </button>
-                      </div> */}
-                    </div>
-                  </Transition.Child>
-                </div>
-              </Dialog>
-            </Transition>
+                <DialogTitle className="text-lg font-medium leading-6 text-gray-900 mb-4">
+                  Add your hours
+                </DialogTitle>
+                <AddVolunteerHoursForm
+                  onClose={() => setViewAddHoursForm(false)}
+                  data={data}
+                />
+              </DialogPanel>
+            </Dialog>
           </div>
         )}
         {!session && (
