@@ -33,8 +33,8 @@ export default function Header({
     },
     {
       label: "Tournament",
-      url: "/tournament"
-    }
+      url: "/tournament",
+    },
   ]
 
   const linkClasses =
@@ -69,53 +69,49 @@ export default function Header({
         dark ? "bg-gray-900" : "bg-white"
       } shadow fixed inset-x-0 top-0 z-30`}
     >
-      {!noBanner &&
-       <div className="relative bg-indigo-700">
-          <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8"> 
+      {!noBanner && (
+        <div className="relative bg-indigo-700">
+          <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
             <div className="pr-16 sm:text-center sm:px-16">
-             <p className="font-medium text-white">
-               {/* <span className="md:hidden">Join our IOI Livesolve & Q&A workshop <Link className="text-white font-bold underline" href="https://joincpi.org/workshops/ioi23">here</Link>!</span> */}
-               <span className="hidden md:inline">
-                Join our livesolve workshop for the December 2023 USACO Contest! 
-               </span>
-               <span className="block sm:ml-2 sm:inline-block">
-                 <Link
-                   href={"/workshops/dec23"}
-                   className="text-white font-bold underline"
-                 >
-                   Register here &rarr;
-                 </Link>
-               </span>
-            
-             </p>
-           </div>
-           {/* <div className="absolute inset-y-0 right-0 pt-1 pr-1 flex items-start sm:pt-1 sm:pr-2 sm:items-start">
+              <p className="font-medium text-white">
+                {/* <span className="md:hidden">Join our IOI Livesolve & Q&A workshop <Link className="text-white font-bold underline" href="https://joincpi.org/workshops/ioi23">here</Link>!</span> */}
+                <span className="hidden md:inline">
+                  Problem writers needed for Guide Tournament!
+                </span>
+                <span className="block sm:ml-2 sm:inline-block">
+                  <Link
+                    href={"https://forms.gle/gNy9VNmGdRRH2LbL8"}
+                    className="text-white font-bold underline"
+                  >
+                    Apply here &rarr;
+                  </Link>
+                </span>
+              </p>
+            </div>
+            {/* <div className="absolute inset-y-0 right-0 pt-1 pr-1 flex items-start sm:pt-1 sm:pr-2 sm:items-start">
              <button type="button" className="flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:bg-indigo-500 transition ease-in-out duration-150" aria-label="Dismiss">
-                ! Heroicon name: x ! 
+                ! Heroicon name: x !  
                <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                </svg>
              </button>
            </div> */}
-         </div>
+          </div>
         </div>
-      }
+      )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
             <Link
               href="/"
-              className="flex-shrink-0 flex items-center text-xl font-bold space-x-2">
-
+              className="flex-shrink-0 flex items-center text-xl font-bold space-x-2"
+            >
               <div className="h-9 w-9">
                 <Logo />
               </div>
-              <span
-                className={`font-bold text-xl ${dark ? "text-white" : ""}`}
-              >
+              <span className={`font-bold text-xl ${dark ? "text-white" : ""}`}>
                 CP Initiative
               </span>
-
             </Link>
             <div className="hidden md:ml-8 md:flex space-x-8">
               <a
@@ -137,18 +133,17 @@ export default function Header({
               <ClassesDropdown dark={dark} />
 
               {internalLinks.map(link => (
-                (<Link
+                <Link
                   href={link.url}
                   key={link.url}
                   className={
                     link.url === router.pathname
                       ? activeLinkClasses
                       : linkClasses
-                  }>
-
+                  }
+                >
                   {link.label}
-
-                </Link>)
+                </Link>
               ))}
             </div>
           </div>
@@ -217,10 +212,9 @@ export default function Header({
               "/classes" === router.pathname
                 ? activeBlockLinkClasses
                 : blockLinkClasses
-            }>
-            
-              Live Classes
-            
+            }
+          >
+            Live Classes
           </Link>
 
           <Link
@@ -229,28 +223,26 @@ export default function Header({
               "/video-classes" === router.pathname
                 ? activeBlockLinkClasses
                 : blockLinkClasses
-            }>
-            
-              Self-Study Classes
-            
+            }
+          >
+            Self-Study Classes
           </Link>
 
           {internalLinks.map(link => (
-            (<Link
+            <Link
               href={link.url}
               key={link.url}
               className={
                 link.url === router.pathname
                   ? activeBlockLinkClasses
                   : blockLinkClasses
-              }>
-
+              }
+            >
               {link.label}
-
-            </Link>)
+            </Link>
           ))}
         </div>
       </div>
     </nav>
-  );
+  )
 }
