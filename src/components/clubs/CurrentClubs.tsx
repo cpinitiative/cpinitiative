@@ -1157,6 +1157,11 @@ const clubs: {
     photo: img.saint_josephs,
     region: "Bangladesh",
   },
+  {
+    name: "Shepherd International Education",
+    photo: img.shepherd_international_education,
+    region: "South Korea",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
