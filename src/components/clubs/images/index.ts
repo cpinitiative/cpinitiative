@@ -252,6 +252,7 @@ import ms_157 from "./ms_157.jpeg"
 import argyle_hs from "./argyle_hs.jpeg"
 import nust from "./nust.jpeg"
 import garnet_valley_hs from "./garnet_valley_hs.jpeg"
+import dublin_hs from "./dublin_hs.jpeg"
 
 export {
   algonquin,
@@ -508,4 +509,5 @@ export {
   argyle_hs,
   nust,
   garnet_valley_hs,
+  dublin_hs,
 }
