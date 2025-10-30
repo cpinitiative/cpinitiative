@@ -1187,6 +1187,11 @@ const clubs: {
     photo: img.uni_victoria,
     region: "Canada",
   },
+  {
+    name: "St. Columba's School",
+    photo: img.st_columba_school,
+    region: "India",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
