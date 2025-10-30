@@ -1237,6 +1237,11 @@ const clubs: {
     photo: img.george_school,
     region: "Pennsylvania",
   },
+  {
+    name: "Faridpur Engineering College",
+    photo: img.faridpur_engineering_college,
+    region: "Bangladesh",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {

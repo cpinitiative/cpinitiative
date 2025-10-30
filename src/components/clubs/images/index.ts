@@ -245,6 +245,7 @@ import sujanagar_govt_pilot_model_hs from "./sujanagar_govt_pilot_model_hs.jpeg"
 import stephen_f_austin_hs from "./stephen_f_austin_hs.jpeg"
 import liberal_arts_and_sciences_academy from "./liberal_arts_and_sciences_academy.jpeg"
 import george_school from "./george_school.jpeg"
+import faridpur_engineering_college from "./faridpur_engineering_college.jpeg"
 
 export {
   algonquin,
@@ -494,4 +495,5 @@ export {
   stephen_f_austin_hs,
   liberal_arts_and_sciences_academy,
   george_school,
+  faridpur_engineering_college,
 }
