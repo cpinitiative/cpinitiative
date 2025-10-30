@@ -244,6 +244,7 @@ import grapevine_hs from "./grapevine_hs.jpg"
 import sujanagar_govt_pilot_model_hs from "./sujanagar_govt_pilot_model_hs.jpeg"
 import stephen_f_austin_hs from "./stephen_f_austin_hs.jpeg"
 import liberal_arts_and_sciences_academy from "./liberal_arts_and_sciences_academy.jpeg"
+import george_school from "./george_school.jpeg"
 
 export {
   algonquin,
@@ -492,4 +493,5 @@ export {
   sujanagar_govt_pilot_model_hs,
   stephen_f_austin_hs,
   liberal_arts_and_sciences_academy,
+  george_school,
 }

@@ -1232,6 +1232,11 @@ const clubs: {
     photo: img.liberal_arts_and_sciences_academy,
     region: "Texas",
   },
+  {
+    name: "George School",
+    photo: img.george_school,
+    region: "Pennsylvania",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
