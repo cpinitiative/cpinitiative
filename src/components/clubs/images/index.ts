@@ -236,6 +236,7 @@ import cumilla_polytech from "./cumilla_polytech.jpeg"
 import iiit_vadodara from "./iiit_vadodara.jpeg"
 import uni_victoria from "./uni_victoria.png"
 import st_columba_school from "./st_columba_school.jpeg"
+import heritage_hs from "./heritage_hs.jpg"
 
 export {
   algonquin,
@@ -476,4 +477,5 @@ export {
   iiit_vadodara,
   uni_victoria,
   st_columba_school,
+  heritage_hs,
 }

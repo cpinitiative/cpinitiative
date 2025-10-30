@@ -1192,6 +1192,11 @@ const clubs: {
     photo: img.st_columba_school,
     region: "India",
   },
+  {
+    name: "Heritage High School",
+    photo: img.heritage_hs,
+    region: "California",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
