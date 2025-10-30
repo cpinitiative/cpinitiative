@@ -238,6 +238,7 @@ import uni_victoria from "./uni_victoria.png"
 import st_columba_school from "./st_columba_school.jpeg"
 import heritage_hs from "./heritage_hs.jpg"
 import santa_susana_hs from "./santa_susana_hs.jpg"
+import west_ranch_hs from "./west_ranch_hs.jpg"
 
 export {
   algonquin,
@@ -480,4 +481,5 @@ export {
   st_columba_school,
   heritage_hs,
   santa_susana_hs,
+  west_ranch_hs,
 }

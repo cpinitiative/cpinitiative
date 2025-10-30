@@ -1202,6 +1202,11 @@ const clubs: {
     photo: img.santa_susana_hs,
     region: "California",
   },
+  {
+    name: "West Ranch High School",
+    photo: img.west_ranch_hs,
+    region: "California",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
