@@ -1222,6 +1222,11 @@ const clubs: {
     photo: img.sujanagar_govt_pilot_model_hs,
     region: "Bangladesh",
   },
+  {
+    name: "Stephen F. Austin High School",
+    photo: img.stephen_f_austin_hs,
+    region: "Texas",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {

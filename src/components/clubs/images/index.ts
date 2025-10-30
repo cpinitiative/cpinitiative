@@ -242,6 +242,7 @@ import west_ranch_hs from "./west_ranch_hs.jpg"
 import nc_school_of_science_math_durham from "./nc_school_of_science_math_durham.jpg"
 import grapevine_hs from "./grapevine_hs.jpg"
 import sujanagar_govt_pilot_model_hs from "./sujanagar_govt_pilot_model_hs.jpeg"
+import stephen_f_austin_hs from "./stephen_f_austin_hs.jpeg"
 
 export {
   algonquin,
@@ -488,4 +489,5 @@ export {
   nc_school_of_science_math_durham,
   grapevine_hs,
   sujanagar_govt_pilot_model_hs,
+  stephen_f_austin_hs,
 }
