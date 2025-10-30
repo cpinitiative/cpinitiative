@@ -1267,6 +1267,11 @@ const clubs: {
     photo: img.nust,
     region: "Pakistan",
   },
+  {
+    name: "Garnet Valley High School",
+    photo: img.garnet_valley_hs,
+    region: "Pennsylvania",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
