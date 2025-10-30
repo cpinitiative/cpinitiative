@@ -1227,6 +1227,11 @@ const clubs: {
     photo: img.stephen_f_austin_hs,
     region: "Texas",
   },
+  {
+    name: "Liberal Arts and Sciences Academy",
+    photo: img.liberal_arts_and_sciences_academy,
+    region: "Texas",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
