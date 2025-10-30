@@ -254,6 +254,7 @@ import nust from "./nust.jpeg"
 import garnet_valley_hs from "./garnet_valley_hs.jpeg"
 import dublin_hs from "./dublin_hs.jpeg"
 import belmont_hs from "./belmont_hs.jpeg"
+import frazer from "./frazer.jpeg"
 
 export {
   algonquin,
@@ -512,4 +513,5 @@ export {
   garnet_valley_hs,
   dublin_hs,
   belmont_hs,
+  frazer,
 }

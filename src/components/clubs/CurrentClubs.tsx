@@ -1282,6 +1282,11 @@ const clubs: {
     photo: img.belmont_hs,
     region: "Massachusetts",
   },
+  {
+    name: "Frazer School",
+    photo: img.frazer,
+    region: "Florida",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
