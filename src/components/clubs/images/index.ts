@@ -232,6 +232,7 @@ import saint_josephs from "./saint_josephs.jpg"
 import shepherd_international_education from "./shepherd_international_education.jpg"
 import liberty_hs from "./liberty_hs.jpg"
 import al_akhawayn_uni from "./al_akhawayn_uni.jpg"
+import cumilla_polytech from "./cumilla_polytech.jpeg"
 
 export {
   algonquin,
@@ -468,4 +469,5 @@ export {
   shepherd_international_education,
   liberty_hs,
   al_akhawayn_uni,
+  cumilla_polytech,
 }

@@ -1172,6 +1172,11 @@ const clubs: {
     photo: img.al_akhawayn_uni,
     region: "Morocco",
   },
+  {
+    name: "Cumilla Polytechnic Institute",
+    photo: img.cumilla_polytech,
+    region: "Bangladesh",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
