@@ -228,6 +228,7 @@ import nit_manipur from "./nit_manipur.jpg"
 import sreenidhi_institute from "./sreenidhi_institute.png"
 import berkner_hs from "./berkner_hs.jpg"
 import cienega_hs_arizona from "./cienega_hs_arizona.jpeg"
+import saint_josephs from "./saint_josephs.jpg"
 
 export {
   algonquin,
@@ -460,4 +461,5 @@ export {
   sreenidhi_institute,
   berkner_hs,
   cienega_hs_arizona,
+  saint_josephs,
 }

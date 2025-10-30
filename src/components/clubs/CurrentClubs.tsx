@@ -1152,6 +1152,11 @@ const clubs: {
     photo: img.cienega_hs_arizona,
     region: "Arizona",
   },
+  {
+    name: "Saint Joseph's High School",
+    photo: img.saint_josephs,
+    region: "Bangladesh",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
