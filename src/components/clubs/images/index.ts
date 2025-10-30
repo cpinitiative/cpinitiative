@@ -233,6 +233,7 @@ import shepherd_international_education from "./shepherd_international_education
 import liberty_hs from "./liberty_hs.jpg"
 import al_akhawayn_uni from "./al_akhawayn_uni.jpg"
 import cumilla_polytech from "./cumilla_polytech.jpeg"
+import iiit_vadodara from "./iiit_vadodara.jpeg"
 
 export {
   algonquin,
@@ -470,4 +471,5 @@ export {
   liberty_hs,
   al_akhawayn_uni,
   cumilla_polytech,
+  iiit_vadodara,
 }

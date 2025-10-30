@@ -1177,6 +1177,11 @@ const clubs: {
     photo: img.cumilla_polytech,
     region: "Bangladesh",
   },
+  {
+    name: "Indian Institute of Information Technology, Vadodara",
+    photo: img.iiit_vadodara,
+    region: "India",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
