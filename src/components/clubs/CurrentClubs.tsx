@@ -1257,6 +1257,11 @@ const clubs: {
     photo: img.ms_157,
     region: "Azerbaijan",
   },
+  {
+    name: "Argyle High School",
+    photo: img.argyle_hs,
+    region: "Texas",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
