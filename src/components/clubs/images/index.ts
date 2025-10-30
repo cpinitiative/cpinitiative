@@ -234,6 +234,7 @@ import liberty_hs from "./liberty_hs.jpg"
 import al_akhawayn_uni from "./al_akhawayn_uni.jpg"
 import cumilla_polytech from "./cumilla_polytech.jpeg"
 import iiit_vadodara from "./iiit_vadodara.jpeg"
+import uni_victoria from "./uni_victoria.png"
 
 export {
   algonquin,
@@ -472,4 +473,5 @@ export {
   al_akhawayn_uni,
   cumilla_polytech,
   iiit_vadodara,
+  uni_victoria,
 }

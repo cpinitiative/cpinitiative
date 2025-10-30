@@ -1182,6 +1182,11 @@ const clubs: {
     photo: img.iiit_vadodara,
     region: "India",
   },
+  {
+    name: "University of Victoria",
+    photo: img.uni_victoria,
+    region: "Canada",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
