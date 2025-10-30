@@ -239,6 +239,7 @@ import st_columba_school from "./st_columba_school.jpeg"
 import heritage_hs from "./heritage_hs.jpg"
 import santa_susana_hs from "./santa_susana_hs.jpg"
 import west_ranch_hs from "./west_ranch_hs.jpg"
+import nc_school_of_science_math_durham from "./nc_school_of_science_math_durham.jpg"
 
 export {
   algonquin,
@@ -482,4 +483,5 @@ export {
   heritage_hs,
   santa_susana_hs,
   west_ranch_hs,
+  nc_school_of_science_math_durham,
 }

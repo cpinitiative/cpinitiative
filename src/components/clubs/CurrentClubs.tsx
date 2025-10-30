@@ -1207,6 +1207,11 @@ const clubs: {
     photo: img.west_ranch_hs,
     region: "California",
   },
+  {
+    name: "North Carolina School of Science and Math - Durham",
+    photo: img.nc_school_of_science_math_durham,
+    region: "North Carolina",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
