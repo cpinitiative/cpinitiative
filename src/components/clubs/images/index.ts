@@ -247,6 +247,7 @@ import liberal_arts_and_sciences_academy from "./liberal_arts_and_sciences_acade
 import george_school from "./george_school.jpeg"
 import faridpur_engineering_college from "./faridpur_engineering_college.jpeg"
 import vignan_university from "./vignan_university.jpeg"
+import youth4am from "./youth4am.jpg"
 
 export {
   algonquin,
@@ -498,4 +499,5 @@ export {
   george_school,
   faridpur_engineering_college,
   vignan_university,
+  youth4am,
 }

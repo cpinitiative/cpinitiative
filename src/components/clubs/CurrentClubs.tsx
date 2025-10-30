@@ -1247,6 +1247,11 @@ const clubs: {
     photo: img.vignan_university,
     region: "India",
   },
+  {
+    name: "Youth4AM",
+    photo: img.youth4am,
+    region: "New York",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
