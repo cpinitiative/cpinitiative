@@ -1217,6 +1217,11 @@ const clubs: {
     photo: img.grapevine_hs,
     region: "Texas",
   },
+  {
+    name: "Sujanagar Govt. Pilot Model High School",
+    photo: img.sujanagar_govt_pilot_model_hs,
+    region: "Bangladesh",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
