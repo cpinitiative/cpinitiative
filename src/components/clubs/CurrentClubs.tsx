@@ -1262,6 +1262,11 @@ const clubs: {
     photo: img.argyle_hs,
     region: "Texas",
   },
+  {
+    name: "National University of Sciences and Technology (NUST)",
+    photo: img.nust,
+    region: "Pakistan",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {

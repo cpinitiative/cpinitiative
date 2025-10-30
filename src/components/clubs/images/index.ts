@@ -250,6 +250,7 @@ import vignan_university from "./vignan_university.jpeg"
 import youth4am from "./youth4am.jpg"
 import ms_157 from "./ms_157.jpeg"
 import argyle_hs from "./argyle_hs.jpeg"
+import nust from "./nust.jpeg"
 
 export {
   algonquin,
@@ -504,4 +505,5 @@ export {
   youth4am,
   ms_157,
   argyle_hs,
+  nust,
 }
