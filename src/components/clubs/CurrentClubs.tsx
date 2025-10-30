@@ -1212,6 +1212,11 @@ const clubs: {
     photo: img.nc_school_of_science_math_durham,
     region: "North Carolina",
   },
+  {
+    name: "Grapevine High School",
+    photo: img.grapevine_hs,
+    region: "Texas",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
