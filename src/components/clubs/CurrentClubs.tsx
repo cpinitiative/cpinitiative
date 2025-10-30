@@ -1167,6 +1167,11 @@ const clubs: {
     photo: img.liberty_hs,
     region: "Washington",
   },
+  {
+    name: "Al Akhawayn University",
+    photo: img.al_akhawayn_uni,
+    region: "Morocco",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {

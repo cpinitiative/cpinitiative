@@ -231,6 +231,7 @@ import cienega_hs_arizona from "./cienega_hs_arizona.jpeg"
 import saint_josephs from "./saint_josephs.jpg"
 import shepherd_international_education from "./shepherd_international_education.jpg"
 import liberty_hs from "./liberty_hs.jpg"
+import al_akhawayn_uni from "./al_akhawayn_uni.jpg"
 
 export {
   algonquin,
@@ -466,4 +467,5 @@ export {
   saint_josephs,
   shepherd_international_education,
   liberty_hs,
+  al_akhawayn_uni,
 }
