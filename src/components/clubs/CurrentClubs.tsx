@@ -1197,6 +1197,11 @@ const clubs: {
     photo: img.heritage_hs,
     region: "California",
   },
+  {
+    name: "Santa Susana High School",
+    photo: img.santa_susana_hs,
+    region: "California",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
