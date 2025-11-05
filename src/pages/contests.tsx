@@ -4,10 +4,7 @@ import Header from "../components/Header"
 import EmailForm from "../components/video-classes/EmailForm"
 import ContestList from "../components/contests/ContestList"
 import Image from "next/legacy/image"
-import {
-  proco1,
-  proco2,
-} from "../components/contests/images"
+import { proco1, proco2 } from "../components/contests/images"
 
 export default function Contests() {
   return (
@@ -72,7 +69,6 @@ export default function Contests() {
           </h2>
           <ContestList />
         </div>
-
 
         <div className="text-lg max-w-prose mx-auto mb-6 pt-16">
           <h1 className="mt-2 mb-8 text-4xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
@@ -167,11 +163,11 @@ export default function Contests() {
                 <p className="text-gray-600">
                   The overview can be found here:{" "}
                   <a
-                    href="https://joincpi.org/competition_program_brief.pdf"
+                    href="/CPI_Competition_Program_Brief.pdf"
                     target="_blank"
                     className="font-semibold text-black underline"
                   >
-                    https://joincpi.org/competition_program_brief.pdf
+                    https://joincpi.org/CPI_Competition_Program_Brief.pdf
                   </a>
                 </p>
               </div>
