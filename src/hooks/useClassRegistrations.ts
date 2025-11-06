@@ -88,6 +88,7 @@ export default function useClassRegistrations<RegistrationType>(
           }
         )
     } else {
+		setLoading(false)
       setHasPermission(false)
     }
 
