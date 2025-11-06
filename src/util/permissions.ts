@@ -13,4 +13,6 @@ export const classRegistrationAdministrators = [
   "fRKOjFTFtuTfL65TPMSYhDLrwXs2",
   "1ymqOKm8aqeGvuP30e0B2WBWFjf1",
   "rsvg0lHhf0am0obWxV4Qc8zFOCp1",
+  "K4QPcxf3NgVEF2qeM04YVzKPhhr1",
+		"Qj7SQEKBwAZngSXS7ugAB61XkKu2",
 ]
