@@ -16,7 +16,7 @@ function IndexPage(source: InferGetStaticPropsType<typeof getStaticProps>) {
     <Layout>
       <SEO title={null} />
       <div className="bg-gray-100">
-        <Header noBanner />
+        <Header noBanner={false} />
         <div className="bg-purple-900 sm:-mb-8">
           {/*Banner Padding*/}
           {/*<div className="h-12" />*/}
