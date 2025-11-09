@@ -1,5 +1,6 @@
-import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/react"
+import { Menu, Transition } from "@headlessui/react"
 import { ChevronDownIcon } from "@heroicons/react/solid"
+
 import Link from "next/link"
 
 function classNames(...classes: Array<string | undefined | null | false>) {
@@ -11,7 +12,7 @@ export default function ClassesDropdown({ dark = false }): JSX.Element {
     <Menu as="div" className="relative inline-block text-left">
       {({ open }) => (
         <div className="relative h-full">
-          <MenuButton
+          <Menu.Button
             className={classNames(
               "group inline-flex items-center h-full px-1 pt-1 border-b-2 border-transparent text-sm leading-6 font-medium transition ease-in-out duration-150",
               dark
@@ -41,43 +42,51 @@ export default function ClassesDropdown({ dark = false }): JSX.Element {
               )}
               aria-hidden="true"
             />
-          </MenuButton>
-          <MenuItems
-            transition
-            className={classNames(
-              "origin-top-right absolute left-0 -mt-2 w-56 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transform transition data-[closed]:opacity-0 data-[closed]:scale-95 data-[enter]:duration-100 data-[leave]:duration-75",
-              dark ? "bg-gray-800" : "bg-white"
-            )}
+          </Menu.Button>
+          <Transition
+            enter="transition duration-100 ease-out"
+            enterFrom="transform scale-95 opacity-0"
+            enterTo="transform scale-100 opacity-100"
+            leave="transition duration-75 ease-out"
+            leaveFrom="transform scale-100 opacity-100"
+            leaveTo="transform scale-95 opacity-0"
           >
-            <div className="py-1">
-              <MenuItem>
-                <Link
-                  href="/classes"
-                  className={classNames(
-                    "block px-4 py-2 text-sm font-medium",
-                    dark
-                      ? "hover:bg-gray-600 text-gray-200"
-                      : "hover:bg-gray-100 hover:text-gray-900 text-gray-700"
-                  )}
-                >
-                  Live Classes
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                <Link
-                  href="/video-classes"
-                  className={classNames(
-                    "block px-4 py-2 text-sm font-medium",
-                    dark
-                      ? "hover:bg-gray-600 text-gray-200"
-                      : "hover:bg-gray-100 hover:text-gray-900 text-gray-700"
-                  )}
-                >
-                  Self-Study Classes
-                </Link>
-              </MenuItem>
-            </div>
-          </MenuItems>
+            <Menu.Items
+              className={classNames(
+                "origin-top-right absolute left-0 -mt-2 w-56 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transform transition data-[closed]:opacity-0 data-[closed]:scale-95 data-[enter]:duration-100 data-[leave]:duration-75",
+                dark ? "bg-gray-800" : "bg-white"
+              )}
+            >
+              <div className="py-1">
+                <Menu.Item>
+                  <Link
+                    href="/classes"
+                    className={classNames(
+                      "block px-4 py-2 text-sm font-medium",
+                      dark
+                        ? "hover:bg-gray-600 text-gray-200"
+                        : "hover:bg-gray-100 hover:text-gray-900 text-gray-700"
+                    )}
+                  >
+                    Live Classes
+                  </Link>
+                </Menu.Item>
+                <Menu.Item>
+                  <Link
+                    href="/video-classes"
+                    className={classNames(
+                      "block px-4 py-2 text-sm font-medium",
+                      dark
+                        ? "hover:bg-gray-600 text-gray-200"
+                        : "hover:bg-gray-100 hover:text-gray-900 text-gray-700"
+                    )}
+                  >
+                    Self-Study Classes
+                  </Link>
+                </Menu.Item>
+              </div>
+            </Menu.Items>
+          </Transition>
         </div>
       )}
     </Menu>

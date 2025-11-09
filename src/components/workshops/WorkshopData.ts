@@ -6,19 +6,20 @@ import Dec22Bronze from "../../images/workshops/dec22.png"
 import Dec22Thumbnail from "../../images/workshops/dec22thumbnail.png"
 import Jan23 from "../../images/workshops/jan23.png"
 import Jan23Thumbnail from "../../images/workshops/jan23thumbnail.png"
-import Feb23 from "../../images/workshops/feb23.png";
-import Feb23Thumbnail from "../../images/workshops/feb23thumbnail.png";
-import Open23 from "../../images/workshops/open23.png";
-import Open23Thumbnail from "../../images/workshops/open23thumbnail.png";
+import Feb23 from "../../images/workshops/feb23.png"
+import Feb23Thumbnail from "../../images/workshops/feb23thumbnail.png"
+import Open23 from "../../images/workshops/open23.png"
+import Open23Thumbnail from "../../images/workshops/open23thumbnail.png"
 import { StaticImageData } from "next/legacy/image"
-import IOI23 from "../../images/workshops/ioi23.png";
-import IOI23Thumbnail from "../../images/workshops/ioi23thumbnail.png";
+import IOI23 from "../../images/workshops/ioi23.png"
+import IOI23Thumbnail from "../../images/workshops/ioi23thumbnail.png"
 import Dec23 from "../../images/workshops/dec23.png"
 import Jan24 from "../../images/workshops/jan24.png"
 import Feb24 from "../../images/workshops/feb24.jpg"
 import Open24 from "../../images/workshops/open24.jpg"
 import Dec24 from "../../images/workshops/dec24.png"
 import Setting25 from "../../images/workshops/setting25.png"
+import IOI25 from "../../images/workshops/ioi25.png"
 // import Dec23Thumbnail from "../../images/workshops/dec23thumbnail.png"
 
 export type Workshop = {
@@ -45,55 +46,70 @@ const themeColors = {
 
 const workshops: Workshop[] = [
   {
+    photo: IOI25,
+    title: "2025 IOI Team Workshop",
+    description: "Meet three US team members for the 2025 International Olympiad in Informatics! Live CF Upsolve + Open Q&A.",
+    date: dayjs("Nov 15, 2025 1:00:00 PM PST"),
+    season: "2025-2026",
+    url: "ioi25",
+    themeColor: themeColors.blue,
+  },
+  {
     photo: Setting25,
     title: "Problemsetting Panel Discussion",
-    description: "Watch USACO problemsetters discuss contest creation and answer your Q&A—live!",
+    description:
+      "Watch USACO problemsetters discuss contest creation and answer your Q&A—live!",
     date: dayjs("Apr 13, 2025 1:00:00 PM PST"),
     season: "2024-2025",
     url: "setting25",
-    themeColor: themeColors.blue
+    themeColor: themeColors.blue,
   },
   {
     photo: Dec24,
     title: "USACO December 2024 Contest Solutions",
-    description: "This Saturday, learn how to solve USACO Bronze/Silver problems!",
+    description:
+      "This Saturday, learn how to solve USACO Bronze/Silver problems!",
     date: dayjs("Dec 21, 2024 1:00:00 PM PST"),
     season: "2024-2025",
     url: "dec24",
-    themeColor: themeColors.blue
+    themeColor: themeColors.blue,
   },
   {
     photo: Open24,
     title: "USACO Open 2024 Contest Solutions",
-    description: "This Thursday, learn how to solve USACO Bronze/Silver/Gold problems with our partner X-Camp Academy!",
+    description:
+      "This Thursday, learn how to solve USACO Bronze/Silver/Gold problems with our partner X-Camp Academy!",
     date: dayjs("Mar 21, 2024 5:00:00 PM PST"),
     season: "2023-2024",
     url: "open24",
-    themeColor: themeColors.blue
+    themeColor: themeColors.blue,
   },
   {
     photo: Feb24,
     title: "USACO February 2024 Contest Solutions",
-    description: "This Saturday, join a live USACO Bronze/Silver/Gold level solution session with our partner X-Camp Academy!",
+    description:
+      "This Saturday, join a live USACO Bronze/Silver/Gold level solution session with our partner X-Camp Academy!",
     date: dayjs("Feb 24, 2024 5:00:00 PM PST"),
     season: "2023-2024",
     url: "feb24",
-    themeColor: themeColors.blue
+    themeColor: themeColors.blue,
   },
   {
     photo: Jan24,
     title: "USACO January 2024 Contest Solutions",
-    description: "Learn how to solve the Bronze/Silver problems by experienced instructors from the USACO Jan 2024 contest, from intuition to code!",
+    description:
+      "Learn how to solve the Bronze/Silver problems by experienced instructors from the USACO Jan 2024 contest, from intuition to code!",
     date: dayjs("Feb 3, 2024 3:00:00 PM PST"),
     season: "2023-2024",
     url: "jan24",
-    themeColor: themeColors.blue
+    themeColor: themeColors.blue,
   },
   {
     photo: Dec23,
     // thumbnail: Dec23Thumbnail,
     title: "USACO December Contest Solutions",
-    description: "Having trouble understanding the USACO December solutions? Learn the bronze and silver solutions on December 31, 4PM PST/7PM EST!",
+    description:
+      "Having trouble understanding the USACO December solutions? Learn the bronze and silver solutions on December 31, 4PM PST/7PM EST!",
     date: dayjs("Dec 31, 2023 4:00:00 PM PST"),
     season: "2023-2024",
     url: "dec23",
@@ -103,37 +119,41 @@ const workshops: Workshop[] = [
     photo: IOI23,
     thumbnail: IOI23Thumbnail,
     title: "IOI Team Workshop",
-    description: "Watch 3 of the top 4 high school competitive programmers in the USA solve a contest and answer your Q&A, live!",
+    description:
+      "Watch 3 of the top 4 high school competitive programmers in the USA solve a contest and answer your Q&A, live!",
     date: dayjs("Nov 26, 2023 4:30:00 PM PST"),
     season: "2023-2024",
-    url: "ioi23"    ,
+    url: "ioi23",
     themeColor: themeColors.purple,
   },
   {
     photo: Open23,
     thumbnail: Open23Thumbnail,
     title: "USACO Open Workshop",
-    description: "Learn how to solve the Bronze/Silver USACO U.S. Open solutions, and participate in a live discussion/Q&A about tips for USACO next year!",
+    description:
+      "Learn how to solve the Bronze/Silver USACO U.S. Open solutions, and participate in a live discussion/Q&A about tips for USACO next year!",
     date: dayjs("Apr 2, 2023 2:00:00 PM PDT"),
     season: "2022-2023",
     url: "open23",
-    themeColor: themeColors.purple
+    themeColor: themeColors.purple,
   },
   {
     photo: Feb23,
     thumbnail: Feb23Thumbnail,
     title: "USACO February Contest Solutions",
-    description: "Learn how to solve the Bronze/Silver USACO February solutions, from intuition to code!",
+    description:
+      "Learn how to solve the Bronze/Silver USACO February solutions, from intuition to code!",
     date: dayjs("Mar 4, 2023 4:00:00 PM PST"),
     season: "2022-2023",
     url: "feb23",
-    themeColor: themeColors.blue
+    themeColor: themeColors.blue,
   },
   {
     photo: Jan23,
     thumbnail: Jan23Thumbnail,
     title: "USACO January Contest Solutions",
-    description: "Having trouble understanding the USACO January solutions? Learn the bronze and silver solutions on February 4, 5PM PST/8PM EST!",
+    description:
+      "Having trouble understanding the USACO January solutions? Learn the bronze and silver solutions on February 4, 5PM PST/8PM EST!",
     date: dayjs("Feb 4, 2023 5:00:00 PM PST"),
     season: "2022-2023",
     url: "jan23",
@@ -211,7 +231,7 @@ const workshops: Workshop[] = [
 
 workshops.sort((a, b) => -a.date.diff(b.date))
 const now = dayjs()
-console.log('date', workshops[0].date);
+console.log("date", workshops[0].date)
 // calculate latest workshop
 let latestWorkshop: Workshop
 for (const workshop of workshops.slice().reverse()) {
