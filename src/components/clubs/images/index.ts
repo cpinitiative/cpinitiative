@@ -194,23 +194,23 @@ import delhi_skill from "./delhi_skill.jpg"
 import portage_central from "./portage_central.jpg"
 import wakeland from "./wakeland.jpg"
 import boston_latin from "./boston_latin.jpg"
-import bangalore_institute_tech from "./bangalore_institute_tech.jpg";
-import leander_hs from "./leander_hs.jpg";
-import stratford_prep from "./stratford_prep.jpg";
-import brookline_hs from "./brookline_hs.jpeg";
-import st_stephens_episcopal from "./st_stephens_episcopal.jpg";
-import los_gatos_hs from "./los_gatos_hs.jpg";
-import redding_school_arts from "./redding_school_arts.jpg";
-import amer_school_monterrey from "./amer_school_monterrey.jpg";
-import rajkiya_eng_college from "./rajkiya_eng_college.jpg";
-import leading_uni from "./leading_uni.jpg";
-import electrical_eng_comp_sci from "./electrical_eng_comp_sci.jpg";
-import rouse_hs from "./rouse_hs.jpg";
-import sv_national_inst_tech from "./sv_national_inst_tech.jpeg";
-import watchung_hills_hs from "./watchung_hills_hs.jpeg";
-import fcs_innovation_acad from "./fcs_innovation_acad.jpg";
-import _1337_rabat from "./_1337_rabat.jpg";
-import adama_sci_tech_uni from "./adama_sci_tech_uni.jpeg";
+import bangalore_institute_tech from "./bangalore_institute_tech.jpg"
+import leander_hs from "./leander_hs.jpg"
+import stratford_prep from "./stratford_prep.jpg"
+import brookline_hs from "./brookline_hs.jpeg"
+import st_stephens_episcopal from "./st_stephens_episcopal.jpg"
+import los_gatos_hs from "./los_gatos_hs.jpg"
+import redding_school_arts from "./redding_school_arts.jpg"
+import amer_school_monterrey from "./amer_school_monterrey.jpg"
+import rajkiya_eng_college from "./rajkiya_eng_college.jpg"
+import leading_uni from "./leading_uni.jpg"
+import electrical_eng_comp_sci from "./electrical_eng_comp_sci.jpg"
+import rouse_hs from "./rouse_hs.jpg"
+import sv_national_inst_tech from "./sv_national_inst_tech.jpeg"
+import watchung_hills_hs from "./watchung_hills_hs.jpeg"
+import fcs_innovation_acad from "./fcs_innovation_acad.jpg"
+import _1337_rabat from "./_1337_rabat.jpg"
+import adama_sci_tech_uni from "./adama_sci_tech_uni.jpeg"
 import hanford_high from "./hanford_high.jpg"
 import instituto_superior_politecnico from "./instituto_superior_politecnico.jpg"
 import dr_dy_patil_institute from "./dr_dy_patil_institute.png"
@@ -221,12 +221,40 @@ import dhaka_international_university from "./dhaka_international_university.jpe
 import basis_independent_mclean from "./basis_independent_mclean.png"
 import stratford_hs_tx from "./stratford_hs_tx.png"
 import carroll_middle_school from "./carroll_middle_school.png"
-import nat_uni_colombia from "./nat_uni_colombia.jpg";
-import cypress_hs from "./cypress_hs.jpg";
-import thu from "./thu.png";
-import nit_manipur from "./nit_manipur.jpg";
-import sreenidhi_institute from "./sreenidhi_institute.png";
-import berkner_hs from "./berkner_hs.jpg";
+import nat_uni_colombia from "./nat_uni_colombia.jpg"
+import cypress_hs from "./cypress_hs.jpg"
+import thu from "./thu.png"
+import nit_manipur from "./nit_manipur.jpg"
+import sreenidhi_institute from "./sreenidhi_institute.png"
+import berkner_hs from "./berkner_hs.jpg"
+import cienega_hs_arizona from "./cienega_hs_arizona.jpeg"
+import saint_josephs from "./saint_josephs.jpg"
+import shepherd_international_education from "./shepherd_international_education.jpg"
+import liberty_hs from "./liberty_hs.jpg"
+import al_akhawayn_uni from "./al_akhawayn_uni.jpg"
+import cumilla_polytech from "./cumilla_polytech.jpeg"
+import iiit_vadodara from "./iiit_vadodara.jpeg"
+import uni_victoria from "./uni_victoria.png"
+import st_columba_school from "./st_columba_school.jpeg"
+import heritage_hs from "./heritage_hs.jpg"
+import santa_susana_hs from "./santa_susana_hs.jpg"
+import west_ranch_hs from "./west_ranch_hs.jpg"
+import nc_school_of_science_math_durham from "./nc_school_of_science_math_durham.jpg"
+import grapevine_hs from "./grapevine_hs.jpg"
+import sujanagar_govt_pilot_model_hs from "./sujanagar_govt_pilot_model_hs.jpeg"
+import stephen_f_austin_hs from "./stephen_f_austin_hs.jpeg"
+import liberal_arts_and_sciences_academy from "./liberal_arts_and_sciences_academy.jpeg"
+import george_school from "./george_school.jpeg"
+import faridpur_engineering_college from "./faridpur_engineering_college.jpeg"
+import vignan_university from "./vignan_university.jpeg"
+import youth4am from "./youth4am.jpg"
+import ms_157 from "./ms_157.jpeg"
+import argyle_hs from "./argyle_hs.jpeg"
+import nust from "./nust.jpeg"
+import garnet_valley_hs from "./garnet_valley_hs.jpeg"
+import dublin_hs from "./dublin_hs.jpeg"
+import belmont_hs from "./belmont_hs.jpeg"
+import frazer from "./frazer.jpeg"
 
 export {
   algonquin,
@@ -411,19 +439,19 @@ export {
   delhi_tech,
   stephen_lewis_secondary,
   ballantyne,
-  steveston_london,  
-  centennial_maryland,  
-  cmu_qatar,  
-  srit,  
-  new_beginning,  
-  iit_kanpur,  
-  gujrat,  
-  ramdeobaba,  
-  newmarket,  
-  smart_village,  
-  addis_ababa,  
-  delhi_skill,  
-  portage_central,  
+  steveston_london,
+  centennial_maryland,
+  cmu_qatar,
+  srit,
+  new_beginning,
+  iit_kanpur,
+  gujrat,
+  ramdeobaba,
+  newmarket,
+  smart_village,
+  addis_ababa,
+  delhi_skill,
+  portage_central,
   wakeland,
   bangalore_institute_tech,
   leander_hs,
@@ -458,4 +486,32 @@ export {
   nit_manipur,
   sreenidhi_institute,
   berkner_hs,
+  cienega_hs_arizona,
+  saint_josephs,
+  shepherd_international_education,
+  liberty_hs,
+  al_akhawayn_uni,
+  cumilla_polytech,
+  iiit_vadodara,
+  uni_victoria,
+  st_columba_school,
+  heritage_hs,
+  santa_susana_hs,
+  west_ranch_hs,
+  nc_school_of_science_math_durham,
+  grapevine_hs,
+  sujanagar_govt_pilot_model_hs,
+  stephen_f_austin_hs,
+  liberal_arts_and_sciences_academy,
+  george_school,
+  faridpur_engineering_college,
+  vignan_university,
+  youth4am,
+  ms_157,
+  argyle_hs,
+  nust,
+  garnet_valley_hs,
+  dublin_hs,
+  belmont_hs,
+  frazer,
 }

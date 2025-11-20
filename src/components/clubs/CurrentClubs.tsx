@@ -916,12 +916,32 @@ const clubs: {
     photo: img.nit_calicut,
     region: "India",
   },
-  { name: "Centreville High School", photo: img.centreville, region: "Virginia" },
-  { name: "Newton North High School", photo: img.newton_north, region: "Massachusetts" },
+  {
+    name: "Centreville High School",
+    photo: img.centreville,
+    region: "Virginia",
+  },
+  {
+    name: "Newton North High School",
+    photo: img.newton_north,
+    region: "Massachusetts",
+  },
   { name: "Nova High", photo: img.nova_high, region: "Florida" },
-  { name: "Delhi Technological University", photo: img.delhi_tech, region: "New Delhi" },
-  { name: "Stephen Lewis Secondary School", photo: img.stephen_lewis_secondary, region: "Canada" },
-  { name: "Ballantyne Ridge High School", photo: img.ballantyne, region: "North Carolina" },
+  {
+    name: "Delhi Technological University",
+    photo: img.delhi_tech,
+    region: "New Delhi",
+  },
+  {
+    name: "Stephen Lewis Secondary School",
+    photo: img.stephen_lewis_secondary,
+    region: "Canada",
+  },
+  {
+    name: "Ballantyne Ridge High School",
+    photo: img.ballantyne,
+    region: "North Carolina",
+  },
   {
     name: "Steveston-London Secondary School",
     photo: img.steveston_london,
@@ -1127,7 +1147,146 @@ const clubs: {
     photo: img.carroll_middle_school,
     region: "Texas",
   },
-
+  {
+    name: "Cienega High School",
+    photo: img.cienega_hs_arizona,
+    region: "Arizona",
+  },
+  {
+    name: "Saint Joseph's High School",
+    photo: img.saint_josephs,
+    region: "Bangladesh",
+  },
+  {
+    name: "Shepherd International Education",
+    photo: img.shepherd_international_education,
+    region: "South Korea",
+  },
+  {
+    name: "Liberty High School",
+    photo: img.liberty_hs,
+    region: "Washington",
+  },
+  {
+    name: "Al Akhawayn University",
+    photo: img.al_akhawayn_uni,
+    region: "Morocco",
+  },
+  {
+    name: "Cumilla Polytechnic Institute",
+    photo: img.cumilla_polytech,
+    region: "Bangladesh",
+  },
+  {
+    name: "Indian Institute of Information Technology, Vadodara",
+    photo: img.iiit_vadodara,
+    region: "India",
+  },
+  {
+    name: "University of Victoria",
+    photo: img.uni_victoria,
+    region: "Canada",
+  },
+  {
+    name: "St. Columba's School",
+    photo: img.st_columba_school,
+    region: "India",
+  },
+  {
+    name: "Heritage High School",
+    photo: img.heritage_hs,
+    region: "California",
+  },
+  {
+    name: "Santa Susana High School",
+    photo: img.santa_susana_hs,
+    region: "California",
+  },
+  {
+    name: "West Ranch High School",
+    photo: img.west_ranch_hs,
+    region: "California",
+  },
+  {
+    name: "North Carolina School of Science and Math - Durham",
+    photo: img.nc_school_of_science_math_durham,
+    region: "North Carolina",
+  },
+  {
+    name: "Grapevine High School",
+    photo: img.grapevine_hs,
+    region: "Texas",
+  },
+  {
+    name: "Sujanagar Govt. Pilot Model High School",
+    photo: img.sujanagar_govt_pilot_model_hs,
+    region: "Bangladesh",
+  },
+  {
+    name: "Stephen F. Austin High School",
+    photo: img.stephen_f_austin_hs,
+    region: "Texas",
+  },
+  {
+    name: "Liberal Arts and Sciences Academy",
+    photo: img.liberal_arts_and_sciences_academy,
+    region: "Texas",
+  },
+  {
+    name: "George School",
+    photo: img.george_school,
+    region: "Pennsylvania",
+  },
+  {
+    name: "Faridpur Engineering College",
+    photo: img.faridpur_engineering_college,
+    region: "Bangladesh",
+  },
+  {
+    name: "Vignan University",
+    photo: img.vignan_university,
+    region: "India",
+  },
+  {
+    name: "Youth4AM",
+    photo: img.youth4am,
+    region: "New York",
+  },
+  {
+    name: "Middle School 157",
+    photo: img.ms_157,
+    region: "Azerbaijan",
+  },
+  {
+    name: "Argyle High School",
+    photo: img.argyle_hs,
+    region: "Texas",
+  },
+  {
+    name: "National University of Sciences and Technology (NUST)",
+    photo: img.nust,
+    region: "Pakistan",
+  },
+  {
+    name: "Garnet Valley High School",
+    photo: img.garnet_valley_hs,
+    region: "Pennsylvania",
+  },
+  {
+    name: "Dublin High School",
+    photo: img.dublin_hs,
+    region: "California",
+  },
+  {
+    name: "Belmont High School",
+    photo: img.belmont_hs,
+    region: "Massachusetts",
+  },
+  {
+    name: "Frazer School",
+    photo: img.frazer,
+    region: "Florida",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
