@@ -115,6 +115,8 @@ import empty from "./empty.png"
 import harsh_akunuri from "./harsh_akunuri.jpeg"
 import lokesh_pampatti from "./lokesh_pampatti.png"
 import peng_bai from "./peng_bai.jpeg"
+import elliotth from "./elliotth.jpg"
+import rohang from "./rohang.png"
 
 export {
   aadit,
@@ -234,4 +236,6 @@ export {
   zhixin,
   lokesh_pampatti,
   empty,
+  elliotth,
+  rohang,
 }
