@@ -97,6 +97,8 @@ import {
   kinan,
   zein,
   audrey,
+  rohang,
+  elliotth,
 } from "./images"
 import { StaticImageData } from "next/legacy/image"
 type Socials =
@@ -907,6 +909,18 @@ const _members: { [key: string]: Member } = {
     name: "Lokesh Pampatti",
     titles: [roles.clubCurriculum],
   },
+  emhgit: {
+    photo: elliotth,
+    name: "Elliott Harper",
+    titles: ["Web Development Director", roles.webdev],
+    github: "emhgit",
+  },
+  rohang: {
+    photo: rohang,
+    name: "Rohan Garg",
+    titles: ["Director of Contests", roles.liveInstructor],
+    github: "emhgit",
+  },
 }
 
 // TODO: do something with this section
@@ -976,9 +990,11 @@ const currentMembers: Member[] = [
   _members.zein,
 
   // video instructors
+  _members.rohang,
   _members.albert_jiang,
 
   // webdev
+  _members.emhgit,
   _members.vincent,
   _members.eric,
   _members.rishabh,
