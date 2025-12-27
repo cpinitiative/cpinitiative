@@ -379,6 +379,23 @@ export default function Tournament() {
         <div className=" mt-6 flex justify-center items-center">
           <div className="mx-8  ">
             <Link
+              href="/tournament/2025-results"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="font-bold border-4 border-[#8976ff] hover:grow hover:scale-105 duration-200  bg-white text-black max-w-2xl  px-8 text-center md:text-xl text-lg py-6  rounded-lg">
+                <div className="w-full px-8">
+                  2025{" "}
+                  <span className=" from-purple-700 to-blue-500 bg-gradient-to-b text-transparent bg-clip-text">
+                    USACO.Guide
+                  </span>{" "}
+                  Informatics Tournament
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="mx-8  ">
+            <Link
               href="/tournament/2024-results"
               target="_blank"
               rel="noreferrer"
