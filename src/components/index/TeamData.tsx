@@ -919,7 +919,6 @@ const _members: { [key: string]: Member } = {
     photo: rohang,
     name: "Rohan Garg",
     titles: ["Director of Contests", roles.liveInstructor],
-    github: "emhgit",
   },
 }
 
