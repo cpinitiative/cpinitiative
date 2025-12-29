@@ -72,14 +72,17 @@ export default function Results() {
             <Image height={200} width={200} src={mascotImage} alt="" />
           </div>
           <div className="md:basis-1/2 lg:mt-0 mt-8 text-center">
-            <div className="text-2xl pb-2">1st place: nivedhana</div>
+            <div className="text-2xl pb-2">
+              1st place: Nivedhana Ramachandran (nivedhana)
+            </div>
             <div className="flex flex-row justify-center pb-2 text-xl">
               <div className="pr-4">2nd place: Rohin Garg (PurpleCrayon)</div>
-              <div>3rd place: z</div>
+              <div>3rd place: Botao Yuan (z)</div>
             </div>
             <div className="text-lg">
-              4th place: hyforces, 5th place: lwm7708, 6th place: scotchtape13,
-              7th place: tony1234, 8th place: k1r1t0
+              4th place: Brian Xue (hyforces), 5th place: Brian Law (lwm7708),
+              6th place: Sathvik Prasanna (scotchtape13), 7th place: Tony Zhu
+              (tony1234), 8th place: Kirill Kardash (k1r1t0)
             </div>
           </div>
         </section>
@@ -91,17 +94,18 @@ export default function Results() {
           </div>
           <div className="md:basis-1/2 lg:mt-0 mt-8 text-center">
             <div className="text-2xl pb-2">
-              1st place: ratomcito <br />
+              1st place: Maite Carrera (ratomcito) <br />
             </div>
             <div className="flex flex-col justify-center pb-1 text-xl">
               <div className="pr-4">
-                2nd place: lmaobruh <br />
+                2nd place: who know (lmaobruh) <br />
               </div>
-              <div>3rd place: n_suresh</div>
+              <div>3rd place: Suresh Kumar Nenavath (n_suresh)</div>
             </div>
             <div className="text-lg">
-              4th place: scooter, 5th place: amansoor, 6th place: NicoN9, 7th
-              place: arstag, 8th place: wasif_shahzad
+              4th place: Justin Chen (scooter), 5th place: Ahmed Mansoor
+              (amansoor), 6th place: Nico Young (NicoN9), 7th place: Aaroosh R.
+              (arstag), 8th place: Wasif Shahzad (wasif_shahzad)
             </div>
           </div>
         </section>
