@@ -98,7 +98,7 @@ export default function Results() {
             </div>
             <div className="flex flex-col justify-center pb-1 text-xl">
               <div className="pr-4">
-                2nd place: who know (lmaobruh) <br />
+                2nd place: Anonymous (lmaobruh) <br />
               </div>
               <div>3rd place: Suresh Kumar Nenavath (n_suresh)</div>
             </div>
