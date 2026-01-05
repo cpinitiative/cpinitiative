@@ -14,6 +14,7 @@ import calico from "./calico.png"
 import wwpit from "./wwpit.png"
 import indigo from "./indigo.png"
 import aclit from "./aclit.png"
+import codeher from "./codeher.png"
 
 export {
   placeholder,
@@ -31,4 +32,5 @@ export {
   wwpit,
   indigo,
   aclit,
+  codeher,
 }
