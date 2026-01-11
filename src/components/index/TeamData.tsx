@@ -836,7 +836,7 @@ const _members: { [key: string]: Member } = {
     titles: [
       roles.liveInstructor,
       roles.videoInstructor,
-      "Director of Self-Study Classes",
+      "Director of Video/Self-Study Classes",
     ],
   },
   stanley: {
