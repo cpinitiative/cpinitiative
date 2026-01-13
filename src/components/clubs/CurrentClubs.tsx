@@ -1302,6 +1302,11 @@ const clubs: {
     photo: img.nirma_university,
     region: "India",
   },
+  {
+    name: "Richmond Green Secondary School",
+    photo: img.richmond_green_secondary_school,
+    region: "Canada",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {

@@ -258,6 +258,7 @@ import frazer from "./frazer.jpeg"
 import great_valley_hs from "./great_valley_hs.jpg"
 import willow_canyon_hs from "./willow_canyon_hs.jpg"
 import nirma_university from "./nirma_university.jpg"
+import richmond_green_secondary_school from "./richmond_green_secondary_school.jpg"
 
 export {
   algonquin,
@@ -520,4 +521,5 @@ export {
   great_valley_hs,
   willow_canyon_hs,
   nirma_university,
+  richmond_green_secondary_school,
 }
