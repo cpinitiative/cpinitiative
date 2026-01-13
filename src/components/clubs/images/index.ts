@@ -266,6 +266,7 @@ import aast_iep from "./aast_iep.jpeg"
 import gcet from "./gcet.jpeg"
 import rishihood_university from "./rishihood_university.jpg"
 import tasis from "./tasis.jpeg"
+import fes_acatlan from "./fes_acatlan.jpg"
 
 export {
   algonquin,
@@ -536,4 +537,5 @@ export {
   gcet,
   rishihood_university,
   tasis,
+  fes_acatlan,
 }

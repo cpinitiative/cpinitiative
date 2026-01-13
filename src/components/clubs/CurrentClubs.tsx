@@ -1340,7 +1340,12 @@ const clubs: {
   {
     name: "TASIS England",
     photo: img.tasis,
-    region: "England",
+    region: "UK",
+  },
+  {
+    name: "Facultad de Estudios Superiores Acatlán",
+    photo: img.fes_acatlan,
+    region: "Mexico",
   },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
