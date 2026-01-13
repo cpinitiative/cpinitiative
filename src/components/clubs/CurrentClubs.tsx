@@ -1287,6 +1287,71 @@ const clubs: {
     photo: img.frazer,
     region: "Florida",
   },
+  {
+    name: "Great Valley High School",
+    photo: img.great_valley_hs,
+    region: "Pennsylvania",
+  },
+  {
+    name: "Willow Canyon High School",
+    photo: img.willow_canyon_hs,
+    region: "Arizona",
+  },
+  {
+    name: "Nirma University",
+    photo: img.nirma_university,
+    region: "India",
+  },
+  {
+    name: "Richmond Green Secondary School",
+    photo: img.richmond_green_secondary_school,
+    region: "Canada",
+  },
+  {
+    name: "Ajeenkya DY Patil University",
+    photo: img.ajeenkya_dy_patil_university,
+    region: "India",
+  },
+  {
+    name: "Newton School of Technology",
+    photo: img.newton_school_of_technology,
+    region: "India",
+  },
+  {
+    name: "VIT-AP University",
+    photo: img.vit_ap_university,
+    region: "India",
+  },
+  {
+    name: "AAST-IEP",
+    photo: img.aast_iep,
+    region: "Egypt",
+  },
+  {
+    name: "GCET",
+    photo: img.gcet,
+    region: "India",
+  },
+  {
+    name: "Rishihood University",
+    photo: img.rishihood_university,
+    region: "India",
+  },
+  {
+    name: "TASIS England",
+    photo: img.tasis,
+    region: "UK",
+  },
+  {
+    name: "Facultad de Estudios Superiores Acatlán",
+    photo: img.fes_acatlan,
+    region: "Mexico",
+  },
+  {
+    name: "Rock Hill High School",
+    photo: img.rock_hill_hs,
+    region: "Texas",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {

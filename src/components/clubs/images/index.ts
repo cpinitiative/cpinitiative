@@ -255,6 +255,19 @@ import garnet_valley_hs from "./garnet_valley_hs.jpeg"
 import dublin_hs from "./dublin_hs.jpeg"
 import belmont_hs from "./belmont_hs.jpeg"
 import frazer from "./frazer.jpeg"
+import great_valley_hs from "./great_valley_hs.jpg"
+import willow_canyon_hs from "./willow_canyon_hs.jpg"
+import nirma_university from "./nirma_university.jpg"
+import richmond_green_secondary_school from "./richmond_green_secondary_school.jpg"
+import ajeenkya_dy_patil_university from "./ajeenkya_dy_patil_university.jpg"
+import newton_school_of_technology from "./newton_school_of_technology.jpg"
+import vit_ap_university from "./vit_ap_university.png"
+import aast_iep from "./aast_iep.jpeg"
+import gcet from "./gcet.jpeg"
+import rishihood_university from "./rishihood_university.jpg"
+import tasis from "./tasis.jpeg"
+import fes_acatlan from "./fes_acatlan.jpg"
+import rock_hill_hs from "./rock_hill_hs.jpeg"
 
 export {
   algonquin,
@@ -514,4 +527,17 @@ export {
   dublin_hs,
   belmont_hs,
   frazer,
+  great_valley_hs,
+  willow_canyon_hs,
+  nirma_university,
+  richmond_green_secondary_school,
+  ajeenkya_dy_patil_university,
+  newton_school_of_technology,
+  vit_ap_university,
+  aast_iep,
+  gcet,
+  rishihood_university,
+  tasis,
+  fes_acatlan,
+  rock_hill_hs,
 }
