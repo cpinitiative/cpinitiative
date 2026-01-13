@@ -1297,6 +1297,11 @@ const clubs: {
     photo: img.willow_canyon_hs,
     region: "Arizona",
   },
+  {
+    name: "Nirma University",
+    photo: img.nirma_university,
+    region: "India",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {

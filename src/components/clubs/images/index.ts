@@ -257,6 +257,7 @@ import belmont_hs from "./belmont_hs.jpeg"
 import frazer from "./frazer.jpeg"
 import great_valley_hs from "./great_valley_hs.jpg"
 import willow_canyon_hs from "./willow_canyon_hs.jpg"
+import nirma_university from "./nirma_university.jpg"
 
 export {
   algonquin,
@@ -518,4 +519,5 @@ export {
   frazer,
   great_valley_hs,
   willow_canyon_hs,
+  nirma_university,
 }
