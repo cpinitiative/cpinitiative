@@ -265,6 +265,7 @@ import vit_ap_university from "./vit_ap_university.png"
 import aast_iep from "./aast_iep.jpeg"
 import gcet from "./gcet.jpeg"
 import rishihood_university from "./rishihood_university.jpg"
+import tasis from "./tasis.jpeg"
 
 export {
   algonquin,
@@ -534,4 +535,5 @@ export {
   aast_iep,
   gcet,
   rishihood_university,
+  tasis,
 }
