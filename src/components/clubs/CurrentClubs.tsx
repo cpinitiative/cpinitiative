@@ -1332,6 +1332,11 @@ const clubs: {
     photo: img.gcet,
     region: "India",
   },
+  {
+    name: "Rishihood University",
+    photo: img.rishihood_university,
+    region: "India",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {

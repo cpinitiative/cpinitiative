@@ -264,6 +264,7 @@ import newton_school_of_technology from "./newton_school_of_technology.jpg"
 import vit_ap_university from "./vit_ap_university.png"
 import aast_iep from "./aast_iep.jpeg"
 import gcet from "./gcet.jpeg"
+import rishihood_university from "./rishihood_university.jpg"
 
 export {
   algonquin,
@@ -531,5 +532,6 @@ export {
   newton_school_of_technology,
   vit_ap_university,
   aast_iep,
-  gcet
+  gcet,
+  rishihood_university
 }
