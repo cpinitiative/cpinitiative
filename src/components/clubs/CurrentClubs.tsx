@@ -1347,6 +1347,11 @@ const clubs: {
     photo: img.fes_acatlan,
     region: "Mexico",
   },
+  {
+    name: "Rock Hill High School",
+    photo: img.rock_hill_hs,
+    region: "Texas",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
