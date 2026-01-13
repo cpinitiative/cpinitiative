@@ -1327,6 +1327,11 @@ const clubs: {
     photo: img.aast_iep,
     region: "Egypt",
   },
+  {
+    name: "GCET",
+    photo: img.gcet,
+    region: "India",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
