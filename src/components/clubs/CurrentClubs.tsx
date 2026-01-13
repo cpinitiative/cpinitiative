@@ -1317,6 +1317,11 @@ const clubs: {
     photo: img.newton_school_of_technology,
     region: "India",
   },
+  {
+    name: "VIT-AP University",
+    photo: img.vit_ap_university,
+    region: "India",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {

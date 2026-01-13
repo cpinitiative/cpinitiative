@@ -261,6 +261,7 @@ import nirma_university from "./nirma_university.jpg"
 import richmond_green_secondary_school from "./richmond_green_secondary_school.jpg"
 import ajeenkya_dy_patil_university from "./ajeenkya_dy_patil_university.jpg"
 import newton_school_of_technology from "./newton_school_of_technology.jpg"
+import vit_ap_university from "./vit_ap_university.png"
 
 export {
   algonquin,
@@ -526,4 +527,5 @@ export {
   richmond_green_secondary_school,
   ajeenkya_dy_patil_university,
   newton_school_of_technology,
+  vit_ap_university,
 }
