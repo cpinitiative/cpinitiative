@@ -533,5 +533,5 @@ export {
   vit_ap_university,
   aast_iep,
   gcet,
-  rishihood_university
+  rishihood_university,
 }
