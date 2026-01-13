@@ -1292,6 +1292,11 @@ const clubs: {
     photo: img.great_valley_hs,
     region: "Pennsylvania",
   },
+  {
+    name: "Willow Canyon High School",
+    photo: img.willow_canyon_hs,
+    region: "Arizona",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
