@@ -1287,6 +1287,11 @@ const clubs: {
     photo: img.frazer,
     region: "Florida",
   },
+  {
+    name: "Great Valley High School",
+    photo: img.great_valley_hs,
+    region: "Pennsylvania",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {

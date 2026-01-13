@@ -255,6 +255,7 @@ import garnet_valley_hs from "./garnet_valley_hs.jpeg"
 import dublin_hs from "./dublin_hs.jpeg"
 import belmont_hs from "./belmont_hs.jpeg"
 import frazer from "./frazer.jpeg"
+import great_valley_hs from "./great_valley_hs.jpg"
 
 export {
   algonquin,
@@ -514,4 +515,5 @@ export {
   dublin_hs,
   belmont_hs,
   frazer,
+  great_valley_hs,
 }
