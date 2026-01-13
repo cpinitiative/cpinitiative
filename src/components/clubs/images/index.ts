@@ -259,6 +259,7 @@ import great_valley_hs from "./great_valley_hs.jpg"
 import willow_canyon_hs from "./willow_canyon_hs.jpg"
 import nirma_university from "./nirma_university.jpg"
 import richmond_green_secondary_school from "./richmond_green_secondary_school.jpg"
+import ajeenkya_dy_patil_university from "./ajeenkya_dy_patil_university.jpg"
 
 export {
   algonquin,
@@ -522,4 +523,5 @@ export {
   willow_canyon_hs,
   nirma_university,
   richmond_green_secondary_school,
+  ajeenkya_dy_patil_university,
 }

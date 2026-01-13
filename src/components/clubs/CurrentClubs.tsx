@@ -1307,6 +1307,11 @@ const clubs: {
     photo: img.richmond_green_secondary_school,
     region: "Canada",
   },
+  {
+    name: "Ajeenkya DY Patil University",
+    photo: img.ajeenkya_dy_patil_university,
+    region: "India",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
