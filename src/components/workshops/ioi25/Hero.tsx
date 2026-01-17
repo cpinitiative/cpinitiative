@@ -1,6 +1,7 @@
 import * as React from "react"
 import IOI25 from "../../../images/workshops/ioi25.png"
 import Image from "next/legacy/image"
+import Youtube from "../../Youtube"
 
 export default function Hero() {
   return (
@@ -44,7 +45,15 @@ export default function Hero() {
                   </a>
                 </div>
               </div>
+              <div
+                className={
+                  "lg:col-span-3 w-full max-w-2xl mx-auto space-y-6 pt-10"
+                }
+              >
+                <Youtube id="VIHFKZ1nNow" />
+              </div>
             </div>
+
             <div className={"lg:col-span-3 w-full max-w-2xl mx-auto space-y-6"}>
               <Image
                 src={IOI25}
