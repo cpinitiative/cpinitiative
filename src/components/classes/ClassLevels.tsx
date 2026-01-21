@@ -45,7 +45,7 @@ export default function ClassLevels() {
                 <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
                   <ul className="space-y-4">
                     {[
-                      "Sundays, 5-7pm PDT during 9/21/25 to 11/23/25.",
+                      "Sundays, 5-7pm PDT during 2/15/26 to 5/3/26.",
                       "File / Fast I/O",
                       "Time Complexity",
                       "Data Structures and Simulation",

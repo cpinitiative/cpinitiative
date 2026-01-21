@@ -507,7 +507,7 @@ export default function Classes() {
                   <h3>Class Schedule</h3>
                   <ul>
                     <li>
-                      Bronze: Sundays during <b>Sept 21th - Nov 23rd</b> from
+                      Bronze: Sundays during <b>February 15th - May 3rd</b> from
                       5:00 PM - 7:00 PM PDT
                     </li>
                     <li>

@@ -79,7 +79,7 @@ export default async function processLiveRegistration(
     const joinLinkRef = db.collection("group-join-links").doc()
     await joinLinkRef.set({
       groupId:
-        level === "beginner" ? "9EPv4ex9P8F65LoG93Ym" : "P3iVTxXKqdSL06Z86ToE",
+        level === "beginner" ? "kEwsPad2Uiv0HanNWUe4" : "P3iVTxXKqdSL06Z86ToE",
       revoked: false,
       numUses: 0,
       maxUses: 1,
