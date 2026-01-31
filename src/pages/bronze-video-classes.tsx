@@ -13,8 +13,8 @@ export default function Classes() {
   return (
     <Layout>
       <SEO
-        title="Self-Study USACO Classes"
-        description="Learn USACO through affordable, high-quality classes with a curriculum designed and developed by past USACO Finalists. Designed from the ground-up to embrace the self-study video format."
+        title="Bronze Self-Study USACO Classes"
+        description="Learn USACO Bronze through affordable, high-quality classes with a curriculum designed and developed by past USACO Finalists. Designed from the ground-up to embrace the self-study video format."
       />
 
       <div className="bg-white">
@@ -57,7 +57,7 @@ export default function Classes() {
                         </span>
                       </h1>
                       <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                        Learn USACO through&nbsp; 
+                        Learn USACO Bronze through&nbsp; 
                         <span style = {{position: "relative" }}>
                           free,&nbsp; 
                             <Sparkles 

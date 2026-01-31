@@ -13,8 +13,8 @@ export default function Classes() {
   return (
     <Layout>
       <SEO
-        title="Self-Study USACO Classes"
-        description="Learn USACO through affordable, high-quality classes with a curriculum designed and developed by past USACO Finalists. Designed from the ground-up to embrace the self-study video format."
+        title="Silver Self-Study USACO Classes"
+        description="Learn USACO Silver through affordable, high-quality classes with a curriculum designed and developed by past USACO Finalists. Designed from the ground-up to embrace the self-study video format."
       />
 
       <div className="bg-white">
@@ -26,11 +26,11 @@ export default function Classes() {
             <div className="pr-16 sm:text-center sm:px-16">
               <p className="font-medium text-white">
                 <span className="md:inline">
-                USACO Bronze Classes are now free!
+                New: Free Silver Classes Now Available!
                 </span>
                 <span className="block sm:ml-2 sm:inline-block">
                   <a
-                    href="https://usaco.guide/groups/join?key=GzyZvOTMidyo8e4EIMLP"
+                    href="https://usaco.guide/groups/join?key=T5cZgC2ks7nuH4wC22Gh"
                     target="_blank"
                     rel="noreferrer"
                     className="text-white font-bold underline"
@@ -53,11 +53,11 @@ export default function Classes() {
                           Free Self-Study
                           </span>
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 block">
-                        USACO Bronze Classes
+                        USACO Silver Classes
                         </span>
                       </h1>
                       <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                        Learn USACO through&nbsp; 
+                        Learn USACO Silver through&nbsp; 
                         <span style = {{position: "relative" }}>
                           free,&nbsp; 
                             <Sparkles 
@@ -74,7 +74,7 @@ export default function Classes() {
                       </p>
                       <div className="mt-8 sm:mt-12 space-x-4">
                         <Link
-                          href="https://usaco.guide/groups/join?key=GzyZvOTMidyo8e4EIMLP"
+                          href="https://usaco.guide/groups/join?key=T5cZgC2ks7nuH4wC22Gh"
                           className="inline-flex sm:text-lg py-3 px-6 sm:py-4 sm:px-8 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
                           
                             View Now
@@ -125,10 +125,10 @@ export default function Classes() {
                     Affordable doesn't mean low-quality.
                   </span> */}
                   <span>
-                    If you're struggling to get started with USACO, you've come
+                    If you're struggling to progess in USACO, you've come
                     to the right place. Our team of past USACO Finalists have
                     created a well-structured course that will teach you all the
-                    major topics of Bronze in a clear and organized fashion.
+                    major topics of Silver in a clear and organized fashion.
                   </span>
                 </p>
 
@@ -512,10 +512,10 @@ export default function Classes() {
                 </div>
                 <div className="prose prose-lg text-gray-500 mx-auto">
                   <p>
-                    This eight-week program is designed to teach you the major
-                    concepts in the Bronze division of USACO.
+                    This nine-week program is designed to teach you the major
+                    concepts in the Silver division of USACO.
                   </p>
-
+                  {/*}
                   <div className="aspect-w-16 aspect-h-9">
                     <iframe
                       src="https://www.youtube.com/embed/ZZBCCECaSxM"
@@ -528,31 +528,30 @@ export default function Classes() {
 
                   <h3>Class Structure</h3>
                   <p>
-                    Each week, we'll introduce one topic in Bronze, and we'll
+                    Each week, we'll introduce one topic in Silver, and we'll
                     provide a series of curated problems related to that topic
                     in incremental difficulty. Every problem will come with
                     video and code solutions in C++ and Java (Python coming
-                    soon). You'll get access to all 8 weeks of curriculum at
+                    soon). You'll get access to all 9 weeks of curriculum at
                     once.
                   </p>
-
+                  {*/}
                   <ol>
-                    <li>Time Complexity and Rectangle Geometry</li>
-                    <li>Data Structures and Simulation</li>
-                    <li>Basic Complete Search</li>
-                    <li>Complete Search with Recursion</li>
-                    <li>Sorting, Sets, and Maps</li>
-                    <li>Ad Hoc Problems</li>
-                    <li>Greedy Algorithms</li>
-                    <li>Introduction to Graphs</li>
+                    <li>Prefix Sums</li>
+                    <li>Sorting with Custom Comparators</li>
+                    <li>Two Pointers</li>
+                    <li>More Operations on Sorted Sets</li>
+                    <li>Greedy Algorithms with Sorting</li>
+                    <li>Binary Search</li>
+                    <li>Depth First Search</li>
+                    <li>Flood Fill</li>
+                    <li>Introduction to Tree Algorithms</li>
                   </ol>
 
                   <h3>Target Audience</h3>
                   <p>
-                    This class is targeted to people who are familiar with the
-                    basics of programming (ie. for loops, etc), but are new to
-                    USACO. This class teaches you the major concepts needed for
-                    Bronze. If you are already familiar with Bronze concepts,
+                    This class is targeted to people who are familiar with Bronze concepts. It teaches you the major concepts needed for
+                    Silver. If you are already familiar with Silver concepts,
                     this class will likely be too easy for you.
                   </p>
                   <p>
@@ -601,12 +600,12 @@ export default function Classes() {
                     using all of them.
                   </p>
 
-                  <h3>How do I promote from Bronze to Silver?</h3>
+                  <h3>How do I promote from Silver to Gold?</h3>
                   <p>
                     First, you should take this course so you know all the major
-                    Bronze concepts. Then, you'll need to <b>practice</b> with
+                    Silver concepts. Then, you'll need to <b>practice</b> with
                     old USACO problems (or USACO Guide problems). The goal of
-                    taking this course is to make you able to attempt Bronze
+                    taking this course is to make you able to attempt Silver
                     problems and understand editorials when you get stuck.
                   </p>
 
@@ -614,7 +613,7 @@ export default function Classes() {
                   <ol>
                     <li>
                       <p>
-                        If you already know all the Bronze concepts, this class
+                        If you already know all the Silver concepts, this class
                         may be too easy for you.
                       </p>
                     </li>
@@ -647,16 +646,16 @@ export default function Classes() {
                       <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
                         <span className="block">Convinced?</span>
                         <span className="block">
-                          Start your USACO journey today.
+                          Pursue your USACO journey today.
                         </span>
                       </h2>
                       <p className="mt-4 text-lg leading-6 text-cyan-200">
                         After taking this class, you'll be comfortable with all
-                        the major concepts of USACO Bronze, and will be
-                        well-equipped to tackle USACO Bronze problems.
+                        the major concepts of USACO Silver, and will be
+                        well-equipped to tackle USACO Silver problems.
                       </p>
                       <Link
-                        href="https://usaco.guide/groups/join?key=GzyZvOTMidyo8e4EIMLP"
+                        href="https://usaco.guide/groups/join?key=T5cZgC2ks7nuH4wC22Gh"
                         className="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-cyan-600 hover:bg-indigo-50">
                         
                           View Now
@@ -676,7 +675,7 @@ export default function Classes() {
                   <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
                     <img
                       className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-8 lg:translate-y-16"
-                      src="/class.png"
+                      src="/class2.png"
                       alt="Class LMS"
                     />
                   </div>
