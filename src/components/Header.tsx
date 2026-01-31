@@ -218,14 +218,25 @@ export default function Header({
           </Link>
 
           <Link
-            href="/video-classes"
+            href="/bronze-video-classes"
             className={
-              "/video-classes" === router.pathname
+              "/bronze-video-classes" === router.pathname
                 ? activeBlockLinkClasses
                 : blockLinkClasses
             }
           >
-            Self-Study Classes
+            Bronze Self-Study Classes
+          </Link>
+
+          <Link
+            href="/silver-video-classes"
+            className={
+              "/silver-video-classes" === router.pathname
+                ? activeBlockLinkClasses
+                : blockLinkClasses
+            }
+          >
+            Silver Self-Study Classes
           </Link>
 
           {internalLinks.map(link => (
