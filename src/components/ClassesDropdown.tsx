@@ -1,4 +1,4 @@
-import { Menu, Transition } from "@headlessui/react"
+import { Menu, MenuButton, MenuItem, MenuItems, Transition } from "@headlessui/react"
 import { ChevronDownIcon } from "@heroicons/react/solid"
 
 import Link from "next/link"
@@ -12,7 +12,7 @@ export default function ClassesDropdown({ dark = false }): JSX.Element {
     <Menu as="div" className="relative inline-block text-left">
       {({ open }) => (
         <div className="relative h-full">
-          <Menu.Button
+          <MenuButton
             className={classNames(
               "group inline-flex items-center h-full px-1 pt-1 border-b-2 border-transparent text-sm leading-6 font-medium transition ease-in-out duration-150",
               dark
@@ -42,7 +42,7 @@ export default function ClassesDropdown({ dark = false }): JSX.Element {
               )}
               aria-hidden="true"
             />
-          </Menu.Button>
+          </MenuButton>
           <Transition
             enter="transition duration-100 ease-out"
             enterFrom="transform scale-95 opacity-0"
@@ -51,14 +51,14 @@ export default function ClassesDropdown({ dark = false }): JSX.Element {
             leaveFrom="transform scale-100 opacity-100"
             leaveTo="transform scale-95 opacity-0"
           >
-            <Menu.Items
+            <MenuItems
               className={classNames(
                 "origin-top-right absolute left-0 -mt-2 w-56 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transform transition data-[closed]:opacity-0 data-[closed]:scale-95 data-[enter]:duration-100 data-[leave]:duration-75",
                 dark ? "bg-gray-800" : "bg-white"
               )}
             >
               <div className="py-1">
-                <Menu.Item>
+                <MenuItem>
                   <Link
                     href="/classes"
                     className={classNames(
@@ -70,10 +70,10 @@ export default function ClassesDropdown({ dark = false }): JSX.Element {
                   >
                     Live Classes
                   </Link>
-                </Menu.Item>
-                <Menu.Item>
+                </MenuItem>
+                <MenuItem>
                   <Link
-                    href="/video-classes"
+                    href="/bronze-video-classes"
                     className={classNames(
                       "block px-4 py-2 text-sm font-medium",
                       dark
@@ -81,11 +81,24 @@ export default function ClassesDropdown({ dark = false }): JSX.Element {
                         : "hover:bg-gray-100 hover:text-gray-900 text-gray-700"
                     )}
                   >
-                    Self-Study Classes
+                    Bronze Self-Study Classes
                   </Link>
-                </Menu.Item>
+                </MenuItem>
+                <MenuItem>
+                  <Link
+                    href="/silver-video-classes"
+                    className={classNames(
+                      "block px-4 py-2 text-sm font-medium",
+                      dark
+                        ? "hover:bg-gray-600 text-gray-200"
+                        : "hover:bg-gray-100 hover:text-gray-900 text-gray-700"
+                    )}
+                  >
+                    Silver Self-Study Classes
+                  </Link>
+                </MenuItem>
               </div>
-            </Menu.Items>
+            </MenuItems>
           </Transition>
         </div>
       )}

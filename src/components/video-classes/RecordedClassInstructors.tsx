@@ -1,115 +1,81 @@
 import * as React from "react"
 import Image, { StaticImageData } from "next/legacy/image"
 import {
-  nathanw,
-  daniel,
-  jeffrey,
-  maggie,
-  melody,
-  varun,
-  jay,
-  jpaulson,
-  vivian,
-  neo,
-  amogha,
-  david_li,
-  vikas_thoutam,
-  yifan_ma,
-  harry,
-  arpan,
-  nikhil,
+  srijith,
+  satvika,
+  nathanc,
+  david_zhou,
+  i_chen_chou,
+  abhiraj,
+  hannah,
+  andyc,
+  ruben,
+  kyle_liang,
 } from "../index/images"
 
 type Member = {
-  photo: StaticImageData // url of photo relative to content/authors/images/, EXCLUDING EXTENSION
+  photo?: StaticImageData // url of photo relative to content/authors/images/, EXCLUDING EXTENSION
   name: string
   title: string
 }
 
 const members: Member[] = [
   {
-    photo: nathanw,
-    name: "Nathan Wang",
-    title: "Lead Instructor / Finalist",
-  },
-  {
-    photo: daniel,
-    name: "Daniel Guan",
-    title: "Lead Instructor / Finalist",
-  },
-  {
-    photo: jeffrey,
-    name: "Jeffrey Meng",
+    photo: srijith,
+    name: "Srijith Chinthalapudi",
     title: "Lead Instructor",
   },
   {
-    photo: maggie,
-    name: "Maggie Liu",
+    photo: david_zhou,
+    name: "David Zhou",
     title: "Instructor",
   },
   {
-    photo: melody,
-    name: "Melody Yu",
+    photo: satvika,
+    name: "Satvika Sridhar",
     title: "Instructor",
   },
   {
-    photo: varun,
-    name: "Varun Ragunath",
-    title: "Instructor / Finalist",
-  },
-  {
-    photo: jay,
-    name: "Jay Fu",
+    photo: i_chen_chou,
+    name: "I-Chen Chou",
     title: "Instructor",
   },
   {
-    photo: jpaulson,
-    name: "Jonathan Paulson",
-    title: "Instructor / USACO Coach",
-  },
-  {
-    photo: vivian,
-    name: "Vivian Han",
-    title: "Instructor / USA EGOI Team",
-  },
-  {
-    photo: neo,
-    name: "Neo Wang",
+    photo: abhiraj,
+    name: "Abhiraj Mallangi",
     title: "Instructor",
   },
   {
-    photo: amogha,
-    name: "Amogha Pokkulandra",
+    photo: hannah,
+    name: "Hannah Ying",
     title: "Instructor",
   },
   {
-    photo: david_li,
-    name: "David Li",
+    photo: andyc,
+    name: "Andy Chen",
     title: "Instructor",
   },
   {
-    photo: vikas_thoutam,
-    name: "Vikas Thoutam",
+    photo: nathanc,
+    name: "Nathan Chen",
     title: "Instructor",
   },
   {
-    photo: yifan_ma,
-    name: "Yifan Ma",
+    name: "Ayush Bansal",
     title: "Instructor",
   },
   {
-    photo: harry,
-    name: "Harry Wang",
+    name: "Patrick Deng",
     title: "Instructor",
   },
   {
-    photo: arpan,
-    name: "Arpan Banerjee",
+    photo: ruben,
+    name: "Ruben Jing",
     title: "Instructor",
   },
   {
-    photo: nikhil,
-    name: "Nikhil Chatterjee",
+    photo: kyle_liang,
+    name: "Kyle Liang",
     title: "Instructor",
   },
 ]
@@ -134,14 +100,22 @@ export default function RecordedClassInstructors() {
                 <li key={member.name}>
                   <div className="flex items-center space-x-4 lg:space-x-6">
                     <div className="flex-shrink-0 w-16 h-16 rounded-full relative overflow-hidden lg:w-20 lg:h-20">
-                      <Image
-                        layout="fill"
-                        objectFit="cover"
-                        objectPosition="center center"
-                        src={member.photo}
-                        alt={member.name}
-                        placeholder="blur"
-                      />
+                      {member.photo ? (
+                        <Image
+                          layout="fill"
+                          objectFit="cover"
+                          objectPosition="center center"
+                          src={member.photo}
+                          alt={member.name}
+                          placeholder="blur"
+                        />
+                      ) : (
+                        <div className="flex h-full w-full items-center justify-center bg-gray-200 dark:bg-gray-700">
+                          <span className="text-2xl font-bold text-gray-500 dark:text-gray-400">
+                            {member.name.charAt(0)}
+                          </span>
+                        </div>
+                      )}
                     </div>
                     <div className="font-medium text-lg leading-6 space-y-1">
                       <h3>{member.name}</h3>

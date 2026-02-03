@@ -99,6 +99,13 @@ import {
   audrey,
   rohang,
   elliotth,
+  david_zhou,
+  i_chen_chou,
+  abhiraj,
+  hannah,
+  andyc,
+  ruben,
+  kyle_liang,
 } from "./images"
 import { StaticImageData } from "next/legacy/image"
 type Socials =
@@ -912,13 +919,48 @@ const _members: { [key: string]: Member } = {
   emhgit: {
     photo: elliotth,
     name: "Elliott Harper",
-    titles: ["Web Development Director", roles.webdev],
+    titles: ["Director of Web Development", roles.webdev],
     github: "emhgit",
   },
   rohang: {
     photo: rohang,
     name: "Rohan Garg",
     titles: ["Director of Contests", roles.liveInstructor],
+  },
+  david_zhou: {
+    photo: david_zhou,
+    name: "David Zhou",
+    titles: [roles.videoInstructor, roles.contentAuthor],
+  },
+  i_chen_chou: {
+    photo: i_chen_chou,
+    name: "I-Chen Chou",
+    titles: [roles.videoInstructor, roles.liveInstructor],
+  },
+  abhiraj: {
+    photo: abhiraj,
+    name: "Abhiraj Mallangi",
+    titles: [roles.videoInstructor],
+  },
+  hannah: {
+    photo: hannah,
+    name: "Hannah Ying",
+    titles: [roles.videoInstructor],
+  },
+  andyc: {
+    photo: andyc,
+    name: "Andy Chen",
+    titles: [roles.videoInstructor, roles.liveInstructor],
+  },
+  ruben: {
+    photo: ruben,
+    name: "Ruben Jing",
+    titles: [roles.videoInstructor, roles.contentAuthor],
+  },
+  kyle_liang: {
+    photo: kyle_liang,
+    name: "Kyle Liang",
+    titles: [roles.videoInstructor, roles.liveInstructor],
   },
 }
 
@@ -987,10 +1029,17 @@ const currentMembers: Member[] = [
   _members.srijith,
   _members.kinan,
   _members.zein,
+  _members.abhiraj,
 
   // video instructors
   _members.rohang,
   _members.albert_jiang,
+  _members.david_zhou,
+  _members.i_chen_chou,
+  _members.hannah,
+  _members.andyc,
+  _members.ruben,
+  _members.kyle_liang,
 
   // webdev
   _members.emhgit,
