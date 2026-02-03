@@ -117,6 +117,13 @@ import lokesh_pampatti from "./lokesh_pampatti.png"
 import peng_bai from "./peng_bai.jpeg"
 import elliotth from "./elliotth.jpg"
 import rohang from "./rohang.png"
+import david_zhou from "./david_zhou.jpeg"
+import i_chen_chou from "./i_chen_chou.png"
+import abhiraj from "./abhiraj.png"
+import hannah from "./hannah.jpg"
+import andyc from "./andyc.jpg"
+import ruben from "./ruben.png"
+import kyle_liang from "./kyle_liang.jpg"
 
 export {
   aadit,
@@ -238,4 +245,11 @@ export {
   empty,
   elliotth,
   rohang,
+  david_zhou,
+  i_chen_chou,
+  abhiraj,
+  hannah,
+  andyc,
+  ruben,
+  kyle_liang,
 }
