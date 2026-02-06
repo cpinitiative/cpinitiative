@@ -14,7 +14,6 @@ export default async function handler(
     .doc("volunteers")
     .get()
     .then(doc => {
-      // console.log(doc.data())
       return doc.data()
     })
   const session = await getServerSession(req, res, authOptions)
@@ -47,13 +46,6 @@ export default async function handler(
   // .replaceAll("-", "/")
   // .split(".")[0]
 
-  console.log({
-    time,
-    email,
-    hours,
-    response,
-    role,
-  })
   await (async function () {
     const doc = new GoogleSpreadsheet(SHEETS_METADATA.spreadSheetId)
 
