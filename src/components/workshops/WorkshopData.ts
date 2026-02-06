@@ -232,7 +232,6 @@ const workshops: Workshop[] = [
 
 workshops.sort((a, b) => -a.date.diff(b.date))
 const now = dayjs()
-console.log("date", workshops[0].date)
 // calculate latest workshop
 let latestWorkshop: Workshop
 for (const workshop of workshops.slice().reverse()) {

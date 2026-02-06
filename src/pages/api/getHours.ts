@@ -22,7 +22,6 @@ export default async function handler(
     .doc("volunteers")
     .get()
     .then(doc => {
-      // console.log(doc.data())
       return doc.data()
     })
 
@@ -39,14 +38,12 @@ export default async function handler(
       return volunteer[1]?.emails?.includes(email)
     })
 
-    // console.log(volunteerInfo)
     let volunteerInfo
     if (volunteerRecord?.length > 1 && volunteerRecord[1]) {
       // @ts-ignore
       volunteerInfo = volunteerRecord[1]
     }
 
-    // console.log(volunteerInfo)
 
     if (!volunteerInfo)
       return res.status(200).json({
@@ -62,8 +59,6 @@ export default async function handler(
     const hourSheet = doc.sheetsByIndex[0]
     const hourSheetRows = await hourSheet.getRows()
     const hourSheetRowLength = hourSheetRows.length + 1
-    // console.log(`Sheet Title ${hourSheet.title}`)
-    // console.log(`Sheet Length ${hourSheetRowLength}`)
 
     const rolesSheet = doc.sheetsByIndex[1]
     const rolesSheetRows = await rolesSheet.getRows()
@@ -94,14 +89,11 @@ export default async function handler(
     for (let i = 2; i <= hourSheetRowLength; i++) {
       const findData = async () => {
         let time = await hourSheet.getCellByA1(`A${i}`)
-        // console.log(i, time.effectiveFormat?.numberFormat?.type);
         time =
           time.effectiveFormat?.numberFormat?.type === "DATE_TIME"
             ? time.formattedValue
             : time.value
         // const temp = await sheet.getCellByA1(`A${i}`)
-        // console.log(temp.numberFormat);
-        // console.log(i, time, temp.numberFormat);
         const em = await hourSheet.getCellByA1(`C${i}`).value
         const hrs = await hourSheet.getCellByA1(`D${i}`).value
         const response = YAML.parse(await hourSheet.getCellByA1(`E${i}`).value)
@@ -113,7 +105,6 @@ export default async function handler(
             email => em.trim().toLowerCase() === email.trim().toLowerCase()
           )
         ) {
-          // console.log("found", i, parseFloat(hrs))
           totalHours += parseFloat(hrs) || 0 // default to 0 if not a number
           data = [...data, { time, em, hrs, response, role }]
         }
