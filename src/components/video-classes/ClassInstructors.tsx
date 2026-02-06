@@ -20,7 +20,7 @@ import {
   rahul_verma,
   ryan_fu,
   andrew_xu,
-  peng_bai
+  peng_bai,
 } from "../index/images"
 
 type Member = {
@@ -33,7 +33,8 @@ const members: Member[] = [
   {
     photo: trisha,
     name: "Trisha Sabadra",
-    title: "Project Manager of Classes / Director of Bronze Classes / Silver Instructor",
+    title:
+      "Project Manager of Classes / Director of Bronze Classes / Silver Instructor",
   },
   {
     photo: varun,
@@ -48,7 +49,7 @@ const members: Member[] = [
   {
     photo: andrew_xu,
     name: "Andrew Xu",
-    title: "Bronze & Silver Instructor"
+    title: "Bronze & Silver Instructor",
   },
   {
     photo: rohan_garg,
@@ -58,7 +59,7 @@ const members: Member[] = [
   {
     photo: peng_bai,
     name: "Peng Bai",
-    title: "Silver Instructor"
+    title: "Silver Instructor",
   },
   {
     photo: ryan_fu,

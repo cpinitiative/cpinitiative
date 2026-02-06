@@ -46,7 +46,7 @@ export default function Card({
       <Link href={url} className={classes}>
         {contents}
       </Link>
-    );
+    )
   }
   return (
     <a href={url} target="_blank" className={classes}>

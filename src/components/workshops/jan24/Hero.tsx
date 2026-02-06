@@ -21,11 +21,18 @@ export default function Hero() {
                 Want to learn how to solve the USACO January 2024 Bronze/Silver
                 Problems? Join this workshop on <b>February 3rd</b> to gain a
                 better understanding of the solutions from the contest! The
-                problems will be solved live by USACO competitors from CPI and X-Camp
-                at <b>3pm PST (6pm EST)</b>!
+                problems will be solved live by USACO competitors from CPI and
+                X-Camp at <b>3pm PST (6pm EST)</b>!
               </p>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Click <a className="text-blue-600 hover:text-blue-400 transition-colors duration-300" href="https://us06web.zoom.us/j/87009599869">here</a> to join the zoom!
+                Click{" "}
+                <a
+                  className="text-blue-600 hover:text-blue-400 transition-colors duration-300"
+                  href="https://us06web.zoom.us/j/87009599869"
+                >
+                  here
+                </a>{" "}
+                to join the zoom!
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">

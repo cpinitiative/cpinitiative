@@ -1,12 +1,12 @@
 const defaultTheme = require("tailwindcss/defaultTheme")
 const colors = require("tailwindcss/colors")
-const plugin = require('tailwindcss/plugin')
+const plugin = require("tailwindcss/plugin")
 
 module.exports = {
   theme: {
     extend: {
       animation: {
-        'fadeIn': 'fadeIn 1s easeOut 1 forwards',
+        fadeIn: "fadeIn 1s easeOut 1 forwards",
       },
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
@@ -31,41 +31,40 @@ module.exports = {
       },
       keyframes: {
         fadeIn: {
-          '0%': {'opacity': '0'},
-          '100%': {'opacity': '1'},
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
         },
         backInDown: {
-          '0%': {
-            transform: 'translateY(-1200px) scale(0.7)',
-            opacity: 0.7
+          "0%": {
+            transform: "translateY(-1200px) scale(0.7)",
+            opacity: 0.7,
           },
-          '80%': {
-            transform: 'translateY(0px) scale(0.7)'
+          "80%": {
+            transform: "translateY(0px) scale(0.7)",
           },
-          '100%': {
-            transform: 'scale(1)',
-            opacity: 1
-          }
-        }
-      }
+          "100%": {
+            transform: "scale(1)",
+            opacity: 1,
+          },
+        },
+      },
     },
   },
   plugins: [
     require("@tailwindcss/forms"),
     require("@tailwindcss/typography"),
     require("@tailwindcss/aspect-ratio"),
-    plugin(function({ addUtilities }) {
+    plugin(function ({ addUtilities }) {
       addUtilities({
-        '.no-scrollbar::-webkit-scrollbar': {
-          'display': 'none'
+        ".no-scrollbar::-webkit-scrollbar": {
+          display: "none",
         },
-        '.no-scrollbar': {
-          '-ms-overflow-style': 'none',
-          'scrollbar-width': 'none'
+        ".no-scrollbar": {
+          "-ms-overflow-style": "none",
+          "scrollbar-width": "none",
         },
       })
-    })
+    }),
   ],
   content: ["./src/**/*.js", "./src/**/*.tsx"],
 }
-

@@ -104,5 +104,5 @@ export default function CPG() {
         </div>
       </div>
     </Layout>
-  );
+  )
 }

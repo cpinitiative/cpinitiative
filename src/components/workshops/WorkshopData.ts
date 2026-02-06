@@ -48,7 +48,8 @@ const workshops: Workshop[] = [
   {
     photo: IOI25,
     title: "2025 IOI Team Workshop",
-    description: "Meet three US team members for the 2025 International Olympiad in Informatics! Live CF Upsolve + Open Q&A.",
+    description:
+      "Meet three US team members for the 2025 International Olympiad in Informatics! Live CF Upsolve + Open Q&A.",
     date: dayjs("Nov 15, 2025 1:00:00 PM PST"),
     season: "2025-2026",
     url: "ioi25",

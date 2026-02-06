@@ -1,4 +1,11 @@
-import { ryan, albert, kevin, rohan_garg, aadit, andrew_xu } from "../../index/images"
+import {
+  ryan,
+  albert,
+  kevin,
+  rohan_garg,
+  aadit,
+  andrew_xu,
+} from "../../index/images"
 import chongtian_ma from "../../index/images/chongtian_ma.jpg"
 
 import Speakers, { Speaker } from "../Speakers"
@@ -17,13 +24,13 @@ const speakers: Speaker[] = [
   {
     name: "Aadit Ambadkar",
     title: "Teacher / USACO Platinum",
-    photo: aadit
+    photo: aadit,
   },
   {
     name: "Andrew Xu",
     title: "Teacher / USACO Gold",
-    photo: andrew_xu
-  }
+    photo: andrew_xu,
+  },
 ]
 
 export default function People() {
