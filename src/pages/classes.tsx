@@ -57,9 +57,14 @@ export default function Classes() {
                           Contact Us
                         </a>
                       </div>
-                      <p className="mt-4 sm:mt-6 text-sm text-gray-300 sm:mt-5 lg:text-base">
-                        <Link href="/video-classes" className="hover:underline">
-                          Looking for self-study classes? &rarr;
+                      <p className="mt-4 sm:mt-6 text-sm text-gray-300 lg:text-base">
+                        Looking for self-study classes?
+                        <Link href="/bronze-video-classes" className="ml-2 underline hover:text-white">
+                          Bronze
+                        </Link>
+                        <span className="mx-2">&middot;</span>
+                        <Link href="/silver-video-classes" className="underline hover:text-white">
+                          Silver
                         </Link>
                       </p>
                     </div>
