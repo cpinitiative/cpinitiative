@@ -44,7 +44,6 @@ export default async function handler(
       volunteerInfo = volunteerRecord[1]
     }
 
-
     if (!volunteerInfo)
       return res.status(200).json({
         error:

@@ -130,9 +130,10 @@ export default async function processLiveRegistration(
       "AN INTERNAL ERROR OCCURRED WHILE PROCESSING LIVE REGISTRATION"
     )
     console.error(error)
+    const message = error instanceof Error ? error.message : String(error)
     return response.status(500).json({
       success: false,
-      message: "An internal error occurred: " + error.message,
+      message: "An internal error occurred: " + message,
     })
   }
 }

@@ -68,9 +68,10 @@ export default async function approveFinancialAid(
       joinLink: `https://usaco.guide/groups/join?key=${joinLinkRef.id}`,
     })
   } catch (error) {
+    const message = error instanceof Error ? error.message : String(error)
     return response.status(500).json({
       success: false,
-      message: error.message,
+      message: message,
     })
   }
 }

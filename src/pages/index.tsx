@@ -10,6 +10,7 @@ import Announcements from "../components/announcements/Announcements"
 import fs from "fs"
 import { serialize } from "next-mdx-remote/serialize"
 import { InferGetStaticPropsType } from "next"
+import { AnnouncementInfo } from "../components/announcements/models/announcement"
 
 function IndexPage(source: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
@@ -95,7 +96,9 @@ function IndexPage(source: InferGetStaticPropsType<typeof getStaticProps>) {
               <h1 className="pr-0 md:pr-8 text-2xl text-right tracking-tight leading-10 sm:leading-none font-extrabold text-gray-900 sm:text-3xl lg:text-4xl xl:text-5xl mb-6 sm:mb-12">
                 Announcements
               </h1>
-              <Announcements announcements={source.list} />
+              <Announcements
+                announcements={source.list as AnnouncementInfo[]}
+              />
             </div>
           </div>
         </div>
