@@ -57,6 +57,7 @@ export default function Hero() {
               <Image
                 src={Setting25}
                 placeholder="blur"
+                alt=""
                 priority
                 layout="responsive"
                 className="rounded-lg"

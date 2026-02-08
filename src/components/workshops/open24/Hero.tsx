@@ -70,6 +70,7 @@ export default function Hero() {
                 src={Open24}
                 placeholder="blur"
                 priority
+                alt=""
                 layout="responsive"
                 className="rounded-lg"
               />

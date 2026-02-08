@@ -93,7 +93,7 @@ export default function useClassRegistrations<RegistrationType>(
     }
 
     return unsubscribe
-  }, [user, isUserLoading, soundOn])
+  }, [user, isUserLoading, soundOn, firebase, classDoc])
 
   return {
     loading,

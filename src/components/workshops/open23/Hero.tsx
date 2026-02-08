@@ -57,6 +57,7 @@ export default function Hero() {
                 src={Open23}
                 placeholder="blur"
                 priority
+                alt=""
                 layout="responsive"
                 className="rounded-lg"
               />

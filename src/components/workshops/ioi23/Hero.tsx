@@ -65,6 +65,7 @@ export default function Hero() {
                 src={IOI23}
                 placeholder="blur"
                 priority
+                alt=""
                 layout="responsive"
                 className="rounded-lg"
               />

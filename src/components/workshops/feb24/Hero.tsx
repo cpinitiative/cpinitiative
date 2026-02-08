@@ -70,6 +70,7 @@ export default function Hero() {
                 src={Feb24}
                 placeholder="blur"
                 priority
+                alt=""
                 layout="responsive"
                 className="rounded-lg"
               />
