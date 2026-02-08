@@ -9,6 +9,7 @@ import ClassInstructors from "../components/video-classes/ClassInstructors"
 import EmailForm from "../components/video-classes/EmailForm"
 import Newsletter from "../components/index/Newsletter"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Classes() {
   return (
@@ -67,10 +68,11 @@ export default function Classes() {
                   <div className="mt-12 -mb-16 sm:-mb-48 lg:mt-10 lg:-mb-16 lg:relative lg:col-span-3">
                     <div className="mx-auto max-w-md px-4 sm:max-w-xl sm:px-6 lg:max-w-none lg:px-0">
                       {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
-                      <img
+                      <Image
                         className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                         src="/classes_illustration.svg"
                         alt=""
+                        fill
                       />
                     </div>
                   </div>

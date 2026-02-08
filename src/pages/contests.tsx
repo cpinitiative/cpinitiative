@@ -17,11 +17,6 @@ export default function Contests() {
       <div>
         <div className="relative shadow-xl">
           <div className="absolute inset-0">
-            <img
-              className="h-full w-full object-cover"
-              src="https://source.unsplash.com/QBpZGqEMsKg"
-              alt="Programmers competing in a contest"
-            />
             <div
               className="absolute inset-0 bg-indigo-800"
               style={{ mixBlendMode: "multiply" }}

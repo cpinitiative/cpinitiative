@@ -1359,10 +1359,11 @@ export default function CurrentClubs() {
     <div>
       <div className="relative bg-purple-800">
         <div className="absolute inset-0">
-          <img
+          <Image
             className="w-full h-full object-cover"
             src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixqx=Wq5TfXBKOq&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&&sat=-100"
             alt=""
+            layout="fill"
           />
           <div
             className="absolute inset-0 bg-purple-800 mix-blend-multiply"
