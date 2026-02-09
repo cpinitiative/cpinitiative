@@ -19,13 +19,21 @@ export default function Hero() {
                 </span>
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Want to learn from some of the best in the world? Members of the USA's IOI Team
-                are hosting a workshop where they'll demonstrate their problem-solving process and answer questions live!
-                <br/>
+                Want to learn from some of the best in the world? Members of the
+                USA's IOI Team are hosting a workshop where they'll demonstrate
+                their problem-solving process and answer questions live!
+                <br />
                 <b>November 26, 4:30PM PDT/7:30PM EDT</b>!
               </p>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Click <a className="text-blue-600 hover:text-blue-400 transition-colors duration-300" href="https://us06web.zoom.us/j/81930070753?pwd=sEHYtbfFbfa5QYmqtugq08LdxMYL2x.1">here</a> to join the zoom!
+                Click{" "}
+                <a
+                  className="text-blue-600 hover:text-blue-400 transition-colors duration-300"
+                  href="https://us06web.zoom.us/j/81930070753?pwd=sEHYtbfFbfa5QYmqtugq08LdxMYL2x.1"
+                >
+                  here
+                </a>{" "}
+                to join the zoom!
               </p>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                 Meeting ID: 819 3007 0753 Passcode: 790637
@@ -57,6 +65,7 @@ export default function Hero() {
                 src={IOI23}
                 placeholder="blur"
                 priority
+                alt=""
                 layout="responsive"
                 className="rounded-lg"
               />

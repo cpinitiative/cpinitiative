@@ -1144,8 +1144,6 @@ function sortByHierarchy(people: Member[]) {
         rank: definedHierachy.length,
       }
 
-      console.log(a.name, newPerson.rank)
-
       return newPerson
     })
     .sort((a, b) => {

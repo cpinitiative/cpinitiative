@@ -33,10 +33,7 @@ export default function Hero() {
             about competitive programming.
           </p>
           <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <EmailForm
-                  listName={"workshops"}
-                  mailjetListName={"workshops"}
-                />
+            <EmailForm listName={"workshops"} mailjetListName={"workshops"} />
           </div>
         </div>
       </div>

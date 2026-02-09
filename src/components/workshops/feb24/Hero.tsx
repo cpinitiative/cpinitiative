@@ -18,17 +18,31 @@ export default function Hero() {
                 </span>
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Want to learn how to solve the USACO February 2024 Bronze, Silver, and Gold
-                Problems? Join this workshop on <b>February 24th</b> to gain a
-                better understanding of the solutions from the contest! The
-                problems will be solved live by both USACO competitors from CPI
-                at <b>5pm PST (8pm EST)</b>!
+                Want to learn how to solve the USACO February 2024 Bronze,
+                Silver, and Gold Problems? Join this workshop on{" "}
+                <b>February 24th</b> to gain a better understanding of the
+                solutions from the contest! The problems will be solved live by
+                both USACO competitors from CPI at <b>5pm PST (8pm EST)</b>!
               </p>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Click <a className="text-blue-600 hover:text-blue-400 transition-colors duration-300" href="https://us02web.zoom.us/meeting/register/tZwpcemgqjwpGd2j3Ohl00IRgNGSlpp40TeN">here</a> to join the Bronze & Silver zoom!
+                Click{" "}
+                <a
+                  className="text-blue-600 hover:text-blue-400 transition-colors duration-300"
+                  href="https://us02web.zoom.us/meeting/register/tZwpcemgqjwpGd2j3Ohl00IRgNGSlpp40TeN"
+                >
+                  here
+                </a>{" "}
+                to join the Bronze & Silver zoom!
               </p>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Click <a className="text-blue-600 hover:text-blue-400 transition-colors duration-300" href="https://us02web.zoom.us/meeting/register/tZ0uf-GhrzIuHtRHaZnCbH6rCFClRsSFckOu">here</a> to join the Gold zoom!
+                Click{" "}
+                <a
+                  className="text-blue-600 hover:text-blue-400 transition-colors duration-300"
+                  href="https://us02web.zoom.us/meeting/register/tZ0uf-GhrzIuHtRHaZnCbH6rCFClRsSFckOu"
+                >
+                  here
+                </a>{" "}
+                to join the Gold zoom!
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
@@ -56,6 +70,7 @@ export default function Hero() {
                 src={Feb24}
                 placeholder="blur"
                 priority
+                alt=""
                 layout="responsive"
                 className="rounded-lg"
               />

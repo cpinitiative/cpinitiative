@@ -71,3 +71,6 @@ yarn-error.log
 .vercel
 **/*.icloud
 pnpm-lock.yaml
+
+# Typescript Build Output
+tsconfig.tsbuildinfo

@@ -25,7 +25,14 @@ export default function Hero() {
                 at <b>4pm PST (7pm EST)</b>!
               </p>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Click <a className="text-blue-600 hover:text-blue-400 transition-colors duration-300" href="https://us06web.zoom.us/j/83487798079">here</a> to join the zoom!
+                Click{" "}
+                <a
+                  className="text-blue-600 hover:text-blue-400 transition-colors duration-300"
+                  href="https://us06web.zoom.us/j/83487798079"
+                >
+                  here
+                </a>{" "}
+                to join the zoom!
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
@@ -53,6 +60,7 @@ export default function Hero() {
                 src={Dec23}
                 placeholder="blur"
                 priority
+                alt=""
                 layout="responsive"
                 className="rounded-lg"
               />

@@ -14,15 +14,23 @@ export default function Hero() {
               </div>
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                 <span className="text-blue-700">
-                    Problemsetting Panel Discussion
+                  Problemsetting Panel Discussion
                 </span>
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Want to see how USACO contests are made? Watch Problemsetters discuss their process and answer your questions—live!<br></br>
+                Want to see how USACO contests are made? Watch Problemsetters
+                discuss their process and answer your questions—live!<br></br>
                 <b>April 13th 1pm PST (4pm EST)</b>!
               </p>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Click <a className="text-blue-600 hover:text-blue-400 transition-colors duration-300" href="https://us06web.zoom.us/j/82701059751">here</a> to join the Zoom!
+                Click{" "}
+                <a
+                  className="text-blue-600 hover:text-blue-400 transition-colors duration-300"
+                  href="https://us06web.zoom.us/j/82701059751"
+                >
+                  here
+                </a>{" "}
+                to join the Zoom!
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
@@ -47,11 +55,12 @@ export default function Hero() {
             </div>
             <div className={"lg:col-span-3 w-full max-w-2xl mx-auto space-y-6"}>
               <Image
-              src={Setting25}
-              placeholder="blur"
-              priority
-              layout="responsive"
-              className="rounded-lg"
+                src={Setting25}
+                placeholder="blur"
+                alt=""
+                priority
+                layout="responsive"
+                className="rounded-lg"
               />
             </div>
           </main>

@@ -45,8 +45,7 @@ export default function EmailForm({
             })
             .catch(error => {
               setSubmitting(false)
-              console.log({ ...error })
-              // console.log(addedEmail, email)
+              console.error({ ...error })
               if (error.response && error.response.data.code) {
                 if (error.response.data.code === "already_subscribed") {
                   setError(
@@ -126,7 +125,13 @@ export default function EmailForm({
               " mt-3 w-full px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white shadow-sm transition duration-150 ease-in-out sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
             }
           >
-            {(listName === "contests") ? (submitting ? "Joining" : "Notify Me of New Contests") : (submitting ? "Joining Waitlist..." : "Join Waitlist")}
+            {listName === "contests"
+              ? submitting
+                ? "Joining"
+                : "Notify Me of New Contests"
+              : submitting
+              ? "Joining Waitlist..."
+              : "Join Waitlist"}
           </button>
         )}
       </form>

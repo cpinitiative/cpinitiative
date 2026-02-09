@@ -1,4 +1,4 @@
-export default `CPI Classes
+const welcomeToLiveClassesTxt = `CPI Classes
 https://joincpi.org/classes
 
 Welcome, {{name}}!
@@ -18,3 +18,5 @@ Your CPI {{class_level}} Class Instructors
 
 © 2022 Competitive Programming Initiative. All rights reserved. 20425 Stevens Creek Blvd
 Cupertino, CA 95014-2931`
+
+export default welcomeToLiveClassesTxt;

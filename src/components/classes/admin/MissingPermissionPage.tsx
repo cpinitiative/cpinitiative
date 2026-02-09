@@ -17,10 +17,9 @@ export default function MissingPermissionPage() {
         </h1>
         <Link
           href={"/"}
-          className={"text-2xl text-blue-600 hover:underline pt-4 block"}>
-          
-            Go Home
-          
+          className={"text-2xl text-blue-600 hover:underline pt-4 block"}
+        >
+          Go Home
         </Link>
 
         <button
@@ -39,5 +38,5 @@ export default function MissingPermissionPage() {
         </button>
       </div>
     </Layout>
-  );
+  )
 }

@@ -85,16 +85,7 @@ export default function ClassRegistrationPage() {
       (referrer == "google" && !referrerDetail) ||
       (referrer == "other" && !referrerDetail)
     )
-  }, [
-    level,
-    firstName,
-    lastName,
-    email,
-    preferredLanguage,
-    referrer,
-    referrerDetail,
-    timezone,
-  ])
+  }, [level, firstName, lastName, email, emailValid, preferredLanguage, referrer, timezone, referrerDetail])
   const faDataIsValid = useMemo(() => {
     return !(!faWhyInNeed || !faAmount || !faWhyTakeCourse)
   }, [faWhyInNeed, faAmount, faWhyTakeCourse])

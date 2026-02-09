@@ -84,7 +84,6 @@ export default function PaymentSection({
                     amount="25.00"
                     shippingPreference="NO_SHIPPING"
                     createOrder={(data, actions) => {
-                      console.log(data, actions)
                       return actions.order.create({
                         purchase_units: [
                           {

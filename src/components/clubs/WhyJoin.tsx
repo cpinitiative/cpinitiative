@@ -1,4 +1,5 @@
 import * as React from "react"
+import Image from "next/image"
 
 export default function WhyJoin() {
   return (
@@ -65,10 +66,12 @@ export default function WhyJoin() {
               target="_blank"
               href="https://docs.google.com/presentation/d/1n2aXzhSfgbo8GoVpeyeygw1Zi7DATfy-C2wO-O5QElA/present#slide=id.g78b50dee42_0_129"
             >
-              <img
+              <Image
                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                 src="/prefix_sum_slides.png"
                 alt="Example Slideshow"
+                width={1600}
+                height={900}
               />
             </a>
           </div>
@@ -114,10 +117,12 @@ export default function WhyJoin() {
           </div>
           <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
             <div className="block px-4 sm:px-6 lg:px-0 lg:m-0 lg:relative lg:h-full">
-              <img
+              <Image
                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                 src="/groups.png"
                 alt="Club LMS"
+                width={1600}
+                height={900}
               />
             </div>
           </div>

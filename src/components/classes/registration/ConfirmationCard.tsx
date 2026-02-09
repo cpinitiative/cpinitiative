@@ -1,6 +1,6 @@
 import * as React from "react"
 
-export default function ({
+export default function ConfirmationCard({
   financialAid,
   level,
   email,

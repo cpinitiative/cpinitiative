@@ -1,4 +1,4 @@
-export default `<!DOCTYPE html>
+const welcomeToLiveClassTemplate = `<!DOCTYPE html>
 <html lang="en" xmlns:v="urn:schemas-microsoft-com:vml">
 <head>
   <meta charset="utf-8">
@@ -138,3 +138,5 @@ export default `<!DOCTYPE html>
   </div>
 </body>
 </html>`
+
+export default welcomeToLiveClassTemplate;

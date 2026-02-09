@@ -44,8 +44,8 @@ export default function useClassRegistrations<RegistrationType>(
         "fRKOjFTFtuTfL65TPMSYhDLrwXs2",
         "1ymqOKm8aqeGvuP30e0B2WBWFjf1",
         "rsvg0lHhf0am0obWxV4Qc8zFOCp1",
-		"K4QPcxf3NgVEF2qeM04YVzKPhhr1",
-		"Qj7SQEKBwAZngSXS7ugAB61XkKu2",
+        "K4QPcxf3NgVEF2qeM04YVzKPhhr1",
+        "Qj7SQEKBwAZngSXS7ugAB61XkKu2",
       ].includes(user.uid)
     ) {
       setHasPermission(true)
@@ -88,12 +88,12 @@ export default function useClassRegistrations<RegistrationType>(
           }
         )
     } else {
-		setLoading(false)
+      setLoading(false)
       setHasPermission(false)
     }
 
     return unsubscribe
-  }, [user, isUserLoading, soundOn])
+  }, [user, isUserLoading, soundOn, firebase, classDoc])
 
   return {
     loading,

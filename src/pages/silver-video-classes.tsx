@@ -8,6 +8,7 @@ import RecordedClassInstructors from "../components/video-classes/RecordedClassI
 import Link from "next/link"
 // import banner
 import banner from "../images/video-classes/banner.png"
+import Image from "next/image"
 
 export default function Classes() {
   return (
@@ -99,10 +100,11 @@ export default function Classes() {
                   <div className="mt-12 -mb-16 sm:-mb-48 lg:mt-10 lg:-mb-16 lg:relative lg:col-span-3">
                     <div className="mx-auto max-w-md px-4 sm:max-w-xl sm:px-6 lg:max-w-none lg:px-0">
                       {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
-                      <img
+                      <Image
                         className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                         src="/classes_illustration.svg"
                         alt=""
+                        fill
                       />
                     </div>
                   </div>
@@ -670,10 +672,11 @@ export default function Classes() {
                     </div>
                   </div>
                   <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-                    <img
+                    <Image
                       className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-8 lg:translate-y-16"
                       src="/class2.png"
                       alt="Class LMS"
+                      fill
                     />
                   </div>
                 </div>

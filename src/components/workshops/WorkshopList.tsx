@@ -28,16 +28,15 @@ export default function WorkshopList() {
               placeholder="blur"
               objectFit="cover"
               className="rounded-lg"
-              width="300px"
+              width={300}
             />
           </div>
           <div className="flex justify-center mt-8">
             <Link
               href={"/workshops/" + latestWorkshop.url}
-              className={`shadow items-center justify-center px-8 py-1 border border-transparent text-base leading-6 font-medium rounded-md text-white ${latestWorkshop.themeColor}`}>
-              
-                Learn More
-              
+              className={`shadow items-center justify-center px-8 py-1 border border-transparent text-base leading-6 font-medium rounded-md text-white ${latestWorkshop.themeColor}`}
+            >
+              Learn More
             </Link>
           </div>
         </div>
@@ -54,8 +53,11 @@ export default function WorkshopList() {
                     className="mb-16 mx-auto space-y-8 sm:grid md:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-2"
                   >
                     {section.workshops.map(workshop => (
-                      (<Link key={workshop.title} href={"/workshops/" + workshop.url} className="flex">
-
+                      <Link
+                        key={workshop.title}
+                        href={"/workshops/" + workshop.url}
+                        className="flex"
+                      >
                         <li className="rounded-lg border bg-gray-100 shadow transform border-gray-200 hover:shadow-lg hover:cursor-pointer duration-100 px-6 py-5">
                           <div className="space-x-2 sm:space-x-4 relative flex items-center space-x-3 ">
                             <div className="flex-shrink-0 w-24 h-24 rounded-full overflow-hidden relative lg:w-28 lg:h-28">
@@ -89,8 +91,7 @@ export default function WorkshopList() {
                             </div>
                           </div>
                         </li>
-
-                      </Link>)
+                      </Link>
                     ))}
                   </ul>
                 </div>
@@ -99,5 +100,5 @@ export default function WorkshopList() {
         )}
       </div>
     </div>
-  );
+  )
 }

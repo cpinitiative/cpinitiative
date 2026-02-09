@@ -1,9 +1,9 @@
 export class AnnouncementInfo {
   constructor(
     public frontmatter: {
-      id: string,
-      title: string,
-      date: string,
+      id: string
+      title: string
+      date: string
       order: number
     },
     public compiledSource: any,

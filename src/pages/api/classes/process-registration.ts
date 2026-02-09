@@ -126,9 +126,10 @@ export default async function processRegistration(
   } catch (error) {
     console.error("INTERNAL ERROR REG REGISTRATION")
     console.error(error)
+    const message = error instanceof Error ? error.message : String(error)
     return response.status(500).json({
       success: false,
-      message: error.message,
+      message: message,
     })
   }
 }

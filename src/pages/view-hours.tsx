@@ -21,7 +21,6 @@ const parseDate = (date: string) => {
   return new Date(year, month - 1, day, 0, 0, 0, 0)
 }
 export function VolunteerHourHistory({ data }) {
-  // console.log("data: ", data)
   return (
     <div>
       <ul role="list" className="divide-y divide-gray-200">
@@ -80,7 +79,6 @@ function reducer(state: State, action: Action): State {
 }
 
 export function AddVolunteerHoursForm({ data, onClose }) {
-  console.log(data)
   const initialState = {}
   const [state, dispatch] = useReducer(reducer, initialState)
   const [response, setResponse] = React.useState(null)
@@ -89,7 +87,6 @@ export function AddVolunteerHoursForm({ data, onClose }) {
   const [loading, setLoading] = React.useState(false)
   const [role, setRole] = React.useState("")
   const [date, setDate] = React.useState(new Date())
-  // useEffect(()=>console.log("state", state),[state])
   const submitHours = () => {
     setError("")
     setResponse("")
@@ -117,7 +114,6 @@ export function AddVolunteerHoursForm({ data, onClose }) {
     })
       .then(res => res.json())
       .then(res => {
-        // console.log(res)
         if (res.error) {
           setError(res.error)
         } else {
@@ -168,7 +164,6 @@ export function AddVolunteerHoursForm({ data, onClose }) {
           placeholder="mm/dd/yyyy"
           value={formatDate(date)}
           onChange={e => {
-            // console.log(parseDate(e.target.value))
             setDate(parseDate(e.target.value))
           }}
           max={formatDate(new Date())}
@@ -300,8 +295,6 @@ export default function ViewHours() {
   const [viewAddHoursForm, setViewAddHoursForm] = React.useState(false)
   // add conditional fetching for useSWR so that it doesn't fetch when the user isn't signed in
   const { data, error } = useSWR(session ? "/api/getHours" : null, SWR_FETCHER)
-
-  // console.log(data, error)
 
   return (
     <Layout>
