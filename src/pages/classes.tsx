@@ -22,6 +22,27 @@ export default function Classes() {
         <div className="relative overflow-hidden">
           <Header noBanner={true} dark />
           <div className="margin-top-nav" />
+            <div className="relative bg-blue-600">
+            <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+              <div className="pr-16 sm:text-center sm:px-16">
+                <p className="font-medium text-white">
+                  <span className="md:inline">
+                    Our next semester of live classes starts this weekend!
+                  </span>
+                  <span className="block sm:ml-2 sm:inline-block">
+                    <a
+                      href="classes/register"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-white font-bold underline"
+                    >
+                      Register here &rarr;
+                    </a>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
           <div>
             <div className="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
               <div className="mx-auto max-w-7xl lg:px-8">
