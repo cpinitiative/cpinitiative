@@ -76,14 +76,14 @@ export default function Header({
               <p className="font-medium text-white">
                 {/* <span className="md:hidden">Join our IOI Livesolve & Q&A workshop <Link className="text-white font-bold underline" href="https://joincpi.org/workshops/ioi23">here</Link>!</span> */}
                 <span className="hidden md:inline">
-                  Problem writers needed for Guide Tournament!
+                  Our next semester of live classes starts this weekend!
                 </span>
                 <span className="block sm:ml-2 sm:inline-block">
                   <Link
-                    href={"https://forms.gle/gNy9VNmGdRRH2LbL8"}
+                    href={"/classes"}
                     className="text-white font-bold underline"
                   >
-                    Apply here &rarr;
+                    Register here &rarr;
                   </Link>
                 </span>
               </p>
