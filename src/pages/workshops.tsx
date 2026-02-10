@@ -13,7 +13,7 @@ export default function Clubs() {
         description="Free online workshops hosted by CPI with interviews, webinars, and information about competitive programming."
       />
 
-      <Header noBanner={true} />
+      <Header noBanner />
       <div className="margin-top-nav" />
       {/*Banner Padding*/}
       {/*<div className="h-20 sm:h-12"/>*/}

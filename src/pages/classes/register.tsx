@@ -96,7 +96,7 @@ export default function ClassRegistrationPage() {
         title="Online USACO Classes"
         description="Learn USACO through affordable, high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists."
       />
-      <Header noBanner={true} />
+      <Header noBanner />
       <div className={"margin-top-nav"}>
         <div className={"px-5 sm:px-12 max-w-6xl mx-auto pt-10"}>
           <h1 className={"text-4xl font-bold tracking-tight leading-9 mb-10"}>

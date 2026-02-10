@@ -4,6 +4,7 @@ import { useState } from "react"
 import Logo from "./Logo"
 import { useRouter } from "next/router"
 import ClassesDropdown from "../components/ClassesDropdown"
+import Banner from "./Banner"
 
 export default function Header({
   noBanner,
@@ -70,34 +71,11 @@ export default function Header({
       } shadow fixed inset-x-0 top-0 z-30`}
     >
       {!noBanner && (
-        <div className="relative bg-indigo-700">
-          <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-            <div className="pr-16 sm:text-center sm:px-16">
-              <p className="font-medium text-white">
-                {/* <span className="md:hidden">Join our IOI Livesolve & Q&A workshop <Link className="text-white font-bold underline" href="https://joincpi.org/workshops/ioi23">here</Link>!</span> */}
-                <span className="hidden md:inline">
-                  Problem writers needed for Guide Tournament!
-                </span>
-                <span className="block sm:ml-2 sm:inline-block">
-                  <Link
-                    href={"https://forms.gle/gNy9VNmGdRRH2LbL8"}
-                    className="text-white font-bold underline"
-                  >
-                    Apply here &rarr;
-                  </Link>
-                </span>
-              </p>
-            </div>
-            {/* <div className="absolute inset-y-0 right-0 pt-1 pr-1 flex items-start sm:pt-1 sm:pr-2 sm:items-start">
-             <button type="button" className="flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:bg-indigo-500 transition ease-in-out duration-150" aria-label="Dismiss">
-                ! Heroicon name: x !  
-               <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-               </svg>
-             </button>
-           </div> */}
-          </div>
-        </div>
+        <Banner
+          text="Our next semester of live classes starts this weekend!"
+          actionText="Register here"
+          href="/classes"
+        />
       )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
