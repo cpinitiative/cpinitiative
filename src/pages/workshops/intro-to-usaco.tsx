@@ -45,7 +45,7 @@ export default function Webinar() {
               not many students are aware of or participate in USACO.
             </p>
             <p>
-              That's where we come in! The Competitive Programming Initiative is
+              That's where we come in! The Competitive Programming Initiative is
               a nonprofit organization run by top USACO competitors that aims to
               increase awareness and participation in USACO. Our team members
               include past USACO Finalists and IOI participants.

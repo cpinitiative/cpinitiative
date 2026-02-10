@@ -1,8 +1,8 @@
 import * as React from "react"
+import { useEffect, useMemo, useState } from "react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import Header from "../../components/Header"
-import { useEffect, useMemo, useState } from "react"
 import * as moment from "moment-timezone"
 import useFirebase from "../../firebase/useFirebase"
 import ErrorCard from "../../components/video-classes/registration/ErrorCard"
@@ -85,7 +85,17 @@ export default function ClassRegistrationPage() {
       (referrer == "google" && !referrerDetail) ||
       (referrer == "other" && !referrerDetail)
     )
-  }, [level, firstName, lastName, email, emailValid, preferredLanguage, referrer, timezone, referrerDetail])
+  }, [
+    level,
+    firstName,
+    lastName,
+    email,
+    emailValid,
+    preferredLanguage,
+    referrer,
+    timezone,
+    referrerDetail,
+  ])
   const faDataIsValid = useMemo(() => {
     return !(!faWhyInNeed || !faAmount || !faWhyTakeCourse)
   }, [faWhyInNeed, faAmount, faWhyTakeCourse])

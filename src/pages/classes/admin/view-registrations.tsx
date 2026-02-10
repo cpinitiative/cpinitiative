@@ -1,9 +1,8 @@
 import * as React from "react"
+import { useEffect, useMemo, useState } from "react"
 import Layout from "../../../components/Layout"
 import Header from "../../../components/Header"
-import Link from "next/link"
 import useFirebase from "../../../firebase/useFirebase"
-import { useEffect, useMemo, useState } from "react"
 // import firebaseType from "firebase"
 import moment from "moment-timezone"
 import * as Icons from "heroicons-react"
@@ -13,12 +12,8 @@ import {
   DialogPanel,
   DialogTitle,
 } from "@headlessui/react"
-import type firebaseType from "firebase"
 import { exportLiveRegistrations } from "../../../util/classes/exportRegistrations"
-import {
-  ClassRegistration,
-  LiveClassRegistration,
-} from "../../../types/registration"
+import { LiveClassRegistration } from "../../../types/registration"
 import useClassRegistrations from "../../../hooks/useClassRegistrations"
 import LoadingPage from "../../../components/classes/admin/LoadingPage"
 import MissingPermissionPage from "../../../components/classes/admin/MissingPermissionPage"

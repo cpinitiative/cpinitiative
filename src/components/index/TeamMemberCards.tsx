@@ -38,6 +38,7 @@ function SocialLinks({ person, center }: { person: Member; center?: boolean }) {
     return null
   }
 }
+
 export const MemberCardSmall = ({ member }: { member: Member }) => (
   <li
     key={member.name}

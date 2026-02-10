@@ -1,5 +1,3 @@
-import Link from "next/link"
-
 export default function Sponsor() {
   return (
     <div className="pb-12 bg-gray-800">

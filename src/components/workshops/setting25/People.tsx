@@ -1,5 +1,4 @@
 import { benq } from "../../index/images"
-import chongtian_ma from "../../index/images/chongtian_ma.jpg"
 import aakash from "../../index/images/aakash.png"
 import ryan from "../../index/images/ryan_fu.jpeg"
 import suhas_nagar from "../../index/images/suhas_nagar.png"

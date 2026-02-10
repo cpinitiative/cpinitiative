@@ -1,16 +1,17 @@
 import {
-  maggie,
+  davidz,
   dustin,
-  ryan,
   evan,
   jesse,
   kevin,
-  davidz,
+  maggie,
+  ryan,
 } from "../../index/images"
 import brendan from "../../../images/brendan.png"
 import yizhong from "../../../images/yizhong.png"
 
 import Speakers, { Speaker } from "../Speakers"
+
 const speakers: Speaker[] = [
   {
     name: "Maggie Liu",

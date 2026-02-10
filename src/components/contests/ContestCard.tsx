@@ -1,4 +1,3 @@
-import { Transition } from "@headlessui/react"
 import { StaticImageData } from "next/image"
 import Image from "next/legacy/image"
 import { useState } from "react"

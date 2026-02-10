@@ -1,7 +1,7 @@
-import { melody, dustin, ryan, amogha, kevin, aadit } from "../../index/images"
-import xieting from "../../../images/xieting.jpeg"
+import { aadit, dustin, kevin, melody, ryan } from "../../index/images"
 
 import Speakers, { Speaker } from "../Speakers"
+
 const speakers: Speaker[] = [
   {
     name: "Melody Yu",

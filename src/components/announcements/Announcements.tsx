@@ -1,6 +1,5 @@
 import { AnnouncementInfo } from "./models/announcement"
 import * as React from "react"
-import { MDXRemote } from "next-mdx-remote"
 import Announcement from "./Announcement"
 
 export default function Announcements({

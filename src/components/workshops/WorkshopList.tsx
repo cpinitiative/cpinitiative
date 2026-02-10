@@ -1,6 +1,6 @@
 import * as React from "react"
 import Image from "next/legacy/image"
-import { sections, latestWorkshop } from "./WorkshopData"
+import { latestWorkshop, sections } from "./WorkshopData"
 import Link from "next/link"
 
 export default function WorkshopList() {

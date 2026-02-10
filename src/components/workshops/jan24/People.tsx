@@ -1,12 +1,4 @@
-import {
-  ryan,
-  albert,
-  kevin,
-  rohan_garg,
-  aadit,
-  andrew_xu,
-} from "../../index/images"
-import chongtian_ma from "../../index/images/chongtian_ma.jpg"
+import { aadit, andrew_xu, kevin, ryan } from "../../index/images"
 
 import Speakers, { Speaker } from "../Speakers"
 

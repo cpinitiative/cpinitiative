@@ -1,8 +1,5 @@
 import { useMemo } from "react"
-import {
-  BaseClassRegistration,
-  ClassRegistration,
-} from "../../../types/registration"
+import { BaseClassRegistration } from "../../../types/registration"
 
 export default function RegistrationStats({
   registrations,

@@ -4,19 +4,20 @@ import customParseFormat from "dayjs/plugin/customParseFormat"
 import isSameOrBefore from "dayjs/plugin/isSameOrBefore"
 import isToday from "dayjs/plugin/isToday"
 import {
-  taco,
-  lit,
+  aclit,
   algirlithm,
-  teamscode,
   bapc,
   calico,
+  codeher,
+  indigo,
+  lit,
+  taco,
+  teamscode,
   tjioi,
   wwpit,
-  indigo,
-  aclit,
-  codeher,
 } from "./images"
-import Image, { StaticImageData } from "next/legacy/image"
+import { StaticImageData } from "next/legacy/image"
+
 dayjs.extend(customParseFormat)
 dayjs.extend(isSameOrBefore)
 dayjs.extend(isToday)

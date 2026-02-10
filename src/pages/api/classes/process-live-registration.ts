@@ -2,7 +2,6 @@ import { NowRequest, NowResponse } from "@vercel/node"
 import { db } from "../../../../firebase"
 import * as payPalClient from "../../../util/classes/paypalClient"
 import { FieldValue } from "firebase-admin/firestore"
-import { getClientIp } from "request-ip"
 import * as checkoutNodeJssdk from "@paypal/checkout-server-sdk"
 import { sendWelcomeEmail } from "../../../util/classes/sendWelcomeEmail"
 

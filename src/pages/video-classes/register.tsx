@@ -37,10 +37,10 @@
 // }
 
 import * as React from "react"
+import { useEffect, useMemo, useState } from "react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import Header from "../../components/Header"
-import { useEffect, useMemo, useState } from "react"
 import * as moment from "moment-timezone"
 import useFirebase from "../../firebase/useFirebase"
 import ErrorCard from "../../components/video-classes/registration/ErrorCard"

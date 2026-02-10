@@ -1,11 +1,12 @@
 import {
-  melody,
   agastya_goel,
   austin_geng,
+  melody,
   rohin_garg,
 } from "../../index/images"
 
 import Speakers, { Speaker } from "../Speakers"
+
 const speakers: Speaker[] = [
   {
     photo: melody,

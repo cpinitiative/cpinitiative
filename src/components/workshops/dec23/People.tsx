@@ -1,4 +1,4 @@
-import { ryan, albert, kevin, rohan_garg } from "../../index/images"
+import { albert, kevin, rohan_garg, ryan } from "../../index/images"
 import chongtian_ma from "../../index/images/chongtian_ma.jpg"
 
 import Speakers, { Speaker } from "../Speakers"

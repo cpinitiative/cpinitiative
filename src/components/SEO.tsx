@@ -41,6 +41,7 @@ function SEO({ description, children, image: metaImage, title, pathname }) {
     </Head>
   )
 }
+
 SEO.defaultProps = {
   children: null,
   description: ``,

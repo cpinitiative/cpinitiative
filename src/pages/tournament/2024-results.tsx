@@ -6,6 +6,7 @@ import Link from "next/link"
 import Image from "next/image"
 import mascotImage from "../../images/tournament/mascot.webp"
 import cpithink from "../../images/tournament/cpithink.png"
+
 const CONTEST_EDITORIAL_FILE = "tournament_2024_editorial.pdf"
 const CONTEST_SOLUTIONS_FILE = "tournament_2024_solutions.zip"
 

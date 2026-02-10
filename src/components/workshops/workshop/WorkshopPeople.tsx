@@ -1,5 +1,6 @@
-import { nathanw, melody } from "../../index/images"
+import { melody, nathanw } from "../../index/images"
 import Speakers, { Speaker } from "../Speakers"
+
 const speakers: Speaker[] = [
   {
     photo: nathanw,

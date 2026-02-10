@@ -5,6 +5,7 @@ import { SHEETS_API_CREDS, SHEETS_METADATA } from "../../../config"
 import { db } from "../../../firebase"
 import YAML from "yaml"
 import { authOptions } from "./auth/[...nextauth]"
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse

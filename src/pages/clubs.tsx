@@ -5,7 +5,6 @@ import Hero from "../components/clubs/Hero"
 import WhyJoin from "../components/clubs/WhyJoin"
 import CTA from "../components/clubs/CTA"
 import Header from "../components/Header"
-import FAQ from "../components/clubs/FAQ"
 import RegistrationProcess from "../components/clubs/RegistrationProcess"
 import CurrentClubs from "../components/clubs/CurrentClubs"
 
