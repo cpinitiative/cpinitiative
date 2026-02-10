@@ -7,6 +7,7 @@ import Newsletter from "../components/index/Newsletter"
 import RecordedClassInstructors from "../components/video-classes/RecordedClassInstructors"
 import Link from "next/link"
 import Image from "next/image"
+import Banner from "../components/Banner"
 
 export default function Classes() {
   return (
@@ -20,27 +21,11 @@ export default function Classes() {
         <div className="relative overflow-hidden">
           <Header noBanner={true} dark />
           <div className="margin-top-nav" />
-          <div className="relative bg-blue-600">
-            <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-              <div className="pr-16 sm:text-center sm:px-16">
-                <p className="font-medium text-white">
-                  <span className="md:inline">
-                    USACO Bronze Classes are now free!
-                  </span>
-                  <span className="block sm:ml-2 sm:inline-block">
-                    <a
-                      href="https://usaco.guide/groups/join?key=GzyZvOTMidyo8e4EIMLP"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-white font-bold underline"
-                    >
-                      Learn more &rarr;
-                    </a>
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
+          <Banner
+            text="USACO Bronze Classes are now free!"
+            actionText="Learn more"
+            href="https://usaco.guide/groups/join?key=GzyZvOTMidyo8e4EIMLP"
+          />
           <div>
             <div className="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
               <div className="mx-auto max-w-7xl lg:px-8">
