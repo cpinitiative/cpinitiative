@@ -108,7 +108,7 @@ export default function Tournament() {
         description="An annual precollege programming contest held by the Competitive Programming Initiative to reward growth in problem-solving and computer science."
       />
 
-      <Header dark noBanner />
+      <Header dark />
 
       <main className="min-h-screen">
         <div className="flex-1  bg-gray-900 relative pb-24 md:pb-40 lg:pb-48 xl:pb-72 2xl:pb-96 flex flex-col lg:flex-row items-center justify-evenly animate mt-16 text-gray-300">

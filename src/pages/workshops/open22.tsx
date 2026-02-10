@@ -14,7 +14,7 @@ export default function USACOFebruary() {
         title="USACO US Open Contest Solutions"
         description="The Competitive Programming Initiative is holding a workshop to go over the problems from the USACO US Open Contest on April 10th, 10am-12:30pm PT! Join to gain a better understanding of the solutions to problems in the Bronze and Silver divisions, and the USACO Season's trends!"
       />
-      <Header noBanner />
+      <Header />
       <div className="margin-top-nav" />
       {/*/!* Banner margin *!/*/}
       {/*<div className="h-20 sm:h-12"/>*/}

@@ -120,7 +120,7 @@ export default function ViewRegistrationPage() {
 
   return (
     <Layout>
-      <Header noBanner />
+      <Header />
 
       <div className="margin-top-nav" />
       <div className="pt-4 sm:pt-10 text-center sm:text-left px-10 bg-gray-100 pb-10">

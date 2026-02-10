@@ -13,7 +13,7 @@ export default function USACOFebruary() {
         title="Problemsetting Panel Discussion"
         description="Watch USACO Problemsetters discuss contest creation and answer your Q&A—live!"
       />
-      <Header noBanner />
+      <Header />
       <div className="margin-top-nav" />
       {/*/!* Banner margin *!/*/}
       {/*<div className="h-20 sm:h-12"/>*/}

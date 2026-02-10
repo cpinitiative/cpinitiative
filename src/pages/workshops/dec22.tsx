@@ -13,7 +13,7 @@ export default function USACOFebruary() {
         title="USACO December 2022 Contest Solutions"
         description="The Competitive Programming Initiative is holding a workshop to go over the problems from the USACO February Contest on January 7th, 4pm PST (7pm EST). Join to gain a better understanding of the solutions to the Bronze problems!"
       />
-      <Header noBanner />
+      <Header />
       <div className="margin-top-nav" />
       {/*/!* Banner margin *!/*/}
       {/*<div className="h-20 sm:h-12"/>*/}

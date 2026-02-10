@@ -16,7 +16,7 @@ export default function Clubs() {
         description="Get access to curriculum, problemsets, and contests tailored for school clubs, created by past USACO Finalists."
       />
 
-      <Header noBanner />
+      <Header />
       <div className="margin-top-nav" />
       {/*Banner Padding*/}
       {/*<div className="h-20 sm:h-12"/>*/}

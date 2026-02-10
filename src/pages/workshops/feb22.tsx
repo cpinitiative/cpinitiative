@@ -14,7 +14,7 @@ export default function USACOFebruary() {
         title="USACO February Contest Solutions"
         description="The Competitive Programming Initiative is holding a workshop to go over the problems from the USACO February Contest on March 6th, 10am-12pm PST and 4pm-5pm PST! Join to gain a better understanding of the solutions to problems in the Bronze, Silver and Gold divisions!"
       />
-      <Header noBanner />
+      <Header />
       <div className="margin-top-nav" />
       {/*/!* Banner margin *!/*/}
       {/*<div className="h-20 sm:h-12"/>*/}

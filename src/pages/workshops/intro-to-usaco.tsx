@@ -15,7 +15,7 @@ export default function Webinar() {
         description="CPI will be holding an Introduction to USACO Webinar on November 28th, 5-5:40pm PST! Join us to learn more about what USACO is, why you should do it, and how to get better at USACO!"
       />
 
-      <Header noBanner />
+      <Header />
       <div className="margin-top-nav" />
       {/*/!* Banner margin *!/*/}
       {/*<div className="h-20 sm:h-12"/>*/}
