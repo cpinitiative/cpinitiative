@@ -46,7 +46,7 @@ export default function Contests() {
         </div>
       </div>
 
-      <Header noBanner={true} />
+      <Header noBanner />
 
       <div className="relative px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <div className="text-lg max-w-prose mx-auto mb-6">

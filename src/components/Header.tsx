@@ -72,9 +72,9 @@ export default function Header({
     >
       {!noBanner && (
         <Banner
-          text="Problem writers needed for Guide Tournament!"
-          actionText="Apply here"
-          href="https://forms.gle/gNy9VNmGdRRH2LbL8"
+          text="Our next semester of live classes starts this weekend!"
+          actionText="Register here"
+          href="/classes"
         />
       )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
