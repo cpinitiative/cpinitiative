@@ -2,14 +2,14 @@
 @tailwind components;
 
 .margin-top-nav {
-  margin-top: 4rem;
+    margin-top: 4rem;
 }
 
 .anim {
-  @apply transition duration-150 ease-in-out;
+    @apply transition duration-150 ease-in-out;
 }
 
 /* removes navbar shift from page to page */
 html {
-  overflow-y: scroll
+    overflow-y: scroll
 }

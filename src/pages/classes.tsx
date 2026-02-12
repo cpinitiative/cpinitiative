@@ -1,12 +1,8 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
-import Hero from "../components/video-classes/Hero"
 import Header from "../components/Header"
-import NotLowQuality from "../components/video-classes/NotLowQuality"
 import ClassLevels from "../components/classes/ClassLevels"
-import ClassInstructors from "../components/video-classes/ClassInstructors"
-import EmailForm from "../components/video-classes/EmailForm"
 import Newsletter from "../components/index/Newsletter"
 import Link from "next/link"
 import Image from "next/image"
@@ -21,7 +17,7 @@ export default function Classes() {
 
       <div className="bg-white">
         <div className="relative overflow-hidden">
-          <Header noBanner dark />
+          <Header dark />
           <div className="margin-top-nav" />
           <div>
             <div className="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
@@ -60,11 +56,17 @@ export default function Classes() {
                       </div>
                       <p className="mt-4 sm:mt-6 text-sm text-gray-300 lg:text-base">
                         Looking for self-study classes?
-                        <Link href="/bronze-video-classes" className="ml-2 underline hover:text-white">
+                        <Link
+                          href="/bronze-video-classes"
+                          className="ml-2 underline hover:text-white"
+                        >
                           Bronze
                         </Link>
                         <span className="mx-2">&middot;</span>
-                        <Link href="/silver-video-classes" className="underline hover:text-white">
+                        <Link
+                          href="/silver-video-classes"
+                          className="underline hover:text-white"
+                        >
                           Silver
                         </Link>
                       </p>

@@ -1,26 +1,17 @@
 import * as React from "react"
 import Image, { StaticImageData } from "next/legacy/image"
 import {
-  ian,
-  arnan,
-  evan,
-  jesse,
-  nikhil,
-  ryan,
-  davidz,
-  frank,
-  julie,
-  varun,
-  vidith,
-  blank,
-  trisha,
-  rohan_garg,
-  faris,
-  niranjana_sankar,
-  rahul_verma,
-  ryan_fu,
   andrew_xu,
+  faris,
+  frank,
+  niranjana_sankar,
   peng_bai,
+  rahul_verma,
+  rohan_garg,
+  ryan,
+  ryan_fu,
+  trisha,
+  varun,
 } from "../index/images"
 
 type Member = {

@@ -1,6 +1,6 @@
 import * as React from "react"
 
-export default function NotLowQuality () {
+export default function NotLowQuality() {
   return (
     <div className="bg-purple-900 py-16 sm:py-20 px-4 sm:px-6">
       <div className="mx-auto max-w-prose sm:text-lg">

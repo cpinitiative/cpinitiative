@@ -6,6 +6,7 @@ import { db } from "../../../firebase"
 import YAML from "yaml"
 import { getServerSession } from "next-auth/next"
 import { authOptions } from "./auth/[...nextauth]"
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse

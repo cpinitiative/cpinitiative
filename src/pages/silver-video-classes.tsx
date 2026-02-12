@@ -19,7 +19,7 @@ export default function Classes() {
 
       <div className="bg-white">
         <div className="relative overflow-hidden">
-          <Header noBanner dark />
+          <Header dark />
           <div className="margin-top-nav" />
           <Banner
             text="New: Free Silver Classes Now Available!"

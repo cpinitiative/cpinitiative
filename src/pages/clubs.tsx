@@ -5,7 +5,6 @@ import Hero from "../components/clubs/Hero"
 import WhyJoin from "../components/clubs/WhyJoin"
 import CTA from "../components/clubs/CTA"
 import Header from "../components/Header"
-import FAQ from "../components/clubs/FAQ"
 import RegistrationProcess from "../components/clubs/RegistrationProcess"
 import CurrentClubs from "../components/clubs/CurrentClubs"
 
@@ -17,7 +16,7 @@ export default function Clubs() {
         description="Get access to curriculum, problemsets, and contests tailored for school clubs, created by past USACO Finalists."
       />
 
-      <Header noBanner />
+      <Header />
       <div className="margin-top-nav" />
       {/*Banner Padding*/}
       {/*<div className="h-20 sm:h-12"/>*/}

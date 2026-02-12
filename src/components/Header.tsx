@@ -1,16 +1,16 @@
 import * as React from "react"
-import Link from "next/link"
 import { useState } from "react"
+import Link from "next/link"
 import Logo from "./Logo"
 import { useRouter } from "next/router"
 import ClassesDropdown from "../components/ClassesDropdown"
 import Banner from "./Banner"
 
 export default function Header({
-  noBanner,
+  showBanner,
   dark = false,
 }: {
-  noBanner?: boolean
+  showBanner?: boolean
   dark?: boolean
 }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -70,13 +70,6 @@ export default function Header({
         dark ? "bg-gray-900" : "bg-white"
       } shadow fixed inset-x-0 top-0 z-30`}
     >
-      {!noBanner && (
-        <Banner
-          text="Our next semester of live classes starts this weekend!"
-          actionText="Register here"
-          href="/classes"
-        />
-      )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
@@ -232,6 +225,13 @@ export default function Header({
           ))}
         </div>
       </div>
+      {showBanner && (
+        <Banner
+          text="Our next semester of live classes starts this weekend!"
+          actionText="Register here"
+          href="/classes"
+        />
+      )}
     </nav>
   )
 }

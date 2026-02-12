@@ -13,7 +13,7 @@ export default function IOI23() {
         title="USA IOI 2023 Team Workshop"
         description="Watch 3 of the top 4 HS competitive programmers in the US livesolve a contest and answer your questions!"
       />
-      <Header noBanner />
+      <Header />
       <div className="margin-top-nav" />
       {/*/!* Banner margin *!/*/}
       {/*<div className="h-20 sm:h-12"/>*/}

@@ -7,12 +7,12 @@ import Image from "next/image"
 import clipMascot from "../images/tournament/clipped_mascot.png"
 import cpithink from "../images/tournament/cpithink.png"
 import prizes from "../images/tournament/prizes.png"
+import waveSVG from "../images/wave.svg"
+
 const CONTEST_TIME_MILLISECONDS = 1709402400000
 const CONTEST_REGISTRATION_FORM_LINK = "https://forms.gle/4vHJeGiYGLgHRv4E6"
 const CONTEST_EDITORIAL_FILE = "tournament_2024_editorial.pdf"
 const CONTEST_SOLUTIONS_FILE = "tournament_2024_solutions.zip"
-
-import waveSVG from "../images/wave.svg"
 
 const tournament_info = {
   standard: {
@@ -38,6 +38,7 @@ const tournament_info = {
     ],
   },
 }
+
 function FAQCard({
   question,
   answer,
@@ -107,7 +108,7 @@ export default function Tournament() {
         description="An annual precollege programming contest held by the Competitive Programming Initiative to reward growth in problem-solving and computer science."
       />
 
-      <Header dark noBanner />
+      <Header dark />
 
       <main className="min-h-screen">
         <div className="flex-1  bg-gray-900 relative pb-24 md:pb-40 lg:pb-48 xl:pb-72 2xl:pb-96 flex flex-col lg:flex-row items-center justify-evenly animate mt-16 text-gray-300">
@@ -442,4 +443,5 @@ function timeLeftString(milliseconds: number) {
   return [days, hours, minutes, seconds]
   // return `${days} day${days === 1 ? '' : 's'}, ${hours} hour${hours === 1 ? '' : 's'}, ${minutes} minute${minutes === 1 ? '' : 's'}, and ${seconds} second${seconds === 1 ? '' : 's'} until the start of the contest.`;
 }
+
 //

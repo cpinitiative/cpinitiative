@@ -1,8 +1,6 @@
 import * as React from "react"
-import Logo from "../../../images/x-camp_cpi.png"
-import Image from "next/legacy/image"
 import Youtube from "../../Youtube"
-import Feb23 from "../../../images/workshops/feb23.png"
+
 export default function Hero() {
   return (
     <div className="relative bg-white overflow-hidden">

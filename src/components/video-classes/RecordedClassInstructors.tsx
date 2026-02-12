@@ -1,16 +1,16 @@
 import * as React from "react"
 import Image, { StaticImageData } from "next/legacy/image"
 import {
-  srijith,
-  satvika,
-  nathanc,
-  david_zhou,
-  i_chen_chou,
   abhiraj,
-  hannah,
   andyc,
-  ruben,
+  david_zhou,
+  hannah,
+  i_chen_chou,
   kyle_liang,
+  nathanc,
+  ruben,
+  satvika,
+  srijith,
 } from "../index/images"
 
 type Member = {

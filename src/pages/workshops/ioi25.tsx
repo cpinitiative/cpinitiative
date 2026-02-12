@@ -13,7 +13,7 @@ export default function IOI25() {
         title="2025 IOI Team Workshop"
         description="Meet three US team members for the 2025 International Olympiad in Informatics! Live CF Upsolve + Open Q&A."
       />
-      <Header noBanner />
+      <Header />
       <div className="margin-top-nav" />
       {/*/!* Banner margin *!/*/}
       {/*<div className="h-20 sm:h-12"/>*/}

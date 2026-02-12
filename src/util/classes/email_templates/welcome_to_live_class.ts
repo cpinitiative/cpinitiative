@@ -139,4 +139,4 @@ const welcomeToLiveClassTemplate = `<!DOCTYPE html>
 </body>
 </html>`
 
-export default welcomeToLiveClassTemplate;
+export default welcomeToLiveClassTemplate

@@ -1,5 +1,6 @@
 import * as React from "react"
 import Youtube from "../../Youtube"
+
 export default function Hero() {
   return (
     <div className="relative bg-white overflow-hidden">

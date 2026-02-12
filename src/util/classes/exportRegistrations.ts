@@ -1,7 +1,4 @@
-import {
-  ClassRegistration,
-  LiveClassRegistration,
-} from "../../types/registration"
+import { ClassRegistration } from "../../types/registration"
 
 function exportToCsv(filename, rows) {
   var processRow = function (row) {

@@ -3,7 +3,6 @@ import { getAuth } from "firebase-admin/auth"
 import { db } from "../../../../firebase"
 import { classRegistrationAdministrators } from "../../../util/permissions"
 import { FieldValue } from "firebase-admin/firestore"
-import { getClientIp } from "request-ip"
 import { sendWelcomeEmailBronzeVideos } from "../../../util/classes/sendWelcomeEmail"
 
 export default async function approveFinancialAid(

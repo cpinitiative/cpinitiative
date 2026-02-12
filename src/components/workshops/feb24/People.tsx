@@ -1,12 +1,4 @@
-import {
-  ryan,
-  albert,
-  kevin,
-  rohan_garg,
-  aadit,
-  andrew_xu,
-  melody,
-} from "../../index/images"
+import { andrew_xu, melody } from "../../index/images"
 
 import Speakers, { Speaker } from "../Speakers"
 

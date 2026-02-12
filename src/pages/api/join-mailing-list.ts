@@ -1,5 +1,5 @@
 import { VercelRequest, VercelResponse } from "@vercel/node"
-import { mailjet, CONTACT_LIST_IDS } from "../../util/mailjet"
+import { CONTACT_LIST_IDS, mailjet } from "../../util/mailjet"
 
 export default async function joinMailingList(
   request: VercelRequest,

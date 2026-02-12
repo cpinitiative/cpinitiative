@@ -139,4 +139,4 @@ const welcomeToUsacoBronzeVideo = `<!DOCTYPE html>
 </body>
 </html>`
 
-export default welcomeToUsacoBronzeVideo;
+export default welcomeToUsacoBronzeVideo

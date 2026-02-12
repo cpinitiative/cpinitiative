@@ -37,10 +37,10 @@
 // }
 
 import * as React from "react"
+import { useEffect, useMemo, useState } from "react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import Header from "../../components/Header"
-import { useEffect, useMemo, useState } from "react"
 import * as moment from "moment-timezone"
 import useFirebase from "../../firebase/useFirebase"
 import ErrorCard from "../../components/video-classes/registration/ErrorCard"
@@ -141,7 +141,7 @@ export default function ClassRegistrationPage() {
         title="Online USACO Classes"
         description="Learn USACO through affordable, high-quality classes with vetted, experienced instructors and a curriculum designed and developed by past USACO Finalists."
       />
-      <Header noBanner />
+      <Header />
       <div className={"margin-top-nav"}>
         <div className={"px-5 sm:px-12 max-w-6xl mx-auto pt-10"}>
           <h1 className={"text-4xl font-bold tracking-tight leading-9 mb-10"}>

@@ -1,7 +1,7 @@
 import * as React from "react"
-import { members, Member } from "./TeamData"
+import { Member, members } from "./TeamData"
 import { isMobile } from "react-device-detect"
-import { MemberCardSmall, MemberCardLarge } from "./TeamMemberCards"
+import { MemberCardLarge, MemberCardSmall } from "./TeamMemberCards"
 
 function SmallMemberGrid({ members }: { members: Member[] }) {
   return (
@@ -15,6 +15,7 @@ function SmallMemberGrid({ members }: { members: Member[] }) {
     </ul>
   )
 }
+
 function LargeMemberGrid({ members }: { members: Member[] }) {
   return (
     <ul
@@ -27,6 +28,7 @@ function LargeMemberGrid({ members }: { members: Member[] }) {
     </ul>
   )
 }
+
 function MemberGrid({ members }: { members: Member[] }) {
   return isMobile ? (
     <LargeMemberGrid members={members} />

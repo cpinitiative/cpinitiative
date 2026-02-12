@@ -1,18 +1,8 @@
-import {
-  melody,
-  dustin,
-  ryan,
-  amogha,
-  aditya,
-  ryan_fu,
-  kevin,
-} from "../../index/images"
-import xieting from "../../../images/xieting.jpeg"
+import { kevin, melody, ryan, ryan_fu } from "../../index/images"
 import rohan_garg from "../../index/images/rohan_garg.jpg"
-import chongtian_ma from "../../index/images/chongtian_ma.jpg"
-import albert_ye from "../../index/images/albert_ye.jpeg"
 
 import Speakers, { Speaker } from "../Speakers"
+
 const speakers: Speaker[] = [
   {
     photo: melody,

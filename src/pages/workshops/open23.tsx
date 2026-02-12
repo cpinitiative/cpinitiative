@@ -13,7 +13,7 @@ export default function USACOFeb23() {
         title="USACO Open 2023 Contest Solutions"
         description="Learn how to solve the Bronze/Silver USACO U.S. Open solutions, and participate in a live discussion/Q&A about tips for USACO next year!"
       />
-      <Header noBanner />
+      <Header />
       <div className="margin-top-nav" />
       {/*/!* Banner margin *!/*/}
       {/*<div className="h-20 sm:h-12"/>*/}

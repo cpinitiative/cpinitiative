@@ -1,10 +1,7 @@
-import { ryan, ryan_fu, andrew_xu } from "../../index/images"
-import xieting from "../../../images/xieting.jpeg"
-import rohan_garg from "../../index/images/rohan_garg.jpg"
-import chongtian_ma from "../../index/images/chongtian_ma.jpg"
-import albert_ye from "../../index/images/albert_ye.jpeg"
+import { andrew_xu, ryan, ryan_fu } from "../../index/images"
 
 import Speakers, { Speaker } from "../Speakers"
+
 const speakers: Speaker[] = [
   {
     photo: ryan,

@@ -1,4 +1,4 @@
-import { ryan, evan, melody } from "../../index/images"
+import { evan, melody, ryan } from "../../index/images"
 
 import Speakers, { Speaker } from "../Speakers"
 

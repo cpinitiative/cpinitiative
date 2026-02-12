@@ -15,7 +15,7 @@ export default function Webinar() {
         description="CPI will be holding an Introduction to USACO Webinar on November 28th, 5-5:40pm PST! Join us to learn more about what USACO is, why you should do it, and how to get better at USACO!"
       />
 
-      <Header noBanner />
+      <Header />
       <div className="margin-top-nav" />
       {/*/!* Banner margin *!/*/}
       {/*<div className="h-20 sm:h-12"/>*/}
@@ -45,7 +45,7 @@ export default function Webinar() {
               not many students are aware of or participate in USACO.
             </p>
             <p>
-              That's where we come in! The Competitive Programming Initiative is
+              That's where we come in! The Competitive Programming Initiative is
               a nonprofit organization run by top USACO competitors that aims to
               increase awareness and participation in USACO. Our team members
               include past USACO Finalists and IOI participants.

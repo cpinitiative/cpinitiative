@@ -1,4 +1,3 @@
-import type firebaseType from "firebase"
 import { useEffect, useRef, useState } from "react"
 import useFirebase from "../firebase/useFirebase"
 import useFirebaseUser from "./useFirebaseUser"

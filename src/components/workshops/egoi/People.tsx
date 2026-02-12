@@ -1,11 +1,12 @@
 import {
+  claire_zhang,
   melody,
+  rayna,
   tarushii,
   vivian,
-  rayna,
-  claire_zhang,
 } from "../../index/images"
 import Speakers, { Speaker } from "../Speakers"
+
 const speakers: Speaker[] = [
   {
     name: "Melody Yu",

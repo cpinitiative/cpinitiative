@@ -6,6 +6,7 @@ import Link from "next/link"
 import Image from "next/image"
 import mascotImage from "../../images/tournament/mascot.webp"
 import cpithink from "../../images/tournament/cpithink.png"
+
 const CONTEST_EDITORIAL_FILE = "tournament_2024_editorial.pdf"
 const CONTEST_SOLUTIONS_FILE = "tournament_2024_solutions.zip"
 
@@ -77,7 +78,7 @@ export default function Results() {
         description="An annual precollege programming contest held by the Competitive Programming Initiative to reward growth in problem-solving and computer science."
       />
 
-      <Header dark noBanner />
+      <Header dark />
 
       <main className="min-h-screen">
         <div className="flex-1  bg-gray-900 relative pb-4 md:pb-6 lg:pb-8  flex flex-col lg:flex-row items-center justify-evenly animate mt-16 text-gray-300">

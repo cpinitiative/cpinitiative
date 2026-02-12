@@ -14,7 +14,7 @@ export default function USACOJanuary() {
         title="USACO January Contest Solutions"
         description="The Competitive Programming Initiative is holding its second workshop on October 17th, 2pm PDT! Join us to learn from the experience of the 2021 EGOI team!"
       />
-      <Header noBanner />
+      <Header />
       <div className="margin-top-nav" />
       {/*/!* Banner margin *!/*/}
       {/*<div className="h-20 sm:h-12"/>*/}

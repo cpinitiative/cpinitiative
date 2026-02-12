@@ -13,7 +13,7 @@ export default function USACOFebruary() {
         title="USACO Open 2024 Contest Solutions"
         description="The Competitive Programming Initiative and X-Camp are holding a workshop to go over the problems from the USACO Open Contest on March 21st, 5pm PST (8pm EST). Join to gain a better understanding of the solutions!"
       />
-      <Header noBanner />
+      <Header />
       <div className="margin-top-nav" />
       {/*/!* Banner margin *!/*/}
       {/*<div className="h-20 sm:h-12"/>*/}
