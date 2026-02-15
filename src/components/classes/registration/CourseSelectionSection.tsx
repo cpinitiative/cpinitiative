@@ -63,8 +63,8 @@ export default function CourseSelectionSection({ level, setLevel }) {
 
                 <p className="mt-2 text-sm text-gray-500">
                   {level == "beginner"
-                    ? "Every Sunday (excluding USACO weekends) from February 15 - May 3, 5-7pm PDT. (Total 10 Sessions)"
-                    : "Every Saturday (excluding USACO weekends) from February 14 - May 2, 4-6pm PDT. (Total 10 Sessions)"}
+                    ? "Every Sunday (excluding USACO weekends) from March 1st - May 10th, 5-7pm PDT. (Total 10 Sessions)"
+                    : "Every Saturday (excluding USACO weekends) from February 28th - May 9th, 4-6pm PDT. (Total 10 Sessions)"}
                 </p>
               </div>
             )}
