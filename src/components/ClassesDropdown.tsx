@@ -15,7 +15,7 @@ function classNames(...classes: Array<string | undefined | null | false>) {
 
 export default function ClassesDropdown({ dark = false }): JSX.Element {
   return (
-    <Menu as="div" className="relative inline-block text-left">
+    <Menu as="div" className="relative inline-block text-left z-40">
       {({ open }) => (
         <div className="relative h-full">
           <MenuButton
