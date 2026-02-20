@@ -106,6 +106,7 @@ import {
   vivian,
   yifan_ma,
   zein,
+  sahil_chopra
 } from "./images"
 import { StaticImageData } from "next/legacy/image"
 
@@ -963,6 +964,13 @@ const _members: { [key: string]: Member } = {
     name: "Kyle Liang",
     titles: [roles.videoInstructor, roles.liveInstructor],
   },
+  sahil_chopra: {
+    photo: sahil_chopra,
+    name: "Sahil Chopra",
+    titles: [roles.webdev],
+    github: "aunncodes",
+    email: "choprasahil.sc@gmail.com"
+  }
 }
 
 // TODO: do something with this section
@@ -1052,6 +1060,7 @@ const currentMembers: Member[] = [
   _members.hassan,
   _members.aarush,
   _members.audrey,
+  _members.sahil_chopra,
 
   // clubs n stuff
   _members.alex_wang,
