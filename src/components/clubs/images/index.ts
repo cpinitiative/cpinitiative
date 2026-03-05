@@ -268,6 +268,11 @@ import rishihood_university from "./rishihood_university.jpg"
 import tasis from "./tasis.jpeg"
 import fes_acatlan from "./fes_acatlan.jpg"
 import rock_hill_hs from "./rock_hill_hs.jpeg"
+import ycyy_school from "./ycyy_school.jpg"
+import mt_view_hs from "./mt_view_hs.jpg"
+import galgotias_college from "./galgotias_college.jpg"
+import ku_leuven from "./ku_leuven.png"
+import iiit_sonepat from "./iiit_sonepat.jpg"
 
 export {
   algonquin,
@@ -540,4 +545,9 @@ export {
   tasis,
   fes_acatlan,
   rock_hill_hs,
+  ycyy_school,
+  mt_view_hs,
+  galgotias_college,
+  ku_leuven,
+  iiit_sonepat,
 }

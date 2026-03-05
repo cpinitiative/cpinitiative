@@ -1352,6 +1352,31 @@ const clubs: {
     photo: img.rock_hill_hs,
     region: "Texas",
   },
+  {
+    name: "Yew Chung Yew Wah School",
+    photo: img.ycyy_school,
+    region: "China",
+  },
+  {
+    name: "Mountain View High School",
+    photo: img.mt_view_hs,
+    region: "California",
+  },
+  {
+    name: "Galgotias College of Engineering and Technology",
+    photo: img.galgotias_college,
+    region: "India",
+  },
+  {
+    name: "KU Leuven",
+    photo: img.ku_leuven,
+    region: "Belgium",
+  },
+  {
+    name: "IIIT Sonepat",
+    photo: img.iiit_sonepat,
+    region: "India",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
