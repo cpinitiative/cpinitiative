@@ -120,12 +120,12 @@ export default function Tournament() {
               <br /> Informatics Tournament
             </h1>
             <h2 className="text-lg text-gray-500 font-semibold md:text-xl lg:text-2xl pt-4 pb-2 py-4 mx-auto text-center">
-              Saturday, March 15th, 2025 <br /> 10:30 AM - 1:30 PM PDT
+              Saturday, March 14th, 2026 <br /> 10:30 AM - 1:30 PM PDT
             </h2>
             <div className="flex flex-col items-stretch  ml-auto mr-auto">
               <Link
                 className="text-center flex-grow mx-auto text-white bg-[#8976ff]/100 rounded-lg focus:translate-y-1 hover:underline transition-all duration-150 mt-4 2xl:text-xl lg:text-lg text-base px-12 py-2"
-                href="http://contest.joincpi.org:8080"
+                href="http://contest.joincpi.org"
               >
                 Register now!
               </Link>
