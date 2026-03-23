@@ -225,13 +225,13 @@ export default function Header({
           ))}
         </div>
       </div>
-      {showBanner && (
+      {/* {showBanner && (
         <Banner
           text="Our next semester of live classes starts this weekend!"
           actionText="Register here"
           href="/classes"
         />
-      )}
+      )} Banner is temporarily disabled*/}
     </nav>
   )
 }
