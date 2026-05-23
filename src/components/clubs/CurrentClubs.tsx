@@ -1412,6 +1412,31 @@ const clubs: {
     photo: img.san_dimas_high_school,
     region: "California",
   },
+  {
+    name: "Lawrence High School",
+    photo: img.lawrence_hs,
+    region: "New Jersey",
+  },
+  {
+    name: "Northern Highlands Regional High School",
+    photo: img.northern_highlands_regional_hs,
+    region: "New Jersey",
+  },
+  {
+    name: "Calgary Academy",
+    photo: img.calgary_academy,
+    region: "Canada",
+  },
+  {
+    name: "Burbank High School",
+    photo: img.burbank_hs,
+    region: "California",
+  },
+  {
+    name: "Birla Institute of Technology and Science, Pilani - Hyderabad Campus",
+    photo: img.birla_institute_of_tech_and_science_pilani_hyderabad_campus,
+    region: "India",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {

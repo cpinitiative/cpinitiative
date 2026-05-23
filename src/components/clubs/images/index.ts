@@ -280,6 +280,11 @@ import iiit_allahabad from "./iiit_allahabad.jpeg"
 import anglo_chinese_school_independent from "./anglo_chinese_school_independent.jpeg"
 import tashkent_university_of_information_technologies from "./tashkent_university_of_information_technologies.jpeg"
 import san_dimas_high_school from "./san_dimas_high_school.jpeg"
+import lawrence_hs from "./lawrence_hs.jpg"
+import northern_highlands_regional_hs from "./northern_highlands_regional_hs.jpeg"
+import calgary_academy from "./calgary_academy.jpeg"
+import burbank_hs from "./burbank_hs.jpg"
+import birla_institute_of_tech_and_science_pilani_hyderabad_campus from "./birla_institute_of_tech_and_science_pilani_hyderabad_campus.jpg"
 
 export {
   algonquin,
@@ -564,4 +569,9 @@ export {
   anglo_chinese_school_independent,
   tashkent_university_of_information_technologies,
   san_dimas_high_school,
+  lawrence_hs,
+  northern_highlands_regional_hs,
+  calgary_academy,
+  burbank_hs,
+  birla_institute_of_tech_and_science_pilani_hyderabad_campus
 }
