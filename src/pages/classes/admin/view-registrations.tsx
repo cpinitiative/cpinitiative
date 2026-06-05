@@ -26,7 +26,7 @@ export default function ViewRegistrationPage() {
     hasPermission,
     registrations: registrationsIncludingDeleted,
     loading: isLoading,
-  } = useClassRegistrations<LiveClassRegistration>("2026feb", soundOn)
+  } = useClassRegistrations<LiveClassRegistration>("2026june", soundOn)
   const [showDetailModal, setShowDetailModal] = useState(false)
   const [detailModalRegistrationId, setDetailModalRegistrationId] = useState("")
   const [detailModalFASubmittingApproval, setDetailModalFASubmittingApproval] =
@@ -447,7 +447,7 @@ export default function ViewRegistrationPage() {
                     firebase
                       .firestore()
                       .collection("classes-registration")
-                      .doc("2026feb")
+                      .doc("2026june")
                       .collection("registrations")
                       .doc(detailModalRegistrationId)
                       .update({
@@ -489,7 +489,7 @@ export default function ViewRegistrationPage() {
                     firebase
                       .firestore()
                       .collection("classes-registration")
-                      .doc("2026feb")
+                      .doc("2026june")
                       .collection("registrations")
                       .doc(detailModalRegistrationId)
                       .update({

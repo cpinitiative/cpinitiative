@@ -68,7 +68,7 @@ export default async function processLiveRegistration(
     }
     const ref = db
       .collection("classes-registration")
-      .doc("2026feb")
+      .doc("2026june")
       .collection("registrations")
       .doc()
     console.log(
