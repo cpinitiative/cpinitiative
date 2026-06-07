@@ -7,7 +7,7 @@ import ClassesDropdown from "../components/ClassesDropdown"
 import Banner from "./Banner"
 
 export default function Header({
-  showBanner,
+  showBanner = true,
   dark = false,
 }: {
   showBanner?: boolean
@@ -227,7 +227,7 @@ export default function Header({
       </div>
       {showBanner && (
         <Banner
-          text="Our next semester of live classes starts this weekend!"
+          text="Our next semester of Bronze/Silver live classes starts this month. Register here!"
           actionText="Register here"
           href="/classes"
         />
