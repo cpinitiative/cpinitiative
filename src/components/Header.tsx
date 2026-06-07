@@ -227,7 +227,7 @@ export default function Header({
       </div>
       {showBanner && (
         <Banner
-          text="Our next semester of Bronze/Live classes starts this month. Register here!"
+          text="Our next semester of Bronze/Silver live classes starts this month. Register here!"
           actionText="Register here"
           href="/classes"
         />
