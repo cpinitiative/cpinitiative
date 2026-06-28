@@ -125,6 +125,7 @@ import andyc from "./andyc.jpg"
 import ruben from "./ruben.png"
 import kyle_liang from "./kyle_liang.jpg"
 import sahil_chopra from "./sahil_chopra.png"
+import abhinav_singh from "./abhinav_singh.png"
 
 export {
   aadit,
@@ -253,5 +254,6 @@ export {
   andyc,
   ruben,
   kyle_liang,
-  sahil_chopra
+  sahil_chopra,
+  abhinav_singh
 }
