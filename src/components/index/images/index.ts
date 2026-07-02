@@ -127,6 +127,7 @@ import kyle_liang from "./kyle_liang.jpg"
 import sahil_chopra from "./sahil_chopra.png"
 import abhinav_singh from "./abhinav_singh.png"
 import xinyuan_zhou from "./xinyuan_zhou.png"
+import david_xiao from "./david_xiao.png"
 
 export {
   aadit,
@@ -257,5 +258,6 @@ export {
   kyle_liang,
   sahil_chopra,
   abhinav_singh,
-  xinyuan_zhou
+  xinyuan_zhou,
+  david_xiao
 }
