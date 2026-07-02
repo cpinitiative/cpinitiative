@@ -106,7 +106,10 @@ import {
   vivian,
   yifan_ma,
   zein,
-  sahil_chopra
+  sahil_chopra,
+  abhinav_singh,
+  xinyuan_zhou,
+  david_xiao
 } from "./images"
 import { StaticImageData } from "next/legacy/image"
 
@@ -970,6 +973,25 @@ const _members: { [key: string]: Member } = {
     titles: [roles.webdev],
     github: "aunncodes",
     email: "choprasahil.sc@gmail.com"
+  },
+  abhinav_singh: {
+    photo: abhinav_singh,
+    name: "Abhinav Singh",
+    titles: [roles.contentAuthor],
+    github: "4nav",
+    email: "4nav.dev@gmail.com"
+  },
+  xinyuan_zhou: {
+    photo: xinyuan_zhou,
+    name: "Xinyuan Zhou",
+    titles: [roles.contentAuthor],
+    github: "johnzhou721"
+  },
+  david_xiao: {
+    photo: david_xiao,
+    name: "David Xiao",
+    titles: [roles.contentAuthor],
+
   }
 }
 
@@ -1073,6 +1095,9 @@ const currentMembers: Member[] = [
   _members.alice,
 
   _members.aakash,
+  _members.abhinav_singh,
+  _members.xinyuan_zhou,
+  _members.david_xiao
 ]
 const formerMembers: Member[] = [
   _members.aditya,
