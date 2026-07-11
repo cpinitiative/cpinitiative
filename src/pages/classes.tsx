@@ -553,10 +553,10 @@ export default function Classes() {
 
             {/* <ClassInstructors /> */}
 
-            <Newsletter />
           </div>
         </div>
       </div>
+      <Newsletter />
     </Layout>
   )
 }
