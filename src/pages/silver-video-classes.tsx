@@ -668,12 +668,11 @@ export default function Classes() {
 
             {/* <ClassLevels /> */}
 
-            <RecordedClassInstructors />
-
-            <Newsletter />
           </div>
         </div>
       </div>
+      <RecordedClassInstructors />
+      <Newsletter />
     </Layout>
   )
 }
