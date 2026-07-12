@@ -23,7 +23,7 @@ export default function Classes() {
             <div className="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
               <div className="mx-auto max-w-7xl lg:px-8">
                 <div className="lg:grid lg:grid-cols-8 lg:gap-8">
-                  <div className="mx-auto lg:ml-0 max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center lg:col-span-5">
+                  <div className="mx-auto lg:ml-0 max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center lg:col-span-5 relative z-10">
                     <div className="lg:py-24">
                       <span className="text-base font-semibold tracking-wider text-cyan-300 uppercase sm:mt-5 lg:mt-6">
                         Summer 2026 Session
