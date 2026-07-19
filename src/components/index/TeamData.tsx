@@ -109,7 +109,8 @@ import {
   sahil_chopra,
   abhinav_singh,
   xinyuan_zhou,
-  david_xiao
+  david_xiao,
+  mughees_rashid
 } from "./images"
 import { StaticImageData } from "next/legacy/image"
 
@@ -972,27 +973,35 @@ const _members: { [key: string]: Member } = {
     name: "Sahil Chopra",
     titles: [roles.webdev],
     github: "aunncodes",
-    email: "choprasahil.sc@gmail.com"
+    email: "choprasahil.sc@gmail.com",
   },
   abhinav_singh: {
     photo: abhinav_singh,
     name: "Abhinav Singh",
     titles: [roles.contentAuthor],
     github: "4nav",
-    email: "4nav.dev@gmail.com"
+    email: "4nav.dev@gmail.com",
   },
   xinyuan_zhou: {
     photo: xinyuan_zhou,
     name: "Xinyuan Zhou",
     titles: [roles.contentAuthor],
-    github: "johnzhou721"
+    github: "johnzhou721",
   },
   david_xiao: {
     photo: david_xiao,
     name: "David Xiao",
     titles: [roles.contentAuthor],
-
-  }
+  },
+  mughees_rashid: {
+    photo: mughees_rashid,
+    name: "Mughees Rashid",
+    titles: [roles.webdev],
+    github: "MugheesRashid",
+    email: "512mughees@gmail.com",
+    website: "mughees.xyz",
+    linkedin: "https://www.linkedin.com/in/mughees-rashid-2b1589210/",
+  },
 }
 
 // TODO: do something with this section
@@ -1083,6 +1092,7 @@ const currentMembers: Member[] = [
   _members.aarush,
   _members.audrey,
   _members.sahil_chopra,
+  _members.mughees_rashid,
 
   // clubs n stuff
   _members.alex_wang,
