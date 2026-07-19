@@ -123,11 +123,12 @@ export default function Tournament() {
               Saturday, March 14th, 2026 <br /> 10:30 AM - 1:30 PM PDT
             </h2>
             <div className="flex flex-col items-stretch  ml-auto mr-auto">
+              {/* Remove 'pointer-events-none' to reopen the link */}
               <Link
-                className="text-center flex-grow mx-auto text-white bg-[#8976ff]/100 rounded-lg focus:translate-y-1 hover:underline transition-all duration-150 mt-4 2xl:text-xl lg:text-lg text-base px-12 py-2"
+                className="pointer-events-none text-center flex-grow mx-auto text-white bg-[#8976ff]/100 rounded-lg focus:translate-y-1 hover:underline transition-all duration-150 mt-4 2xl:text-xl lg:text-lg text-base px-12 py-2"
                 href="http://contest.joincpi.org"
               >
-                Register now!
+                Closed!
               </Link>
             </div>
 
