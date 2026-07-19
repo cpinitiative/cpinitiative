@@ -1,3 +1,5 @@
+import XCamp from './sponsor-logo/XCamp';
+
 export default function Sponsor() {
   return (
     <div className="pb-12 bg-gray-800">
@@ -46,7 +48,30 @@ export default function Sponsor() {
             sponsorship prospectus
           </a>
         </div>
+
+        <div className="h-12 md:h-20"></div>
+
+        <p className="text-lg font-medium text-gray-700 uppercase md:text-xl dark:text-gray-400">
+          Our Sponsors
+        </p>
+        {/* Sponsor logos don't fit well in the light theme */}
+        <p className="pt-6 font-semibold text-gray-600 uppercase md:text-lg dark:text-gray-400">
+          Platinum Sponsors
+        </p>
+        <div className="my-8 grid grid-cols-2 items-center gap-0.5 text-gray-600 md:grid-cols-3 lg:my-6 lg:grid-cols-4 dark:text-gray-400">
+          <div className="col-span-1">
+            <a
+              href="https://x-camp.academy/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <XCamp />
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+
+      <div className="h-8 md:h-10 xl:h-12"></div>
+      </div>
   )
 }
