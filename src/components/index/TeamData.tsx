@@ -110,7 +110,8 @@ import {
   abhinav_singh,
   xinyuan_zhou,
   david_xiao,
-  mughees_rashid
+  mughees_rashid,
+  arfan_pasha
 } from "./images"
 import { StaticImageData } from "next/legacy/image"
 
@@ -999,9 +1000,16 @@ const _members: { [key: string]: Member } = {
     titles: [roles.webdev],
     github: "MugheesRashid",
     email: "512mughees@gmail.com",
-    website: "mughees.xyz",
+    website: "https://www.mughees.xyz",
     linkedin: "https://www.linkedin.com/in/mughees-rashid-2b1589210/",
   },
+  arfan_pasha: {
+    photo: arfan_pasha,
+    name: "Arfan Pasha",
+    titles: [roles.webdev],
+    github: "MinimulThoughtfulCode",
+    email: "512mughees@gmail.com"
+  }
 }
 
 // TODO: do something with this section
@@ -1093,6 +1101,7 @@ const currentMembers: Member[] = [
   _members.audrey,
   _members.sahil_chopra,
   _members.mughees_rashid,
+  _members.arfan_pasha,
 
   // clubs n stuff
   _members.alex_wang,
