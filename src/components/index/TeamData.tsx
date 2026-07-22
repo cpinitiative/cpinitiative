@@ -1008,7 +1008,7 @@ const _members: { [key: string]: Member } = {
     name: "Arfan Pasha",
     titles: [roles.webdev],
     github: "MinimulThoughtfulCode",
-    email: "512mughees@gmail.com"
+    email: "pasha.arfan1@gmail.com"
   }
 }
 
