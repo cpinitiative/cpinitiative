@@ -129,6 +129,7 @@ import abhinav_singh from "./abhinav_singh.png"
 import xinyuan_zhou from "./xinyuan_zhou.png"
 import david_xiao from "./david_xiao.png"
 import mughees_rashid from "./mughees_rashid.png"
+import arfan_pasha from "./arfan_pasha.png"
 
 export {
   aadit,
@@ -261,5 +262,6 @@ export {
   abhinav_singh,
   xinyuan_zhou,
   david_xiao,
-  mughees_rashid
+  mughees_rashid,
+  arfan_pasha
 }
