@@ -72,7 +72,7 @@ export default function Classes() {
                       </p>
                     </div>
                   </div>
-                  <div className="mt-12 -mb-16 sm:-mb-48 lg:mt-10 lg:-mb-16 lg:relative lg:col-span-3">
+                  <div className="mt-0 mb-0 sm:-mb-48 lg:mt-10 lg:-mb-16 lg:relative lg:col-span-3">
                     <div className="mx-auto max-w-md px-4 sm:max-w-xl sm:px-6 lg:max-w-none lg:px-0">
                       {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
                       <Image
@@ -89,7 +89,7 @@ export default function Classes() {
 
             {/* Feature section with grid */}
 
-            <div className="relative bg-white py-16 sm:pt-24 lg:pt-32">
+            <div className="relative bg-white py-16 sm:pt-24 lg:pt-32 mt-0 pt-12">
               <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
                 <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">
                   Why Us?
