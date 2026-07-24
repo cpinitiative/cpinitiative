@@ -30,7 +30,7 @@ export default function Classes() {
             <div className="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
               <div className="mx-auto max-w-7xl lg:px-8">
                 <div className="lg:grid lg:grid-cols-8 lg:gap-8">
-                  <div className="mx-auto lg:ml-0 max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center lg:col-span-5">
+                  <div className="mx-auto lg:ml-0 max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center lg:col-span-5 relative z-10">
                     <div className="lg:py-24">
                       <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-6xl xl:text-6xl mt-2">
                         <span
@@ -80,7 +80,7 @@ export default function Classes() {
                       </p>
                     </div>
                   </div>
-                  <div className="mt-12 -mb-16 sm:-mb-48 lg:mt-10 lg:-mb-16 lg:relative lg:col-span-3">
+                  <div className="mt-0 mb-0 sm:-mb-48 lg:mt-10 lg:-mb-16 lg:relative lg:col-span-3">
                     <div className="mx-auto max-w-md px-4 sm:max-w-xl sm:px-6 lg:max-w-none lg:px-0">
                       {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
                       <Image
