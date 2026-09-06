@@ -1437,6 +1437,81 @@ const clubs: {
     photo: img.birla_institute_of_tech_and_science_pilani_hyderabad_campus,
     region: "India",
   },
+  {
+    name: "Indian Institute of Technology, Jodhpur",
+    photo: img.indian_institute_of_technology_jodhpur,
+    region: "India",
+  },
+  {
+    name: "North Creek High School",
+    photo: img.north_creek_high_school,
+    region: "Washington",
+  },
+  {
+    name: "James E. Taylor High School",
+    photo: img.james_e_taylor_high_school,
+    region: "Texas",
+  },
+  {
+    name: "Pine View School",
+    photo: img.pine_view_school,
+    region: "Florida",
+  },
+  {
+    name: "iit guwahati",
+    photo: img.iit_guwahati,
+    region: "India",
+  },
+  {
+    name: "NIT Allahabad",
+    photo: img.nit_allahabad,
+    region: "India",
+  },
+  {
+    name: "Raj Kumar Goel Institute of Technology",
+    photo: img.raj_kumar_goel_institute_of_technology,
+    region: "India",
+  },
+  {
+    name: "Malaviya National Institute of Technology",
+    photo: img.malaviya_national_institute_of_technology,
+    region: "India",
+  },
+  {
+    name: "KIIT Bhubaneswar",
+    photo: img.kiit_bhubaneswar,
+    region: "India",
+  },
+  {
+    name: "Akhuwat college and university kasur",
+    photo: img.akhuwat_college_and_university_kasur,
+    region: "Pakistan",
+  },
+  {
+    name: "FAST NUCES",
+    photo: img.fast_nuces,
+    region: "Pakistan",
+  },
+  {
+    name: "Northwest High School",
+    photo: img.northwest_high_school,
+    region: "Maryland",
+  },
+  {
+    name: "NIOS",
+    photo: img.nios,
+    region: "India",
+  },
+  {
+    name: "Plano East Sr High School",
+    photo: img.plano_east_sr_high_school,
+    region: "Texas",
+  },
+  {
+    name: "Carlmont High School",
+    photo: img.carlmont_high_school,
+    region: "California",
+  },
 ].sort((x, y) => x.name.localeCompare(y.name))
 
 export default function CurrentClubs() {
