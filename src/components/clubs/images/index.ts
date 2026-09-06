@@ -290,7 +290,6 @@ import north_creek_high_school from "./north_creek_high_school.jpg"
 import james_e_taylor_high_school from "./james_e_taylor_high_school.jpg"
 import pine_view_school from "./pine_view_school.jpg"
 import iit_guwahati from "./iit_guwahati.jpg"
-import nit_allahabad from "./nit_allahabad.jpg"
 import raj_kumar_goel_institute_of_technology from "./raj_kumar_goel_institute_of_technology.jpg"
 import malaviya_national_institute_of_technology from "./malaviya_national_institute_of_technology.jpg"
 import kiit_bhubaneswar from "./kiit_bhubaneswar.jpg"
@@ -300,6 +299,7 @@ import northwest_high_school from "./northwest_high_school.jpg"
 import nios from "./nios.jpg"
 import plano_east_sr_high_school from "./plano_east_sr_high_school.jpg"
 import carlmont_high_school from "./carlmont_high_school.jpg"
+import whitney_m_young_high_school from "./whitney_m_young_high_school.png"
 
 export {
   algonquin,
@@ -594,7 +594,6 @@ export {
   james_e_taylor_high_school,
   pine_view_school,
   iit_guwahati,
-  nit_allahabad,
   raj_kumar_goel_institute_of_technology,
   malaviya_national_institute_of_technology,
   kiit_bhubaneswar,
@@ -604,4 +603,5 @@ export {
   nios,
   plano_east_sr_high_school,
   carlmont_high_school,
+  whitney_m_young_high_school
 }

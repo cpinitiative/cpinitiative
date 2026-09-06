@@ -744,7 +744,7 @@ const clubs: {
   },
   {
     name: "Whitney M. Young High School",
-    photo: img.whitney,
+    photo: img.whitney_m_young_high_school,
     region: "Illinois",
   },
   {
@@ -1460,11 +1460,6 @@ const clubs: {
   {
     name: "iit guwahati",
     photo: img.iit_guwahati,
-    region: "India",
-  },
-  {
-    name: "NIT Allahabad",
-    photo: img.nit_allahabad,
     region: "India",
   },
   {
