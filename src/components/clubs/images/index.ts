@@ -285,6 +285,21 @@ import northern_highlands_regional_hs from "./northern_highlands_regional_hs.jpe
 import calgary_academy from "./calgary_academy.jpeg"
 import burbank_hs from "./burbank_hs.jpg"
 import birla_institute_of_tech_and_science_pilani_hyderabad_campus from "./birla_institute_of_tech_and_science_pilani_hyderabad_campus.jpg"
+import indian_institute_of_technology_jodhpur from "./indian_institute_of_technology_jodhpur.jpg"
+import north_creek_high_school from "./north_creek_high_school.jpg"
+import james_e_taylor_high_school from "./james_e_taylor_high_school.jpg"
+import pine_view_school from "./pine_view_school.jpg"
+import iit_guwahati from "./iit_guwahati.jpg"
+import raj_kumar_goel_institute_of_technology from "./raj_kumar_goel_institute_of_technology.jpg"
+import malaviya_national_institute_of_technology from "./malaviya_national_institute_of_technology.jpg"
+import kiit_bhubaneswar from "./kiit_bhubaneswar.jpg"
+import akhuwat_college_and_university_kasur from "./akhuwat_college_and_university_kasur.jpg"
+import fast_nuces from "./fast_nuces.jpg"
+import northwest_high_school from "./northwest_high_school.jpg"
+import nios from "./nios.jpg"
+import plano_east_sr_high_school from "./plano_east_sr_high_school.jpg"
+import carlmont_high_school from "./carlmont_high_school.jpg"
+import whitney_m_young_high_school from "./whitney_m_young_high_school.png"
 
 export {
   algonquin,
@@ -573,5 +588,20 @@ export {
   northern_highlands_regional_hs,
   calgary_academy,
   burbank_hs,
-  birla_institute_of_tech_and_science_pilani_hyderabad_campus
+  birla_institute_of_tech_and_science_pilani_hyderabad_campus,
+  indian_institute_of_technology_jodhpur,
+  north_creek_high_school,
+  james_e_taylor_high_school,
+  pine_view_school,
+  iit_guwahati,
+  raj_kumar_goel_institute_of_technology,
+  malaviya_national_institute_of_technology,
+  kiit_bhubaneswar,
+  akhuwat_college_and_university_kasur,
+  fast_nuces,
+  northwest_high_school,
+  nios,
+  plano_east_sr_high_school,
+  carlmont_high_school,
+  whitney_m_young_high_school
 }
