@@ -26,7 +26,7 @@ export default function Classes() {
                   <div className="mx-auto lg:ml-0 max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center lg:col-span-5 relative z-10">
                     <div className="lg:py-24">
                       <span className="text-base font-semibold tracking-wider text-cyan-300 uppercase sm:mt-5 lg:mt-6">
-                        Summer 2026 Session
+                        Fall 2026 Session
                       </span>
                       <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-6xl xl:text-6xl mt-2">
                         <span className="block">Live Online</span>
@@ -516,12 +516,13 @@ export default function Classes() {
                   <h3>Class Schedule</h3>
                   <ul>
                     <li>
-                      Bronze: Sundays during <b>June 28th - August 30th</b> from
-                      5:00 PM - 7:00 PM PDT
+                      Bronze: Sundays during <b>October 4th - December 13th</b>{" "}
+                      from 5:00 PM - 7:00 PM PDT
                     </li>
                     <li>
-                      Silver: Saturdays during <b>June 27th - August 29th</b>{" "}
-                      from 4:00 PM - 6:00 PM PDT
+                      Silver: Saturdays during{" "}
+                      <b>October 3rd - December 12th</b> from 4:00 PM - 6:00 PM
+                      PDT
                     </li>
                   </ul>
                   {/* <p>Classes will skip USACO weekends (Feb 17/18 and March 16/17)</p> */}
@@ -550,7 +551,6 @@ export default function Classes() {
             </div>
 
             {/* <ClassInstructors /> */}
-
           </div>
         </div>
       </div>
