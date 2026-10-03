@@ -378,7 +378,7 @@ export default function Tournament() {
         <h1 className="text-center mt-16 text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight bg-gradient-to-br from-purple-400 to-blue-600 bg-clip-text text-transparent">
           Past Contests
         </h1>
-        <div className=" mt-6 flex justify-center items-center">
+        <div className=" mt-6 flex md:justify-center items-center overflow-x-auto snap-x snap-mandatory scrollbar-none px-4 py-4">
           <div className="mx-8  ">
             <Link
               href="/tournament/2026-results"
