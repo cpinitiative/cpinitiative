@@ -227,9 +227,9 @@ export default function Header({
       </div>
       {showBanner && (
         <Banner
-          text="Our next semester of Bronze/Silver live classes starts soon. Register here!"
+          text="2026 IOI Team Workshop on Nov 15th. Register here!"
           actionText="Register here"
-          href="/classes"
+          href="/workshops/ioi26"
         />
       )}
     </nav>

@@ -20,6 +20,7 @@ import Open24 from "../../images/workshops/open24.jpg"
 import Dec24 from "../../images/workshops/dec24.png"
 import Setting25 from "../../images/workshops/setting25.png"
 import IOI25 from "../../images/workshops/ioi25.png"
+import IOI26 from "../../images/workshops/ioi26.png"
 // import Dec23Thumbnail from "../../images/workshops/dec23thumbnail.png"
 
 export type Workshop = {
@@ -45,6 +46,16 @@ const themeColors = {
 }
 
 const workshops: Workshop[] = [
+  {
+    photo: IOI26,
+    title: "2026 IOI Team Workshop",
+    description:
+      "Meet two US team members for the 2026 International Olympiad in Informatics! Live CF Upsolve + Open Q&A.",
+    date: dayjs("Nov 15, 2026 1:00:00 PM PST"),
+    season: "2026-2027",
+    url: "ioi26",
+    themeColor: themeColors.blue,
+  },
   {
     photo: IOI25,
     title: "2025 IOI Team Workshop",

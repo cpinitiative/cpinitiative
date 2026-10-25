@@ -1,0 +1,24 @@
+import * as React from "react"
+import Layout from "../../components/Layout"
+import SEO from "../../components/SEO"
+import Hero from "../../components/workshops/ioi26/Hero"
+import Header from "../../components/Header"
+import People from "../../components/workshops/ioi26/People"
+
+export default function IOI26() {
+  return (
+    <Layout>
+      <SEO
+        image="../../images/workshops/ioi26.png"
+        title="2026 IOI Team Workshop"
+        description="Meet two US team members for the 2026 International Olympiad in Informatics! Live CF Upsolve + Open Q&A."
+      />
+      <Header />
+      <div className="margin-top-nav" />
+      {/*/!* Banner margin *!/*/}
+      {/*<div className="h-20 sm:h-12"/>*/}
+      <Hero />
+      <People />
+    </Layout>
+  )
+}
