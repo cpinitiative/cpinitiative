@@ -111,7 +111,8 @@ import {
   xinyuan_zhou,
   david_xiao,
   mughees_rashid,
-  arfan_pasha
+  arfan_pasha,
+  yujia_gong
 } from "./images"
 import { StaticImageData } from "next/legacy/image"
 
@@ -1010,6 +1011,11 @@ const _members: { [key: string]: Member } = {
     titles: [roles.webdev],
     github: "MinimulThoughtfulCode",
     email: "pasha.arfan1@gmail.com"
+  },
+  yujia_gong: {
+    photo: yujia_gong,
+    name: "Yujia (Guoguo) Gong",
+    titles: [roles.liveInstructor, roles.clubCurriculum],
   }
 }
 
@@ -1077,6 +1083,7 @@ const currentMembers: Member[] = [
   _members.kinan,
   _members.zein,
   _members.abhiraj,
+  _members.yujia_gong,
 
   // video instructors
   _members.rohang,
