@@ -130,6 +130,7 @@ import xinyuan_zhou from "./xinyuan_zhou.png"
 import david_xiao from "./david_xiao.png"
 import mughees_rashid from "./mughees_rashid.png"
 import arfan_pasha from "./arfan_pasha.png"
+import yujia_gong from "./yujia_gong.jpg"
 
 export {
   aadit,
@@ -263,5 +264,6 @@ export {
   xinyuan_zhou,
   david_xiao,
   mughees_rashid,
-  arfan_pasha
+  arfan_pasha,
+  yujia_gong
 }
