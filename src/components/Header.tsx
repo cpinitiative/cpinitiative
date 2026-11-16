@@ -227,9 +227,9 @@ export default function Header({
       </div>
       {showBanner && (
         <Banner
-          text="2026 IOI Team Workshop on Nov 15th. Register here!"
-          actionText="Register here"
-          href="/workshops/ioi26"
+          text="Looking for Problem Writers for the 2027 USACO.guide Informatics Tournament."
+          actionText="Apply here!"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSciGQZEblhUR_TY243UvPLez0LsnXb6pasIglAzFIx2Z_lBWQ/viewform"
         />
       )}
     </nav>
